@@ -76,19 +76,18 @@ class GaliciaScraper:
             catalog = catalog[:limit]
 
         promotions = []
+        errors = []
 
         for index, item in enumerate(catalog, start=1):
             promotion_id = item["id"]
 
-            print(
-                f"[{index}/{len(catalog)}] "
-                f"Descargando {promotion_id}"
-            )
+            print(f"[{index}/{len(catalog)}] Descargando {promotion_id}")
 
             try:
                 detail = self.fetch_promotion_detail(promotion_id)
             except httpx.HTTPError as error:
                 print(f"Error descargando {promotion_id}: {error}")
+                errors.append(promotion_id) 
                 continue
 
             promotions.append(
@@ -100,6 +99,14 @@ class GaliciaScraper:
                     "detail": detail,
                 }
             )
+
+        print()
+        print(f"Catálogo: {len(catalog)}")
+        print(f"Descargadas: {len(promotions)}")
+        print(f"Errores: {len(errors)}")
+
+        if errors:
+            print(f"IDs con error: {errors}")
 
         return promotions
 
@@ -153,6 +160,6 @@ class GaliciaScraper:
 if __name__ == "__main__":
     scraper = GaliciaScraper()
 
-    promotions = scraper.scrape(limit=10)
+    promotions = scraper.scrape()
 
     scraper.save_raw_promotions(promotions)
