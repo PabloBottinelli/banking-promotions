@@ -1,3 +1,4 @@
+from datetime import datetime, timezone
 import json
 from pathlib import Path
 
@@ -13,11 +14,16 @@ class GaliciaScraper:
 
     DETAIL_URL = f"{BASE_URL}/catalogo/v1/promociones/idPromocion"
 
-    def __init__(self, page_size: int = 100):
+    def __init__(self, page_size: int = 100, client: httpx.Client | None = None,):
         self.page_size = page_size
 
+        self.client = client or httpx.Client(
+            timeout=30,
+            follow_redirects=True,
+        )
+
     def fetch_catalog_page(self, page: int) -> dict:
-        response = httpx.get(
+        response = self.client.get(
             self.CATALOG_URL,
             params={
                 "page": page,
@@ -53,11 +59,8 @@ class GaliciaScraper:
 
         return promotions
 
-    def fetch_promotion_detail(
-        self,
-        promotion_id: int,
-    ) -> dict:
-        response = httpx.get(
+    def fetch_promotion_detail(self, promotion_id: int) -> dict:
+        response = self.client.get(
             f"{self.DETAIL_URL}/{promotion_id}",
             timeout=30,
         )
@@ -82,14 +85,17 @@ class GaliciaScraper:
                 f"Descargando {promotion_id}"
             )
 
-            detail = self.fetch_promotion_detail(
-                promotion_id
-            )
+            try:
+                detail = self.fetch_promotion_detail(promotion_id)
+            except httpx.HTTPError as error:
+                print(f"Error descargando {promotion_id}: {error}")
+                continue
 
             promotions.append(
                 {
                     "source": "galicia",
                     "source_id": promotion_id,
+                    "scraped_at": datetime.now(timezone.utc).isoformat(),
                     "catalog": item,
                     "detail": detail,
                 }
