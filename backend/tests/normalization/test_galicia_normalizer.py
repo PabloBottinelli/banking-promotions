@@ -55,6 +55,10 @@ def test_normalizes_merchant_promotion():
     assert promotion.scope == "merchant"
     assert promotion.merchant == "Viamo"
     assert promotion.category == "Indumentaria"
+    assert promotion.promotion_url == (
+        "https://www.galicia.ar/personas/buscador-de-promociones"
+        "?path=%2Fpromocion%2F170826%7CViamo%7CMarca"
+    )
 
     assert promotion.discount_percentage == 20
     assert promotion.installments == 3
@@ -170,8 +174,11 @@ def test_normalizes_category_promotion_without_merchant():
 
     assert promotion.scope == "category"
     assert promotion.merchant is None
-    assert promotion.merchant_url is None
     assert promotion.category == "Combustible"
+    assert promotion.promotion_url == (
+        "https://www.galicia.ar/personas/buscador-de-promociones"
+        "?path=%2Fpromocion%2F181389%7CCombustible%7CCategoria"
+    )
 
     assert promotion.discount_percentage == 10
     assert promotion.installments is None
@@ -318,3 +325,21 @@ def test_normalizes_shopping_scope():
     normalizer = GaliciaNormalizer()
 
     assert normalizer._normalize_scope("Shopping") == "shopping"
+
+
+def test_builds_encoded_promotion_url():
+    normalizer = GaliciaNormalizer()
+
+    url = normalizer._build_promotion_url(123456, "Masse Cariló", "Marca")
+
+    assert url == (
+        "https://www.galicia.ar/personas/buscador-de-promociones"
+        "?path=%2Fpromocion%2F123456%7CMasse+Caril%C3%B3%7CMarca"
+    )
+
+
+def test_returns_none_when_promotion_url_cannot_be_built():
+    normalizer = GaliciaNormalizer()
+
+    assert normalizer._build_promotion_url(123456, None, "Marca") is None
+    assert normalizer._build_promotion_url(123456, "Viamo", None) is None

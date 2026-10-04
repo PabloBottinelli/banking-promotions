@@ -1,9 +1,11 @@
 from datetime import datetime
-
+from urllib.parse import urlencode
 from normalization.models import NormalizedPromotion, PaymentMethod
 
 
 class GaliciaNormalizer:
+    PROMOTIONS_URL = "https://www.galicia.ar/personas/buscador-de-promociones"
+    
     DAYS = {
         "Lu": "monday",
         "Ma": "tuesday",
@@ -57,7 +59,7 @@ class GaliciaNormalizer:
             scope=self._normalize_scope(scope),
             merchant=brand.get("nombre") if brand else None,
             category=self._extract_category(catalog, detail, scope),
-            merchant_url=brand.get("urlTiendaOnline") if brand else None,
+            promotion_url=self._build_promotion_url(raw["source_id"], catalog["titulo"], scope),
             discount_percentage=self._normalize_discount(detail.get("porcentajeAhorro")),
             installments=detail.get("cuotaSinInteresHasta"),
             valid_from=self._parse_date(detail["fechaDesde"]),
@@ -80,6 +82,13 @@ class GaliciaNormalizer:
 
     def _parse_date(self, value: str):
         return datetime.strptime(value, "%d/%m/%Y").date()
+
+    def _build_promotion_url(self, source_id: str | int, title: str | None, promotion_type: str | None) -> str | None:
+        if not source_id or not title or not promotion_type:
+            return None
+
+        path = f"/promocion/{source_id}|{title}|{promotion_type}"
+        return f"{self.PROMOTIONS_URL}?{urlencode({'path': path})}"
 
     def _normalize_days(self, value: str | None) -> list[str]:
         if not value:

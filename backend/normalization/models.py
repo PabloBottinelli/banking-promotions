@@ -20,7 +20,7 @@ class NormalizedPromotion(BaseModel):
 
     merchant: str | None = None
     category: str | None = None
-    merchant_url: str | None = None
+    promotion_url: str | None = None
 
     discount_percentage: float | None = None
 
