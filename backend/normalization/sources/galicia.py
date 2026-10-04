@@ -36,6 +36,11 @@ class GaliciaNormalizer:
         "Unico": "one_time",
     }
 
+    CUSTOMER_SEGMENTS = {
+        "Eminent": "eminent",
+        "Eminent Black": "eminent_black",
+    }
+
     def normalize(self, raw: dict) -> NormalizedPromotion:
         catalog = raw["catalog"]
         detail = raw["detail"]
@@ -61,15 +66,15 @@ class GaliciaNormalizer:
             cap_amount=cap_amount,
             cap_scope=cap_scope,
             cap_period=cap_period,
-            online=detail.get("tiendaOnline", False),
-            physical=detail.get("tiendaFisica", False),
             minimum_purchase=detail.get("minimoCompra"),
             payment_methods=self._normalize_payment_methods(detail.get("mediosDePago", [])),
+            online=detail.get("tiendaOnline", False),
+            physical=detail.get("tiendaFisica", False),
             qr=catalog.get("pagoQR", False),
             nfc=catalog.get("pagoNFC", False),
             contactless=catalog.get("contactLess", False),
-            customer_segment=detail.get("modeloAtencion", {}).get("nombre"),
-            salary_customer=detail.get("haberes", False),
+            customer_segments=self._normalize_customer_segments(detail),
+            eligibility_requirements=[],
             terms=detail.get("legales"),
         )
 
@@ -90,7 +95,7 @@ class GaliciaNormalizer:
 
     def _normalize_scope(self, value: str | None) -> str:
         return self.SCOPE_TYPES.get(value, "other")
-    
+
     def _extract_category(self, catalog: dict, detail: dict, scope: str | None) -> str | None:
         if scope == "Categoria":
             category = detail.get("categoria")
@@ -141,3 +146,17 @@ class GaliciaNormalizer:
             return "visa"
 
         return None
+
+    def _normalize_customer_segments(self, detail: dict) -> list[str]:
+        segments = []
+
+        if detail.get("haberes", False):
+            segments.append("salary")
+
+        raw_segment = detail.get("modeloAtencion", {}).get("nombre")
+        segment = self.CUSTOMER_SEGMENTS.get(raw_segment)
+
+        if segment:
+            segments.append(segment)
+
+        return segments

@@ -40,9 +40,6 @@ def test_normalizes_merchant_promotion():
             },
             "tiendaOnline": True,
             "tiendaFisica": True,
-            "flagQR": False,
-            "flagNFC": False,
-            "contactLess": False,
             "haberes": False,
             "minimoCompra": None,
             "legales": "Condiciones...",
@@ -72,7 +69,9 @@ def test_normalizes_merchant_promotion():
     assert promotion.payment_methods[0].network == "visa"
     assert promotion.payment_methods[0].card_type == "credit"
 
-    assert promotion.salary_customer is False
+    assert promotion.customer_segments == []
+    assert promotion.eligibility_requirements == []
+
 
 def test_normalizes_cap():
     raw = {
@@ -107,9 +106,6 @@ def test_normalizes_cap():
             },
             "tiendaOnline": False,
             "tiendaFisica": True,
-            "flagQR": False,
-            "flagNFC": False,
-            "contactLess": False,
             "haberes": False,
             "minimoCompra": None,
             "legales": None,
@@ -124,6 +120,7 @@ def test_normalizes_cap():
     assert promotion.cap_amount == 15000
     assert promotion.cap_scope == "customer"
     assert promotion.cap_period == "monthly"
+
 
 def test_normalizes_category_promotion_without_merchant():
     raw = {
@@ -189,6 +186,9 @@ def test_normalizes_category_promotion_without_merchant():
     assert promotion.nfc is True
     assert promotion.contactless is False
 
+    assert promotion.customer_segments == []
+
+
 def test_normalizes_salary_customer():
     raw = {
         "source": "galicia",
@@ -219,9 +219,6 @@ def test_normalizes_salary_customer():
             },
             "tiendaOnline": False,
             "tiendaFisica": False,
-            "flagQR": True,
-            "flagNFC": True,
-            "contactLess": False,
             "haberes": True,
             "minimoCompra": None,
             "legales": None,
@@ -230,7 +227,64 @@ def test_normalizes_salary_customer():
 
     promotion = GaliciaNormalizer().normalize(raw)
 
-    assert promotion.salary_customer is True
+    assert promotion.customer_segments == ["salary"]
+
+
+def test_normalizes_eminent_customer():
+    detail = {
+        "modeloAtencion": {
+            "nombre": "Eminent",
+            "exclusivo": True,
+        },
+        "haberes": False,
+    }
+
+    segments = GaliciaNormalizer()._normalize_customer_segments(detail)
+
+    assert segments == ["eminent"]
+
+
+def test_normalizes_eminent_black_customer():
+    detail = {
+        "modeloAtencion": {
+            "nombre": "Eminent Black",
+            "exclusivo": False,
+        },
+        "haberes": False,
+    }
+
+    segments = GaliciaNormalizer()._normalize_customer_segments(detail)
+
+    assert segments == ["eminent_black"]
+
+
+def test_ignores_cross_customer_segment():
+    detail = {
+        "modeloAtencion": {
+            "nombre": "Cross",
+            "exclusivo": False,
+        },
+        "haberes": False,
+    }
+
+    segments = GaliciaNormalizer()._normalize_customer_segments(detail)
+
+    assert segments == []
+
+
+def test_salary_customer_can_have_another_segment():
+    detail = {
+        "modeloAtencion": {
+            "nombre": "Eminent",
+            "exclusivo": True,
+        },
+        "haberes": True,
+    }
+
+    segments = GaliciaNormalizer()._normalize_customer_segments(detail)
+
+    assert segments == ["salary", "eminent"]
+
 
 def test_normalizes_purchase_cap():
     detail = {
@@ -245,6 +299,7 @@ def test_normalizes_purchase_cap():
     assert scope == "purchase"
     assert period == "one_time"
 
+
 def test_normalizes_weekly_cap():
     detail = {
         "tipoTope": "Cliente",
@@ -257,6 +312,7 @@ def test_normalizes_weekly_cap():
     assert amount == 10000
     assert scope == "customer"
     assert period == "weekly"
+
 
 def test_normalizes_shopping_scope():
     normalizer = GaliciaNormalizer()

@@ -1,7 +1,7 @@
 from datetime import date, datetime
 from typing import Literal
 
-from pydantic import BaseModel
+from pydantic import BaseModel, Field
 
 
 class PaymentMethod(BaseModel):
@@ -45,7 +45,7 @@ class NormalizedPromotion(BaseModel):
     nfc: bool
     contactless: bool
 
-    customer_segment: str | None = None
-    salary_customer: bool = False
+    customer_segments: list[str] = Field(default_factory=list)
+    eligibility_requirements: list[str] = Field(default_factory=list)
 
     terms: str | None = None
