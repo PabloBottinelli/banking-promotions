@@ -2,3 +2,4 @@ httpx
 pytest
 pydantic
 python-dotenv
+bs4
