@@ -6,7 +6,7 @@ from normalization.models import NormalizedPromotion, PaymentMethod
 
 
 class BBVANormalizer:
-    PROMOTIONS_URL = "https://www.bbva.com.ar/personas/beneficios.html"
+    PROMOTIONS_URL = "https://www.bbva.com.ar/beneficios/"
 
     DAYS = [
         "monday",
@@ -40,7 +40,7 @@ class BBVANormalizer:
             title=title,
             scope="merchant",
             merchant=title or None,
-            category=subtitle or None,
+            category=None,
             promotion_url=self.PROMOTIONS_URL,
             discount_percentage=self._extract_discount(title, subtitle, requirements, terms),
             installments=self._normalize_installments(benefit.get("cuota")),
@@ -55,9 +55,9 @@ class BBVANormalizer:
             online=self._has_online_channels(channels),
             physical=self._has_physical_channels(channels),
             qr=self._contains_requirement(requirements, "qr"),
-            nfc=False,
+            nfc=self._contains_requirement(requirements, "nfc"),
             contactless=self._contains_requirement(requirements, "contactless"),
-            customer_segments=[],
+            customer_segments=["black"] if "black" in (terms or "").lower() else [],
             eligibility_requirements=requirements,
             terms=terms,
         )
