@@ -66,8 +66,14 @@ def main():
     print()
     print(f"Promociones crudas: {len(raw_promotions)}")
 
+    if not raw_promotions:
+        raise RuntimeError("El scraper no devolvió promociones. Se cancela la sincronización.")
+
     print("Normalizando...")
     promotions = normalize_promotions(raw_promotions)
+
+    if not promotions:
+        raise RuntimeError("No se generaron promociones normalizadas. Se cancela la sincronización.")   
 
     print(f"Promociones normalizadas: {len(promotions)}")
 
