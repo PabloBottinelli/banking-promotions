@@ -4,6 +4,9 @@ from pathlib import Path
 
 import httpx
 
+from scraping.http_client import DEFAULT_TIMEOUT, get_with_retries
+from scraping.models import ScrapeResult
+
 
 BACKEND_DIR = Path(__file__).resolve().parents[3]
 DATA_DIR = BACKEND_DIR / "data"
@@ -22,11 +25,14 @@ class BBVAScraper:
     }
 
     def __init__(self, client: httpx.Client | None = None):
-        self.client = client or httpx.Client(timeout=30, follow_redirects=True, headers=self.HEADERS)
+        self.client = client or httpx.Client(timeout=DEFAULT_TIMEOUT, follow_redirects=True, headers=self.HEADERS)
 
     def fetch_catalog_page(self, page: int) -> list[dict]:
-        response = self.client.get(self.CATALOG_URL, params={"pager": page}, timeout=30)
-        response.raise_for_status()
+        response = get_with_retries(
+            self.client,
+            self.CATALOG_URL,
+            params={"pager": page},
+        )
 
         data = response.json().get("data", [])
 
@@ -53,8 +59,10 @@ class BBVAScraper:
         return promotions
 
     def fetch_promotion_detail(self, promotion_id: str | int) -> dict:
-        response = self.client.get(f"{self.DETAIL_URL}/{promotion_id}", timeout=30)
-        response.raise_for_status()
+        response = get_with_retries(
+            self.client,
+            f"{self.DETAIL_URL}/{promotion_id}",
+        )
 
         detail = response.json().get("data", {})
 
@@ -63,7 +71,7 @@ class BBVAScraper:
 
         return detail
 
-    def scrape(self, limit: int | None = None) -> list[dict]:
+    def scrape(self, limit: int | None = None) -> ScrapeResult:
         catalog = self.fetch_catalog()
 
         if limit is not None:
@@ -77,6 +85,7 @@ class BBVAScraper:
 
             if not promotion_id:
                 print(f"[{index}/{len(catalog)}] Promoción sin ID")
+                errors.append(f"missing-id:{index}")
                 continue
 
             print(f"[{index}/{len(catalog)}] Descargando {promotion_id}")
@@ -84,8 +93,8 @@ class BBVAScraper:
             try:
                 detail = self.fetch_promotion_detail(promotion_id)
             except httpx.HTTPError as error:
-                print(f"Error descargando {promotion_id}: {error}")
-                errors.append(promotion_id)
+                print(f"Error descargando {promotion_id}: {type(error).__name__}: {error}")
+                errors.append(str(promotion_id))
                 continue
 
             promotions.append(
@@ -106,7 +115,11 @@ class BBVAScraper:
         if errors:
             print(f"IDs con error: {errors}")
 
-        return promotions
+        return ScrapeResult(
+            promotions=promotions,
+            catalog_count=len(catalog),
+            failed_ids=errors,
+        )
 
     def save_raw_promotions(self, promotions: list[dict]) -> None:
         output_path = DATA_DIR / "bbva_promotions.json"
@@ -120,5 +133,5 @@ class BBVAScraper:
 
 if __name__ == "__main__":
     scraper = BBVAScraper()
-    promotions = scraper.scrape()
-    scraper.save_raw_promotions(promotions)
+    result = scraper.scrape()
+    scraper.save_raw_promotions(result.promotions)

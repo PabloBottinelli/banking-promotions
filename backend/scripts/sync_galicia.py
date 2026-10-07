@@ -1,11 +1,12 @@
 import argparse
 import json
-from pathlib import Path
 from datetime import datetime, timezone
+from pathlib import Path
 
 from normalization.models import NormalizedPromotion
 from normalization.sources.galicia import GaliciaNormalizer
 from persistence.supabase_repository import SupabasePromotionRepository
+from scraping.models import ScrapeResult
 from scraping.sources.galicia.scraper import GaliciaScraper
 
 
@@ -38,12 +39,12 @@ def normalize_promotions(raw_promotions: list[dict]) -> list[NormalizedPromotion
     return promotions
 
 
-def scrape_promotions() -> list[dict]:
+def scrape_promotions() -> ScrapeResult:
     scraper = GaliciaScraper()
-    promotions = scraper.scrape()
-    scraper.save_raw_promotions(promotions)
+    result = scraper.scrape()
+    scraper.save_raw_promotions(result.promotions)
 
-    return promotions
+    return result
 
 
 def main():
@@ -51,13 +52,18 @@ def main():
     parser.add_argument("--from-file", action="store_true")
     args = parser.parse_args()
 
+    scrape_complete = False
+
     if args.from_file:
         print(f"Leyendo promociones desde {RAW_PATH}")
         raw_promotions = load_raw_promotions()
     else:
         print("Scrapeando promociones de Galicia...")
-        raw_promotions = scrape_promotions()
+        result = scrape_promotions()
+        raw_promotions = result.promotions
+        scrape_complete = result.complete
 
+    print()
     print(f"Promociones crudas: {len(raw_promotions)}")
 
     if not raw_promotions:
@@ -71,6 +77,7 @@ def main():
 
     print(f"Promociones normalizadas: {len(promotions)}")
 
+    print()
     print("Sincronizando con Supabase...")
 
     repository = SupabasePromotionRepository()
@@ -78,12 +85,22 @@ def main():
 
     total = repository.upsert_many(promotions, batch_size=200, seen_at=sync_started_at)
 
-    deactivated = repository.deactivate_not_seen("galicia", sync_started_at)
+    if scrape_complete:
+        deactivated = repository.deactivate_not_seen("galicia", sync_started_at)
+    else:
+        deactivated = 0
+
+        print()
+        print("Scraping incompleto o carga desde archivo.")
+        print("Se omite la desactivación de promociones de Galicia.")
 
     print()
-    print(f"Sincronización finalizada:")
+    print("Sincronización finalizada:")
+    print(f"  Promociones crudas: {len(raw_promotions)}")
+    print(f"  Promociones normalizadas: {len(promotions)}")
     print(f"  Activas encontradas: {total}")
     print(f"  Desactivadas: {deactivated}")
+    print(f"  Scraping completo: {'sí' if scrape_complete else 'no'}")
 
 
 if __name__ == "__main__":

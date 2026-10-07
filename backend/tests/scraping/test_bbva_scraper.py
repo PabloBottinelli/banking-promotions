@@ -100,9 +100,13 @@ def test_scrape_continues_when_detail_fails():
     client = httpx.Client(transport=httpx.MockTransport(handler))
     scraper = BBVAScraper(client=client)
 
-    promotions = scraper.scrape()
+    result = scraper.scrape()
+    promotions = result.promotions
 
     assert len(promotions) == 1
+    assert result.catalog_count == 2
+    assert result.failed_ids == ["1"]
+    assert result.complete is False
 
     promotion = promotions[0]
 

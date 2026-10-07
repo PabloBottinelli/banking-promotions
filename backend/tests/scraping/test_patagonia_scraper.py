@@ -415,7 +415,8 @@ def test_scrape_uses_real_sku_and_preserves_on_segment():
     client = httpx.Client(transport=httpx.MockTransport(handler))
     scraper = PatagoniaScraper(client=client)
 
-    promotions = scraper.scrape()
+    result = scraper.scrape()
+    promotions = result.promotions
 
     assert len(promotions) == 1
 
@@ -434,3 +435,85 @@ def test_scrape_uses_real_sku_and_preserves_on_segment():
     assert promotion["detail"]["sku"] == "2026_05_05_Vans_ON"
 
     assert "scraped_at" in promotion
+
+def test_fetch_promotion_detail_retries_after_timeout(monkeypatch):
+    attempts = 0
+
+    def handler(request: httpx.Request):
+        nonlocal attempts
+        attempts += 1
+
+        if attempts < 3:
+            raise httpx.ConnectTimeout("timeout", request=request)
+
+        return httpx.Response(
+            200,
+            text="""
+            <main>
+                <div class="product-info-main">
+                    <h1>Vans</h1>
+                </div>
+            </main>
+            """,
+        )
+
+    monkeypatch.setattr(
+        "scraping.http_client.time.sleep",
+        lambda _: None,
+    )
+
+    client = httpx.Client(transport=httpx.MockTransport(handler))
+    scraper = PatagoniaScraper(client=client)
+
+    detail = scraper.fetch_promotion_detail(
+        "https://ahorrosybeneficios.bancopatagonia.com.ar/on/vans2.html"
+    )
+
+    assert attempts == 3
+    assert detail["title"] == "Vans"
+
+def test_scrape_marks_result_as_incomplete_when_detail_fails(monkeypatch):
+    scraper = PatagoniaScraper()
+
+    monkeypatch.setattr(
+        scraper,
+        "fetch_catalog",
+        lambda limit=None: [
+            {
+                "source_id": "ok",
+                "u": "https://example.com/ok.html",
+                "value": "OK",
+                "c": [],
+                "segment": None,
+            },
+            {
+                "source_id": "failed",
+                "u": "https://example.com/failed.html",
+                "value": "Failed",
+                "c": [],
+                "segment": None,
+            },
+        ],
+    )
+
+    def fetch_detail(url):
+        if "failed" in url:
+            raise httpx.ConnectTimeout("timeout")
+
+        return {
+            "sku": "ok",
+            "title": "OK",
+        }
+
+    monkeypatch.setattr(
+        scraper,
+        "fetch_promotion_detail",
+        fetch_detail,
+    )
+
+    result = scraper.scrape()
+
+    assert len(result.promotions) == 1
+    assert result.catalog_count == 2
+    assert result.failed_ids == ["failed"]
+    assert result.complete is False

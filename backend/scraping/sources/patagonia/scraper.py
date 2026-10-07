@@ -3,6 +3,8 @@ import json
 import re
 from pathlib import Path
 from urllib.parse import urljoin, urlparse
+from scraping.http_client import DEFAULT_TIMEOUT, get_with_retries
+from scraping.models import ScrapeResult
 
 import httpx
 from bs4 import BeautifulSoup
@@ -25,11 +27,10 @@ class PatagoniaScraper:
     }
 
     def __init__(self, client: httpx.Client | None = None):
-        self.client = client or httpx.Client(timeout=30, follow_redirects=True, headers=self.HEADERS, verify=False)
+        self.client = client or httpx.Client(timeout=DEFAULT_TIMEOUT, follow_redirects=True, headers=self.HEADERS, verify=False)
 
     def fetch_category_urls(self, root_url: str, path_prefix: str) -> list[tuple[str, str]]:
-        response = self.client.get(root_url, timeout=30)
-        response.raise_for_status()
+        response = get_with_retries(self.client, root_url)
 
         soup = BeautifulSoup(response.text, "html.parser")
 
@@ -69,8 +70,7 @@ class PatagoniaScraper:
         return categories
 
     def fetch_category_page(self, url: str, category_name: str) -> tuple[list[dict], str | None]:
-        response = self.client.get(url, timeout=30)
-        response.raise_for_status()
+        response = get_with_retries(self.client, url)
 
         soup = BeautifulSoup(response.text, "html.parser")
 
@@ -183,8 +183,7 @@ class PatagoniaScraper:
         return list(promotions.values())
 
     def fetch_promotion_detail(self, url: str) -> dict:
-        response = self.client.get(url, timeout=30)
-        response.raise_for_status()
+        response = get_with_retries(self.client, url)
 
         soup = BeautifulSoup(response.text, "html.parser")
 
@@ -219,7 +218,7 @@ class PatagoniaScraper:
             "url": url,
         }
 
-    def scrape(self, limit: int | None = None) -> list[dict]:
+    def scrape(self, limit: int | None = None) -> ScrapeResult:
         catalog = self.fetch_catalog(limit=limit)
 
         promotions = []
@@ -262,7 +261,11 @@ class PatagoniaScraper:
         if errors:
             print(f"IDs con error: {errors}")
 
-        return promotions
+        return ScrapeResult(
+            promotions=promotions,
+            catalog_count=len(catalog),
+            failed_ids=errors,
+        )
 
     def save_raw_promotions(self, promotions: list[dict]) -> None:
         output_path = DATA_DIR / "patagonia_promotions.json"
@@ -295,5 +298,5 @@ class PatagoniaScraper:
 
 if __name__ == "__main__":
     scraper = PatagoniaScraper()
-    promotions = scraper.scrape()
-    scraper.save_raw_promotions(promotions)
+    result = scraper.scrape()
+    scraper.save_raw_promotions(result.promotions)

@@ -43,12 +43,12 @@ def normalize_promotions(raw_promotions: list[dict]) -> list[NormalizedPromotion
     return promotions
 
 
-def scrape_promotions() -> list[dict]:
+def scrape_promotions():
     scraper = PatagoniaScraper()
-    promotions = scraper.scrape()
-    scraper.save_raw_promotions(promotions)
+    result = scraper.scrape()
+    scraper.save_raw_promotions(result.promotions)
 
-    return promotions
+    return result
 
 
 def main():
@@ -56,12 +56,16 @@ def main():
     parser.add_argument("--from-file", action="store_true")
     args = parser.parse_args()
 
+    scrape_complete = False
+
     if args.from_file:
         print(f"Leyendo promociones desde {RAW_PATH}")
         raw_promotions = load_raw_promotions()
     else:
         print("Scrapeando promociones de Banco Patagonia...")
-        raw_promotions = scrape_promotions()
+        result = scrape_promotions()
+        raw_promotions = result.promotions
+        scrape_complete = result.complete
 
     print()
     print(f"Promociones crudas: {len(raw_promotions)}")
@@ -89,10 +93,16 @@ def main():
         seen_at=sync_started_at,
     )
 
-    deactivated = repository.deactivate_not_seen(
-        "patagonia",
-        sync_started_at,
-    )
+    if scrape_complete:
+        deactivated = repository.deactivate_not_seen(
+            "patagonia",
+            sync_started_at,
+        )
+    else:
+        deactivated = 0
+
+        print()
+        print("Scraping incompleto: se omite la desactivación de promociones.")
 
     print()
     print("Sincronización finalizada:")
