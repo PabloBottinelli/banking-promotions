@@ -50,4 +50,4 @@ jobs:
         env:
           SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
           SUPABASE_SECRET_KEY: ${{ secrets.SUPABASE_SECRET_KEY }}
-        run: python scripts/sync_${{ matrix.source }}.py
+        run: python -m scripts.sync_${{ matrix.source }}
