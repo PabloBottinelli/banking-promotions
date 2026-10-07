@@ -110,7 +110,7 @@ def main():
     print(f"  Promociones normalizadas: {len(promotions)}")
     print(f"  Activas encontradas: {total}")
     print(f"  Desactivadas: {deactivated}")
-
+    print(f"  Scraping completo: {'sí' if scrape_complete else 'no'}")
 
 if __name__ == "__main__":
     main()
