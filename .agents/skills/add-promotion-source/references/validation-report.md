@@ -1,52 +1,38 @@
-# Integration validation report — response template
+# Developer handoff report — add-promotion-source
 
-Use this structure in the final reply; do not invent values. Use `unverified` / `not run` where evidence is absent.
+Use facts from executed commands and inspected source, not guesses. Mark blocked/unverified explicitly.
 
 ## Source and implementation
 
-- Source / website:
-- Verified endpoints or HTML pages (and retrieval approach):
-- Files created/changed:
-- Key design decisions (especially entity↔benefit relationship and IDs):
+- Source and official entry URL:
+- In-scope catalog boundaries:
+- Discovery/detail mechanisms and pagination evidence:
+- Files modified and design (entity↔benefit mapping, variant IDs):
 
-## Live extraction metrics
+## Observed results
 
-| Metric | Value | Evidence / caveat |
+| Metric | Value | Evidence/caveat |
 |---|---:|---|
-| Catalog entities found | | |
-| Unique catalog entity IDs | | |
-| Unique benefit IDs returned | | |
-| Entity-benefit associations | | |
-| Detail retrieval success | | |
-| Detail unavailable | | |
-| Detail HTTP/parsing failures | | |
-| Normalized promotion rows | | |
-| Unique normalized IDs | | |
-| Source entities with multiple benefits | | |
-| Skipped non-promotional listings | | |
-| Missing required data | | |
-| Ambiguous/unverified associations | | |
+| Raw catalog entities | | |
+| Unique raw benefit IDs | | |
+| Entity–benefit associations | | |
+| Details successful / unavailable / failed | | |
+| Normalized rows / unique normalized IDs | | |
+| Multiple-benefit records | | |
+| Excluded/missing/ambiguous items (by reason) | | |
+| Field coverage (days, methods, dates, caps, etc.) | | |
 
-## Normalized field coverage
+## Initial validation
 
-Report present/known/missing or not-applicable counts for merchant, category, discount, installments, validity, weekdays, caps, payment methods, minimum purchase, channels, and terms. Null does not automatically imply an error.
+- Representative official-source comparisons (up to 10+ when present):
+- Observed mismatches and information not representable in current model:
+- Unit/mock tests and full pytest: commands and actual results:
+- Live scraper/local normalization: commands, outcome and raw file path:
 
-## Source cross-check
+## Safety and QA handoff
 
-Give a table of real representative cases (ideally ≥10): source page or ID, what the source says, what normalization produces, pass/mismatch and notes. Include multiple variants and negative cases when available.
-
-## Tests / execution
-
-- Mocked unit tests: commands, pass/fail counts.
-- Real scraper command: outcome and path saved.
-- Local normalization audit command: outcome.
-- Full pytest command: outcome.
-- No database sync performed: yes/no.
-
-## Completeness and recommendation
-
-- `ScrapeResult.complete`: true/false with precise reasoning.
-- Is full source coverage independently verified? yes/no, evidence.
-- Risks and unresolved records grouped by cause.
-- State: **Ready for review / Partial – not scheduled / Blocked**.
-- Scheduled workflow changed? yes/no and user authorization.
+- `ScrapeResult.complete`: value, **defined scope**, evidence and limitations.
+- If normalization omits records, how could that affect `SyncRunner.deactivate_not_seen`?
+- Remaining uncertainties for **independent QA**:
+- Supabase writes/scheduled workflow executed? (must be no unless authorized):
+- Status: **Ready for independent QA / Partial / Blocked**.

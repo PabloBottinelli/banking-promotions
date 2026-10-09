@@ -1,55 +1,45 @@
-# Add-promotion-source acceptance checklist
+# Developer checklist — add-promotion-source
 
-Use this as a **gate**, not a rubber stamp. Record evidence for each applicable item. If evidence is missing, mark it unverified rather than passed.
+Record evidence; label unverifiable steps instead of pretending they passed. This is an **implementation handoff**, not independent sign-off.
 
-## 1. Source investigation
+## Investigation
 
-- [ ] Real public source URL(s) and data retrieval method documented.
-- [ ] Catalog, detail and optional alternate endpoints verified from live responses.
-- [ ] Pagination/cursors/search ranking/per-request caps tested; category filtering verified.
-- [ ] Source-total/completeness signal established **or explicitly declared unverified**.
-- [ ] Distinction between merchant/entity, campaign/category and benefit examined.
-- [ ] At least one real case with multiple benefits and one ambiguous/missing case examined where available.
+- [ ] Current models, runner, other sources and test conventions inspected.
+- [ ] Official URL(s), catalog scope and live API/HTML mechanism identified.
+- [ ] Actual pagination, geography, categories, result caps and lazy loading investigated.
+- [ ] Source completeness argument documented; a site-wide total is **not mandatory** for a structurally exhaustive finite listing.
+- [ ] Catalog entities, actual benefits, variants and shared relationships distinguished.
+- [ ] Field mapping grounded in original API, visible content or legal terms.
 
-## 2. Raw scraping
+## Extraction
 
-- [ ] `scrape()` produces correct `ScrapeResult` and raw records (`source`, stable `source_id`, UTC `scraped_at`, original fields, provenance).
-- [ ] Detail failures and unavailable details differentiated; no fabricated success.
-- [ ] Deduplication does not drop category associations or other useful evidence.
-- [ ] `limit` and uncertain coverage never yield `complete=True`.
-- [ ] Empty/partial runs do not silently overwrite good raw data.
-- [ ] CLI entry point runs; logs catalog/unique/duplicates/details/errors/completeness/output path; no `runpy` warning.
+- [ ] Raw fields/provenance preserved; stable entity IDs and UTC timestamp used.
+- [ ] Details, HTTP/parse failures, unavailable links and duplicates counted separately.
+- [ ] Limit, truncation, unknown coverage, unexpected selector/layout changes never silently count as complete.
+- [ ] Safe raw writing and meaningful command-line progress/summary logs.
+- [ ] Runnable `python -m scraping.sources.<source>.scraper` without an avoidable `runpy` warning.
 
-## 3. Normalization
+## Normalization
 
-- [ ] All independently applicable benefits represented, including one-to-many variants.
-- [ ] Merchant names come from merchant evidence, not benefit titles or vague heuristics.
-- [ ] Explicit entity↔benefit relations verified; no arbitrary first promotion.
-- [ ] Stable, unique `source_id` values, including variants/shared benefits.
-- [ ] Correct dates, weekdays, discounts, installments, caps/scope/periods, payment methods, channels, eligibility, terms and minima where supported.
-- [ ] Concurrent caps and source schema mismatches documented (not silently discarded).
-- [ ] Skipped/non-normalizable records classified by precise reasons, not made to vanish.
-- [ ] No invented values or modified shared schema to hide missing fields.
+- [ ] All independently valid variants represented or exclusions justified.
+- [ ] Merchant name ≠ promotion title unless evidenced; N:M relations handled.
+- [ ] Unique, stable normalized IDs; no index-based IDs or arbitrary first match.
+- [ ] Explicit validity/weekday/payment type/app/channel/amount/currency/caps/terms parsing reviewed.
+- [ ] Missing facts not invented; unsupported benefit categories and schema limitations disclosed.
+- [ ] Potential loss of valid normalized records and deactivation risk assessed, even if scrape coverage is verified.
 
-## 4. Testing
+## Initial tests and evidence
 
-- [ ] Mock HTTP tests cover pagination/caps, errors, empty data, duplicates, completeness, raw saving and logging.
-- [ ] Normalizer tests cover multiple/shared benefits, relationships and stable IDs.
-- [ ] Real fixtures remain unmodified in tests; synthetic tests clearly separated.
-- [ ] Clean-checkout tests do not depend on `backend/data/`, `.env` or previous runs.
-- [ ] Targeted tests and full pytest suite executed; exact outcomes reported.
+- [ ] Focused mocked/unit tests for catalog/details/errors/normalization/ID stability/completeness.
+- [ ] Tests work without ignored `backend/data/` or production credentials.
+- [ ] Captured raw examples unaltered; synthetic cases separated.
+- [ ] Targeted tests and full pytest attempted; results truthful.
+- [ ] Read-only source and local normalization audit attempted, with counts and edge cases reported.
+- [ ] No reference/golden test infrastructure created.
 
-## 5. Real validation
+## Handoff
 
-- [ ] Read-only live scraper run performed, or why unavailable explained.
-- [ ] Full raw dataset audited: entities, unique promotions, associations, normalized records, field coverage, errors, exclusions.
-- [ ] At least 10 representative real cases checked against the source when available; list cases and results.
-- [ ] Significant missing fields, relationships, filters and source-only limitations disclosed.
-- [ ] Completeness and `ScrapeResult.complete` assessment backed by evidence.
-
-## 6. Operations
-
-- [ ] `sync_<source>.py` delegates to existing `SyncRunner`; no production sync executed.
-- [ ] No Supabase writes, deployment, secrets access, workflow scheduling or PR actions without authorization.
-- [ ] Files changed and remaining risks summarized.
-- [ ] Integration explicitly labeled **Ready for review**, **Partial / not scheduled**, or **Blocked**.
+- [ ] No Supabase write, scheduled workflow change, deployment or unauthorized push.
+- [ ] Modified files, known limitations and open questions listed.
+- [ ] Status **Ready for independent QA**, **Partial** or **Blocked** provided.
+- [ ] Separate `$validate-promotion-source` session recommended; no self-claim of QA approval.
