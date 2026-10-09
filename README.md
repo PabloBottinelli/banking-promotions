@@ -3,108 +3,108 @@
   <a href="README.es.md">🇦🇷 Español</a>
 </p>
 
-# Promociones Bancarias
+# Banking Promotions
 
-![Status](https://img.shields.io/badge/STATUS-EN%20DESARROLLO-4C9A2A)
+![Status](https://img.shields.io/badge/STATUS-IN%20DEVELOPMENT-4C9A2A)
 ![Python](https://img.shields.io/badge/Python-3776AB?logo=python\&logoColor=white)
 ![Pydantic](https://img.shields.io/badge/Pydantic-E92063?logo=pydantic\&logoColor=white)
 ![Supabase](https://img.shields.io/badge/Supabase-3FCF8E?logo=supabase\&logoColor=white)
 ![GitHub Actions](https://img.shields.io/badge/GitHub%20Actions-2088FF?logo=githubactions\&logoColor=white)
 ![Pytest](https://img.shields.io/badge/Tests-Pytest-0A9EDC?logo=pytest\&logoColor=white)
 
-# Descripción
+# Description
 
-Sistema para centralizar y consultar promociones bancarias y beneficios de diferentes medios de pago disponibles en Argentina.
+A system designed to centralize and search banking promotions and payment method benefits available in Argentina.
 
-El objetivo es facilitar el ahorro permitiendo encontrar descuentos, reintegros y promociones de manera rápida y sencilla, evitando tener que revisar individualmente las páginas o aplicaciones de cada banco, billetera virtual o comercio.
+The goal is to make it easier to save money by providing a quick and convenient way to find discounts, cashback offers, and other promotions without having to check each bank's, digital wallet's, or retailer's website or application individually.
 
-El proyecto recopila información de distintas fuentes, conserva los datos originales, los transforma en un formato común y los almacena en una base de datos que se actualiza periódicamente.
+The project collects information from multiple sources, preserves the original data, transforms it into a standardized format, and stores it in a database that is updated periodically.
 
-Actualmente cuenta con un backend desarrollado en Python que permite extraer, normalizar y sincronizar promociones de Galicia, BBVA y Patagonia.
+It currently includes a Python backend that extracts, normalizes, and synchronizes promotions from Galicia, BBVA, and Patagonia.
 
-Actualmente, la información es utilizada por [Telegram Personal Assistant](https://github.com/PabloBottinelli/telegram-personal-assistant), otro proyecto personal que permite consultar las promociones directamente desde Telegram. A futuro, tengo previsto incorporar una interfaz web independiente.
+The data is currently consumed by [Telegram Personal Assistant](https://github.com/PabloBottinelli/telegram-personal-assistant), another personal project that allows users to search for promotions directly through Telegram. I also plan to develop a standalone web interface in the future.
 
-# Decisiones de diseño
+# Design Decisions
 
-## Separación entre scraping y normalización
+## Separation of Scraping and Normalization
 
-Cada banco publica sus promociones utilizando estructuras y formatos diferentes. Algunos proporcionan información mediante APIs, mientras que otros requieren extraerla de páginas HTML.
+Each bank publishes its promotions using different data structures and formats. Some provide information through APIs, while others require extracting data from HTML pages.
 
-Por este motivo, el proyecto separa la obtención de información de su procesamiento.
+For this reason, the project separates data collection from data processing.
 
-Los **scrapers** se encargan de recuperar y conservar los datos originales de cada fuente, mientras que los **normalizadores** transforman esa información en una estructura común.
+**Scrapers** are responsible for retrieving and preserving the original data from each source, while **normalizers** transform that information into a standardized structure.
 
-## Modelo de datos unificado
+## Unified Data Model
 
-Las promociones se representan mediante modelos definidos con **Pydantic**, que permiten estructurar y validar la información obtenida de diferentes fuentes.
+Promotions are represented using **Pydantic** models, which provide data structuring and validation across different sources.
 
-El modelo contempla datos como:
+The model includes information such as:
 
-* Banco de origen e identificador de la promoción.
-* Comercio, categoría y descripción.
-* Porcentaje de descuento y cuotas sin interés.
-* Vigencia y días de aplicación.
-* Topes de reintegro y condiciones.
-* Medios de pago admitidos.
-* Canales de compra y modalidades de pago.
-* Requisitos de elegibilidad y términos legales.
+* Source bank and promotion identifier.
+* Merchant, category, and description.
+* Discount percentage and interest-free installments.
+* Validity period and applicable days.
+* Cashback limits and conditions.
+* Accepted payment methods.
+* Purchase channels and payment options.
+* Eligibility requirements and terms and conditions.
 
-Como no todas las fuentes proporcionan la misma información, el modelo admite campos opcionales para aquellos datos que no están disponibles.
+Since not all sources provide the same information, the model supports optional fields for data that may be unavailable.
 
-## Supabase como persistencia
+## Supabase as the Persistence Layer
 
-Las promociones normalizadas se almacenan en **Supabase**, utilizando PostgreSQL como base de datos.
+Normalized promotions are stored in **Supabase**, using PostgreSQL as the database.
 
-Cada promoción se identifica mediante la combinación de su fuente y su identificador original, lo que permite actualizar registros existentes mediante operaciones de *upsert* sin generar duplicados.
+Each promotion is uniquely identified by the combination of its source and original identifier, allowing existing records to be updated through *upsert* operations without creating duplicates.
 
-El sistema también registra cuándo fue encontrada por última vez cada promoción.
+The system also tracks when each promotion was last observed.
 
-Cuando una extracción se completa correctamente, las promociones que ya no aparecen en la fuente pueden marcarse como inactivas.
+When a scraping process completes successfully, promotions that are no longer found in the source can be marked as inactive.
 
-Para evitar desactivar promociones válidas por errores de extracción, el proceso omite esta operación cuando el scraping está incompleto.
+To prevent valid promotions from being incorrectly deactivated due to extraction errors, this operation is skipped when scraping is incomplete.
 
-## Automatización de sincronizaciones
+## Automated Synchronization
 
-El proyecto utiliza **GitHub Actions** para ejecutar periódicamente los procesos de extracción, normalización y actualización de la base de datos.
+The project uses **GitHub Actions** to periodically execute data extraction, normalization, and database synchronization processes.
 
-Cada banco se procesa de manera independiente, permitiendo que un error en una fuente no impida intentar sincronizar las restantes.
+Each bank is processed independently, ensuring that a failure in one source does not prevent synchronization attempts for the others.
 
-La lógica de sincronización está centralizada en `SyncRunner`.
+Synchronization logic is centralized in `SyncRunner`.
 
-Las sincronizaciones también pueden ejecutarse manualmente, tanto desde GitHub Actions como desde el entorno local.
+Synchronizations can also be triggered manually, either through GitHub Actions or from the local development environment.
 
 # Testing
 
-El proyecto utiliza **pytest** para probar el comportamiento de los scrapers y normalizadores.
+The project uses **pytest** to test the behavior of scrapers and normalizers.
 
-Los tests permiten verificar aspectos como la obtención de datos, el procesamiento de respuestas y la transformación de promociones al modelo común.
+Tests verify aspects such as data retrieval, response processing, and the transformation of promotions into the unified data model.
 
-En las pruebas de scraping se utilizan respuestas HTTP simuladas para comprobar determinados comportamientos sin depender de las páginas reales de los bancos.
+Scraping tests use mocked HTTP responses to validate specific behaviors without relying on live requests to banking websites.
 
-# Integración con otros proyectos
+# Integration with Other Projects
 
-Este proyecto forma parte de un conjunto de herramientas personales que pueden utilizarse de manera independiente o integrarse entre sí.
+This project is part of a collection of personal tools designed to work independently or integrate with one another.
 
-Actualmente se encuentra integrado con **[Telegram Personal Assistant](https://github.com/PabloBottinelli/telegram-personal-assistant)**, que proporciona una interfaz conversacional para consultar las promociones.
+It is currently integrated with **[Telegram Personal Assistant](https://github.com/PabloBottinelli/telegram-personal-assistant)**, which provides a conversational interface for searching banking promotions.
 
-La integración mantiene separadas las responsabilidades:
+The integration maintains a clear separation of responsibilities:
 
-* **Promociones Bancarias:** recopilación, procesamiento, normalización y almacenamiento de datos.
-* **Telegram Personal Assistant:** recepción de consultas, búsqueda de promociones y presentación de resultados.
+* **Banking Promotions:** Data collection, processing, normalization, and storage.
+* **Telegram Personal Assistant:** Handling user queries, searching promotions, and presenting results.
 
-Ambos proyectos se comunican mediante Supabase, sin que el asistente necesite conocer ni ejecutar los procesos internos de extracción y sincronización.
+Both projects communicate through Supabase, allowing the assistant to access promotion data without needing to interact with or execute the internal scraping and synchronization processes.
 
-# Próximas mejoras
+# Future Improvements
 
-* Incorporar nuevas fuentes bancarias y billeteras virtuales.
-* Mejorar la normalización y el reconocimiento de condiciones particulares de cada promoción.
-* Ampliar las posibilidades de búsqueda y filtrado por comercio, medio de pago, banco y categoría.
-* Desarrollar una interfaz web para consultar y comparar promociones.
-* Ampliar la cobertura de tests y automatizar su ejecución.
-* Mejorar el seguimiento de errores y resultados de las sincronizaciones.
-* Incorporar herramientas para detectar promociones equivalentes entre diferentes fuentes.
+* Add support for more banks and digital wallets.
+* Improve normalization and the extraction of promotion-specific conditions.
+* Expand search and filtering capabilities by merchant, payment method, bank, and category.
+* Develop a web interface for searching and comparing promotions.
+* Increase test coverage and automate test execution.
+* Improve error monitoring and synchronization reporting.
+* Implement mechanisms to identify equivalent promotions across different sources.
 
-# Autor
+# Author
 
 | [<img src="https://github.com/PabloBottinelli.png" width="115"><br><sub>Pablo Bottinelli</sub>](https://github.com/PabloBottinelli) |
 | :---------------------------------------------------------------------------------------------------------------------------------: |
