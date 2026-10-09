@@ -31,7 +31,7 @@ This is an **audit checklist**, not self-certification by the development agent.
 
 - [ ] Existing tests run and their expected values challenged.
 - [ ] Clean-checkout safety: no ignored `backend/data/`, `.env` or machine-specific paths.
-- [ ] Focused ordinary regression tests added in existing directories when justified, with known failures clearly documented.
+- [ ] Reproducible regression test suggestions and expected assertions reported for Dev when justified; QA changed no repository files.
 - [ ] No `backend/tests/validation/`, golden/reference datasets or snapshot-test system introduced.
 
 ## Result

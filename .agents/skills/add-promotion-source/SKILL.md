@@ -1,11 +1,11 @@
 ---
 name: add-promotion-source
-description: Implement a new bank, wallet, or promotions site in Promociones Bancarias (scraper, normalizer, sync entry point, initial unit tests and initial source validation). Use for "agregar banco", "nueva billetera", "integrar fuente", or similar development requests.
+description: Implement a new bank, wallet, or promotions site in Promociones Bancarias (scraper, normalizer, sync entry point, initial unit tests and initial source validation). Use for the `promotion_dev` implementation subagent or explicitly developer-only source tasks. For end-to-end automatic Dev + independent QA, prefer `integrate-promotion-source`.
 ---
 
 # Add a promotion source — developer workflow
 
-You are the **implementer**, not the independent QA reviewer. Apply repository `AGENTS.md`. Follow `references/acceptance-checklist.md` and the report layout in `references/validation-report.md`. After delivery, explicitly recommend a separate fresh session using `$validate-promotion-source`; do not mark the integration independently approved.
+You are the **implementer**, not the independent QA reviewer. Apply repository `AGENTS.md`. Follow `references/acceptance-checklist.md` and the report layout in `references/validation-report.md`. When invoked by `$integrate-promotion-source`, deliver findings to the coordinator, which will spawn `promotion_qa` independently. When invoked standalone, recommend a fresh QA session using `$validate-promotion-source`. Never mark your own work independently approved.
 
 ## 0. Read the project and set a boundary
 
@@ -83,7 +83,8 @@ backend/tests/normalization/test_<source>_normalizer.py
 - Create only a thin `sync_<source>.py` and do not execute it against Supabase.
 - Do not add the source to scheduled GitHub Actions or deploy. Do not push/commit/PR unless requested.
 - Provide a handoff: source name/URL, scope, code files, commands, raw output path (if created), counts, assumptions, known exclusions, `complete` rationale and open questions. **Do not supply self-written tests as the source of truth.**
-- Explicitly ask for a separate agent/session with `$validate-promotion-source`, and leave final quality acceptance to that review and the user.
+- In orchestrated runs, return an evidence-based developer handoff to the coordinator; expect possible numbered `QA-###` findings for correction. Only Dev modifies code and tests to address them, then a **fresh QA agent** validates independently. In standalone runs, recommend a separate `$validate-promotion-source` QA session.
+- Leave final quality acceptance to independent QA and the user; do not approve yourself.
 
 ## Result status
 

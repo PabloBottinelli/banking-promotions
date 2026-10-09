@@ -40,15 +40,15 @@ For each issue:
 
 - Existing targeted tests: command and exact result:
 - Full pytest: command and exact result:
-- New/edited **ordinary** tests in existing directories, if any:
+- Exact **proposed** ordinary tests/assertions for Dev (QA writes no test files):
 - Live scraper/read-only normalization: commands and outcomes:
 - Production implementation, workflow or database modified? (expected **no**):
-- No reference/golden tests added? (expected **yes**):
+- No files modified by QA and no reference/golden tests added? (expected **yes**):
 
 ## QA decision and handoff
 
 - Scraper completeness: evidence, exact scope and uncertainties.
 - Normalization completeness/accuracy: evidence and exclusions.
 - Deactivation safety: explicit separate decision.
-- Outcome: **Pass QA / Needs fixes / Blocked**.
+- Decision marker: **VERDICT: PASS / VERDICT: FAIL / VERDICT: BLOCKED**. Outcome: **Pass QA / Needs fixes / Blocked**.
 - Developer action list and what QA must re-check next:

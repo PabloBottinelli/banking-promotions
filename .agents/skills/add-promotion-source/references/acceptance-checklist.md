@@ -42,4 +42,4 @@ Record evidence; label unverifiable steps instead of pretending they passed. Thi
 - [ ] No Supabase write, scheduled workflow change, deployment or unauthorized push.
 - [ ] Modified files, known limitations and open questions listed.
 - [ ] Status **Ready for independent QA**, **Partial** or **Blocked** provided.
-- [ ] Separate `$validate-promotion-source` session recommended; no self-claim of QA approval.
+- [ ] Orchestrated: evidence handed to coordinator for fresh `promotion_qa`; standalone: recommend separate `$validate-promotion-source` session. No self-claim of QA approval.

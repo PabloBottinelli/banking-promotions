@@ -33,6 +33,6 @@ Use facts from executed commands and inspected source, not guesses. Mark blocked
 
 - `ScrapeResult.complete`: value, **defined scope**, evidence and limitations.
 - If normalization omits records, how could that affect `SyncRunner.deactivate_not_seen`?
-- Remaining uncertainties for **independent QA**:
+- Remaining uncertainties for **independent QA (`promotion_qa` under orchestration)**:
 - Supabase writes/scheduled workflow executed? (must be no unless authorized):
 - Status: **Ready for independent QA / Partial / Blocked**.

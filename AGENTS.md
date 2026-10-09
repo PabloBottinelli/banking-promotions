@@ -21,15 +21,19 @@ Galicia, BBVA and Patagonia provide different examples; Patagonia uses `normaliz
 
 ## Roles and workflow
 
+**Coordinated workflow — `$integrate-promotion-source`:** for a full new-source request with automatic QA, the root Codex thread is a **coordinator** (not its own developer/reviewer). It delegates to the project custom agents defined in `.codex/agents/promotion-dev.toml` (`promotion_dev`) and `.codex/agents/promotion-qa.toml` (`promotion_qa`). The developer implements and fixes, then an independent read-only QA audits and reports PASS/FAIL/BLOCKED. On FAIL the coordinator sends findings back to Dev and obtains **fresh QA** after fixes. **At most 3 QA audits total**; stop on PASS, BLOCKED or third FAIL. This is prompt-driven, not a guaranteed external state machine. If delegation is unavailable, say so; don't claim autonomous QA.
+
 **Developer — `$add-promotion-source`:** independently investigate a source, implement scraper/normalizer/sync and write the necessary *implementation-level* mocked/unit tests. Perform an initial read-only self-check and report limitations. Do not call self-authored tests an independent acceptance audit.
 
-**Independent QA — `$validate-promotion-source`:** use a **separate, fresh agent conversation/session** when possible. Before relying on the developer's assertions or tests, establish expected behaviors directly from the official site/API and legal terms. Then audit the implementation and output, run tests, challenge assumptions, and add focused independent regression/unit tests in the **existing test directories** when justified. Report reproducible defects; do not modify production implementation during the audit. The developer fixes defects; QA re-checks them in a separate pass.
+**Independent QA — `$validate-promotion-source`:** use a **fresh, separate subagent or session**. Before relying on the developer's assertions or tests, establish expected behaviors directly from the official site/API and legal terms. Then audit the implementation, outputs and tests. QA is **strictly read-only in the automated workflow**: it may recommend exact test assertions but must not edit source code, tests, fixtures or configuration. Developer implements the fixes and any necessary tests; fresh QA re-checks. In standalone manual QA use the same read-only approach.
 
 Using the same agent/session for implementation and its "independent review" does **not** provide the same independence. Never claim an independent QA review happened if it did not.
 
-**Not in scope yet:** no new `backend/tests/validation/` directory, golden/reference-test system, bulk source snapshots or permanent independently curated reference dataset. QA can manually cross-check live promotions and add ordinary narrowly scoped tests to existing suites.
+**Not in scope yet:** no new `backend/tests/validation/` directory, golden/reference-test system, bulk source snapshots or permanent independently curated reference dataset. QA can manually cross-check live promotions and recommend narrowly scoped tests for Dev to add to existing suites.
 
-Typical handoff: developer implementation + initial tests -> independent QA audit + issue report (+ scoped tests) -> developer fixes -> QA re-validation -> user decides whether to schedule/deploy. Do not self-approve production changes.
+Typical handoff: developer implementation + initial tests -> independent QA audit + issue report -> developer fixes and tests -> **fresh** QA re-validation -> human deployment decision. The coordinator enforces a maximum of 3 QA audits. Do not self-approve production changes.
+
+**Permission boundaries:** only Dev writes production code and tests. QA's `.codex/agents/promotion-qa.toml` sets `sandbox_mode="read-only"`, but interactive parent permission overrides may supersede that default: never run the workflow with unrestricted overrides. QA must obey its no-write instruction regardless. Do not execute unauthorized syncs or modify scheduled workflows.
 
 ## Code and data rules
 
@@ -57,7 +61,7 @@ Typical handoff: developer implementation + initial tests -> independent QA audi
 
 ## Testing and operational observability
 
-- Developer owns quick unit/contract tests; QA owns independent verification of expected results. A green test suite is necessary but insufficient.
+- Developer owns implementation and regression/unit tests; QA independently verifies expected results **without editing tests** and provides precise failing cases for Dev to encode. A green suite is necessary but insufficient.
 - Tests must run in a clean checkout without ignored `backend/data/`, local `.env` or previous scraper output. Prefer `httpx.MockTransport`, pytest `tmp_path` and small, sanitized fixtures; never alter a captured real fixture in place just to make a test pass.
 - Validate catalog pagination/limits/empty results/errors/deduplication; detail coverage; deterministic IDs; multi-benefit mapping; field values; meaningful exclusions; `ScrapeResult.complete` and deactivation risks. Check source-specific cases directly against source evidence rather than deriving expectations from current implementation.
 - Keep existing tests in `backend/tests/scraping/` and `backend/tests/normalization/`. **Do not build a separate golden/reference test suite yet.**
@@ -66,10 +70,11 @@ Typical handoff: developer implementation + initial tests -> independent QA audi
 
 ## Choose the skill
 
-- New bank, wallet or source implementation: `.agents/skills/add-promotion-source/SKILL.md`.
+- **Default for new-source integration requests in Codex when subagents are available:** `.agents/skills/integrate-promotion-source/SKILL.md` (Dev → QA → fixes). Use it whenever the user requests a full integration unless they explicitly choose standalone development.
+- Standalone developer-only implementation or a `promotion_dev` assignment: `.agents/skills/add-promotion-source/SKILL.md`.
 - Independent audit, acceptance review or QA after an implementation: `.agents/skills/validate-promotion-source/SKILL.md`.
 - Ordinary targeted changes: follow this file without forcing an unrelated skill.
 
 ## Final response standards
 
-List changed files, source URLs, commands actually executed, raw catalog/entity/benefit/association counts when available, normalized counts, missing data and exclusions by cause, validated examples, test outcomes, completeness scope and confidence, production-write/scheduling status, and actionable outstanding issues. QA additionally reports severity, reproduction and official-source evidence for each defect. Never label work "fully verified" or "production-ready" without sufficient evidence and user approval.
+List changed files, source URLs, commands actually executed, raw catalog/entity/benefit/association counts when available, normalized counts, missing data and exclusions by cause, validated examples, test outcomes, completeness scope and confidence, production-write/scheduling status, and actionable outstanding issues. QA additionally reports severity, reproduction and official-source evidence for each defect. An orchestrated run must include agent identities, each QA verdict, audit count (maximum 3), fixed/open findings, and end state `READY_FOR_HUMAN_REVIEW`, `NEEDS_HUMAN_REVIEW`, or `BLOCKED`. Never label work "fully verified" or "production-ready" without sufficient evidence and user approval.

@@ -7,7 +7,7 @@ description: Independently audit or QA an existing Argentine bank, wallet, or pr
 
 You are the **reviewer**, not the implementer. Read repository `AGENTS.md` and use `references/audit-checklist.md` plus `references/audit-report.md`. Prefer a **new, separate agent session** with no implementation conversation history. Do not say the review was independent if you authored or co-designed the implementation in the same session.
 
-**Scope restriction:** No new golden/reference dataset, `backend/tests/validation/` folder, snapshot-based tests or dedicated reference-test framework. Manual source comparisons are essential; ordinary focused tests in the **existing** scraping/normalization test directories are allowed when useful.
+**Scope restriction:** QA is **strictly read-only**. Do not modify code, existing tests, fixtures, reports or files in the repository. No new golden/reference dataset, `backend/tests/validation/` folder, snapshot-based tests or dedicated reference-test framework. Manual source comparisons are essential; propose focused test cases in your report, and let Dev write them. In an automated Codex run, the QA agent is `promotion_qa` and uses `sandbox_mode="read-only"` as an extra safeguard.
 
 ## 0. Bound the audit and preserve code
 
@@ -33,12 +33,12 @@ You are the **reviewer**, not the implementer. Read repository `AGENTS.md` and u
 - Verify category/region scope and correctness of `complete` and `coverage_verified`; distinguish scraper completeness from normalization completeness. Read the actual `SyncRunner` deactivation logic: even a complete catalog can be dangerous if normalization silently skips valid benefits. Treat the safety of production deactivation as a distinct audit gate.
 - Inspect mismatches in **all records using programmatic aggregate checks** (not just cherry-picked examples), then manually confirm at least 10 representative real examples where available; if fewer than 10, inspect all.
 
-## 3. Independent testing (within existing suites)
+## 3. Independent testing and test-gap review (read-only)
 
 - Run existing targeted tests and `python -m pytest -q` from `backend/` if possible; distinguish actual executed tests, mocked tests and live source checks.
 - Challenge developer-supplied expected values against terms: do not accept an assertion such as `online=True` because it already passes. Identify tests that only prove implementation behavior, hardcode counts, alter captured source facts or depend on ignored local files.
-- Where helpful, **add a small independent regression/unit test** to `backend/tests/scraping/test_<source>_scraper.py` or `backend/tests/normalization/test_<source>_normalizer.py` (or a conventional companion test in the same directory). Derive assertions from independently checked source behavior or well-defined contracts. Keep HTTP mocked and file paths isolated.
-- Do **not** change production scrapers, normalizers, shared models, sync code or workflows. If a production defect is exposed, leave a clear failing reproduction/test and document it; the developer repairs it, then QA re-tests. Avoid modifying existing tests merely to make the suite green.
+- Where useful, **propose exact expected assertions or a minimal regression test** for `backend/tests/scraping/test_<source>_scraper.py` or `backend/tests/normalization/test_<source>_normalizer.py`; include official evidence or a well-defined contract. **Do not write tests yourself**. The developer owns edits and reruns tests.
+- Do **not** change production scrapers, normalizers, models, sync code, workflow files, tests, fixtures, or reports. If a defect is exposed, return a reproducible example and suggested test, then let Dev implement it and ask **fresh QA** to recheck.
 - **Do not** create a separate reference/golden test layer or permanent live-source expectation catalog at this stage. No new dataset of 10 hand-curated golden records is required; verification can be documented in the QA report.
 
 ## 4. Report actionable findings, then stop
@@ -51,7 +51,7 @@ Every substantive finding needs:
 - **Impact:** missing promotion, wrong merchant, misleading savings, false complete flag, unsafe deactivation, brittle test, etc.
 - **Suggested fix**, without making production modifications yourself.
 
-Use `references/audit-report.md` and checklist. Include all checks performed, source records compared, discrepancies, tests run, blockers and any unverified claims. Separate **confirmed**, **likely**, and **unverified** defects. Recommend one outcome:
+Use `references/audit-report.md` and checklist. Include all checks performed, source records compared, discrepancies, tests run, blockers and any unverified claims. Separate **confirmed**, **likely**, and **unverified** defects. Assign stable issue IDs `QA-001`, `QA-002`, etc. Start your response with the exact marker **`VERDICT: PASS`**, **`VERDICT: FAIL`**, or **`VERDICT: BLOCKED`**; the coordinator uses it for handoff. Recommend one outcome:
 
 - **Pass QA / ready for user's deployment decision** — scoped catalog and data assertions sufficiently verified, no blocking errors, deactivation safety understood; does **not** authorize deploying.
 - **Needs fixes / re-audit** — actionable defects remain.
