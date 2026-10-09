@@ -1,6 +1,62 @@
 from normalization.sources.galicia import GaliciaNormalizer
 
 
+
+# Compatibility accessors in tests keep assertions focused on the V2 schema:
+# percentages live in benefits; monetary caps and minima live in limits.
+def _percentage(p):
+    return next((b.percentage for b in p.benefits if b.type in ("discount", "cashback")), None)
+
+
+def _installments(p):
+    return next((b.installment_options[-1] for b in p.benefits if b.type == "installments" and b.installment_options), None)
+
+
+def _cap(p):
+    return next((l for l in p.limits if l.type == "monetary_cap"), None)
+
+
+def _cap_amount(p):
+    c = _cap(p)
+    return c.amount if c else None
+
+
+def _cap_scope(p):
+    c = _cap(p)
+    return c.scope if c else None
+
+
+def _cap_period(p):
+    c = _cap(p)
+    return c.period if c else None
+
+
+def _minimum_purchase(p):
+    return next((l.amount for l in p.limits if l.type == "minimum_purchase"), None)
+
+
+def _segments(p):
+    """Check what the normalizer actually exposes for segment-based offers."""
+    for line in (p.specific_conditions or "").splitlines():
+        if line.startswith(("Segmentos: ", "Segmentos/requisitos: ")):
+            return [t.strip() for t in line.split(": ", 1)[1].split(", ")]
+        if line.startswith("Segmento: "):
+            return [line.split(": ", 1)[1].lower()]
+    return []
+
+
+def _requirements(p):
+    for line in (p.specific_conditions or "").splitlines():
+        if line.startswith("Requisitos: "):
+            return [s.strip() for s in line.removeprefix("Requisitos: ").split("; ")]
+    return []
+
+
+def _rail(p, name):
+    return any(name.lower() in line.lower().split(": ", 1)[-1].split(", ")
+               for line in (p.specific_conditions or "").splitlines()
+               if line.startswith(("Modalidades",)))
+
 def test_normalizes_merchant_promotion():
     raw = {
         "source": "galicia",
@@ -60,21 +116,21 @@ def test_normalizes_merchant_promotion():
         "?path=%2Fpromocion%2F170826%7CViamo%7CMarca"
     )
 
-    assert promotion.discount_percentage == 20
-    assert promotion.installments == 3
+    assert _percentage(promotion) == 20
+    assert _installments(promotion) == 3
 
     assert promotion.days_of_week == ["friday"]
 
-    assert promotion.cap_amount is None
-    assert promotion.cap_scope is None
-    assert promotion.cap_period is None
+    assert _cap_amount(promotion) is None
+    assert _cap_scope(promotion) is None
+    assert _cap_period(promotion) is None
 
     assert promotion.payment_methods[0].raw_name == "Tarjeta Visa"
     assert promotion.payment_methods[0].network == "visa"
     assert promotion.payment_methods[0].card_type == "credit"
 
-    assert promotion.customer_segments == []
-    assert promotion.eligibility_requirements == []
+    assert _segments(promotion) == []
+    assert _requirements(promotion) == []
 
 
 def test_normalizes_cap():
@@ -118,12 +174,12 @@ def test_normalizes_cap():
 
     promotion = GaliciaNormalizer().normalize(raw)
 
-    assert promotion.discount_percentage == 20
-    assert promotion.installments is None
+    assert _percentage(promotion) == 20
+    assert _installments(promotion) is None
 
-    assert promotion.cap_amount == 15000
-    assert promotion.cap_scope == "customer"
-    assert promotion.cap_period == "monthly"
+    assert _cap_amount(promotion) == 15000
+    assert _cap_scope(promotion) == "customer"
+    assert _cap_period(promotion) == "monthly"
 
 
 def test_normalizes_category_promotion_without_merchant():
@@ -180,20 +236,20 @@ def test_normalizes_category_promotion_without_merchant():
         "?path=%2Fpromocion%2F181389%7CCombustible%7CCategoria"
     )
 
-    assert promotion.discount_percentage == 10
-    assert promotion.installments is None
+    assert _percentage(promotion) == 10
+    assert _installments(promotion) is None
 
     assert promotion.days_of_week == ["saturday"]
 
-    assert promotion.cap_amount == 10000
-    assert promotion.cap_scope == "customer"
-    assert promotion.cap_period == "one_time"
+    assert _cap_amount(promotion) == 10000
+    assert _cap_scope(promotion) == "customer"
+    assert _cap_period(promotion) == "one_time"
 
-    assert promotion.qr is True
-    assert promotion.nfc is True
-    assert promotion.contactless is False
+    assert _rail(promotion, "qr") is True
+    assert _rail(promotion, "nfc") is True
+    assert _rail(promotion, "contactless") is False
 
-    assert promotion.customer_segments == []
+    assert _segments(promotion) == []
 
 
 def test_normalizes_salary_customer():
@@ -234,7 +290,7 @@ def test_normalizes_salary_customer():
 
     promotion = GaliciaNormalizer().normalize(raw)
 
-    assert promotion.customer_segments == ["salary"]
+    assert _segments(promotion) == ["salary"]
 
 
 def test_normalizes_eminent_customer():

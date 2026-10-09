@@ -3,6 +3,62 @@ from datetime import date
 from normalization.sources.patagonia import PatagoniaNormalizer
 
 
+
+# Compatibility accessors in tests keep assertions focused on the V2 schema:
+# percentages live in benefits; monetary caps and minima live in limits.
+def _percentage(p):
+    return next((b.percentage for b in p.benefits if b.type in ("discount", "cashback")), None)
+
+
+def _installments(p):
+    return next((b.installment_options[-1] for b in p.benefits if b.type == "installments" and b.installment_options), None)
+
+
+def _cap(p):
+    return next((l for l in p.limits if l.type == "monetary_cap"), None)
+
+
+def _cap_amount(p):
+    c = _cap(p)
+    return c.amount if c else None
+
+
+def _cap_scope(p):
+    c = _cap(p)
+    return c.scope if c else None
+
+
+def _cap_period(p):
+    c = _cap(p)
+    return c.period if c else None
+
+
+def _minimum_purchase(p):
+    return next((l.amount for l in p.limits if l.type == "minimum_purchase"), None)
+
+
+def _segments(p):
+    """Check what the normalizer actually exposes for segment-based offers."""
+    for line in (p.specific_conditions or "").splitlines():
+        if line.startswith(("Segmentos: ", "Segmentos/requisitos: ")):
+            return [t.strip() for t in line.split(": ", 1)[1].split(", ")]
+        if line.startswith("Segmento: "):
+            return [line.split(": ", 1)[1].lower()]
+    return []
+
+
+def _requirements(p):
+    for line in (p.specific_conditions or "").splitlines():
+        if line.startswith("Requisitos: "):
+            return [s.strip() for s in line.removeprefix("Requisitos: ").split("; ")]
+    return []
+
+
+def _rail(p, name):
+    return any(name.lower() in line.lower().split(": ", 1)[-1].split(", ")
+               for line in (p.specific_conditions or "").splitlines()
+               if line.startswith(("Modalidades",)))
+
 def build_regular_raw():
     return {
         "source": "patagonia",
@@ -145,16 +201,16 @@ def test_normalizes_regular_tier_variants():
     assert clasica.merchant == "Carrefour"
     assert clasica.category == "Supermercados"
 
-    assert clasica.discount_percentage == 20
-    assert plus.discount_percentage == 25
-    assert singular.discount_percentage == 35
+    assert _percentage(clasica) == 20
+    assert _percentage(plus) == 25
+    assert _percentage(singular) == 35
 
-    assert clasica.cap_amount == 15000
-    assert plus.cap_amount == 20000
-    assert singular.cap_amount == 25000
+    assert _cap_amount(clasica) == 15000
+    assert _cap_amount(plus) == 20000
+    assert _cap_amount(singular) == 25000
 
-    assert clasica.cap_scope == "account"
-    assert clasica.cap_period == "monthly"
+    assert _cap_scope(clasica) == "account"
+    assert _cap_period(clasica) == "monthly"
 
     assert clasica.valid_from == date(
         2026,
@@ -172,22 +228,22 @@ def test_normalizes_regular_tier_variants():
         "wednesday",
     ]
 
-    assert clasica.customer_segments == [
+    assert _segments(clasica) == [
         "clasica",
         "salary",
     ]
 
-    assert plus.customer_segments == [
+    assert _segments(plus) == [
         "plus",
         "salary",
     ]
 
-    assert singular.customer_segments == [
+    assert _segments(singular) == [
         "singular",
         "salary",
     ]
 
-    assert clasica.eligibility_requirements == [
+    assert _requirements(clasica) == [
         "Exclusivo por acreditar tu sueldo",
     ]
 
@@ -269,12 +325,12 @@ def test_normalizes_patagonia_on():
 
     assert promotion.category == "Indumentaria y Deportes"
 
-    assert promotion.discount_percentage == 15
-    assert promotion.installments == 3
+    assert _percentage(promotion) == 15
+    assert _installments(promotion) == 3
 
-    assert promotion.cap_amount == 10000
-    assert promotion.cap_scope == "customer"
-    assert promotion.cap_period == "monthly"
+    assert _cap_amount(promotion) == 10000
+    assert _cap_scope(promotion) == "customer"
+    assert _cap_period(promotion) == "monthly"
 
     assert promotion.valid_from == date(
         2026,
@@ -292,7 +348,7 @@ def test_normalizes_patagonia_on():
         "thursday",
     ]
 
-    assert promotion.customer_segments == [
+    assert _segments(promotion) == [
         "on",
     ]
 
@@ -320,7 +376,7 @@ Tope: $10.000
         raw
     )[0]
 
-    assert promotion.customer_segments == [
+    assert _segments(promotion) == [
         "on",
     ]
 
@@ -376,12 +432,12 @@ SIN TOPE.
         "ski-1:clasica-plus-singular"
     )
 
-    assert promotion.discount_percentage is None
-    assert promotion.installments == 9
+    assert _percentage(promotion) is None
+    assert _installments(promotion) == 9
 
-    assert promotion.cap_amount is None
-    assert promotion.cap_scope is None
-    assert promotion.cap_period is None
+    assert _cap_amount(promotion) is None
+    assert _cap_scope(promotion) is None
+    assert _cap_period(promotion) is None
 
     assert promotion.category == "Turismo"
 
@@ -395,7 +451,7 @@ SIN TOPE.
         "sunday",
     ]
 
-    assert promotion.customer_segments == [
+    assert _segments(promotion) == [
         "clasica",
         "plus",
         "singular",
@@ -547,13 +603,13 @@ LA PROMOCIÓN NO APLICA PARA PAGOS REALIZADOS MEDIANTE CÓDIGOS DE RESPUESTA RÁ
 
     assert promotion.days_of_week == ["thursday"]
 
-    assert promotion.discount_percentage == 30
+    assert _percentage(promotion) == 30
 
-    assert promotion.cap_amount is None
-    assert promotion.cap_scope is None
-    assert promotion.cap_period is None
+    assert _cap_amount(promotion) is None
+    assert _cap_scope(promotion) is None
+    assert _cap_period(promotion) is None
 
-    assert promotion.customer_segments == [
+    assert _segments(promotion) == [
         "clasica",
         "plus",
         "singular",
@@ -564,9 +620,9 @@ LA PROMOCIÓN NO APLICA PARA PAGOS REALIZADOS MEDIANTE CÓDIGOS DE RESPUESTA RÁ
     assert promotion.online is False
     assert promotion.physical is True
 
-    assert promotion.qr is False
-    assert promotion.nfc is True
-    assert promotion.contactless is True
+    assert _rail(promotion, "qr") is False
+    assert _rail(promotion, "nfc") is True
+    assert _rail(promotion, "contactless") is True
 
     assert len(promotion.payment_methods) == 4
 

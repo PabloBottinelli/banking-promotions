@@ -1,6 +1,7 @@
 from datetime import datetime
 from urllib.parse import urlencode
 from normalization.models import NormalizedPromotion, PaymentMethod
+from normalization.structure import make_benefits, make_limits, conditions, requires_merchant_check
 
 
 class GaliciaNormalizer:
@@ -50,35 +51,61 @@ class GaliciaNormalizer:
         scope = catalog.get("tipoPromocion")
 
         cap_amount, cap_scope, cap_period = self._normalize_cap(detail)
-
+        title = catalog["titulo"]
+        url = self._build_promotion_url(raw["source_id"], title, scope)
+        terms = detail.get("legales")
+        discount = self._normalize_discount(detail.get("porcentajeAhorro"))
+        installments = detail.get("cuotaSinInteresHasta")
+        installment_start = detail.get("cuotaSinInteresDesde")
+        segments = self._normalize_customer_segments(detail)
+        qr, nfc, contactless = (
+            bool(catalog.get("pagoQR")), bool(catalog.get("pagoNFC")), bool(catalog.get("contactLess"))
+        )
+        payment_methods = self._normalize_payment_methods(detail.get("mediosDePago", []))
+        # Catalog flags may indicate several accepted rails. Do not incorrectly
+        # pair a specific card with QR/NFC unless the offer establishes it.
+        payment_rails = ", ".join(name for name, flag in (("QR", qr), ("NFC", nfc), ("contactless", contactless)) if flag)
         return NormalizedPromotion(
             source=raw["source"],
             source_id=str(raw["source_id"]),
             scraped_at=datetime.fromisoformat(raw["scraped_at"]),
-            title=catalog["titulo"],
+            title=title,
             scope=self._normalize_scope(scope),
             merchant=brand.get("nombre") if brand else None,
             category=self._extract_category(catalog, detail, scope),
-            promotion_url=self._build_promotion_url(raw["source_id"], catalog["titulo"], scope),
-            discount_percentage=self._normalize_discount(detail.get("porcentajeAhorro")),
-            installments=detail.get("cuotaSinInteresHasta"),
+            promotion_url=url,
             valid_from=self._parse_date(detail["fechaDesde"]),
             valid_to=self._parse_date(detail["fechaHasta"]),
+            benefits=make_benefits(
+                percentage=discount,
+                installments=int(installments) if installments and int(installments) > 1 else None,
+                benefit_text=" ".join(str(x or "") for x in (title, catalog.get("subtitulo"), terms)),
+                fallback_description=str(catalog.get("subtitulo") or title),
+                installments_interest_free=True if installments else None,
+            ),
+            limits=make_limits(
+                cap_amount=cap_amount, cap_scope=cap_scope, cap_period=cap_period,
+                minimum_purchase=detail.get("minimoCompra"),
+            ),
+            payment_methods=payment_methods,
             days_of_week=self._normalize_days(detail.get("diasAplicacion")),
-            cap_amount=cap_amount,
-            cap_scope=cap_scope,
-            cap_period=cap_period,
-            minimum_purchase=detail.get("minimoCompra"),
-            payment_methods=self._normalize_payment_methods(detail.get("mediosDePago", [])),
-            online=detail.get("tiendaOnline", False),
-            physical=detail.get("tiendaFisica", False),
-            qr=catalog.get("pagoQR", False),
-            nfc=catalog.get("pagoNFC", False),
-            contactless=catalog.get("contactLess", False),
-            customer_segments=self._normalize_customer_segments(detail),
-            eligibility_requirements=[],
-            terms=detail.get("legales"),
+            applies_every_day=self._all_days(detail.get("diasAplicacion")),
+            online=detail.get("tiendaOnline"),
+            physical=detail.get("tiendaFisica"),
+            specific_conditions=conditions(
+                ("Segmentos/requisitos", ", ".join(segments)) if segments else None,
+                ("Financiación", f"De {installment_start} a {installments} cuotas sin interés") if installment_start and installments and installment_start != installments else None,
+                ("Modalidades admitidas", payment_rails) if payment_rails else None,
+            ),
+            requires_merchant_verification=bool(url and requires_merchant_check(terms)),
+            terms=terms,
         )
+
+    def _all_days(self, value: str | None) -> bool | None:
+        if not value:
+            return None
+        days = self._normalize_days(value)
+        return len(days) == 7 if days else None
 
     def _parse_date(self, value: str):
         return datetime.strptime(value, "%d/%m/%Y").date()
@@ -136,6 +163,7 @@ class GaliciaNormalizer:
         return [
             PaymentMethod(
                 raw_name=method["tarjeta"],
+                issuer="Banco Galicia",
                 network=self._extract_network(method["tarjeta"]),
                 card_type=self.CARD_TYPES.get(method.get("tipoTarjeta")),
             )

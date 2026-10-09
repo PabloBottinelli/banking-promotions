@@ -4,6 +4,7 @@ import unicodedata
 from datetime import datetime
 
 from normalization.models import NormalizedPromotion, PaymentMethod
+from normalization.structure import make_benefits, make_limits, conditions, requires_merchant_check
 
 
 class PatagoniaNormalizer:
@@ -85,33 +86,49 @@ class PatagoniaNormalizer:
 
             source_id = self._variant_source_id(str(raw["source_id"]), segments)
 
+            cap_amount = self._extract_cap_amount(variant_text)
+            segments_and_requirements = self._customer_segments(segments, all_text)
+            requirements = self._extract_requirements(summary_text)
+            qr = self._detect_qr(all_text)
+            nfc = self._contains(all_text, "nfc")
+            contactless = self._contains(all_text, "contactless") or self._contains(all_text, "sin contacto")
+            days = self._extract_days(summary_text or all_text)
+            payment_methods = self._extract_payment_methods(variant_text, detail.get("image_alts", []))
             promotions.append(
                 NormalizedPromotion(
                     source=raw["source"],
                     source_id=source_id,
+                    promotion_group_id=(str(raw["source_id"]) if len(variants) > 1 else None),
                     scraped_at=datetime.fromisoformat(raw["scraped_at"]),
                     title=title,
                     scope="merchant",
                     merchant=title,
                     category=self._extract_category(catalog),
                     promotion_url=detail.get("url"),
-                    discount_percentage=discount,
-                    installments=installments,
                     valid_from=valid_from,
                     valid_to=valid_to,
-                    days_of_week=self._extract_days(summary_text or all_text),
-                    cap_amount=self._extract_cap_amount(variant_text),
-                    cap_scope=self._extract_cap_scope(variant_text),
-                    cap_period=self._extract_cap_period(variant_text),
-                    minimum_purchase=self._extract_minimum_purchase(variant_text),
-                    payment_methods=self._extract_payment_methods(variant_text, detail.get("image_alts", [])),
+                    benefits=make_benefits(
+                        percentage=discount, installments=installments,
+                        benefit_text=benefit_text,
+                        fallback_description=benefit_text or terms or title,
+                    ),
+                    limits=make_limits(
+                        cap_amount=cap_amount,
+                        cap_scope=self._extract_cap_scope(variant_text),
+                        cap_period=self._extract_cap_period(variant_text),
+                        minimum_purchase=self._extract_minimum_purchase(variant_text),
+                    ),
+                    payment_methods=payment_methods,
+                    days_of_week=days,
+                    applies_every_day=(len(days) == 7) if days else None,
                     online=self._detect_online(all_text),
                     physical=self._detect_physical(all_text),
-                    qr=self._detect_qr(all_text),
-                    nfc=self._contains(all_text, "nfc"),
-                    contactless=self._contains(all_text, "contactless") or self._contains(all_text, "sin contacto"),
-                    customer_segments=self._customer_segments(segments, all_text),
-                    eligibility_requirements=self._extract_requirements(summary_text),
+                    specific_conditions=conditions(
+                        ("Segmentos", ", ".join(segments_and_requirements)) if segments_and_requirements else None,
+                        ("Requisitos", "; ".join(requirements)) if requirements else None,
+                        ("Modalidades indicadas", ", ".join(x for x, enabled in (("QR", qr), ("NFC", nfc), ("contactless", contactless)) if enabled)) if (qr or nfc or contactless) else None,
+                    ),
+                    requires_merchant_verification=bool(detail.get("url") and requires_merchant_check(terms)),
                     terms=self._clean_text(terms) or None,
                 )
             )
@@ -530,7 +547,12 @@ class PatagoniaNormalizer:
         methods = []
 
         def add(raw_name: str, network: str | None = None, card_type: str | None = None):
-            method = PaymentMethod(raw_name=raw_name, network=network, card_type=card_type)
+            method = PaymentMethod(
+                raw_name=raw_name, network=network, card_type=card_type,
+                issuer="Banco Patagonia" if card_type else None,
+                wallet=raw_name if raw_name in {"MODO", "Google Pay", "Apple Pay"} else None,
+                payment_rail="card" if card_type else None,
+            )
 
             if method not in methods:
                 methods.append(method)

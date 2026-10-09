@@ -3,6 +3,7 @@ import re
 from datetime import datetime
 
 from normalization.models import NormalizedPromotion, PaymentMethod
+from normalization.structure import make_benefits, make_limits, conditions, requires_merchant_check
 
 
 class BBVANormalizer:
@@ -33,6 +34,26 @@ class BBVANormalizer:
 
         channels = detail.get("canalesVenta", {})
 
+        discount = self._extract_discount(title, subtitle, requirements, terms)
+        installments = self._normalize_installments(benefit.get("cuota"))
+        cap_amount = self._normalize_amount(benefit.get("tope") or catalog.get("montoTope"))
+        # Cupón fijo y compra mínima aparecen en requisitos, no en las claves
+        # tradicionales de reintegro. No confundir con el tope monetario.
+        requirements_text = " ".join(requirements)
+        fixed_discount = self._extract_fixed_coupon_discount(requirements_text)
+        minimum_purchase = self._extract_minimum_purchase(requirements_text)
+        qr = self._contains_requirement(requirements, "qr")
+        nfc = self._contains_requirement(requirements, "nfc")
+        contactless = self._contains_requirement(requirements, "contactless")
+        black_segment = "black" in (terms or "").lower()
+        days = self._normalize_days(detail.get("diasPromo") or catalog.get("diasPromo"))
+        payment_methods = self._normalize_payment_methods(detail.get("grupoTarjeta") or catalog.get("grupoTarjeta"))
+        # An explicit QR payment requirement is different from a generic app mention.
+        # Keep unknown rail combinations in specific_conditions instead of claiming
+        # every card can be used via every rail.
+        if qr and not (nfc or contactless):
+            for method in payment_methods:
+                method.payment_rail = "qr"
         return NormalizedPromotion(
             source=raw["source"],
             source_id=str(raw["source_id"]),
@@ -42,23 +63,31 @@ class BBVANormalizer:
             merchant=title or None,
             category=None,
             promotion_url=self.PROMOTIONS_URL,
-            discount_percentage=self._extract_discount(title, subtitle, requirements, terms),
-            installments=self._normalize_installments(benefit.get("cuota")),
             valid_from=self._parse_date(catalog["fechaDesde"]),
             valid_to=self._parse_date(catalog["fechaHasta"]),
-            days_of_week=self._normalize_days(detail.get("diasPromo") or catalog.get("diasPromo")),
-            cap_amount=self._normalize_amount(benefit.get("tope") or catalog.get("montoTope")),
-            cap_scope=self._normalize_cap_scope(benefit.get("tipoTope")),
-            cap_period=self._normalize_cap_period(benefit.get("frecuenciaTope")),
-            minimum_purchase=None,
-            payment_methods=self._normalize_payment_methods(detail.get("grupoTarjeta") or catalog.get("grupoTarjeta")),
-            online=self._has_online_channels(channels),
-            physical=self._has_physical_channels(channels),
-            qr=self._contains_requirement(requirements, "qr"),
-            nfc=self._contains_requirement(requirements, "nfc"),
-            contactless=self._contains_requirement(requirements, "contactless"),
-            customer_segments=["black"] if "black" in (terms or "").lower() else [],
-            eligibility_requirements=requirements,
+            benefits=make_benefits(
+                percentage=discount, installments=installments,
+                benefit_text=" ".join([subtitle, *requirements, title]),
+                fallback_description=subtitle or title or (terms or ""),
+                fixed_discount=fixed_discount,
+            ),
+            limits=make_limits(
+                cap_amount=cap_amount,
+                cap_scope=self._normalize_cap_scope(benefit.get("tipoTope")),
+                cap_period=self._normalize_cap_period(benefit.get("frecuenciaTope")),
+                minimum_purchase=minimum_purchase,
+            ),
+            payment_methods=payment_methods,
+            days_of_week=days,
+            applies_every_day=(len(days) == 7) if days else None,
+            online=self._has_online_channels(channels) if isinstance(channels, dict) else None,
+            physical=self._has_physical_channels(channels) if isinstance(channels, dict) else None,
+            specific_conditions=conditions(
+                ("Requisitos", "; ".join(requirements)) if requirements else None,
+                ("Segmento", "Black") if black_segment else None,
+                ("Modalidades indicadas", ", ".join(x for x, enabled in (("QR", qr), ("NFC", nfc), ("contactless", contactless)) if enabled)) if (qr or nfc or contactless) else None,
+            ),
+            requires_merchant_verification=requires_merchant_check(terms),
             terms=terms,
         )
 
@@ -115,6 +144,20 @@ class BBVANormalizer:
             return None
 
         return installments if installments > 1 else None
+
+    def _extract_fixed_coupon_discount(self, requirements: str) -> float | None:
+        match = re.search(
+            r"cup[oó]n[^.]{0,100}?por\s+\$\s*([\d.]+(?:,\d+)?)\s+de\s+descuento",
+            requirements, re.IGNORECASE,
+        )
+        return float(match.group(1).replace(".", "").replace(",", ".")) if match else None
+
+    def _extract_minimum_purchase(self, requirements: str) -> float | None:
+        match = re.search(
+            r"compra\s+m[ií]nima\s*:?\s*\$\s*([\d.]+(?:,\d+)?)",
+            requirements, re.IGNORECASE,
+        )
+        return float(match.group(1).replace(".", "").replace(",", ".")) if match else None
 
     def _normalize_amount(self, value) -> float | None:
         if value in (None, ""):
@@ -205,6 +248,7 @@ class BBVANormalizer:
         return [
             PaymentMethod(
                 raw_name=raw_name,
+                issuer="BBVA",
                 network=network,
                 card_type=card_type,
             )

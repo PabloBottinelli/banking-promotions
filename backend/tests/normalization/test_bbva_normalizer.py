@@ -5,6 +5,62 @@ import pytest
 from normalization.sources.bbva import BBVANormalizer
 
 
+
+# Compatibility accessors in tests keep assertions focused on the V2 schema:
+# percentages live in benefits; monetary caps and minima live in limits.
+def _percentage(p):
+    return next((b.percentage for b in p.benefits if b.type in ("discount", "cashback")), None)
+
+
+def _installments(p):
+    return next((b.installment_options[-1] for b in p.benefits if b.type == "installments" and b.installment_options), None)
+
+
+def _cap(p):
+    return next((l for l in p.limits if l.type == "monetary_cap"), None)
+
+
+def _cap_amount(p):
+    c = _cap(p)
+    return c.amount if c else None
+
+
+def _cap_scope(p):
+    c = _cap(p)
+    return c.scope if c else None
+
+
+def _cap_period(p):
+    c = _cap(p)
+    return c.period if c else None
+
+
+def _minimum_purchase(p):
+    return next((l.amount for l in p.limits if l.type == "minimum_purchase"), None)
+
+
+def _segments(p):
+    """Check what the normalizer actually exposes for segment-based offers."""
+    for line in (p.specific_conditions or "").splitlines():
+        if line.startswith(("Segmentos: ", "Segmentos/requisitos: ")):
+            return [t.strip() for t in line.split(": ", 1)[1].split(", ")]
+        if line.startswith("Segmento: "):
+            return [line.split(": ", 1)[1].lower()]
+    return []
+
+
+def _requirements(p):
+    for line in (p.specific_conditions or "").splitlines():
+        if line.startswith("Requisitos: "):
+            return [s.strip() for s in line.removeprefix("Requisitos: ").split("; ")]
+    return []
+
+
+def _rail(p, name):
+    return any(name.lower() in line.lower().split(": ", 1)[-1].split(", ")
+               for line in (p.specific_conditions or "").splitlines()
+               if line.startswith(("Modalidades",)))
+
 def build_raw_promotion(**overrides):
     raw = {
         "source": "bbva",
@@ -74,19 +130,19 @@ def test_normalizes_bbva_promotion():
 
     assert promotion.promotion_url == "https://www.bbva.com.ar/beneficios/"
 
-    assert promotion.discount_percentage == 20
-    assert promotion.installments == 6
+    assert _percentage(promotion) == 20
+    assert _installments(promotion) == 6
 
     assert promotion.valid_from == date(2026, 5, 28)
     assert promotion.valid_to == date(2026, 5, 28)
 
     assert promotion.days_of_week == ["thursday"]
 
-    assert promotion.cap_amount == 40000
-    assert promotion.cap_scope == "customer"
-    assert promotion.cap_period == "monthly"
+    assert _cap_amount(promotion) == 40000
+    assert _cap_scope(promotion) == "customer"
+    assert _cap_period(promotion) == "monthly"
 
-    assert promotion.minimum_purchase is None
+    assert _minimum_purchase(promotion) is None
 
     assert len(promotion.payment_methods) == 1
     assert promotion.payment_methods[0].raw_name == "Tarjetas de crédito BBVA"
@@ -96,13 +152,13 @@ def test_normalizes_bbva_promotion():
     assert promotion.online is True
     assert promotion.physical is True
 
-    assert promotion.qr is True
-    assert promotion.nfc is False
-    assert promotion.contactless is False
+    assert _rail(promotion, "qr") is True
+    assert _rail(promotion, "nfc") is False
+    assert _rail(promotion, "contactless") is False
 
-    assert promotion.customer_segments == []
+    assert _segments(promotion) == []
 
-    assert promotion.eligibility_requirements == [
+    assert _requirements(promotion) == [
         "Con tus tarjetas de crédito BBVA a través de app BBVA, leyendo un QR Modo."
     ]
 
@@ -404,7 +460,7 @@ def test_normalizes_black_customer_segment():
 
     promotion = BBVANormalizer().normalize(raw)
 
-    assert promotion.customer_segments == ["black"]
+    assert _segments(promotion) == ["black"]
 
 
 def test_does_not_add_black_segment_for_regular_customer():
@@ -416,7 +472,7 @@ def test_does_not_add_black_segment_for_regular_customer():
 
     promotion = BBVANormalizer().normalize(raw)
 
-    assert promotion.customer_segments == []
+    assert _segments(promotion) == []
 
 
 def test_cleans_html_and_whitespace():
