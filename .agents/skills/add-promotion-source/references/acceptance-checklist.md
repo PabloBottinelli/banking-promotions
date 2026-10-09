@@ -1,39 +1,55 @@
-# Acceptance checklist — new promotion source
+# Add-promotion-source acceptance checklist
 
-Use this checklist as the definition of done. Report failures explicitly instead of checking them off without evidence.
+Use this as a **gate**, not a rubber stamp. Record evidence for each applicable item. If evidence is missing, mark it unverified rather than passed.
 
-## Discovery
+## 1. Source investigation
 
-- [ ] The supplied source and its public entry URL were verified.
-- [ ] Real sample responses were inspected; the catalog and detail structures are understood.
-- [ ] Pagination/coverage and stable source IDs are understood, or the limitation is documented.
-- [ ] Request throttling and public access constraints were considered.
+- [ ] Real public source URL(s) and data retrieval method documented.
+- [ ] Catalog, detail and optional alternate endpoints verified from live responses.
+- [ ] Pagination/cursors/search ranking/per-request caps tested; category filtering verified.
+- [ ] Source-total/completeness signal established **or explicitly declared unverified**.
+- [ ] Distinction between merchant/entity, campaign/category and benefit examined.
+- [ ] At least one real case with multiple benefits and one ambiguous/missing case examined where available.
 
-## Scraping
+## 2. Raw scraping
 
-- [ ] `<Source>Scraper` follows repository patterns and supports mocked HTTP requests.
-- [ ] `scrape()` returns `ScrapeResult` and retains available raw source information.
-- [ ] `source`, `source_id`, `scraped_at`, and source provenance are present where available.
-- [ ] Missing IDs, failed pages/details, duplicates, and empty responses are handled safely.
-- [ ] Incomplete extraction cannot be mistaken for a complete scrape in the synchronization pipeline.
+- [ ] `scrape()` produces correct `ScrapeResult` and raw records (`source`, stable `source_id`, UTC `scraped_at`, original fields, provenance).
+- [ ] Detail failures and unavailable details differentiated; no fabricated success.
+- [ ] Deduplication does not drop category associations or other useful evidence.
+- [ ] `limit` and uncertain coverage never yield `complete=True`.
+- [ ] Empty/partial runs do not silently overwrite good raw data.
+- [ ] CLI entry point runs; logs catalog/unique/duplicates/details/errors/completeness/output path; no `runpy` warning.
 
-## Normalization
+## 3. Normalization
 
-- [ ] `<Source>Normalizer` returns valid `NormalizedPromotion` records.
-- [ ] Discount, installments, validity, weekdays, caps, payment methods, channels, segments, eligibility, and terms are mapped where supported.
-- [ ] Unknown data is not guessed; invalid required data fails visibly.
-- [ ] One-to-many benefits, if present, produce stable, collision-free variant IDs.
+- [ ] All independently applicable benefits represented, including one-to-many variants.
+- [ ] Merchant names come from merchant evidence, not benefit titles or vague heuristics.
+- [ ] Explicit entity↔benefit relations verified; no arbitrary first promotion.
+- [ ] Stable, unique `source_id` values, including variants/shared benefits.
+- [ ] Correct dates, weekdays, discounts, installments, caps/scope/periods, payment methods, channels, eligibility, terms and minima where supported.
+- [ ] Concurrent caps and source schema mismatches documented (not silently discarded).
+- [ ] Skipped/non-normalizable records classified by precise reasons, not made to vanish.
+- [ ] No invented values or modified shared schema to hide missing fields.
 
-## Integration and tests
+## 4. Testing
 
-- [ ] `sync_<source>.py` reuses `SyncRunner` correctly.
-- [ ] Targeted scraper/normalizer tests pass using mocked real-source fixtures.
-- [ ] The full repository test suite has been run and its result reported.
-- [ ] Live read-only checks, if performed, are reported separately from unit tests.
-- [ ] Workflow scheduling is enabled **only** when full extraction and safe completeness handling have been verified.
-- [ ] No writes to production Supabase were made without explicit approval.
+- [ ] Mock HTTP tests cover pagination/caps, errors, empty data, duplicates, completeness, raw saving and logging.
+- [ ] Normalizer tests cover multiple/shared benefits, relationships and stable IDs.
+- [ ] Real fixtures remain unmodified in tests; synthetic tests clearly separated.
+- [ ] Clean-checkout tests do not depend on `backend/data/`, `.env` or previous runs.
+- [ ] Targeted tests and full pytest suite executed; exact outcomes reported.
 
-## Handoff
+## 5. Real validation
 
-- [ ] All changed files, verified endpoints, test results, and outstanding risks are summarized.
-- [ ] The result is labeled ready for review, partial/not scheduled, or blocked.
+- [ ] Read-only live scraper run performed, or why unavailable explained.
+- [ ] Full raw dataset audited: entities, unique promotions, associations, normalized records, field coverage, errors, exclusions.
+- [ ] At least 10 representative real cases checked against the source when available; list cases and results.
+- [ ] Significant missing fields, relationships, filters and source-only limitations disclosed.
+- [ ] Completeness and `ScrapeResult.complete` assessment backed by evidence.
+
+## 6. Operations
+
+- [ ] `sync_<source>.py` delegates to existing `SyncRunner`; no production sync executed.
+- [ ] No Supabase writes, deployment, secrets access, workflow scheduling or PR actions without authorization.
+- [ ] Files changed and remaining risks summarized.
+- [ ] Integration explicitly labeled **Ready for review**, **Partial / not scheduled**, or **Blocked**.
