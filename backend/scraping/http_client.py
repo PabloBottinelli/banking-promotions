@@ -3,7 +3,7 @@ import time
 import httpx
 
 
-DEFAULT_TIMEOUT = httpx.Timeout(30.0, connect=8.0)
+DEFAULT_TIMEOUT = httpx.Timeout(30.0, connect=25.0)
 
 RETRYABLE_STATUS_CODES = {
     408,
