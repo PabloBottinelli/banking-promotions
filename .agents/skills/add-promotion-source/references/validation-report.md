@@ -1,38 +1,18 @@
-# Developer handoff report — add-promotion-source
+# Developer handoff — V2
 
-Use facts from executed commands and inspected source, not guesses. Mark blocked/unverified explicitly.
+**Status:** READY_FOR_INDEPENDENT_QA | PARTIAL | BLOCKED
 
-## Source and implementation
-
-- Source and official entry URL:
-- In-scope catalog boundaries:
-- Discovery/detail mechanisms and pagination evidence:
-- Files modified and design (entity↔benefit mapping, variant IDs):
-
-## Observed results
-
-| Metric | Value | Evidence/caveat |
-|---|---:|---|
-| Raw catalog entities | | |
-| Unique raw benefit IDs | | |
-| Entity–benefit associations | | |
-| Details successful / unavailable / failed | | |
-| Normalized rows / unique normalized IDs | | |
-| Multiple-benefit records | | |
-| Excluded/missing/ambiguous items (by reason) | | |
-| Field coverage (days, methods, dates, caps, etc.) | | |
-
-## Initial validation
-
-- Representative official-source comparisons (up to 10+ when present):
-- Observed mismatches and information not representable in current model:
-- Unit/mock tests and full pytest: commands and actual results:
-- Live scraper/local normalization: commands, outcome and raw file path:
-
-## Safety and QA handoff
-
-- `ScrapeResult.complete`: value, **defined scope**, evidence and limitations.
-- If normalization omits records, how could that affect `SyncRunner.deactivate_not_seen`?
-- Remaining uncertainties for **independent QA (`promotion_qa` under orchestration)**:
-- Supabase writes/scheduled workflow executed? (must be no unless authorized):
-- Status: **Ready for independent QA / Partial / Blocked**.
+- Source, official URL and exact catalog scope:
+- Source mechanism (API/SSR/HTML), categories, pagination and completeness evidence:
+- Files changed (scraper, normalizer, sync, tests):
+- Commands run and **actual** outcomes (network errors and missing checks included):
+- Raw records / unique source IDs / fetched details / unavailable / parser errors:
+- Normalized V2 rows / unique per-variant IDs / groups / multiple benefits:
+- Each excluded record and reason (if any):
+- Evidence for benefit types, typed caps/minimums/stock, payment alternatives, weekdays, nullable dates, merchant checks:
+- User-facing `specific_conditions` and preserved original `terms`:
+- Unknowns and explicit source evidence limitations:
+- Can `ScrapeResult.complete` be justified for the exact scope? Why?
+- Can deactivation safely occur after this normalization? If unknown, **block** and explain.
+- No Supabase writes / no scheduling changes confirmation:
+- Independent QA questions / suggested cases:

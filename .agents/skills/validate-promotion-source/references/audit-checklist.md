@@ -1,42 +1,19 @@
-# Independent QA checklist — validate-promotion-source
+# Independent QA checklist — V2
 
-This is an **audit checklist**, not self-certification by the development agent. Mark **Pass / Fail / Unverified / Not applicable** with evidence.
-
-## Independence
-
-- [ ] Fresh review session/role declared; if not independent, disclosed.
-- [ ] Official catalog/terms expectations gathered before relying on the developer's assertions where feasible.
-- [ ] Implementation report and tests treated as hypotheses, not the answer key.
-
-## Catalog and extraction
-
-- [ ] In-scope catalog boundary clearly defined; independent official-site inventory attempted.
-- [ ] Pagination, dynamic loading, categories, geographic filters and hidden variants checked.
-- [ ] Source counts/limits verified for semantics; no assumption that returned-page count equals global total.
-- [ ] Catalog IDs and detail retrieval compared against independently observed listing.
-- [ ] Complete vs partial evidence appropriate for *that catalog scope*; no mandatory explicit total if structural exhaustiveness demonstrated.
-- [ ] API/detail unavailability, HTTP failures and filtered/expired entries not silently reported as successful details.
-
-## Normalization and integrity
-
-- [ ] Entire local raw dataset checked for duplicates, missing benefits, variants, ID instability and silent exclusions.
-- [ ] Merchant vs promotion title verified and 1:N / N:M associations handled correctly.
-- [ ] At least 10 real cases (or all if fewer) manually checked against official terms/website.
-- [ ] Explicit validity, weekdays, discounts, installments, caps and concurrent caps, minima, currency, payment methods, QR vs channel, eligibility and terms checked.
-- [ ] No invented dates or confused benefit semantics; unsupported schema cases disclosed.
-- [ ] Skip reasons differentiated from errors; raw data preserved.
-- [ ] SyncRunner deactivation risks assessed **without running sync**; full scrape cannot conceal incomplete normalization.
-
-## Independent tests
-
-- [ ] Existing tests run and their expected values challenged.
-- [ ] Clean-checkout safety: no ignored `backend/data/`, `.env` or machine-specific paths.
-- [ ] Reproducible regression test suggestions and expected assertions reported for Dev when justified; QA changed no repository files.
-- [ ] No `backend/tests/validation/`, golden/reference datasets or snapshot-test system introduced.
-
-## Result
-
-- [ ] All findings include severity, source evidence, expected/observed, reproduction, impact, proposed fix.
-- [ ] Confirmed vs suspected vs unverified issues separated.
-- [ ] QA did not modify production code, run Supabase writes or enable workflow.
-- [ ] Outcome: **Pass QA / Needs fixes / Blocked**, without claiming deployment authority.
+- [ ] Fresh separate QA context; evidence collected from official pages/API/terms before trusting Dev tests.
+- [ ] Official URLs and catalog boundary/pagination/filters documented; temporal availability noted.
+- [ ] All entities checked when ≤30; diverse stratified sampling with explicit confidence otherwise.
+- [ ] Actual `backend/normalization/models.py` schema and real raw/normalized pipeline examined.
+- [ ] Benefits checked across all kinds, including fee waivers, free services, points/crypto; no unexplained loss.
+- [ ] Compatible multi-benefits versus mutually exclusive variants, stable IDs and group IDs checked.
+- [ ] Percent/amount/currency/reward currency validated; no commercial-value fallback constants.
+- [ ] Correct typed monetary caps, usage, stock, minimum and shared cap period/scope verified.
+- [ ] Allowed issuer/card/wallet/rail combinations checked; no false cards or channels.
+- [ ] Nullable dates, day-of-week parsing, `applies_every_day`, source validity vs legal clauses checked.
+- [ ] `Comercios de barrio` or adherents have useful special conditions + official URL + flag.
+- [ ] Specific conditions capture plan/region/segment/code/exclusions; original terms preserved.
+- [ ] Apparent mojibake checked against real UTF-8 bytes/codepoints, not display alone.
+- [ ] Scraping completeness, normalization coverage and deactivation safety assessed separately.
+- [ ] Tests examined critically; commands/results accurate; no files changed and no sync attempted.
+- [ ] QA-IDs reproducible with official expected vs output actual; no speculative defects as confirmed.
+- [ ] Verdict PASS/FAIL/BLOCKED with specific follow-up; no reference-test suite created.

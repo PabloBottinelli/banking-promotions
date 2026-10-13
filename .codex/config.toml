@@ -1,5 +1,4 @@
-# Project-scoped Codex configuration. No API keys or global permission overrides.
-# Codex loads project config from trusted projects.
+# Project-level Codex config. Merge with existing settings, never overwrite unrelated config.
 [agents]
 enabled = true
 max_concurrent_threads_per_session = 2

@@ -1,45 +1,30 @@
-# Developer checklist — add-promotion-source
+# Developer checklist — V2 source integration
 
-Record evidence; label unverifiable steps instead of pretending they passed. This is an **implementation handoff**, not independent sign-off.
+Mark unchecked work as **not done / blocked**, not passed.
 
-## Investigation
+## Source and raw capture
+- [ ] `git status` reviewed; current shared models and runner read.
+- [ ] Official scope, source links, API/HTML/SSR, pagination, filtering and lazy loading independently investigated.
+- [ ] Raw data keeps every relevant record, terms, link, stable ID, timestamp and source payload.
+- [ ] Invalid/empty/partial extraction cannot overwrite previous good JSON unnoticed.
+- [ ] Explicit catalog completeness evidence; no hardcoded count and no unsupported `complete=True`.
 
-- [ ] Current models, runner, other sources and test conventions inspected.
-- [ ] Official URL(s), catalog scope and live API/HTML mechanism identified.
-- [ ] Actual pagination, geography, categories, result caps and lazy loading investigated.
-- [ ] Source completeness argument documented; a site-wide total is **not mandatory** for a structurally exhaustive finite listing.
-- [ ] Catalog entities, actual benefits, variants and shared relationships distinguished.
-- [ ] Field mapping grounded in original API, visible content or legal terms.
+## V2 semantics
+- [ ] All benefit kinds considered, including fee waiver, free service, points and crypto rewards.
+- [ ] Multiple simultaneous benefits versus conditional variants distinguished; variant IDs stable and unique.
+- [ ] `Benefit` source-grounded, no hardcoded financial fallback; correct discount versus cashback/financing.
+- [ ] `PromotionLimit` represents monetary caps, quantities, minimum purchase, stock; correct currency/scope/period.
+- [ ] Separate correct payment combinations, issuer/wallet/rail, without invented applicability.
+- [ ] Dates nullable without invented defaults; explicit every-day differs from unknown weekdays.
+- [ ] `online`, `physical` only where evidenced; no substring weekday parser.
+- [ ] Merchant groups and required official adherent list notice (`promotion_url`, flag, `specific_conditions`) preserved.
+- [ ] Segments/plans/regions/codes/exclusions in concise `specific_conditions`, full source in `terms`.
+- [ ] All real entries audited when ≤30; larger catalog sample spans categories, groups, edge cases.
+- [ ] Real UTF-8 file bytes/Unicode inspected before claiming encoding corruption.
 
-## Extraction
-
-- [ ] Raw fields/provenance preserved; stable entity IDs and UTC timestamp used.
-- [ ] Details, HTTP/parse failures, unavailable links and duplicates counted separately.
-- [ ] Limit, truncation, unknown coverage, unexpected selector/layout changes never silently count as complete.
-- [ ] Safe raw writing and meaningful command-line progress/summary logs.
-- [ ] Runnable `python -m scraping.sources.<source>.scraper` without an avoidable `runpy` warning.
-
-## Normalization
-
-- [ ] All independently valid variants represented or exclusions justified.
-- [ ] Merchant name ≠ promotion title unless evidenced; N:M relations handled.
-- [ ] Unique, stable normalized IDs; no index-based IDs or arbitrary first match.
-- [ ] Explicit validity/weekday/payment type/app/channel/amount/currency/caps/terms parsing reviewed.
-- [ ] Missing facts not invented; unsupported benefit categories and schema limitations disclosed.
-- [ ] Potential loss of valid normalized records and deactivation risk assessed, even if scrape coverage is verified.
-
-## Initial tests and evidence
-
-- [ ] Focused mocked/unit tests for catalog/details/errors/normalization/ID stability/completeness.
-- [ ] Tests work without ignored `backend/data/` or production credentials.
-- [ ] Captured raw examples unaltered; synthetic cases separated.
-- [ ] Targeted tests and full pytest attempted; results truthful.
-- [ ] Read-only source and local normalization audit attempted, with counts and edge cases reported.
-- [ ] No reference/golden test infrastructure created.
-
-## Handoff
-
-- [ ] No Supabase write, scheduled workflow change, deployment or unauthorized push.
-- [ ] Modified files, known limitations and open questions listed.
-- [ ] Status **Ready for independent QA**, **Partial** or **Blocked** provided.
-- [ ] Orchestrated: evidence handed to coordinator for fresh `promotion_qa`; standalone: recommend separate `$validate-promotion-source` session. No self-claim of QA approval.
+## Safety / validation
+- [ ] Local normalize/export checked; raw counts, normalized rows, variants and exclusions explicitly reported.
+- [ ] Unit and full tests run (`python -m pytest -q tests`), with actual results.
+- [ ] `ScrapeResult.complete` and missing normalization / deactivation hazard separately assessed.
+- [ ] No Supabase sync, `--from-file` sync, workflow edits, migrations or secret exposure.
+- [ ] No golden/reference test suite added. Developer handoff supplied for independent QA.

@@ -1,91 +1,52 @@
 ---
 name: add-promotion-source
-description: Implement a new bank, wallet, or promotions site in Promociones Bancarias (scraper, normalizer, sync entry point, initial unit tests and initial source validation). Use for the `promotion_dev` implementation subagent or explicitly developer-only source tasks. For end-to-end automatic Dev + independent QA, prefer `integrate-promotion-source`.
+description: Implement or fix a bank, wallet, or financial-platform promotions source in Promociones Bancarias using the V2 Benefit/PromotionLimit/PaymentMethod model; builds a faithful scraper, normalizer, thin sync entry point and developer tests. For automatic independent QA use integrate-promotion-source.
 ---
 
-# Add a promotion source — developer workflow
+# Add promotion source — Dev / V2
 
-You are the **implementer**, not the independent QA reviewer. Apply repository `AGENTS.md`. Follow `references/acceptance-checklist.md` and the report layout in `references/validation-report.md`. When invoked by `$integrate-promotion-source`, deliver findings to the coordinator, which will spawn `promotion_qa` independently. When invoked standalone, recommend a fresh QA session using `$validate-promotion-source`. Never mark your own work independently approved.
+You are the **implementation agent**, NOT an independent QA reviewer. Read repository `AGENTS.md`, `references/v2-field-contract.md`, `references/acceptance-checklist.md`. Deliver the handoff format in `references/validation-report.md`.
 
-## 0. Read the project and set a boundary
+## 1. Establish contracts and in-scope source
 
-1. Inspect `git status`, scope and the user's source URL/name. Preserve unrelated changes.
-2. Inspect `ScrapeResult` (including coverage fields), `NormalizedPromotion`, `PaymentMethod`, `SyncRunner`, repository persistence, existing tests and at least two existing sources; confirm their current behavior rather than assuming it.
-3. Choose a stable source slug. Define exactly what website/catalog is in scope. Never assume a listing card equals one promotion.
-4. Identify whether entities, benefits and variants have 1:1, 1:N or N:M relationships. Decide whether `normalize_many()` will be required.
+- Inspect `git status` and current `backend/normalization/models.py`, `backend/scraping/models.py`, `backend/synchronization/runner.py`, relevant persistence code, other sources and tests. Detect user changes and model differences; preserve unrelated files.
+- Establish public official page/API and exact catalog scope. Check page counts and true pagination, additional categories, lazy-load behavior, regional filters and detail linkage; investigate 1:N campaign → merchant → benefit relationships.
+- Verify source format with network/API evidence. A finite HTML listing can be complete without a published count *if* structural checks exclude undiscovered entries, filtering/pagination and hidden sections. Never assume 200 OK or a response length equals coverage.
+- Distinguish what's officially stated from assumptions; links to older scraper code are hints, not current evidence.
 
-## 1. Investigate the live source first
+## 2. Implement raw extraction
 
-1. Inspect the official page and network requests. Prefer public structured API when genuinely complete; otherwise use HTML/SSR, then browser interaction only when essential.
-2. Verify method/headers/query, pagination/cursors, categories, geography, ranking, page caps, total semantics, detail endpoints, IDs and URL behavior. Inspect whether visible tabs/buttons change benefit variants.
-3. **Establish a defensible discovery boundary.** For a finite HTML catalog, investigate pagination, "load more", infinite scroll, client-rendered cards, hidden categories and other catalog paths. A numeric total is helpful but not mandatory if structural exhaustiveness can be demonstrated. Never confuse returned results with source total.
-4. Sample several types of record, including ambiguous/empty data, unusual benefit formats, shared promotions and more than one benefit per merchant. Record where every normalized field actually comes from.
-5. If access is blocked, say so; never manufacture evidence. Do not use old exploratory repository code as proof an endpoint still works.
+- Reuse project client/retries, respect rates, keep TLS certificate validation. Support injected client, deterministic parsing and tests.
+- Store complete raw API/HTML/terms data with stable entity IDs, source URL, `scraped_at` in UTC; do not trim fields just because V2 doesn't represent them.
+- Count discovered/unique/detail-success/detail-error/unavailable/filtered; never treat pagination limits, missing details, broken selectors, or partial responses as complete.
+- Keep raw file saving atomic; an empty or failed extraction must not silently overwrite the previous valid snapshot. Avoid redundant copying of huge catalog HTML into every record when provenance can be preserved once.
+- Scraper CLI should log counts, path, coverage scope, completeness and errors; no side effects upon module import.
 
-## 2. Extract faithful raw data
+## 3. Implement V2 normalization
 
-Typical files:
+- `NormalizedPromotion`: `source`, stable per-variant `source_id`, `scraped_at`, `title`, `scope`, nullable `valid_from`/`valid_to`, optional `promotion_group_id`, `merchant`/`category`/`promotion_url`, `requires_merchant_verification`, `benefits`, `limits`, `payment_methods`, `days_of_week`/`applies_every_day`, nullable `online`/`physical`, `specific_conditions`, original `terms`.
+- All benefits count, including financial products and services: cashback, discounts, financing, fee waivers, free services, points, gifts and `other` with justified description. No arbitrary exclusion of non-shopping promotions.
+- Use `Benefit` for what customer receives, `PromotionLimit` for typed cap/minimum/usage/stock; never place currencies, operating limits or quotas into unrelated money fields. `Decimal` for currency values; distinguish ARS, USD, BTC reward currency, etc.
+- **Variants:** a source item with alternate segment/card/category/level/period produces stable separate IDs with a shared group ID via `normalize_many()` and `SyncRunner(normalize_many=True)`. A single variant can have multiple *compatible, simultaneous* Benefit components. Do not flatten four different Personal Pay levels into one percentage or stack conditional Credicoop percentages.
+- **Payment options:** each `PaymentMethod` is one complete, supported combination of issuer + card type/network + wallet + payment rail. Keep `raw_name`; don't infer networks from issuer or declare online from app mentions.
+- **Merchant eligibility:** `merchant="Comercios de barrio"` or `"Comercios adheridos"` is valid if that is the promoted group. Set `requires_merchant_verification=True`, `promotion_url` to the official campaign/merchant-lookup page and a practical note in `specific_conditions`. No need to individually model merchant lists, branch locations, regions or customer plans. Retain those restrictions in `specific_conditions` and legal detail in `terms`.
+- **Validity/days:** dates may be `None` and should not cause forced exclusion. Recognize exact promo validity clauses, not generic legal deadlines. Tokenize weekdays with word boundaries and check positive clauses, not `"sab" in text` or exclusion text. `days_of_week=[]` unknown, `applies_every_day=True` explicit every day; channels nullable.
+- **No manufactured output:** don't hardcode changing benefits/caps/dates/stock as a fallback for a broken parser. `other` only when a real documented benefit exists. Preserve raw record plus flagged exclusion if truly impossible to represent.
+- Use `backend/normalization/structure.py` helpers if present, but challenge their assumptions against source semantics; never prefer green tests over correctness.
+- The user may have migrated Supabase: do not edit schema/migrations without explicit request. Do not emit legacy V1 fields or rely on V1 columns.
 
-```text
-backend/scraping/sources/<source>/__init__.py
-backend/scraping/sources/<source>/scraper.py
-```
+## 4. Tests, local JSON and source checks
 
-- Use injected HTTP clients and existing retry/timeouts where feasible; don't disable TLS verification.
-- Crawl the entire in-scope catalog, actual pagination and accessible details; deduplicate without losing entity-benefit relationships. Cache shared details when applicable.
-- Preserve source payloads, legal terms, source URLs and `source`, stable `source_id`, UTC `scraped_at`. Keep informational or non-normalizable raw records for audit.
-- Maintain useful CLI logs: catalog/items per page, unique/duplicates, details obtained/unavailable/failed, missing IDs, completion assessment, saved file path. No import-time side effects/runpy warning.
-- Reject or visibly mark empty, truncated, partially parsed and silently capped results. Never let `scrape(limit=N)` accidentally claim full coverage. Use safe raw saving, preferably atomic, and prevent an empty run from overwriting valid data silently.
-- Consider `ScrapeResult.complete` a deactivation-risk indicator, not a vanity status. A source with a verified complete HTML listing may be eligible for coverage verification *without an explicit total*, but only within the defined listing scope. Check the effect of incomplete normalization on `SyncRunner` separately before proposing production use.
+- Add only ordinary unit/mock tests under `backend/tests/{scraping,normalization}`. Use `httpx.MockTransport`, `tmp_path`, synthetic clearly labeled inputs or small unmodified real excerpts. No golden/reference suite.
+- Cover every V2 category relevant to the source: benefits/variants/identity, nullable dates, weekends/unknown every day, amount versus quantity, cap period/scope, payment combinations, source text preservation, attached merchants, empty catalog, partial failures and deactivation safety.
+- Test assertions must have independent source-based expected values, not derived by running the current code and copying its output.
+- Run a local scraper / JSON normalizer/export in read-only-to-database mode (running scraper may update local raw file; check paths/permissions first). Compare real output **field by field**: *all records for ≤30 entries*, representative plus edge-case sample for larger catalogs. Count raw entities, transformed variants, non-normalizable items and reasons. Mark unknowns rather than make them look valid.
+- Run `python -m pytest -q tests` from `backend/`, plus targeted tests. Explicitly report tests that could not run due inaccessible temporary paths or network timeouts; neither means that code is correct.
+- Review `ScrapeResult.complete` separate from normalization completeness. `SyncRunner` may deactivate not-seen rows after upsert; an unchecked omission can lose live promotions. Never use `sync_<source>` or even `--from-file` without user approval.
 
-## 3. Normalize benefit semantics
+## 5. Handoff
 
-Typical files:
-
-```text
-backend/normalization/sources/<source>.py
-backend/synchronization/sync_<source>.py
-```
-
-- Use verified source fields and source-local deterministic rules. Never infer a merchant from a day/title, an online purchase from an app mention, or a cashback cap from an unrelated USD transfer limit.
-- When multiple independent benefits or variants exist use `normalize_many()` and configure `SyncRunner(normalize_many=True)`; derive IDs from real stable identifiers, not positions.
-- Distinguish card network/type from payment app/rail and from benefits unrelated to a payment card. Normalize only what is evidenced.
-- Handle promotions without a traditional percentage: installments, waived fees, services and other perks may require source-specific exclusions or documenting current schema limitations. No invented dates/amounts to force Pydantic success.
-- Parse validity from an explicit promotion validity clause; distinguish weekdays from validity; support unambiguous textual formats such as "del 1° al 31 de octubre de 2026" and "viernes, sábados y domingos de octubre de 2026" where justified. Do not globally choose min/max dates from unrelated legal paragraphs.
-- Preserve concurrent caps, minima, restrictions, legal text; do not silently map incompatible currencies or concepts into current fields.
-- Return no benefit only for a clearly justified, explicitly categorized exclusion. Do not hide a parser failure or ambiguous relation with a silent `[]`.
-
-## 4. Write implementation-level tests, not a self-approval
-
-Typical files:
-
-```text
-backend/tests/scraping/test_<source>_scraper.py
-backend/tests/normalization/test_<source>_normalizer.py
-```
-
-- Add focused unit/mock tests with `httpx.MockTransport`, isolated `tmp_path`, and small, sanitized source examples when useful. No dependence on `backend/data/`, `.env` or a previous local run.
-- Cover pagination/caps, empty data, HTTP/parse failures, detail availability, completeness, IDs, raw preservation, multiple benefit variants, skip/error reasons and critical field mappings.
-- If adding captured source fixtures, do not mutate their original payload to manufacture missing relations/dates. Keep synthetic examples clearly labeled.
-- Ground expected assertions in source evidence; don't just assert existing implementation output. **Your tests are implementation tests, not independent QA acceptance.** No separate golden/reference tests or `backend/tests/validation/` directory.
-- Run targeted tests and full `python -m pytest -q` from `backend/`. Report actual pass/fail and any blocked checks.
-
-## 5. Perform an initial live read-only check
-
-- Run the scraper CLI directly when network permits, never `sync_<source>` or `SyncRunner.run` (including `--from-file`). Run local normalization over the raw JSON without Supabase.
-- Collect: catalog entities, benefit IDs, entity-benefit associations, raw-to-normalized counts, variants, unique normalized IDs, skipped/error reasons and key-field coverage.
-- Manually compare at least 10 representative live examples against official source/terms if available (otherwise all); record known mismatches rather than adjusting assumptions until they pass.
-- Check whether a *complete scrape* paired with exclusions/incomplete normalization could cause `SyncRunner` to deactivate valid promotions. If yes, block scheduling/production until fixed or gated.
-- Do not claim source-wide completeness from a complete subpage or any unverified category/region.
-
-## 6. Hand off for independent QA
-
-- Create only a thin `sync_<source>.py` and do not execute it against Supabase.
-- Do not add the source to scheduled GitHub Actions or deploy. Do not push/commit/PR unless requested.
-- Provide a handoff: source name/URL, scope, code files, commands, raw output path (if created), counts, assumptions, known exclusions, `complete` rationale and open questions. **Do not supply self-written tests as the source of truth.**
-- In orchestrated runs, return an evidence-based developer handoff to the coordinator; expect possible numbered `QA-###` findings for correction. Only Dev modifies code and tests to address them, then a **fresh QA agent** validates independently. In standalone runs, recommend a separate `$validate-promotion-source` QA session.
-- Leave final quality acceptance to independent QA and the user; do not approve yourself.
-
-## Result status
-
-Use the report and checklist. Label the implementation **Ready for independent QA**, **Partial / needs investigation**, or **Blocked**. These are development statuses, not production approval.
+- Add thin `sync_<source>.py`; do **not run** it against Supabase or edit scheduling/workflows.
+- Report source scope/evidence, changed files, commands and outcomes, catalog/raw/normalized counts, variant and exclusion details, `complete` reasoning, missing information, validation gaps and risk of destructive deactivation.
+- If orchestrated, return this to the coordinator for fresh QA; on `QA-###` findings, fix and add ordinary regression tests, then await new independent QA. If standalone, request `$validate-promotion-source` in a separate fresh context.
+- Status is `READY_FOR_INDEPENDENT_QA`, `PARTIAL` or `BLOCKED` — never independent `PASS`.

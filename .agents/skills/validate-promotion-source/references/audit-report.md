@@ -1,54 +1,46 @@
-# Independent QA report — validate-promotion-source
+# QA V2 — independent read-only report
 
-Only state checks actually performed. Do not fill unknowns with invented counts.
+**VERDICT: PASS | FAIL | BLOCKED**
 
-## Scope and independence
+## Independence and scope
+- Fresh QA context and technical read-only isolation (or instruction-only restriction):
+- Official catalog URLs, legally binding details, observation timestamp and in-scope boundary:
+- Direct official evidence available? If not, what specifically was blocked?
+- Raw/normalized snapshot timestamp; risk of stale comparison:
 
-- Source name, official catalog URL and catalog boundaries:
-- Was review in a fresh, separate session? If not, describe limitation:
-- Official webpages/APIs/terms inspected independently:
-- Limits on live browser/network access:
+## Catalog and semantic coverage
+| Metric | Official observation | Raw | V2 normalization | Notes |
+|---|---|---|---|---|
+| In-scope entities / unique links | | | | |
+| Detail fetches / missing | | | | |
+| Independently checked promotions | | | | |
+| Output variant IDs / groups | | | | |
+| Multiple compatible benefits | | | | |
+| Exclusions and classifications | | | | |
+| All benefit kinds represented | | | | |
 
-## Independent source vs implementation
-
-| Metric | Official-source evidence | Scraper/raw output | Interpretation |
-|---|---|---|---|
-| Catalog entities/links | | | |
-| Unique benefit IDs / variants | | | |
-| Details available vs attempted | | | |
-| Entity-benefit relationships | | | |
-| Normalized rows / unique IDs | | | |
-| Exclusions by reason | | | |
-| Catalog coverage and deactivation safety | | | |
-
-## Checked real promotions
-
-For at least 10 varied examples when possible (or all if fewer), show official URL/ID, source facts, output facts, matches/mismatches and confidence. This table lives in the **report**, not a new golden/reference test suite.
+## Per-record review
+- For ≤30 entries: one per-ID summary for **all**, including expected and output benefit, dates/day, payment, currency/limits, conditions and any mismatch.
+- For >30: explain sample plan and exact inspected IDs; list edge cases and unreviewed areas.
 
 ## Findings
+For each `QA-###`:
+- Severity / confirmed, probable or unverified:
+- Official URL and exact fact supporting expectation:
+- Input raw evidence and normalized actual (field + ID):
+- Reproduction command or function/path:
+- User/data integrity or deactivation impact:
+- Developer change and ordinary regression assertion requested:
 
-For each issue:
+## Gates
+- `catalog_complete`: YES / NO / UNKNOWN, scope and evidence:
+- `normalization_complete`: YES / NO / UNKNOWN, exclusions and variants:
+- `safe_to_deactivate`: YES / NO / UNKNOWN, reason (not production permission):
+- `ready_for_human_review`: YES / NO:
 
-1. **[Severity] Short title — confirmed / likely / unverified**
-2. Official-source evidence and exact expected value:
-3. Observed implementation output and file/function:
-4. Minimal reproduction/test command or affected ID:
-5. User/data integrity impact:
-6. Suggested developer correction:
-
-## Tests and actions
-
-- Existing targeted tests: command and exact result:
-- Full pytest: command and exact result:
-- Exact **proposed** ordinary tests/assertions for Dev (QA writes no test files):
-- Live scraper/read-only normalization: commands and outcomes:
-- Production implementation, workflow or database modified? (expected **no**):
-- No files modified by QA and no reference/golden tests added? (expected **yes**):
-
-## QA decision and handoff
-
-- Scraper completeness: evidence, exact scope and uncertainties.
-- Normalization completeness/accuracy: evidence and exclusions.
-- Deactivation safety: explicit separate decision.
-- Decision marker: **VERDICT: PASS / VERDICT: FAIL / VERDICT: BLOCKED**. Outcome: **Pass QA / Needs fixes / Blocked**.
-- Developer action list and what QA must re-check next:
+## Execution and boundaries
+- Targeted tests (command/output), full tests (command/output), live comparison available:
+- What could not be checked; network/runtime errors versus code errors:
+- Confident/false-positive encoding findings confirmed with bytes? If relevant:
+- Any repository modification, Supabase writes or workflow change by QA? **Expected: no.**
+- Existing finding IDs confirmed resolved / outstanding / unverified:

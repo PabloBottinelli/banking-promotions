@@ -1,16 +1,16 @@
-# Orchestration checklist — integrate-promotion-source
+# Coordinator checklist — V2 Dev → QA
 
-Use as an in-memory checklist; do not create a persistent log or golden dataset by default.
-
-- [ ] Source name/URL and exact official catalog boundary identified.
-- [ ] Existing uncommitted user changes preserved; no out-of-scope edits.
-- [ ] Delegation to `promotion_dev` happened; no simulated developer role.
-- [ ] Developer completed implementation, initial tests and read-only data check where possible.
-- [ ] A **different** `promotion_qa` was spawned after developer completion, with a fresh context and independent official-source-first audit.
-- [ ] QA returned `VERDICT: PASS`, `FAIL`, or `BLOCKED`, with evidence and scope.
-- [ ] On FAIL, developer addressed issue IDs, then fresh QA reviewed the fixes.
-- [ ] Audit count never exceeded **3 total**; stopped on PASS/BLOCKED/third FAIL.
-- [ ] QA remained read-only; only developer edited implementation or ordinary tests.
-- [ ] No new reference/golden test infrastructure created.
-- [ ] No Supabase writes, workflow scheduling, production deployment or unauthorized pushes/merges.
-- [ ] Final handoff states files, real data metrics, QA cycle history, unresolved findings and human decision required.
+- [ ] Current working tree, V2 models/runner inspected, unrelated changes preserved.
+- [ ] Official in-scope source/catalog link independently verified.
+- [ ] **Real** Dev delegation started with agent role (not model=promotion_dev); completion and handoff received.
+- [ ] Dev included raw/normalized counts, variant IDs, field semantics, all benefit types and tests.
+- [ ] **Fresh independent** QA delegation completed; official source inspected before Dev assertions.
+- [ ] Small catalogs (≤30): full per-entry QA coverage; large: representative documented sample.
+- [ ] QA checks V2 semantics and full `specific_conditions`/merchant links, including nullable validity.
+- [ ] Each QA FAIL is delivered to Dev with precise numbered findings and expected source evidence.
+- [ ] Dev fixes ordinary tests; fresh QA verifies previous issues and regressions.
+- [ ] ≤3 actual QA audits, stop on PASS, BLOCKED or third FAIL. No automatic “fix” of a networking block.
+- [ ] QA performed no edits; technical isolation or instruction-only restriction disclosed.
+- [ ] `catalog_complete`, `normalization_complete`, `safe_to_deactivate` evaluated separately.
+- [ ] No Supabase writes, CLI sync (including `--from-file`), workflow changes, secret reads, unauthorized pushes or merges.
+- [ ] Final outcome + evidence, tests, files, limitations and human review requirement reported.
