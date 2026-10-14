@@ -1,3 +1,13 @@
+# No solicitar aprobación para ejecutar comandos
+approval_policy = "never"
+
+# Permitir modificaciones dentro del proyecto
+sandbox_mode = "workspace-write"
+
+# Permitir conexiones a internet desde los comandos
+[sandbox_workspace_write]
+network_access = true
+
 # Project-level Codex config. Merge with existing settings, never overwrite unrelated config.
 [agents]
 enabled = true
