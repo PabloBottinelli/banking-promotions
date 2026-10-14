@@ -1,0 +1,3358 @@
+[
+  {
+    "source": "buepp",
+    "source_id": "13801",
+    "scraped_at": "2026-10-14T13:21:37.291968+00:00",
+    "promotion_url": "https://www.buepp.com.ar/beneficios/13801",
+    "catalog": {
+      "distancia": 0,
+      "latitud": -34.639744,
+      "longitud": -58.444706,
+      "idBeneficio": 13801,
+      "idSucursal": 0,
+      "descuento": 30,
+      "comercio_nombre": "Carnicería y Granja Argentina",
+      "css_icono_rubro": "icon-bcba_general_periscope",
+      "titulo": "30% de descuento",
+      "subtitulo": "Tope hasta $15.000 totales para todos los comercios bajo el rubro “Comercios Vecinos\".",
+      "idImagen": 481,
+      "comercio_id": 5563,
+      "comercio_logo": "5563/logo",
+      "diasBeneficio": "LMMJVSD",
+      "sin_tope": false,
+      "nuevo": false,
+      "medioUnicoTipo": true,
+      "medios_pago": [
+        {
+          "id": 7,
+          "nombre": "BUEPP",
+          "credito": "N"
+        }
+      ],
+      "visitas": 40929,
+      "rubro": {
+        "id": 1170,
+        "idRubroPadre": null,
+        "nombre": "Comercios Vecinos",
+        "icono": "icon-bcba_general_periscope",
+        "orden": null,
+        "nombreUrl": "Comercios-Vecinos"
+      },
+      "aplica_tienda_online": false
+    },
+    "detail": {
+      "beneficio": {
+        "id": 13801,
+        "titulo": "30% de descuento",
+        "subtitulo": "Tope hasta $15.000 totales para todos los comercios bajo el rubro “Comercios Vecinos\".",
+        "descuento": 30,
+        "medios_pago": [
+          {
+            "id": 7,
+            "nombre": "BUEPP",
+            "credito": "N"
+          }
+        ],
+        "css_icono_rubro": "icon-bcba_general_periscope",
+        "idRubro": 1170,
+        "dias": "LMMJVSD",
+        "sin_tope": false,
+        "nuevo": false,
+        "visitas": 40929,
+        "shopping": false,
+        "medioUnicoTipo": true,
+        "descAdicional": "",
+        "aplica_tienda_online": false,
+        "resumen": "¡Aprovechá 30% de reintegro en Comercios Vecinos! Todos los días pagando a través de la billetera Buepp.",
+        "legales": "Promoción ofrecida por billetera Buepp del Banco de la Ciudad de Buenos Aires, cuit 30-99903208-3 para toda la República Argentina desde el 01/12/2025 hasta el 31/12/2026 para compras presenciales realizadas en comercios adheridos. Se otorgará un 30% de descuento con un tope de devolución mensual por cliente de $15.000 totales para todos los comercios participantes bajo el rubro “Comercios Vecinos”, abonando exclusivamente con QR Modo a través de Buepp con tarjeta de débito, crédito, o dinero en cuenta. El descuento se acreditará en la cuenta de Banco Ciudad o Buepp del cliente, dentro de los 45 días posteriores a la fecha de realizada la compra. Quedan excluidas de la promoción las cuentas en mora y/o bloqueadas por motivos administrativos. La presente promoción es válida solo para consumos de tipo familiar. El banco se reserva el derecho de limitar o suspender la participación de alguna persona en la presente promoción, sin que ello genere responsabilidad de ninguna índole, en caso de detectarse la existencia de fraude, engaño o maniobra similar, contrariando la dinámica de la promoción dispuesta, con la finalidad de obtener beneficios de manera ilegitima. Consultá condiciones o limitaciones aplicables y más información en www.buepp.com.ar.",
+        "legales_genericas": "No aplica para tarjetas corporativas. La URL de los comercios adheridos se publica a título ilustrativo. El Banco no asume responsabilidad sobre los contenidos publicados en tales sitios. Los beneficios sobre consumos online realizados en sitios web ajenos al Banco (tiendas online, tiendas virtuales, e-commerce, entre otros) solo aplicarán en el caso de que así se indique en los términos y condiciones de la promoción del Banco Ciudad. El titular de los datos personales podrá en cualquier momento solicitar el retiro o bloqueo total o parcial de su nombre de nuestros bancos de datos, comunicándose al 0800-22-20-400, de conformidad con el art. 27, inc 3 de la ley 25.326 y art. 27 del Anexo I del Decreto 1558/01.",
+        "cft": "0.0",
+        "mostrar_cft": false,
+        "legalesGenericas": true,
+        "con_archivo_pdf": false,
+        "nombre_pdf": "",
+        "fechaDesde": "2025-12-01T03:00:00.000+00:00",
+        "fechaHasta": "2026-12-31T03:00:00.000+00:00",
+        "idImagen": 481,
+        "nombreRubro": "Comercios Vecinos",
+        "ato": false
+      },
+      "comercio": {
+        "nombre": "Carnicería y Granja Argentina",
+        "logo": "5563/logo",
+        "web": ""
+      }
+    },
+    "detail_url": "https://www.buepp.com.ar/buepp_api/beneficios/13801"
+  },
+  {
+    "source": "buepp",
+    "source_id": "13104",
+    "scraped_at": "2026-10-14T13:21:37.291968+00:00",
+    "promotion_url": "https://www.buepp.com.ar/beneficios/13104",
+    "catalog": {
+      "distancia": 0,
+      "latitud": 0.0,
+      "longitud": 0.0,
+      "idBeneficio": 13104,
+      "idSucursal": 0,
+      "descuento": 20,
+      "comercio_nombre": "Cebra",
+      "cuotas": 3,
+      "css_icono_rubro": "icon-bcba_beneficios_libreria",
+      "titulo": "20% de descuento",
+      "subtitulo": "Tope $15.000 mensual.",
+      "idImagen": 455,
+      "comercio_id": 3157,
+      "comercio_logo": "3157/logo",
+      "diasBeneficio": "----V--",
+      "sin_tope": false,
+      "nuevo": false,
+      "medioUnicoTipo": false,
+      "medios_pago": [
+        {
+          "id": 4,
+          "nombre": "MASTERCARD",
+          "credito": "S"
+        },
+        {
+          "id": 1,
+          "nombre": "VISA",
+          "credito": "S"
+        },
+        {
+          "id": 5,
+          "nombre": "VISA DEBITO",
+          "credito": "N"
+        },
+        {
+          "id": 3,
+          "nombre": "MAESTRO",
+          "credito": "N"
+        },
+        {
+          "id": 8,
+          "nombre": "APP CIUDAD",
+          "credito": "N"
+        },
+        {
+          "id": 7,
+          "nombre": "BUEPP",
+          "credito": "N"
+        }
+      ],
+      "visitas": 11169,
+      "rubro": {
+        "id": 1188,
+        "idRubroPadre": null,
+        "nombre": "Librerías y Jugueterías",
+        "icono": "icon-bcba_beneficios_libreria",
+        "orden": null,
+        "nombreUrl": "Librerías-y-Jugueterías"
+      },
+      "aplica_tienda_online": false
+    },
+    "detail": {
+      "beneficio": {
+        "id": 13104,
+        "titulo": "20% de descuento",
+        "subtitulo": "Tope $15.000 mensual.",
+        "cuotas": 3,
+        "descuento": 20,
+        "medios_pago": [
+          {
+            "id": 4,
+            "nombre": "MASTERCARD",
+            "credito": "S"
+          },
+          {
+            "id": 1,
+            "nombre": "VISA",
+            "credito": "S"
+          },
+          {
+            "id": 5,
+            "nombre": "VISA DEBITO",
+            "credito": "N"
+          },
+          {
+            "id": 3,
+            "nombre": "MAESTRO",
+            "credito": "N"
+          },
+          {
+            "id": 8,
+            "nombre": "APP CIUDAD",
+            "credito": "N"
+          },
+          {
+            "id": 7,
+            "nombre": "BUEPP",
+            "credito": "N"
+          }
+        ],
+        "css_icono_rubro": "icon-bcba_beneficios_libreria",
+        "idRubro": 1188,
+        "dias": "----V--",
+        "sin_tope": false,
+        "nuevo": false,
+        "visitas": 11169,
+        "shopping": false,
+        "medioUnicoTipo": false,
+        "descAdicional": "",
+        "aplica_tienda_online": false,
+        "resumen": "20% de descuento y 3 cuotas sin interés para compras realizadas los días viernes con tarjetas de crédito Visa o Mastercard de Banco Ciudad y tarjetas de débito Maestro y Visa Débito, escaneando exclusivamente el QR de MODO, desde Buepp, App Ciudad o Modo, con tope de reintegro de $15.000 mensual por cliente.",
+        "legales": "Promoción ofrecida por el Banco de la Ciudad de Buenos Aires, CUIT 30-99903208-3 (Banco Ciudad), todos los viernes desde el 1/12/2025 y hasta el 31/12/2026 en la República Argentina, para compras realizadas en locales físicos adheridos y en tiendas online adheridas con tarjetas de crédito Visa o Mastercard de Banco Ciudad y tarjetas de débito Maestro y Visa Débito, escaneando exclusivamente el QR de MODO, desde Buepp o App Ciudad. Se otorgará un 20% (veinte por ciento) de descuento con tope de $15.000 (quince mil) pesos mensuales y hasta 3 cuotas sin interés. El reintegro se acreditará en la cuenta del cliente en un plazo de 15 (quince) días hábiles posteriores a la fecha de realizado el pago. Ver locales adheridos en www.bancociudad.com.ar. No aplica para planes “CUOTA SIMPLE” ni para ningún programa de beneficios similar. Para compras realizadas por titulares de tarjetas adicionales, el tarjetahabiente adicional deberá poseer una caja de ahorro del Banco Ciudad asociada a MODO. El producto ofrecido corresponde a la cartera de consumo. T.N.A., T.E.A. Y C.F.T.N.A (IVA Incluido): 0,00% Fijo. T.N.A: Tasa Nominal Anual, T.E.A: Tasa Efectiva Anual, C.F.T.N.A: Costo Financiero Total expresado en forma de tasa nominal anual con IVA.",
+        "legales_genericas": "No aplica para tarjetas corporativas. La URL de los comercios adheridos se publica a título ilustrativo. El Banco no asume responsabilidad sobre los contenidos publicados en tales sitios. Los beneficios sobre consumos online realizados en sitios web ajenos al Banco (tiendas online, tiendas virtuales, e-commerce, entre otros) solo aplicarán en el caso de que así se indique en los términos y condiciones de la promoción del Banco Ciudad. El titular de los datos personales podrá en cualquier momento solicitar el retiro o bloqueo total o parcial de su nombre de nuestros bancos de datos, comunicándose al 0800-22-20-400, de conformidad con el art. 27, inc 3 de la ley 25.326 y art. 27 del Anexo I del Decreto 1558/01.",
+        "cft": "0.00",
+        "mostrar_cft": true,
+        "legalesGenericas": true,
+        "con_archivo_pdf": false,
+        "nombre_pdf": "",
+        "fechaDesde": "2025-12-01T03:00:00.000+00:00",
+        "fechaHasta": "2026-12-31T03:00:00.000+00:00",
+        "idImagen": 455,
+        "nombreRubro": "Librerías y Jugueterías",
+        "ato": false
+      },
+      "comercio": {
+        "nombre": "Cebra",
+        "logo": "3157/logo",
+        "web": ""
+      }
+    },
+    "detail_url": "https://www.buepp.com.ar/buepp_api/beneficios/13104"
+  },
+  {
+    "source": "buepp",
+    "source_id": "13982",
+    "scraped_at": "2026-10-14T13:21:37.291968+00:00",
+    "promotion_url": "https://www.buepp.com.ar/beneficios/13982",
+    "catalog": {
+      "distancia": 0,
+      "latitud": 0.0,
+      "longitud": 0.0,
+      "idBeneficio": 13982,
+      "idSucursal": 0,
+      "comercio_nombre": "El Mundo del Juguete",
+      "cuotas": 6,
+      "css_icono_rubro": "icon-bcba_general_periscope",
+      "titulo": "20% de descuento",
+      "subtitulo": "Tope $15.000.",
+      "idImagen": 457,
+      "comercio_id": 5237,
+      "comercio_logo": "5237/logo",
+      "diasBeneficio": "LMMJVSD",
+      "sin_tope": false,
+      "nuevo": false,
+      "medioUnicoTipo": true,
+      "medios_pago": [
+        {
+          "id": 7,
+          "nombre": "BUEPP",
+          "credito": "N"
+        }
+      ],
+      "visitas": 7502,
+      "rubro": {
+        "id": 1170,
+        "idRubroPadre": null,
+        "nombre": "Comercios Vecinos",
+        "icono": "icon-bcba_general_periscope",
+        "orden": null,
+        "nombreUrl": "Comercios-Vecinos"
+      },
+      "aplica_tienda_online": false
+    },
+    "detail": {
+      "beneficio": {
+        "id": 13982,
+        "titulo": "20% de descuento",
+        "subtitulo": "Tope $15.000.",
+        "cuotas": 6,
+        "medios_pago": [
+          {
+            "id": 7,
+            "nombre": "BUEPP",
+            "credito": "N"
+          }
+        ],
+        "css_icono_rubro": "icon-bcba_general_periscope",
+        "idRubro": 1170,
+        "dias": "LMMJVSD",
+        "sin_tope": false,
+        "nuevo": false,
+        "visitas": 7502,
+        "shopping": false,
+        "medioUnicoTipo": true,
+        "descAdicional": "",
+        "aplica_tienda_online": false,
+        "resumen": "¡Aprovechá hasta 6 cuotas sin interés en Comercios Vecinos! Todos los días pagando a través de la billetera Buepp. Ver comercios adheridos.",
+        "legales": "Promoción ofrecida por billetera Buepp del Banco de la Ciudad de Buenos Aires, cuit 30-99903208-3 para toda la República Argentina desde el 01/01/2026 hasta el 31/12/2026 para compras presenciales realizadas en comercios adheridos hasta 6 cuotas sin interés para todos los comercios participantes bajo el rubro “Comercios Vecinos”, abonando con tarjetas de crédito Visa y Mastercard de Banco Ciudad y/o con QR MODO a través de Buepp con tarjetas de crédito Visa o Mastercard de Banco ciudad. Quedan excluidas de la promoción las cuentas en mora y/o bloqueadas por motivos administrativos. La presente promoción es válida solo para consumos de tipo familiar. El banco se reserva el derecho de limitar o suspender la participación de alguna persona en la presente promoción, sin que ello genere responsabilidad de ninguna índole, en caso de detectarse la existencia de fraude, engaño o maniobra similar, contrariando la dinámica de la promoción dispuesta, con la finalidad de obtener beneficios de manera ilegitima. Consultá condiciones o limitaciones aplicables y más información en www.buepp.com.ar",
+        "legales_genericas": "No aplica para tarjetas corporativas. La URL de los comercios adheridos se publica a título ilustrativo. El Banco no asume responsabilidad sobre los contenidos publicados en tales sitios. Los beneficios sobre consumos online realizados en sitios web ajenos al Banco (tiendas online, tiendas virtuales, e-commerce, entre otros) solo aplicarán en el caso de que así se indique en los términos y condiciones de la promoción del Banco Ciudad. El titular de los datos personales podrá en cualquier momento solicitar el retiro o bloqueo total o parcial de su nombre de nuestros bancos de datos, comunicándose al 0800-22-20-400, de conformidad con el art. 27, inc 3 de la ley 25.326 y art. 27 del Anexo I del Decreto 1558/01.",
+        "cft": "0.0",
+        "mostrar_cft": false,
+        "legalesGenericas": true,
+        "con_archivo_pdf": true,
+        "nombre_pdf": "suc MDJ -.pdf",
+        "fechaDesde": "2026-01-01T03:00:00.000+00:00",
+        "fechaHasta": "2026-12-31T03:00:00.000+00:00",
+        "idImagen": 457,
+        "nombreRubro": "Comercios Vecinos",
+        "ato": false
+      },
+      "comercio": {
+        "nombre": "El Mundo del Juguete",
+        "logo": "5237/logo",
+        "web": ""
+      }
+    },
+    "detail_url": "https://www.buepp.com.ar/buepp_api/beneficios/13982"
+  },
+  {
+    "source": "buepp",
+    "source_id": "15956",
+    "scraped_at": "2026-10-14T13:21:37.291968+00:00",
+    "promotion_url": "https://www.buepp.com.ar/beneficios/15956",
+    "catalog": {
+      "distancia": 0,
+      "latitud": -34.603672,
+      "longitud": -58.382122,
+      "idBeneficio": 15956,
+      "idSucursal": 0,
+      "descuento": 25,
+      "comercio_nombre": "Coto",
+      "css_icono_rubro": "icon-bcba_beneficios_supermercados",
+      "titulo": "25% de descuento",
+      "subtitulo": "Tope de reintegro de $30.000 por semana.",
+      "idImagen": 72,
+      "comercio_id": 56,
+      "comercio_logo": "56/logo",
+      "diasBeneficio": "L------",
+      "sin_tope": false,
+      "nuevo": false,
+      "medioUnicoTipo": false,
+      "medios_pago": [
+        {
+          "id": 4,
+          "nombre": "MASTERCARD",
+          "credito": "S"
+        },
+        {
+          "id": 1,
+          "nombre": "VISA",
+          "credito": "S"
+        },
+        {
+          "id": 7,
+          "nombre": "BUEPP",
+          "credito": "N"
+        },
+        {
+          "id": 8,
+          "nombre": "APP CIUDAD",
+          "credito": "N"
+        }
+      ],
+      "visitas": 6818,
+      "rubro": {
+        "id": 10,
+        "idRubroPadre": null,
+        "nombre": "Supermercados",
+        "icono": "icon-bcba_beneficios_supermercados",
+        "orden": null,
+        "nombreUrl": "Supermercados"
+      },
+      "aplica_tienda_online": true
+    },
+    "detail": {
+      "beneficio": {
+        "id": 15956,
+        "titulo": "25% de descuento",
+        "subtitulo": "Tope de reintegro de $30.000 por semana.",
+        "descuento": 25,
+        "medios_pago": [
+          {
+            "id": 4,
+            "nombre": "MASTERCARD",
+            "credito": "S"
+          },
+          {
+            "id": 1,
+            "nombre": "VISA",
+            "credito": "S"
+          },
+          {
+            "id": 7,
+            "nombre": "BUEPP",
+            "credito": "N"
+          },
+          {
+            "id": 8,
+            "nombre": "APP CIUDAD",
+            "credito": "N"
+          }
+        ],
+        "css_icono_rubro": "icon-bcba_beneficios_supermercados",
+        "idRubro": 10,
+        "dias": "L------",
+        "sin_tope": false,
+        "nuevo": false,
+        "visitas": 6818,
+        "shopping": false,
+        "medioUnicoTipo": false,
+        "descAdicional": "",
+        "aplica_tienda_online": true,
+        "resumen": "25% de descuento los días lunes, con tope de $30.000 por semana en compras realizadas en comercios adheridos pagando con QR MODO a través de App Ciudad o Buepp con tarjetas de crédito del Ciudad en un pago en locales físicos adheridos.  Y en la tienda online pagando con tarjetas de crédito. Ver productos excluidos.",
+        "legales": "<!DOCTYPE html>\n<html>\n<head>\n</head>\n<body>\n<p>Promoci&oacute;n ofrecida por el Banco de la Ciudad de Buenos Aires, CUIT 30-99903208-3 (Banco Ciudad) los d&iacute;as lunes desde el 07/09/2026 al 31/12/2026, en toda la Rep&uacute;blica Argentina, se otorgar&aacute; un 25% (veinticinco) de descuento durante dicha vigencia sobre el importe bruto de los productos participantes (excluyendo aquellos con promociones vigentes) con tope de reintegro de $30.000 por semana, en compras realizadas en locales f&iacute;sicos adheridos de COTO CICSA, pagando con QR MODO a trav&eacute;s de App Ciudad o Buepp, tarjetas de cr&eacute;dito Visa, Mastercard y Cabal de Banco Ciudad y en la tienda online en www.cotodigital.com.ar. pagando con tarjetas de cr&eacute;dito Visa, Mastercard y Cabal de Banco Ciudad. Aplica para compras en un pago. <span>El descuento podr&aacute; visualizarse v&iacute;a reintegro, a acreditar en la cuenta del cliente dentro de los 15 d&iacute;as posteriores a la fecha de realizada la compra. Si el cliente tuviera m&aacute;s de una cuenta, el cr&eacute;dito se realizar&aacute; en cualquiera de ellas a elecci&oacute;n del banco. </span>Ser&aacute; requisito excluyente, previo a realizarse la compra, tener asociada a MODO la cuenta del Banco Ciudad. Para compras realizadas por titulares de tarjetas adicionales, el tarjetahabiente adicional deber&aacute; poseer una caja de ahorro del Banco Ciudad asociada a MODO. Quedan excluidas de la promoci&oacute;n las cuentas en mora y/o bloqueadas por motivos administrativos. La presente promoci&oacute;n es v&aacute;lida solo para consumos de tipo familiar. Si el cliente tuviera m&aacute;s de una cuenta, el cr&eacute;dito se realizar&aacute; en cualquiera de ellas a elecci&oacute;n del banco. En caso de duda sobre el destino del consumo, no se acreditar&aacute; el monto de la bonificaci&oacute;n hasta tanto se aclare el mismo. Para obtener el descuento en las compras efectuadas a trav&eacute;s de internet (Coto Digital) debe realizar la compra el d&iacute;a lunes, independientemente del d&iacute;a de entrega. La compra online est&aacute; sujeta a disponibilidad de env&iacute;o por parte del supermercado. Excusiones informadas por el comercio: electrodom&eacute;sticos, rodados, neum&aacute;ticos. No incluye productos de bodegas Catena Zapata, Nicola Catena, Bodega Ernesto Catena (Alma Negra, Padrillos, Animal, Enemigo y Gran Enemigo), malbec DV Catena bot. X 1,5 lt., malbec la rioja DV Catena, malbec salta DV Catena, Saint Felicien, Nicasia, Tilia, bodega Leoncio Arizu (Luigi Bosca), Bodega La Rural (Rutini, Trumpeter, San Felipe y cepa tradicional semillon/malbec-malbec/tinto blend), Chandon ni terrazas de los Andes (Latitud 33&deg;, Castel, Altos del Plata, Valmont, Beltour, Cheval y Clos du Moulin), bodega norton (lote negro, quorum vi, privada family blend), bodega cadus wines (cadus), Casa Pirque (Altaland, La Posta, Petit Caro, malbec/cabernet franc, Casa de Herrero, malbec ojo de buen cubero y malbec/cabernet franc/ pinot noir Cuchillo de Palo, malbec r&iacute;o de los Ciervos Araucana, malbec nico y blend beso de dante luca, aruma y luca), bodega Bianchi (vino chardonnay reservado mar&iacute;a carmen, vino gran corte Enzo Bianchi, vinos malbec y cabernet sauvignon particular Bianchi), bodega Valent&iacute;n Bianchi (vino tinto corte y malbec iv generaci&oacute;n), bodega Monteviejo (festivo y petite fleur), ni vinos en tetrabrik ni generosos. El descuento en champa&ntilde;as y espumantes no inlcuye productos de bodegas Chandon, mercier, Catena Zapata, Bar&oacute;n B, dom Perignon, Pommery, M&ouml;et Chandon, la grande dame ni Krug, no incluye cortes de carnes de novillo, novillito, ternera, menudencias ni carnes elaboradas, porcinos y embutidos. No incluye pollo entero ni trozado, fresco ni congelado, no incluye leches infantiles etapas 1 y 2 (flu&iacute;das ni en polvo), ni harinas en todas sus presentaciones, ni az&uacute;car en todas sus presentaciones, ni aceite de girasol y mezcla girasol-soja en todas sus presentaciones, ni productos incluidos en programas de precios del gobierno y/o aplicables por normativa vigente. Se excluyen todas las presentaciones de las siguientes marcas: Coca Cola, Coca Cola Light, Coca Cola sin az&uacute;car, Crush, Fanta, Fanta sin az&uacute;car, Schweppes, Sprite y Sprite sin az&uacute;car, Aquarius, Smartwater, Cepita, Benedictino, Powerade, Ades, hi-c ni monster. No valido para venta on line. Precios y promociones para consumo familiar. Esta publicaci&oacute;n no acumula con otros descuentos, ofertas y/o promociones bancarias. Coto c.i.c.s.a. - paysand&uacute; 1842 - c1416cdp - capital federal - fonocoto 0800-888-4848 - <a href=\"http://WWW.COTO.COM.AR\">WWW.COTO.COM.AR</a></p>\n<p>Los descuentos publicados no son acumulables con otras promociones, ni tarjetas de programas de ayuda social. Conforme RES. 915 e/2017, 51- E/2017 y 240 E/2017. T.N.A., T.E.A. Y C.F.T.N.A (IVA Incluido): 0,00% Fijo. T.N.A: Tasa Nominal Anual, T.E.A: Tasa Efectiva Anual, C.F.T.N.A: Costo Financiero Total expresado en forma de tasa nominal anual con IVA. El producto ofrecido corresponde a la cartera de consumo.&nbsp;</p>\n</body>\n</html>",
+        "legales_genericas": "No aplica para tarjetas corporativas. La URL de los comercios adheridos se publica a título ilustrativo. El Banco no asume responsabilidad sobre los contenidos publicados en tales sitios. Los beneficios sobre consumos online realizados en sitios web ajenos al Banco (tiendas online, tiendas virtuales, e-commerce, entre otros) solo aplicarán en el caso de que así se indique en los términos y condiciones de la promoción del Banco Ciudad. El titular de los datos personales podrá en cualquier momento solicitar el retiro o bloqueo total o parcial de su nombre de nuestros bancos de datos, comunicándose al 0800-22-20-400, de conformidad con el art. 27, inc 3 de la ley 25.326 y art. 27 del Anexo I del Decreto 1558/01.",
+        "cft": "0.0",
+        "mostrar_cft": false,
+        "legalesGenericas": true,
+        "con_archivo_pdf": false,
+        "nombre_pdf": "",
+        "fechaDesde": "2026-09-07T03:00:00.000+00:00",
+        "fechaHasta": "2026-12-31T03:00:00.000+00:00",
+        "idImagen": 72,
+        "nombreRubro": "Supermercados",
+        "ato": false
+      },
+      "comercio": {
+        "nombre": "Coto",
+        "logo": "56/logo",
+        "web": ""
+      }
+    },
+    "detail_url": "https://www.buepp.com.ar/buepp_api/beneficios/15956"
+  },
+  {
+    "source": "buepp",
+    "source_id": "15021",
+    "scraped_at": "2026-10-14T13:21:37.291968+00:00",
+    "promotion_url": "https://www.buepp.com.ar/beneficios/15021",
+    "catalog": {
+      "distancia": 0,
+      "latitud": -34.603184,
+      "longitud": -58.375343,
+      "idBeneficio": 15021,
+      "idSucursal": 0,
+      "descuento": 10,
+      "comercio_nombre": "Juleriaque",
+      "cuotas": 10,
+      "css_icono_rubro": "icon-bcba_beneficios_perfumerias",
+      "titulo": "10% de descuento",
+      "subtitulo": "hasta 10 cuotas sin interés y sin tope",
+      "idImagen": 77,
+      "comercio_id": 114,
+      "comercio_logo": "114/logo",
+      "diasBeneficio": "-M-----",
+      "sin_tope": false,
+      "nuevo": false,
+      "medioUnicoTipo": false,
+      "medios_pago": [
+        {
+          "id": 4,
+          "nombre": "MASTERCARD",
+          "credito": "S"
+        },
+        {
+          "id": 1,
+          "nombre": "VISA",
+          "credito": "S"
+        },
+        {
+          "id": 7,
+          "nombre": "BUEPP",
+          "credito": "N"
+        }
+      ],
+      "visitas": 3540,
+      "rubro": {
+        "id": 1166,
+        "idRubroPadre": null,
+        "nombre": "Perfumerías",
+        "icono": "icon-bcba_beneficios_perfumerias",
+        "orden": null,
+        "nombreUrl": "Perfumerías"
+      },
+      "aplica_tienda_online": true
+    },
+    "detail": {
+      "beneficio": {
+        "id": 15021,
+        "titulo": "10% de descuento",
+        "subtitulo": "hasta 10 cuotas sin interés y sin tope",
+        "cuotas": 10,
+        "descuento": 10,
+        "medios_pago": [
+          {
+            "id": 4,
+            "nombre": "MASTERCARD",
+            "credito": "S"
+          },
+          {
+            "id": 1,
+            "nombre": "VISA",
+            "credito": "S"
+          },
+          {
+            "id": 7,
+            "nombre": "BUEPP",
+            "credito": "N"
+          }
+        ],
+        "css_icono_rubro": "icon-bcba_beneficios_perfumerias",
+        "idRubro": 1166,
+        "dias": "-M-----",
+        "sin_tope": false,
+        "nuevo": false,
+        "visitas": 3540,
+        "shopping": false,
+        "medioUnicoTipo": false,
+        "descAdicional": "",
+        "aplica_tienda_online": true,
+        "resumen": "Los martes aprovechá -10% de descuento SIN TOPE y hasta 10 cuotas sin interés en perfumerías y en la tienda online de Juleriaque, pagando con MODO a través de App Ciudad o Buepp con tarjetas de crédito.",
+        "legales": "<!DOCTYPE html>\n<html>\n<head>\n</head>\n<body>\n<p>Promoci&oacute;n ofrecida por el Banco de la Ciudad de Buenos Aires, CUIT 30-99903208-3 (Banco Ciudad), todos los d&iacute;as martes desde el 20/01/2026 al 31/12/2026 en la Rep&uacute;blica Argentina, para compras realizadas en locales adheridos de Juleriaque y en su tienda online pagando exclusivamente con qr MODO desde App Ciudad o Buepp con tarjetas de cr&eacute;dito Visa o Mastercard de Banco Ciudad. Se otorgar&aacute; un 10% (diez por ciento) de descuento sin tope de reintegro y hasta 10 cuotas sin inter&eacute;s. El reintegro se acreditar&aacute; en la cuenta del cliente en un plazo de 15 (quince) d&iacute;as h&aacute;biles posteriores a la fecha de realizado el pago. No aplica para planes &ldquo;Cuota MiPyme&rdquo; ni para ning&uacute;n programa de beneficios similar. Para compras realizadas por titulares de tarjetas adicionales, el tarjetahabiente adicional deber&aacute; poseer una caja de ahorro del Banco Ciudad asociada a MODO. El producto ofrecido corresponde a la cartera de consumo. T.N.A., T.E.A. Y C.F.T.N.A (IVA Incluido): 0,00% Fijo. T.N.A: Tasa Nominal Anual, T.E.A: Tasa Efectiva Anual, C.F.T.N.A: Costo Financiero Total expresado en forma de tasa nominal anual con IVA.&nbsp;</p>\n</body>\n</html>",
+        "legales_genericas": "No aplica para tarjetas corporativas. La URL de los comercios adheridos se publica a título ilustrativo. El Banco no asume responsabilidad sobre los contenidos publicados en tales sitios. Los beneficios sobre consumos online realizados en sitios web ajenos al Banco (tiendas online, tiendas virtuales, e-commerce, entre otros) solo aplicarán en el caso de que así se indique en los términos y condiciones de la promoción del Banco Ciudad. El titular de los datos personales podrá en cualquier momento solicitar el retiro o bloqueo total o parcial de su nombre de nuestros bancos de datos, comunicándose al 0800-22-20-400, de conformidad con el art. 27, inc 3 de la ley 25.326 y art. 27 del Anexo I del Decreto 1558/01.",
+        "cft": "0.0",
+        "mostrar_cft": true,
+        "legalesGenericas": true,
+        "con_archivo_pdf": false,
+        "nombre_pdf": "",
+        "fechaDesde": "2026-01-20T03:00:00.000+00:00",
+        "fechaHasta": "2026-12-31T03:00:00.000+00:00",
+        "idImagen": 77,
+        "nombreRubro": "Perfumerías",
+        "ato": false
+      },
+      "comercio": {
+        "nombre": "Juleriaque",
+        "logo": "114/logo",
+        "web": "www.juleriaque.com.ar/"
+      }
+    },
+    "detail_url": "https://www.buepp.com.ar/buepp_api/beneficios/15021"
+  },
+  {
+    "source": "buepp",
+    "source_id": "15043",
+    "scraped_at": "2026-10-14T13:21:37.291968+00:00",
+    "promotion_url": "https://www.buepp.com.ar/beneficios/15043",
+    "catalog": {
+      "distancia": 0,
+      "latitud": -34.595898,
+      "longitud": -58.38617,
+      "idBeneficio": 15043,
+      "idSucursal": 0,
+      "descuento": 10,
+      "comercio_nombre": "Rouge",
+      "cuotas": 10,
+      "css_icono_rubro": "icon-bcba_beneficios_perfumerias",
+      "titulo": "10% de descuento",
+      "subtitulo": "hasta 10 cuotas sin interés y sin tope",
+      "idImagen": 44,
+      "comercio_id": 208,
+      "comercio_logo": "208/logo",
+      "diasBeneficio": "-M-----",
+      "sin_tope": false,
+      "nuevo": false,
+      "medioUnicoTipo": false,
+      "medios_pago": [
+        {
+          "id": 1,
+          "nombre": "VISA",
+          "credito": "S"
+        },
+        {
+          "id": 4,
+          "nombre": "MASTERCARD",
+          "credito": "S"
+        },
+        {
+          "id": 7,
+          "nombre": "BUEPP",
+          "credito": "N"
+        }
+      ],
+      "visitas": 3444,
+      "rubro": {
+        "id": 1166,
+        "idRubroPadre": null,
+        "nombre": "Perfumerías",
+        "icono": "icon-bcba_beneficios_perfumerias",
+        "orden": null,
+        "nombreUrl": "Perfumerías"
+      },
+      "aplica_tienda_online": true
+    },
+    "detail": {
+      "beneficio": {
+        "id": 15043,
+        "titulo": "10% de descuento",
+        "subtitulo": "hasta 10 cuotas sin interés y sin tope",
+        "cuotas": 10,
+        "descuento": 10,
+        "medios_pago": [
+          {
+            "id": 1,
+            "nombre": "VISA",
+            "credito": "S"
+          },
+          {
+            "id": 4,
+            "nombre": "MASTERCARD",
+            "credito": "S"
+          },
+          {
+            "id": 7,
+            "nombre": "BUEPP",
+            "credito": "N"
+          }
+        ],
+        "css_icono_rubro": "icon-bcba_beneficios_perfumerias",
+        "idRubro": 1166,
+        "dias": "-M-----",
+        "sin_tope": false,
+        "nuevo": false,
+        "visitas": 3444,
+        "shopping": false,
+        "medioUnicoTipo": false,
+        "descAdicional": "",
+        "aplica_tienda_online": true,
+        "resumen": "Los martes aprovechá -10% de descuento SIN TOPE y hasta 10 cuotas sin interés en perfumerías y en la tienda online de Juleriaque, pagando con MODO a través de App Ciudad o Buepp con tarjetas de crédito.",
+        "legales": "<!DOCTYPE html>\n<html>\n<head>\n</head>\n<body>\n<p>Promoci&oacute;n ofrecida por el Banco de la Ciudad de Buenos Aires, CUIT 30-99903208-3 (Banco Ciudad), todos los d&iacute;as martes desde el 27/01/2026 al 31/12/2026 en la Rep&uacute;blica Argentina, para compras realizadas en locales adheridos de Rouge y en su tienda online pagando exclusivamente con qr MODO desde App Ciudad o Buepp con tarjetas de cr&eacute;dito Visa o Mastercard de Banco Ciudad. Se otorgar&aacute; un 10% (diez por ciento) de descuento sin tope de reintegro y hasta 10 cuotas sin inter&eacute;s. El reintegro se acreditar&aacute; en la cuenta del cliente en un plazo de 15 (quince) d&iacute;as h&aacute;biles posteriores a la fecha de realizado el pago. No aplica para planes &ldquo;Cuota MiPyme&rdquo; ni para ning&uacute;n programa de beneficios similar. Para compras realizadas por titulares de tarjetas adicionales, el tarjetahabiente adicional deber&aacute; poseer una caja de ahorro del Banco Ciudad asociada a MODO. El producto ofrecido corresponde a la cartera de consumo. T.N.A., T.E.A. Y C.F.T.N.A (IVA Incluido): 0,00% Fijo. T.N.A: Tasa Nominal Anual, T.E.A: Tasa Efectiva Anual, C.F.T.N.A: Costo Financiero Total expresado en forma de tasa nominal anual con IVA.&nbsp;</p>\n</body>\n</html>",
+        "legales_genericas": "No aplica para tarjetas corporativas. La URL de los comercios adheridos se publica a título ilustrativo. El Banco no asume responsabilidad sobre los contenidos publicados en tales sitios. Los beneficios sobre consumos online realizados en sitios web ajenos al Banco (tiendas online, tiendas virtuales, e-commerce, entre otros) solo aplicarán en el caso de que así se indique en los términos y condiciones de la promoción del Banco Ciudad. El titular de los datos personales podrá en cualquier momento solicitar el retiro o bloqueo total o parcial de su nombre de nuestros bancos de datos, comunicándose al 0800-22-20-400, de conformidad con el art. 27, inc 3 de la ley 25.326 y art. 27 del Anexo I del Decreto 1558/01.",
+        "cft": "0.0",
+        "mostrar_cft": true,
+        "legalesGenericas": true,
+        "con_archivo_pdf": false,
+        "nombre_pdf": "",
+        "fechaDesde": "2026-01-27T03:00:00.000+00:00",
+        "fechaHasta": "2026-12-31T03:00:00.000+00:00",
+        "idImagen": 44,
+        "nombreRubro": "Perfumerías",
+        "ato": false
+      },
+      "comercio": {
+        "nombre": "Rouge",
+        "logo": "208/logo",
+        "web": "www.perfumeriasrouge.com"
+      }
+    },
+    "detail_url": "https://www.buepp.com.ar/buepp_api/beneficios/15043"
+  },
+  {
+    "source": "buepp",
+    "source_id": "15808",
+    "scraped_at": "2026-10-14T13:21:37.291968+00:00",
+    "promotion_url": "https://www.buepp.com.ar/beneficios/15808",
+    "catalog": {
+      "distancia": 0,
+      "latitud": -34.605167,
+      "longitud": -58.375057,
+      "idBeneficio": 15808,
+      "idSucursal": 0,
+      "descuento": 15,
+      "comercio_nombre": "MACOWENS",
+      "cuotas": 10,
+      "css_icono_rubro": "icon-bcba_beneficios_indumentaria",
+      "titulo": "15% de descuento",
+      "subtitulo": "hasta 10 cuotas sin interés y sin tope",
+      "idImagen": 99,
+      "comercio_id": 133,
+      "comercio_logo": "133/logo",
+      "diasBeneficio": "-M-----",
+      "sin_tope": true,
+      "nuevo": false,
+      "medioUnicoTipo": true,
+      "medios_pago": [
+        {
+          "id": 7,
+          "nombre": "BUEPP",
+          "credito": "N"
+        },
+        {
+          "id": 8,
+          "nombre": "APP CIUDAD",
+          "credito": "N"
+        }
+      ],
+      "visitas": 3297,
+      "rubro": {
+        "id": 7,
+        "idRubroPadre": null,
+        "nombre": "Moda y accesorios",
+        "icono": "icon-bcba_beneficios_indumentaria",
+        "orden": null,
+        "nombreUrl": "Moda-y-accesorios"
+      },
+      "aplica_tienda_online": true
+    },
+    "detail": {
+      "beneficio": {
+        "id": 15808,
+        "titulo": "15% de descuento",
+        "subtitulo": "hasta 10 cuotas sin interés y sin tope",
+        "cuotas": 10,
+        "descuento": 15,
+        "medios_pago": [
+          {
+            "id": 7,
+            "nombre": "BUEPP",
+            "credito": "N"
+          },
+          {
+            "id": 8,
+            "nombre": "APP CIUDAD",
+            "credito": "N"
+          }
+        ],
+        "css_icono_rubro": "icon-bcba_beneficios_indumentaria",
+        "idRubro": 7,
+        "dias": "-M-----",
+        "sin_tope": true,
+        "nuevo": false,
+        "visitas": 3297,
+        "shopping": false,
+        "medioUnicoTipo": true,
+        "descAdicional": "",
+        "aplica_tienda_online": true,
+        "resumen": "Aprovechá hasta 10 cuotas sin interés y 15% de descuento sin tope pagando con QR MODO a través de App Ciudad o Buepp con tarjetas de crédito, para compras en locales físicos adheridos y en la tienda online.",
+        "legales": "<!DOCTYPE html>\n<html>\n<head>\n</head>\n<body>\n<p>Promoci&oacute;n ofrecida por el Banco de la Ciudad de Buenos Aires, CUIT 30-99903208-3 (Banco Ciudad), todos los d&iacute;as Martes desde el 01/07/2026 al 31/12/2026 en la Rep&uacute;blica Argentina, para compras realizadas en locales adheridos de Macowens y en la tienda online WWW.MACOWENS.COM.AR con tarjetas de cr&eacute;dito Visa o Mastercard de Banco Ciudad, escaneando exclusivamente el QR de MODO, desde Buepp o App Ciudad, se otorgar&aacute; un 15% (quince por ciento) de descuento sin tope y hasta 10 cuotas sin inter&eacute;s. El reintegro se acreditar&aacute; en la cuenta del cliente en un plazo de 15 (quince) d&iacute;as h&aacute;biles posteriores a la fecha de realizado el pago. No aplica para planes &ldquo;CUOTA SIMPLE&rdquo; ni para ning&uacute;n programa de beneficios similar. Para compras realizadas por titulares de tarjetas adicionales, el tarjetahabiente adicional deber&aacute; poseer una caja de ahorro del Banco Ciudad asociada a MODO. El producto ofrecido corresponde a la cartera de consumo. T.N.A., T.E.A. Y C.F.T.N.A (IVA Incluido): 0,00% Fijo. T.N.A: Tasa Nominal Anual, T.E.A: Tasa Efectiva Anual, C.F.T.N.A: Costo Financiero Total expresado en forma de tasa nominal anual con IVA.</p>\n</body>\n</html>",
+        "legales_genericas": "No aplica para tarjetas corporativas. La URL de los comercios adheridos se publica a título ilustrativo. El Banco no asume responsabilidad sobre los contenidos publicados en tales sitios. Los beneficios sobre consumos online realizados en sitios web ajenos al Banco (tiendas online, tiendas virtuales, e-commerce, entre otros) solo aplicarán en el caso de que así se indique en los términos y condiciones de la promoción del Banco Ciudad. El titular de los datos personales podrá en cualquier momento solicitar el retiro o bloqueo total o parcial de su nombre de nuestros bancos de datos, comunicándose al 0800-22-20-400, de conformidad con el art. 27, inc 3 de la ley 25.326 y art. 27 del Anexo I del Decreto 1558/01.",
+        "cft": "0.0",
+        "mostrar_cft": false,
+        "legalesGenericas": true,
+        "con_archivo_pdf": false,
+        "nombre_pdf": "",
+        "fechaDesde": "2026-07-01T03:00:00.000+00:00",
+        "fechaHasta": "2026-12-31T03:00:00.000+00:00",
+        "idImagen": 99,
+        "nombreRubro": "Moda y accesorios",
+        "ato": false
+      },
+      "comercio": {
+        "nombre": "MACOWENS",
+        "logo": "133/logo",
+        "web": "www.macowens.com.ar/"
+      }
+    },
+    "detail_url": "https://www.buepp.com.ar/buepp_api/beneficios/15808"
+  },
+  {
+    "source": "buepp",
+    "source_id": "15815",
+    "scraped_at": "2026-10-14T13:21:37.291968+00:00",
+    "promotion_url": "https://www.buepp.com.ar/beneficios/15815",
+    "catalog": {
+      "distancia": 0,
+      "latitud": -34.588078,
+      "longitud": -58.410313,
+      "idBeneficio": 15815,
+      "idSucursal": 0,
+      "descuento": 10,
+      "comercio_nombre": "Vans",
+      "cuotas": 10,
+      "css_icono_rubro": "icon-bcba_beneficios_indumentaria",
+      "titulo": "10% de descuento",
+      "subtitulo": "hasta 10 cuotas sin interés y sin tope",
+      "idImagen": 714,
+      "comercio_id": 5996,
+      "comercio_logo": "5996/logo",
+      "diasBeneficio": "-M-----",
+      "sin_tope": true,
+      "nuevo": false,
+      "medioUnicoTipo": true,
+      "medios_pago": [
+        {
+          "id": 8,
+          "nombre": "APP CIUDAD",
+          "credito": "N"
+        },
+        {
+          "id": 7,
+          "nombre": "BUEPP",
+          "credito": "N"
+        }
+      ],
+      "visitas": 3257,
+      "rubro": {
+        "id": 7,
+        "idRubroPadre": null,
+        "nombre": "Moda y accesorios",
+        "icono": "icon-bcba_beneficios_indumentaria",
+        "orden": null,
+        "nombreUrl": "Moda-y-accesorios"
+      },
+      "aplica_tienda_online": true
+    },
+    "detail": {
+      "beneficio": {
+        "id": 15815,
+        "titulo": "10% de descuento",
+        "subtitulo": "hasta 10 cuotas sin interés y sin tope",
+        "cuotas": 10,
+        "descuento": 10,
+        "medios_pago": [
+          {
+            "id": 8,
+            "nombre": "APP CIUDAD",
+            "credito": "N"
+          },
+          {
+            "id": 7,
+            "nombre": "BUEPP",
+            "credito": "N"
+          }
+        ],
+        "css_icono_rubro": "icon-bcba_beneficios_indumentaria",
+        "idRubro": 7,
+        "dias": "-M-----",
+        "sin_tope": true,
+        "nuevo": false,
+        "visitas": 3257,
+        "shopping": false,
+        "medioUnicoTipo": true,
+        "descAdicional": "",
+        "aplica_tienda_online": true,
+        "resumen": "Hasta 10 cuotas sin interés y 10% de descuento sin tope pagando con QR MODO a través de App Ciudad o Buepp con tarjetas de crédito, para compras en locales físicos adheridos y en la tienda online.",
+        "legales": "<!DOCTYPE html>\n<html>\n<head>\n</head>\n<body>\n<p>Promoci&oacute;n ofrecida por el Banco de la Ciudad de Buenos Aires, CUIT 30-99903208-3 (Banco Ciudad), todos los d&iacute;as Martes desde el 01/07/2026 al 31/12/2026 en la Rep&uacute;blica Argentina, para compras realizadas en locales adheridos de Vans y en la tienda online <a href=\"http://www.vans.com.ar\">www.vans.com.ar</a> con tarjetas de cr&eacute;dito Visa o Mastercard de Banco Ciudad, escaneando exclusivamente el QR de MODO, desde Buepp o App Ciudad, se otorgar&aacute; un 10% (diez por ciento) de descuento sin tope y hasta 10 cuotas sin inter&eacute;s. El reintegro se acreditar&aacute; en la cuenta del cliente en un plazo de 15 (quince) d&iacute;as h&aacute;biles posteriores a la fecha de realizado el pago. No aplica para planes &ldquo;CUOTA SIMPLE&rdquo; ni para ning&uacute;n programa de beneficios similar. Para compras realizadas por titulares de tarjetas adicionales, el tarjetahabiente adicional deber&aacute; poseer una caja de ahorro del Banco Ciudad asociada a MODO. El producto ofrecido corresponde a la cartera de consumo. T.N.A., T.E.A. Y C.F.T.N.A (IVA Incluido): 0,00% Fijo. T.N.A: Tasa Nominal Anual, T.E.A: Tasa Efectiva Anual, C.F.T.N.A: Costo Financiero Total expresado en forma de tasa nominal anual con IVA.</p>\n</body>\n</html>",
+        "legales_genericas": "No aplica para tarjetas corporativas. La URL de los comercios adheridos se publica a título ilustrativo. El Banco no asume responsabilidad sobre los contenidos publicados en tales sitios. Los beneficios sobre consumos online realizados en sitios web ajenos al Banco (tiendas online, tiendas virtuales, e-commerce, entre otros) solo aplicarán en el caso de que así se indique en los términos y condiciones de la promoción del Banco Ciudad. El titular de los datos personales podrá en cualquier momento solicitar el retiro o bloqueo total o parcial de su nombre de nuestros bancos de datos, comunicándose al 0800-22-20-400, de conformidad con el art. 27, inc 3 de la ley 25.326 y art. 27 del Anexo I del Decreto 1558/01.",
+        "cft": "0.0",
+        "mostrar_cft": false,
+        "legalesGenericas": true,
+        "con_archivo_pdf": false,
+        "nombre_pdf": "",
+        "fechaDesde": "2026-07-01T03:00:00.000+00:00",
+        "fechaHasta": "2026-12-31T03:00:00.000+00:00",
+        "idImagen": 714,
+        "nombreRubro": "Moda y accesorios",
+        "ato": false
+      },
+      "comercio": {
+        "nombre": "Vans",
+        "logo": "5996/logo",
+        "web": ""
+      }
+    },
+    "detail_url": "https://www.buepp.com.ar/buepp_api/beneficios/15815"
+  },
+  {
+    "source": "buepp",
+    "source_id": "15044",
+    "scraped_at": "2026-10-14T13:21:37.291968+00:00",
+    "promotion_url": "https://www.buepp.com.ar/beneficios/15044",
+    "catalog": {
+      "distancia": 0,
+      "latitud": -34.602997,
+      "longitud": -58.41056,
+      "idBeneficio": 15044,
+      "idSucursal": 0,
+      "descuento": 10,
+      "comercio_nombre": "Beauty 24",
+      "cuotas": 10,
+      "css_icono_rubro": "icon-bcba_beneficios_perfumerias",
+      "titulo": "10% de descuento",
+      "subtitulo": "hasta 10 cuotas sin interés y sin tope",
+      "idImagen": 79,
+      "comercio_id": 2086,
+      "comercio_logo": "2086/logo",
+      "diasBeneficio": "-M-----",
+      "sin_tope": false,
+      "nuevo": false,
+      "medioUnicoTipo": false,
+      "medios_pago": [
+        {
+          "id": 4,
+          "nombre": "MASTERCARD",
+          "credito": "S"
+        },
+        {
+          "id": 1,
+          "nombre": "VISA",
+          "credito": "S"
+        },
+        {
+          "id": 7,
+          "nombre": "BUEPP",
+          "credito": "N"
+        },
+        {
+          "id": 8,
+          "nombre": "APP CIUDAD",
+          "credito": "N"
+        }
+      ],
+      "visitas": 3207,
+      "rubro": {
+        "id": 1166,
+        "idRubroPadre": null,
+        "nombre": "Perfumerías",
+        "icono": "icon-bcba_beneficios_perfumerias",
+        "orden": null,
+        "nombreUrl": "Perfumerías"
+      },
+      "aplica_tienda_online": true
+    },
+    "detail": {
+      "beneficio": {
+        "id": 15044,
+        "titulo": "10% de descuento",
+        "subtitulo": "hasta 10 cuotas sin interés y sin tope",
+        "cuotas": 10,
+        "descuento": 10,
+        "medios_pago": [
+          {
+            "id": 4,
+            "nombre": "MASTERCARD",
+            "credito": "S"
+          },
+          {
+            "id": 1,
+            "nombre": "VISA",
+            "credito": "S"
+          },
+          {
+            "id": 7,
+            "nombre": "BUEPP",
+            "credito": "N"
+          },
+          {
+            "id": 8,
+            "nombre": "APP CIUDAD",
+            "credito": "N"
+          }
+        ],
+        "css_icono_rubro": "icon-bcba_beneficios_perfumerias",
+        "idRubro": 1166,
+        "dias": "-M-----",
+        "sin_tope": false,
+        "nuevo": false,
+        "visitas": 3207,
+        "shopping": false,
+        "medioUnicoTipo": false,
+        "descAdicional": "",
+        "aplica_tienda_online": true,
+        "resumen": "Los martes aprovechá -10% de descuento SIN TOPE y hasta 10 cuotas sin interés en perfumerías y en la tienda online de Juleriaque, pagando con MODO a través de App Ciudad o Buepp con tarjetas de crédito.",
+        "legales": "<!DOCTYPE html>\n<html>\n<head>\n</head>\n<body>\n<p>Promoci&oacute;n ofrecida por el Banco de la Ciudad de Buenos Aires, CUIT 30-99903208-3 (Banco Ciudad), todos los d&iacute;as martes desde el 27/01/2026 al 31/12/2026 en la Rep&uacute;blica Argentina, para compras realizadas en locales adheridos de Juleriaque y en su tienda online pagando exclusivamente con qr MODO desde App Ciudad o Buepp con tarjetas de cr&eacute;dito Visa o Mastercard de Banco Ciudad. Se otorgar&aacute; un 10% (diez por ciento) de descuento sin tope de reintegro y hasta 10 cuotas sin inter&eacute;s. El reintegro se acreditar&aacute; en la cuenta del cliente en un plazo de 15 (quince) d&iacute;as h&aacute;biles posteriores a la fecha de realizado el pago. No aplica para planes &ldquo;Cuota MiPyme&rdquo; ni para ning&uacute;n programa de beneficios similar. Para compras realizadas por titulares de tarjetas adicionales, el tarjetahabiente adicional deber&aacute; poseer una caja de ahorro del Banco Ciudad asociada a MODO. El producto ofrecido corresponde a la cartera de consumo. T.N.A., T.E.A. Y C.F.T.N.A (IVA Incluido): 0,00% Fijo. T.N.A: Tasa Nominal Anual, T.E.A: Tasa Efectiva Anual, C.F.T.N.A: Costo Financiero Total expresado en forma de tasa nominal anual con IVA.&nbsp;</p>\n</body>\n</html>",
+        "legales_genericas": "No aplica para tarjetas corporativas. La URL de los comercios adheridos se publica a título ilustrativo. El Banco no asume responsabilidad sobre los contenidos publicados en tales sitios. Los beneficios sobre consumos online realizados en sitios web ajenos al Banco (tiendas online, tiendas virtuales, e-commerce, entre otros) solo aplicarán en el caso de que así se indique en los términos y condiciones de la promoción del Banco Ciudad. El titular de los datos personales podrá en cualquier momento solicitar el retiro o bloqueo total o parcial de su nombre de nuestros bancos de datos, comunicándose al 0800-22-20-400, de conformidad con el art. 27, inc 3 de la ley 25.326 y art. 27 del Anexo I del Decreto 1558/01.",
+        "cft": "0.0",
+        "mostrar_cft": true,
+        "legalesGenericas": true,
+        "con_archivo_pdf": false,
+        "nombre_pdf": "",
+        "fechaDesde": "2026-01-27T03:00:00.000+00:00",
+        "fechaHasta": "2026-12-31T03:00:00.000+00:00",
+        "idImagen": 79,
+        "nombreRubro": "Perfumerías",
+        "ato": false
+      },
+      "comercio": {
+        "nombre": "Beauty 24",
+        "logo": "2086/logo",
+        "web": "www.beauty24.com.ar"
+      }
+    },
+    "detail_url": "https://www.buepp.com.ar/buepp_api/beneficios/15044"
+  },
+  {
+    "source": "buepp",
+    "source_id": "15816",
+    "scraped_at": "2026-10-14T13:21:37.291968+00:00",
+    "promotion_url": "https://www.buepp.com.ar/beneficios/15816",
+    "catalog": {
+      "distancia": 0,
+      "latitud": -34.508846,
+      "longitud": -58.52371,
+      "idBeneficio": 15816,
+      "idSucursal": 0,
+      "descuento": 10,
+      "comercio_nombre": "Hush Puppies",
+      "cuotas": 10,
+      "css_icono_rubro": "icon-bcba_beneficios_indumentaria",
+      "titulo": "10% de descuento",
+      "subtitulo": "hasta 10 cuotas sin interés y sin tope",
+      "idImagen": 408,
+      "comercio_id": 384,
+      "comercio_logo": "384/logo",
+      "diasBeneficio": "-M-----",
+      "sin_tope": true,
+      "nuevo": false,
+      "medioUnicoTipo": true,
+      "medios_pago": [
+        {
+          "id": 8,
+          "nombre": "APP CIUDAD",
+          "credito": "N"
+        },
+        {
+          "id": 7,
+          "nombre": "BUEPP",
+          "credito": "N"
+        }
+      ],
+      "visitas": 3136,
+      "rubro": {
+        "id": 7,
+        "idRubroPadre": null,
+        "nombre": "Moda y accesorios",
+        "icono": "icon-bcba_beneficios_indumentaria",
+        "orden": null,
+        "nombreUrl": "Moda-y-accesorios"
+      },
+      "aplica_tienda_online": true
+    },
+    "detail": {
+      "beneficio": {
+        "id": 15816,
+        "titulo": "10% de descuento",
+        "subtitulo": "hasta 10 cuotas sin interés y sin tope",
+        "cuotas": 10,
+        "descuento": 10,
+        "medios_pago": [
+          {
+            "id": 8,
+            "nombre": "APP CIUDAD",
+            "credito": "N"
+          },
+          {
+            "id": 7,
+            "nombre": "BUEPP",
+            "credito": "N"
+          }
+        ],
+        "css_icono_rubro": "icon-bcba_beneficios_indumentaria",
+        "idRubro": 7,
+        "dias": "-M-----",
+        "sin_tope": true,
+        "nuevo": false,
+        "visitas": 3136,
+        "shopping": false,
+        "medioUnicoTipo": true,
+        "descAdicional": "",
+        "aplica_tienda_online": true,
+        "resumen": "Hasta 10 cuotas sin interés y 10% de descuento sin tope pagando con QR MODO a través de App Ciudad o Buepp con tarjetas de crédito, para compras en locales físicos adheridos y en la tienda online.",
+        "legales": "<!DOCTYPE html>\n<html>\n<head>\n</head>\n<body>\n<p>Promoci&oacute;n ofrecida por el Banco de la Ciudad de Buenos Aires, CUIT 30-99903208-3 (Banco Ciudad), todos los d&iacute;as Martes desde el 01/07/2026 al 31/12/2026 en la Rep&uacute;blica Argentina, para compras realizadas en locales adheridos de Hush Puppies y en la tienda online hushpuppies.com.ar <a href=\"http://www.grimoldi.com.ar\">&nbsp;</a>con tarjetas de cr&eacute;dito Visa o Mastercard de Banco Ciudad, escaneando exclusivamente el QR de MODO, desde Buepp o App Ciudad, se otorgar&aacute; un 10% (diez por ciento) de descuento sin tope y hasta 10 cuotas sin inter&eacute;s. El reintegro se acreditar&aacute; en la cuenta del cliente en un plazo de 15 (quince) d&iacute;as h&aacute;biles posteriores a la fecha de realizado el pago. No aplica para planes &ldquo;CUOTA SIMPLE&rdquo; ni para ning&uacute;n programa de beneficios similar. Para compras realizadas por titulares de tarjetas adicionales, el tarjetahabiente adicional deber&aacute; poseer una caja de ahorro del Banco Ciudad asociada a MODO. El producto ofrecido corresponde a la cartera de consumo. T.N.A., T.E.A. Y C.F.T.N.A (IVA Incluido): 0,00% Fijo. T.N.A: Tasa Nominal Anual, T.E.A: Tasa Efectiva Anual, C.F.T.N.A: Costo Financiero Total expresado en forma de tasa nominal anual con IVA.</p>\n</body>\n</html>",
+        "legales_genericas": "No aplica para tarjetas corporativas. La URL de los comercios adheridos se publica a título ilustrativo. El Banco no asume responsabilidad sobre los contenidos publicados en tales sitios. Los beneficios sobre consumos online realizados en sitios web ajenos al Banco (tiendas online, tiendas virtuales, e-commerce, entre otros) solo aplicarán en el caso de que así se indique en los términos y condiciones de la promoción del Banco Ciudad. El titular de los datos personales podrá en cualquier momento solicitar el retiro o bloqueo total o parcial de su nombre de nuestros bancos de datos, comunicándose al 0800-22-20-400, de conformidad con el art. 27, inc 3 de la ley 25.326 y art. 27 del Anexo I del Decreto 1558/01.",
+        "cft": "0.0",
+        "mostrar_cft": false,
+        "legalesGenericas": true,
+        "con_archivo_pdf": false,
+        "nombre_pdf": "",
+        "fechaDesde": "2026-07-01T03:00:00.000+00:00",
+        "fechaHasta": "2026-12-31T03:00:00.000+00:00",
+        "idImagen": 408,
+        "nombreRubro": "Moda y accesorios",
+        "ato": false
+      },
+      "comercio": {
+        "nombre": "Hush Puppies",
+        "logo": "384/logo",
+        "web": "hushpuppies.com.ar"
+      }
+    },
+    "detail_url": "https://www.buepp.com.ar/buepp_api/beneficios/15816"
+  },
+  {
+    "source": "buepp",
+    "source_id": "15811",
+    "scraped_at": "2026-10-14T13:21:37.291968+00:00",
+    "promotion_url": "https://www.buepp.com.ar/beneficios/15811",
+    "catalog": {
+      "distancia": 0,
+      "latitud": -34.5991,
+      "longitud": -58.37425,
+      "idBeneficio": 15811,
+      "idSucursal": 0,
+      "descuento": 15,
+      "comercio_nombre": "Lazaro",
+      "cuotas": 10,
+      "css_icono_rubro": "icon-bcba_beneficios_indumentaria",
+      "titulo": "15% de descuento",
+      "subtitulo": "hasta 10 cuotas sin interés y sin tope",
+      "idImagen": 281,
+      "comercio_id": 667,
+      "comercio_logo": "667/logo",
+      "diasBeneficio": "-M-----",
+      "sin_tope": true,
+      "nuevo": false,
+      "medioUnicoTipo": true,
+      "medios_pago": [
+        {
+          "id": 8,
+          "nombre": "APP CIUDAD",
+          "credito": "N"
+        },
+        {
+          "id": 7,
+          "nombre": "BUEPP",
+          "credito": "N"
+        }
+      ],
+      "visitas": 3120,
+      "rubro": {
+        "id": 7,
+        "idRubroPadre": null,
+        "nombre": "Moda y accesorios",
+        "icono": "icon-bcba_beneficios_indumentaria",
+        "orden": null,
+        "nombreUrl": "Moda-y-accesorios"
+      },
+      "aplica_tienda_online": true
+    },
+    "detail": {
+      "beneficio": {
+        "id": 15811,
+        "titulo": "15% de descuento",
+        "subtitulo": "hasta 10 cuotas sin interés y sin tope",
+        "cuotas": 10,
+        "descuento": 15,
+        "medios_pago": [
+          {
+            "id": 8,
+            "nombre": "APP CIUDAD",
+            "credito": "N"
+          },
+          {
+            "id": 7,
+            "nombre": "BUEPP",
+            "credito": "N"
+          }
+        ],
+        "css_icono_rubro": "icon-bcba_beneficios_indumentaria",
+        "idRubro": 7,
+        "dias": "-M-----",
+        "sin_tope": true,
+        "nuevo": false,
+        "visitas": 3120,
+        "shopping": false,
+        "medioUnicoTipo": true,
+        "descAdicional": "",
+        "aplica_tienda_online": true,
+        "resumen": "Aprovechá hasta 10 cuotas sin interés y 15% de descuento sin tope pagando con QR MODO a través de App Ciudad o Buepp con tarjetas de crédito, para compras en locales físicos adheridos y en la tienda online.",
+        "legales": "<!DOCTYPE html>\n<html>\n<head>\n</head>\n<body>\n<p><span data-teams=\"true\">Promoci&oacute;n ofrecida por el Banco de la Ciudad de Buenos Aires, CUIT 30-99903208-3 (Banco Ciudad), todos los d&iacute;as Martes desde el 01/07/2026 al 31/12/2026 en la Rep&uacute;blica Argentina, para compras realizadas en locales adheridos de Lazaro y en la tienda online <a aria-label=\"V&iacute;nculo www.lazarocuero.com.ar\" id=\"menur1ts\" href=\"https://www.lazarocuero.com.ar\" rel=\"noreferrer noopener\" target=\"_blank\" class=\"fui-Link ___1q1shib f2hkw1w f3rmtva f1ewtqcl fyind8e f1k6fduh f1w7gpdv fk6fouc fjoy568 figsok6 f1s184ao f1mk8lai fnbmjn9 f1o700av f13mvf36 f1cmlufx f9n3di6 f1ids18y f1tx3yz7 f1deo86v f1eh06m1 f1iescvh fhgqx19 f1olyrje f1p93eir f1nev41a f1h8hb77 f1lqvz6u f10aw75t fsle3fq f17ae5zn\" title=\"https://www.lazarocuero.com.ar/\">www.lazarocuero.com.ar</a> con tarjetas de cr&eacute;dito Visa o Mastercard de Banco Ciudad, escaneando exclusivamente el QR de MODO, desde Buepp o App Ciudad, se otorgar&aacute; un 15% (quince por ciento) de descuento sin tope y hasta 10 cuotas sin inter&eacute;s. El reintegro se acreditar&aacute; en la cuenta del cliente en un plazo de 15 (quince) d&iacute;as h&aacute;biles posteriores a la fecha de realizado el pago. No aplica para planes &ldquo;CUOTA SIMPLE&rdquo; ni para ning&uacute;n programa de beneficios similar. Para compras realizadas por titulares de tarjetas adicionales, el tarjetahabiente adicional deber&aacute; poseer una caja de ahorro del Banco Ciudad asociada a MODO. El producto ofrecido corresponde a la cartera de consumo. T.N.A., T.E.A. Y C.F.T.N.A (IVA Incluido): 0,00% Fijo. T.N.A: Tasa Nominal Anual, T.E.A: Tasa Efectiva Anual, C.F.T.N.A: Costo Financiero Total expresado en forma de tasa nominal anual con IVA.&nbsp;</span></p>\n</body>\n</html>",
+        "legales_genericas": "No aplica para tarjetas corporativas. La URL de los comercios adheridos se publica a título ilustrativo. El Banco no asume responsabilidad sobre los contenidos publicados en tales sitios. Los beneficios sobre consumos online realizados en sitios web ajenos al Banco (tiendas online, tiendas virtuales, e-commerce, entre otros) solo aplicarán en el caso de que así se indique en los términos y condiciones de la promoción del Banco Ciudad. El titular de los datos personales podrá en cualquier momento solicitar el retiro o bloqueo total o parcial de su nombre de nuestros bancos de datos, comunicándose al 0800-22-20-400, de conformidad con el art. 27, inc 3 de la ley 25.326 y art. 27 del Anexo I del Decreto 1558/01.",
+        "cft": "0.0",
+        "mostrar_cft": false,
+        "legalesGenericas": true,
+        "con_archivo_pdf": false,
+        "nombre_pdf": "",
+        "fechaDesde": "2026-07-01T03:00:00.000+00:00",
+        "fechaHasta": "2026-12-31T03:00:00.000+00:00",
+        "idImagen": 281,
+        "nombreRubro": "Moda y accesorios",
+        "ato": false
+      },
+      "comercio": {
+        "nombre": "Lazaro",
+        "logo": "667/logo",
+        "web": "www.lazarocuero.com.ar"
+      }
+    },
+    "detail_url": "https://www.buepp.com.ar/buepp_api/beneficios/15811"
+  },
+  {
+    "source": "buepp",
+    "source_id": "15813",
+    "scraped_at": "2026-10-14T13:21:37.291968+00:00",
+    "promotion_url": "https://www.buepp.com.ar/beneficios/15813",
+    "catalog": {
+      "distancia": 0,
+      "latitud": -34.588078,
+      "longitud": -58.410313,
+      "idBeneficio": 15813,
+      "idSucursal": 0,
+      "descuento": 15,
+      "comercio_nombre": "Bowen",
+      "cuotas": 10,
+      "css_icono_rubro": "icon-bcba_beneficios_indumentaria",
+      "titulo": "15% de descuento",
+      "subtitulo": "hasta 10 cuotas sin interés y sin tope",
+      "idImagen": 715,
+      "comercio_id": 2025,
+      "comercio_logo": "2025/logo",
+      "diasBeneficio": "-M-----",
+      "sin_tope": true,
+      "nuevo": false,
+      "medioUnicoTipo": true,
+      "medios_pago": [
+        {
+          "id": 8,
+          "nombre": "APP CIUDAD",
+          "credito": "N"
+        },
+        {
+          "id": 7,
+          "nombre": "BUEPP",
+          "credito": "N"
+        }
+      ],
+      "visitas": 3067,
+      "rubro": {
+        "id": 7,
+        "idRubroPadre": null,
+        "nombre": "Moda y accesorios",
+        "icono": "icon-bcba_beneficios_indumentaria",
+        "orden": null,
+        "nombreUrl": "Moda-y-accesorios"
+      },
+      "aplica_tienda_online": true
+    },
+    "detail": {
+      "beneficio": {
+        "id": 15813,
+        "titulo": "15% de descuento",
+        "subtitulo": "hasta 10 cuotas sin interés y sin tope",
+        "cuotas": 10,
+        "descuento": 15,
+        "medios_pago": [
+          {
+            "id": 8,
+            "nombre": "APP CIUDAD",
+            "credito": "N"
+          },
+          {
+            "id": 7,
+            "nombre": "BUEPP",
+            "credito": "N"
+          }
+        ],
+        "css_icono_rubro": "icon-bcba_beneficios_indumentaria",
+        "idRubro": 7,
+        "dias": "-M-----",
+        "sin_tope": true,
+        "nuevo": false,
+        "visitas": 3067,
+        "shopping": false,
+        "medioUnicoTipo": true,
+        "descAdicional": "",
+        "aplica_tienda_online": true,
+        "resumen": "Aprovechá hasta 10 cuotas sin interés y 15% de descuento sin tope pagando con QR MODO a través de App Ciudad o Buepp con tarjetas de crédito, para compras en locales físicos adheridos y en la tienda online.",
+        "legales": "<!DOCTYPE html>\n<html>\n<head>\n</head>\n<body>\n<p>Promoci&oacute;n ofrecida por el Banco de la Ciudad de Buenos Aires, CUIT 30-99903208-3 (Banco Ciudad), todos los d&iacute;as Martes desde el 01/07/2026 al 31/12/2026 en la Rep&uacute;blica Argentina, para compras realizadas en locales adheridos de Bowen y en la tienda online bowen.com.ar con tarjetas de cr&eacute;dito Visa o Mastercard de Banco Ciudad, escaneando exclusivamente el QR de MODO, desde Buepp o App Ciudad, se otorgar&aacute; un 15% (quince por ciento) de descuento sin tope y hasta 10 cuotas sin inter&eacute;s. El reintegro se acreditar&aacute; en la cuenta del cliente en un plazo de 15 (quince) d&iacute;as h&aacute;biles posteriores a la fecha de realizado el pago. No aplica para planes &ldquo;CUOTA SIMPLE&rdquo; ni para ning&uacute;n programa de beneficios similar. Para compras realizadas por titulares de tarjetas adicionales, el tarjetahabiente adicional deber&aacute; poseer una caja de ahorro del Banco Ciudad asociada a MODO. El producto ofrecido corresponde a la cartera de consumo. T.N.A., T.E.A. Y C.F.T.N.A (IVA Incluido): 0,00% Fijo. T.N.A: Tasa Nominal Anual, T.E.A: Tasa Efectiva Anual, C.F.T.N.A: Costo Financiero Total expresado en forma de tasa nominal anual con IVA.&nbsp;</p>\n</body>\n</html>",
+        "legales_genericas": "No aplica para tarjetas corporativas. La URL de los comercios adheridos se publica a título ilustrativo. El Banco no asume responsabilidad sobre los contenidos publicados en tales sitios. Los beneficios sobre consumos online realizados en sitios web ajenos al Banco (tiendas online, tiendas virtuales, e-commerce, entre otros) solo aplicarán en el caso de que así se indique en los términos y condiciones de la promoción del Banco Ciudad. El titular de los datos personales podrá en cualquier momento solicitar el retiro o bloqueo total o parcial de su nombre de nuestros bancos de datos, comunicándose al 0800-22-20-400, de conformidad con el art. 27, inc 3 de la ley 25.326 y art. 27 del Anexo I del Decreto 1558/01.",
+        "cft": "0.0",
+        "mostrar_cft": false,
+        "legalesGenericas": true,
+        "con_archivo_pdf": false,
+        "nombre_pdf": "",
+        "fechaDesde": "2026-07-01T03:00:00.000+00:00",
+        "fechaHasta": "2026-12-31T03:00:00.000+00:00",
+        "idImagen": 715,
+        "nombreRubro": "Moda y accesorios",
+        "ato": false
+      },
+      "comercio": {
+        "nombre": "Bowen",
+        "logo": "2025/logo",
+        "web": ""
+      }
+    },
+    "detail_url": "https://www.buepp.com.ar/buepp_api/beneficios/15813"
+  },
+  {
+    "source": "buepp",
+    "source_id": "15424",
+    "scraped_at": "2026-10-14T13:21:37.291968+00:00",
+    "promotion_url": "https://www.buepp.com.ar/beneficios/15424",
+    "catalog": {
+      "distancia": 0,
+      "latitud": -34.627846,
+      "longitud": -58.38368,
+      "idBeneficio": 15424,
+      "idSucursal": 0,
+      "comercio_nombre": "Fravega",
+      "cuotas": 18,
+      "css_icono_rubro": "icon-bcba_general_laptop",
+      "titulo": "-",
+      "subtitulo": "hasta 18 cuotas sin interés para productos seleccionados",
+      "idImagen": 325,
+      "comercio_id": 93,
+      "comercio_logo": "93/logo",
+      "diasBeneficio": "LMMJVSD",
+      "sin_tope": false,
+      "nuevo": false,
+      "medioUnicoTipo": true,
+      "medios_pago": [
+        {
+          "id": 8,
+          "nombre": "APP CIUDAD",
+          "credito": "N"
+        },
+        {
+          "id": 7,
+          "nombre": "BUEPP",
+          "credito": "N"
+        }
+      ],
+      "visitas": 3058,
+      "rubro": {
+        "id": 1180,
+        "idRubroPadre": null,
+        "nombre": "Electro",
+        "icono": "icon-bcba_general_laptop",
+        "orden": null,
+        "nombreUrl": "Electro"
+      },
+      "aplica_tienda_online": true
+    },
+    "detail": {
+      "beneficio": {
+        "id": 15424,
+        "titulo": "-",
+        "subtitulo": "hasta 18 cuotas sin interés para productos seleccionados",
+        "cuotas": 18,
+        "medios_pago": [
+          {
+            "id": 8,
+            "nombre": "APP CIUDAD",
+            "credito": "N"
+          },
+          {
+            "id": 7,
+            "nombre": "BUEPP",
+            "credito": "N"
+          }
+        ],
+        "css_icono_rubro": "icon-bcba_general_laptop",
+        "idRubro": 1180,
+        "dias": "LMMJVSD",
+        "sin_tope": false,
+        "nuevo": false,
+        "visitas": 3058,
+        "shopping": false,
+        "medioUnicoTipo": true,
+        "descAdicional": "",
+        "aplica_tienda_online": true,
+        "resumen": "Hasta en 18 cuotas sin interés en Frávega en productos seleccionados, pagando desde App Ciudad o Buepp con tarjetas de crédito del Ciudad",
+        "legales": "<!DOCTYPE html>\n<html>\n<head>\n</head>\n<body>\n<p>Promoci&oacute;n ofrecida por el Banco de la Ciudad de Buenos Aires, CUIT 30-99903208-3 (Banco Ciudad) v&aacute;lida para toda la Rep&uacute;blica Argentina, todos los d&iacute;as desde del 01/05/26 al 31/10/2026 inclusive, para compras en hasta 18 (dieciocho) cuotas sin inter&eacute;s para productos seleccionados en la tienda online de Fr&aacute;vega pagando exclusivamente con qr MODO desde App Ciudad o Buepp con tarjetas de cr&eacute;dito Visa o Mastercard de Banco Ciudad y en comercios f&iacute;sicos pagando con tarjetas de cr&eacute;dito Visa y Mastercard de Banco Ciudad. Conforme RES.51- E/2017, 240 E/2017 y 12/2024. Costo financiero total expresado en tasa efectiva anual (C.F.T.E.A.): 0,00% tasa nominal anual (T.N.A): 0,00%. costo financiero total (C.F.T): 0,00% . La presente promoci&oacute;n es v&aacute;lida s&oacute;lo para consumos de tipo familiar. Quedan excluidas de la promoci&oacute;n las tarjetas corporativas.&nbsp;</p>\n</body>\n</html>",
+        "legales_genericas": "No aplica para tarjetas corporativas. La URL de los comercios adheridos se publica a título ilustrativo. El Banco no asume responsabilidad sobre los contenidos publicados en tales sitios. Los beneficios sobre consumos online realizados en sitios web ajenos al Banco (tiendas online, tiendas virtuales, e-commerce, entre otros) solo aplicarán en el caso de que así se indique en los términos y condiciones de la promoción del Banco Ciudad. El titular de los datos personales podrá en cualquier momento solicitar el retiro o bloqueo total o parcial de su nombre de nuestros bancos de datos, comunicándose al 0800-22-20-400, de conformidad con el art. 27, inc 3 de la ley 25.326 y art. 27 del Anexo I del Decreto 1558/01.",
+        "cft": "0.0",
+        "mostrar_cft": false,
+        "legalesGenericas": true,
+        "con_archivo_pdf": false,
+        "nombre_pdf": "",
+        "fechaDesde": "2026-05-01T03:00:00.000+00:00",
+        "fechaHasta": "2026-10-31T03:00:00.000+00:00",
+        "idImagen": 325,
+        "nombreRubro": "Electro",
+        "ato": false
+      },
+      "comercio": {
+        "nombre": "Fravega",
+        "logo": "93/logo",
+        "web": ""
+      }
+    },
+    "detail_url": "https://www.buepp.com.ar/buepp_api/beneficios/15424"
+  },
+  {
+    "source": "buepp",
+    "source_id": "15855",
+    "scraped_at": "2026-10-14T13:21:37.291968+00:00",
+    "promotion_url": "https://www.buepp.com.ar/beneficios/15855",
+    "catalog": {
+      "distancia": 0,
+      "latitud": -34.60876,
+      "longitud": -58.37501,
+      "idBeneficio": 15855,
+      "idSucursal": 0,
+      "descuento": 35,
+      "comercio_nombre": "Farmacity, GTL y Simplicity",
+      "css_icono_rubro": "icon-bcba_beneficios_favorito",
+      "titulo": "35% de descuento",
+      "subtitulo": "Tope de reintegro $15.000 semanal por cliente",
+      "idImagen": 717,
+      "comercio_id": 6502,
+      "comercio_logo": "6502/logo",
+      "diasBeneficio": "--M----",
+      "sin_tope": false,
+      "nuevo": false,
+      "medioUnicoTipo": false,
+      "medios_pago": [
+        {
+          "id": 4,
+          "nombre": "MASTERCARD",
+          "credito": "S"
+        },
+        {
+          "id": 8,
+          "nombre": "APP CIUDAD",
+          "credito": "N"
+        },
+        {
+          "id": 7,
+          "nombre": "BUEPP",
+          "credito": "N"
+        }
+      ],
+      "visitas": 2885,
+      "rubro": {
+        "id": 1193,
+        "idRubroPadre": null,
+        "nombre": "Farmacias",
+        "icono": "icon-bcba_beneficios_favorito",
+        "orden": null,
+        "nombreUrl": "Farmacias"
+      },
+      "aplica_tienda_online": true
+    },
+    "detail": {
+      "beneficio": {
+        "id": 15855,
+        "titulo": "35% de descuento",
+        "subtitulo": "Tope de reintegro $15.000 semanal por cliente",
+        "descuento": 35,
+        "medios_pago": [
+          {
+            "id": 4,
+            "nombre": "MASTERCARD",
+            "credito": "S"
+          },
+          {
+            "id": 8,
+            "nombre": "APP CIUDAD",
+            "credito": "N"
+          },
+          {
+            "id": 7,
+            "nombre": "BUEPP",
+            "credito": "N"
+          }
+        ],
+        "css_icono_rubro": "icon-bcba_beneficios_favorito",
+        "idRubro": 1193,
+        "dias": "--M----",
+        "sin_tope": false,
+        "nuevo": false,
+        "visitas": 2885,
+        "shopping": false,
+        "medioUnicoTipo": false,
+        "descAdicional": "",
+        "aplica_tienda_online": true,
+        "resumen": "Todos los miércoles tenés -35% de descuento en Farmacity, Get the Look y Simplicity pagando con tus tarjetas de crédito Mastercard a través de App Ciudad o Buepp. Tope de reintegro: $15.000 mensual",
+        "legales": "<!DOCTYPE html>\n<html>\n<head>\n</head>\n<body>\n<p>PROMOCI&Oacute;N OFRECIDA POR EL BANCO DE LA CIUDAD DE BUENOS AIRES, CUIT 30-99903208-3 (BANCO CIUDAD), V&Aacute;LIDA DESDE EL 22/07/2026 HASTA EL 31/10/2026 INCLUSIVE, TODOS LOS MI&Eacute;RCOLES, EN LOS LOCALES ADHERIDOS Y TIENDAS ONLINES DE FARMACITY, GET THE LOOK Y SIMPLICITY. PAGANDO EXCLUSIVAMENTE CON QR MODO A TRAV&Eacute;S DE APP CIUDAD O BUEPP CON TARJETAS DE CR&Eacute;DITO MASTERCARD BANCO CIUDAD. SE OTORGAR&Aacute; UN 35% (TREINTA Y CINCO POR CIENTO) DE DESCUENTO SOBRE EL IMPORTE DE LA COMPRA, CON UN TOPE DE HASTA $15.000 (QUINCE MIL) MENSUAL POR CLIENTE. EL BENEFICIO PODR&Aacute; VISUALIZARSE V&Iacute;A REINTEGRO, EL CUAL SER&Aacute; ACREDITADO EN LA CUENTA DEL CLIENTE DENTRO DE LOS 15 D&Iacute;AS H&Aacute;BILES POSTERIORES A LA FECHA DE REALIZADA LA COMPRA. PARA COMPRAS REALIZADAS POR TITULARES DE TARJETAS ADICIONALES, EL TARJETAHABIENTE ADICIONAL DEBER&Aacute; POSEER UNA CAJA DE AHORRO DEL BANCO CIUDAD ASOCIADA A MODO. LA PRESENTE PROMOCI&Oacute;N ES V&Aacute;LIDA S&Oacute;LO PARA CONSUMOS DE TIPO FAMILIAR. CONFORME RES. 51-E/2017, 240-E/2017 Y 12/24 DE LA SECRETAR&Iacute;A DE COMERCIO. T.N.A., T.E.A. Y C.F.T.N.A. (IVA INCLUIDO): 0,00% FIJO. T.N.A.: TASA NOMINAL ANUAL; T.E.A.: TASA EFECTIVA ANUAL; C.F.T.N.A.: COSTO FINANCIERO TOTAL EXPRESADO EN FORMA DE TASA NOMINAL ANUAL CON IVA. EL PRODUCTO OFRECIDO CORRESPONDE A LA CARTERA DE CONSUMO. PARA M&Aacute;S INFORMACI&Oacute;N CONSULTE EN <a href=\"http://WWW.BANCOCIUDAD.COM.AR\">WWW.BANCOCIUDAD.COM.AR</a></p>\n<p></p>\n</body>\n</html>",
+        "legales_genericas": "No aplica para tarjetas corporativas. La URL de los comercios adheridos se publica a título ilustrativo. El Banco no asume responsabilidad sobre los contenidos publicados en tales sitios. Los beneficios sobre consumos online realizados en sitios web ajenos al Banco (tiendas online, tiendas virtuales, e-commerce, entre otros) solo aplicarán en el caso de que así se indique en los términos y condiciones de la promoción del Banco Ciudad. El titular de los datos personales podrá en cualquier momento solicitar el retiro o bloqueo total o parcial de su nombre de nuestros bancos de datos, comunicándose al 0800-22-20-400, de conformidad con el art. 27, inc 3 de la ley 25.326 y art. 27 del Anexo I del Decreto 1558/01.",
+        "cft": "0.0",
+        "mostrar_cft": false,
+        "legalesGenericas": true,
+        "con_archivo_pdf": false,
+        "nombre_pdf": "",
+        "fechaDesde": "2026-07-22T03:00:00.000+00:00",
+        "fechaHasta": "2026-10-31T03:00:00.000+00:00",
+        "idImagen": 717,
+        "nombreRubro": "Farmacias",
+        "ato": false
+      },
+      "comercio": {
+        "nombre": "Farmacity, GTL y Simplicity",
+        "logo": "6502/logo",
+        "web": ""
+      }
+    },
+    "detail_url": "https://www.buepp.com.ar/buepp_api/beneficios/15855"
+  },
+  {
+    "source": "buepp",
+    "source_id": "15942",
+    "scraped_at": "2026-10-14T13:21:37.291968+00:00",
+    "promotion_url": "https://www.buepp.com.ar/beneficios/15942",
+    "catalog": {
+      "distancia": 0,
+      "latitud": -34.55663,
+      "longitud": -58.461735,
+      "idBeneficio": 15942,
+      "idSucursal": 0,
+      "descuento": 20,
+      "comercio_nombre": "MásGO",
+      "css_icono_rubro": "icon-bcba_beneficios_supermercados",
+      "titulo": "20% de descuento",
+      "subtitulo": "Tope de reintegro de $20.000 mensual por cliente en compras mínimas de $30.000",
+      "idImagen": 728,
+      "comercio_id": 6513,
+      "comercio_logo": "6513/logo",
+      "diasBeneficio": "------D",
+      "sin_tope": false,
+      "nuevo": false,
+      "medioUnicoTipo": true,
+      "medios_pago": [
+        {
+          "id": 8,
+          "nombre": "APP CIUDAD",
+          "credito": "N"
+        },
+        {
+          "id": 7,
+          "nombre": "BUEPP",
+          "credito": "N"
+        }
+      ],
+      "visitas": 2393,
+      "rubro": {
+        "id": 10,
+        "idRubroPadre": null,
+        "nombre": "Supermercados",
+        "icono": "icon-bcba_beneficios_supermercados",
+        "orden": null,
+        "nombreUrl": "Supermercados"
+      },
+      "aplica_tienda_online": true
+    },
+    "detail": {
+      "beneficio": {
+        "id": 15942,
+        "titulo": "20% de descuento",
+        "subtitulo": "Tope de reintegro de $20.000 mensual por cliente en compras mínimas de $30.000",
+        "descuento": 20,
+        "medios_pago": [
+          {
+            "id": 8,
+            "nombre": "APP CIUDAD",
+            "credito": "N"
+          },
+          {
+            "id": 7,
+            "nombre": "BUEPP",
+            "credito": "N"
+          }
+        ],
+        "css_icono_rubro": "icon-bcba_beneficios_supermercados",
+        "idRubro": 10,
+        "dias": "------D",
+        "sin_tope": false,
+        "nuevo": false,
+        "visitas": 2393,
+        "shopping": false,
+        "medioUnicoTipo": true,
+        "descAdicional": "",
+        "aplica_tienda_online": true,
+        "resumen": "Aprovechá 20% todos los domingos, con tope de reintegro $20.000 por cliente pagando con qr MODO a través de App Ciudad o Buepp con tarjetas de Banco Ciudad para compras en tiendas físicas. Mínimo de compra: $30.000. Ver comercios adheridos",
+        "legales": "<!DOCTYPE html>\n<html>\n<head>\n</head>\n<body>\n<p><span>Promoci&oacute;n ofrecida por el Banco de la Ciudad de Buenos Aires, CUIT 30-99903208-3 (Banco Ciudad) v&aacute;lida los domingos, desde el 16/08/2026 al 31/10/2026 en la Rep&uacute;blica Argentina, para compras realizadas en comercios adheridos de M&aacute;sGO, con tarjetas de d&eacute;bito Visa y Maestro y de cr&eacute;dito Visa o Mastercard de Banco Ciudad, escaneando el QR de MODO, desde Buepp o App Ciudad, o desde Buepp o Modo utilizando la funcionalidad NFC (disponible &uacute;nicamente para dispositivos Android). Se otorgar&aacute; un 20% (veinte por ciento) de descuento con tope de reintegro de $20.000 mensual por cliente en compras m&iacute;nimas de $30.000. El reintegro se acreditar&aacute; en la cuenta del cliente en un plazo de 15 (quince) d&iacute;as h&aacute;biles posteriores a la fecha de realizado el pago. Para compras realizadas por titulares de tarjetas adicionales, el tarjetahabiente adicional deber&aacute; poseer una caja de ahorro del Banco Ciudad asociada a MODO. El producto ofrecido corresponde a la cartera de consumo.</span></p>\n</body>\n</html>",
+        "legales_genericas": "No aplica para tarjetas corporativas. La URL de los comercios adheridos se publica a título ilustrativo. El Banco no asume responsabilidad sobre los contenidos publicados en tales sitios. Los beneficios sobre consumos online realizados en sitios web ajenos al Banco (tiendas online, tiendas virtuales, e-commerce, entre otros) solo aplicarán en el caso de que así se indique en los términos y condiciones de la promoción del Banco Ciudad. El titular de los datos personales podrá en cualquier momento solicitar el retiro o bloqueo total o parcial de su nombre de nuestros bancos de datos, comunicándose al 0800-22-20-400, de conformidad con el art. 27, inc 3 de la ley 25.326 y art. 27 del Anexo I del Decreto 1558/01.",
+        "cft": "0.0",
+        "mostrar_cft": false,
+        "legalesGenericas": true,
+        "con_archivo_pdf": false,
+        "nombre_pdf": "",
+        "fechaDesde": "2026-08-16T03:00:00.000+00:00",
+        "fechaHasta": "2026-10-31T03:00:00.000+00:00",
+        "idImagen": 728,
+        "nombreRubro": "Supermercados",
+        "ato": false
+      },
+      "comercio": {
+        "nombre": "MásGO",
+        "logo": "6513/logo",
+        "web": ""
+      }
+    },
+    "detail_url": "https://www.buepp.com.ar/buepp_api/beneficios/15942"
+  },
+  {
+    "source": "buepp",
+    "source_id": "15857",
+    "scraped_at": "2026-10-14T13:21:37.291968+00:00",
+    "promotion_url": "https://www.buepp.com.ar/beneficios/15857",
+    "catalog": {
+      "distancia": 0,
+      "latitud": 0.0,
+      "longitud": 0.0,
+      "idBeneficio": 15857,
+      "idSucursal": 0,
+      "descuento": 20,
+      "comercio_nombre": "Nutrican",
+      "css_icono_rubro": "icon-bcba_beneficios_veterinarias",
+      "titulo": "20% de descuento",
+      "subtitulo": "Tope de $8.000 por cliente",
+      "idImagen": 737,
+      "comercio_id": 5293,
+      "comercio_logo": "5293/logo",
+      "diasBeneficio": "----V--",
+      "sin_tope": false,
+      "nuevo": false,
+      "medioUnicoTipo": true,
+      "medios_pago": [
+        {
+          "id": 8,
+          "nombre": "APP CIUDAD",
+          "credito": "N"
+        },
+        {
+          "id": 7,
+          "nombre": "BUEPP",
+          "credito": "N"
+        }
+      ],
+      "visitas": 2057,
+      "rubro": {
+        "id": 1168,
+        "idRubroPadre": null,
+        "nombre": "Mascotas",
+        "icono": "icon-bcba_beneficios_veterinarias",
+        "orden": null,
+        "nombreUrl": "Mascotas"
+      },
+      "aplica_tienda_online": true
+    },
+    "detail": {
+      "beneficio": {
+        "id": 15857,
+        "titulo": "20% de descuento",
+        "subtitulo": "Tope de $8.000 por cliente",
+        "descuento": 20,
+        "medios_pago": [
+          {
+            "id": 8,
+            "nombre": "APP CIUDAD",
+            "credito": "N"
+          },
+          {
+            "id": 7,
+            "nombre": "BUEPP",
+            "credito": "N"
+          }
+        ],
+        "css_icono_rubro": "icon-bcba_beneficios_veterinarias",
+        "idRubro": 1168,
+        "dias": "----V--",
+        "sin_tope": false,
+        "nuevo": false,
+        "visitas": 2057,
+        "shopping": false,
+        "medioUnicoTipo": true,
+        "descAdicional": "",
+        "aplica_tienda_online": true,
+        "resumen": "Aprovechá 20% de descuento todos los viernes, con un tope de reintegro mensual de $8.000, en comercios adheridos y en la tienda online pagando con QR MODO a través de App Ciudad o Buepp con tarjetas del Ciudad. Ver comercios adheridos.",
+        "legales": "<!DOCTYPE html>\n<html>\n<head>\n</head>\n<body>\n<p>Promoci&oacute;n ofrecida por el Banco de la Ciudad de Buenos Aires, cuit 30-99903208-3 (Banco Ciudad) v&aacute;lida desde el 01/08/2026 al 31/10/2026, en toda la Rep&uacute;blica Argentina, los d&iacute;as viernes en compras realizadas en locales adheridos y en la tienda online <a href=\"http://www.nutrican.com.ar\">www.nutrican.com.ar</a> pagando con qr MODO a trav&eacute;s de App Ciudad o BUEPP con tarjetas de cr&eacute;dito y d&eacute;bito del Banco Ciudad. Se otorgar&aacute; un 20% de descuento durante dicha vigencia en el total de la compra con un tope de reintegro mensual por cliente de $8.000. Ser&aacute; requisito excluyente, previo a realizarse el reintegro, tener asociada a MODO la cuenta del Banco Ciudad. Para compras realizadas por titulares de tarjetas adicionales, el tarjetahabiente adicional deber&aacute; poseer una caja de ahorro del Banco Ciudad asociada a MODO. Quedan excluidas de la promoci&oacute;n las cuentas en mora y/o bloqueadas por motivos administrativos. La presente promoci&oacute;n es v&aacute;lida solo para consumos de tipo familiar. El descuento podr&aacute; visualizarse v&iacute;a reintegro, a acreditar en la cuenta del cliente dentro de los 45 d&iacute;as posteriores a la fecha de realizada la compra. Si el cliente tuviera m&aacute;s de una cuenta, el cr&eacute;dito se realizar&aacute; en cualquiera de ellas a elecci&oacute;n del banco. Conforme RES 51- E/2017, 240 E/2017 y 12/2024. T.N.A., T.E.A. Y C.F.T.N.A (IVA Incluido): 0,00% Fijo. T.N.A: Tasa Nominal Anual, T.E.A: Tasa Efectiva Anual, C.F.T.N.A: Costo Financiero Total expresado en forma de tasa nominal anual con IVA. El producto ofrecido corresponde a la cartera de consumo. Para m&aacute;s informaci&oacute;n y condiciones o limitaciones aplicables, consulte en www.bancociudad.com.ar.</p>\n</body>\n</html>",
+        "legales_genericas": "No aplica para tarjetas corporativas. La URL de los comercios adheridos se publica a título ilustrativo. El Banco no asume responsabilidad sobre los contenidos publicados en tales sitios. Los beneficios sobre consumos online realizados en sitios web ajenos al Banco (tiendas online, tiendas virtuales, e-commerce, entre otros) solo aplicarán en el caso de que así se indique en los términos y condiciones de la promoción del Banco Ciudad. El titular de los datos personales podrá en cualquier momento solicitar el retiro o bloqueo total o parcial de su nombre de nuestros bancos de datos, comunicándose al 0800-22-20-400, de conformidad con el art. 27, inc 3 de la ley 25.326 y art. 27 del Anexo I del Decreto 1558/01.",
+        "cft": "0.0",
+        "mostrar_cft": false,
+        "legalesGenericas": true,
+        "con_archivo_pdf": true,
+        "nombre_pdf": "Nutrican - Hoja 1.pdf",
+        "fechaDesde": "2026-08-01T03:00:00.000+00:00",
+        "fechaHasta": "2026-10-31T03:00:00.000+00:00",
+        "idImagen": 737,
+        "nombreRubro": "Mascotas",
+        "ato": false
+      },
+      "comercio": {
+        "nombre": "Nutrican",
+        "logo": "5293/logo",
+        "web": ""
+      }
+    },
+    "detail_url": "https://www.buepp.com.ar/buepp_api/beneficios/15857"
+  },
+  {
+    "source": "buepp",
+    "source_id": "15820",
+    "scraped_at": "2026-10-14T13:21:37.291968+00:00",
+    "promotion_url": "https://www.buepp.com.ar/beneficios/15820",
+    "catalog": {
+      "distancia": 0,
+      "latitud": -34.60876,
+      "longitud": -58.37501,
+      "idBeneficio": 15820,
+      "idSucursal": 0,
+      "descuento": 35,
+      "comercio_nombre": "Tostado | Café Martinez | Le Pain Quotidien",
+      "css_icono_rubro": "icon-bcba_general_tiempo",
+      "titulo": "35% de descuento",
+      "subtitulo": "TOPE DE HASTA $10.000  SEMANAL POR CLIENTE",
+      "idImagen": 720,
+      "comercio_id": 6503,
+      "comercio_logo": "6503/logo",
+      "diasBeneficio": "----VSD",
+      "sin_tope": false,
+      "nuevo": false,
+      "medioUnicoTipo": false,
+      "medios_pago": [
+        {
+          "id": 4,
+          "nombre": "MASTERCARD",
+          "credito": "S"
+        },
+        {
+          "id": 7,
+          "nombre": "BUEPP",
+          "credito": "N"
+        },
+        {
+          "id": 8,
+          "nombre": "APP CIUDAD",
+          "credito": "N"
+        }
+      ],
+      "visitas": 1928,
+      "rubro": {
+        "id": 1163,
+        "idRubroPadre": null,
+        "nombre": "Desayuno",
+        "icono": "icon-bcba_general_tiempo",
+        "orden": null,
+        "nombreUrl": "Desayuno"
+      },
+      "aplica_tienda_online": false
+    },
+    "detail": {
+      "beneficio": {
+        "id": 15820,
+        "titulo": "35% de descuento",
+        "subtitulo": "TOPE DE HASTA $10.000  SEMANAL POR CLIENTE",
+        "descuento": 35,
+        "medios_pago": [
+          {
+            "id": 4,
+            "nombre": "MASTERCARD",
+            "credito": "S"
+          },
+          {
+            "id": 7,
+            "nombre": "BUEPP",
+            "credito": "N"
+          },
+          {
+            "id": 8,
+            "nombre": "APP CIUDAD",
+            "credito": "N"
+          }
+        ],
+        "css_icono_rubro": "icon-bcba_general_tiempo",
+        "idRubro": 1163,
+        "dias": "----VSD",
+        "sin_tope": false,
+        "nuevo": false,
+        "visitas": 1928,
+        "shopping": false,
+        "medioUnicoTipo": false,
+        "descAdicional": "",
+        "aplica_tienda_online": false,
+        "resumen": "Los viernes, sábados y domingos no te pierdas -35% en Tostado, Café Martinez y en Le Pan Quotidien de 7 a 12 hs am, pagando con qr con tus tarjetas de crédito Mastercard desde App Ciudad o Buepp. Tope de reintegro: $10.000 semanal",
+        "legales": "<!DOCTYPE html>\n<html>\n<head>\n</head>\n<body>\n<p>PROMOCI&Oacute;N OFRECIDA POR EL BANCO DE LA CIUDAD DE BUENOS AIRES, CUIT 30-99903208-3 (BANCO CIUDAD), V&Aacute;LIDA DESDE EL 01/07/2026 HASTA EL 31/10/2026, TODOS LOS VIERNES, S&Aacute;BADOS Y DOMINGOS DE 7:00HS AM A 12:00HS AM, EN COMERCIOS F&Iacute;SCOS ADHERIDOS DE TOSTADO, LE PAIN QUOTIDIEN Y CAF&Eacute; MARTINEZ. PAGANDO EXCLUSIVAMENTE CON QR MODO A TRAV&Eacute;S DE APP CIUDAD O BUEPP, CON TARJETAS DE CR&Eacute;DITO MASTERCARD BANCO CIUDAD. SE OTORGAR&Aacute; UN 35 % (TREINTA Y CINCO PORCIENTO) DE DESCUENTO SOBRE EL IMPORTE DE LA COMPRA, CON UN TOPE DE HASTA $10.000 (DIEZ MIL) SEMANAL POR CLIENTE. EL BENEFICIO PODR&Aacute; VISUALIZARSE V&Iacute;A REINTEGRO, EL CUAL SER&Aacute; ACREDITADO EN LA CUENTA DEL CLIENTE DENTRO DE LOS 15 D&Iacute;AS H&Aacute;BILES POSTERIORES A LA FECHA DE REALIZADA LA COMPRA. PARA COMPRAS REALIZADAS POR TITULARES DE TARJETAS ADICIONALES, EL TARJETAHABIENTE ADICIONAL DEBER&Aacute; POSEER UNA CAJA DE AHORRO DEL BANCO CIUDAD ASOCIADA A MODO. LA PRESENTE PROMOCI&Oacute;N ES V&Aacute;LIDA S&Oacute;LO PARA CONSUMOS DE TIPO FAMILIAR. CONFORME RES. 51-E/2017, 240-E/2017 Y 12/24 DE LA SECRETAR&Iacute;A DE COMERCIO. T.N.A., T.E.A. Y C.F.T.N.A. (IVA INCLUIDO): 0,00% FIJO. T.N.A.: TASA NOMINAL ANUAL; T.E.A.: TASA EFECTIVA ANUAL; C.F.T.N.A.: COSTO FINANCIERO TOTAL EXPRESADO EN FORMA DE TASA NOMINAL ANUAL CON IVA. EL PRODUCTO OFRECIDO CORRESPONDE A LA CARTERA DE CONSUMO. PARA M&Aacute;S INFORMACI&Oacute;N CONSULTE EN <a href=\"http://WWW.BANCOCIUDAD.COM.AR\">WWW.BANCOCIUDAD.COM.AR</a></p>\n</body>\n</html>",
+        "legales_genericas": "No aplica para tarjetas corporativas. La URL de los comercios adheridos se publica a título ilustrativo. El Banco no asume responsabilidad sobre los contenidos publicados en tales sitios. Los beneficios sobre consumos online realizados en sitios web ajenos al Banco (tiendas online, tiendas virtuales, e-commerce, entre otros) solo aplicarán en el caso de que así se indique en los términos y condiciones de la promoción del Banco Ciudad. El titular de los datos personales podrá en cualquier momento solicitar el retiro o bloqueo total o parcial de su nombre de nuestros bancos de datos, comunicándose al 0800-22-20-400, de conformidad con el art. 27, inc 3 de la ley 25.326 y art. 27 del Anexo I del Decreto 1558/01.",
+        "cft": "0.0",
+        "mostrar_cft": false,
+        "legalesGenericas": true,
+        "con_archivo_pdf": false,
+        "nombre_pdf": "",
+        "fechaDesde": "2026-07-01T03:00:00.000+00:00",
+        "fechaHasta": "2026-10-31T03:00:00.000+00:00",
+        "idImagen": 720,
+        "nombreRubro": "Desayuno",
+        "ato": false
+      },
+      "comercio": {
+        "nombre": "Tostado | Café Martinez | Le Pain Quotidien",
+        "logo": "6503/logo",
+        "web": ""
+      }
+    },
+    "detail_url": "https://www.buepp.com.ar/buepp_api/beneficios/15820"
+  },
+  {
+    "source": "buepp",
+    "source_id": "15814",
+    "scraped_at": "2026-10-14T13:21:37.291968+00:00",
+    "promotion_url": "https://www.buepp.com.ar/beneficios/15814",
+    "catalog": {
+      "distancia": 0,
+      "latitud": -34.60533,
+      "longitud": -58.375095,
+      "idBeneficio": 15814,
+      "idSucursal": 0,
+      "descuento": 10,
+      "comercio_nombre": "Grimoldi",
+      "cuotas": 10,
+      "css_icono_rubro": "icon-bcba_beneficios_indumentaria",
+      "titulo": "15% de descuento",
+      "subtitulo": "hasta 10 cuotas sin interés y sin tope",
+      "idImagen": 98,
+      "comercio_id": 586,
+      "comercio_logo": "586/logo",
+      "diasBeneficio": "-M-----",
+      "sin_tope": true,
+      "nuevo": false,
+      "medioUnicoTipo": true,
+      "medios_pago": [
+        {
+          "id": 7,
+          "nombre": "BUEPP",
+          "credito": "N"
+        },
+        {
+          "id": 8,
+          "nombre": "APP CIUDAD",
+          "credito": "N"
+        }
+      ],
+      "visitas": 1906,
+      "rubro": {
+        "id": 7,
+        "idRubroPadre": null,
+        "nombre": "Moda y accesorios",
+        "icono": "icon-bcba_beneficios_indumentaria",
+        "orden": null,
+        "nombreUrl": "Moda-y-accesorios"
+      },
+      "aplica_tienda_online": true
+    },
+    "detail": {
+      "beneficio": {
+        "id": 15814,
+        "titulo": "15% de descuento",
+        "subtitulo": "hasta 10 cuotas sin interés y sin tope",
+        "cuotas": 10,
+        "descuento": 10,
+        "medios_pago": [
+          {
+            "id": 7,
+            "nombre": "BUEPP",
+            "credito": "N"
+          },
+          {
+            "id": 8,
+            "nombre": "APP CIUDAD",
+            "credito": "N"
+          }
+        ],
+        "css_icono_rubro": "icon-bcba_beneficios_indumentaria",
+        "idRubro": 7,
+        "dias": "-M-----",
+        "sin_tope": true,
+        "nuevo": false,
+        "visitas": 1906,
+        "shopping": false,
+        "medioUnicoTipo": true,
+        "descAdicional": "",
+        "aplica_tienda_online": true,
+        "resumen": "Hasta 10 cuotas sin interés y 10% de descuento sin tope pagando con QR MODO a través de App Ciudad o Buepp con tarjetas de crédito, para compras en locales físicos adheridos y en la tienda online.",
+        "legales": "<!DOCTYPE html>\n<html>\n<head>\n</head>\n<body>\n<p>Promoci&oacute;n ofrecida por el Banco de la Ciudad de Buenos Aires, CUIT 30-99903208-3 (Banco Ciudad), todos los d&iacute;as Martes desde el 01/07/2026 al 31/12/2026 en la Rep&uacute;blica Argentina, para compras realizadas en locales adheridos de Grimoldi / Urban Rail y en la tienda online <a href=\"http://www.grimoldi.com.ar\">www.grimoldi.com.ar / www.merrell.com.ar </a>con tarjetas de cr&eacute;dito Visa o Mastercard de Banco Ciudad, escaneando exclusivamente el QR de MODO, desde Buepp o App Ciudad, se otorgar&aacute; un 10% (diez por ciento) de descuento sin tope y hasta 10 cuotas sin inter&eacute;s. El reintegro se acreditar&aacute; en la cuenta del cliente en un plazo de 15 (quince) d&iacute;as h&aacute;biles posteriores a la fecha de realizado el pago. No aplica para planes &ldquo;CUOTA SIMPLE&rdquo; ni para ning&uacute;n programa de beneficios similar. Para compras realizadas por titulares de tarjetas adicionales, el tarjetahabiente adicional deber&aacute; poseer una caja de ahorro del Banco Ciudad asociada a MODO. El producto ofrecido corresponde a la cartera de consumo. T.N.A., T.E.A. Y C.F.T.N.A (IVA Incluido): 0,00% Fijo. T.N.A: Tasa Nominal Anual, T.E.A: Tasa Efectiva Anual, C.F.T.N.A: Costo Financiero Total expresado en forma de tasa nominal anual con IVA.</p>\n</body>\n</html>",
+        "legales_genericas": "No aplica para tarjetas corporativas. La URL de los comercios adheridos se publica a título ilustrativo. El Banco no asume responsabilidad sobre los contenidos publicados en tales sitios. Los beneficios sobre consumos online realizados en sitios web ajenos al Banco (tiendas online, tiendas virtuales, e-commerce, entre otros) solo aplicarán en el caso de que así se indique en los términos y condiciones de la promoción del Banco Ciudad. El titular de los datos personales podrá en cualquier momento solicitar el retiro o bloqueo total o parcial de su nombre de nuestros bancos de datos, comunicándose al 0800-22-20-400, de conformidad con el art. 27, inc 3 de la ley 25.326 y art. 27 del Anexo I del Decreto 1558/01.",
+        "cft": "0.0",
+        "mostrar_cft": false,
+        "legalesGenericas": true,
+        "con_archivo_pdf": false,
+        "nombre_pdf": "",
+        "fechaDesde": "2026-07-01T03:00:00.000+00:00",
+        "fechaHasta": "2026-12-31T03:00:00.000+00:00",
+        "idImagen": 98,
+        "nombreRubro": "Moda y accesorios",
+        "ato": false
+      },
+      "comercio": {
+        "nombre": "Grimoldi",
+        "logo": "586/logo",
+        "web": "https://www.grimoldi.com.ar/"
+      }
+    },
+    "detail_url": "https://www.buepp.com.ar/buepp_api/beneficios/15814"
+  },
+  {
+    "source": "buepp",
+    "source_id": "15931",
+    "scraped_at": "2026-10-14T13:21:37.291968+00:00",
+    "promotion_url": "https://www.buepp.com.ar/beneficios/15931",
+    "catalog": {
+      "distancia": 0,
+      "latitud": 0.0,
+      "longitud": 0.0,
+      "idBeneficio": 15931,
+      "idSucursal": 0,
+      "comercio_nombre": "Plataforma 10",
+      "cuotas": 3,
+      "css_icono_rubro": "icon-bcba_beneficios_turismo",
+      "titulo": "-",
+      "subtitulo": "Hasta 3 cuotas sin interes",
+      "idImagen": 447,
+      "comercio_id": 3162,
+      "comercio_logo": "3162/logo",
+      "diasBeneficio": "LMMJVSD",
+      "sin_tope": false,
+      "nuevo": false,
+      "medioUnicoTipo": true,
+      "medios_pago": [
+        {
+          "id": 8,
+          "nombre": "APP CIUDAD",
+          "credito": "N"
+        },
+        {
+          "id": 7,
+          "nombre": "BUEPP",
+          "credito": "N"
+        }
+      ],
+      "visitas": 1473,
+      "rubro": {
+        "id": 11,
+        "idRubroPadre": null,
+        "nombre": "Turismo",
+        "icono": "icon-bcba_beneficios_turismo",
+        "orden": null,
+        "nombreUrl": "Turismo"
+      },
+      "aplica_tienda_online": true
+    },
+    "detail": {
+      "beneficio": {
+        "id": 15931,
+        "titulo": "-",
+        "subtitulo": "Hasta 3 cuotas sin interes",
+        "cuotas": 3,
+        "medios_pago": [
+          {
+            "id": 8,
+            "nombre": "APP CIUDAD",
+            "credito": "N"
+          },
+          {
+            "id": 7,
+            "nombre": "BUEPP",
+            "credito": "N"
+          }
+        ],
+        "css_icono_rubro": "icon-bcba_beneficios_turismo",
+        "idRubro": 11,
+        "dias": "LMMJVSD",
+        "sin_tope": false,
+        "nuevo": false,
+        "visitas": 1473,
+        "shopping": false,
+        "medioUnicoTipo": true,
+        "descAdicional": "",
+        "aplica_tienda_online": true,
+        "resumen": "Aprovechá hasta 3 cuotas sin interés pagando con QR MODO a través de App Ciudad o Buepp con tarjetas del Ciudad, para compras en tienda online adherida.",
+        "legales": "<!DOCTYPE html>\n<html>\n<head>\n</head>\n<body>\n<p>Promoci&oacute;n ofrecida por el Banco de la Ciudad de Buenos Aires, CUIT 30-99903208-3 (Banco Ciudad) v&aacute;lida todos los d&iacute;as, desde el 01/09/2026 al 31/12/2026 en la Rep&uacute;blica Argentina, para compras realizadas en <a href=\"http://www.plataforma10.com.ar\">www.plataforma10.com.ar</a> en hasta 3 cuotas sin inter&eacute;s, con tarjetas de cr&eacute;dito Visa o Mastercard de Banco Ciudad, exclusivamente escaneando el QR de MODO, desde Buepp o App Ciudad. No aplica para planes &ldquo;CUOTA SIMPLE&rdquo; ni para ning&uacute;n programa de beneficios similar. Para compras realizadas por titulares de tarjetas adicionales, el tarjetahabiente adicional deber&aacute; poseer una caja de ahorro del Banco Ciudad asociada a MODO. El producto ofrecido corresponde a la cartera de consumo. T.N.A., T.E.A. Y C.F.T.N.A (IVA Incluido): 0,00% Fijo. T.N.A: Tasa Nominal Anual, T.E.A: Tasa Efectiva Anual, C.F.T.N.A: Costo Financiero Total expresado en forma de tasa nominal anual con IVA.</p>\n</body>\n</html>",
+        "legales_genericas": "No aplica para tarjetas corporativas. La URL de los comercios adheridos se publica a título ilustrativo. El Banco no asume responsabilidad sobre los contenidos publicados en tales sitios. Los beneficios sobre consumos online realizados en sitios web ajenos al Banco (tiendas online, tiendas virtuales, e-commerce, entre otros) solo aplicarán en el caso de que así se indique en los términos y condiciones de la promoción del Banco Ciudad. El titular de los datos personales podrá en cualquier momento solicitar el retiro o bloqueo total o parcial de su nombre de nuestros bancos de datos, comunicándose al 0800-22-20-400, de conformidad con el art. 27, inc 3 de la ley 25.326 y art. 27 del Anexo I del Decreto 1558/01.",
+        "cft": "0.0",
+        "mostrar_cft": false,
+        "legalesGenericas": true,
+        "con_archivo_pdf": false,
+        "nombre_pdf": "",
+        "fechaDesde": "2026-09-01T03:00:00.000+00:00",
+        "fechaHasta": "2026-12-31T03:00:00.000+00:00",
+        "idImagen": 447,
+        "nombreRubro": "Turismo",
+        "ato": false
+      },
+      "comercio": {
+        "nombre": "Plataforma 10",
+        "logo": "3162/logo",
+        "web": "www.plataforma10.com.ar"
+      }
+    },
+    "detail_url": "https://www.buepp.com.ar/buepp_api/beneficios/15931"
+  },
+  {
+    "source": "buepp",
+    "source_id": "15812",
+    "scraped_at": "2026-10-14T13:21:37.291968+00:00",
+    "promotion_url": "https://www.buepp.com.ar/beneficios/15812",
+    "catalog": {
+      "distancia": 0,
+      "latitud": -34.606396,
+      "longitud": -58.37525,
+      "idBeneficio": 15812,
+      "idSucursal": 0,
+      "descuento": 15,
+      "comercio_nombre": "Ver",
+      "cuotas": 10,
+      "css_icono_rubro": "icon-bcba_beneficios_indumentaria",
+      "titulo": "15% de descuento",
+      "subtitulo": "hasta 10 cuotas sin interés y sin tope",
+      "idImagen": 97,
+      "comercio_id": 588,
+      "comercio_logo": "588/logo",
+      "diasBeneficio": "-M-----",
+      "sin_tope": true,
+      "nuevo": false,
+      "medioUnicoTipo": true,
+      "medios_pago": [
+        {
+          "id": 8,
+          "nombre": "APP CIUDAD",
+          "credito": "N"
+        },
+        {
+          "id": 7,
+          "nombre": "BUEPP",
+          "credito": "N"
+        }
+      ],
+      "visitas": 1005,
+      "rubro": {
+        "id": 7,
+        "idRubroPadre": null,
+        "nombre": "Moda y accesorios",
+        "icono": "icon-bcba_beneficios_indumentaria",
+        "orden": null,
+        "nombreUrl": "Moda-y-accesorios"
+      },
+      "aplica_tienda_online": true
+    },
+    "detail": {
+      "beneficio": {
+        "id": 15812,
+        "titulo": "15% de descuento",
+        "subtitulo": "hasta 10 cuotas sin interés y sin tope",
+        "cuotas": 10,
+        "descuento": 15,
+        "medios_pago": [
+          {
+            "id": 8,
+            "nombre": "APP CIUDAD",
+            "credito": "N"
+          },
+          {
+            "id": 7,
+            "nombre": "BUEPP",
+            "credito": "N"
+          }
+        ],
+        "css_icono_rubro": "icon-bcba_beneficios_indumentaria",
+        "idRubro": 7,
+        "dias": "-M-----",
+        "sin_tope": true,
+        "nuevo": false,
+        "visitas": 1005,
+        "shopping": false,
+        "medioUnicoTipo": true,
+        "descAdicional": "",
+        "aplica_tienda_online": true,
+        "resumen": "Aprovechá hasta 10 cuotas sin interés y 15% de descuento sin tope pagando con QR MODO a través de App Ciudad o Buepp con tarjetas de crédito, para compras en locales físicos adheridos y en la tienda online.",
+        "legales": "<!DOCTYPE html>\n<html>\n<head>\n</head>\n<body>\n<p>Promoci&oacute;n ofrecida por el Banco de la Ciudad de Buenos Aires, CUIT 30-99903208-3 (Banco Ciudad), todos los d&iacute;as Martes desde el 01/07/2026 al 31/12/2026 en la Rep&uacute;blica Argentina, para compras realizadas en locales adheridos de Ver y en la tienda online www.ver.com.ar con tarjetas de cr&eacute;dito Visa o Mastercard de Banco Ciudad, escaneando exclusivamente el QR de MODO, desde Buepp o App Ciudad, se otorgar&aacute; un 15% (Quince por ciento) de descuento sin tope y hasta 10 cuotas sin inter&eacute;s. El reintegro se acreditar&aacute; en la cuenta del cliente en un plazo de 15 (quince) d&iacute;as h&aacute;biles posteriores a la fecha de realizado el pago. No aplica para planes &ldquo;CUOTA SIMPLE&rdquo; ni para ning&uacute;n programa de beneficios similar. Para compras realizadas por titulares de tarjetas adicionales, el tarjetahabiente adicional deber&aacute; poseer una caja de ahorro del Banco Ciudad asociada a MODO. El producto ofrecido corresponde a la cartera de consumo. T.N.A., T.E.A. Y C.F.T.N.A (IVA Incluido): 0,00% Fijo. T.N.A: Tasa Nominal Anual, T.E.A: Tasa Efectiva Anual, C.F.T.N.A: Costo Financiero Total expresado en forma de tasa nominal anual con IVA.</p>\n</body>\n</html>",
+        "legales_genericas": "No aplica para tarjetas corporativas. La URL de los comercios adheridos se publica a título ilustrativo. El Banco no asume responsabilidad sobre los contenidos publicados en tales sitios. Los beneficios sobre consumos online realizados en sitios web ajenos al Banco (tiendas online, tiendas virtuales, e-commerce, entre otros) solo aplicarán en el caso de que así se indique en los términos y condiciones de la promoción del Banco Ciudad. El titular de los datos personales podrá en cualquier momento solicitar el retiro o bloqueo total o parcial de su nombre de nuestros bancos de datos, comunicándose al 0800-22-20-400, de conformidad con el art. 27, inc 3 de la ley 25.326 y art. 27 del Anexo I del Decreto 1558/01.",
+        "cft": "0.0",
+        "mostrar_cft": false,
+        "legalesGenericas": true,
+        "con_archivo_pdf": false,
+        "nombre_pdf": "",
+        "fechaDesde": "2026-07-01T03:00:00.000+00:00",
+        "fechaHasta": "2026-12-31T03:00:00.000+00:00",
+        "idImagen": 97,
+        "nombreRubro": "Moda y accesorios",
+        "ato": false
+      },
+      "comercio": {
+        "nombre": "Ver",
+        "logo": "588/logo",
+        "web": "www.ver.com.ar"
+      }
+    },
+    "detail_url": "https://www.buepp.com.ar/buepp_api/beneficios/15812"
+  },
+  {
+    "source": "buepp",
+    "source_id": "15223",
+    "scraped_at": "2026-10-14T13:21:37.291968+00:00",
+    "promotion_url": "https://www.buepp.com.ar/beneficios/15223",
+    "catalog": {
+      "distancia": 0,
+      "latitud": 0.0,
+      "longitud": 0.0,
+      "idBeneficio": 15223,
+      "idSucursal": 0,
+      "descuento": 50,
+      "comercio_nombre": "Cines",
+      "cuotas": 0,
+      "css_icono_rubro": "icon-bcba_beneficios_arte_espetaculos",
+      "titulo": "50% de descuento",
+      "subtitulo": "Tope de $10.000 mensual",
+      "idImagen": 421,
+      "comercio_id": 300,
+      "comercio_logo": "300/logo",
+      "diasBeneficio": "-----S-",
+      "sin_tope": false,
+      "nuevo": false,
+      "medioUnicoTipo": true,
+      "medios_pago": [
+        {
+          "id": 7,
+          "nombre": "BUEPP",
+          "credito": "N"
+        },
+        {
+          "id": 8,
+          "nombre": "APP CIUDAD",
+          "credito": "N"
+        }
+      ],
+      "visitas": 871,
+      "rubro": {
+        "id": 4,
+        "idRubroPadre": null,
+        "nombre": "Entretenimiento",
+        "icono": "icon-bcba_beneficios_arte_espetaculos",
+        "orden": null,
+        "nombreUrl": "Entretenimiento"
+      },
+      "aplica_tienda_online": false
+    },
+    "detail": {
+      "beneficio": {
+        "id": 15223,
+        "titulo": "50% de descuento",
+        "subtitulo": "Tope de $10.000 mensual",
+        "cuotas": 0,
+        "descuento": 50,
+        "medios_pago": [
+          {
+            "id": 7,
+            "nombre": "BUEPP",
+            "credito": "N"
+          },
+          {
+            "id": 8,
+            "nombre": "APP CIUDAD",
+            "credito": "N"
+          }
+        ],
+        "css_icono_rubro": "icon-bcba_beneficios_arte_espetaculos",
+        "idRubro": 4,
+        "dias": "-----S-",
+        "sin_tope": false,
+        "nuevo": false,
+        "visitas": 871,
+        "shopping": false,
+        "medioUnicoTipo": true,
+        "descAdicional": "",
+        "aplica_tienda_online": false,
+        "resumen": "50% de reintegro en Cines, los días sábados con tope de $10.000 mensual por cliente, abonando con tus tarjetas de débito y crédito a través de MODO o App Ciudad.",
+        "legales": "<!DOCTYPE html>\n<html>\n<head>\n</head>\n<body>\n<p>Promoci&oacute;n v&aacute;lida en la Rep&uacute;blica Argentina los d&iacute;as s&aacute;bados desde el 01/10/2026 al 31/10/2026 para compras realizadas en pesos con tarjetas de cr&eacute;dito o d&eacute;bito Visa y/o Mastercard y prepagas Cabal de Banco Ciudad a trav&eacute;s de MODO, App Ciudad o Buepp en establecimientos del rubro &ldquo;cines&rdquo; que acepten MODO. La promoci&oacute;n s&oacute;lo aplica a las operaciones realizadas en terminales de cobro (o &ldquo;Posnet&rdquo;) de las marcas Prisma/Payway o Fiserv, quedando excluida de la promoci&oacute;n cualquier otra terminal de pago o qr no perteneciente a las mencionadas. No v&aacute;lido para pagos con PCT, pagos con transferencia o dinero en cuenta. El reintegro ser&aacute; del 50% (cincuenta por ciento) del monto total de la compra con un tope m&aacute;ximo de devoluci&oacute;n de $10.000 (pesos diez mil) mensual por cliente, independientemente de la cantidad de transacciones realizadas. El descuento podr&aacute; visualizarse v&iacute;a reintegro, a acreditar en la cuenta del cliente dentro de los 45 d&iacute;as posteriores a la fecha de realizada la compra. Si el cliente tuviera m&aacute;s de una cuenta, el cr&eacute;dito se realizar&aacute; en cualquiera de ellas a elecci&oacute;n del banco. La presente promoci&oacute;n es v&aacute;lida para compras en 1 pago y s&oacute;lo para consumos de tipo familiar, en caso de duda sobre el destino del consumo, no se acreditar&aacute; el monto de la bonificaci&oacute;n hasta tanto se aclare el mismo. Para obtener el reintegro ser&aacute; requisito excluyente, previo a realizarse la compra, tener asociada a MODO la cuenta del Banco Ciudad o Billetera Buepp. Para compras realizadas por titulares de tarjetas adicionales, el tarjetahabiente adicional deber&aacute; poseer una caja de ahorro del Banco Ciudad asociada a MODO o cuenta en Buepp. Quedan excluidas de la promoci&oacute;n las cuentas en mora y/o bloqueadas por motivos administrativos. Conforme RES. 915 e/2017, 51- E/2017 y 240 E/2017. T.N.A., T.E.A. Y C.F.T.N.A (IVA Incluido): 0,00% Fijo. T.N.A: Tasa Nominal Anual, T.E.A: Tasa Efectiva Anual, C.F.T.N.A: Costo Financiero Total expresado en forma de tasa nominal anual con IVA. El producto ofrecido corresponde a la cartera de consumo. Para m&aacute;s informaci&oacute;n y condiciones o limitaciones aplicables, consulte en www.bancociudad.com.ar.</p>\n</body>\n</html>",
+        "legales_genericas": "No aplica para tarjetas corporativas. La URL de los comercios adheridos se publica a título ilustrativo. El Banco no asume responsabilidad sobre los contenidos publicados en tales sitios. Los beneficios sobre consumos online realizados en sitios web ajenos al Banco (tiendas online, tiendas virtuales, e-commerce, entre otros) solo aplicarán en el caso de que así se indique en los términos y condiciones de la promoción del Banco Ciudad. El titular de los datos personales podrá en cualquier momento solicitar el retiro o bloqueo total o parcial de su nombre de nuestros bancos de datos, comunicándose al 0800-22-20-400, de conformidad con el art. 27, inc 3 de la ley 25.326 y art. 27 del Anexo I del Decreto 1558/01.",
+        "cft": "0.00",
+        "mostrar_cft": false,
+        "legalesGenericas": true,
+        "con_archivo_pdf": false,
+        "nombre_pdf": "",
+        "fechaDesde": "2026-10-01T03:00:00.000+00:00",
+        "fechaHasta": "2026-10-31T03:00:00.000+00:00",
+        "idImagen": 421,
+        "nombreRubro": "Entretenimiento",
+        "ato": false
+      },
+      "comercio": {
+        "nombre": "Cines",
+        "logo": "300/logo",
+        "web": ""
+      }
+    },
+    "detail_url": "https://www.buepp.com.ar/buepp_api/beneficios/15223"
+  },
+  {
+    "source": "buepp",
+    "source_id": "15981",
+    "scraped_at": "2026-10-14T13:21:37.291968+00:00",
+    "promotion_url": "https://www.buepp.com.ar/beneficios/15981",
+    "catalog": {
+      "distancia": 0,
+      "latitud": 0.0,
+      "longitud": 0.0,
+      "idBeneficio": 15981,
+      "idSucursal": 0,
+      "descuento": 20,
+      "comercio_nombre": "Combustible.",
+      "cuotas": 0,
+      "css_icono_rubro": "icon-bcba_beneficios_automotor",
+      "titulo": "20% de descuento",
+      "subtitulo": "Tope $20.000 mensual exclusivo acreditación regular de haberes salariales o jubilatorios en el Banco",
+      "idImagen": 304,
+      "comercio_id": 5526,
+      "comercio_logo": "5526/logo",
+      "diasBeneficio": "------D",
+      "sin_tope": false,
+      "nuevo": false,
+      "medioUnicoTipo": false,
+      "medios_pago": [
+        {
+          "id": 4,
+          "nombre": "MASTERCARD",
+          "credito": "S"
+        },
+        {
+          "id": 1,
+          "nombre": "VISA",
+          "credito": "S"
+        },
+        {
+          "id": 7,
+          "nombre": "BUEPP",
+          "credito": "N"
+        },
+        {
+          "id": 8,
+          "nombre": "APP CIUDAD",
+          "credito": "N"
+        }
+      ],
+      "visitas": 705,
+      "rubro": {
+        "id": 12,
+        "idRubroPadre": null,
+        "nombre": "Combustible",
+        "icono": "icon-bcba_beneficios_automotor",
+        "orden": null,
+        "nombreUrl": "Combustible"
+      },
+      "aplica_tienda_online": false
+    },
+    "detail": {
+      "beneficio": {
+        "id": 15981,
+        "titulo": "20% de descuento",
+        "subtitulo": "Tope $20.000 mensual exclusivo acreditación regular de haberes salariales o jubilatorios en el Banco",
+        "cuotas": 0,
+        "descuento": 20,
+        "medios_pago": [
+          {
+            "id": 4,
+            "nombre": "MASTERCARD",
+            "credito": "S"
+          },
+          {
+            "id": 1,
+            "nombre": "VISA",
+            "credito": "S"
+          },
+          {
+            "id": 7,
+            "nombre": "BUEPP",
+            "credito": "N"
+          },
+          {
+            "id": 8,
+            "nombre": "APP CIUDAD",
+            "credito": "N"
+          }
+        ],
+        "css_icono_rubro": "icon-bcba_beneficios_automotor",
+        "idRubro": 12,
+        "dias": "------D",
+        "sin_tope": false,
+        "nuevo": false,
+        "visitas": 705,
+        "shopping": false,
+        "medioUnicoTipo": false,
+        "descAdicional": "",
+        "aplica_tienda_online": false,
+        "resumen": "¡Exclusivo para clientes con acreditación haberes en el banco y jubilados!  -20% de descuento en estaciones YPF, SHELL y AXION los días domingos abonando con QR de MODO y tus tarjetas  de crédito Visa y MasterCard del Ciudad a través de Buepp o  App Ciudad.",
+        "legales": "<!DOCTYPE html>\n<html>\n<head>\n</head>\n<body>\n<style>\na {\n    text-decoration: none;\n    color: #464feb;\n}\ntr th, tr td {\n    border: 1px solid #e6e6e6;\n}\ntr th {\n    background-color: #f5f5f5;\n}\n</style>\n<div>Promoci&oacute;n ofrecida por el Banco de la Ciudad de Buenos Aires, CUIT 30-99903208-3 (Banco Ciudad) los d&iacute;as domingo desde el 01/10/2026 al 31/12/2026, en toda la Rep&uacute;blica Argentina, en carga de combustible en estaciones de servicio adheridas de Axion, YPF y Shell. Se otorgar&aacute; un 20% (veinte por ciento) de descuento, con un tope m&aacute;ximo de devoluci&oacute;n mensual por cliente de $20.000 (veinte mil pesos), pagando con QR de MODO con tarjetas de cr&eacute;dito Visa y MasterCard de Banco Ciudad a trav&eacute;s de Buepp o la App Ciudad. El beneficio del descuento total del 20% se compone de la siguiente manera: un 10% (diez por ciento) de descuento correspondiente a la promoci&oacute;n de Combustibles, con un tope mensual de $10.000 (diez mil) por cliente; y un 10% (diez por ciento) de descuento adicional, con un tope mensual de $10.000 (diez mil) por cliente, exclusivo para clientes que registren acreditaci&oacute;n regular de haberes salariales o jubilatorios en el Banco. El descuento podr&aacute; visualizarse v&iacute;a reintegro, a acreditar en la cuenta del cliente dentro de los 15 d&iacute;as posteriores a la fecha de realizada la compra. Si el cliente tuviera m&aacute;s de una cuenta, el cr&eacute;dito se realizar&aacute; en cualquiera de ellas a elecci&oacute;n del Banco. Aplica para compras en un pago. Ser&aacute; requisito excluyente, previo a realizarse la compra, tener asociada a MODO la cuenta del Banco Ciudad. Para compras realizadas por titulares de tarjetas adicionales, el tarjetahabiente adicional deber&aacute; poseer una caja de ahorro del Banco Ciudad asociada a MODO. Se considerar&aacute; para la segmentaci&oacute;n de clientes plan sueldo y jubilados las acreditaciones de haberes realizadas durante los &uacute;ltimos 90 d&iacute;as previos a la compra. Quedan excluidas de la promoci&oacute;n las cuentas en mora y/o bloqueadas por motivos administrativos. La presente promoci&oacute;n es v&aacute;lida solo para consumos de tipo familiar. En caso de duda sobre el destino del consumo, no se acreditar&aacute; el monto de la bonificaci&oacute;n hasta tanto se aclare el mismo. Los descuentos publicados no son acumulables con otras promociones. Conforme RES. 915 E/2017, 51-E/2017 y 240-E/2017. T.N.A., T.E.A. y C.F.T.N.A. (IVA incluido): 0,00% fijo. T.N.A.: Tasa Nominal Anual; T.E.A.: Tasa Efectiva Anual; C.F.T.N.A.: Costo Financiero Total expresado en forma de tasa nominal anual con IVA. El producto ofrecido corresponde a la cartera de consumo.</div>\n</body>\n</html>",
+        "legales_genericas": "No aplica para tarjetas corporativas. La URL de los comercios adheridos se publica a título ilustrativo. El Banco no asume responsabilidad sobre los contenidos publicados en tales sitios. Los beneficios sobre consumos online realizados en sitios web ajenos al Banco (tiendas online, tiendas virtuales, e-commerce, entre otros) solo aplicarán en el caso de que así se indique en los términos y condiciones de la promoción del Banco Ciudad. El titular de los datos personales podrá en cualquier momento solicitar el retiro o bloqueo total o parcial de su nombre de nuestros bancos de datos, comunicándose al 0800-22-20-400, de conformidad con el art. 27, inc 3 de la ley 25.326 y art. 27 del Anexo I del Decreto 1558/01.",
+        "cft": "0.00",
+        "mostrar_cft": false,
+        "legalesGenericas": true,
+        "con_archivo_pdf": true,
+        "nombre_pdf": "Sucursales adheridas.pdf",
+        "fechaDesde": "2026-10-01T03:00:00.000+00:00",
+        "fechaHasta": "2026-12-31T03:00:00.000+00:00",
+        "idImagen": 304,
+        "nombreRubro": "Combustible",
+        "ato": false
+      },
+      "comercio": {
+        "nombre": "Combustible.",
+        "logo": "5526/logo",
+        "web": ""
+      }
+    },
+    "detail_url": "https://www.buepp.com.ar/buepp_api/beneficios/15981"
+  },
+  {
+    "source": "buepp",
+    "source_id": "15786",
+    "scraped_at": "2026-10-14T13:21:37.291968+00:00",
+    "promotion_url": "https://www.buepp.com.ar/beneficios/15786",
+    "catalog": {
+      "distancia": 0,
+      "latitud": -34.60342,
+      "longitud": -58.391006,
+      "idBeneficio": 15786,
+      "idSucursal": 0,
+      "descuento": 20,
+      "comercio_nombre": "Farmacias ABC",
+      "cuotas": 6,
+      "css_icono_rubro": "icon-bcba_beneficios_cuidado_personal",
+      "titulo": "20% de descuento",
+      "subtitulo": "Tope de reintegro mensual de $10.000 por cliente y hasta 6 cuotas sin interés.",
+      "idImagen": 730,
+      "comercio_id": 87,
+      "comercio_logo": "87/logo",
+      "diasBeneficio": "L------",
+      "sin_tope": false,
+      "nuevo": false,
+      "medioUnicoTipo": true,
+      "medios_pago": [
+        {
+          "id": 8,
+          "nombre": "APP CIUDAD",
+          "credito": "N"
+        },
+        {
+          "id": 7,
+          "nombre": "BUEPP",
+          "credito": "N"
+        }
+      ],
+      "visitas": 674,
+      "rubro": {
+        "id": 2,
+        "idRubroPadre": null,
+        "nombre": "Cuidado personal",
+        "icono": "icon-bcba_beneficios_cuidado_personal",
+        "orden": null,
+        "nombreUrl": "Cuidado-personal"
+      },
+      "aplica_tienda_online": false
+    },
+    "detail": {
+      "beneficio": {
+        "id": 15786,
+        "titulo": "20% de descuento",
+        "subtitulo": "Tope de reintegro mensual de $10.000 por cliente y hasta 6 cuotas sin interés.",
+        "cuotas": 6,
+        "descuento": 20,
+        "medios_pago": [
+          {
+            "id": 8,
+            "nombre": "APP CIUDAD",
+            "credito": "N"
+          },
+          {
+            "id": 7,
+            "nombre": "BUEPP",
+            "credito": "N"
+          }
+        ],
+        "css_icono_rubro": "icon-bcba_beneficios_cuidado_personal",
+        "idRubro": 2,
+        "dias": "L------",
+        "sin_tope": false,
+        "nuevo": false,
+        "visitas": 674,
+        "shopping": false,
+        "medioUnicoTipo": true,
+        "descAdicional": "",
+        "aplica_tienda_online": false,
+        "resumen": "Aprovechá hasta 6 cuotas sin interés y 20% de descuento todos los lunes pagando con QR MODO a través de App Ciudad o Buepp con tarjetas de crédito, para compras en locales físicos adheridos. Tope de reintegro: $10.000 mensual por cliente.",
+        "legales": "<!DOCTYPE html>\n<html>\n<head>\n</head>\n<body>\n<p>Promoci&oacute;n ofrecida por el Banco de la Ciudad de Buenos Aires, CUIT 30-99903208-3 (Banco Ciudad), todos los d&iacute;as lunes desde el 01/07/2026 al 31/12/2026 en la Rep&uacute;blica Argentina, para compras realizadas en locales adheridos de Farmacias ABC con tarjetas de cr&eacute;dito Visa o Mastercard de Banco Ciudad, escaneando exclusivamente el QR de MODO, desde Buepp o App Ciudad, se otorgar&aacute; un 20% (veinte por ciento) de descuento con tope de reintegro mensual de $10.000 por cliente y hasta 6 cuotas sin inter&eacute;s. El reintegro se acreditar&aacute; en la cuenta del cliente en un plazo de 15 (quince) d&iacute;as h&aacute;biles posteriores a la fecha de realizado el pago. No aplica para planes &ldquo;CUOTA SIMPLE&rdquo; ni para ning&uacute;n programa de beneficios similar. Para compras realizadas por titulares de tarjetas adicionales, el tarjetahabiente adicional deber&aacute; poseer una caja de ahorro del Banco Ciudad asociada a MODO. El producto ofrecido corresponde a la cartera de consumo. T.N.A., T.E.A. Y C.F.T.N.A (IVA Incluido): 0,00% Fijo. T.N.A: Tasa Nominal Anual, T.E.A: Tasa Efectiva Anual, C.F.T.N.A: Costo Financiero Total expresado en forma de tasa nominal anual con IVA.&nbsp;</p>\n</body>\n</html>",
+        "legales_genericas": "No aplica para tarjetas corporativas. La URL de los comercios adheridos se publica a título ilustrativo. El Banco no asume responsabilidad sobre los contenidos publicados en tales sitios. Los beneficios sobre consumos online realizados en sitios web ajenos al Banco (tiendas online, tiendas virtuales, e-commerce, entre otros) solo aplicarán en el caso de que así se indique en los términos y condiciones de la promoción del Banco Ciudad. El titular de los datos personales podrá en cualquier momento solicitar el retiro o bloqueo total o parcial de su nombre de nuestros bancos de datos, comunicándose al 0800-22-20-400, de conformidad con el art. 27, inc 3 de la ley 25.326 y art. 27 del Anexo I del Decreto 1558/01.",
+        "cft": "0.0",
+        "mostrar_cft": false,
+        "legalesGenericas": true,
+        "con_archivo_pdf": false,
+        "nombre_pdf": "",
+        "fechaDesde": "2026-07-01T03:00:00.000+00:00",
+        "fechaHasta": "2026-12-31T03:00:00.000+00:00",
+        "idImagen": 730,
+        "nombreRubro": "Cuidado personal",
+        "ato": false
+      },
+      "comercio": {
+        "nombre": "Farmacias ABC",
+        "logo": "87/logo",
+        "web": ""
+      }
+    },
+    "detail_url": "https://www.buepp.com.ar/buepp_api/beneficios/15786"
+  },
+  {
+    "source": "buepp",
+    "source_id": "15971",
+    "scraped_at": "2026-10-14T13:21:37.291968+00:00",
+    "promotion_url": "https://www.buepp.com.ar/beneficios/15971",
+    "catalog": {
+      "distancia": 0,
+      "latitud": -34.599403,
+      "longitud": -58.37529,
+      "idBeneficio": 15971,
+      "idSucursal": 0,
+      "comercio_nombre": "Samsung",
+      "cuotas": 18,
+      "css_icono_rubro": "icon-bcba_general_laptop",
+      "titulo": "-",
+      "subtitulo": "15 y 18 cuotas sin interés para el producto Galaxy S26 FE de Samsung",
+      "idImagen": 607,
+      "comercio_id": 363,
+      "comercio_logo": "363/logo",
+      "diasBeneficio": "LMMJVSD",
+      "sin_tope": false,
+      "nuevo": false,
+      "medioUnicoTipo": false,
+      "medios_pago": [
+        {
+          "id": 1,
+          "nombre": "VISA",
+          "credito": "S"
+        },
+        {
+          "id": 4,
+          "nombre": "MASTERCARD",
+          "credito": "S"
+        },
+        {
+          "id": 8,
+          "nombre": "APP CIUDAD",
+          "credito": "N"
+        },
+        {
+          "id": 7,
+          "nombre": "BUEPP",
+          "credito": "N"
+        }
+      ],
+      "visitas": 578,
+      "rubro": {
+        "id": 1180,
+        "idRubroPadre": null,
+        "nombre": "Electro",
+        "icono": "icon-bcba_general_laptop",
+        "orden": null,
+        "nombreUrl": "Electro"
+      },
+      "aplica_tienda_online": true
+    },
+    "detail": {
+      "beneficio": {
+        "id": 15971,
+        "titulo": "-",
+        "subtitulo": "15 y 18 cuotas sin interés para el producto Galaxy S26 FE de Samsung",
+        "cuotas": 18,
+        "medios_pago": [
+          {
+            "id": 1,
+            "nombre": "VISA",
+            "credito": "S"
+          },
+          {
+            "id": 4,
+            "nombre": "MASTERCARD",
+            "credito": "S"
+          },
+          {
+            "id": 8,
+            "nombre": "APP CIUDAD",
+            "credito": "N"
+          },
+          {
+            "id": 7,
+            "nombre": "BUEPP",
+            "credito": "N"
+          }
+        ],
+        "css_icono_rubro": "icon-bcba_general_laptop",
+        "idRubro": 1180,
+        "dias": "LMMJVSD",
+        "sin_tope": false,
+        "nuevo": false,
+        "visitas": 578,
+        "shopping": false,
+        "medioUnicoTipo": false,
+        "descAdicional": "",
+        "aplica_tienda_online": true,
+        "resumen": "¡Aprovechá 15 y 18 cuota sin interés!  para el lanzamiento del  Galaxy S26 FE de Samsung  todos los días pagando desde App Ciudad o Buepp.",
+        "legales": "<!DOCTYPE html>\n<html>\n<head>\n</head>\n<body>\n<p>Promoci&oacute;n ofrecida por el Banco de la Ciudad de Buenos Aires, CUIT 30-99903208-3 (Banco Ciudad) v&aacute;lida para toda la Rep&uacute;blica Argentina, todos los d&iacute;as desde el 30/09/2026 al 18/10/2026, para compras en 15 y 18 cuotas sin inter&eacute;s para el producto Galaxy S26 FE de Samsung con tarjetas de cr&eacute;dito Visa y Mastercard de Banco Ciudad&nbsp; de locales adheridos de Samsung y en las tiendas online <a href=\"https://shop.samsung.com.ar/\">https://shop.samsung.com.ar/</a> <a href=\"https://www.samshop.com/\">https://www.samshop.com </a>con qr MODO a trav&eacute;s de App Ciudad o Buepp . Conforme RES.51- E/2017, 240 E/2017 y 12/2024. Costo financiero total expresado en tasa efectiva anual (C.F.T.E.A.): 0,00% tasa nominal anual (T.N.A): 0,00%. costo financiero total (C.F.T): 0,00% . La presente promoci&oacute;n es v&aacute;lida s&oacute;lo para consumos de tipo familiar. Quedan excluidas de la promoci&oacute;n las tarjetas corporativas. El beneficio mencionado no aplica ni se acumula si el pago es efectuado mediante TODO PAGO, MERCADO PAGO y/o similares mediante transferencias y/ d&eacute;bitos directos de la cuenta como pagos PCT/CCT. La URL consignada de los comercios publicados es a t&iacute;tulo ilustrativo. No acumulable con el Programa &ldquo;Cuota Simple&rdquo; ni con ning&uacute;n programa similar que se implemente en el futuro. Para m&aacute;s informaci&oacute;n y condiciones o limitaciones aplicables, consulte en www.bancociudad.com.ar&nbsp;</p>\n</body>\n</html>",
+        "legales_genericas": "No aplica para tarjetas corporativas. La URL de los comercios adheridos se publica a título ilustrativo. El Banco no asume responsabilidad sobre los contenidos publicados en tales sitios. Los beneficios sobre consumos online realizados en sitios web ajenos al Banco (tiendas online, tiendas virtuales, e-commerce, entre otros) solo aplicarán en el caso de que así se indique en los términos y condiciones de la promoción del Banco Ciudad. El titular de los datos personales podrá en cualquier momento solicitar el retiro o bloqueo total o parcial de su nombre de nuestros bancos de datos, comunicándose al 0800-22-20-400, de conformidad con el art. 27, inc 3 de la ley 25.326 y art. 27 del Anexo I del Decreto 1558/01.",
+        "cft": "0.0",
+        "mostrar_cft": true,
+        "legalesGenericas": true,
+        "con_archivo_pdf": false,
+        "nombre_pdf": "",
+        "fechaDesde": "2026-09-30T03:00:00.000+00:00",
+        "fechaHasta": "2026-10-18T03:00:00.000+00:00",
+        "idImagen": 607,
+        "nombreRubro": "Electro",
+        "ato": false
+      },
+      "comercio": {
+        "nombre": "Samsung",
+        "logo": "363/logo",
+        "web": ""
+      }
+    },
+    "detail_url": "https://www.buepp.com.ar/buepp_api/beneficios/15971"
+  },
+  {
+    "source": "buepp",
+    "source_id": "15975",
+    "scraped_at": "2026-10-14T13:21:37.291968+00:00",
+    "promotion_url": "https://www.buepp.com.ar/beneficios/15975",
+    "catalog": {
+      "distancia": 0,
+      "latitud": -34.599403,
+      "longitud": -58.37529,
+      "idBeneficio": 15975,
+      "idSucursal": 0,
+      "comercio_nombre": "Samsung",
+      "cuotas": 12,
+      "css_icono_rubro": "icon-bcba_general_laptop",
+      "titulo": "-",
+      "subtitulo": "3, 6, 9 y 12 cuotas sin interés productos seleccionados",
+      "idImagen": 607,
+      "comercio_id": 363,
+      "comercio_logo": "363/logo",
+      "diasBeneficio": "LMMJVSD",
+      "sin_tope": false,
+      "nuevo": false,
+      "medioUnicoTipo": false,
+      "medios_pago": [
+        {
+          "id": 4,
+          "nombre": "MASTERCARD",
+          "credito": "S"
+        },
+        {
+          "id": 1,
+          "nombre": "VISA",
+          "credito": "S"
+        },
+        {
+          "id": 7,
+          "nombre": "BUEPP",
+          "credito": "N"
+        },
+        {
+          "id": 8,
+          "nombre": "APP CIUDAD",
+          "credito": "N"
+        }
+      ],
+      "visitas": 530,
+      "rubro": {
+        "id": 1180,
+        "idRubroPadre": null,
+        "nombre": "Electro",
+        "icono": "icon-bcba_general_laptop",
+        "orden": null,
+        "nombreUrl": "Electro"
+      },
+      "aplica_tienda_online": true
+    },
+    "detail": {
+      "beneficio": {
+        "id": 15975,
+        "titulo": "-",
+        "subtitulo": "3, 6, 9 y 12 cuotas sin interés productos seleccionados",
+        "cuotas": 12,
+        "medios_pago": [
+          {
+            "id": 4,
+            "nombre": "MASTERCARD",
+            "credito": "S"
+          },
+          {
+            "id": 1,
+            "nombre": "VISA",
+            "credito": "S"
+          },
+          {
+            "id": 7,
+            "nombre": "BUEPP",
+            "credito": "N"
+          },
+          {
+            "id": 8,
+            "nombre": "APP CIUDAD",
+            "credito": "N"
+          }
+        ],
+        "css_icono_rubro": "icon-bcba_general_laptop",
+        "idRubro": 1180,
+        "dias": "LMMJVSD",
+        "sin_tope": false,
+        "nuevo": false,
+        "visitas": 530,
+        "shopping": false,
+        "medioUnicoTipo": false,
+        "descAdicional": "",
+        "aplica_tienda_online": true,
+        "resumen": "¡Aprovechá hasta 12 cuotas sin interés! en productos seleccionados todos los días pagando desde App Ciudad o Buepp",
+        "legales": "<!DOCTYPE html>\n<html>\n<head>\n</head>\n<body>\n<p>Promoci&oacute;n ofrecida por el Banco de la Ciudad de Buenos Aires, CUIT 30-99903208-3 (Banco Ciudad) v&aacute;lida para toda la Rep&uacute;blica Argentina, todos los d&iacute;as desde el 01/10/2026 al 18/10/2026, para compras en 3, 6, 9 y 12 cuotas sin inter&eacute;s productos seleccionados con tarjetas de cr&eacute;dito Visa y Mastercard de Banco Ciudad&nbsp; de locales adheridos de Samsung y en las tiendas online <a href=\"https://shop.samsung.com.ar/\">https://shop.samsung.com.ar/</a> <a href=\"https://www.samshop.com/\">https://www.samshop.com </a>con qr MODO a trav&eacute;s de App Ciudad o Buepp . Conforme RES.51- E/2017, 240 E/2017 y 12/2024. Costo financiero total expresado en tasa efectiva anual (C.F.T.E.A.): 0,00% tasa nominal anual (T.N.A): 0,00%. costo financiero total (C.F.T): 0,00% . La presente promoci&oacute;n es v&aacute;lida s&oacute;lo para consumos de tipo familiar. Quedan excluidas de la promoci&oacute;n las tarjetas corporativas. El beneficio mencionado no aplica ni se acumula si el pago es efectuado mediante TODO PAGO, MERCADO PAGO y/o similares mediante transferencias y/ d&eacute;bitos directos de la cuenta como pagos PCT/CCT. La URL consignada de los comercios publicados es a t&iacute;tulo ilustrativo. No acumulable con el Programa &ldquo;Cuota Simple&rdquo; ni con ning&uacute;n programa similar que se implemente en el futuro. Para m&aacute;s informaci&oacute;n y condiciones o limitaciones aplicables, consulte en www.bancociudad.com.ar&nbsp;</p>\n</body>\n</html>",
+        "legales_genericas": "No aplica para tarjetas corporativas. La URL de los comercios adheridos se publica a título ilustrativo. El Banco no asume responsabilidad sobre los contenidos publicados en tales sitios. Los beneficios sobre consumos online realizados en sitios web ajenos al Banco (tiendas online, tiendas virtuales, e-commerce, entre otros) solo aplicarán en el caso de que así se indique en los términos y condiciones de la promoción del Banco Ciudad. El titular de los datos personales podrá en cualquier momento solicitar el retiro o bloqueo total o parcial de su nombre de nuestros bancos de datos, comunicándose al 0800-22-20-400, de conformidad con el art. 27, inc 3 de la ley 25.326 y art. 27 del Anexo I del Decreto 1558/01.",
+        "cft": "0.0",
+        "mostrar_cft": true,
+        "legalesGenericas": true,
+        "con_archivo_pdf": false,
+        "nombre_pdf": "",
+        "fechaDesde": "2026-10-01T03:00:00.000+00:00",
+        "fechaHasta": "2026-10-18T03:00:00.000+00:00",
+        "idImagen": 607,
+        "nombreRubro": "Electro",
+        "ato": false
+      },
+      "comercio": {
+        "nombre": "Samsung",
+        "logo": "363/logo",
+        "web": ""
+      }
+    },
+    "detail_url": "https://www.buepp.com.ar/buepp_api/beneficios/15975"
+  },
+  {
+    "source": "buepp",
+    "source_id": "15982",
+    "scraped_at": "2026-10-14T13:21:37.291968+00:00",
+    "promotion_url": "https://www.buepp.com.ar/beneficios/15982",
+    "catalog": {
+      "distancia": 0,
+      "latitud": 0.0,
+      "longitud": 0.0,
+      "idBeneficio": 15982,
+      "idSucursal": 0,
+      "descuento": 30,
+      "comercio_nombre": "Ferias Itinerantes de Abastecimiento Barrial",
+      "css_icono_rubro": "icon-bcba_beneficios_gastronomy",
+      "titulo": "30% de descuento",
+      "subtitulo": "Tope $10.000 mensual.",
+      "idImagen": 595,
+      "comercio_id": 665,
+      "comercio_logo": "665/logo",
+      "diasBeneficio": "LM-J-S-",
+      "sin_tope": false,
+      "nuevo": false,
+      "medioUnicoTipo": true,
+      "medios_pago": [
+        {
+          "id": 8,
+          "nombre": "APP CIUDAD",
+          "credito": "N"
+        },
+        {
+          "id": 7,
+          "nombre": "BUEPP",
+          "credito": "N"
+        }
+      ],
+      "visitas": 440,
+      "rubro": {
+        "id": 1157,
+        "idRubroPadre": null,
+        "nombre": "Gastronomía",
+        "icono": "icon-bcba_beneficios_gastronomy",
+        "orden": null,
+        "nombreUrl": "Gastronomía"
+      },
+      "aplica_tienda_online": false
+    },
+    "detail": {
+      "beneficio": {
+        "id": 15982,
+        "titulo": "30% de descuento",
+        "subtitulo": "Tope $10.000 mensual.",
+        "descuento": 30,
+        "medios_pago": [
+          {
+            "id": 8,
+            "nombre": "APP CIUDAD",
+            "credito": "N"
+          },
+          {
+            "id": 7,
+            "nombre": "BUEPP",
+            "credito": "N"
+          }
+        ],
+        "css_icono_rubro": "icon-bcba_beneficios_gastronomy",
+        "idRubro": 1157,
+        "dias": "LM-J-S-",
+        "sin_tope": false,
+        "nuevo": false,
+        "visitas": 440,
+        "shopping": false,
+        "medioUnicoTipo": true,
+        "descAdicional": "",
+        "aplica_tienda_online": false,
+        "resumen": "Ahorrá 30% de descuento  los días lunes, martes, jueves y sábados pagando exclusivamente a través de Buepp y App Ciudad. Tope: $10.000 mensual",
+        "legales": "<!DOCTYPE html>\n<html>\n<head>\n</head>\n<body>\n<p><span>Promoci&oacute;n ofrecida el Banco de la Ciudad de Buenos Aires, cuit 30-99903208-3 para toda la Rep&uacute;blica Argentina desde el 03/10/2026 hasta el 31/12/2026 para compras presenciales en \"</span><i><em class=\"editor-text-italic\">Ferias Itinerantes de abastecimiento barrial\" ubicadas en </em></i><span>https://buenosaires.gob.ar/itinerantes/ubicaciones-y-horarios. REQUISITO EXCLUYENTE: los comerciantes/feriantes DEBER&Aacute;N estar adheridos a la acci&oacute;n de las Ferias Itinerantes de Abastecimiento Barrial (Ferias de la Ciudad - FIAB) de la Ciudad Aut&oacute;noma de Buenos Aires, Rep&uacute;blica Argentina, para los d&iacute;as lunes, martes, jueves y s&aacute;bados. Se otorgar&aacute; un 30% de descuento con un tope de devoluci&oacute;n mensual de $10.000 por cliente abonando exclusivamente a trav&eacute;s de Buepp o App Ciudad con tarjeta de d&eacute;bito, cr&eacute;dito, o dinero en cuenta. El reintegro se acreditar&aacute; en la cuenta del cliente en un plazo de 15 (quince) d&iacute;as h&aacute;biles posteriores a la fecha de realizado el pago. Aplica exclusivamente a compras presenciales. El producto ofrecido corresponde a la cartera de consumo. No aplica para pagos NFC.&nbsp;</span></p>\n</body>\n</html>",
+        "legales_genericas": "No aplica para tarjetas corporativas. La URL de los comercios adheridos se publica a título ilustrativo. El Banco no asume responsabilidad sobre los contenidos publicados en tales sitios. Los beneficios sobre consumos online realizados en sitios web ajenos al Banco (tiendas online, tiendas virtuales, e-commerce, entre otros) solo aplicarán en el caso de que así se indique en los términos y condiciones de la promoción del Banco Ciudad. El titular de los datos personales podrá en cualquier momento solicitar el retiro o bloqueo total o parcial de su nombre de nuestros bancos de datos, comunicándose al 0800-22-20-400, de conformidad con el art. 27, inc 3 de la ley 25.326 y art. 27 del Anexo I del Decreto 1558/01.",
+        "cft": "0.0",
+        "mostrar_cft": false,
+        "legalesGenericas": true,
+        "con_archivo_pdf": true,
+        "nombre_pdf": "Permisionarios FIAB -CUIT.pdf",
+        "fechaDesde": "2026-10-03T03:00:00.000+00:00",
+        "fechaHasta": "2026-12-31T03:00:00.000+00:00",
+        "idImagen": 595,
+        "nombreRubro": "Gastronomía",
+        "ato": false
+      },
+      "comercio": {
+        "nombre": "Ferias Itinerantes de Abastecimiento Barrial",
+        "logo": "665/logo",
+        "web": ""
+      }
+    },
+    "detail_url": "https://www.buepp.com.ar/buepp_api/beneficios/15982"
+  },
+  {
+    "source": "buepp",
+    "source_id": "15793",
+    "scraped_at": "2026-10-14T13:21:37.291968+00:00",
+    "promotion_url": "https://www.buepp.com.ar/beneficios/15793",
+    "catalog": {
+      "distancia": 0,
+      "latitud": -34.611336,
+      "longitud": -58.371407,
+      "idBeneficio": 15793,
+      "idSucursal": 0,
+      "descuento": 20,
+      "comercio_nombre": "Disco",
+      "css_icono_rubro": "icon-bcba_beneficios_supermercados",
+      "titulo": "20% de descuento",
+      "subtitulo": "Tope de $25.000 en compras mínimas de $100.000",
+      "idImagen": 73,
+      "comercio_id": 70,
+      "comercio_logo": "70/logo",
+      "diasBeneficio": "----VS-",
+      "sin_tope": false,
+      "nuevo": false,
+      "medioUnicoTipo": true,
+      "medios_pago": [
+        {
+          "id": 7,
+          "nombre": "BUEPP",
+          "credito": "N"
+        },
+        {
+          "id": 8,
+          "nombre": "APP CIUDAD",
+          "credito": "N"
+        }
+      ],
+      "visitas": 344,
+      "rubro": {
+        "id": 10,
+        "idRubroPadre": null,
+        "nombre": "Supermercados",
+        "icono": "icon-bcba_beneficios_supermercados",
+        "orden": null,
+        "nombreUrl": "Supermercados"
+      },
+      "aplica_tienda_online": true
+    },
+    "detail": {
+      "beneficio": {
+        "id": 15793,
+        "titulo": "20% de descuento",
+        "subtitulo": "Tope de $25.000 en compras mínimas de $100.000",
+        "descuento": 20,
+        "medios_pago": [
+          {
+            "id": 7,
+            "nombre": "BUEPP",
+            "credito": "N"
+          },
+          {
+            "id": 8,
+            "nombre": "APP CIUDAD",
+            "credito": "N"
+          }
+        ],
+        "css_icono_rubro": "icon-bcba_beneficios_supermercados",
+        "idRubro": 10,
+        "dias": "----VS-",
+        "sin_tope": false,
+        "nuevo": false,
+        "visitas": 344,
+        "shopping": false,
+        "medioUnicoTipo": true,
+        "descAdicional": "",
+        "aplica_tienda_online": true,
+        "resumen": "Aprovechá 20% de viernes y sábados, con tope de reintegro mensual de $25.000 pagando con qr MODO a través de App Ciudad o Buepp con tarjetas de Banco Ciudad para compras en tiendas físicas y tienda online. Mínimo de compra: $100.000. Ver comercios adheridos.",
+        "legales": "<!DOCTYPE html>\n<html>\n<head>\n</head>\n<body>\n<p>Promoci&oacute;n ofrecida por el Banco de la Ciudad de Buenos Aires, CUIT 30-99903208-3 (Banco Ciudad) v&aacute;lida los d&iacute;as viernes y s&aacute;bados, desde el 01/07/2026 al 31/10/2026 en la Rep&uacute;blica Argentina, para compras realizadas en comercios adheridos y tienda online de Disco, con tarjetas de d&eacute;bito Visa y Maestro y de cr&eacute;dito Visa o Mastercard de Banco Ciudad, exclusivamente escaneando el QR de MODO, desde Buepp o App Ciudad. Se otorgar&aacute; un 20% (veinte por ciento) de descuento con tope de reintegro mensual de $25.000 en compras m&iacute;nimas de $100.000. El reintegro se acreditar&aacute; en la cuenta del cliente en un plazo de 15 (quince) d&iacute;as h&aacute;biles posteriores a la fecha de realizado el pago. Para compras realizadas por titulares de tarjetas adicionales, el tarjetahabiente adicional deber&aacute; poseer una caja de ahorro del Banco Ciudad asociada a MODO. El producto ofrecido corresponde a la cartera de consumo.</p>\n</body>\n</html>",
+        "legales_genericas": "No aplica para tarjetas corporativas. La URL de los comercios adheridos se publica a título ilustrativo. El Banco no asume responsabilidad sobre los contenidos publicados en tales sitios. Los beneficios sobre consumos online realizados en sitios web ajenos al Banco (tiendas online, tiendas virtuales, e-commerce, entre otros) solo aplicarán en el caso de que así se indique en los términos y condiciones de la promoción del Banco Ciudad. El titular de los datos personales podrá en cualquier momento solicitar el retiro o bloqueo total o parcial de su nombre de nuestros bancos de datos, comunicándose al 0800-22-20-400, de conformidad con el art. 27, inc 3 de la ley 25.326 y art. 27 del Anexo I del Decreto 1558/01.",
+        "cft": "0.0",
+        "mostrar_cft": false,
+        "legalesGenericas": true,
+        "con_archivo_pdf": true,
+        "nombre_pdf": "Sucursales _ Disco & Vea - Vea.pdf",
+        "fechaDesde": "2026-07-01T03:00:00.000+00:00",
+        "fechaHasta": "2026-10-31T03:00:00.000+00:00",
+        "idImagen": 73,
+        "nombreRubro": "Supermercados",
+        "ato": false
+      },
+      "comercio": {
+        "nombre": "Disco",
+        "logo": "70/logo",
+        "web": ""
+      }
+    },
+    "detail_url": "https://www.buepp.com.ar/buepp_api/beneficios/15793"
+  },
+  {
+    "source": "buepp",
+    "source_id": "15992",
+    "scraped_at": "2026-10-14T13:21:37.291968+00:00",
+    "promotion_url": "https://www.buepp.com.ar/beneficios/15992",
+    "catalog": {
+      "distancia": 0,
+      "latitud": 0.0,
+      "longitud": 0.0,
+      "idBeneficio": 15992,
+      "idSucursal": 0,
+      "descuento": 25,
+      "comercio_nombre": "Pedidos Ya",
+      "css_icono_rubro": "icon-bcba_beneficios_shopping",
+      "titulo": "25% de descuento",
+      "subtitulo": "Tope hasta $15.000 mensual",
+      "idImagen": 724,
+      "comercio_id": 792,
+      "comercio_logo": "792/logo",
+      "diasBeneficio": "-----S-",
+      "sin_tope": false,
+      "nuevo": false,
+      "medioUnicoTipo": false,
+      "medios_pago": [
+        {
+          "id": 4,
+          "nombre": "MASTERCARD",
+          "credito": "S"
+        },
+        {
+          "id": 7,
+          "nombre": "BUEPP",
+          "credito": "N"
+        }
+      ],
+      "visitas": 293,
+      "rubro": {
+        "id": 1192,
+        "idRubroPadre": null,
+        "nombre": "Delivery",
+        "icono": "icon-bcba_beneficios_shopping",
+        "orden": null,
+        "nombreUrl": "Delivery"
+      },
+      "aplica_tienda_online": false
+    },
+    "detail": {
+      "beneficio": {
+        "id": 15992,
+        "titulo": "25% de descuento",
+        "subtitulo": "Tope hasta $15.000 mensual",
+        "descuento": 25,
+        "medios_pago": [
+          {
+            "id": 4,
+            "nombre": "MASTERCARD",
+            "credito": "S"
+          },
+          {
+            "id": 7,
+            "nombre": "BUEPP",
+            "credito": "N"
+          }
+        ],
+        "css_icono_rubro": "icon-bcba_beneficios_shopping",
+        "idRubro": 1192,
+        "dias": "-----S-",
+        "sin_tope": false,
+        "nuevo": false,
+        "visitas": 293,
+        "shopping": false,
+        "medioUnicoTipo": false,
+        "descAdicional": "",
+        "aplica_tienda_online": false,
+        "resumen": "En PedidosYa (sección Mascotas), aprovechá un 25% de descuento los días sábado con tus tarjetas de crédito Mastercard.  Tope de reintegro $15.000 por tarjeta por mes. Exclusivo para suscriptores de PedidosYa Plus.",
+        "legales": "<!DOCTYPE html>\n<html>\n<head>\n</head>\n<body>\n<p>Beneficio v&aacute;lido los d&iacute;as s&aacute;bado comprendidos entre el d&iacute;a 12/09/2026 al 31/10/2026, en TERRITORIO ARGENTINO Aplicable exclusivamente a compras realizadas en la vertical MASCOTAS y a trav&eacute;s de la p&aacute;gina web www.pedidosya.com.ar o en la aplicaci&oacute;n &ldquo;PedidosYa&rdquo; (en adelante, conjuntamente definidos como el &ldquo;Portal&rdquo;). La presente Promoci&oacute;n es aplicable a todos los socios titulares y adicionales que cuenten con una suscripci&oacute;n de Pedidos Ya PLUS de las tarjetas de CREDITO MASTERCARD , que abonen con dicho m&eacute;todo de pago una compra realizada por medio del Portal, en aquellos comercios adheridos que acepten la metodolog&iacute;a de &ldquo;pago online&rdquo;. El beneficio consistir&aacute; en un descuento del 25% (VEINTICINCO porciento). El importe m&aacute;ximo de descuento ser&aacute; de $15000 (pesos QUINCE MIL ) por tarjeta por mes (en adelante, el &ldquo;Beneficio&rdquo;). Acumulable con otras ofertas y/o promociones. Sujeto a disponibilidad de repartidores. PedidosYa S.A., CUIT: 30-71198576-6, Av. Del Libertador 7208, Piso 20, Ciudad de Buenos Aires. Para m&aacute;s informaci&oacute;n visita: https://www.mastercard.com/ar/es/personal/experience-mastercard/conozca-nuestras-ofertas-y-promociones.html</p>\n</body>\n</html>",
+        "legales_genericas": "No aplica para tarjetas corporativas. La URL de los comercios adheridos se publica a título ilustrativo. El Banco no asume responsabilidad sobre los contenidos publicados en tales sitios. Los beneficios sobre consumos online realizados en sitios web ajenos al Banco (tiendas online, tiendas virtuales, e-commerce, entre otros) solo aplicarán en el caso de que así se indique en los términos y condiciones de la promoción del Banco Ciudad. El titular de los datos personales podrá en cualquier momento solicitar el retiro o bloqueo total o parcial de su nombre de nuestros bancos de datos, comunicándose al 0800-22-20-400, de conformidad con el art. 27, inc 3 de la ley 25.326 y art. 27 del Anexo I del Decreto 1558/01.",
+        "cft": "0.0",
+        "mostrar_cft": false,
+        "legalesGenericas": true,
+        "con_archivo_pdf": false,
+        "nombre_pdf": "",
+        "fechaDesde": "2026-09-12T03:00:00.000+00:00",
+        "fechaHasta": "2026-10-31T03:00:00.000+00:00",
+        "idImagen": 724,
+        "nombreRubro": "Delivery",
+        "ato": false
+      },
+      "comercio": {
+        "nombre": "Pedidos Ya",
+        "logo": "792/logo",
+        "web": "https://www.pedidosya.com.ar/"
+      }
+    },
+    "detail_url": "https://www.buepp.com.ar/buepp_api/beneficios/15992"
+  },
+  {
+    "source": "buepp",
+    "source_id": "15983",
+    "scraped_at": "2026-10-14T13:21:37.291968+00:00",
+    "promotion_url": "https://www.buepp.com.ar/beneficios/15983",
+    "catalog": {
+      "distancia": 0,
+      "latitud": 0.0,
+      "longitud": 0.0,
+      "idBeneficio": 15983,
+      "idSucursal": 0,
+      "descuento": 20,
+      "comercio_nombre": "Trámites GCBA",
+      "css_icono_rubro": "icon-bcba_general_requisitos",
+      "titulo": "20% de descuento",
+      "subtitulo": "TOPE $10.000 POR ÚNICA VEZ POR CLIENTE",
+      "idImagen": 588,
+      "comercio_id": 5396,
+      "comercio_logo": "5396/logo",
+      "diasBeneficio": "LMMJVSD",
+      "sin_tope": false,
+      "nuevo": true,
+      "medioUnicoTipo": true,
+      "medios_pago": [
+        {
+          "id": 7,
+          "nombre": "BUEPP",
+          "credito": "N"
+        },
+        {
+          "id": 8,
+          "nombre": "APP CIUDAD",
+          "credito": "N"
+        }
+      ],
+      "visitas": 281,
+      "rubro": {
+        "id": 1197,
+        "idRubroPadre": null,
+        "nombre": "Impuestos",
+        "icono": "icon-bcba_general_requisitos",
+        "orden": null,
+        "nombreUrl": "Impuestos"
+      },
+      "aplica_tienda_online": false
+    },
+    "detail": {
+      "beneficio": {
+        "id": 15983,
+        "titulo": "20% de descuento",
+        "subtitulo": "TOPE $10.000 POR ÚNICA VEZ POR CLIENTE",
+        "descuento": 20,
+        "medios_pago": [
+          {
+            "id": 7,
+            "nombre": "BUEPP",
+            "credito": "N"
+          },
+          {
+            "id": 8,
+            "nombre": "APP CIUDAD",
+            "credito": "N"
+          }
+        ],
+        "css_icono_rubro": "icon-bcba_general_requisitos",
+        "idRubro": 1197,
+        "dias": "LMMJVSD",
+        "sin_tope": false,
+        "nuevo": true,
+        "visitas": 281,
+        "shopping": false,
+        "medioUnicoTipo": true,
+        "descAdicional": "",
+        "aplica_tienda_online": false,
+        "resumen": "Pagá tus trámites no tributarios del GCBA escaneando el QR de la BUI (Boleta Única Inteligente) a través de BUEPP o App Ciudad y obtené un 20% de descuento! Tope de reintegro: $10.000 por única vez por cliente.",
+        "legales": "<!DOCTYPE html>\n<html>\n<head>\n</head>\n<body>\n<p><span>PROMOCI&Oacute;N OFRECIDA POR EL BANCO DE LA CIUDAD DE BUENOS AIRES, CUIT 30-99903208-3 PARA TODA LA REP&Uacute;BLICA ARGENTINA DESDE EL 05/10/2026 HASTA EL 31/12/2026 EN LOS PAGOS NO TRIBUTARIOS DEL GCBA ESCANEANDO EL QR DE LAS BUI (Boleta &Uacute;nica Inteligente) F&Iacute;SICA Y/O DIGITAL. SE OTORGAR&Aacute; UN 20% (VEINTE POR CIENTO) DE DESCUENTO CON UN TOPE DE DEVOLUCI&Oacute;N DE $10.000 POR &Uacute;NICA VEZ POR CLIENTE ABONANDO EXCLUSIVAMENTE CON DINERO EN CUENTA A TRAV&Eacute;S DE APP CIUDAD O BUEPP. NO APLICA PARA PAGOS NFCEL REINTEGRO SE ACREDITAR&Aacute; EN LA CUENTA DEL CLIENTE EN UN PLAZO DE 15 (QUINCE) D&Iacute;AS H&Aacute;BILES POSTERIORES A LA FECHA DE REALIZADO EL PAGO. QUEDAN EXCLUIDAS DE LA PROMOCI&Oacute;N LAS CUENTAS EN MORA Y/O BLOQUEADAS POR MOTIVOS ADMINISTRATIVOS. LA PRESENTE PROMOCI&Oacute;N ES V&Aacute;LIDA SOLO PARA CONSUMOS DE TIPO FAMILIAR. EL BANCO SE RESERVA EL DERECHO DE LIMITAR O SUSPENDER LA PARTICIPACI&Oacute;N DE ALGUNA PERSONA EN LA PRESENTE PROMOCI&Oacute;N, SIN QUE ELLO GENERE RESPONSABILIDAD DE NINGUNA &Iacute;NDOLE, EN CASO DE DETECTARSE LA EXISTENCIA DE FRAUDE, ENGA&Ntilde;O O MANIOBRA SIMILAR, CONTRARIANDO LA DIN&Aacute;MICA DE LA PROMOCI&Oacute;N DISPUESTA, CON LA FINALIDAD DE OBTENER BENEFICIOS DE MANERA ILEGITIMA. CONSULT&Aacute; CONDICIONES O LIMITACIONES APLICABLES Y M&Aacute;S INFORMACI&Oacute;N EN WWW.BANCOCIUDAD.COM.AR</span></p>\n</body>\n</html>",
+        "legales_genericas": "No aplica para tarjetas corporativas. La URL de los comercios adheridos se publica a título ilustrativo. El Banco no asume responsabilidad sobre los contenidos publicados en tales sitios. Los beneficios sobre consumos online realizados en sitios web ajenos al Banco (tiendas online, tiendas virtuales, e-commerce, entre otros) solo aplicarán en el caso de que así se indique en los términos y condiciones de la promoción del Banco Ciudad. El titular de los datos personales podrá en cualquier momento solicitar el retiro o bloqueo total o parcial de su nombre de nuestros bancos de datos, comunicándose al 0800-22-20-400, de conformidad con el art. 27, inc 3 de la ley 25.326 y art. 27 del Anexo I del Decreto 1558/01.",
+        "cft": "0.0",
+        "mostrar_cft": false,
+        "legalesGenericas": true,
+        "con_archivo_pdf": false,
+        "nombre_pdf": "",
+        "fechaDesde": "2026-10-05T03:00:00.000+00:00",
+        "fechaHasta": "2026-12-31T03:00:00.000+00:00",
+        "idImagen": 588,
+        "nombreRubro": "Impuestos",
+        "ato": false
+      },
+      "comercio": {
+        "nombre": "Trámites GCBA",
+        "logo": "5396/logo",
+        "web": ""
+      }
+    },
+    "detail_url": "https://www.buepp.com.ar/buepp_api/beneficios/15983"
+  },
+  {
+    "source": "buepp",
+    "source_id": "15874",
+    "scraped_at": "2026-10-14T13:21:37.291968+00:00",
+    "promotion_url": "https://www.buepp.com.ar/beneficios/15874",
+    "catalog": {
+      "distancia": 0,
+      "latitud": 0.0,
+      "longitud": 0.0,
+      "idBeneficio": 15874,
+      "idSucursal": 0,
+      "descuento": 20,
+      "comercio_nombre": "Diarco Barrio",
+      "css_icono_rubro": "icon-bcba_beneficios_supermercados",
+      "titulo": "20% de descuento",
+      "subtitulo": "sin tope de reintegro con mínimo de compra de $35.000",
+      "idImagen": 640,
+      "comercio_id": 6229,
+      "comercio_logo": "6229/logo",
+      "diasBeneficio": "-----SD",
+      "sin_tope": false,
+      "nuevo": false,
+      "medioUnicoTipo": true,
+      "medios_pago": [
+        {
+          "id": 8,
+          "nombre": "APP CIUDAD",
+          "credito": "N"
+        },
+        {
+          "id": 7,
+          "nombre": "BUEPP",
+          "credito": "N"
+        }
+      ],
+      "visitas": 268,
+      "rubro": {
+        "id": 10,
+        "idRubroPadre": null,
+        "nombre": "Supermercados",
+        "icono": "icon-bcba_beneficios_supermercados",
+        "orden": null,
+        "nombreUrl": "Supermercados"
+      },
+      "aplica_tienda_online": false
+    },
+    "detail": {
+      "beneficio": {
+        "id": 15874,
+        "titulo": "20% de descuento",
+        "subtitulo": "sin tope de reintegro con mínimo de compra de $35.000",
+        "descuento": 20,
+        "medios_pago": [
+          {
+            "id": 8,
+            "nombre": "APP CIUDAD",
+            "credito": "N"
+          },
+          {
+            "id": 7,
+            "nombre": "BUEPP",
+            "credito": "N"
+          }
+        ],
+        "css_icono_rubro": "icon-bcba_beneficios_supermercados",
+        "idRubro": 10,
+        "dias": "-----SD",
+        "sin_tope": false,
+        "nuevo": false,
+        "visitas": 268,
+        "shopping": false,
+        "medioUnicoTipo": true,
+        "descAdicional": "",
+        "aplica_tienda_online": false,
+        "resumen": "¡Aprovechá 20% de descuento sin tope de reintegro! Todos los sábados y domingos en comercios adheridos (no incluye compras online) pagando con QR MODO a través de App Ciudad o Buepp con tarjetas del Ciudad. Mínimo de compra $35.000. Ver comercios adheridos.",
+        "legales": "<!DOCTYPE html>\n<html>\n<head>\n</head>\n<body>\n<p>Promoci&oacute;n ofrecida por el Banco de la Ciudad de Buenos Aires, CUIT 30-99903208-3 (Banco Ciudad) v&aacute;lida los s&aacute;bados y domingos, desde el 05/09/2026 al 01/11/2026 en la Rep&uacute;blica Argentina, para compras realizadas en comercios adheridos de Diarco, con tarjetas de d&eacute;bito Visa y Maestro y de cr&eacute;dito Visa o Mastercard de Banco Ciudad, exclusivamente escaneando el QR de MODO, desde Buepp o App Ciudad. Se otorgar&aacute; un 20% (veinte por ciento) de descuento sin tope de reintegro con m&iacute;nimo de compra de $35.000 (pesos treinta y cinco mil). El reintegro se acreditar&aacute; en la cuenta del cliente en un plazo de 15 (quince) d&iacute;as h&aacute;biles posteriores a la fecha de realizado el pago. Para compras realizadas por titulares de tarjetas adicionales, el tarjetahabiente adicional deber&aacute; poseer una caja de ahorro del Banco Ciudad asociada a MODO. El producto ofrecido corresponde a la cartera de consumo.&nbsp;</p>\n</body>\n</html>",
+        "legales_genericas": "No aplica para tarjetas corporativas. La URL de los comercios adheridos se publica a título ilustrativo. El Banco no asume responsabilidad sobre los contenidos publicados en tales sitios. Los beneficios sobre consumos online realizados en sitios web ajenos al Banco (tiendas online, tiendas virtuales, e-commerce, entre otros) solo aplicarán en el caso de que así se indique en los términos y condiciones de la promoción del Banco Ciudad. El titular de los datos personales podrá en cualquier momento solicitar el retiro o bloqueo total o parcial de su nombre de nuestros bancos de datos, comunicándose al 0800-22-20-400, de conformidad con el art. 27, inc 3 de la ley 25.326 y art. 27 del Anexo I del Decreto 1558/01.",
+        "cft": "0.0",
+        "mostrar_cft": false,
+        "legalesGenericas": true,
+        "con_archivo_pdf": true,
+        "nombre_pdf": "Diarco _ Barrio - Hoja 1.pdf",
+        "fechaDesde": "2026-09-05T03:00:00.000+00:00",
+        "fechaHasta": "2026-11-01T03:00:00.000+00:00",
+        "idImagen": 640,
+        "nombreRubro": "Supermercados",
+        "ato": false
+      },
+      "comercio": {
+        "nombre": "Diarco Barrio",
+        "logo": "6229/logo",
+        "web": ""
+      }
+    },
+    "detail_url": "https://www.buepp.com.ar/buepp_api/beneficios/15874"
+  },
+  {
+    "source": "buepp",
+    "source_id": "15984",
+    "scraped_at": "2026-10-14T13:21:37.291968+00:00",
+    "promotion_url": "https://www.buepp.com.ar/beneficios/15984",
+    "catalog": {
+      "distancia": 0,
+      "latitud": 0.0,
+      "longitud": 0.0,
+      "idBeneficio": 15984,
+      "idSucursal": 0,
+      "descuento": 20,
+      "comercio_nombre": "Impuestos AGIP",
+      "css_icono_rubro": "icon-bcba_general_requisitos",
+      "titulo": "20% de descuento",
+      "subtitulo": "Tope $10.000 mensual.",
+      "idImagen": 667,
+      "comercio_id": 6063,
+      "comercio_logo": "6063/logo",
+      "diasBeneficio": "LMMJVSD",
+      "sin_tope": false,
+      "nuevo": true,
+      "medioUnicoTipo": true,
+      "medios_pago": [
+        {
+          "id": 7,
+          "nombre": "BUEPP",
+          "credito": "N"
+        },
+        {
+          "id": 8,
+          "nombre": "APP CIUDAD",
+          "credito": "N"
+        }
+      ],
+      "visitas": 243,
+      "rubro": {
+        "id": 1197,
+        "idRubroPadre": null,
+        "nombre": "Impuestos",
+        "icono": "icon-bcba_general_requisitos",
+        "orden": null,
+        "nombreUrl": "Impuestos"
+      },
+      "aplica_tienda_online": false
+    },
+    "detail": {
+      "beneficio": {
+        "id": 15984,
+        "titulo": "20% de descuento",
+        "subtitulo": "Tope $10.000 mensual.",
+        "descuento": 20,
+        "medios_pago": [
+          {
+            "id": 7,
+            "nombre": "BUEPP",
+            "credito": "N"
+          },
+          {
+            "id": 8,
+            "nombre": "APP CIUDAD",
+            "credito": "N"
+          }
+        ],
+        "css_icono_rubro": "icon-bcba_general_requisitos",
+        "idRubro": 1197,
+        "dias": "LMMJVSD",
+        "sin_tope": false,
+        "nuevo": true,
+        "visitas": 243,
+        "shopping": false,
+        "medioUnicoTipo": true,
+        "descAdicional": "",
+        "aplica_tienda_online": false,
+        "resumen": "Aprovechá 20% de reintegro en el pago de Impuestos de la Ciudad (ABL y Patentes)  escaneando el QR de tu boleta de AGIP o de forma digital y pagando con dinero en cuenta a través de Buepp y App Ciudad. Tope $10.000 mensual por cliente",
+        "legales": "<!DOCTYPE html>\n<html>\n<head>\n</head>\n<body>\n<div class=\"rounded-[var(--radius-large)] bg-[var(--color-gray03)] py-[var(--spacing-lg)]\">\n<div class=\"flex flex-col items-center justify-start px-[var(--spacing-md)] lg:px-[80px]\">\n<div class=\"mt-[var(--spacing-lg)] mb-[var(--spacing-xxxlg)] w-full rounded-[var(--radius-large)] border border-[var(--color-gray08)] bg-[var(--color-white)] shadow-md\">\n<div class=\"flex max-w-screen flex-col gap-[var(--spacing-sm)]\"><span>PROMOCI&Oacute;N OFRECIDA POR EL BANCO DE LA CIUDAD DE BUENOS AIRES, CUIT 30-99903208-3 PARA TODA LA REP&Uacute;BLICA ARGENTINA DESDE EL 05/10/2026 HASTA EL 31/10/2026 PARA PAGOS EN PESOS DEL IMPUESTO INMOBILIARIO ABL CABA Y/O DE PATENTES AUTOMOTORES DE VEHICULOS RADICADOS EN LA CIUDAD AUT&Oacute;NOMA DE BUENOS AIRES ESCANEANDO EL QR DE LA BOLETA FISICA O DIGITAL DE AGIP. SE OTORGAR&Aacute; UN 20% DE DESCUENTO CON UN TOPE DE DEVOLUCI&Oacute;N MENSUAL DE $10.000 POR CLIENTE ABONANDO A TRAV&Eacute;S DE APP CIUDAD O BUEPP CON DINERO EN CUENTA. TOPE COMPARTIDO PARA EL PAGO DE AMBOS IMPUESTOS. EL REINTEGRO SE ACREDITAR&Aacute; EN LA CUENTA DEL CLIENTE EN UN PLAZO DE 15 (QUINCE) D&Iacute;AS H&Aacute;BILES POSTERIORES A LA FECHA DE REALIZADO EL PAGO. EL PRODUCTO OFRECIDO CORRESPONDE A LA CARTERA DE CONSUMO. NO APLICA PARA PAGOS NFC.</span></div>\n</div>\n</div>\n</div>\n<p><span data-teams=\"true\">&nbsp;</span></p>\n</body>\n</html>",
+        "legales_genericas": "No aplica para tarjetas corporativas. La URL de los comercios adheridos se publica a título ilustrativo. El Banco no asume responsabilidad sobre los contenidos publicados en tales sitios. Los beneficios sobre consumos online realizados en sitios web ajenos al Banco (tiendas online, tiendas virtuales, e-commerce, entre otros) solo aplicarán en el caso de que así se indique en los términos y condiciones de la promoción del Banco Ciudad. El titular de los datos personales podrá en cualquier momento solicitar el retiro o bloqueo total o parcial de su nombre de nuestros bancos de datos, comunicándose al 0800-22-20-400, de conformidad con el art. 27, inc 3 de la ley 25.326 y art. 27 del Anexo I del Decreto 1558/01.",
+        "cft": "0.0",
+        "mostrar_cft": false,
+        "legalesGenericas": true,
+        "con_archivo_pdf": false,
+        "nombre_pdf": "",
+        "fechaDesde": "2026-10-05T03:00:00.000+00:00",
+        "fechaHasta": "2026-10-31T03:00:00.000+00:00",
+        "idImagen": 667,
+        "nombreRubro": "Impuestos",
+        "ato": false
+      },
+      "comercio": {
+        "nombre": "Impuestos AGIP",
+        "logo": "6063/logo",
+        "web": ""
+      }
+    },
+    "detail_url": "https://www.buepp.com.ar/buepp_api/beneficios/15984"
+  },
+  {
+    "source": "buepp",
+    "source_id": "15968",
+    "scraped_at": "2026-10-14T13:21:37.291968+00:00",
+    "promotion_url": "https://www.buepp.com.ar/beneficios/15968",
+    "catalog": {
+      "distancia": 0,
+      "latitud": 0.0,
+      "longitud": 0.0,
+      "idBeneficio": 15968,
+      "idSucursal": 0,
+      "comercio_nombre": "Moto GP",
+      "cuotas": 6,
+      "css_icono_rubro": "icon-bcba_beneficios_arte_espetaculos",
+      "titulo": "-",
+      "subtitulo": "Hasta 6 cuotas sin interés con tarjetas de crédito",
+      "idImagen": 732,
+      "comercio_id": 6526,
+      "comercio_logo": "6526/logo",
+      "diasBeneficio": "LMMJVSD",
+      "sin_tope": false,
+      "nuevo": true,
+      "medioUnicoTipo": true,
+      "medios_pago": [
+        {
+          "id": 7,
+          "nombre": "BUEPP",
+          "credito": "N"
+        },
+        {
+          "id": 8,
+          "nombre": "APP CIUDAD",
+          "credito": "N"
+        }
+      ],
+      "visitas": 101,
+      "rubro": {
+        "id": 4,
+        "idRubroPadre": null,
+        "nombre": "Entretenimiento",
+        "icono": "icon-bcba_beneficios_arte_espetaculos",
+        "orden": null,
+        "nombreUrl": "Entretenimiento"
+      },
+      "aplica_tienda_online": false
+    },
+    "detail": {
+      "beneficio": {
+        "id": 15968,
+        "titulo": "-",
+        "subtitulo": "Hasta 6 cuotas sin interés con tarjetas de crédito",
+        "cuotas": 6,
+        "medios_pago": [
+          {
+            "id": 7,
+            "nombre": "BUEPP",
+            "credito": "N"
+          },
+          {
+            "id": 8,
+            "nombre": "APP CIUDAD",
+            "credito": "N"
+          }
+        ],
+        "css_icono_rubro": "icon-bcba_beneficios_arte_espetaculos",
+        "idRubro": 4,
+        "dias": "LMMJVSD",
+        "sin_tope": false,
+        "nuevo": true,
+        "visitas": 101,
+        "shopping": false,
+        "medioUnicoTipo": true,
+        "descAdicional": "",
+        "aplica_tienda_online": false,
+        "resumen": "¡Hasta 6 cuotas sin interés con tarjetas de crédito del Banco Ciudad en la venta de entradas del evento Moto GP exclusivamente escaneando el QR desde la App del Banco Ciudad y desde Buepp! También podés abonar en un pago con tarjetas de débito Visa y Maestro.",
+        "legales": "<!DOCTYPE html>\n<html>\n<head>\n</head>\n<body>\n<p style=\"text-align: justify;\">Promoci&oacute;n ofrecida por Banco de la Ciudad de Buenos Aires, CUIT 30-99903208-3, con domicilio en Florida 302, CABA (Banco Ciudad). V&aacute;lida en la Rep&uacute;blica Argentina desde el 12 de octubre de 2026 hasta el 11 de abril de 2027, ambas fechas inclusive. Aplicable a la compra en pesos de entradas seleccionadas para el evento &ldquo;MotoGP&rdquo;, que se realizar&aacute; los d&iacute;as 9, 10 y 11 de abril de 2027 en el Aut&oacute;dromo Oscar y Juan G&aacute;lvez sito en Caba, abonando en hasta 6 cuotas sin inter&eacute;s con tarjetas de cr&eacute;dito Visa y Mastercard del Banco Ciudad o abonando en un pago con tarjetas de d&eacute;bito Visa y Maestro exclusivamente escaneando el QR de MODO, desde Buepp o App Ciudad. No v&aacute;lido para pagos cursados mediante otras billeteras. <a href=\"https://motogp.fantixtickets.com/preventa\">MotoGP Gran Premio Ciudad de Buenos Aires | Entradas oficiales | FANTIX</a>. No v&aacute;lido para tarjetas corporativas. No acumulable con otras promociones o beneficios. TNA: 0,00 %. TEA: 0,00 %. CFTEA/CFT APLICABLE: 0,00 %.<strong> El producto ofrecido corresponde a la cartera de consumo. </strong>PARA M&Aacute;S INFORMACI&Oacute;N O LIMITACIONES APLICABLES CONSULTE EN <a href=\"https://nam02.safelinks.protection.outlook.com/?url=https%3A%2F%2Fwww.bancociudad.com.ar%2Fbeneficios%2Fpromo%3Fpagina%3D1%26rubro%3DEntretenimiento&amp;data=05%7C02%7CMRoveta%40bancociudad.com.ar%7C0b136fcf96db4b9b3ead08df14f61620%7C99d6b2c51dda4246b042ef21eb53f345%7C0%7C0%7C639252719341294716%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydWUsIlYiOiIwLjAuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D%7C0%7C%7C%7C&amp;sdata=vr5QRFDWdxAc091XY0oOlyF%2FExTGVQZmo5bXkWLBHow%3D&amp;reserved=0\">https://www.bancociudad.com.ar/beneficios/promo?pagina=1&amp;rubro=Entretenimiento</a>.</p>\n</body>\n</html>",
+        "legales_genericas": "No aplica para tarjetas corporativas. La URL de los comercios adheridos se publica a título ilustrativo. El Banco no asume responsabilidad sobre los contenidos publicados en tales sitios. Los beneficios sobre consumos online realizados en sitios web ajenos al Banco (tiendas online, tiendas virtuales, e-commerce, entre otros) solo aplicarán en el caso de que así se indique en los términos y condiciones de la promoción del Banco Ciudad. El titular de los datos personales podrá en cualquier momento solicitar el retiro o bloqueo total o parcial de su nombre de nuestros bancos de datos, comunicándose al 0800-22-20-400, de conformidad con el art. 27, inc 3 de la ley 25.326 y art. 27 del Anexo I del Decreto 1558/01.",
+        "cft": "0.0",
+        "mostrar_cft": false,
+        "legalesGenericas": true,
+        "con_archivo_pdf": false,
+        "nombre_pdf": "",
+        "fechaDesde": "2026-10-12T03:00:00.000+00:00",
+        "fechaHasta": "2027-04-11T03:00:00.000+00:00",
+        "idImagen": 732,
+        "nombreRubro": "Entretenimiento",
+        "ato": false
+      },
+      "comercio": {
+        "nombre": "Moto GP",
+        "logo": "6526/logo",
+        "web": ""
+      }
+    },
+    "detail_url": "https://www.buepp.com.ar/buepp_api/beneficios/15968"
+  },
+  {
+    "source": "buepp",
+    "source_id": "15951",
+    "scraped_at": "2026-10-14T13:21:37.291968+00:00",
+    "promotion_url": "https://www.buepp.com.ar/beneficios/15951",
+    "catalog": {
+      "distancia": 0,
+      "latitud": -34.603672,
+      "longitud": -58.382122,
+      "idBeneficio": 15951,
+      "idSucursal": 0,
+      "descuento": 25,
+      "comercio_nombre": "Coto",
+      "css_icono_rubro": "icon-bcba_beneficios_supermercados",
+      "titulo": "20% de descuento",
+      "subtitulo": "Sin Tope",
+      "idImagen": 72,
+      "comercio_id": 56,
+      "comercio_logo": "56/logo",
+      "diasBeneficio": "-M-----",
+      "sin_tope": true,
+      "nuevo": false,
+      "medioUnicoTipo": true,
+      "medios_pago": [
+        {
+          "id": 7,
+          "nombre": "BUEPP",
+          "credito": "N"
+        },
+        {
+          "id": 8,
+          "nombre": "APP CIUDAD",
+          "credito": "N"
+        }
+      ],
+      "visitas": 88,
+      "rubro": {
+        "id": 10,
+        "idRubroPadre": null,
+        "nombre": "Supermercados",
+        "icono": "icon-bcba_beneficios_supermercados",
+        "orden": null,
+        "nombreUrl": "Supermercados"
+      },
+      "aplica_tienda_online": false
+    },
+    "detail": {
+      "beneficio": {
+        "id": 15951,
+        "titulo": "20% de descuento",
+        "subtitulo": "Sin Tope",
+        "descuento": 25,
+        "medios_pago": [
+          {
+            "id": 7,
+            "nombre": "BUEPP",
+            "credito": "N"
+          },
+          {
+            "id": 8,
+            "nombre": "APP CIUDAD",
+            "credito": "N"
+          }
+        ],
+        "css_icono_rubro": "icon-bcba_beneficios_supermercados",
+        "idRubro": 10,
+        "dias": "-M-----",
+        "sin_tope": true,
+        "nuevo": false,
+        "visitas": 88,
+        "shopping": false,
+        "medioUnicoTipo": true,
+        "descAdicional": "",
+        "aplica_tienda_online": false,
+        "resumen": "Aprovechá 25% todos los martes sin tope de reintegro en comercios adheridos pagando con QR MODO a través de App Ciudad o Buepp con tarjetas del Ciudad. Ver comercios adheridos. No incluye tienda online. Ver exclusiones.",
+        "legales": "<!DOCTYPE html>\n<html>\n<head>\n</head>\n<body>\n<p>Promoci&oacute;n ofrecida por el Banco de la Ciudad de Buenos Aires, CUIT 30-99903208-3 (Banco Ciudad) v&aacute;lida los martes, desde el 01/09/2026 al 31/10/2026 en la Rep&uacute;blica Argentina, <span>inclusive o hasta alcanzar la suma de $2.998.863.000 (pesos dos mil novecientos noventa y ocho millones ochocientos sesenta y tres mil) en concepto de reintegros otorgados a los usuarios (lo que ocurra primero)</span><span>, </span>para compras realizadas en comercios adheridos de Coto, con tarjetas de d&eacute;bito Visa y Maestro y de cr&eacute;dito Visa o Mastercard de Banco Ciudad, exclusivamente escaneando el QR de MODO, desde Buepp o App Ciudad. Se otorgar&aacute; un 25% (veinticinco por ciento) de descuento <span>sobre el importe bruto de los productos participantes</span> sin tope de reintegro. El reintegro se acreditar&aacute; en la cuenta del cliente en un plazo de 15 (quince) d&iacute;as h&aacute;biles posteriores a la fecha de realizado el pago. EXCLUSIONES: REINTEGRO Y PROMOCI&Oacute;N NO V&Aacute;LIDA PARA COMPRAS EN CUOTAS CON TARJETAS DE CR&Eacute;DITO EMITIDAS EN EL EXTERIOR, NI ELECTRODOM&Eacute;STICOS, RODADOS, NI NEUM&Aacute;TICOS, NI TARJETAS DE PROGRAMAS DE AYUDA SOCIAL. NO INCLUYE PRODUCTOS DE BODEGAS CATENA ZAPATA, NICOLA CATENA, BODEGA ERNESTO CATENA (ALMA NEGRA, PADRILLOS, ANIMAL, ENEMIGO Y GRAN ENEMIGO), MALBEC DV CATENA BOT. X 1,5 LT., MALBEC LA RIOJA DV CATENA, MALBEC SALTA DV CATENA, SAINT FELICIEN, NICASIA, TILIA, BODEGA LEONCIO ARIZU (LUIGI BOSCA), BODEGA LA RURAL (RUTINI, TRUMPETER, SAN FELIPE Y CEPA TRADICIONAL SEMILLON/MALBEC-MALBEC/TINTO BLEND), CHANDON NI TERRAZAS DE LOS ANDES (LATITUD 33&deg;, CASTEL, ALTOS DEL PLATA, VALMONT, BELTOUR, CHEVAL Y CLOS DU MOULIN), BODEGA NORTON (LOTE NEGRO, QUORUM VI, PRIVADA FAMILY BLEND), BODEGA CADUS WINES (CADUS), CASA PIRQUE (ALTALAND, LA POSTA, PETIT CARO, MALBEC/CABERNET FRANC, CASA DE HERRERO, MALBEC OJO DE BUEN CUBERO Y MALBEC/CABERNET FRANC/ PINOT NOIR CUCHILLO DE PALO, MALBEC R&Iacute;O DE LOS CIERVOS ARAUCANA, MALBEC NICO Y BLEND BESO DE DANTE LUCA, ARUMA Y LUCA), BODEGA BIANCHI (VINO CHARDONNAY RESERVADO MAR&Iacute;A CARMEN, VINO GRAN CORTE ENZO BIANCHI, VINOS MALBEC Y CABERNET SAUVIGNON PARTICULAR BIANCHI), BODEGA VALENT&Iacute;N BIANCHI (VINO TINTO CORTE Y MALBEC IV GENERACI&Oacute;N), BODEGA MONTEVIEJO (FESTIVO Y PETITE FLEUR), NI VINOS EN TETRABRIK NI GENEROSOS. EL REINTEGRO EN CHAMPA&Ntilde;AS Y ESPUMANTES NO INCLUYE PRODUCTOS DE BODEGAS CHANDON, MERCIER, CATENA ZAPATA, BAR&Oacute;N B, DOM PERIGNON, POMMERY, M&Ouml;ET CHANDON, LA GRANDE DAME NI KRUG, NO INCLUYE CORTES DE CARNES DE NOVILLO, NOVILLITO, TERNERA, MENUDENCIAS NI CARNES ELABORADAS. NO INCLUYE POLLO ENTERO NI TROZADO, FRESCO NI CONGELADO, NO INCLUYE LECHES INFANTILES ETAPAS 1 Y 2 (FLUIDAS NI EN POLVO), NI HARINAS EN TODAS SUS PRESENTACIONES, NI AZ&Uacute;CAR EN TODAS SUS PRESENTACIONES, NI ACEITE DE GIRASOL Y MEZCLA GIRASOL-SOJA EN TODAS SUS PRESENTACIONES, NI PRODUCTOS INCLUIDOS EN PROGRAMAS DE PRECIOS DEL GOBIERNO Y/O APLICABLES POR NORMATIVA VIGENTE. SE EXCLUYEN TODAS LAS PRESENTACIONES DE LAS SIGUIENTES MARCAS: COCA COLA, COCA COLA LIGHT, COCA COLA SIN AZ&Uacute;CAR, CRUSH, FANTA, FANTA SIN AZ&Uacute;CAR, SCHWEPPES, SPRITE Y SPRITE SIN AZ&Uacute;CAR, AQUARIUS, SMARTWATER, CEPITA, BENEDICTINO, POWERADE, ADES, HI-C NI MONSTER. SE ENCUENTRAN EXCLUIDAS DEL REINTEGRO Y/O PROMOCI&Oacute;N TODAS AQUELLAS TARJETAS DE COMPRA, ORDEN DE COMPRA, Y/O SIMILARES EMITIDAS POR COTO. REINTEGROS, PRECIOS Y PROMOCIONES PARA CONSUMO FAMILIAR. ESTA PROMOCI&Oacute;N NO ACUMULA CON OTROS DESCUENTOS, OFERTAS Y/O PROMOCIONES BANCARIAS. COTO C.I.C.S.A. - PAYSAND&Uacute; 1842 - C1416CDP - CAPITAL FEDERAL - FONOCOTO 0800-888-4848 - <a href=\"WWW.COTO.COM.AR\">WWW.COTO.COM.AR</a>. Para compras realizadas por titulares de tarjetas adicionales, el tarjetahabiente adicional deber&aacute; poseer una caja de ahorro del Banco Ciudad asociada a MODO. El producto ofrecido corresponde a la cartera de consumo.</p>\n</body>\n</html>",
+        "legales_genericas": "No aplica para tarjetas corporativas. La URL de los comercios adheridos se publica a título ilustrativo. El Banco no asume responsabilidad sobre los contenidos publicados en tales sitios. Los beneficios sobre consumos online realizados en sitios web ajenos al Banco (tiendas online, tiendas virtuales, e-commerce, entre otros) solo aplicarán en el caso de que así se indique en los términos y condiciones de la promoción del Banco Ciudad. El titular de los datos personales podrá en cualquier momento solicitar el retiro o bloqueo total o parcial de su nombre de nuestros bancos de datos, comunicándose al 0800-22-20-400, de conformidad con el art. 27, inc 3 de la ley 25.326 y art. 27 del Anexo I del Decreto 1558/01.",
+        "cft": "0.0",
+        "mostrar_cft": false,
+        "legalesGenericas": true,
+        "con_archivo_pdf": true,
+        "nombre_pdf": "Direcciones_COTO - Direcciones.pdf",
+        "fechaDesde": "2026-09-01T03:00:00.000+00:00",
+        "fechaHasta": "2026-10-31T03:00:00.000+00:00",
+        "idImagen": 72,
+        "nombreRubro": "Supermercados",
+        "ato": false
+      },
+      "comercio": {
+        "nombre": "Coto",
+        "logo": "56/logo",
+        "web": ""
+      }
+    },
+    "detail_url": "https://www.buepp.com.ar/buepp_api/beneficios/15951"
+  }
+]

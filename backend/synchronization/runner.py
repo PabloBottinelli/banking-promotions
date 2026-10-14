@@ -13,11 +13,13 @@ BACKEND_DIR = Path(__file__).resolve().parents[1]
 
 
 class SyncRunner:
-    def __init__(self, source: str, scraper_class: type, normalizer_class: type, normalize_many: bool = False):
+    def __init__(self, source: str, scraper_class: type, normalizer_class: type, normalize_many: bool = False, allow_deactivation: bool = True,):
         self.source = source
         self.scraper_class = scraper_class
         self.normalizer_class = normalizer_class
         self.normalize_many = normalize_many
+        self.allow_deactivation = allow_deactivation
+
         self.raw_path = BACKEND_DIR / "data" / f"{source}_promotions.json"
 
     def load_raw_promotions(self) -> list[dict]:
@@ -86,12 +88,16 @@ class SyncRunner:
 
         total = repository.upsert_many(promotions, batch_size=200, seen_at=sync_started_at)
 
-        if scrape_complete:
+        if scrape_complete and self.allow_deactivation:
             deactivated = repository.deactivate_not_seen(self.source, sync_started_at)
         else:
             deactivated = 0
-            print("\nScraping incompleto o carga desde archivo.")
-            print(f"Se omite la desactivación de promociones de {self.source}.")
+            if not scrape_complete:
+                reason = "scraping incompleto o carga desde archivo"
+            else:
+                reason = "desactivación deshabilitada para esta fuente"
+
+            print(f"\nSe omite la desactivación de {self.source}: {reason}.")
 
         print("\nSincronización finalizada:")
         print(f"  Promociones crudas: {len(raw_promotions)}")

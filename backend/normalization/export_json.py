@@ -16,11 +16,13 @@ from pathlib import Path
 from typing import Any
 
 from normalization.sources.bbva import BBVANormalizer
+from normalization.sources.buepp import BueppNormalizer
 from normalization.sources.galicia import GaliciaNormalizer
 from normalization.sources.patagonia import PatagoniaNormalizer
 
 BACKEND_DIR = Path(__file__).resolve().parents[1]
 SOURCES = {
+    "buepp": (BueppNormalizer, True),
     "bbva": (BBVANormalizer, False),
     "galicia": (GaliciaNormalizer, False),
     "patagonia": (PatagoniaNormalizer, True),

@@ -26,6 +26,7 @@ jobs:
           - galicia
           - bbva
           - patagonia
+          - buepp
 
     defaults:
       run:

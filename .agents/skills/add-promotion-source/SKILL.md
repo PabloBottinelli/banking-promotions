@@ -21,6 +21,18 @@ You are the **implementation agent**, NOT an independent QA reviewer. Read repos
 - Count discovered/unique/detail-success/detail-error/unavailable/filtered; never treat pagination limits, missing details, broken selectors, or partial responses as complete.
 - Keep raw file saving atomic; an empty or failed extraction must not silently overwrite the previous valid snapshot. Avoid redundant copying of huge catalog HTML into every record when provenance can be preserved once.
 - Scraper CLI should log counts, path, coverage scope, completeness and errors; no side effects upon module import.
+- Keep generated files organized:
+  - `backend/data/`: persistent raw JSON, normalized JSON and
+    compact coverage metadata.
+  - `backend/.tmp/`: exploratory files, downloaded scripts,
+    debugging outputs and temporary test artifacts.
+  - `backend/tests/fixtures/`: small, reproducible test data.
+
+- Do not duplicate complete catalog/API responses in coverage
+  metadata when they are already preserved in the raw snapshot.
+
+- Remove temporary development artifacts before delivering
+  the integration.
 
 ## 3. Implement V2 normalization
 
@@ -43,6 +55,9 @@ You are the **implementation agent**, NOT an independent QA reviewer. Read repos
 - Run a local scraper / JSON normalizer/export in read-only-to-database mode (running scraper may update local raw file; check paths/permissions first). Compare real output **field by field**: *all records for ≤30 entries*, representative plus edge-case sample for larger catalogs. Count raw entities, transformed variants, non-normalizable items and reasons. Mark unknowns rather than make them look valid.
 - Run `python -m pytest -q tests` from `backend/`, plus targeted tests. Explicitly report tests that could not run due inaccessible temporary paths or network timeouts; neither means that code is correct.
 - Review `ScrapeResult.complete` separate from normalization completeness. `SyncRunner` may deactivate not-seen rows after upsert; an unchecked omission can lose live promotions. Never use `sync_<source>` or even `--from-file` without user approval.
+- If pytest requires a custom temporary directory, use
+  `--basetemp=.tmp/pytest`. Never place pytest temporary
+  directories inside `backend/data/`.
 
 ## 5. Handoff
 
