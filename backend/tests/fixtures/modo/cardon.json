@@ -1,0 +1,221 @@
+{
+  "id": "5b4579d8-3b8f-454d-99cd-4214a5c4957f",
+  "name": "CARDON Selecta Nivel 4",
+  "description": "",
+  "type": "cashback",
+  "reward_type": "cash",
+  "scope": "Bancaria",
+  "status": "active",
+  "real_status": "RUNNING",
+  "is_engine_active": true,
+  "created_at": "2026-10-02T17:50:00.002Z",
+  "updated_at": "2026-10-13T12:08:46.407Z",
+  "deleted_at": null,
+  "short_description": "2610-MacroSelecta-CARDON-Nivel4-Presencial-NFC-30off",
+  "publication_description": "Con tarjetas de crédito Macro Selecta",
+  "slug": "30off-cardon-macroselecta-oct26",
+  "display_start_date": "2026-10-15T03:00:00.000Z",
+  "display_stop_date": "2027-07-01T02:59:59.999Z",
+  "search_tags": "SEG_S",
+  "conditions": {
+    "schedule": {
+      "stop_date": "2027-03-31",
+      "start_date": "2026-10-15",
+      "days_of_week": [
+        "monday",
+        "tuesday",
+        "wednesday"
+      ],
+      "daily_stop_time": "23:59:00",
+      "daily_start_time": "00:00:00"
+    },
+    "acquirers": {
+      "list": [
+        "MERCADOLIBRE"
+      ],
+      "segmentation_mode": "by_blacklist"
+    },
+    "payment_flow": {
+      "flows": [
+        "instore_nfc",
+        "instore"
+      ]
+    },
+    "exclusiveness": "all",
+    "payment_methods": {
+      "methods": [
+        {
+          "type": "credit_card",
+          "issuer": "american_express"
+        },
+        {
+          "type": "credit_card",
+          "issuer": "visa"
+        },
+        {
+          "type": "credit_card",
+          "issuer": "master"
+        }
+      ]
+    },
+    "has_differential_amount": false
+  },
+  "offers": [
+    {
+      "id": "5b4579d8-3b8f-454d-99cd-4214a5c4957f",
+      "benefit_id": "5b4579d8-3b8f-454d-99cd-4214a5c4957f",
+      "name": ".",
+      "priority": 1,
+      "segmentations": {
+        "audiences": [
+          "promociones-nivel-4-macro"
+        ],
+        "whitelist": [
+          "store_terminal_id"
+        ],
+        "categories": [
+          {
+            "category_id": 3,
+            "subcategory_ids": [
+              35,
+              38,
+              48
+            ]
+          }
+        ]
+      },
+      "requirements": {
+        "banks": {
+          "list": [
+            "6a089c91-a7d3-4199-a578-2132a3733f69"
+          ]
+        },
+        "amount_range": {
+          "min": 0
+        }
+      },
+      "outcomes": {
+        "cashback": {
+          "amount": 30,
+          "amount_type": "percent",
+          "cashback_mode": "cashback_bancario"
+        },
+        "financing": {
+          "installments": [
+            {
+              "type": "sin_interes",
+              "number": 1,
+              "coefficient": "0",
+              "annual_nominal_rate": "0",
+              "total_financial_cost": "0"
+            },
+            {
+              "type": "sin_interes",
+              "number": 2,
+              "coefficient": "0",
+              "annual_nominal_rate": "0",
+              "total_financial_cost": "0"
+            },
+            {
+              "type": "sin_interes",
+              "number": 3,
+              "coefficient": "0",
+              "annual_nominal_rate": "0",
+              "total_financial_cost": "0"
+            },
+            {
+              "type": "sin_interes",
+              "number": 4,
+              "coefficient": "0",
+              "annual_nominal_rate": "0",
+              "total_financial_cost": "0"
+            },
+            {
+              "type": "sin_interes",
+              "number": 5,
+              "coefficient": "0",
+              "annual_nominal_rate": "0",
+              "total_financial_cost": "0"
+            },
+            {
+              "type": "sin_interes",
+              "number": 6,
+              "coefficient": "0",
+              "annual_nominal_rate": "0",
+              "total_financial_cost": "0"
+            },
+            {
+              "type": "sin_interes",
+              "number": 8,
+              "coefficient": "0",
+              "annual_nominal_rate": "0",
+              "total_financial_cost": "0"
+            },
+            {
+              "type": "sin_interes",
+              "number": 9,
+              "coefficient": "0",
+              "annual_nominal_rate": "0",
+              "total_financial_cost": "0"
+            },
+            {
+              "type": "sin_interes",
+              "number": 10,
+              "coefficient": "0",
+              "annual_nominal_rate": "0",
+              "total_financial_cost": "0"
+            },
+            {
+              "type": "sin_interes",
+              "number": 12,
+              "coefficient": "0",
+              "annual_nominal_rate": "0",
+              "total_financial_cost": "0"
+            }
+          ]
+        }
+      },
+      "limits": null,
+      "categories": [
+        "3"
+      ],
+      "sub_categories": [
+        "35",
+        "38",
+        "48"
+      ],
+      "preselected": false,
+      "created_at": "2026-10-02T17:51:08.560Z",
+      "updated_at": "2026-10-02T19:06:40.561Z",
+      "deleted_at": null,
+      "offer_caps": [],
+      "offer_transaction_cap": null
+    }
+  ],
+  "debit_list": [],
+  "credit_list": [
+    "american_express",
+    "visa",
+    "master"
+  ],
+  "terms_and_conditions": "<p class=\"editor-paragraph\" dir=\"ltr\"><span style=\"white-space: pre-wrap;\">CARTERA DE CONSUMO. BENEFICIO CON TARJETAS DE CRÉDITO VISA SIGNATURE, MASTERCARD Y AMERICAN EXPRESS BLACK DE BANCO MACRO S.A. NIVEL 4, PAGANDO A TRAVÉS DE MODO POR APP MACRO/APP MODO, EXCLUSIVAMENTE LOS DÍAS LUNES, MARTES Y MIERCOLES DEL 15/10/2026 AL 31/03/2027, PARA CLIENTES /USUARIOS REGISTRADOS EN MODO. HASTA 12 CUOTAS SIN INTERES Y 30% DE AHORRO SIN TOPE, VÁLIDO PARA COMPRAS CON QR. APLICA EN LOCALES ADHERIDOS . MODO: SERVICIO PRESTADO POR EL PROVEEDOR DE SERVICIOS TECNOLÓGICOS PLAY DIGITAL S.A. CUIT 30716829436 AV. DEL LIBERTADOR 7208 TORRE II P.4 CABA., SIENDO LA MARCA \"MODO\" DE SU PROPIEDAD. APLICA PARA CONSUMO PERSONAL-FAMILIAR. NO VÁLIDO TARJETA DE CRÉDITO EMPRESA O AGRO. NO ACUMULA CON OTRA PROMOCIÓN. NO APLICA PARA PAGO A TRAVES DE MERCADO PAGO, OTRO PAGO ELECTRÓNICO INMEDIATO, TRANSFERENCIA 3.0. REINTEGRO A REALIZARSE EN EL MOMENTO DE LA COMPRA, EN LA CAJA DE AHORRO O CUENTA CORRIENTE DE BANCO MACRO REGISTRADA EN MODO. ESTABLECIMIENTOS /PRODUCTOS /SERVICIOS NO SON PROMOCIONADOS /GARANTIZADOS POR BANCO MACRO, NI RESULTA RESPONSABLE POR LA PRESENTACIÓN DE CUPÓN FUERA DE TÉRMINO. INFORMACIÓN DE LOS TÉRMINOS Y CONDICIONES AL 0810-555-2355, EN HTTP://www.macro.com.ar/modo-promos O EN SUCURSALES MACRO. </span></p>",
+  "terms_and_conditions_url": null,
+  "coupon": null,
+  "card": {
+    "benefit": "30% y hasta 12 cuotas sin interés ",
+    "validity_place": "CARDON",
+    "cashback_cap": "0",
+    "participating_bank": "Macro Selecta",
+    "image": "https://assets.mobile.playdigital.com.ar/promotions_dynamics/publication-card/fb26a131-d4b3-414b-8414-a377cbaf211d_Indumentaria-7.jpg",
+    "banner_image": "https://assets.mobile.playdigital.com.ar/images/promotions/hub/default_banner.png",
+    "banner_image_portrait": "https://assets.mobile.playdigital.com.ar/images/promotions/hub/default_new_banner.png"
+  },
+  "details": {
+    "name": "Cardon con Macro Selecta",
+    "faq": "<p><br /></p><p><strong>¿Cómo puedo acceder al beneficio?</strong></p><p>Realizando una compra con tus tarjetas de crédito Visa Signature, Mastercard y/o American Express Black de Banco Macro Selecta, a través de MODO o NFC.</p><p><strong>¿Dónde veo el descuento aplicado</strong></p><p>El reintegro lo verás acreditado en tu cuenta del Banco Macro.</p><p><br /></p>",
+    "applicability_description": "",
+    "primary_button": null,
+    "secondary_button": null,
+    "download_button": null
+  }
+}

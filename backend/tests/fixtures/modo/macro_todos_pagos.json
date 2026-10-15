@@ -1,0 +1,138 @@
+{
+  "id": "1a6ca76c-eff8-469f-a8d8-051bba459153",
+  "name": "Campaña MODO PCT Oct",
+  "description": "",
+  "type": "cashback",
+  "reward_type": "cash",
+  "scope": "Bancaria",
+  "status": "active",
+  "real_status": "RUNNING",
+  "is_engine_active": false,
+  "created_at": "2026-09-24T19:52:28.873Z",
+  "updated_at": "2026-09-30T18:00:48.343Z",
+  "deleted_at": null,
+  "short_description": "2610-macro-todostuspagos-2000off",
+  "publication_description": "Aprovecha $2000 en tus próximas 5 compras",
+  "slug": "2000-todostuspagos-macro-oct26",
+  "display_start_date": "2026-09-28T03:00:00.000Z",
+  "display_stop_date": "2027-01-01T02:59:59.999Z",
+  "search_tags": "",
+  "conditions": {
+    "schedule": {
+      "stop_date": "2026-10-31",
+      "start_date": "2026-10-01",
+      "days_of_week": [
+        "monday",
+        "tuesday",
+        "wednesday",
+        "thursday",
+        "friday",
+        "saturday",
+        "sunday"
+      ],
+      "daily_stop_time": "23:59:59",
+      "daily_start_time": "00:00:00"
+    },
+    "acquirers": {
+      "list": [],
+      "segmentation_mode": "no_segmentation"
+    },
+    "payment_flow": {
+      "flows": [
+        "instore"
+      ]
+    },
+    "exclusiveness": "all",
+    "payment_methods": {
+      "methods": [
+        {
+          "type": "pct"
+        }
+      ]
+    },
+    "has_differential_amount": false
+  },
+  "offers": [
+    {
+      "id": "1a6ca76c-eff8-469f-a8d8-051bba459153",
+      "benefit_id": "1a6ca76c-eff8-469f-a8d8-051bba459153",
+      "name": ".",
+      "priority": 1,
+      "segmentations": {
+        "whitelist": [
+          "user_id",
+          "user_national_id"
+        ],
+        "categories": [
+          {
+            "category_id": 0,
+            "subcategory_ids": []
+          }
+        ]
+      },
+      "requirements": {
+        "banks": {
+          "list": [
+            "6a089c91-a7d3-4199-a578-2132a3733f69"
+          ]
+        },
+        "amount_range": {
+          "min": 8000
+        }
+      },
+      "outcomes": {
+        "cashback": {
+          "amount": 2000,
+          "amount_type": "fixed",
+          "cashback_mode": "cashback_bancario"
+        },
+        "financing": {
+          "installments": []
+        }
+      },
+      "limits": {
+        "period_cap": {
+          "reset_by": "promo",
+          "aggregate_by": "user",
+          "amount_by_period": 10000,
+          "amount_of_transactions_by_period": 5
+        },
+        "transaction_cap": {
+          "amount_by_transaction": 2000
+        }
+      },
+      "categories": [
+        "0"
+      ],
+      "sub_categories": [],
+      "preselected": false,
+      "created_at": "2026-09-24T20:06:17.329Z",
+      "updated_at": "2026-09-29T20:35:09.941Z",
+      "deleted_at": null,
+      "offer_caps": [],
+      "offer_transaction_cap": 2000
+    }
+  ],
+  "debit_list": [],
+  "credit_list": [],
+  "terms_and_conditions": "<p class=\"editor-paragraph\" dir=\"ltr\"><span style=\"white-space: pre-wrap;\">Cartera de consumo. Promoción válida en la República Argentina del </span><b><strong class=\"editor-text-bold\" style=\"white-space: pre-wrap;\">01/10/2026 al 31/10/2026 </strong></b><span style=\"white-space: pre-wrap;\">inclusive. Válido para clientes que reciben la comunicación y que realizan compras exclusivamente por transferencias a través de código QR utilizando la App Macro a través de la funcionalidad MODO. Por hasta 5 transacciones por montos mínimos de $8.000 el cliente recibirá un reintegro de $2.000, tope máximo de reintegro $10.000. El reintegro es por cuenta por mes y aplicará acreditación mediante el mismo medio por el cual se efectuó el pago, con una acreditación de hasta 20 días. Imagen modificada digitalmente. Usted puede optar por no recibir publicidad. No acumulable con otras promociones, descuentos ni beneficios vigentes en los comercios ni del banco, salvo indicación en contrario. No aplica para pagos realizados a través de otras billeteras digitales, agregadores de pago ni transferencias de terceros distintas a la App Macro con MODO. MODO es un servicio prestado por el proveedor de servicios tecnológicos Play Digital S.A. - CUIT 30716829436, </span><a href=\"https://www.google.com/maps/search/Av.+del+Libertador+7208?entry=gmail&amp;source=g\" target=\"_blank\" class=\"editor-link\"><span style=\"white-space: pre-wrap;\">Av. del Libertador 7208</span></a><span style=\"white-space: pre-wrap;\"> Torre II P 4 CABA, siendo la marca \"MODO\" de su propiedad. Consulte mas información en</span><a href=\"https://www.google.com/url?source=gmail&amp;sa=E&amp;q=https://www.macro.com\" target=\"_blank\" rel=\"noopener nofollow noreferrer\" class=\"editor-link\"><span style=\"white-space: pre-wrap;\">www.macro.com</span></a><span style=\"white-space: pre-wrap;\">.ar o comuníquese teléfono 08105552355 o en sucursales. Si sos selecta podés comunicarte 08105557353 o con tu ejecutivo en sucursal.&nbsp;&nbsp;</span></p>",
+  "terms_and_conditions_url": null,
+  "coupon": null,
+  "card": {
+    "benefit": "Campaña PCT",
+    "validity_place": "Comercios que acepten MODO",
+    "cashback_cap": "2000",
+    "participating_bank": "Macro",
+    "image": "https://assets.mobile.playdigital.com.ar/promotions_dynamics/publication-card/53174cc2-5ebe-4b77-a463-07f560b39c15_QR-2%20(7).jpg",
+    "banner_image": "https://assets.mobile.playdigital.com.ar/images/promotions/hub/default_banner.png",
+    "banner_image_portrait": "https://assets.mobile.playdigital.com.ar/images/promotions/hub/default_new_banner.png"
+  },
+  "details": {
+    "name": "Todos los pagos con Macro",
+    "faq": "<p><strong>¿Cómo puedo acceder al beneficio?</strong></p><p>Realizando una compra con dinero en cuenta a través de MODO. </p><p>Hasta 5 transacciones por montos mínimos de $8.000 el cliente recibirá un reintegro de $2.000, tope máximo de reintegro $10.000.</p><p></p><p><strong>¿Cómo es la modalidad de uso?</strong></p><p>En comercios que acepten MODO</p><p></p><p><strong>¿Dónde veo el descuento aplicado?</strong></p><p>El reintegro lo verás acreditado en tu cuenta del Banco Macro.</p>",
+    "applicability_description": "Comercios que acepten MODO",
+    "primary_button": null,
+    "secondary_button": null,
+    "download_button": null
+  }
+}

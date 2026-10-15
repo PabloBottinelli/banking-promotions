@@ -1,0 +1,217 @@
+{
+  "id": "9f1224dc-0392-49d7-a153-1007b9ac1060",
+  "name": "Paruolo UNICO",
+  "description": "",
+  "type": "cashback",
+  "reward_type": "cash",
+  "scope": "Bancaria",
+  "status": "active",
+  "real_status": "RUNNING",
+  "is_engine_active": true,
+  "created_at": "2026-10-08T13:35:14.382Z",
+  "updated_at": "2026-10-09T13:56:17.937Z",
+  "deleted_at": null,
+  "short_description": "2610-comafi-UNICO-ddm-paruolo-presencial-30off-12csi",
+  "publication_description": "Paruolo UNICO",
+  "slug": "30off-12csi-paruolo-comafi-oct26",
+  "display_start_date": "2026-10-14T03:00:00.000Z",
+  "display_stop_date": "2027-01-18T02:59:59.999Z",
+  "search_tags": "Paruolo,30,comafi,unico,presencial",
+  "conditions": {
+    "schedule": {
+      "stop_date": "2026-10-17",
+      "start_date": "2026-10-14",
+      "days_of_week": [
+        "wednesday",
+        "thursday",
+        "friday",
+        "saturday"
+      ],
+      "daily_stop_time": "23:59:59",
+      "daily_start_time": "00:00:00"
+    },
+    "acquirers": {
+      "list": [],
+      "segmentation_mode": "no_segmentation"
+    },
+    "payment_flow": {
+      "flows": [
+        "instore"
+      ]
+    },
+    "exclusiveness": "all",
+    "payment_methods": {
+      "methods": [
+        {
+          "type": "credit_card",
+          "issuer": "visa"
+        },
+        {
+          "type": "credit_card",
+          "issuer": "master"
+        }
+      ]
+    },
+    "has_differential_amount": false
+  },
+  "offers": [
+    {
+      "id": "9f1224dc-0392-49d7-a153-1007b9ac1060",
+      "benefit_id": "9f1224dc-0392-49d7-a153-1007b9ac1060",
+      "name": ".",
+      "priority": 0,
+      "segmentations": {
+        "whitelist": [
+          "store_cuit",
+          "bin"
+        ],
+        "categories": [
+          {
+            "category_id": 3,
+            "subcategory_ids": [
+              48,
+              38
+            ]
+          }
+        ]
+      },
+      "requirements": {
+        "banks": {
+          "list": [
+            "ce8aabb1-f663-4832-82ec-de9b5b572aa1"
+          ]
+        },
+        "amount_range": {
+          "min": 0
+        }
+      },
+      "outcomes": {
+        "cashback": {
+          "amount": 30,
+          "amount_type": "percent",
+          "cashback_mode": "cashback_por_regla"
+        },
+        "financing": {
+          "installments": [
+            {
+              "type": "sin_interes",
+              "number": 1,
+              "coefficient": "0",
+              "annual_nominal_rate": "0",
+              "total_financial_cost": "0"
+            },
+            {
+              "type": "sin_interes",
+              "number": 2,
+              "coefficient": "0",
+              "annual_nominal_rate": "0",
+              "total_financial_cost": "0"
+            },
+            {
+              "type": "sin_interes",
+              "number": 3,
+              "coefficient": "0",
+              "annual_nominal_rate": "0",
+              "total_financial_cost": "0"
+            },
+            {
+              "type": "sin_interes",
+              "number": 4,
+              "coefficient": "0",
+              "annual_nominal_rate": "0",
+              "total_financial_cost": "0"
+            },
+            {
+              "type": "sin_interes",
+              "number": 5,
+              "coefficient": "0",
+              "annual_nominal_rate": "0",
+              "total_financial_cost": "0"
+            },
+            {
+              "type": "sin_interes",
+              "number": 6,
+              "coefficient": "0",
+              "annual_nominal_rate": "0",
+              "total_financial_cost": "0"
+            },
+            {
+              "type": "sin_interes",
+              "number": 8,
+              "coefficient": "0",
+              "annual_nominal_rate": "0",
+              "total_financial_cost": "0"
+            },
+            {
+              "type": "sin_interes",
+              "number": 9,
+              "coefficient": "0",
+              "annual_nominal_rate": "0",
+              "total_financial_cost": "0"
+            },
+            {
+              "type": "sin_interes",
+              "number": 10,
+              "coefficient": "0",
+              "annual_nominal_rate": "0",
+              "total_financial_cost": "0"
+            },
+            {
+              "type": "sin_interes",
+              "number": 12,
+              "coefficient": "0",
+              "annual_nominal_rate": "0",
+              "total_financial_cost": "0"
+            }
+          ]
+        }
+      },
+      "limits": {
+        "period_cap": {
+          "reset_by": "promo",
+          "aggregate_by": "user",
+          "amount_by_period": 100000,
+          "amount_of_transactions_by_period": 0
+        }
+      },
+      "categories": [
+        "3"
+      ],
+      "sub_categories": [
+        "38",
+        "48"
+      ],
+      "preselected": false,
+      "created_at": "2026-10-08T13:35:27.922Z",
+      "updated_at": "2026-10-08T20:08:21.660Z",
+      "deleted_at": null,
+      "offer_caps": [],
+      "offer_transaction_cap": null
+    }
+  ],
+  "debit_list": [],
+  "credit_list": [
+    "visa",
+    "master"
+  ],
+  "terms_and_conditions": "<p class=\"editor-paragraph\" dir=\"ltr\"><span style=\"white-space: pre-wrap;\">Oferta exclusiva para la cartera de consumo. Promoción válida todos los días desde el 14/10/26 hasta el 17/10/26 abonando con tarjetas de crédito Visa Signature y Mastercard Black pertenecientes a Servicios de cuenta Unico emitidas por Banco Comafi. 30% de ahorro y hasta 12 cuotas sin interés. Quedan excluidas aquellas tarjetas de crédito Credial, Business y Corporativas emitidas en Argentina por Banco Comafi. Tope de reintegro por total de la promoción de $100.000. Los descuentos se realizan sobre precio de lista, son automáticos y se acreditarán a los 60 días en el resumen de tarjeta del ingreso del consumo. No acumulable con otras promociones ni entre sí. Sólo válido para aquellos clientes que se encuentren al día en sus productos El descuento no será aplicado en aquellos pagos realizados a través de la aplicación de Mercado Pago. La promoción no aplica a pagos a través de billeteras virtuales (excepto Modo), plataformas de pago y/o portales de pagos online ajenos a la empresa. Banco Comafi no se responsabiliza por los cupones presentados por los establecimientos fuera de término, así como tampoco promociona ni garantiza los comercios, los productos y/o servicios o la calidad de los mismos. Banco Comafi S.A. con domicilio en Av. Roque Sáenz Peña 660, piso 1, CUIT 30-60473101-8. *CFT: 0,0% Costo Financiero Total Efectivo Anual. TNA: 0,0% Tasa Nominal Anual. TEA: 0,0% Tasa Efectiva Anual.</span></p>",
+  "terms_and_conditions_url": null,
+  "coupon": null,
+  "card": {
+    "benefit": "30% y hasta 12 cuotas sin interés ",
+    "validity_place": "Paruolo",
+    "cashback_cap": "100000",
+    "participating_bank": "Comafi",
+    "image": "https://assets.mobile.playdigital.com.ar/promotions_dynamics/publication-card/d97ae25a-b9d9-4109-8ba1-7474a8d064bf_paruolo.jpg",
+    "banner_image": "https://assets.mobile.playdigital.com.ar/images/promotions/hub/default_banner.png",
+    "banner_image_portrait": "https://assets.mobile.playdigital.com.ar/images/promotions/hub/default_new_banner.png"
+  },
+  "details": {
+    "name": "Paruolo con Comafi",
+    "faq": "<p><strong>¿Cómo puedo acceder al beneficio?</strong></p><p>Realizando una compra con tus tarjetas crédito Visa Signature y Mastercard Black, del Banco Comafi a través de MODO.</p><p></p><p><strong>¿Dónde veo el reintegro aplicado?</strong></p><p>El reintegro lo verás acreditado en el resumen de tarjeta del Banco Comafi.</p>",
+    "applicability_description": "",
+    "primary_button": null,
+    "secondary_button": null,
+    "download_button": null
+  }
+}
