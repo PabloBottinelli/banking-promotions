@@ -1,0 +1,209 @@
+{
+  "catalog": {
+    "id": 2960,
+    "code": "",
+    "name": "Transporte",
+    "desktopImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/brand_bc67e33b-765b-40ba-899d-61610f3b80ad.png",
+    "desktopMinImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/brand_4f64e1aa-97b7-4619-b241-01474e7e7d90.png",
+    "mobileImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/brand_2a04efc7-f70a-43ba-9c87-24249c3cf48e.png",
+    "mobileMinImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/brand_bbd2f054-5f2e-4eb0-9f2e-a7254ebd0c64.png",
+    "active": true,
+    "order": 0,
+    "benefitDescription": "100%",
+    "colorCode": "#257FA4",
+    "brandType": {
+      "id": 1,
+      "description": "Standar",
+      "code": "STA",
+      "active": true
+    }
+  },
+  "program": {
+    "startDatePublication": "2026-10-01T00:00:00",
+    "endDatePublication": "2026-10-31T00:00:00",
+    "id": 7900,
+    "idPromotion": 14112,
+    "monday": true,
+    "tuesday": true,
+    "wednesday": true,
+    "thursday": true,
+    "friday": true,
+    "saturday": true,
+    "sunday": true,
+    "fullWeek": true,
+    "multiPublication": true,
+    "customerDiscount": 50,
+    "topAmount": 8000,
+    "additionalText": "<p>Con dinero en cuenta, <strong>generando el QR transporte</strong> y mostrándoselo al lector de pago desde tu <strong>App Santander</strong> o <strong>MODO</strong>.<br><br>En los colectivos y subtes habilitados.</p>\n",
+    "monthlyCut": true,
+    "initialQuote": 0,
+    "finalQuote": 0,
+    "interestFreeFees": false,
+    "specialCondition": null,
+    "order": 5,
+    "legal": "<p>Válida todos los días en subtes y colectivos habilitados mediante la funcionalidad VQR abonando con QR a través de la App Santander o App MODO. El pago deberá efectuarse exclusivamente mediante la exhibición del Código QR generado desde MODO en la terminal de pago habilitada. Dicho pago tendrá que ser realizado por transferencia (PCT), no aplicando el descuento a pagos con Tarjeta de débito ni crédito. Válido únicamente para clientes titulares de cuenta bancaria Santander. No aplica a clientes que posean tarjeta de crédito sin cuenta bancaria asociada y/o caja de ahorro en pesos gratuita. En caso que la compra sea realizada con una tarjeta adicional, el reintegro se verá reflejado en la cuenta bancaria del titular. El cliente deberá contar con un saldo mínimo de $1200 en su cuenta al momento de realizar el pago.</p><p>El ahorro se hará efectivo vía reintegro dentro de los 30 días de efectuado el consumo en la cuenta bancaria titular del cliente. El cliente recibirá un reintegro equivalente a un un 50% (cincuenta por ciento) de ahorro sobre el monto total bruto correspondiente a cada viaje abonado mediante VQR, con tope de reintegro de hasta $8.000 (ocho mil pesos) durante la vigencia de la promoción.</p>",
+    "benefitType": {
+      "id": 1,
+      "description": "Ahorro",
+      "code": "A"
+    },
+    "paymentType": {
+      "id": 5,
+      "description": "Puntos",
+      "code": "P"
+    },
+    "paymentMethod": null,
+    "frecuency": {
+      "id": 2,
+      "description": "Mensual",
+      "code": "M"
+    },
+    "tag": {
+      "id": 5,
+      "description": "Pagando con QR",
+      "code": "PQR",
+      "status": false,
+      "colorCode": "#9E3667"
+    },
+    "brands": [
+      {
+        "id": 2960,
+        "code": "",
+        "name": "Transporte",
+        "desktopImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/brand_bc67e33b-765b-40ba-899d-61610f3b80ad.png",
+        "desktopMinImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/brand_4f64e1aa-97b7-4619-b241-01474e7e7d90.png",
+        "mobileImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/brand_2a04efc7-f70a-43ba-9c87-24249c3cf48e.png",
+        "mobileMinImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/brand_bbd2f054-5f2e-4eb0-9f2e-a7254ebd0c64.png",
+        "active": true,
+        "order": 0,
+        "benefitDescription": null,
+        "colorCode": "",
+        "brandType": {
+          "id": 1,
+          "description": "Standar",
+          "code": "STA",
+          "active": true
+        }
+      }
+    ],
+    "relatedPublications": [],
+    "categories": [
+      {
+        "id": 17,
+        "description": "Viajes",
+        "code": "VIA"
+      },
+      {
+        "id": 36,
+        "description": "Modo",
+        "code": "MOD"
+      }
+    ],
+    "texts": {
+      "title": "50% de ahorro",
+      "description": "Tope de reintegro: $8.000 mensual",
+      "discount": 50,
+      "untilDiscount": false
+    }
+  },
+  "detail": {
+    "id": 7900,
+    "initialDate": "2026-10-01T00:00:00",
+    "endDate": "2026-10-31T00:00:00",
+    "monday": true,
+    "tuesday": true,
+    "wednesday": true,
+    "thursday": true,
+    "friday": true,
+    "saturday": true,
+    "sunday": true,
+    "fullWeek": true,
+    "legal": "<p>Válida todos los días en subtes y colectivos habilitados mediante la funcionalidad VQR abonando con QR a través de la App Santander o App MODO. El pago deberá efectuarse exclusivamente mediante la exhibición del Código QR generado desde MODO en la terminal de pago habilitada. Dicho pago tendrá que ser realizado por transferencia (PCT), no aplicando el descuento a pagos con Tarjeta de débito ni crédito. Válido únicamente para clientes titulares de cuenta bancaria Santander. No aplica a clientes que posean tarjeta de crédito sin cuenta bancaria asociada y/o caja de ahorro en pesos gratuita. En caso que la compra sea realizada con una tarjeta adicional, el reintegro se verá reflejado en la cuenta bancaria del titular. El cliente deberá contar con un saldo mínimo de $1200 en su cuenta al momento de realizar el pago.</p><p>El ahorro se hará efectivo vía reintegro dentro de los 30 días de efectuado el consumo en la cuenta bancaria titular del cliente. El cliente recibirá un reintegro equivalente a un un 50% (cincuenta por ciento) de ahorro sobre el monto total bruto correspondiente a cada viaje abonado mediante VQR, con tope de reintegro de hasta $8.000 (ocho mil pesos) durante la vigencia de la promoción.</p>",
+    "customerDiscount": 50,
+    "topAmount": 8000,
+    "additionalText": "<p>Con dinero en cuenta, <strong>generando el QR transporte</strong> y mostrándoselo al lector de pago desde tu <strong>App Santander</strong> o <strong>MODO</strong>.<br><br>En los colectivos y subtes habilitados.</p>\n",
+    "showCurrentMonthOnly": true,
+    "initialQuote": 0,
+    "finalQuote": 0,
+    "interestFreeFees": false,
+    "specialCondition": null,
+    "stock": 0,
+    "productSegmentation": "Masiva",
+    "additionalBenefit": false,
+    "order": 5,
+    "tag": {
+      "id": 5,
+      "description": "Pagando con QR",
+      "code": "PQR",
+      "status": false,
+      "colorCode": "#9E3667"
+    },
+    "frecuency": {
+      "id": 2,
+      "description": "Mensual",
+      "code": "M"
+    },
+    "paymentType": {
+      "id": 5,
+      "description": "Puntos",
+      "code": "P"
+    },
+    "paymentMethod": null,
+    "benefitType": {
+      "id": 1,
+      "description": "Ahorro",
+      "code": "A"
+    },
+    "categories": [
+      {
+        "id": 17,
+        "description": "Viajes",
+        "code": "VIA"
+      },
+      {
+        "id": 36,
+        "description": "Modo",
+        "code": "MOD"
+      }
+    ],
+    "images": [],
+    "relatedPublications": [],
+    "cards": [],
+    "brands": [
+      {
+        "id": 25027,
+        "brand": {
+          "id": 2960,
+          "code": "",
+          "name": "Transporte",
+          "desktopImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/brand_bc67e33b-765b-40ba-899d-61610f3b80ad.png",
+          "desktopMinImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/brand_4f64e1aa-97b7-4619-b241-01474e7e7d90.png",
+          "mobileImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/brand_2a04efc7-f70a-43ba-9c87-24249c3cf48e.png",
+          "mobileMinImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/brand_bbd2f054-5f2e-4eb0-9f2e-a7254ebd0c64.png",
+          "active": true,
+          "order": 0,
+          "benefitDescription": null,
+          "colorCode": "",
+          "brandType": {
+            "id": 1,
+            "description": "Standar",
+            "code": "STA",
+            "active": true
+          }
+        },
+        "establishments": []
+      }
+    ],
+    "texts": {
+      "title": "50% de ahorro",
+      "description": "Tope de reintegro: $8.000 mensual",
+      "discount": 50,
+      "untilDiscount": false
+    },
+    "homePages": []
+  },
+  "source": "santander",
+  "source_id": "2960:7900",
+  "scraped_at": "2026-10-15T15:00:00+00:00",
+  "promotion_url": "https://www.santander.com.ar/personas/beneficios#/publication?brandId=2960&programId=7900"
+}

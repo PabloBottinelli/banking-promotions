@@ -1,0 +1,264 @@
+{
+  "catalog": {
+    "id": 1127,
+    "code": "",
+    "name": "Margarita",
+    "desktopImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/brand_4f616ab3-bb0a-4dec-b556-d5ae68b5618c.png",
+    "desktopMinImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/brand_e02e60cf-d69e-4dfb-ac1f-a1305b99b455.png",
+    "mobileImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/brand_0c7ab1aa-b524-4673-9bc9-084c0790483b.png",
+    "mobileMinImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/brand_5a9aefe4-f093-4a3f-8306-ee2cd408b683.png",
+    "active": true,
+    "order": 0,
+    "benefitDescription": "Hasta 6 cuotas sin interés",
+    "colorCode": "#0270a4",
+    "brandType": {
+      "id": 3,
+      "description": "Espectaculo",
+      "code": "ESP",
+      "active": true
+    }
+  },
+  "program": {
+    "startDatePublication": "2026-08-03T00:00:00",
+    "endDatePublication": "2026-12-17T00:00:00",
+    "id": 7560,
+    "idPromotion": 13759,
+    "monday": true,
+    "tuesday": true,
+    "wednesday": true,
+    "thursday": true,
+    "friday": true,
+    "saturday": true,
+    "sunday": true,
+    "fullWeek": true,
+    "multiPublication": true,
+    "customerDiscount": 0,
+    "topAmount": null,
+    "additionalText": "<p><strong style=\"font-size: 18px; background-color: rgb(230, 0, 0); color: rgb(255, 255, 255);\">  ¡NUEVA FECHA: 18 DE DICIEMBRE!  </strong></p><p><span style=\"font-size: 18px;\">17 y 18 de diciembre | </span><strong style=\"font-size: 18px;\">Campo Argentino de Polo</strong></p><p></p><p><strong style=\"color: rgb(230, 0, 0);\">MARGARITA EN VIVO SIGUE CRECIENDO: LA GRAN FIESTA DE FIN DE AÑO LLEGA AL CAMPO DE POLO</strong></p><p></p><p>Después de una temporada histórica, Margarita en Vivo vuelve a crecer y se prepara para vivir su noche más grande. El próximo 17 de diciembre, el Campo Argentino de Polo se convertirá en el escenario de una verdadera fiesta de fin de año, pensada para cantar, bailar, emocionarse y celebrar en familia.</p><p></p><p>La música será la gran protagonista de la noche. A través de más de 30 canciones, el espectáculo propondrá un recorrido por los grandes hits que marcaron la historia de Cris Morena, revivirá los momentos más queridos de Margarita y, al mismo tiempo, abrirá las puertas a una nueva etapa de su universo, una puesta artística inédita y toda la emoción del universo que conquistó a miles de familias se unen a propuestas gastronómicas, activaciones y diferentes espacios para disfrutar antes y durante el show.</p><p></p><p>Una experiencia completa para despedir el año con una celebración de verano inolvidable, el 17 de diciembre en el Campo Argentino de Polo.</p><p></p><p><strong>Preventa exclusiva para clientes Santander</strong></p><p>Lunes 03/08 a las 12s por 24hs o hasta agotar stock, lo que suceda primero</p>",
+    "monthlyCut": false,
+    "initialQuote": 2,
+    "finalQuote": 6,
+    "interestFreeFees": true,
+    "specialCondition": null,
+    "order": 2,
+    "legal": "<p>PARA MÁS INFORMACIÓN Y CONDICIONES O LIMITACIONES APLICABLES EN LA ARGENTINA, CONSULTÁ EN SANTANDER.COM.AR <strong>DISPONIBLE PARA CARTERA DE CONSUMO</strong></p><p><span style=\"font-size: 48px;\">C.F.T.E.A: 0%</span></p><p>TASA FIJA NOMINAL ANUAL: 0%. TASA EFECTIVA ANUAL: 0%.</p><p>Vigencia del 03/08/26 hasta el 17/12/26. Promoción valida sólo para Tarjeta Santander. Preventa con tarjeta Santander crédito y débito del 03/08/26 a las 12hs AM hasta el 04/08/26 10hs AM o hasta agotar stock, lo que suceda primero. Stock preventa: 5.000 tickets. Cupo máximo de 4 entradas por cliente. Ejemplo: Una compra de $60.000 realizada con su Tarjeta Santander, podrá ser financiada en 6 cuotas de $10.000 cada una. El beneficio aplica sólo sobre el precio de lista del valor de la entrada que figura en www.entradas.baferial.com/evento/generacion No incluye service charge. Los accionistas de Banco Santander Argentina S.A. no responden en exceso de su integración accionaria.</p>",
+    "benefitType": {
+      "id": 1,
+      "description": "Ahorro",
+      "code": "A"
+    },
+    "paymentType": {
+      "id": 1,
+      "description": "No Aplica",
+      "code": "N"
+    },
+    "paymentMethod": {
+      "id": 3,
+      "description": "Ambos (un pago + cuotas)",
+      "code": "AMB"
+    },
+    "frecuency": {
+      "id": 1,
+      "description": "No Aplica",
+      "code": "N"
+    },
+    "tag": {
+      "id": 202,
+      "description": "CABA",
+      "code": "CBA",
+      "status": false,
+      "colorCode": "#0270a4"
+    },
+    "brands": [
+      {
+        "id": 1127,
+        "code": "",
+        "name": "Margarita",
+        "desktopImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/brand_4f616ab3-bb0a-4dec-b556-d5ae68b5618c.png",
+        "desktopMinImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/brand_e02e60cf-d69e-4dfb-ac1f-a1305b99b455.png",
+        "mobileImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/brand_0c7ab1aa-b524-4673-9bc9-084c0790483b.png",
+        "mobileMinImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/brand_5a9aefe4-f093-4a3f-8306-ee2cd408b683.png",
+        "active": true,
+        "order": 0,
+        "benefitDescription": null,
+        "colorCode": "",
+        "brandType": {
+          "id": 3,
+          "description": "Espectaculo",
+          "code": "ESP",
+          "active": true
+        }
+      }
+    ],
+    "relatedPublications": [],
+    "categories": [
+      {
+        "id": 8,
+        "description": "Espectáculos",
+        "code": "ESP"
+      }
+    ],
+    "texts": {
+      "title": "Margarita",
+      "description": "Hasta 6 cuotas sin interés"
+    }
+  },
+  "detail": {
+    "id": 7560,
+    "initialDate": "2026-08-03T00:00:00",
+    "endDate": "2026-12-17T00:00:00",
+    "monday": true,
+    "tuesday": true,
+    "wednesday": true,
+    "thursday": true,
+    "friday": true,
+    "saturday": true,
+    "sunday": true,
+    "fullWeek": true,
+    "legal": "<p>PARA MÁS INFORMACIÓN Y CONDICIONES O LIMITACIONES APLICABLES EN LA ARGENTINA, CONSULTÁ EN SANTANDER.COM.AR <strong>DISPONIBLE PARA CARTERA DE CONSUMO</strong></p><p><span style=\"font-size: 48px;\">C.F.T.E.A: 0%</span></p><p>TASA FIJA NOMINAL ANUAL: 0%. TASA EFECTIVA ANUAL: 0%.</p><p>Vigencia del 03/08/26 hasta el 17/12/26. Promoción valida sólo para Tarjeta Santander. Preventa con tarjeta Santander crédito y débito del 03/08/26 a las 12hs AM hasta el 04/08/26 10hs AM o hasta agotar stock, lo que suceda primero. Stock preventa: 5.000 tickets. Cupo máximo de 4 entradas por cliente. Ejemplo: Una compra de $60.000 realizada con su Tarjeta Santander, podrá ser financiada en 6 cuotas de $10.000 cada una. El beneficio aplica sólo sobre el precio de lista del valor de la entrada que figura en www.entradas.baferial.com/evento/generacion No incluye service charge. Los accionistas de Banco Santander Argentina S.A. no responden en exceso de su integración accionaria.</p>",
+    "customerDiscount": 0,
+    "topAmount": null,
+    "additionalText": "<p><strong style=\"font-size: 18px; background-color: rgb(230, 0, 0); color: rgb(255, 255, 255);\">  ¡NUEVA FECHA: 18 DE DICIEMBRE!  </strong></p><p><span style=\"font-size: 18px;\">17 y 18 de diciembre | </span><strong style=\"font-size: 18px;\">Campo Argentino de Polo</strong></p><p></p><p><strong style=\"color: rgb(230, 0, 0);\">MARGARITA EN VIVO SIGUE CRECIENDO: LA GRAN FIESTA DE FIN DE AÑO LLEGA AL CAMPO DE POLO</strong></p><p></p><p>Después de una temporada histórica, Margarita en Vivo vuelve a crecer y se prepara para vivir su noche más grande. El próximo 17 de diciembre, el Campo Argentino de Polo se convertirá en el escenario de una verdadera fiesta de fin de año, pensada para cantar, bailar, emocionarse y celebrar en familia.</p><p></p><p>La música será la gran protagonista de la noche. A través de más de 30 canciones, el espectáculo propondrá un recorrido por los grandes hits que marcaron la historia de Cris Morena, revivirá los momentos más queridos de Margarita y, al mismo tiempo, abrirá las puertas a una nueva etapa de su universo, una puesta artística inédita y toda la emoción del universo que conquistó a miles de familias se unen a propuestas gastronómicas, activaciones y diferentes espacios para disfrutar antes y durante el show.</p><p></p><p>Una experiencia completa para despedir el año con una celebración de verano inolvidable, el 17 de diciembre en el Campo Argentino de Polo.</p><p></p><p><strong>Preventa exclusiva para clientes Santander</strong></p><p>Lunes 03/08 a las 12s por 24hs o hasta agotar stock, lo que suceda primero</p>",
+    "showCurrentMonthOnly": false,
+    "initialQuote": 2,
+    "finalQuote": 6,
+    "interestFreeFees": true,
+    "specialCondition": null,
+    "stock": 0,
+    "productSegmentation": "Masiva",
+    "additionalBenefit": false,
+    "order": 2,
+    "tag": {
+      "id": 202,
+      "description": "CABA",
+      "code": "CBA",
+      "status": false,
+      "colorCode": "#0270a4"
+    },
+    "frecuency": {
+      "id": 1,
+      "description": "No Aplica",
+      "code": "N"
+    },
+    "paymentType": {
+      "id": 1,
+      "description": "No Aplica",
+      "code": "N"
+    },
+    "paymentMethod": {
+      "id": 3,
+      "description": "Ambos (un pago + cuotas)",
+      "code": "AMB"
+    },
+    "benefitType": {
+      "id": 1,
+      "description": "Ahorro",
+      "code": "A"
+    },
+    "categories": [
+      {
+        "id": 8,
+        "description": "Espectáculos",
+        "code": "ESP"
+      }
+    ],
+    "images": [],
+    "relatedPublications": [],
+    "cards": [
+      {
+        "id": 1,
+        "description": "VISA",
+        "code": "81",
+        "idType": 1,
+        "descriptionType": "DEBITO",
+        "codeType": "D",
+        "image": "https://microfe.santander.com.ar/premify/benefits/assets/images/visa_tarjeta_debito.png"
+      },
+      {
+        "id": 2,
+        "description": "VISA",
+        "code": "40",
+        "idType": 2,
+        "descriptionType": "CREDITO",
+        "codeType": "C",
+        "image": "https://microfe.santander.com.ar/premify/benefits/assets/images/visa_tarjeta_credito.png"
+      },
+      {
+        "id": 3,
+        "description": "VISA",
+        "code": "43",
+        "idType": 3,
+        "descriptionType": "RECARGABLE",
+        "codeType": "R",
+        "image": "https://microfe.santander.com.ar/premify/benefits/assets/images/visa_tarjeta_recargable.png"
+      },
+      {
+        "id": 4,
+        "description": "MASTER",
+        "code": "41",
+        "idType": 2,
+        "descriptionType": "CREDITO",
+        "codeType": "C",
+        "image": "https://microfe.santander.com.ar/premify/benefits/assets/images/mastercard_tarjeta_credito.png"
+      },
+      {
+        "id": 5,
+        "description": "AMEX",
+        "code": "42",
+        "idType": 2,
+        "descriptionType": "CREDITO",
+        "codeType": "C",
+        "image": "https://microfe.santander.com.ar/premify/benefits/assets/images/amex_tarjeta_credito.png"
+      }
+    ],
+    "brands": [
+      {
+        "id": 23192,
+        "brand": {
+          "id": 1127,
+          "code": "",
+          "name": "Margarita",
+          "desktopImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/brand_4f616ab3-bb0a-4dec-b556-d5ae68b5618c.png",
+          "desktopMinImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/brand_e02e60cf-d69e-4dfb-ac1f-a1305b99b455.png",
+          "mobileImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/brand_0c7ab1aa-b524-4673-9bc9-084c0790483b.png",
+          "mobileMinImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/brand_5a9aefe4-f093-4a3f-8306-ee2cd408b683.png",
+          "active": true,
+          "order": 0,
+          "benefitDescription": null,
+          "colorCode": "",
+          "brandType": {
+            "id": 3,
+            "description": "Espectaculo",
+            "code": "ESP",
+            "active": true
+          }
+        },
+        "establishments": [
+          {
+            "id": 427073,
+            "address": "N",
+            "city": "N",
+            "province": "N",
+            "fantasyName": "ALLACCESS",
+            "homePage": "www.allaccess.com.ar",
+            "shopping": "N",
+            "isApp": false,
+            "latitude": null,
+            "longitude": null
+          }
+        ]
+      }
+    ],
+    "texts": {
+      "title": "Margarita",
+      "description": "Hasta 6 cuotas sin interés"
+    },
+    "homePages": [
+      "www.allaccess.com.ar"
+    ]
+  },
+  "source": "santander",
+  "source_id": "1127:7560",
+  "scraped_at": "2026-10-15T15:00:00+00:00",
+  "promotion_url": "https://www.santander.com.ar/personas/beneficios#/publication?brandId=1127&programId=7560"
+}
