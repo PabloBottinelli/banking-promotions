@@ -1,0 +1,249 @@
+{
+  "catalog": {
+    "id": 39,
+    "code": "",
+    "name": "arteba",
+    "desktopImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/brand_16ef7b73-f58b-4c9a-a730-9e2bcc9582ff.png",
+    "desktopMinImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/brand_0792a1d2-b053-4843-a7ad-aba6ff7cc325.png",
+    "mobileImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/brand_dc1748a7-4ca7-4a30-9fb6-bbf5ee0d0bfb.png",
+    "mobileMinImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/brand_b2896829-1484-42a7-8673-216ab7db7118.png",
+    "active": true,
+    "order": 0,
+    "benefitDescription": "10%",
+    "colorCode": "#0270a4",
+    "brandType": {
+      "id": 2,
+      "description": "Shopping",
+      "code": "SHP",
+      "active": true
+    }
+  },
+  "program": {
+    "startDatePublication": "2026-10-03T00:00:00",
+    "endDatePublication": "2026-11-01T00:00:00",
+    "id": 7934,
+    "idPromotion": 14167,
+    "monday": true,
+    "tuesday": true,
+    "wednesday": true,
+    "thursday": true,
+    "friday": true,
+    "saturday": true,
+    "sunday": true,
+    "fullWeek": true,
+    "multiPublication": true,
+    "customerDiscount": 10,
+    "topAmount": 8400,
+    "additionalText": "<p><span style=\"background-color: rgb(255, 255, 255); color: rgb(79, 84, 87); font-size: 18px;\">Del 30 de octubre al 1 de noviembre | </span><strong style=\"background-color: rgb(255, 255, 255); color: rgb(79, 84, 87); font-size: 18px;\">La Rural</strong></p><p></p><p><span style=\"background-color: rgb(255, 255, 255); color: rgb(79, 84, 87); font-size: 14px;\">A 35 años de la creación de la Fundación, arteba reafirma su misión de potenciar el arte contemporáneo argentino y fortalecer su posicionamiento como referente cultural en la región. Reuniendo durante cinco días a los proyectos artísticos más destacados del presente, la feria se consolida como un espacio que promueve y facilita el encuentro de artistas, galeristas, curadores, coleccionistas, instituciones y públicos diversos.</span></p>",
+    "monthlyCut": false,
+    "initialQuote": 0,
+    "finalQuote": 0,
+    "interestFreeFees": false,
+    "specialCondition": null,
+    "order": 2,
+    "legal": "<p>Valido del 03/10/25 hasta el 01/11/26. Promoción valida para Tarjeta Santander Visa credito y debito, American Express y Mastercard. Cupo máximo de 4 entradas por cliente. El ahorro se hará efectivo vía reintegro dentro de los 60 días de efectuado el consumo en el resumen de la tarjeta de crédito, y con tarjeta de debito dentro de los 10 días en la cuenta bancaria titular del cliente. El beneficio aplica sólo sobre el precio de lista del valor de la entrada que figura en www.allaccess.com.ar. No acumulables con otras promociones vigentes. Tope de reintegro: $8.400 sumando las compras realizadas por el titular de la tarjeta de crédito y sus adicionales. Ejemplo: en una compra con tarjeta de crédito de $50.000, el cliente recibirá un reintegro de $8.400 (tope) Promoción válida sobre el valor de entradas. No incluye service charge. Los accionistas de Banco Santander Argentina S.A. no responden en exceso de su integración accionaria.</p>",
+    "benefitType": {
+      "id": 1,
+      "description": "Ahorro",
+      "code": "A"
+    },
+    "paymentType": null,
+    "paymentMethod": {
+      "id": 1,
+      "description": "Un Pago",
+      "code": "CON"
+    },
+    "frecuency": {
+      "id": 1,
+      "description": "No Aplica",
+      "code": "N"
+    },
+    "tag": {
+      "id": 202,
+      "description": "CABA",
+      "code": "CBA",
+      "status": false,
+      "colorCode": "#0270a4"
+    },
+    "brands": [
+      {
+        "id": 39,
+        "code": "",
+        "name": "arteba",
+        "desktopImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/brand_16ef7b73-f58b-4c9a-a730-9e2bcc9582ff.png",
+        "desktopMinImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/brand_0792a1d2-b053-4843-a7ad-aba6ff7cc325.png",
+        "mobileImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/brand_dc1748a7-4ca7-4a30-9fb6-bbf5ee0d0bfb.png",
+        "mobileMinImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/brand_b2896829-1484-42a7-8673-216ab7db7118.png",
+        "active": true,
+        "order": 0,
+        "benefitDescription": null,
+        "colorCode": "",
+        "brandType": {
+          "id": 2,
+          "description": "Shopping",
+          "code": "SHP",
+          "active": true
+        }
+      }
+    ],
+    "relatedPublications": [],
+    "categories": [
+      {
+        "id": 8,
+        "description": "Espectáculos",
+        "code": "ESP"
+      }
+    ],
+    "texts": {
+      "title": "arteba",
+      "subtitle": "Sin tope de reintegro",
+      "description": "10% de ahorro en un pago"
+    }
+  },
+  "detail": {
+    "id": 7934,
+    "initialDate": "2026-10-03T00:00:00",
+    "endDate": "2026-11-01T00:00:00",
+    "monday": true,
+    "tuesday": true,
+    "wednesday": true,
+    "thursday": true,
+    "friday": true,
+    "saturday": true,
+    "sunday": true,
+    "fullWeek": true,
+    "legal": "<p>Valido del 03/10/25 hasta el 01/11/26. Promoción valida para Tarjeta Santander Visa credito y debito, American Express y Mastercard. Cupo máximo de 4 entradas por cliente. El ahorro se hará efectivo vía reintegro dentro de los 60 días de efectuado el consumo en el resumen de la tarjeta de crédito, y con tarjeta de debito dentro de los 10 días en la cuenta bancaria titular del cliente. El beneficio aplica sólo sobre el precio de lista del valor de la entrada que figura en www.allaccess.com.ar. No acumulables con otras promociones vigentes. Tope de reintegro: $8.400 sumando las compras realizadas por el titular de la tarjeta de crédito y sus adicionales. Ejemplo: en una compra con tarjeta de crédito de $50.000, el cliente recibirá un reintegro de $8.400 (tope) Promoción válida sobre el valor de entradas. No incluye service charge. Los accionistas de Banco Santander Argentina S.A. no responden en exceso de su integración accionaria.</p>",
+    "customerDiscount": 10,
+    "topAmount": 8400,
+    "additionalText": "<p><span style=\"background-color: rgb(255, 255, 255); color: rgb(79, 84, 87); font-size: 18px;\">Del 30 de octubre al 1 de noviembre | </span><strong style=\"background-color: rgb(255, 255, 255); color: rgb(79, 84, 87); font-size: 18px;\">La Rural</strong></p><p></p><p><span style=\"background-color: rgb(255, 255, 255); color: rgb(79, 84, 87); font-size: 14px;\">A 35 años de la creación de la Fundación, arteba reafirma su misión de potenciar el arte contemporáneo argentino y fortalecer su posicionamiento como referente cultural en la región. Reuniendo durante cinco días a los proyectos artísticos más destacados del presente, la feria se consolida como un espacio que promueve y facilita el encuentro de artistas, galeristas, curadores, coleccionistas, instituciones y públicos diversos.</span></p>",
+    "showCurrentMonthOnly": false,
+    "initialQuote": 0,
+    "finalQuote": 0,
+    "interestFreeFees": false,
+    "specialCondition": null,
+    "stock": 0,
+    "productSegmentation": "Masiva",
+    "additionalBenefit": false,
+    "order": 2,
+    "tag": {
+      "id": 202,
+      "description": "CABA",
+      "code": "CBA",
+      "status": false,
+      "colorCode": "#0270a4"
+    },
+    "frecuency": {
+      "id": 1,
+      "description": "No Aplica",
+      "code": "N"
+    },
+    "paymentType": null,
+    "paymentMethod": {
+      "id": 1,
+      "description": "Un Pago",
+      "code": "CON"
+    },
+    "benefitType": {
+      "id": 1,
+      "description": "Ahorro",
+      "code": "A"
+    },
+    "categories": [
+      {
+        "id": 8,
+        "description": "Espectáculos",
+        "code": "ESP"
+      }
+    ],
+    "images": [],
+    "relatedPublications": [],
+    "cards": [
+      {
+        "id": 1,
+        "description": "VISA",
+        "code": "81",
+        "idType": 1,
+        "descriptionType": "DEBITO",
+        "codeType": "D",
+        "image": "https://microfe.santander.com.ar/premify/benefits/assets/images/visa_tarjeta_debito.png"
+      },
+      {
+        "id": 2,
+        "description": "VISA",
+        "code": "40",
+        "idType": 2,
+        "descriptionType": "CREDITO",
+        "codeType": "C",
+        "image": "https://microfe.santander.com.ar/premify/benefits/assets/images/visa_tarjeta_credito.png"
+      },
+      {
+        "id": 4,
+        "description": "MASTER",
+        "code": "41",
+        "idType": 2,
+        "descriptionType": "CREDITO",
+        "codeType": "C",
+        "image": "https://microfe.santander.com.ar/premify/benefits/assets/images/mastercard_tarjeta_credito.png"
+      },
+      {
+        "id": 5,
+        "description": "AMEX",
+        "code": "42",
+        "idType": 2,
+        "descriptionType": "CREDITO",
+        "codeType": "C",
+        "image": "https://microfe.santander.com.ar/premify/benefits/assets/images/amex_tarjeta_credito.png"
+      }
+    ],
+    "brands": [
+      {
+        "id": 25060,
+        "brand": {
+          "id": 39,
+          "code": "",
+          "name": "arteba",
+          "desktopImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/brand_16ef7b73-f58b-4c9a-a730-9e2bcc9582ff.png",
+          "desktopMinImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/brand_0792a1d2-b053-4843-a7ad-aba6ff7cc325.png",
+          "mobileImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/brand_dc1748a7-4ca7-4a30-9fb6-bbf5ee0d0bfb.png",
+          "mobileMinImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/brand_b2896829-1484-42a7-8673-216ab7db7118.png",
+          "active": true,
+          "order": 0,
+          "benefitDescription": null,
+          "colorCode": "",
+          "brandType": {
+            "id": 2,
+            "description": "Shopping",
+            "code": "SHP",
+            "active": true
+          }
+        },
+        "establishments": [
+          {
+            "id": 436403,
+            "address": "N",
+            "city": "N",
+            "province": "N",
+            "fantasyName": "ALLACCESS",
+            "homePage": "www.allaccess.com.ar",
+            "shopping": "N",
+            "isApp": false,
+            "latitude": null,
+            "longitude": null
+          }
+        ]
+      }
+    ],
+    "texts": {
+      "title": "arteba",
+      "subtitle": "Sin tope de reintegro",
+      "description": "10% de ahorro en un pago"
+    },
+    "homePages": [
+      "www.allaccess.com.ar"
+    ]
+  },
+  "source": "santander",
+  "source_id": "39:7934",
+  "scraped_at": "2026-10-15T15:00:00+00:00",
+  "promotion_url": "https://www.santander.com.ar/personas/beneficios#/publication?brandId=39&programId=7934"
+}

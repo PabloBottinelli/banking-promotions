@@ -1,0 +1,239 @@
+{
+  "catalog": {
+    "id": 60,
+    "code": "",
+    "name": "Café Martínez",
+    "desktopImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/Cafe_Martinez_desktopImage.png",
+    "desktopMinImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/Cafe_Martinez_desktopMinImage.png",
+    "mobileImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/Cafe_Martinez_mobileImage.png",
+    "mobileMinImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/Cafe_Martinez_mobileMinImage.png",
+    "active": true,
+    "order": 1,
+    "benefitDescription": "10%",
+    "colorCode": null,
+    "brandType": {
+      "id": 1,
+      "description": "Standar",
+      "code": "STA",
+      "active": true
+    }
+  },
+  "program": {
+    "startDatePublication": "2026-08-04T00:00:00",
+    "endDatePublication": "2026-10-28T00:00:00",
+    "id": 7557,
+    "idPromotion": 13765,
+    "monday": false,
+    "tuesday": true,
+    "wednesday": true,
+    "thursday": false,
+    "friday": false,
+    "saturday": false,
+    "sunday": false,
+    "fullWeek": false,
+    "multiPublication": false,
+    "customerDiscount": 10,
+    "topAmount": 10000,
+    "additionalText": "<p>Pagando con <strong>QR</strong> a través de la <strong>App Santander</strong>.</p>",
+    "monthlyCut": false,
+    "initialQuote": 0,
+    "finalQuote": 0,
+    "interestFreeFees": false,
+    "specialCondition": null,
+    "order": 4,
+    "legal": "<p>Válido desde el 01/08/2026 hasta el 31/10/2026 todos los martes y miércoles en locales adheridos abonando con QR a través de la App Santander o App MODO con Tarjeta Santander Visa crédito y/o débito, todos los días. El ahorro se hará efectivo vía reintegro dentro de los 30 días de efectuado el consumo en la cuenta asociada del cliente. Es necesario que previo a realizarse el reintegro tengas asociada a MODO la cuenta que sea del mismo banco que la tarjeta con la que realizaste la compra. El tope de ahorro se calcula considerando la suma de las compras realizadas por el titular de tarjeta y sus adicionales. El tope de reintegro mensual será de $10.000 para todos los clientes Santander Visa, y el tope de reintegro mensual para clientes adheridos a Sorpresa Santander será de $10.000 extra. Ejemplo: En una compra con tarjeta Santander VISA debito adherida a Sorpresa de $20.000 registrara un consumo de $20.000, un reintegro de $1.000 y otro reintegro por sorpresa de $1.000.</p>",
+    "benefitType": {
+      "id": 1,
+      "description": "Ahorro",
+      "code": "A"
+    },
+    "paymentType": {
+      "id": 3,
+      "description": "QR - Modo",
+      "code": "M"
+    },
+    "paymentMethod": null,
+    "frecuency": {
+      "id": 2,
+      "description": "Mensual",
+      "code": "M"
+    },
+    "tag": null,
+    "brands": [
+      {
+        "id": 60,
+        "code": "",
+        "name": "Café Martínez",
+        "desktopImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/Cafe_Martinez_desktopImage.png",
+        "desktopMinImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/Cafe_Martinez_desktopMinImage.png",
+        "mobileImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/Cafe_Martinez_mobileImage.png",
+        "mobileMinImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/Cafe_Martinez_mobileMinImage.png",
+        "active": true,
+        "order": 1,
+        "benefitDescription": null,
+        "colorCode": "",
+        "brandType": {
+          "id": 1,
+          "description": "Standar",
+          "code": "STA",
+          "active": true
+        }
+      }
+    ],
+    "relatedPublications": null,
+    "categories": [
+      {
+        "id": 11,
+        "description": "Gastronomía",
+        "code": "GAS"
+      },
+      {
+        "id": 36,
+        "description": "Modo",
+        "code": "MOD"
+      },
+      {
+        "id": 58,
+        "description": "Exclusiva Visa",
+        "code": "EXV"
+      }
+    ],
+    "texts": {
+      "title": "10% de ahorro",
+      "description": "Tope de reintegro: $10.000 mensual",
+      "discount": 10,
+      "untilDiscount": false
+    }
+  },
+  "detail": {
+    "id": 7557,
+    "initialDate": "2026-08-04T00:00:00",
+    "endDate": "2026-10-28T00:00:00",
+    "monday": false,
+    "tuesday": true,
+    "wednesday": true,
+    "thursday": false,
+    "friday": false,
+    "saturday": false,
+    "sunday": false,
+    "fullWeek": false,
+    "legal": "<p>Válido desde el 01/08/2026 hasta el 31/10/2026 todos los martes y miércoles en locales adheridos abonando con QR a través de la App Santander o App MODO con Tarjeta Santander Visa crédito y/o débito, todos los días. El ahorro se hará efectivo vía reintegro dentro de los 30 días de efectuado el consumo en la cuenta asociada del cliente. Es necesario que previo a realizarse el reintegro tengas asociada a MODO la cuenta que sea del mismo banco que la tarjeta con la que realizaste la compra. El tope de ahorro se calcula considerando la suma de las compras realizadas por el titular de tarjeta y sus adicionales. El tope de reintegro mensual será de $10.000 para todos los clientes Santander Visa, y el tope de reintegro mensual para clientes adheridos a Sorpresa Santander será de $10.000 extra. Ejemplo: En una compra con tarjeta Santander VISA debito adherida a Sorpresa de $20.000 registrara un consumo de $20.000, un reintegro de $1.000 y otro reintegro por sorpresa de $1.000.</p>",
+    "customerDiscount": 10,
+    "topAmount": 10000,
+    "additionalText": "<p>Pagando con <strong>QR</strong> a través de la <strong>App Santander</strong>.</p>",
+    "showCurrentMonthOnly": false,
+    "initialQuote": 0,
+    "finalQuote": 0,
+    "interestFreeFees": false,
+    "specialCondition": null,
+    "stock": 0,
+    "productSegmentation": "Masiva",
+    "additionalBenefit": false,
+    "order": 4,
+    "tag": null,
+    "frecuency": {
+      "id": 2,
+      "description": "Mensual",
+      "code": "M"
+    },
+    "paymentType": {
+      "id": 3,
+      "description": "QR - Modo",
+      "code": "M"
+    },
+    "paymentMethod": null,
+    "benefitType": {
+      "id": 1,
+      "description": "Ahorro",
+      "code": "A"
+    },
+    "categories": [
+      {
+        "id": 11,
+        "description": "Gastronomía",
+        "code": "GAS"
+      },
+      {
+        "id": 36,
+        "description": "Modo",
+        "code": "MOD"
+      },
+      {
+        "id": 58,
+        "description": "Exclusiva Visa",
+        "code": "EXV"
+      }
+    ],
+    "images": [],
+    "relatedPublications": null,
+    "cards": [
+      {
+        "id": 1,
+        "description": "VISA",
+        "code": "81",
+        "idType": 1,
+        "descriptionType": "DEBITO",
+        "codeType": "D",
+        "image": "https://microfe.santander.com.ar/premify/benefits/assets/images/visa_tarjeta_debito.png"
+      },
+      {
+        "id": 2,
+        "description": "VISA",
+        "code": "40",
+        "idType": 2,
+        "descriptionType": "CREDITO",
+        "codeType": "C",
+        "image": "https://microfe.santander.com.ar/premify/benefits/assets/images/visa_tarjeta_credito.png"
+      }
+    ],
+    "brands": [
+      {
+        "id": 23189,
+        "brand": {
+          "id": 60,
+          "code": "",
+          "name": "Café Martínez",
+          "desktopImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/Cafe_Martinez_desktopImage.png",
+          "desktopMinImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/Cafe_Martinez_desktopMinImage.png",
+          "mobileImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/Cafe_Martinez_mobileImage.png",
+          "mobileMinImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/Cafe_Martinez_mobileMinImage.png",
+          "active": true,
+          "order": 1,
+          "benefitDescription": null,
+          "colorCode": "",
+          "brandType": {
+            "id": 1,
+            "description": "Standar",
+            "code": "STA",
+            "active": true
+          }
+        },
+        "establishments": [
+          {
+            "id": 427084,
+            "address": "Sarmiento 451",
+            "city": "Victoria",
+            "province": "Entre Rios",
+            "fantasyName": "CM ENTRE RIOS VICTORIA",
+            "homePage": "",
+            "shopping": "",
+            "isApp": false,
+            "latitude": null,
+            "longitude": null
+          }
+        ]
+      }
+    ],
+    "texts": {
+      "title": "10% de ahorro",
+      "description": "Tope de reintegro: $10.000 mensual",
+      "discount": 10,
+      "untilDiscount": false
+    },
+    "homePages": []
+  },
+  "source": "santander",
+  "source_id": "60:7557",
+  "scraped_at": "2026-10-15T15:00:00+00:00",
+  "promotion_url": "https://www.santander.com.ar/personas/beneficios#/publication?brandId=60&programId=7557"
+}

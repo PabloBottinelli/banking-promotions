@@ -1,0 +1,234 @@
+{
+  "catalog": {
+    "id": 2906,
+    "code": "",
+    "name": "Humbe",
+    "desktopImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/brand_56c9d132-66c2-4bc6-988c-466302c23505.png",
+    "desktopMinImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/brand_2accca72-2f27-45c5-9d5d-7936ed89bbd3.png",
+    "mobileImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/brand_5b3d6c51-ff86-486a-a90b-4d4b2f413a2a.png",
+    "mobileMinImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/brand_f9e20bd9-d1d2-4366-90db-7d707455d1cd.png",
+    "active": true,
+    "order": 0,
+    "benefitDescription": "Hasta 6 cuotas sin interés",
+    "colorCode": null,
+    "brandType": {
+      "id": 3,
+      "description": "Espectaculo",
+      "code": "ESP",
+      "active": true
+    }
+  },
+  "program": {
+    "startDatePublication": "2026-02-06T00:00:00",
+    "endDatePublication": "2026-10-29T00:00:00",
+    "id": 6373,
+    "idPromotion": 12493,
+    "monday": true,
+    "tuesday": true,
+    "wednesday": true,
+    "thursday": true,
+    "friday": true,
+    "saturday": true,
+    "sunday": true,
+    "fullWeek": true,
+    "multiPublication": true,
+    "customerDiscount": 0,
+    "topAmount": null,
+    "additionalText": "<p><span style=\"font-size: 18px;\">28 de octubre | <strong>Teatro Gran Rex</strong></span><br><br><strong>EL CIELO COBRA VIDA EN BUENOS AIRES: HUMBE LLEGA AL MÍTICO TEATRO GRAN REX</strong><br><br>Humbe presenta por primera vez en Argentina “Dueño del Cielo” el 29 de octubre en el Teatro Gran Rex. El artista propone una experiencia artística y emocional única, construida desde un universo propio donde las canciones funcionan como puente entre la tierra y el cielo.<br><br>Uno de los artistas más destacados del pop alternativo en México y una de las voces más poéticas de su generación, llega a la Argentina para presentar en vivo su nuevo álbum “Dueño del Cielo”, el próximo 29 de octubre en el Teatro Gran Rex. Tras reunir a más de 26.000 personas en el Palacio de los Deportes de Ciudad de México para presentar oficialmente su nuevo trabajo, Humbe aterriza en Buenos Aires con un show que promete ser tan íntimo como inmenso.</p>\n",
+    "monthlyCut": false,
+    "initialQuote": 2,
+    "finalQuote": 6,
+    "interestFreeFees": true,
+    "specialCondition": null,
+    "order": 2,
+    "legal": "<p>PARA MÁS INFORMACIÓN Y CONDICIONES O LIMITACIONES APLICABLES EN LA ARGENTINA, CONSULTÁ EN SANTANDER.COM.AR.</p>\n<p>DISPONIBLE PARA CARTERA DE CONSUMO</p>\n<p><span style=\"font-size: 48px;\">C.F.T.E.A: 0%</span></p>\n<p>TASA FIJA NOMINAL ANUAL: 0%. TASA EFECTIVA ANUAL: 0%.</p>\n<p>Vigencia del 06/02/26 hasta el 29/10/26. Promoción valida sólo para Tarjeta Santander Visa, American Express y Mastercard. El beneficio aplica sólo sobre el precio de lista del valor de la entrada que figura en www.tuentrada.com  Cupo máximo de 6 entradas por cliente. Ejemplo: Una compra de $120.000 realizada con su Tarjeta Santander, podrá ser financiada en 6 cuotas de $20.000 cada una. Promoción válida sobre el valor de entradas. No incluye service charge. Los accionistas de Banco Santander Argentina S.A. no responden en exceso de su integración accionaria.</p>\n",
+    "benefitType": {
+      "id": 3,
+      "description": "Solo Cuotas",
+      "code": "C"
+    },
+    "paymentType": {
+      "id": 1,
+      "description": "No Aplica",
+      "code": "N"
+    },
+    "paymentMethod": {
+      "id": 2,
+      "description": "Cuotas",
+      "code": "CTA"
+    },
+    "frecuency": {
+      "id": 1,
+      "description": "No Aplica",
+      "code": "N"
+    },
+    "tag": null,
+    "brands": [
+      {
+        "id": 2906,
+        "code": "",
+        "name": "Humbe",
+        "desktopImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/brand_56c9d132-66c2-4bc6-988c-466302c23505.png",
+        "desktopMinImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/brand_2accca72-2f27-45c5-9d5d-7936ed89bbd3.png",
+        "mobileImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/brand_5b3d6c51-ff86-486a-a90b-4d4b2f413a2a.png",
+        "mobileMinImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/brand_f9e20bd9-d1d2-4366-90db-7d707455d1cd.png",
+        "active": true,
+        "order": 0,
+        "benefitDescription": null,
+        "colorCode": "",
+        "brandType": {
+          "id": 3,
+          "description": "Espectaculo",
+          "code": "ESP",
+          "active": true
+        }
+      }
+    ],
+    "relatedPublications": [],
+    "categories": [
+      {
+        "id": 8,
+        "description": "Espectáculos",
+        "code": "ESP"
+      }
+    ],
+    "texts": {
+      "title": "Humbe",
+      "description": "Hasta 6 cuotas sin interés"
+    }
+  },
+  "detail": {
+    "id": 6373,
+    "initialDate": "2026-02-06T00:00:00",
+    "endDate": "2026-10-29T00:00:00",
+    "monday": true,
+    "tuesday": true,
+    "wednesday": true,
+    "thursday": true,
+    "friday": true,
+    "saturday": true,
+    "sunday": true,
+    "fullWeek": true,
+    "legal": "<p>PARA MÁS INFORMACIÓN Y CONDICIONES O LIMITACIONES APLICABLES EN LA ARGENTINA, CONSULTÁ EN SANTANDER.COM.AR.</p>\n<p>DISPONIBLE PARA CARTERA DE CONSUMO</p>\n<p><span style=\"font-size: 48px;\">C.F.T.E.A: 0%</span></p>\n<p>TASA FIJA NOMINAL ANUAL: 0%. TASA EFECTIVA ANUAL: 0%.</p>\n<p>Vigencia del 06/02/26 hasta el 29/10/26. Promoción valida sólo para Tarjeta Santander Visa, American Express y Mastercard. El beneficio aplica sólo sobre el precio de lista del valor de la entrada que figura en www.tuentrada.com  Cupo máximo de 6 entradas por cliente. Ejemplo: Una compra de $120.000 realizada con su Tarjeta Santander, podrá ser financiada en 6 cuotas de $20.000 cada una. Promoción válida sobre el valor de entradas. No incluye service charge. Los accionistas de Banco Santander Argentina S.A. no responden en exceso de su integración accionaria.</p>\n",
+    "customerDiscount": 0,
+    "topAmount": null,
+    "additionalText": "<p><span style=\"font-size: 18px;\">28 de octubre | <strong>Teatro Gran Rex</strong></span><br><br><strong>EL CIELO COBRA VIDA EN BUENOS AIRES: HUMBE LLEGA AL MÍTICO TEATRO GRAN REX</strong><br><br>Humbe presenta por primera vez en Argentina “Dueño del Cielo” el 29 de octubre en el Teatro Gran Rex. El artista propone una experiencia artística y emocional única, construida desde un universo propio donde las canciones funcionan como puente entre la tierra y el cielo.<br><br>Uno de los artistas más destacados del pop alternativo en México y una de las voces más poéticas de su generación, llega a la Argentina para presentar en vivo su nuevo álbum “Dueño del Cielo”, el próximo 29 de octubre en el Teatro Gran Rex. Tras reunir a más de 26.000 personas en el Palacio de los Deportes de Ciudad de México para presentar oficialmente su nuevo trabajo, Humbe aterriza en Buenos Aires con un show que promete ser tan íntimo como inmenso.</p>\n",
+    "showCurrentMonthOnly": false,
+    "initialQuote": 2,
+    "finalQuote": 6,
+    "interestFreeFees": true,
+    "specialCondition": null,
+    "stock": 0,
+    "productSegmentation": "Masiva",
+    "additionalBenefit": false,
+    "order": 2,
+    "tag": null,
+    "frecuency": {
+      "id": 1,
+      "description": "No Aplica",
+      "code": "N"
+    },
+    "paymentType": {
+      "id": 1,
+      "description": "No Aplica",
+      "code": "N"
+    },
+    "paymentMethod": {
+      "id": 2,
+      "description": "Cuotas",
+      "code": "CTA"
+    },
+    "benefitType": {
+      "id": 3,
+      "description": "Solo Cuotas",
+      "code": "C"
+    },
+    "categories": [
+      {
+        "id": 8,
+        "description": "Espectáculos",
+        "code": "ESP"
+      }
+    ],
+    "images": [],
+    "relatedPublications": [],
+    "cards": [
+      {
+        "id": 2,
+        "description": "VISA",
+        "code": "40",
+        "idType": 2,
+        "descriptionType": "CREDITO",
+        "codeType": "C",
+        "image": "https://microfe.santander.com.ar/premify/benefits/assets/images/visa_tarjeta_credito.png"
+      },
+      {
+        "id": 4,
+        "description": "MASTER",
+        "code": "41",
+        "idType": 2,
+        "descriptionType": "CREDITO",
+        "codeType": "C",
+        "image": "https://microfe.santander.com.ar/premify/benefits/assets/images/mastercard_tarjeta_credito.png"
+      },
+      {
+        "id": 5,
+        "description": "AMEX",
+        "code": "42",
+        "idType": 2,
+        "descriptionType": "CREDITO",
+        "codeType": "C",
+        "image": "https://microfe.santander.com.ar/premify/benefits/assets/images/amex_tarjeta_credito.png"
+      }
+    ],
+    "brands": [
+      {
+        "id": 18771,
+        "brand": {
+          "id": 2906,
+          "code": "",
+          "name": "Humbe",
+          "desktopImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/brand_56c9d132-66c2-4bc6-988c-466302c23505.png",
+          "desktopMinImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/brand_2accca72-2f27-45c5-9d5d-7936ed89bbd3.png",
+          "mobileImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/brand_5b3d6c51-ff86-486a-a90b-4d4b2f413a2a.png",
+          "mobileMinImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/brand_f9e20bd9-d1d2-4366-90db-7d707455d1cd.png",
+          "active": true,
+          "order": 0,
+          "benefitDescription": null,
+          "colorCode": "",
+          "brandType": {
+            "id": 3,
+            "description": "Espectaculo",
+            "code": "ESP",
+            "active": true
+          }
+        },
+        "establishments": [
+          {
+            "id": 361279,
+            "address": "N",
+            "city": "N",
+            "province": "N",
+            "fantasyName": "HUMBE",
+            "homePage": "www.tuentrada.com",
+            "shopping": "N",
+            "isApp": false,
+            "latitude": null,
+            "longitude": null
+          }
+        ]
+      }
+    ],
+    "texts": {
+      "title": "Humbe",
+      "description": "Hasta 6 cuotas sin interés"
+    },
+    "homePages": [
+      "www.tuentrada.com"
+    ]
+  },
+  "source": "santander",
+  "source_id": "2906:6373",
+  "scraped_at": "2026-10-15T15:00:00+00:00",
+  "promotion_url": "https://www.santander.com.ar/personas/beneficios#/publication?brandId=2906&programId=6373"
+}

@@ -1,0 +1,239 @@
+{
+  "catalog": {
+    "id": 131,
+    "code": "",
+    "name": "Coto",
+    "desktopImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/Coto_desktopImage.png",
+    "desktopMinImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/coto_desktopMinImage.png",
+    "mobileImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/Coto_mobileImage.png",
+    "mobileMinImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/Coto_mobileMinImage.png",
+    "active": true,
+    "order": 2,
+    "benefitDescription": "30%",
+    "colorCode": "#9E3667",
+    "brandType": {
+      "id": 1,
+      "description": "Standar",
+      "code": "STA",
+      "active": true
+    }
+  },
+  "program": {
+    "startDatePublication": "2026-10-15T00:00:00",
+    "endDatePublication": "2026-10-15T00:00:00",
+    "id": 8075,
+    "idPromotion": 14297,
+    "monday": false,
+    "tuesday": false,
+    "wednesday": false,
+    "thursday": true,
+    "friday": false,
+    "saturday": false,
+    "sunday": false,
+    "fullWeek": false,
+    "multiPublication": true,
+    "customerDiscount": 30,
+    "topAmount": null,
+    "additionalText": "<p>Exclusivo pagando sin contacto desde el celu con <strong>NFC</strong>, a través de <strong>Apple Pay</strong> y <strong>Google Pay</strong>.</p><p></p><p>Exclusivo para locales físicos. No válido para venta online y/o Coto Digital.</p><p></p><p>El descuento se aplicará en línea de caja, al momento de realizar el pago.</p>",
+    "monthlyCut": true,
+    "initialQuote": 0,
+    "finalQuote": 0,
+    "interestFreeFees": false,
+    "specialCondition": null,
+    "order": 1,
+    "legal": "<p>Promoción vigente en la Ciudad Autónoma de Buenos Aires, Gran Buenos Aires, Neuquén, Mendoza, Entre Rios y Santa Fe, exclusivamente en todas las Sucursales Físicas de Coto ( “Coto”) (el “Territorio”) todos los días jueves, desde el 26 de febrero de 2026 hasta el 15 de octubre de 2026 (la “Vigencia”). </p><p>Promoción vigente para pagos NFC utilizando la Tarjeta Santander Visa débito a través de alguna de las siguientes billeteras digitales (las “Billeteras NFC”):</p><p>• Apple Pay (en caso de tener un dispositivo iOS)</p><p>• Google Pay, MODO Contactless (en caso de tener un dispositivo Android).</p><p>LA PROMOCIÓN NO APLICA PARA PAGOS QR.</p><p>Durante la Vigencia de la Promoción, el Participante que realice exitosamente un pago sin contacto con una Tarjeta Visa a través de las Billeteras NFC en Coto, recibirá un descuento del 30%. El descuento se aplicará en línea de caja, al momento de realizar el pago.</p><p>Participan de la Promoción únicamente las tiendas presenciales de Coto.</p><p>No válido para venta online y/o Coto Digital (WWW.COTODIGITAL.COM.AR).</p><p>No acumulable con otras promociones vigentes.</p><p>DESCUENTOS NO APLICABLES SOBRE PRODUCTOS INCLUIDOS EN PROGRAMAS DE PRECIOS DEL GOBIERNO Y/O APLICABLES POR NORMATIVA VIGENTE. DESCUENTOS NO VÁLIDOS PARA COMPRAS EN LOS PATIOS DE COMIDAS, COTO EXPRESSO, COTO BAR, ZONA JUEGOS Y ESTACIONAMIENTO PROPIO. NO INCLUYE ELECTRODOMÉSTICOS, NEUMÁTICOS NI RODADOS. NO INCLUYE PRODUCTOS DE BODEGAS CATENA ZAPATA, NICOLA CATENA, BODEGA ERNESTO CATENA (ALMA NEGRA, PADRILLOS, ANIMAL, ENEMIGO Y GRAN ENEMIGO), MALBEC DV CATENA BOT X 1,5LT, MALBEC LA RIOJA DV CATENA, MALBEC SALTA DV CATENA, SAINT FELICIEN, NICASIA, TILIA, BODEGA LA RURAL (RUTINI, TRUMPETER, SAN FELIPE Y CEPA TRADICIONAL SEMILLON/MALBEC- MALBEC/TINTO BLEND), CHANDON Y TERRAZAS DE LOS ANDES (LATITUD 33°, CASTEL, ALTOS DEL PLATA, VALMONT, BELTOUR, CHEVAL Y CLOS DU MOULIN), BODEGA NORTON (LOTE NEGRO, QUORUM VI, PRIVADA FAMILY BLEND), BODEGA CADUS WINES (CADUS), CASA PIRQUE (ALTALAND, LA POSTA, LUCA, ARUMA, PETIT CARO, MALBEC/CABERNET FRANC CASA DE HERRERO, MALBEC OJO DE BUEN CUBERO, MALBEC/CABERNET FRANC/PINOT NOIR CUCHILLO DE PALO, MALBEC RÍO DE LOS CIERVOS ARAUCANA, MALBEC NICO Y BLEND BESO DE DANTE LUCA), BODEGA BIANCHI</p><p>(VINO CHARDONNAY RESERVADO MARÍA CARMEN, VINO GRAN CORTE ENZO BIANCHI, VINOS MALBEC Y CABERNET SAUVIGNON PARTICULAR BIANCHI), BODEGA VALENTÍN BIANCHI (VINO TINTO CORTE Y MALBEC IV GENERACIÓN) BODEGA MONTEVIEJO (FESTIVO Y PETITE FLEUR) NI VINOS EN TETRABRIK NI GENEROSOS. EL DESCUENTO EN CHAMPAÑAS Y ESPUMANTES NO INCLUYE PRODUCTOS DE BODEGAS CHANDON, MERCIER, CATENA ZAPATA, BARÓN B, DOM PERIGNON, POMMERY, MÖET CHANDON, LA GRANDE DAME NI KRUG. NO INCLUYE CORTES DE CARNES DE NOVILLO, NOVILLITO, TERNERA, MENUDENCIAS NI CARNES ELABORADAS. NO INCLUYE POLLO ENTERO NI TROZADO, FRESCO NI CONGELADO, PORCINOS, EMBUTIDOS. NO INCLUYE LECHES INFANTILES ETAPAS 1 Y 2 (FLUÍDAS NI EN POLVO), NI HARINAS EN TODAS SUS PRESENTACIONES, NI AZÚCAR EN TODAS SUS PRESENTACIONES, NI ACEITE DE GIRASOL Y MEZCLA GIRASOL-SOJA EN TODAS SUS PRESENTACIONES. NO INCLUYE TODAS LAS PRESENTACIONES DE LAS SIGUIENTES MARCAS: COCA COLA, COCA COLA LIGHT, COCA COLA SIN AZÚCAR, CRUSH, FANTA, FANTA SIN AZÚCAR, SCHWEPPES, SPRITE, SPRITE SIN AZÚCAR, AQUARIUS, SMARTWATER, CEPITA, BENEDICTINO, POWERADE, ADES, HI-C NI MONSTER.</p><p>El Organizador y el Auspiciante podrán ampliar el tope de la bonificación o el plazo de vigencia de la Promoción. A su vez, cuando circunstancias no imputables al Organizador o no previstas en estos Términos que constituyan caso fortuito o fuerza mayor lo justifiquen, el Organizador podrá suspender, cancelar o modificar la Promoción.</p><p>Ver TYC: Supermercados COTO | Promociones | Visa</p>",
+    "benefitType": {
+      "id": 1,
+      "description": "Ahorro",
+      "code": "A"
+    },
+    "paymentType": {
+      "id": 2,
+      "description": "Contactless",
+      "code": "C"
+    },
+    "paymentMethod": null,
+    "frecuency": {
+      "id": 1,
+      "description": "No Aplica",
+      "code": "N"
+    },
+    "tag": {
+      "id": 7,
+      "description": "Exclusivo Visa",
+      "code": "EXV",
+      "status": false,
+      "colorCode": "#9E3667"
+    },
+    "brands": [
+      {
+        "id": 131,
+        "code": "",
+        "name": "Coto",
+        "desktopImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/Coto_desktopImage.png",
+        "desktopMinImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/coto_desktopMinImage.png",
+        "mobileImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/Coto_mobileImage.png",
+        "mobileMinImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/Coto_mobileMinImage.png",
+        "active": true,
+        "order": 2,
+        "benefitDescription": null,
+        "colorCode": "",
+        "brandType": {
+          "id": 1,
+          "description": "Standar",
+          "code": "STA",
+          "active": true
+        }
+      }
+    ],
+    "relatedPublications": [],
+    "categories": [
+      {
+        "id": 16,
+        "description": "Supermercados",
+        "code": "SUP"
+      },
+      {
+        "id": 56,
+        "description": "Destacado",
+        "code": "DES"
+      },
+      {
+        "id": 58,
+        "description": "Exclusiva Visa",
+        "code": "EXV"
+      },
+      {
+        "id": 417,
+        "description": "Everyday",
+        "code": "DAY"
+      }
+    ],
+    "texts": {
+      "title": "30% de ahorro",
+      "description": "Sin tope de reintegro",
+      "discount": 30,
+      "untilDiscount": false
+    }
+  },
+  "detail": {
+    "id": 8075,
+    "initialDate": "2026-10-15T00:00:00",
+    "endDate": "2026-10-15T00:00:00",
+    "monday": false,
+    "tuesday": false,
+    "wednesday": false,
+    "thursday": true,
+    "friday": false,
+    "saturday": false,
+    "sunday": false,
+    "fullWeek": false,
+    "legal": "<p>Promoción vigente en la Ciudad Autónoma de Buenos Aires, Gran Buenos Aires, Neuquén, Mendoza, Entre Rios y Santa Fe, exclusivamente en todas las Sucursales Físicas de Coto ( “Coto”) (el “Territorio”) todos los días jueves, desde el 26 de febrero de 2026 hasta el 15 de octubre de 2026 (la “Vigencia”). </p><p>Promoción vigente para pagos NFC utilizando la Tarjeta Santander Visa débito a través de alguna de las siguientes billeteras digitales (las “Billeteras NFC”):</p><p>• Apple Pay (en caso de tener un dispositivo iOS)</p><p>• Google Pay, MODO Contactless (en caso de tener un dispositivo Android).</p><p>LA PROMOCIÓN NO APLICA PARA PAGOS QR.</p><p>Durante la Vigencia de la Promoción, el Participante que realice exitosamente un pago sin contacto con una Tarjeta Visa a través de las Billeteras NFC en Coto, recibirá un descuento del 30%. El descuento se aplicará en línea de caja, al momento de realizar el pago.</p><p>Participan de la Promoción únicamente las tiendas presenciales de Coto.</p><p>No válido para venta online y/o Coto Digital (WWW.COTODIGITAL.COM.AR).</p><p>No acumulable con otras promociones vigentes.</p><p>DESCUENTOS NO APLICABLES SOBRE PRODUCTOS INCLUIDOS EN PROGRAMAS DE PRECIOS DEL GOBIERNO Y/O APLICABLES POR NORMATIVA VIGENTE. DESCUENTOS NO VÁLIDOS PARA COMPRAS EN LOS PATIOS DE COMIDAS, COTO EXPRESSO, COTO BAR, ZONA JUEGOS Y ESTACIONAMIENTO PROPIO. NO INCLUYE ELECTRODOMÉSTICOS, NEUMÁTICOS NI RODADOS. NO INCLUYE PRODUCTOS DE BODEGAS CATENA ZAPATA, NICOLA CATENA, BODEGA ERNESTO CATENA (ALMA NEGRA, PADRILLOS, ANIMAL, ENEMIGO Y GRAN ENEMIGO), MALBEC DV CATENA BOT X 1,5LT, MALBEC LA RIOJA DV CATENA, MALBEC SALTA DV CATENA, SAINT FELICIEN, NICASIA, TILIA, BODEGA LA RURAL (RUTINI, TRUMPETER, SAN FELIPE Y CEPA TRADICIONAL SEMILLON/MALBEC- MALBEC/TINTO BLEND), CHANDON Y TERRAZAS DE LOS ANDES (LATITUD 33°, CASTEL, ALTOS DEL PLATA, VALMONT, BELTOUR, CHEVAL Y CLOS DU MOULIN), BODEGA NORTON (LOTE NEGRO, QUORUM VI, PRIVADA FAMILY BLEND), BODEGA CADUS WINES (CADUS), CASA PIRQUE (ALTALAND, LA POSTA, LUCA, ARUMA, PETIT CARO, MALBEC/CABERNET FRANC CASA DE HERRERO, MALBEC OJO DE BUEN CUBERO, MALBEC/CABERNET FRANC/PINOT NOIR CUCHILLO DE PALO, MALBEC RÍO DE LOS CIERVOS ARAUCANA, MALBEC NICO Y BLEND BESO DE DANTE LUCA), BODEGA BIANCHI</p><p>(VINO CHARDONNAY RESERVADO MARÍA CARMEN, VINO GRAN CORTE ENZO BIANCHI, VINOS MALBEC Y CABERNET SAUVIGNON PARTICULAR BIANCHI), BODEGA VALENTÍN BIANCHI (VINO TINTO CORTE Y MALBEC IV GENERACIÓN) BODEGA MONTEVIEJO (FESTIVO Y PETITE FLEUR) NI VINOS EN TETRABRIK NI GENEROSOS. EL DESCUENTO EN CHAMPAÑAS Y ESPUMANTES NO INCLUYE PRODUCTOS DE BODEGAS CHANDON, MERCIER, CATENA ZAPATA, BARÓN B, DOM PERIGNON, POMMERY, MÖET CHANDON, LA GRANDE DAME NI KRUG. NO INCLUYE CORTES DE CARNES DE NOVILLO, NOVILLITO, TERNERA, MENUDENCIAS NI CARNES ELABORADAS. NO INCLUYE POLLO ENTERO NI TROZADO, FRESCO NI CONGELADO, PORCINOS, EMBUTIDOS. NO INCLUYE LECHES INFANTILES ETAPAS 1 Y 2 (FLUÍDAS NI EN POLVO), NI HARINAS EN TODAS SUS PRESENTACIONES, NI AZÚCAR EN TODAS SUS PRESENTACIONES, NI ACEITE DE GIRASOL Y MEZCLA GIRASOL-SOJA EN TODAS SUS PRESENTACIONES. NO INCLUYE TODAS LAS PRESENTACIONES DE LAS SIGUIENTES MARCAS: COCA COLA, COCA COLA LIGHT, COCA COLA SIN AZÚCAR, CRUSH, FANTA, FANTA SIN AZÚCAR, SCHWEPPES, SPRITE, SPRITE SIN AZÚCAR, AQUARIUS, SMARTWATER, CEPITA, BENEDICTINO, POWERADE, ADES, HI-C NI MONSTER.</p><p>El Organizador y el Auspiciante podrán ampliar el tope de la bonificación o el plazo de vigencia de la Promoción. A su vez, cuando circunstancias no imputables al Organizador o no previstas en estos Términos que constituyan caso fortuito o fuerza mayor lo justifiquen, el Organizador podrá suspender, cancelar o modificar la Promoción.</p><p>Ver TYC: Supermercados COTO | Promociones | Visa</p>",
+    "customerDiscount": 30,
+    "topAmount": null,
+    "additionalText": "<p>Exclusivo pagando sin contacto desde el celu con <strong>NFC</strong>, a través de <strong>Apple Pay</strong> y <strong>Google Pay</strong>.</p><p></p><p>Exclusivo para locales físicos. No válido para venta online y/o Coto Digital.</p><p></p><p>El descuento se aplicará en línea de caja, al momento de realizar el pago.</p>",
+    "showCurrentMonthOnly": true,
+    "initialQuote": 0,
+    "finalQuote": 0,
+    "interestFreeFees": false,
+    "specialCondition": null,
+    "stock": 0,
+    "productSegmentation": "Masiva",
+    "additionalBenefit": false,
+    "order": 1,
+    "tag": {
+      "id": 7,
+      "description": "Exclusivo Visa",
+      "code": "EXV",
+      "status": false,
+      "colorCode": "#9E3667"
+    },
+    "frecuency": {
+      "id": 1,
+      "description": "No Aplica",
+      "code": "N"
+    },
+    "paymentType": {
+      "id": 2,
+      "description": "Contactless",
+      "code": "C"
+    },
+    "paymentMethod": null,
+    "benefitType": {
+      "id": 1,
+      "description": "Ahorro",
+      "code": "A"
+    },
+    "categories": [
+      {
+        "id": 16,
+        "description": "Supermercados",
+        "code": "SUP"
+      },
+      {
+        "id": 56,
+        "description": "Destacado",
+        "code": "DES"
+      },
+      {
+        "id": 58,
+        "description": "Exclusiva Visa",
+        "code": "EXV"
+      },
+      {
+        "id": 417,
+        "description": "Everyday",
+        "code": "DAY"
+      }
+    ],
+    "images": [],
+    "relatedPublications": [],
+    "cards": [
+      {
+        "id": 1,
+        "description": "VISA",
+        "code": "81",
+        "idType": 1,
+        "descriptionType": "DEBITO",
+        "codeType": "D",
+        "image": "https://microfe.santander.com.ar/premify/benefits/assets/images/visa_tarjeta_debito.png"
+      }
+    ],
+    "brands": [
+      {
+        "id": 26511,
+        "brand": {
+          "id": 131,
+          "code": "",
+          "name": "Coto",
+          "desktopImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/Coto_desktopImage.png",
+          "desktopMinImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/coto_desktopMinImage.png",
+          "mobileImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/Coto_mobileImage.png",
+          "mobileMinImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/Coto_mobileMinImage.png",
+          "active": true,
+          "order": 2,
+          "benefitDescription": null,
+          "colorCode": "",
+          "brandType": {
+            "id": 1,
+            "description": "Standar",
+            "code": "STA",
+            "active": true
+          }
+        },
+        "establishments": []
+      }
+    ],
+    "texts": {
+      "title": "30% de ahorro",
+      "description": "Sin tope de reintegro",
+      "discount": 30,
+      "untilDiscount": false
+    },
+    "homePages": []
+  },
+  "source": "santander",
+  "source_id": "131:8075",
+  "scraped_at": "2026-10-15T15:00:00+00:00",
+  "promotion_url": "https://www.santander.com.ar/personas/beneficios#/publication?brandId=131&programId=8075"
+}
