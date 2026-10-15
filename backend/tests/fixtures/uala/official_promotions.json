@@ -1,0 +1,1233 @@
+[
+  {
+    "source": "uala",
+    "source_id": "FJ7jjr9K5kDkHQWr7SfcJ",
+    "source_url": "https://www.uala.com.ar/promociones/ypf",
+    "catalog_url": "https://www.uala.com.ar/promociones",
+    "scraped_at": "2026-10-15T20:49:45.656946+00:00",
+    "catalog": {
+      "sys": {
+        "id": "FJ7jjr9K5kDkHQWr7SfcJ"
+      },
+      "fields": {
+        "brand": "YPF",
+        "urlDeLaPromocion": "ypf",
+        "PromotionCategory": [
+          {
+            "metadata": {
+              "tags": [],
+              "concepts": []
+            },
+            "sys": {
+              "space": {
+                "sys": {
+                  "type": "Link",
+                  "linkType": "Space",
+                  "id": "6n252fx9hkkr"
+                }
+              },
+              "id": "5EwBFsFe1mlZU50akXVNhz",
+              "type": "Entry",
+              "createdAt": "2024-03-11T14:47:22.282Z",
+              "updatedAt": "2024-03-11T14:47:22.282Z",
+              "environment": {
+                "sys": {
+                  "id": "master",
+                  "type": "Link",
+                  "linkType": "Environment"
+                }
+              },
+              "publishedVersion": 1,
+              "revision": 1,
+              "contentType": {
+                "sys": {
+                  "type": "Link",
+                  "linkType": "ContentType",
+                  "id": "promotionCategory"
+                }
+              },
+              "locale": "en-US"
+            },
+            "fields": {
+              "Category": "Combustible"
+            }
+          }
+        ],
+        "PromotionSpecs": [
+          {
+            "sys": {
+              "id": "643zfvOjSJcRpoEb4Oy5kj"
+            },
+            "fields": {
+              "promotionLegal": "TÉRMINOS Y CONDICIONES — “YPF Mastercard EDV 2026”\n\nPromoción ofrecida por YPF S.A., CUIT 30-54668997-9, con domicilio en Macacha Güemes 515, Ciudad Autónoma de Buenos Aires, República Argentina (“YPF”), válida en la República Argentina, exclusivamente para compras de combustible realizadas con tarjeta de crédito y/o tarjeta prepaga de la marca “Mastercard” emitidas por Ualá Bank S.A.U., CUIT 30-71565463-2, con domicilio en Coronel Marcelino Freyre 3650, oficina 105, Ciudad Autónoma de Buenos Aires, Argentina (“Ualá”) (la/s “Tarjeta/s”) asociadas a la aplicación móvil “App YPF” (la “Aplicación”), los días lunes comprendidos desde las 00:00hs del 28/09/2026 hasta las 23:59hs del 31/10/2026 (el “Plazo de Vigencia”) en estaciones de servicio de YPF de la República Argentina (la “Promoción”).\nLa Promoción requiere un monto mínimo de compra de $35.000 (pesos argentinos treinta y cinco mil) y consiste en el reintegro de un 10% (diez por ciento) del monto abonado por la carga de combustible con un tope de reintegro semanal de $6.000 (pesos argentinos seis mil) por Tarjeta (el “Reintegro”).\nPara los consumos abonados con Tarjeta de crédito, el Reintegro será realizado dentro de los 60 (sesenta) días posteriores a la fecha de la transacción o dentro de los próximos 2 (dos) resúmenes. Para los consumos abonados con Tarjeta prepaga, el Reintegro será realizado dentro de los 30 (treinta) días posteriores a la fecha de la transacción en la cuenta asociada a la Tarjeta.\nPromoción no acumulable con otras promociones y/o beneficios vigentes ajenos a la presente acción. YPF es el exclusivo responsable por la prestación, correcto funcionamiento y/o garantía del producto y/o servicio adquirido. La Promoción podrá ser dejada sin efecto en cualquier momento por Ualá y por Mastercard Cono Sur S.R.L. por razones operativas, comerciales, regulatorias, de fuerza mayor o por circunstancias que así lo justifiquen. En tales casos, la medida será comunicada por los mismos medios utilizados para difundir la Promoción, sin afectar los Reintegros válidamente obtenidos con anterioridad a su finalización.\nPara más información se deberá consultar en el chat de la aplicación móvil Ualá ingresando desde el perfil del usuario en la sección “ayuda”. La Tarjeta de crédito y/o Tarjeta prepaga es ofrecida por Ualá, entidad financiera debidamente autorizada por el BCRA y se encuentra sujeta a condición crediticia. Para más información y condiciones o limitaciones aplicables, consulte en www.uala.com.ar/promociones.\n"
+            }
+          }
+        ]
+      }
+    },
+    "detail": {
+      "id": "FJ7jjr9K5kDkHQWr7SfcJ",
+      "seo": {
+        "title": "YPF- Promociones Ualá ",
+        "metaDescription": "Obtené un reintegro del 10% en la carga de combustible pagando con tus tarjetas Ualá a través de la app de YPF",
+        "canonical": "https://www.uala.com.ar/promociones/ypf"
+      },
+      "extraPromotion": null,
+      "logo": {
+        "src": "https://images.ctfassets.net/6n252fx9hkkr/1QFzktDgapkwEXuvmHuRhy/3f3405c8719db57842336b013295c488/logo_YPF_MC.webp",
+        "alt": "logo YPF+MC"
+      },
+      "specs": [
+        {
+          "id": "643zfvOjSJcRpoEb4Oy5kj",
+          "title": "10% de reintegro en combustible",
+          "description": "Válido para compras a partir de $35.000 pagando a través de la app de YPF",
+          "cta": null,
+          "expandCardText": "Ver más",
+          "paymentMethods": [
+            "Tarjeta de Crédito",
+            "Tarjeta Prepaga"
+          ],
+          "days": [
+            "Lunes"
+          ],
+          "place": [
+            "Físico"
+          ],
+          "date": "31 de octubre de 2026",
+          "cashback": "$6.000 semanal",
+          "cashdate": "hasta 60 dias ",
+          "availability": [
+            "Todo el país"
+          ],
+          "legalDisclaimer": "TÉRMINOS Y CONDICIONES — “YPF Mastercard EDV 2026”\n\nPromoción ofrecida por YPF S.A., CUIT 30-54668997-9, con domicilio en Macacha Güemes 515, Ciudad Autónoma de Buenos Aires, República Argentina (“YPF”), válida en la República Argentina, exclusivamente para compras de combustible realizadas con tarjeta de crédito y/o tarjeta prepaga de la marca “Mastercard” emitidas por Ualá Bank S.A.U., CUIT 30-71565463-2, con domicilio en Coronel Marcelino Freyre 3650, oficina 105, Ciudad Autónoma de Buenos Aires, Argentina (“Ualá”) (la/s “Tarjeta/s”) asociadas a la aplicación móvil “App YPF” (la “Aplicación”), los días lunes comprendidos desde las 00:00hs del 28/09/2026 hasta las 23:59hs del 31/10/2026 (el “Plazo de Vigencia”) en estaciones de servicio de YPF de la República Argentina (la “Promoción”).\nLa Promoción requiere un monto mínimo de compra de $35.000 (pesos argentinos treinta y cinco mil) y consiste en el reintegro de un 10% (diez por ciento) del monto abonado por la carga de combustible con un tope de reintegro semanal de $6.000 (pesos argentinos seis mil) por Tarjeta (el “Reintegro”).\nPara los consumos abonados con Tarjeta de crédito, el Reintegro será realizado dentro de los 60 (sesenta) días posteriores a la fecha de la transacción o dentro de los próximos 2 (dos) resúmenes. Para los consumos abonados con Tarjeta prepaga, el Reintegro será realizado dentro de los 30 (treinta) días posteriores a la fecha de la transacción en la cuenta asociada a la Tarjeta.\nPromoción no acumulable con otras promociones y/o beneficios vigentes ajenos a la presente acción. YPF es el exclusivo responsable por la prestación, correcto funcionamiento y/o garantía del producto y/o servicio adquirido. La Promoción podrá ser dejada sin efecto en cualquier momento por Ualá y por Mastercard Cono Sur S.R.L. por razones operativas, comerciales, regulatorias, de fuerza mayor o por circunstancias que así lo justifiquen. En tales casos, la medida será comunicada por los mismos medios utilizados para difundir la Promoción, sin afectar los Reintegros válidamente obtenidos con anterioridad a su finalización.\nPara más información se deberá consultar en el chat de la aplicación móvil Ualá ingresando desde el perfil del usuario en la sección “ayuda”. La Tarjeta de crédito y/o Tarjeta prepaga es ofrecida por Ualá, entidad financiera debidamente autorizada por el BCRA y se encuentra sujeta a condición crediticia. Para más información y condiciones o limitaciones aplicables, consulte en www.uala.com.ar/promociones.\n"
+        }
+      ]
+    }
+  },
+  {
+    "source": "uala",
+    "source_id": "5WQeDYeRqbjUb68OIhjeJ9",
+    "source_url": "https://www.uala.com.ar/promociones/colectivos",
+    "catalog_url": "https://www.uala.com.ar/promociones",
+    "scraped_at": "2026-10-15T20:49:45.656946+00:00",
+    "catalog": {
+      "sys": {
+        "id": "5WQeDYeRqbjUb68OIhjeJ9"
+      },
+      "fields": {
+        "brand": "Colectivos",
+        "urlDeLaPromocion": "colectivos",
+        "PromotionCategory": [
+          {
+            "metadata": {
+              "tags": [],
+              "concepts": []
+            },
+            "sys": {
+              "space": {
+                "sys": {
+                  "type": "Link",
+                  "linkType": "Space",
+                  "id": "6n252fx9hkkr"
+                }
+              },
+              "id": "73lQLxHz6exDUdoRMpNji2",
+              "type": "Entry",
+              "createdAt": "2024-03-11T14:47:24.220Z",
+              "updatedAt": "2024-03-11T14:47:24.220Z",
+              "environment": {
+                "sys": {
+                  "id": "master",
+                  "type": "Link",
+                  "linkType": "Environment"
+                }
+              },
+              "publishedVersion": 1,
+              "revision": 1,
+              "contentType": {
+                "sys": {
+                  "type": "Link",
+                  "linkType": "ContentType",
+                  "id": "promotionCategory"
+                }
+              },
+              "locale": "en-US"
+            },
+            "fields": {
+              "Category": "Transporte"
+            }
+          }
+        ],
+        "PromotionSpecs": [
+          {
+            "sys": {
+              "id": "7DLcEYki0tlthMmHioIfrG"
+            },
+            "fields": {
+              "promotionLegal": "TÉRMINOS Y CONDICIONES — “Mastercard Transporte 2026”\nPromoción válida desde las 00:00hs del 01/10/2026 hasta las 23:59hs del 31/10/2026 (el “Plazo de Vigencia”), en todas las unidades de las líneas de colectivos de la República Argentina habilitadas para abonar el boleto con tarjetas, exclusivamente para los pasajes abonados por titulares de la tarjeta de crédito y/o tarjeta prepaga de la marca “Mastercard”, emitidas por Ualá Bank S.A.U., CUIT 30-71565463-2, con domicilio en Coronel Marcelino Freyre 3650, oficina 105, Ciudad Autónoma de Buenos Aires, Argentina (“Ualá”), (la/s “Tarjeta/s”) mediante dispositivos móviles a través de la tecnología Near Field Communication (NFC) desde billeteras virtuales habilitadas (la “Promoción”).\nLa Promoción consiste en otorgar un 100% (cien por ciento) de descuento sobre el valor de cada viaje abonado durante el Plazo de Vigencia, aplicable con un tope de reintegro mensual de $25.000 (pesos argentinos veinticinco mil) por Tarjeta (el “Reintegro”).\nPara los consumos abonados con Tarjeta de crédito, el Reintegro será realizado dentro de los 60 (sesenta) días posteriores a la fecha de la transacción o dentro de los próximos 2 (dos) resúmenes. Para los consumos abonados con Tarjeta prepaga, el Reintegro será realizado dentro de los 30 (treinta) días posteriores a la fecha de la transacción en la cuenta asociada a la Tarjeta prepaga.\nPromoción no acumulable con otras promociones y/o beneficios vigentes. La Promoción podrá ser dejada sin efecto en cualquier momento por Ualá y por Mastercard Cono Sur S.R.L. por razones operativas, comerciales, regulatorias, de fuerza mayor o por circunstancias que así lo justifiquen. En tales casos, la medida será comunicada por los mismos medios utilizados para difundir la Promoción, sin afectar los Reintegros válidamente obtenidos con anterioridad a su finalización.\nPara más información se deberá consultar en el chat de la aplicación móvil Ualá ingresando desde el perfil del usuario en la sección “ayuda”. Las Tarjetas son ofrecidas por Ualá, entidad financiera debidamente autorizada por el BCRA y se encuentra sujeta a condición crediticia. Para más información y condiciones o limitaciones aplicables, consulte en www.uala.com.ar/promociones.\n"
+            }
+          }
+        ]
+      }
+    },
+    "detail": {
+      "id": "5WQeDYeRqbjUb68OIhjeJ9",
+      "seo": {
+        "title": "Colectivos - Promociones Ualá",
+        "metaDescription": "Obtené un 100% de reintegro en colectivos hasta $25000 por mes pagando con Mastercard Contactless",
+        "canonical": "https://www.uala.com.ar/promociones/colectivos"
+      },
+      "extraPromotion": null,
+      "logo": {
+        "src": "https://images.ctfassets.net/6n252fx9hkkr/3daHNmxZz3hOjX13XYyuEV/93d328a4b865e59c9aad5f51e5f63ed1/logo_Colectivos_MC.webp",
+        "alt": "logo Colectivos+MC"
+      },
+      "specs": [
+        {
+          "id": "7DLcEYki0tlthMmHioIfrG",
+          "title": "100% de reintegro en colectivos",
+          "description": "Pagá con tu tarjeta Ualá desde la billetera de tu celular",
+          "cta": null,
+          "expandCardText": "Ver más",
+          "paymentMethods": [
+            "Tarjeta Prepaga",
+            "Tarjeta de Crédito"
+          ],
+          "days": [
+            "Todos los días"
+          ],
+          "place": [
+            "Físico"
+          ],
+          "date": "31 de octubre 2026",
+          "cashback": "$25000 por mes",
+          "cashdate": "Hasta 60 dias",
+          "availability": [
+            "Todo el país"
+          ],
+          "legalDisclaimer": "TÉRMINOS Y CONDICIONES — “Mastercard Transporte 2026”\nPromoción válida desde las 00:00hs del 01/10/2026 hasta las 23:59hs del 31/10/2026 (el “Plazo de Vigencia”), en todas las unidades de las líneas de colectivos de la República Argentina habilitadas para abonar el boleto con tarjetas, exclusivamente para los pasajes abonados por titulares de la tarjeta de crédito y/o tarjeta prepaga de la marca “Mastercard”, emitidas por Ualá Bank S.A.U., CUIT 30-71565463-2, con domicilio en Coronel Marcelino Freyre 3650, oficina 105, Ciudad Autónoma de Buenos Aires, Argentina (“Ualá”), (la/s “Tarjeta/s”) mediante dispositivos móviles a través de la tecnología Near Field Communication (NFC) desde billeteras virtuales habilitadas (la “Promoción”).\nLa Promoción consiste en otorgar un 100% (cien por ciento) de descuento sobre el valor de cada viaje abonado durante el Plazo de Vigencia, aplicable con un tope de reintegro mensual de $25.000 (pesos argentinos veinticinco mil) por Tarjeta (el “Reintegro”).\nPara los consumos abonados con Tarjeta de crédito, el Reintegro será realizado dentro de los 60 (sesenta) días posteriores a la fecha de la transacción o dentro de los próximos 2 (dos) resúmenes. Para los consumos abonados con Tarjeta prepaga, el Reintegro será realizado dentro de los 30 (treinta) días posteriores a la fecha de la transacción en la cuenta asociada a la Tarjeta prepaga.\nPromoción no acumulable con otras promociones y/o beneficios vigentes. La Promoción podrá ser dejada sin efecto en cualquier momento por Ualá y por Mastercard Cono Sur S.R.L. por razones operativas, comerciales, regulatorias, de fuerza mayor o por circunstancias que así lo justifiquen. En tales casos, la medida será comunicada por los mismos medios utilizados para difundir la Promoción, sin afectar los Reintegros válidamente obtenidos con anterioridad a su finalización.\nPara más información se deberá consultar en el chat de la aplicación móvil Ualá ingresando desde el perfil del usuario en la sección “ayuda”. Las Tarjetas son ofrecidas por Ualá, entidad financiera debidamente autorizada por el BCRA y se encuentra sujeta a condición crediticia. Para más información y condiciones o limitaciones aplicables, consulte en www.uala.com.ar/promociones.\n"
+        }
+      ]
+    }
+  },
+  {
+    "source": "uala",
+    "source_id": "1xwbNMpWDJdycyENzdgqKw",
+    "source_url": "https://www.uala.com.ar/promociones/pedidosya",
+    "catalog_url": "https://www.uala.com.ar/promociones",
+    "scraped_at": "2026-10-15T20:49:45.656946+00:00",
+    "catalog": {
+      "sys": {
+        "id": "1xwbNMpWDJdycyENzdgqKw"
+      },
+      "fields": {
+        "brand": "Pedidos Ya",
+        "urlDeLaPromocion": "pedidosya",
+        "PromotionCategory": [
+          {
+            "metadata": {
+              "tags": [],
+              "concepts": []
+            },
+            "sys": {
+              "space": {
+                "sys": {
+                  "type": "Link",
+                  "linkType": "Space",
+                  "id": "6n252fx9hkkr"
+                }
+              },
+              "id": "2kVdayCqLsOJcUjxSLcaaG",
+              "type": "Entry",
+              "createdAt": "2024-03-11T14:46:29.004Z",
+              "updatedAt": "2024-03-11T14:46:29.004Z",
+              "environment": {
+                "sys": {
+                  "id": "master",
+                  "type": "Link",
+                  "linkType": "Environment"
+                }
+              },
+              "publishedVersion": 1,
+              "revision": 1,
+              "contentType": {
+                "sys": {
+                  "type": "Link",
+                  "linkType": "ContentType",
+                  "id": "promotionCategory"
+                }
+              },
+              "locale": "en-US"
+            },
+            "fields": {
+              "Category": "Delivery"
+            }
+          }
+        ],
+        "PromotionSpecs": [
+          {
+            "sys": {
+              "id": "6vxgqj0wdRhP17VcBMM9P7"
+            },
+            "fields": {
+              "promotionLegal": "TÉRMINOS Y CONDICIONES - “PedidosYa Mascotas Mastercard 2026”\nPromoción ofrecida por Delivery Hero E-Commerce S.A. (“PedidosYa”), CUIT 30-71198576-6, con domicilio en Av. Del Libertador 7208, Piso 20, Ciudad Autónoma de Buenos Aires, República Argentina, válida en la República Argentina, exclusivamente a compras realizadas con Tarjetas de Crédito los días sábado, comprendidos entre las 00:00hs del 19/09/2026 hasta las 23:59hs del 31/10/2026 (el “Plazo de Vigencia”), en la vertical “Mascotas” a través del sitio web www.pedidosya.com.ar o de la aplicación móvil “PedidosYa” (conjuntamente, el “Portal”), en aquellos comercios adheridos que acepten la modalidad de “pago online” (la “Promoción”).\nSerá condición necesaria para acceder a la Promoción contar con una suscripción activa al programa “PedidosYa Plus” y abonar la compra por medio del Portal con la tarjeta de crédito de la marca “Mastercard” emitida por Ualá Bank S.A.U., CUIT 30-71565463-2, con domicilio en Coronel Marcelino Freyre 3650 Of. 105, Ciudad Autónoma de Buenos Aires, Argentina (“Ualá”) (la “Tarjeta de Crédito”).\nEl beneficio consistirá en un descuento del 25% (veinticinco por ciento) aplicado de forma directa sobre el valor de la compra con Tarjeta de Crédito, con un importe máximo de descuento de $15.000 (pesos argentinos quince mil) por Tarjeta de Crédito por mes calendario (el “Beneficio”).\nPromoción acumulable con otras ofertas y/o promociones vigentes en el Portal. Beneficio sujeto a disponibilidad de repartidores y zonas de entrega. PedidosYa es el exclusivo responsable por la prestación, correcto funcionamiento y/o garantía del producto y/o servicio adquirido, y cualquier reclamo deberá dirigirse contra ellos. La Promoción podrá ser dejada sin efecto en cualquier momento por PedidosYa, Ualá y por Mastercard Cono Sur S.R.L. por razones operativas, comerciales, regulatorias, de fuerza mayor o por circunstancias que así lo justifiquen. En tales casos, la medida será comunicada por los mismos medios utilizados para difundir la Promoción, sin afectar los Beneficios válidamente obtenidos con anterioridad a su finalización.\nPara más información se deberá consultar en el chat de la aplicación móvil Ualá ingresando desde el perfil del usuario en la sección “ayuda”. La Tarjeta de Crédito es ofrecida por Ualá, entidad financiera debidamente autorizada por el BCRA y se encuentra sujeta a condición crediticia. Para más información y condiciones o limitaciones aplicables, consulte en www.uala.com.ar/promociones. \n"
+            }
+          }
+        ]
+      }
+    },
+    "detail": {
+      "id": "1xwbNMpWDJdycyENzdgqKw",
+      "seo": {
+        "title": "Pedidos Ya - Promociones Ualá",
+        "metaDescription": "Obtené un 25% de reintegro en Pedidos Ya Mascotas pagando con tu tarjeta de crédito Ualá",
+        "canonical": "https://www.uala.com.ar/promociones/pedidosya"
+      },
+      "extraPromotion": null,
+      "logo": {
+        "src": "https://images.ctfassets.net/6n252fx9hkkr/2H18G4yWKXU13kPc6bxM7W/d739254da8ec263bef7888f9710c7826/logo_PedidosYa_MC.webp",
+        "alt": "logo PedidosYa+MC lightmode"
+      },
+      "specs": [
+        {
+          "id": "6vxgqj0wdRhP17VcBMM9P7",
+          "title": "25% de reintegro ",
+          "description": "en la sección Mascotas",
+          "cta": {
+            "text": "Aprovechalo",
+            "href": "https://www.pedidosya.com.ar/"
+          },
+          "expandCardText": "Ver más",
+          "paymentMethods": [
+            "Tarjeta de Crédito",
+            "Tarjeta Prepaga"
+          ],
+          "days": [
+            "Todos los días"
+          ],
+          "place": [
+            "Online"
+          ],
+          "date": "31 de octubre 2026",
+          "cashback": "$25.000 mensual",
+          "cashdate": "hasta 60 dias ",
+          "availability": [
+            "Todo el país"
+          ],
+          "legalDisclaimer": "TÉRMINOS Y CONDICIONES - “PedidosYa Mascotas Mastercard 2026”\nPromoción ofrecida por Delivery Hero E-Commerce S.A. (“PedidosYa”), CUIT 30-71198576-6, con domicilio en Av. Del Libertador 7208, Piso 20, Ciudad Autónoma de Buenos Aires, República Argentina, válida en la República Argentina, exclusivamente a compras realizadas con Tarjetas de Crédito los días sábado, comprendidos entre las 00:00hs del 19/09/2026 hasta las 23:59hs del 31/10/2026 (el “Plazo de Vigencia”), en la vertical “Mascotas” a través del sitio web www.pedidosya.com.ar o de la aplicación móvil “PedidosYa” (conjuntamente, el “Portal”), en aquellos comercios adheridos que acepten la modalidad de “pago online” (la “Promoción”).\nSerá condición necesaria para acceder a la Promoción contar con una suscripción activa al programa “PedidosYa Plus” y abonar la compra por medio del Portal con la tarjeta de crédito de la marca “Mastercard” emitida por Ualá Bank S.A.U., CUIT 30-71565463-2, con domicilio en Coronel Marcelino Freyre 3650 Of. 105, Ciudad Autónoma de Buenos Aires, Argentina (“Ualá”) (la “Tarjeta de Crédito”).\nEl beneficio consistirá en un descuento del 25% (veinticinco por ciento) aplicado de forma directa sobre el valor de la compra con Tarjeta de Crédito, con un importe máximo de descuento de $15.000 (pesos argentinos quince mil) por Tarjeta de Crédito por mes calendario (el “Beneficio”).\nPromoción acumulable con otras ofertas y/o promociones vigentes en el Portal. Beneficio sujeto a disponibilidad de repartidores y zonas de entrega. PedidosYa es el exclusivo responsable por la prestación, correcto funcionamiento y/o garantía del producto y/o servicio adquirido, y cualquier reclamo deberá dirigirse contra ellos. La Promoción podrá ser dejada sin efecto en cualquier momento por PedidosYa, Ualá y por Mastercard Cono Sur S.R.L. por razones operativas, comerciales, regulatorias, de fuerza mayor o por circunstancias que así lo justifiquen. En tales casos, la medida será comunicada por los mismos medios utilizados para difundir la Promoción, sin afectar los Beneficios válidamente obtenidos con anterioridad a su finalización.\nPara más información se deberá consultar en el chat de la aplicación móvil Ualá ingresando desde el perfil del usuario en la sección “ayuda”. La Tarjeta de Crédito es ofrecida por Ualá, entidad financiera debidamente autorizada por el BCRA y se encuentra sujeta a condición crediticia. Para más información y condiciones o limitaciones aplicables, consulte en www.uala.com.ar/promociones. \n"
+        }
+      ]
+    }
+  },
+  {
+    "source": "uala",
+    "source_id": "629VhKT4nY1g4claaB8UMc",
+    "source_url": "https://www.uala.com.ar/promociones/rappi",
+    "catalog_url": "https://www.uala.com.ar/promociones",
+    "scraped_at": "2026-10-15T20:49:45.656946+00:00",
+    "catalog": {
+      "sys": {
+        "id": "629VhKT4nY1g4claaB8UMc"
+      },
+      "fields": {
+        "brand": "Rappi",
+        "urlDeLaPromocion": "rappi",
+        "PromotionCategory": [
+          {
+            "metadata": {
+              "tags": [],
+              "concepts": []
+            },
+            "sys": {
+              "space": {
+                "sys": {
+                  "type": "Link",
+                  "linkType": "Space",
+                  "id": "6n252fx9hkkr"
+                }
+              },
+              "id": "2kVdayCqLsOJcUjxSLcaaG",
+              "type": "Entry",
+              "createdAt": "2024-03-11T14:46:29.004Z",
+              "updatedAt": "2024-03-11T14:46:29.004Z",
+              "environment": {
+                "sys": {
+                  "id": "master",
+                  "type": "Link",
+                  "linkType": "Environment"
+                }
+              },
+              "publishedVersion": 1,
+              "revision": 1,
+              "contentType": {
+                "sys": {
+                  "type": "Link",
+                  "linkType": "ContentType",
+                  "id": "promotionCategory"
+                }
+              },
+              "locale": "en-US"
+            },
+            "fields": {
+              "Category": "Delivery"
+            }
+          }
+        ],
+        "PromotionSpecs": [
+          {
+            "sys": {
+              "id": "3b5uBxebMo6dotetnehwtE"
+            },
+            "fields": {
+              "promotionLegal": "\nPromoción válida en la República Argentina, todos días martes desde el 03/08/2026 al 31/10/2026 inclusive, ambas fechas inclusive, o hasta agotar stock de 1100 redenciones disponibles por cada martes dentro del período de vigencia, para compras realizadas a través del sitio web y/o app de Rappi, CUIT 30-71580389-1 (“Rappi”), abonadas con la tarjeta prepaga emitida por Ualá Bank S.A.U., Av. Cnel Marcelino Freyre 3650, piso 1, Of. 105, CABA (“Tarjeta Prepaga” y \"Ualá\" respectivamente). Se otorgará un 25% de reintegro sobre cada compra, con tope de reintegro de $3500 por martes y por usuario de cada Tarjeta Prepaga. El reintegro se disponibilizará en la cuenta del usuario hasta dentro de los 30 días corridos posteriores a la fecha de la transacción.\n\nRappi Arg S.A.S. es el exclusivo responsable por la prestación, correcto funcionamiento y/o garantía del producto y/o del servicio adquirido, cualquier reclamo deberá dirigirse contra ellos. Ualá se reserva el derecho de cancelar la participación del usuario en la promoción si detecta fraude, engaño, abuso o el uso indebido de la app. En caso de que se presente alguno de estos supuestos, Ualá podrá cancelar tanto la participación actual como la futura en las promociones.\nPara más información sobre esta promoción se deberá consultar en el chat de la App ingresando desde el perfil de usuario en la sección “ayuda”. Las operaciones bancarias no cuentan con respaldo del accionista de capital extranjero en exceso de su integración accionaria (Ley 25.738); tampoco lo hacen otras entidades que utilicen la marca. \n"
+            }
+          }
+        ]
+      }
+    },
+    "detail": {
+      "id": "629VhKT4nY1g4claaB8UMc",
+      "seo": {
+        "title": "Rappi - Promociones Ualá ",
+        "metaDescription": "Obtené un 25% de reintegro en Rappi todos los martes pagando con tu tarjeta prepaga Ualá.",
+        "canonical": "https://www.uala.com.ar/promociones/rappi"
+      },
+      "extraPromotion": null,
+      "logo": {
+        "src": "https://images.ctfassets.net/6n252fx9hkkr/2czhpapX2ZyORnysMXZ5ZY/cbcc8658f43c72cad6dea62e2c91698f/Logo_Rappi.webp",
+        "alt": "Logo Rappi color"
+      },
+      "specs": [
+        {
+          "id": "3b5uBxebMo6dotetnehwtE",
+          "title": "25% de reintegro",
+          "description": "en tus compras en Rappi",
+          "cta": {
+            "text": "Aprovechalo",
+            "href": "https://rappi.sng.link/Ev50a/pdcl/77w1"
+          },
+          "expandCardText": "Ver más",
+          "paymentMethods": [
+            "Tarjeta Prepaga"
+          ],
+          "days": [
+            "Martes"
+          ],
+          "place": [
+            "Online"
+          ],
+          "date": "31 de octubre 2026",
+          "cashback": "$3500 por martes",
+          "cashdate": "Hasta 30 días",
+          "availability": [
+            "Todo el país"
+          ],
+          "legalDisclaimer": "\nPromoción válida en la República Argentina, todos días martes desde el 03/08/2026 al 31/10/2026 inclusive, ambas fechas inclusive, o hasta agotar stock de 1100 redenciones disponibles por cada martes dentro del período de vigencia, para compras realizadas a través del sitio web y/o app de Rappi, CUIT 30-71580389-1 (“Rappi”), abonadas con la tarjeta prepaga emitida por Ualá Bank S.A.U., Av. Cnel Marcelino Freyre 3650, piso 1, Of. 105, CABA (“Tarjeta Prepaga” y \"Ualá\" respectivamente). Se otorgará un 25% de reintegro sobre cada compra, con tope de reintegro de $3500 por martes y por usuario de cada Tarjeta Prepaga. El reintegro se disponibilizará en la cuenta del usuario hasta dentro de los 30 días corridos posteriores a la fecha de la transacción.\n\nRappi Arg S.A.S. es el exclusivo responsable por la prestación, correcto funcionamiento y/o garantía del producto y/o del servicio adquirido, cualquier reclamo deberá dirigirse contra ellos. Ualá se reserva el derecho de cancelar la participación del usuario en la promoción si detecta fraude, engaño, abuso o el uso indebido de la app. En caso de que se presente alguno de estos supuestos, Ualá podrá cancelar tanto la participación actual como la futura en las promociones.\nPara más información sobre esta promoción se deberá consultar en el chat de la App ingresando desde el perfil de usuario en la sección “ayuda”. Las operaciones bancarias no cuentan con respaldo del accionista de capital extranjero en exceso de su integración accionaria (Ley 25.738); tampoco lo hacen otras entidades que utilicen la marca. \n"
+        }
+      ]
+    }
+  },
+  {
+    "source": "uala",
+    "source_id": "4LoBkz9bOZczGyT3BYqeXo",
+    "source_url": "https://www.uala.com.ar/promociones/rappipro",
+    "catalog_url": "https://www.uala.com.ar/promociones",
+    "scraped_at": "2026-10-15T20:49:45.656946+00:00",
+    "catalog": {
+      "sys": {
+        "id": "4LoBkz9bOZczGyT3BYqeXo"
+      },
+      "fields": {
+        "brand": "Rappi Pro",
+        "urlDeLaPromocion": "rappipro",
+        "PromotionCategory": [
+          {
+            "metadata": {
+              "tags": [],
+              "concepts": []
+            },
+            "sys": {
+              "space": {
+                "sys": {
+                  "type": "Link",
+                  "linkType": "Space",
+                  "id": "6n252fx9hkkr"
+                }
+              },
+              "id": "2kVdayCqLsOJcUjxSLcaaG",
+              "type": "Entry",
+              "createdAt": "2024-03-11T14:46:29.004Z",
+              "updatedAt": "2024-03-11T14:46:29.004Z",
+              "environment": {
+                "sys": {
+                  "id": "master",
+                  "type": "Link",
+                  "linkType": "Environment"
+                }
+              },
+              "publishedVersion": 1,
+              "revision": 1,
+              "contentType": {
+                "sys": {
+                  "type": "Link",
+                  "linkType": "ContentType",
+                  "id": "promotionCategory"
+                }
+              },
+              "locale": "en-US"
+            },
+            "fields": {
+              "Category": "Delivery"
+            }
+          }
+        ],
+        "PromotionSpecs": [
+          {
+            "sys": {
+              "id": "7m9SzfZIGgpoJgvznc2swx"
+            },
+            "fields": {
+              "promotionLegal": "Promoción válida en la República Argentina, desde el 03/08/2026 al 31/12/2026 ambas fechas inclusive, para la contratación de la suscripción Rappi Pro a través del sitio web y/o app de Rappi, CUIT 30-71580389-1 (“Rappi”), que sean abonadas con tarjeta prepaga o tarjeta de crédito MasterCard emitidas por Ualá Bank S.A.U., Av. Cnel Marcelino Freyre 3650, piso 1, Of. 105, CABA, CUIT 30-71565463-2  (“Ualá”). El beneficio será válido solo para usuarios nuevos de Rappi Pro o usuarios que no hayan sido Rappi Pro en los últimos 3 meses. Aplicando previamente el cupón “RappiProUala” se otorgará un 90% de descuento sobre el valor total de la compra de 3 meses de Rappi Pro, sin tope de descuento. El descuento es por única vez y por usuario de la App. Promoción no acumulable con otras promociones y/o beneficios vigentes.\nRappi Arg S.A.S es el exclusivo responsable por la prestación, correcto funcionamiento y/o garantía del producto y/o del servicio adquirido, cualquier reclamo deberá dirigirse contra ellos. Ualá se reserva el derecho de cancelar la participación del usuario en la promoción si detecta fraude, engaño, abuso o el uso indebido de la app. En caso de que se presente alguno de estos supuestos, Ualá podrá cancelar tanto la participación actual como la futura en las promociones. Para más información sobre esta promoción se deberá consultar en el chat de la App ingresando desde el perfil de usuario en la sección “ayuda”. Las operaciones bancarias no cuentan con respaldo del accionista de capital extranjero en exceso de su integración accionaria (Ley 25.738); tampoco lo hacen otras entidades que utilicen la marca.\n"
+            }
+          }
+        ]
+      }
+    },
+    "detail": {
+      "id": "4LoBkz9bOZczGyT3BYqeXo",
+      "seo": {
+        "title": "Rappi Pro - Promociones Ualá ",
+        "metaDescription": "Obtené un 90% de descuento en la suscripción de 3 meses a RappiPro pagando con tus tarjetas Ualá.",
+        "canonical": "https://www.uala.com.ar/promociones/rappipro"
+      },
+      "extraPromotion": null,
+      "logo": {
+        "src": "https://images.ctfassets.net/6n252fx9hkkr/3aZ7FgIbMJt0yO2EeqixXX/6cbc10b8e574556b25e16f80ff719763/Logo_RappiPro.webp",
+        "alt": "Logo Rappi Pro color"
+      },
+      "specs": [
+        {
+          "id": "7m9SzfZIGgpoJgvznc2swx",
+          "title": "90% de descuento",
+          "description": "en tus primeros 3 meses de suscripción a Rappi Pro ingresando el cupón “RappiProUala”",
+          "cta": {
+            "text": "Aprovechalo",
+            "href": "https://rappi.sng.link/Ev50a/dmcq/wb10"
+          },
+          "expandCardText": "Ver más",
+          "paymentMethods": [
+            "Tarjeta Prepaga",
+            "Tarjeta de Crédito"
+          ],
+          "days": [
+            "Todos los días"
+          ],
+          "place": [
+            "Online"
+          ],
+          "date": "31 de diciembre 2026",
+          "cashback": "Sin tope",
+          "cashdate": "Inmediato",
+          "availability": [
+            "Todo el país"
+          ],
+          "legalDisclaimer": "Promoción válida en la República Argentina, desde el 03/08/2026 al 31/12/2026 ambas fechas inclusive, para la contratación de la suscripción Rappi Pro a través del sitio web y/o app de Rappi, CUIT 30-71580389-1 (“Rappi”), que sean abonadas con tarjeta prepaga o tarjeta de crédito MasterCard emitidas por Ualá Bank S.A.U., Av. Cnel Marcelino Freyre 3650, piso 1, Of. 105, CABA, CUIT 30-71565463-2  (“Ualá”). El beneficio será válido solo para usuarios nuevos de Rappi Pro o usuarios que no hayan sido Rappi Pro en los últimos 3 meses. Aplicando previamente el cupón “RappiProUala” se otorgará un 90% de descuento sobre el valor total de la compra de 3 meses de Rappi Pro, sin tope de descuento. El descuento es por única vez y por usuario de la App. Promoción no acumulable con otras promociones y/o beneficios vigentes.\nRappi Arg S.A.S es el exclusivo responsable por la prestación, correcto funcionamiento y/o garantía del producto y/o del servicio adquirido, cualquier reclamo deberá dirigirse contra ellos. Ualá se reserva el derecho de cancelar la participación del usuario en la promoción si detecta fraude, engaño, abuso o el uso indebido de la app. En caso de que se presente alguno de estos supuestos, Ualá podrá cancelar tanto la participación actual como la futura en las promociones. Para más información sobre esta promoción se deberá consultar en el chat de la App ingresando desde el perfil de usuario en la sección “ayuda”. Las operaciones bancarias no cuentan con respaldo del accionista de capital extranjero en exceso de su integración accionaria (Ley 25.738); tampoco lo hacen otras entidades que utilicen la marca.\n"
+        }
+      ]
+    }
+  },
+  {
+    "source": "uala",
+    "source_id": "75VS9PsLMlOL3fH96MzYNX",
+    "source_url": "https://www.uala.com.ar/promociones/cabify100",
+    "catalog_url": "https://www.uala.com.ar/promociones",
+    "scraped_at": "2026-10-15T20:49:45.656946+00:00",
+    "catalog": {
+      "sys": {
+        "id": "75VS9PsLMlOL3fH96MzYNX"
+      },
+      "fields": {
+        "brand": "Cabify",
+        "urlDeLaPromocion": "cabify100",
+        "PromotionCategory": [
+          {
+            "metadata": {
+              "tags": [],
+              "concepts": []
+            },
+            "sys": {
+              "space": {
+                "sys": {
+                  "type": "Link",
+                  "linkType": "Space",
+                  "id": "6n252fx9hkkr"
+                }
+              },
+              "id": "73lQLxHz6exDUdoRMpNji2",
+              "type": "Entry",
+              "createdAt": "2024-03-11T14:47:24.220Z",
+              "updatedAt": "2024-03-11T14:47:24.220Z",
+              "environment": {
+                "sys": {
+                  "id": "master",
+                  "type": "Link",
+                  "linkType": "Environment"
+                }
+              },
+              "publishedVersion": 1,
+              "revision": 1,
+              "contentType": {
+                "sys": {
+                  "type": "Link",
+                  "linkType": "ContentType",
+                  "id": "promotionCategory"
+                }
+              },
+              "locale": "en-US"
+            },
+            "fields": {
+              "Category": "Transporte"
+            }
+          }
+        ],
+        "PromotionSpecs": [
+          {
+            "sys": {
+              "id": "7wqKyWiGy15dzSE8Lo42oX"
+            },
+            "fields": {
+              "promotionLegal": "Términos y condiciones – Cabify \n\nPromoción ofrecida por Cabify S.A., CUIT  30-71524512-0, con domicilio en Pico 1641, piso 6, oficina “C” de la Ciudad Autónoma de Buenos Aires, República Argentina (“Cabify”) (la “Promoción”), válida en la República Argentina desde las 00:00hs del 19 de agosto de 2026 hasta las 23:59hs del 31 de octubre de 2026 (el “Plazo de Vigencia”), aplicable de lunes a viernes y exclusivamente para trayectos solicitados por usuarios que el mismo día hayan realizado un viaje mediante la aplicación “Cabify” (la “Aplicación”) finalizado entre las 7:00hs y las 8:59hs, en aquellas ciudades y/o provincias del territorio de la República Argentina en donde se encuentre operativa la Aplicación. \nDurante el Plazo de Vigencia, los tarjetahabientes titulares de tarjetas de crédito, y/o Prepaga de la marca “Mastercard” emitidas por Ualá Bank S.A.U., CUIT 30-71565463-2, con domicilio en Coronel Marcelino Freyre 3650, CABA, Argentina (“Ualá”) (la/s “Tarjeta/s”) que utilicen una Tarjeta asociada a la Aplicación para abonar un viaje finalizado entre las 7:00hs y las 8:59hs de los días lunes a viernes dentro del Plazo de Vigencia (el/los “Usuario/s”), recibirán un voucher a través de una notificación personalizada que contendrá un código de descuento único e intransferible, que deberá ser cargado manualmente por el Usuario para su utilización (el “Beneficio”) y  que únicamente podrá ser aplicado el mismo día hasta las 23:59hs respecto de un viaje solicitado a través de la Aplicación (en “Próximo Viaje”). El Beneficio otorgará un descuento equivalente al 100% (cien por ciento) del precio del Próximo Viaje, por hasta un importe de ARS 25.000 (veinticinco mil pesos argentinos). Tendrá validez de uso únicamente durante el mismo día de su recepción, de lo contrario no podrán ser utilizados\nLos Usuarios deberán utilizar la misma cuenta en la Aplicación y una Tarjeta como medio de pago. El Usuario recibirá un máximo de 2 (dos) vouchers por Usuario durante el Plazo de Vigencia. \nEl Beneficio podrá aplicarse a cualquier destino, siempre que el Próximo Viaje sea solicitado dentro del horario previsto para su utilización. El Beneficio será aplicado como descuento directo sobre el precio final del viaje antes de la confirmación del mismo en la Aplicación. El Beneficio aplicará exclusivamente respecto de trayectos realizados en las siguientes categorías “Cabify”: “Cuanto Antes”, “Prioritario”, “Promo”, “Taxi” y “Cabify Mujer”. El Beneficio es acumulable con promociones bancarias, pero no combinable con otros códigos promocionales. El descuento se verá reflejado en el precio final antes de solicitar el servicio.\n\nPromoción no válida para pagos realizados mediante código QR ni acumulable con otras promociones y/o beneficios vigentes. Cabify es el exclusivo responsable por la prestación, correcto funcionamiento y/o garantía del producto y/o servicio adquirido, y cualquier reclamo deberá dirigirse contra ellos. Para más información se deberá consultar en el chat de la aplicación móvil Ualá ingresando desde el perfil del usuario en la sección “ayuda”. La Tarjeta de Crédito y/o Tarjeta Prepaga es ofrecida por Ualá, entidad financiera debidamente autorizada por el BCRA y se encuentra sujeta a condición crediticia. Para más información y condiciones o limitaciones aplicables, consulte en www.uala.com.ar/promociones. \n"
+            }
+          }
+        ]
+      }
+    },
+    "detail": {
+      "id": "75VS9PsLMlOL3fH96MzYNX",
+      "seo": {
+        "title": "Cabify - Promociones Ualá",
+        "metaDescription": "Obtené un descuento del 100% en tu segundo viaje del día pagando con tus tarjeas Ualá en Cabify",
+        "canonical": "https://www.uala.com.ar/promociones/cabify100"
+      },
+      "extraPromotion": null,
+      "logo": {
+        "src": "https://images.ctfassets.net/6n252fx9hkkr/2yqYHJZAaWRV1LiJL3hezG/9a8c03d390a49dbb22eedef2a1f3219d/logo_Cabify_MC_lightmode.webp",
+        "alt": "logo_Cabify+MC_lightmode"
+      },
+      "specs": [
+        {
+          "id": "7wqKyWiGy15dzSE8Lo42oX",
+          "title": "Tu segundo viaje del día va 100% Off",
+          "description": "Completá un viaje entre las 7:00 y las 8:59 hs pagando con Ualá y recibí un cupón del 100% de descuento para tu próximo viaje del día.",
+          "cta": {
+            "text": "Aprovechalo",
+            "href": "https://cabify.com/ar"
+          },
+          "expandCardText": "Ver más",
+          "paymentMethods": [
+            "Tarjeta Prepaga",
+            "Tarjeta de Crédito"
+          ],
+          "days": [
+            "Lunes",
+            "Martes",
+            "Miércoles",
+            "Jueves",
+            "Viernes"
+          ],
+          "place": [
+            "Online"
+          ],
+          "date": "31 de octubre 2026",
+          "cashback": "$25000 por viaje",
+          "cashdate": "Inmediato",
+          "availability": [
+            "Todo el país"
+          ],
+          "legalDisclaimer": "Términos y condiciones – Cabify \n\nPromoción ofrecida por Cabify S.A., CUIT  30-71524512-0, con domicilio en Pico 1641, piso 6, oficina “C” de la Ciudad Autónoma de Buenos Aires, República Argentina (“Cabify”) (la “Promoción”), válida en la República Argentina desde las 00:00hs del 19 de agosto de 2026 hasta las 23:59hs del 31 de octubre de 2026 (el “Plazo de Vigencia”), aplicable de lunes a viernes y exclusivamente para trayectos solicitados por usuarios que el mismo día hayan realizado un viaje mediante la aplicación “Cabify” (la “Aplicación”) finalizado entre las 7:00hs y las 8:59hs, en aquellas ciudades y/o provincias del territorio de la República Argentina en donde se encuentre operativa la Aplicación. \nDurante el Plazo de Vigencia, los tarjetahabientes titulares de tarjetas de crédito, y/o Prepaga de la marca “Mastercard” emitidas por Ualá Bank S.A.U., CUIT 30-71565463-2, con domicilio en Coronel Marcelino Freyre 3650, CABA, Argentina (“Ualá”) (la/s “Tarjeta/s”) que utilicen una Tarjeta asociada a la Aplicación para abonar un viaje finalizado entre las 7:00hs y las 8:59hs de los días lunes a viernes dentro del Plazo de Vigencia (el/los “Usuario/s”), recibirán un voucher a través de una notificación personalizada que contendrá un código de descuento único e intransferible, que deberá ser cargado manualmente por el Usuario para su utilización (el “Beneficio”) y  que únicamente podrá ser aplicado el mismo día hasta las 23:59hs respecto de un viaje solicitado a través de la Aplicación (en “Próximo Viaje”). El Beneficio otorgará un descuento equivalente al 100% (cien por ciento) del precio del Próximo Viaje, por hasta un importe de ARS 25.000 (veinticinco mil pesos argentinos). Tendrá validez de uso únicamente durante el mismo día de su recepción, de lo contrario no podrán ser utilizados\nLos Usuarios deberán utilizar la misma cuenta en la Aplicación y una Tarjeta como medio de pago. El Usuario recibirá un máximo de 2 (dos) vouchers por Usuario durante el Plazo de Vigencia. \nEl Beneficio podrá aplicarse a cualquier destino, siempre que el Próximo Viaje sea solicitado dentro del horario previsto para su utilización. El Beneficio será aplicado como descuento directo sobre el precio final del viaje antes de la confirmación del mismo en la Aplicación. El Beneficio aplicará exclusivamente respecto de trayectos realizados en las siguientes categorías “Cabify”: “Cuanto Antes”, “Prioritario”, “Promo”, “Taxi” y “Cabify Mujer”. El Beneficio es acumulable con promociones bancarias, pero no combinable con otros códigos promocionales. El descuento se verá reflejado en el precio final antes de solicitar el servicio.\n\nPromoción no válida para pagos realizados mediante código QR ni acumulable con otras promociones y/o beneficios vigentes. Cabify es el exclusivo responsable por la prestación, correcto funcionamiento y/o garantía del producto y/o servicio adquirido, y cualquier reclamo deberá dirigirse contra ellos. Para más información se deberá consultar en el chat de la aplicación móvil Ualá ingresando desde el perfil del usuario en la sección “ayuda”. La Tarjeta de Crédito y/o Tarjeta Prepaga es ofrecida por Ualá, entidad financiera debidamente autorizada por el BCRA y se encuentra sujeta a condición crediticia. Para más información y condiciones o limitaciones aplicables, consulte en www.uala.com.ar/promociones. \n"
+        }
+      ]
+    }
+  },
+  {
+    "source": "uala",
+    "source_id": "2vtBi18mP1ByZo3tpkdkpk",
+    "source_url": "https://www.uala.com.ar/promociones/seekerparking",
+    "catalog_url": "https://www.uala.com.ar/promociones",
+    "scraped_at": "2026-10-15T20:49:45.656946+00:00",
+    "catalog": {
+      "sys": {
+        "id": "2vtBi18mP1ByZo3tpkdkpk"
+      },
+      "fields": {
+        "brand": "Seeker Parking",
+        "urlDeLaPromocion": "seekerparking",
+        "PromotionCategory": [
+          {
+            "metadata": {
+              "tags": [],
+              "concepts": []
+            },
+            "sys": {
+              "space": {
+                "sys": {
+                  "type": "Link",
+                  "linkType": "Space",
+                  "id": "6n252fx9hkkr"
+                }
+              },
+              "id": "73lQLxHz6exDUdoRMpNji2",
+              "type": "Entry",
+              "createdAt": "2024-03-11T14:47:24.220Z",
+              "updatedAt": "2024-03-11T14:47:24.220Z",
+              "environment": {
+                "sys": {
+                  "id": "master",
+                  "type": "Link",
+                  "linkType": "Environment"
+                }
+              },
+              "publishedVersion": 1,
+              "revision": 1,
+              "contentType": {
+                "sys": {
+                  "type": "Link",
+                  "linkType": "ContentType",
+                  "id": "promotionCategory"
+                }
+              },
+              "locale": "en-US"
+            },
+            "fields": {
+              "Category": "Transporte"
+            }
+          }
+        ],
+        "PromotionSpecs": [
+          {
+            "sys": {
+              "id": "G2SJoIqlp3G7vnXEXJ4oK"
+            },
+            "fields": {
+              "promotionLegal": "Promoción válida en la República Argentina, todos los días desde el 20/08/2026 al 20/11/2026 inclusive, ambas fechas inclusive, o hasta agotar stock de 2200 redenciones mensuales dentro del período de vigencia, para compras realizadas a través del sitio web de Seeker Parking ( https://seekerparking.com/ar/) , CUIT N°3071687268-4, , abonadas con la tarjeta prepaga o tarjeta de crédito Ualá emitida por Ualá Bank S.A.U., Av. Cnel Marcelino Freyre 3650, piso 1, Of. 105, CABA (“Tarjeta Prepaga” y \"Ualá\" respectivamente). Se otorgará un 10% de reintegro sobre cada compra, con tope de reintegro de $2000 por usuario por mes.  El reintegro se disponibilizará en la cuenta del usuario hasta dentro de los 30 días corridos posteriores a la fecha de la transacción.\n\nSEEKER S.R.L.. es el exclusivo responsable por la prestación, correcto funcionamiento y/o garantía del producto y/o del servicio adquirido, cualquier reclamo deberá dirigirse contra ellos. Ualá se reserva el derecho de cancelar la participación del usuario en la promoción si detecta fraude, engaño, abuso o el uso indebido de la app. En caso de que se presente alguno de estos supuestos, Ualá podrá cancelar tanto la participación actual como la futura en las promociones. Para más información sobre esta promoción se deberá consultar en el chat de la App ingresando desde el perfil de usuario en la sección “ayuda”. Las operaciones bancarias no cuentan con respaldo del accionista de capital extranjero en exceso de su integración accionaria (Ley 25.738); tampoco lo hacen otras entidades que utilicen la marca.\n"
+            }
+          }
+        ]
+      }
+    },
+    "detail": {
+      "id": "2vtBi18mP1ByZo3tpkdkpk",
+      "seo": {
+        "title": "Promociones Ualá - Seeker Parking",
+        "metaDescription": "Obtené un descuento del 10% en Seeker Parking pagando con tus tarjetas Ualá",
+        "canonical": "https://www.uala.com.ar/promociones/seekerparking"
+      },
+      "extraPromotion": null,
+      "logo": {
+        "src": "https://images.ctfassets.net/6n252fx9hkkr/5zdwOoBSGzBqSjP6gJjJ7y/b368cb7eec5e943383dfd7e0adac5855/Logo_Seeker-parking.webp",
+        "alt": "Logo Seeker parking en color"
+      },
+      "specs": [
+        {
+          "id": "G2SJoIqlp3G7vnXEXJ4oK",
+          "title": "10% de reintegro en estacionamiento",
+          "description": "Pagá con Ualá en la web de Seeker parking, asegurá el lugar de tu auto en tus eventos favoritos ¡y ahorrá plata!",
+          "cta": {
+            "text": "Aprovechalo",
+            "href": "https://seekerparking.com/ar/"
+          },
+          "expandCardText": "Ver más",
+          "paymentMethods": [
+            "Tarjeta Prepaga",
+            "Tarjeta de Crédito"
+          ],
+          "days": [
+            "Todos los días"
+          ],
+          "place": [
+            "Online"
+          ],
+          "date": "20 de noviembre de 2026",
+          "cashback": "$2000 por mes",
+          "cashdate": "Hasta 30 dias ",
+          "availability": [
+            "Todo el país"
+          ],
+          "legalDisclaimer": "Promoción válida en la República Argentina, todos los días desde el 20/08/2026 al 20/11/2026 inclusive, ambas fechas inclusive, o hasta agotar stock de 2200 redenciones mensuales dentro del período de vigencia, para compras realizadas a través del sitio web de Seeker Parking ( https://seekerparking.com/ar/) , CUIT N°3071687268-4, , abonadas con la tarjeta prepaga o tarjeta de crédito Ualá emitida por Ualá Bank S.A.U., Av. Cnel Marcelino Freyre 3650, piso 1, Of. 105, CABA (“Tarjeta Prepaga” y \"Ualá\" respectivamente). Se otorgará un 10% de reintegro sobre cada compra, con tope de reintegro de $2000 por usuario por mes.  El reintegro se disponibilizará en la cuenta del usuario hasta dentro de los 30 días corridos posteriores a la fecha de la transacción.\n\nSEEKER S.R.L.. es el exclusivo responsable por la prestación, correcto funcionamiento y/o garantía del producto y/o del servicio adquirido, cualquier reclamo deberá dirigirse contra ellos. Ualá se reserva el derecho de cancelar la participación del usuario en la promoción si detecta fraude, engaño, abuso o el uso indebido de la app. En caso de que se presente alguno de estos supuestos, Ualá podrá cancelar tanto la participación actual como la futura en las promociones. Para más información sobre esta promoción se deberá consultar en el chat de la App ingresando desde el perfil de usuario en la sección “ayuda”. Las operaciones bancarias no cuentan con respaldo del accionista de capital extranjero en exceso de su integración accionaria (Ley 25.738); tampoco lo hacen otras entidades que utilicen la marca.\n"
+        }
+      ]
+    }
+  },
+  {
+    "source": "uala",
+    "source_id": "4EakGZjfbgoD3QhQPuy7MO",
+    "source_url": "https://www.uala.com.ar/promociones/cabify",
+    "catalog_url": "https://www.uala.com.ar/promociones",
+    "scraped_at": "2026-10-15T20:49:45.656946+00:00",
+    "catalog": {
+      "sys": {
+        "id": "4EakGZjfbgoD3QhQPuy7MO"
+      },
+      "fields": {
+        "brand": "Cabify",
+        "urlDeLaPromocion": "cabify",
+        "PromotionCategory": [
+          {
+            "metadata": {
+              "tags": [],
+              "concepts": []
+            },
+            "sys": {
+              "space": {
+                "sys": {
+                  "type": "Link",
+                  "linkType": "Space",
+                  "id": "6n252fx9hkkr"
+                }
+              },
+              "id": "73lQLxHz6exDUdoRMpNji2",
+              "type": "Entry",
+              "createdAt": "2024-03-11T14:47:24.220Z",
+              "updatedAt": "2024-03-11T14:47:24.220Z",
+              "environment": {
+                "sys": {
+                  "id": "master",
+                  "type": "Link",
+                  "linkType": "Environment"
+                }
+              },
+              "publishedVersion": 1,
+              "revision": 1,
+              "contentType": {
+                "sys": {
+                  "type": "Link",
+                  "linkType": "ContentType",
+                  "id": "promotionCategory"
+                }
+              },
+              "locale": "en-US"
+            },
+            "fields": {
+              "Category": "Transporte"
+            }
+          }
+        ],
+        "PromotionSpecs": [
+          {
+            "sys": {
+              "id": "3lN0uhg9BHG0HnMXxFOqmB"
+            },
+            "fields": {
+              "promotionLegal": "\nPromoción ofrecida por Mastercard Cono Sur S.R.L. con domicilio en Olga Cossettini 771 2º piso, CABA, Argentina (\"Mastercard\") a través de Ualá Bank S.A.U., CUIT 30-71565463-2 con domicilio en Av. Coronel Marcelino E. Freyre 3650, piso 1, Of. 105, CABA, Argentina (“Ualá”), válida todos los días, para viajes o envíos realizados en la República Argentina desde  el 24 de junio de 2026 a las 00:00hs hasta el 31 de octubre del 2026 a las 23:59hs (el “Plazo de Vigencia”). La Promoción es aplicable para nuevos usuarios que se registren en la App Cabify durante el Plazo de Vigencia y no hayan realizado ningún viaje o envío, o usuarios que no hayan realizado viajes o envíos a través de la App Cabify en los 90 (noventa) días previos al momento de cargar el código promocional (los “Usuarios Beneficiados”). La promoción consiste en un 50% (cincuenta por ciento) de descuento en los próximos 5 (cinco) viajes que los Usuarios Beneficiados realicen cuyo método de pago seleccionado sea una tarjeta de crédito o prepaga Mastercard emitida por Ualá (el “Beneficio”). Para poder acceder al Beneficio, los Usuarios Beneficiados deberán ingresar el código promocional “5MASTER” al momento del pago en la App Cabify. El Beneficio tendrá un monto máximo de $4000 (cuatro mil pesos argentinos) para cada uno de los viajes. Una vez cargado el código en la App Cabify, será válido para su uso por 30 (treinta) días, o hasta la terminación del Plazo de Vigencia, lo que ocurra primero. El Beneficio no es combinable ni acumulable con otras ofertas y/o promociones. En caso de haber cargado más de un código, aplicará únicamente el que mayor ahorro le genere a los Usuarios. \nPromoción no válida para pagos realizados mediante código QR ni acumulable con otras promociones y/o beneficios vigentes. Cabify es el exclusivo responsable por la prestación, correcto funcionamiento y/o garantía del producto y/o servicio adquirido, y cualquier reclamo deberá dirigirse contra ellos. Para más información se deberá consultar en el chat de la aplicación móvil Ualá ingresando desde el perfil del usuario en la sección “ayuda”. La Tarjeta de Crédito es ofrecida por Ualá, entidad financiera debidamente autorizada por el BCRA y se encuentra sujeta a condición crediticia. Para más información y condiciones o limitaciones aplicables, consulte en www.uala.com.ar/promociones. \n"
+            }
+          }
+        ]
+      }
+    },
+    "detail": {
+      "id": "4EakGZjfbgoD3QhQPuy7MO",
+      "seo": {
+        "title": "Cabify - Promociones Ualá ",
+        "metaDescription": "Obtené un descuento del 50% en tus primeros 5 viajes en Cabify ingresando el cupón 5MASTER y pagando con tus tarjetas Ualá.",
+        "canonical": "https://www.uala.com.ar/promociones/cabify"
+      },
+      "extraPromotion": null,
+      "logo": {
+        "src": "https://images.ctfassets.net/6n252fx9hkkr/2yqYHJZAaWRV1LiJL3hezG/9a8c03d390a49dbb22eedef2a1f3219d/logo_Cabify_MC_lightmode.webp",
+        "alt": "logo_Cabify+MC_lightmode"
+      },
+      "specs": [
+        {
+          "id": "3lN0uhg9BHG0HnMXxFOqmB",
+          "title": "50% de descuento en Cabify",
+          "description": "en tus primeros 5 viajes ingresando el código 5MASTER",
+          "cta": {
+            "text": "Aprovechalo",
+            "href": "https://cabify.com/ar"
+          },
+          "expandCardText": "Ver más",
+          "paymentMethods": [
+            "Tarjeta de Crédito",
+            "Tarjeta Prepaga"
+          ],
+          "days": [
+            "Todos los días"
+          ],
+          "place": [
+            "Online"
+          ],
+          "date": "31 de octubre 2026",
+          "cashback": "$4000 por viaje",
+          "cashdate": "-",
+          "availability": [
+            "Todo el país"
+          ],
+          "legalDisclaimer": "\nPromoción ofrecida por Mastercard Cono Sur S.R.L. con domicilio en Olga Cossettini 771 2º piso, CABA, Argentina (\"Mastercard\") a través de Ualá Bank S.A.U., CUIT 30-71565463-2 con domicilio en Av. Coronel Marcelino E. Freyre 3650, piso 1, Of. 105, CABA, Argentina (“Ualá”), válida todos los días, para viajes o envíos realizados en la República Argentina desde  el 24 de junio de 2026 a las 00:00hs hasta el 31 de octubre del 2026 a las 23:59hs (el “Plazo de Vigencia”). La Promoción es aplicable para nuevos usuarios que se registren en la App Cabify durante el Plazo de Vigencia y no hayan realizado ningún viaje o envío, o usuarios que no hayan realizado viajes o envíos a través de la App Cabify en los 90 (noventa) días previos al momento de cargar el código promocional (los “Usuarios Beneficiados”). La promoción consiste en un 50% (cincuenta por ciento) de descuento en los próximos 5 (cinco) viajes que los Usuarios Beneficiados realicen cuyo método de pago seleccionado sea una tarjeta de crédito o prepaga Mastercard emitida por Ualá (el “Beneficio”). Para poder acceder al Beneficio, los Usuarios Beneficiados deberán ingresar el código promocional “5MASTER” al momento del pago en la App Cabify. El Beneficio tendrá un monto máximo de $4000 (cuatro mil pesos argentinos) para cada uno de los viajes. Una vez cargado el código en la App Cabify, será válido para su uso por 30 (treinta) días, o hasta la terminación del Plazo de Vigencia, lo que ocurra primero. El Beneficio no es combinable ni acumulable con otras ofertas y/o promociones. En caso de haber cargado más de un código, aplicará únicamente el que mayor ahorro le genere a los Usuarios. \nPromoción no válida para pagos realizados mediante código QR ni acumulable con otras promociones y/o beneficios vigentes. Cabify es el exclusivo responsable por la prestación, correcto funcionamiento y/o garantía del producto y/o servicio adquirido, y cualquier reclamo deberá dirigirse contra ellos. Para más información se deberá consultar en el chat de la aplicación móvil Ualá ingresando desde el perfil del usuario en la sección “ayuda”. La Tarjeta de Crédito es ofrecida por Ualá, entidad financiera debidamente autorizada por el BCRA y se encuentra sujeta a condición crediticia. Para más información y condiciones o limitaciones aplicables, consulte en www.uala.com.ar/promociones. \n"
+        }
+      ]
+    }
+  },
+  {
+    "source": "uala",
+    "source_id": "48TzT1lNNekAhUzFNrnr5q",
+    "source_url": "https://www.uala.com.ar/promociones/gravl",
+    "catalog_url": "https://www.uala.com.ar/promociones",
+    "scraped_at": "2026-10-15T20:49:45.656946+00:00",
+    "catalog": {
+      "sys": {
+        "id": "48TzT1lNNekAhUzFNrnr5q"
+      },
+      "fields": {
+        "brand": "Gravl",
+        "urlDeLaPromocion": "gravl",
+        "PromotionCategory": [
+          {
+            "metadata": {
+              "tags": [],
+              "concepts": []
+            },
+            "sys": {
+              "space": {
+                "sys": {
+                  "type": "Link",
+                  "linkType": "Space",
+                  "id": "6n252fx9hkkr"
+                }
+              },
+              "id": "5mTejUXp9FUqIAzuSeIJVY",
+              "type": "Entry",
+              "createdAt": "2024-03-11T14:47:25.789Z",
+              "updatedAt": "2025-05-19T14:19:49.451Z",
+              "environment": {
+                "sys": {
+                  "id": "master",
+                  "type": "Link",
+                  "linkType": "Environment"
+                }
+              },
+              "publishedVersion": 2,
+              "revision": 2,
+              "contentType": {
+                "sys": {
+                  "type": "Link",
+                  "linkType": "ContentType",
+                  "id": "promotionCategory"
+                }
+              },
+              "locale": "en-US"
+            },
+            "fields": {
+              "Category": "Retail"
+            }
+          }
+        ],
+        "PromotionSpecs": [
+          {
+            "sys": {
+              "id": "4pT0hjOrug1UZD5Lbmjnwp"
+            },
+            "fields": {
+              "promotionLegal": "Promoción válida en la República Argentina, todos los días desde el 24/07/2026 al 30/07/2027 inclusive, para compras de la suscripción al plan anual de Gravl realizadas a través del sitio web: https://gravl.ai/uala, que sean abonadas con tarjeta prepaga y/o con tarjeta de crédito emitida por Ualá Bank S.A.U., Av. Cnel Marcelino Freyre 3650, piso 1, of 105, CABA, CUIT 30-71565463-2 (“Ualá”). Para acceder al descuento del 20% sobre el importe del plan anual, el usuario deberá aplicar el cupón “UALA”. El descuento se aplica por única vez por usuario y únicamente para usuarios nuevos de Gravl. Promoción no acumulable con otras promociones y/o beneficios vigentes.\nGains Coach PTY LTD. (CUIT ABN 78671000801) es el exclusivo responsable por la prestación, correcto funcionamiento y/o garantía del producto y/o del servicio adquirido, cualquier reclamo deberá dirigirse contra ellos. Ualá se reserva el derecho de cancelar la participación del usuario en la promoción si detecta fraude, engaño, abuso o el uso indebido de la app. En caso de que se presente alguno de estos supuestos, Ualá podrá cancelar tanto la participación actual como la futura en las promociones.\nPara más información sobre esta promoción se deberá consultar en el chat de la App ingresando desde el perfil de usuario en la sección “ayuda”. Las operaciones bancarias no cuentan con respaldo del accionista de capital extranjero en exceso de su integración accionaria (Ley 25.738); tampoco lo hacen otras entidades que utilicen la marca."
+            }
+          }
+        ]
+      }
+    },
+    "detail": {
+      "id": "48TzT1lNNekAhUzFNrnr5q",
+      "seo": {
+        "title": "Gravl - Promociones Ualá ",
+        "metaDescription": "Obtené un descuento del 20% en el Plan Anual de Gravl pagando con tus Tarjetas Ualá",
+        "canonical": "https://www.uala.com.ar/promociones/gravl"
+      },
+      "extraPromotion": null,
+      "logo": {
+        "src": "https://images.ctfassets.net/6n252fx9hkkr/1VuHmOzKTNNdSw2JrsxijS/f0dabc9a91ae36860b4d96063fb266d8/Logo_Gravl.webp",
+        "alt": "Logo Gravl"
+      },
+      "specs": [
+        {
+          "id": "4pT0hjOrug1UZD5Lbmjnwp",
+          "title": "20% de descuento",
+          "description": "En el Plan Anual de Gravl, la app que funciona como tu entrenador personal para armar y seguir tus rutinas. Ingresá el código UALA al momento de pagar.",
+          "cta": {
+            "text": "Aprovechalo",
+            "href": "https://gravl.ai/uala"
+          },
+          "expandCardText": "Ver más",
+          "paymentMethods": [
+            "Tarjeta Prepaga",
+            "Tarjeta de Crédito"
+          ],
+          "days": [
+            "Todos los días"
+          ],
+          "place": [
+            "Online"
+          ],
+          "date": "30 de julio del 2027",
+          "cashback": "Sin tope",
+          "cashdate": "Inmediato",
+          "availability": [
+            "Todo el país"
+          ],
+          "legalDisclaimer": "Promoción válida en la República Argentina, todos los días desde el 24/07/2026 al 30/07/2027 inclusive, para compras de la suscripción al plan anual de Gravl realizadas a través del sitio web: https://gravl.ai/uala, que sean abonadas con tarjeta prepaga y/o con tarjeta de crédito emitida por Ualá Bank S.A.U., Av. Cnel Marcelino Freyre 3650, piso 1, of 105, CABA, CUIT 30-71565463-2 (“Ualá”). Para acceder al descuento del 20% sobre el importe del plan anual, el usuario deberá aplicar el cupón “UALA”. El descuento se aplica por única vez por usuario y únicamente para usuarios nuevos de Gravl. Promoción no acumulable con otras promociones y/o beneficios vigentes.\nGains Coach PTY LTD. (CUIT ABN 78671000801) es el exclusivo responsable por la prestación, correcto funcionamiento y/o garantía del producto y/o del servicio adquirido, cualquier reclamo deberá dirigirse contra ellos. Ualá se reserva el derecho de cancelar la participación del usuario en la promoción si detecta fraude, engaño, abuso o el uso indebido de la app. En caso de que se presente alguno de estos supuestos, Ualá podrá cancelar tanto la participación actual como la futura en las promociones.\nPara más información sobre esta promoción se deberá consultar en el chat de la App ingresando desde el perfil de usuario en la sección “ayuda”. Las operaciones bancarias no cuentan con respaldo del accionista de capital extranjero en exceso de su integración accionaria (Ley 25.738); tampoco lo hacen otras entidades que utilicen la marca."
+        }
+      ]
+    }
+  },
+  {
+    "source": "uala",
+    "source_id": "6CReo7313gFFfYZ1SzdZ2j",
+    "source_url": "https://www.uala.com.ar/promociones/sportclub",
+    "catalog_url": "https://www.uala.com.ar/promociones",
+    "scraped_at": "2026-10-15T20:49:45.656946+00:00",
+    "catalog": {
+      "sys": {
+        "id": "6CReo7313gFFfYZ1SzdZ2j"
+      },
+      "fields": {
+        "brand": "SportClub",
+        "urlDeLaPromocion": "sportclub",
+        "PromotionCategory": [
+          {
+            "metadata": {
+              "tags": [],
+              "concepts": []
+            },
+            "sys": {
+              "space": {
+                "sys": {
+                  "type": "Link",
+                  "linkType": "Space",
+                  "id": "6n252fx9hkkr"
+                }
+              },
+              "id": "pHEewOw0oBQQmz1Kx8Tkl",
+              "type": "Entry",
+              "createdAt": "2024-03-11T14:46:48.718Z",
+              "updatedAt": "2024-03-11T14:46:48.718Z",
+              "environment": {
+                "sys": {
+                  "id": "master",
+                  "type": "Link",
+                  "linkType": "Environment"
+                }
+              },
+              "publishedVersion": 1,
+              "revision": 1,
+              "contentType": {
+                "sys": {
+                  "type": "Link",
+                  "linkType": "ContentType",
+                  "id": "promotionCategory"
+                }
+              },
+              "locale": "en-US"
+            },
+            "fields": {
+              "Category": "Entretenimiento"
+            }
+          }
+        ],
+        "PromotionSpecs": [
+          {
+            "sys": {
+              "id": "6eZPzeHukqzlvtjMYmzJY9"
+            },
+            "fields": {
+              "promotionLegal": "\nPromoción ofrecida por Alau Tecnología S.A.U, CUIT 30-71542170-0, con domicilio en Nicaragua 4677, CABA, Argentina (“Alau”), vigente en las sedes adheridas de Gestión de Emprendimientos Deportivos S.A. (en adelante “SportClub\" y/o “GED”, indistintamente) desde el dia 01/04/2026 hasta el dia 31/07/2027 o hasta llegar a los 150 cupones de suscripciones, lo que ocurra primero, cuyo listado de locales actualizado y condiciones de acceso al momento de la presente suscripción puede ser consultado en la página oficial de www.sportclub.com.ar. No incluye Mujer pilar, Ushuaia, sedes categoría Elite. Será requisito necesario para acceder a la promoción, contar con una Caja de Ahorros en pesos (“Caja de Ahorro”) ofrecida por Ualá Bank S.A.U (“Ualá”) a través de la aplicación móvil Ualá (“App”). Se aplicará una bonificación del VEINTE POR CIENTO 20% sobre el precio final del Plan Total SportClub Mensual, abonando con tarjeta prepaga Mastercard Ualá y/o la tarjeta de crédito Mastercard Ualá (“Tarjeta de Crédito”) ofrecida por Ualá. Para acceder a la bonificación el usuario deberá ingresar a través de: https://www.sportclub.com.ar/corporativo/promocion-uala-total-20/, completar el formulario con sus datos, colocar el cupón “Sport-Uala1” en el Check Out y luego presionar \"APLICAR\" antes de proceder al pago. Una vez completados los datos y colocado el cupón, SportClub procesará el alta respectiva dentro de las cuarenta y ocho (48) horas de su recepción notificando al usuario en la casilla de correo electrónico indicada. Alau es exclusivamente un medio de pago para la adquisición del servicio. SportClub es el único y exclusivo responsable por la prestación y/o correcto funcionamiento del mismo. Para consultas sobre planes, sedes adheridas y/o para efectuar bajas y/o reclamos contactarse exclusivamente a través de atencion.socios@sportclub.com.ar. Promoción no válida para pagos realizados mediante código QR. Para más información se deberá consultar en el chat de la App ingresando desde el perfil del usuario en la sección “ayuda”. La Caja de Ahorro y la Tarjeta de Crédito son ofrecidas por Ualá, entidad financiera debidamente autorizada por el BCRA. El titular de la Caja de Ahorro en Ualá podrá realizar las operaciones habilitadas a través de la App. Los depósitos en la Caja de Ahorros cuentan con garantía limitada para su devolución, de conformidad con la ley 24.485 y las normas del BCRA. Las operaciones bancarias no cuentan con respaldo del accionista de capital extranjero en exceso de su integración accionaria (Ley 25.738); tampoco lo hacen otras entidades que utilicen la marca. La Tarjeta de Crédito se encuentra sujeta a condición crediticia. Alau es un Proveedor de Servicios de Pago, para más información y condiciones o limitaciones aplicables, consulte en www.uala.com.ar/legales.\n"
+            }
+          },
+          {
+            "sys": {
+              "id": "7nlFAU5cWk0cMRVO5ecm6U"
+            },
+            "fields": {
+              "promotionLegal": "Promoción ofrecida por Alau Tecnología S.A.U, CUIT 30-71542170-0 con domicilio en Nicaragua 4677, CABA, Argentina (“Alau”), vigente en las sedes adheridas de Gestión de Emprendimientos Deportivos S.A. (en adelante “SportClub” y/o “GED”, indistintamente) desde el día 01/04/2026 hasta el día 31/07/2027 o hasta llegar a los 150 cupones de suscripciones, lo que ocurra primero, cuyo listado de locales actualizado y condiciones de acceso al momento de la presente suscripción puede ser consultado en la página oficial de www.sportclub.com.ar. No incluye Mujer pilar, Ushuaia ni sedes categoría Total y Elite. Será requisito necesario para acceder a la promoción, contar con una Caja de Ahorros en Pesos (“Caja de Ahorro”) ofrecida por Ualá Bank S.A.U (\"Ualá\") a través de la aplicación móvil Ualá (\"App\"). Se aplicará una bonificación del VEINTE POR CIENTO 20% sobre el precio final del Plan Plus SportClub Mensual, abonando con tarjeta prepaga Mastercard Ualá y/o la tarjeta de crédito Mastercard Ualá (\"Tarjeta de Crédito\") ofrecida por Ualá. Para acceder a la bonificación el usuario deberá ingresar a través de: https://www.sportclub.com.ar/corporativo/promocion-uala-plus-20/, completar el formulario con sus datos, colocar el cupón “SportUala1” en el Check Out y luego presionar \"APLICAR\" antes de proceder al pago.. Una vez completados los datos y colocado el cupón, SportClub procesará el alta respectiva dentro de las cuarenta y ocho (48) horas de su recepción notificando al usuario en la casilla de correo electrónico indicada. Alau es exclusivamente un medio de pago para la adquisición del servicio. SportClub es el único y exclusivo responsable por la prestación y/o correcto funcionamiento del mismo. Para consultas sobre planes, sedes adheridas y/o para efectuar bajas y/o reclamos contactarse exclusivamente a través de atencion.socios@sportclub.com.ar. Promoción no válida para pagos realizados mediante código QR. Para más información se deberá consultar en el chat de la App ingresando desde el perfil del usuario en la sección “ayuda”. La Caja de Ahorro y la Tarjeta de Crédito son ofrecidas por Ualá, entidad financiera debidamente autorizada por el BCRA. El titular de la Caja de Ahorro en Ualá podrá realizar las operaciones habilitadas a través de la App. Los depósitos en la Caja de Ahorros cuentan con garantía limitada para su devolución, de conformidad con la ley 24.485 y las normas del BCRA. Las operaciones bancarias no cuentan con respaldo del accionista de capital extranjero en exceso de su integración accionaria (Ley 25.738); tampoco lo hacen otras entidades que utilicen la marca. La Tarjeta de Crédito se encuentra sujeta a condición crediticia. Alau es un Proveedor de Servicios de Pago, para más información y condiciones o limitaciones aplicables, consulte en www.uala.com.ar/legales.\n"
+            }
+          }
+        ]
+      }
+    },
+    "detail": {
+      "id": "6CReo7313gFFfYZ1SzdZ2j",
+      "seo": {
+        "title": "SportClub - Promociones Ualá",
+        "metaDescription": "Obtené un descuento del 20% en el Plan Plus Mensual y en el Plan Total Mensual de SportClub al hacerte socio pagando con tus Tarjetas Ualá",
+        "canonical": "https://www.uala.com.ar/promociones/sportclub"
+      },
+      "extraPromotion": true,
+      "logo": {
+        "src": "https://images.ctfassets.net/6n252fx9hkkr/2vyApQ1srXvQ0TfMMIMBnB/6b2d8dc4a081cfbe42bd407dad3881f8/logo_SportClub.webp",
+        "alt": "Sportclub"
+      },
+      "specs": [
+        {
+          "id": "6eZPzeHukqzlvtjMYmzJY9",
+          "title": "20% de descuento",
+          "description": "en el Plan Total Mensual ingresando y aplicando el cupón Sport-Uala1",
+          "cta": {
+            "text": "Aprovechalo",
+            "href": "https://www.sportclub.com.ar/corporativo/promocion-uala-total-20/"
+          },
+          "expandCardText": "Ver más",
+          "paymentMethods": [
+            "Tarjeta Prepaga",
+            "Tarjeta de Crédito"
+          ],
+          "days": [
+            "Todos los días"
+          ],
+          "place": [
+            "Online"
+          ],
+          "date": "Hasta el 31 de julio 2027",
+          "cashback": "-",
+          "cashdate": "-",
+          "availability": [
+            "Todo el país"
+          ],
+          "legalDisclaimer": "\nPromoción ofrecida por Alau Tecnología S.A.U, CUIT 30-71542170-0, con domicilio en Nicaragua 4677, CABA, Argentina (“Alau”), vigente en las sedes adheridas de Gestión de Emprendimientos Deportivos S.A. (en adelante “SportClub\" y/o “GED”, indistintamente) desde el dia 01/04/2026 hasta el dia 31/07/2027 o hasta llegar a los 150 cupones de suscripciones, lo que ocurra primero, cuyo listado de locales actualizado y condiciones de acceso al momento de la presente suscripción puede ser consultado en la página oficial de www.sportclub.com.ar. No incluye Mujer pilar, Ushuaia, sedes categoría Elite. Será requisito necesario para acceder a la promoción, contar con una Caja de Ahorros en pesos (“Caja de Ahorro”) ofrecida por Ualá Bank S.A.U (“Ualá”) a través de la aplicación móvil Ualá (“App”). Se aplicará una bonificación del VEINTE POR CIENTO 20% sobre el precio final del Plan Total SportClub Mensual, abonando con tarjeta prepaga Mastercard Ualá y/o la tarjeta de crédito Mastercard Ualá (“Tarjeta de Crédito”) ofrecida por Ualá. Para acceder a la bonificación el usuario deberá ingresar a través de: https://www.sportclub.com.ar/corporativo/promocion-uala-total-20/, completar el formulario con sus datos, colocar el cupón “Sport-Uala1” en el Check Out y luego presionar \"APLICAR\" antes de proceder al pago. Una vez completados los datos y colocado el cupón, SportClub procesará el alta respectiva dentro de las cuarenta y ocho (48) horas de su recepción notificando al usuario en la casilla de correo electrónico indicada. Alau es exclusivamente un medio de pago para la adquisición del servicio. SportClub es el único y exclusivo responsable por la prestación y/o correcto funcionamiento del mismo. Para consultas sobre planes, sedes adheridas y/o para efectuar bajas y/o reclamos contactarse exclusivamente a través de atencion.socios@sportclub.com.ar. Promoción no válida para pagos realizados mediante código QR. Para más información se deberá consultar en el chat de la App ingresando desde el perfil del usuario en la sección “ayuda”. La Caja de Ahorro y la Tarjeta de Crédito son ofrecidas por Ualá, entidad financiera debidamente autorizada por el BCRA. El titular de la Caja de Ahorro en Ualá podrá realizar las operaciones habilitadas a través de la App. Los depósitos en la Caja de Ahorros cuentan con garantía limitada para su devolución, de conformidad con la ley 24.485 y las normas del BCRA. Las operaciones bancarias no cuentan con respaldo del accionista de capital extranjero en exceso de su integración accionaria (Ley 25.738); tampoco lo hacen otras entidades que utilicen la marca. La Tarjeta de Crédito se encuentra sujeta a condición crediticia. Alau es un Proveedor de Servicios de Pago, para más información y condiciones o limitaciones aplicables, consulte en www.uala.com.ar/legales.\n"
+        },
+        {
+          "id": "7nlFAU5cWk0cMRVO5ecm6U",
+          "title": "20% de descuento",
+          "description": "en el Plan Plus Mensual ingresando y aplicando el cupón SportUala1",
+          "cta": {
+            "text": "Aprovechalo",
+            "href": "https://www.sportclub.com.ar/corporativo/promocion-uala-plus-20/"
+          },
+          "expandCardText": "Ver más",
+          "paymentMethods": [
+            "Tarjeta Prepaga",
+            "Tarjeta de Crédito"
+          ],
+          "days": [
+            "Todos los días"
+          ],
+          "place": [
+            "Online"
+          ],
+          "date": "Hasta el 31 de julio 2027",
+          "cashback": "-",
+          "cashdate": "-",
+          "availability": [
+            "Todo el país"
+          ],
+          "legalDisclaimer": "Promoción ofrecida por Alau Tecnología S.A.U, CUIT 30-71542170-0 con domicilio en Nicaragua 4677, CABA, Argentina (“Alau”), vigente en las sedes adheridas de Gestión de Emprendimientos Deportivos S.A. (en adelante “SportClub” y/o “GED”, indistintamente) desde el día 01/04/2026 hasta el día 31/07/2027 o hasta llegar a los 150 cupones de suscripciones, lo que ocurra primero, cuyo listado de locales actualizado y condiciones de acceso al momento de la presente suscripción puede ser consultado en la página oficial de www.sportclub.com.ar. No incluye Mujer pilar, Ushuaia ni sedes categoría Total y Elite. Será requisito necesario para acceder a la promoción, contar con una Caja de Ahorros en Pesos (“Caja de Ahorro”) ofrecida por Ualá Bank S.A.U (\"Ualá\") a través de la aplicación móvil Ualá (\"App\"). Se aplicará una bonificación del VEINTE POR CIENTO 20% sobre el precio final del Plan Plus SportClub Mensual, abonando con tarjeta prepaga Mastercard Ualá y/o la tarjeta de crédito Mastercard Ualá (\"Tarjeta de Crédito\") ofrecida por Ualá. Para acceder a la bonificación el usuario deberá ingresar a través de: https://www.sportclub.com.ar/corporativo/promocion-uala-plus-20/, completar el formulario con sus datos, colocar el cupón “SportUala1” en el Check Out y luego presionar \"APLICAR\" antes de proceder al pago.. Una vez completados los datos y colocado el cupón, SportClub procesará el alta respectiva dentro de las cuarenta y ocho (48) horas de su recepción notificando al usuario en la casilla de correo electrónico indicada. Alau es exclusivamente un medio de pago para la adquisición del servicio. SportClub es el único y exclusivo responsable por la prestación y/o correcto funcionamiento del mismo. Para consultas sobre planes, sedes adheridas y/o para efectuar bajas y/o reclamos contactarse exclusivamente a través de atencion.socios@sportclub.com.ar. Promoción no válida para pagos realizados mediante código QR. Para más información se deberá consultar en el chat de la App ingresando desde el perfil del usuario en la sección “ayuda”. La Caja de Ahorro y la Tarjeta de Crédito son ofrecidas por Ualá, entidad financiera debidamente autorizada por el BCRA. El titular de la Caja de Ahorro en Ualá podrá realizar las operaciones habilitadas a través de la App. Los depósitos en la Caja de Ahorros cuentan con garantía limitada para su devolución, de conformidad con la ley 24.485 y las normas del BCRA. Las operaciones bancarias no cuentan con respaldo del accionista de capital extranjero en exceso de su integración accionaria (Ley 25.738); tampoco lo hacen otras entidades que utilicen la marca. La Tarjeta de Crédito se encuentra sujeta a condición crediticia. Alau es un Proveedor de Servicios de Pago, para más información y condiciones o limitaciones aplicables, consulte en www.uala.com.ar/legales.\n"
+        }
+      ]
+    }
+  },
+  {
+    "source": "uala",
+    "source_id": "3TLE8A1wL2TrYe5HkoWRVv",
+    "source_url": "https://www.uala.com.ar/promociones/coderhouse",
+    "catalog_url": "https://www.uala.com.ar/promociones",
+    "scraped_at": "2026-10-15T20:49:45.656946+00:00",
+    "catalog": {
+      "sys": {
+        "id": "3TLE8A1wL2TrYe5HkoWRVv"
+      },
+      "fields": {
+        "brand": "Coderhouse",
+        "urlDeLaPromocion": "coderhouse",
+        "PromotionCategory": [
+          {
+            "metadata": {
+              "tags": [],
+              "concepts": []
+            },
+            "sys": {
+              "space": {
+                "sys": {
+                  "type": "Link",
+                  "linkType": "Space",
+                  "id": "6n252fx9hkkr"
+                }
+              },
+              "id": "67Bw8ZoeeWqj3mtHhAwUBb",
+              "type": "Entry",
+              "createdAt": "2024-03-11T14:47:26.489Z",
+              "updatedAt": "2025-05-19T14:19:49.465Z",
+              "environment": {
+                "sys": {
+                  "id": "master",
+                  "type": "Link",
+                  "linkType": "Environment"
+                }
+              },
+              "publishedVersion": 2,
+              "revision": 2,
+              "contentType": {
+                "sys": {
+                  "type": "Link",
+                  "linkType": "ContentType",
+                  "id": "promotionCategory"
+                }
+              },
+              "locale": "en-US"
+            },
+            "fields": {
+              "Category": "Ecommerce"
+            }
+          }
+        ],
+        "PromotionSpecs": [
+          {
+            "sys": {
+              "id": "2BECTR8C3Hq9SXenVNbKtv"
+            },
+            "fields": {
+              "promotionLegal": "PTérminos y Condiciones Coderhouse\n\n\"Promoción ofrecida por Alau Tecnología S.A.U, CUIT 30-71542170-0 con domicilio en Av. Coronel Marcelino E. Freyre 3650, piso 1, oficina 106, CABA, Argentina (\"Alau\"), en Argentina desde el 01/07/2026 al 30/06/2027, ambas fechas inclusive, para compras en las sucursales físicas de Coderhouse S.R.L., CUIT 30-71452874-9, (“Coderhouse”) o su sitio web: https://www.coderhouse.com/, que sean realizadas con la Tarjeta Prepaga MasterCard Ualá (“Tarjeta Prepaga”) o con la tarjeta de crédito (\"Tarjeta de Crédito\") ofrecida por Ualá Bank S.A.U. (\"Ualá\"). Será requisito necesario para acceder a la promoción, contar con una caja de ahorros en pesos (“Caja de Ahorro”) ofrecida por Ualá a través de la aplicación móvil Ualá (\"App\"). Aplicando previamente el cupón “GRACIASUALA” se otorgará un 20% de descuento sobre el valor total de la compra, sin tope de descuento (\"Descuento\"). Válido para todas las carreras, cursos y diplomaturas brindados por CODERHOUSE, excepto Servicios de Desarrollo Profesional y Membresía. El Descuento puede usarse ilimitadamente, pero sólo una vez por carrera, curso o diplomatura. Promoción no acumulable con otras promociones y/o beneficios vigentes. Coderhouse es el exclusivo responsable por la prestación, correcto funcionamiento y/o garantía del producto y/o del servicio adquirido, cualquier reclamo deberá dirigirse contra ellos\nPara más información sobre esta promoción se deberá consultar en el chat de la App ingresando desde el perfil de usuario en la sección “ayuda”. La Caja de Ahorro y la Tarjeta de Crédito son ofrecidas por Ualá, entidad financiera debidamente autorizada por el BCRA, que opera a través de la App como canal de banca móvil. El titular de la Caja de Ahorro en Ualá podrá realizar las operaciones habilitadas a través del canal. Los depósitos en la caja de ahorros cuentan con garantía limitada para su devolución, de conformidad con la ley 24.485 y las normas del BCRA. La Tarjeta de Crédito se encuentra sujeta a aprobación crediticia. Las operaciones bancarias no cuentan con respaldo del accionista de capital extranjero en exceso de su integración accionaria (Ley 25.738); tampoco lo hacen otras entidades que utilicen la marca. Alau es un Proveedor de Servicios de Pago, para más información y condiciones o limitaciones aplicables, consulte en www.uala.com.ar/legales.\"\n"
+            }
+          }
+        ]
+      }
+    },
+    "detail": {
+      "id": "3TLE8A1wL2TrYe5HkoWRVv",
+      "seo": {
+        "title": "Coderhouse - Promociones Ualá",
+        "metaDescription": " Aprovecha un 20% de descuento en todos los cursos, carreras y diplomaturas en Coderhouse, usá el cupón de descuento GRACIASUALA y paga con tus Tarjetas Ualá",
+        "canonical": "https://www.uala.com.ar/promociones/coderhouse"
+      },
+      "extraPromotion": null,
+      "logo": {
+        "src": "https://images.ctfassets.net/6n252fx9hkkr/4KymEb8yPVUaW8uLdeD6Th/4d3030a45f503f0c3d45fb018d4d3ec3/Logo_Coderhouse.webp",
+        "alt": "Logo Coderhouse"
+      },
+      "specs": [
+        {
+          "id": "2BECTR8C3Hq9SXenVNbKtv",
+          "title": "20% de descuento adicional",
+          "description": "Aprovechá un 20% OFF EXTRA en carreras y cursos usando el cupón GRACIASUALA. ",
+          "cta": {
+            "text": "Aprovechalo",
+            "href": "https://www.coderhouse.com/ar/alianzas/ual%C3%A1?utm_source=alianzas&utm_medium=uala&utm_campaign=landing"
+          },
+          "expandCardText": "Ver más",
+          "paymentMethods": [
+            "Tarjeta Prepaga",
+            "Tarjeta de Crédito"
+          ],
+          "days": [
+            "Todos los días"
+          ],
+          "place": [
+            "Online"
+          ],
+          "date": "30 de junio de 2027",
+          "cashback": "Sin tope",
+          "cashdate": "Inmediato",
+          "availability": [
+            "Todo el país"
+          ],
+          "legalDisclaimer": "PTérminos y Condiciones Coderhouse\n\n\"Promoción ofrecida por Alau Tecnología S.A.U, CUIT 30-71542170-0 con domicilio en Av. Coronel Marcelino E. Freyre 3650, piso 1, oficina 106, CABA, Argentina (\"Alau\"), en Argentina desde el 01/07/2026 al 30/06/2027, ambas fechas inclusive, para compras en las sucursales físicas de Coderhouse S.R.L., CUIT 30-71452874-9, (“Coderhouse”) o su sitio web: https://www.coderhouse.com/, que sean realizadas con la Tarjeta Prepaga MasterCard Ualá (“Tarjeta Prepaga”) o con la tarjeta de crédito (\"Tarjeta de Crédito\") ofrecida por Ualá Bank S.A.U. (\"Ualá\"). Será requisito necesario para acceder a la promoción, contar con una caja de ahorros en pesos (“Caja de Ahorro”) ofrecida por Ualá a través de la aplicación móvil Ualá (\"App\"). Aplicando previamente el cupón “GRACIASUALA” se otorgará un 20% de descuento sobre el valor total de la compra, sin tope de descuento (\"Descuento\"). Válido para todas las carreras, cursos y diplomaturas brindados por CODERHOUSE, excepto Servicios de Desarrollo Profesional y Membresía. El Descuento puede usarse ilimitadamente, pero sólo una vez por carrera, curso o diplomatura. Promoción no acumulable con otras promociones y/o beneficios vigentes. Coderhouse es el exclusivo responsable por la prestación, correcto funcionamiento y/o garantía del producto y/o del servicio adquirido, cualquier reclamo deberá dirigirse contra ellos\nPara más información sobre esta promoción se deberá consultar en el chat de la App ingresando desde el perfil de usuario en la sección “ayuda”. La Caja de Ahorro y la Tarjeta de Crédito son ofrecidas por Ualá, entidad financiera debidamente autorizada por el BCRA, que opera a través de la App como canal de banca móvil. El titular de la Caja de Ahorro en Ualá podrá realizar las operaciones habilitadas a través del canal. Los depósitos en la caja de ahorros cuentan con garantía limitada para su devolución, de conformidad con la ley 24.485 y las normas del BCRA. La Tarjeta de Crédito se encuentra sujeta a aprobación crediticia. Las operaciones bancarias no cuentan con respaldo del accionista de capital extranjero en exceso de su integración accionaria (Ley 25.738); tampoco lo hacen otras entidades que utilicen la marca. Alau es un Proveedor de Servicios de Pago, para más información y condiciones o limitaciones aplicables, consulte en www.uala.com.ar/legales.\"\n"
+        }
+      ]
+    }
+  }
+]
