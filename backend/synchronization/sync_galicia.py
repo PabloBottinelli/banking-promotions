@@ -8,6 +8,7 @@ def main():
         source="galicia",
         scraper_class=GaliciaScraper,
         normalizer_class=GaliciaNormalizer,
+        allow_deactivation=False,
     )
     runner.main()
 

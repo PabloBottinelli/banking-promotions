@@ -9,6 +9,7 @@ def main():
         scraper_class=PatagoniaScraper,
         normalizer_class=PatagoniaNormalizer,
         normalize_many=True,
+        allow_deactivation=False,
     )
     runner.main()
 
