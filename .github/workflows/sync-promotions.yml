@@ -27,6 +27,7 @@ jobs:
           - bbva
           - patagonia
           - buepp
+          - banco_del_sol
 
     defaults:
       run:
