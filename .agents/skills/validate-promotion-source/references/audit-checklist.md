@@ -14,6 +14,14 @@
 - [ ] Specific conditions capture plan/region/segment/code/exclusions; original terms preserved.
 - [ ] Apparent mojibake checked against real UTF-8 bytes/codepoints, not display alone.
 - [ ] Scraping completeness, normalization coverage and deactivation safety assessed separately.
+- [ ] Inspected current `SyncRunner` validation/save/upsert ordering; no scraper saves raw within `scrape()`.
+- [ ] Raw duplicate/blank/wrong-source IDs, zero/duplicate V2 variants and normalization errors prevent both raw saving and repository writes.
+- [ ] Required detail title/legal strings checked for non-blank **content** under HTTP 200, not only HTML node existence.
+- [ ] Unverified disappearances (including 65 → 56 and same-count ID substitution), valid additions/updates and source save rejection tested against **valid** snapshots with unchanged bytes on failure.
+- [ ] Separate `catalog_complete`, `normalization_complete`, `snapshot_replace_allowed`, `requires_review`, `safe_to_deactivate` judgments, with flags not assumed universal.
+- [ ] Missing durable prior snapshots on ephemeral CI and partial raw/coverage/Supabase transaction limitations recorded.
+- [ ] `--validate-only` mocked without writes; never run real sync as QA, and disclose credential-import caveat.
+- [ ] Failed/short upsert and every deactivation guard covered; `allow_deactivation=False` default checked.
 - [ ] Tests examined critically; commands/results accurate; no files changed and no sync attempted.
 - [ ] QA-IDs reproducible with official expected vs output actual; no speculative defects as confirmed.
 - [ ] Verdict PASS/FAIL/BLOCKED with specific follow-up; no reference-test suite created.

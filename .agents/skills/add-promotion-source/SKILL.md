@@ -13,6 +13,7 @@ You are the **implementation agent**, NOT an independent QA reviewer. Read repos
 - Establish public official page/API and exact catalog scope. Check page counts and true pagination, additional categories, lazy-load behavior, regional filters and detail linkage; investigate 1:N campaign → merchant → benefit relationships.
 - Verify source format with network/API evidence. A finite HTML listing can be complete without a published count *if* structural checks exclude undiscovered entries, filtering/pagination and hidden sections. Never assume 200 OK or a response length equals coverage.
 - Distinguish what's officially stated from assumptions; links to older scraper code are hints, not current evidence.
+- **Shared runner is the contract:** inspect its current order, raw validation, normalization checks, source acceptance flags, default `allow_deactivation=False` and `--validate-only` behavior. Do not implement a parallel write path or copy legacy save-before-normalize patterns.
 
 ## 2. Implement raw extraction
 
@@ -20,6 +21,10 @@ You are the **implementation agent**, NOT an independent QA reviewer. Read repos
 - Store complete raw API/HTML/terms data with stable entity IDs, source URL, `scraped_at` in UTC; do not trim fields just because V2 doesn't represent them.
 - Count discovered/unique/detail-success/detail-error/unavailable/filtered; never treat pagination limits, missing details, broken selectors, or partial responses as complete.
 - Keep raw file saving atomic; an empty or failed extraction must not silently overwrite the previous valid snapshot. Avoid redundant copying of huge catalog HTML into every record when provenance can be preserved once.
+- `scrape()` must return a candidate `ScrapeResult` **without saving it**; the runner calls `save_raw_promotions()` only after full V2 validation. Do not save in a scraper constructor or when importing a module.
+- Validate the **content**, not only the presence, of essential title and legal/detail nodes when those fields are required by the source. An HTTP 200 with empty/whitespace-only terms or title must not overwrite an earlier valid detail; distinguish genuinely optional source fields from malformed responses.
+- `save_raw_promotions()` remains source-specific: reject corrupted/partial captures and unverified removals of previously accepted IDs, check duplicate/blank IDs, preserve atomic writes, and recheck candidate identity/acceptance before replacing. Do not treat unchanged counts, short final pagination batches or a hidden load-more button as independent proof of completeness.
+- Represent extracted scope/completeness separately from snapshot acceptance/review (`catalog_complete`, `snapshot_replace_allowed`, `requires_review` **as source coverage metadata when applicable**). Do not inject fake `failed_ids` merely to disable replacement or database deactivation. When no reliable previous baseline exists (notably ephemeral CI), report that fact; do not invent an unconditional "safe" approval.
 - Scraper CLI should log counts, path, coverage scope, completeness and errors; no side effects upon module import.
 - Keep generated files organized:
   - `backend/data/`: persistent raw JSON, normalized JSON and
@@ -46,15 +51,18 @@ You are the **implementation agent**, NOT an independent QA reviewer. Read repos
 - **No manufactured output:** don't hardcode changing benefits/caps/dates/stock as a fallback for a broken parser. `other` only when a real documented benefit exists. Preserve raw record plus flagged exclusion if truly impossible to represent.
 - Use `backend/normalization/structure.py` helpers if present, but challenge their assumptions against source semantics; never prefer green tests over correctness.
 - The user may have migrated Supabase: do not edit schema/migrations without explicit request. Do not emit legacy V1 fields or rely on V1 columns.
+- Every raw record must yield a non-empty **list** of `NormalizedPromotion` variants through `normalize_many()` when configured. An unparseable offer is a failed/blocked candidate, not a silently skipped raw record; ensure IDs are stable and unique across *all* variants.
 
 ## 4. Tests, local JSON and source checks
 
 - Add only ordinary unit/mock tests under `backend/tests/{scraping,normalization}`. Use `httpx.MockTransport`, `tmp_path`, synthetic clearly labeled inputs or small unmodified real excerpts. No golden/reference suite.
 - Cover every V2 category relevant to the source: benefits/variants/identity, nullable dates, weekends/unknown every day, amount versus quantity, cap period/scope, payment combinations, source text preservation, attached merchants, empty catalog, partial failures and deactivation safety.
 - Test assertions must have independent source-based expected values, not derived by running the current code and copying its output.
-- Run a local scraper / JSON normalizer/export in read-only-to-database mode (running scraper may update local raw file; check paths/permissions first). Compare real output **field by field**: *all records for ≤30 entries*, representative plus edge-case sample for larger catalogs. Count raw entities, transformed variants, non-normalizable items and reasons. Mark unknowns rather than make them look valid.
+- Add focused **runner integration mocks** in existing tests: zero variants, duplicate/wrong-source IDs, blank essential detail fields, incomplete `ScrapeResult`, explicit `snapshot_replace_allowed=False` and `requires_review=True`, rejected raw save, partial repository upsert, and attempted deactivation without all four guards. Assert both snapshot and Supabase effects, not merely raised exceptions.
+- Exercise source snapshot guards with a **valid** prior baseline: 65 → 56 (or equivalent), same-count ID replacement, missing details with 200 OK, legitimate additions, same-ID content updates, and simulated atomic replace failure. Verify the previous bytes remain unchanged on rejection; do not use malformed baselines that make tests pass for the wrong reason.
+- Use `normalization.export_json` with **saved fixtures or isolated inputs** for local V2 inspection (never Supabase). Any live scrape or entry-point validation needs scope, side-effect and permission review: the runner `--validate-only` avoids its own saves/upserts but may still import Supabase configuration; with no `--from-file` it also invokes the live scraper. Do not run synchronization entry points without explicit permission. Compare real output **field by field** (all records for ≤30 entries; risk-based sample for larger catalogs). Count raw entities, transformed variants, exclusions and reasons.
 - Run `python -m pytest -q tests` from `backend/`, plus targeted tests. Explicitly report tests that could not run due inaccessible temporary paths or network timeouts; neither means that code is correct.
-- Review `ScrapeResult.complete` separate from normalization completeness. `SyncRunner` may deactivate not-seen rows after upsert; an unchecked omission can lose live promotions. Never use `sync_<source>` or even `--from-file` without user approval.
+- Review `ScrapeResult.complete`, independently evidenced catalog coverage, normalization completeness, source snapshot acceptance/review and database deactivation as separate gates. `allow_deactivation` defaults to False; additionally requires a live complete run, `coverage.safe_to_deactivate is True` and full upsert. Never execute `sync_<source>` with any flags without user approval.
 - If pytest requires a custom temporary directory, use
   `--basetemp=.tmp/pytest`. Never place pytest temporary
   directories inside `backend/data/`.
@@ -62,6 +70,6 @@ You are the **implementation agent**, NOT an independent QA reviewer. Read repos
 ## 5. Handoff
 
 - Add thin `sync_<source>.py`; do **not run** it against Supabase or edit scheduling/workflows.
-- Report source scope/evidence, changed files, commands and outcomes, catalog/raw/normalized counts, variant and exclusion details, `complete` reasoning, missing information, validation gaps and risk of destructive deactivation.
+- Report source scope/evidence, changed files, commands and outcomes, raw/normalized counts, variants and exclusions; record `catalog_complete`, `normalization_complete`, `snapshot_replace_allowed`, `requires_review` and `safe_to_deactivate` with evidence and "UNKNOWN/not exposed" where appropriate. Distinguish source-specific coverage fields from runner gates; identify any external-baseline/CI limitations.
 - If orchestrated, return this to the coordinator for fresh QA; on `QA-###` findings, fix and add ordinary regression tests, then await new independent QA. If standalone, request `$validate-promotion-source` in a separate fresh context.
 - Status is `READY_FOR_INDEPENDENT_QA`, `PARTIAL` or `BLOCKED` — never independent `PASS`.

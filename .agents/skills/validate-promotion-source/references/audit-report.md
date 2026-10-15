@@ -32,11 +32,21 @@ For each `QA-###`:
 - User/data integrity or deactivation impact:
 - Developer change and ordinary regression assertion requested:
 
-## Gates
-- `catalog_complete`: YES / NO / UNKNOWN, scope and evidence:
-- `normalization_complete`: YES / NO / UNKNOWN, exclusions and variants:
-- `safe_to_deactivate`: YES / NO / UNKNOWN, reason (not production permission):
+## Five distinct gates (not all are model fields)
+- `catalog_complete`: YES / NO / UNKNOWN; official scope, pager/detail evidence and relationship to `ScrapeResult.complete`:
+- `normalization_complete`: YES / NO / UNKNOWN; every raw record and variant, exclusions:
+- `snapshot_replace_allowed`: YES / NO / UNKNOWN / NOT EXPOSED; source flag (if any), actual save guard, prior accepted baseline:
+- `requires_review`: YES / NO / UNKNOWN / NOT EXPOSED; source flag (if any), missing IDs or unresolved anomalies:
+- `safe_to_deactivate`: YES / NO / UNKNOWN / NOT EXPOSED; source flag, runner opt-in and evidence (not production permission):
 - `ready_for_human_review`: YES / NO:
+
+## Shared runner and snapshot integrity
+- Evidence `scrape()` is candidate-only; runner validates raw then all V2 variants before source save/upsert:
+- Adversarial tests: incomplete/empty/duplicate/wrong-source raw, zero/duplicate variants, required detail blanks under HTTP 200:
+- Valid historical-baseline checks: missing/substituted IDs, legitimate additions/updates, atomic save failure, prior snapshot byte preservation:
+- Explicit source review/refusal flags; coverage absent/unknown behavior; CI historical baseline availability:
+- `--validate-only` mock no-write result, current eager Supabase-import limitation, no real sync executed:
+- Partial upsert and default/explicit deactivation gates; raw + coverage + Supabase are not one transaction:
 
 ## Execution and boundaries
 - Targeted tests (command/output), full tests (command/output), live comparison available:
