@@ -1,0 +1,142 @@
+{
+  "id": "38825c80-1999-4b6a-b5f6-46a7557bfbc4",
+  "name": "Café Martínez",
+  "description": "Hasta 20% en Café Martínez con Santander Sorpresa y Visa ",
+  "type": "cashback",
+  "reward_type": "cash",
+  "scope": "Bancaria",
+  "status": "active",
+  "real_status": "RUNNING",
+  "is_engine_active": false,
+  "created_at": "2026-08-06T20:22:11.150Z",
+  "updated_at": "2026-09-29T17:29:41.208Z",
+  "deleted_at": null,
+  "short_description": "2608-Santander-CaféMartinez-Presencial-10off-Informativa",
+  "publication_description": "Hasta 20% en Café Martínez con Santander Sorpresa y Visa ",
+  "slug": "cafemartinez-santander-agos26-oct26",
+  "display_start_date": "2026-07-30T03:00:00.000Z",
+  "display_stop_date": "2027-02-01T02:59:59.999Z",
+  "search_tags": "cafemartinez,gastronomia,cafeterias,santander,martes,miercoles,presencial,sorpresa,visa",
+  "conditions": {
+    "schedule": {
+      "stop_date": "2026-10-31",
+      "start_date": "2026-08-01",
+      "days_of_week": [
+        "tuesday",
+        "wednesday"
+      ],
+      "daily_stop_time": "23:59:00",
+      "daily_start_time": "00:00:00"
+    },
+    "acquirers": {
+      "list": [],
+      "segmentation_mode": "no_segmentation"
+    },
+    "payment_flow": {
+      "flows": [
+        "instore"
+      ]
+    },
+    "exclusiveness": "all",
+    "payment_methods": {
+      "methods": [
+        {
+          "type": "debit_card",
+          "issuer": "visa"
+        },
+        {
+          "type": "credit_card",
+          "issuer": "visa"
+        }
+      ]
+    },
+    "has_differential_amount": false
+  },
+  "offers": [
+    {
+      "id": "38825c80-1999-4b6a-b5f6-46a7557bfbc4",
+      "benefit_id": "38825c80-1999-4b6a-b5f6-46a7557bfbc4",
+      "name": "Café Martinez",
+      "priority": 0,
+      "segmentations": {
+        "categories": [
+          {
+            "category_id": 2,
+            "subcategory_ids": [
+              47
+            ]
+          }
+        ]
+      },
+      "requirements": {
+        "banks": {
+          "list": [
+            "167504f6-caaf-4ead-b65b-6e6695ae6209"
+          ]
+        },
+        "amount_range": {
+          "min": 0
+        }
+      },
+      "outcomes": {
+        "cashback": {
+          "amount": 10,
+          "amount_type": "percent",
+          "cashback_mode": "cashback_por_regla"
+        },
+        "financing": {
+          "installments": []
+        }
+      },
+      "limits": {
+        "period_cap": {
+          "reset_by": "month",
+          "aggregate_by": "user",
+          "amount_by_period": 10000,
+          "amount_of_transactions_by_period": 0
+        },
+        "transaction_cap": {
+          "amount_by_transaction": 0
+        }
+      },
+      "categories": [
+        "2"
+      ],
+      "sub_categories": [
+        "47"
+      ],
+      "preselected": false,
+      "created_at": "2026-07-31T13:00:41.029Z",
+      "updated_at": "2026-09-29T16:20:44.662Z",
+      "deleted_at": null,
+      "offer_caps": [],
+      "offer_transaction_cap": 0
+    }
+  ],
+  "debit_list": [
+    "visa"
+  ],
+  "credit_list": [
+    "visa"
+  ],
+  "terms_and_conditions": "<p class=\"editor-paragraph\" dir=\"ltr\"><span style=\"white-space: pre-wrap;\">Válido desde el 01/08/2026 hasta el 31/10/2026 todos los martes y miércoles en locales adheridos abonando con QR a través de la App Santander o App MODO con Tarjeta Santander Visa crédito y/o débito, todos los días. El ahorro se hará efectivo vía reintegro dentro de los 30 días de efectuado el consumo en la cuenta asociada del cliente. Es necesario que previo a realizarse el reintegro tengas asociada a MODO la cuenta que sea del mismo banco que la tarjeta con la que realizaste la compra. El tope de ahorro se calcula considerando la suma de las compras realizadas por el titular de tarjeta y sus adicionales. El tope de reintegro mensual será de $10.000 para todos los clientes Santander Visa, y el tope de reintegro mensual para clientes adheridos a Sorpresa Santander será de $10.000 extra. Ejemplo: En una compra con tarjeta Santander VISA debito ahderida a sorpresa de $20.000 registrara un consumo de $20.000, un reintegro de $1.000 y otro reintegro por sorpresa de $1.000.</span></p>",
+  "terms_and_conditions_url": null,
+  "coupon": null,
+  "card": {
+    "benefit": "Hasta 20% de reintegro",
+    "validity_place": "Café Martínez",
+    "cashback_cap": "10000",
+    "participating_bank": "Santander",
+    "image": "https://assets.mobile.playdigital.com.ar/promotions_dynamics/6199fbf6-adfb-4341-8047-85f0cd7c11b0/primary_image.jpg?v=1785448782386&t=2026-07-30T21:56:14.878Z&t=2026-07-30T21:56:14.878Z",
+    "banner_image": "https://assets.mobile.playdigital.com.ar/images/promotions/hub/default_banner.png",
+    "banner_image_portrait": "https://assets.mobile.playdigital.com.ar/images/promotions/hub/default_new_banner.png"
+  },
+  "details": {
+    "name": "Café Martínez con Santander",
+    "faq": "<p class=\"editor-paragraph\" dir=\"ltr\" style=\"text-align: start;\"><b><strong class=\"editor-text-bold\" style=\"white-space: pre-wrap;\">¿Cómo puedo acceder al beneficio? </strong></b></p><p class=\"editor-paragraph\" dir=\"ltr\" style=\"text-align: start;\"><span style=\"white-space: pre-wrap;\">Realizando una compra con tus tarjetas de débito, crédito y/o recargables Visa del Banco Santander, a través de MODO. </span></p><p class=\"editor-paragraph\" style=\"text-align: start;\"><br></p><p class=\"editor-paragraph\" dir=\"ltr\" style=\"text-align: start;\"><b><strong class=\"editor-text-bold\" style=\"white-space: pre-wrap;\">Detalle del beneficio: </strong></b></p><p class=\"editor-paragraph\" dir=\"ltr\" style=\"text-align: start;\"><b><strong class=\"editor-text-bold\" style=\"white-space: pre-wrap;\">10% de reintegro</strong></b><span style=\"white-space: pre-wrap;\"> para todos los clientes Santander. Tope $10.000 por usuario por mes.</span><br><b><strong class=\"editor-text-bold\" style=\"white-space: pre-wrap;\">20% de reintegro</strong></b><span style=\"white-space: pre-wrap;\"> para clientes suscriptos al programa Sorpresa Santander. Tope $20.000 por usuario por mes.</span></p><p class=\"editor-paragraph\" style=\"text-align: start;\"><br></p><p class=\"editor-paragraph\" dir=\"ltr\" style=\"text-align: start;\"><b><strong class=\"editor-text-bold\" style=\"white-space: pre-wrap;\">¿Dónde veo el descuento aplicado?</strong></b></p><p class=\"editor-paragraph\" dir=\"ltr\" style=\"text-align: start;\"><span style=\"white-space: pre-wrap;\">El reintegro lo veras acreditado en tu cuenta del Banco Santander.</span></p>",
+    "applicability_description": "Café Martínez",
+    "primary_button": null,
+    "secondary_button": null,
+    "download_button": null
+  }
+}

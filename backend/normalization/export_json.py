@@ -20,9 +20,11 @@ from normalization.sources.banco_del_sol import BancoDelSolNormalizer
 from normalization.sources.buepp import BueppNormalizer
 from normalization.sources.galicia import GaliciaNormalizer
 from normalization.sources.patagonia import PatagoniaNormalizer
+from normalization.sources.modo import ModoNormalizer
 
 BACKEND_DIR = Path(__file__).resolve().parents[1]
 SOURCES = {
+    "modo": (ModoNormalizer, True),
     "banco_del_sol": (BancoDelSolNormalizer, True),
     "buepp": (BueppNormalizer, True),
     "bbva": (BBVANormalizer, False),

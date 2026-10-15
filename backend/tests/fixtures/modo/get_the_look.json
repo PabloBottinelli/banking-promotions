@@ -1,0 +1,179 @@
+{
+  "id": "45301a91-6671-42f0-bd31-b4795dfa845a",
+  "name": "GTL DDM II",
+  "description": "",
+  "type": "financing",
+  "reward_type": "financing",
+  "scope": "Bancaria",
+  "status": "active",
+  "real_status": "RUNNING",
+  "is_engine_active": true,
+  "created_at": "2026-10-09T18:18:05.816Z",
+  "updated_at": "2026-10-09T20:16:45.448Z",
+  "deleted_at": null,
+  "short_description": "2610-galicia-getthelook-ddm26-financiacion-eminent-online-6csi",
+  "publication_description": "Aprovechá hasta 6 cuotas sin interés en Get The Look con Galicia",
+  "slug": "6csi-galicia-getthelook-oct26",
+  "display_start_date": "0206-10-08T03:00:00.000Z",
+  "display_stop_date": "2026-11-19T02:59:59.999Z",
+  "search_tags": "",
+  "conditions": {
+    "schedule": {
+      "stop_date": "2026-10-18",
+      "start_date": "2026-10-10",
+      "days_of_week": [
+        "monday",
+        "tuesday",
+        "wednesday",
+        "thursday",
+        "friday",
+        "saturday",
+        "sunday"
+      ],
+      "daily_stop_time": "23:59:59",
+      "daily_start_time": "00:00:00"
+    },
+    "acquirers": {
+      "list": [
+        "MERCADOLIBRE"
+      ],
+      "segmentation_mode": "by_blacklist"
+    },
+    "payment_flow": {
+      "flows": [
+        "online"
+      ]
+    },
+    "exclusiveness": "all",
+    "payment_methods": {
+      "methods": [
+        {
+          "type": "credit_card",
+          "issuer": "american_express"
+        },
+        {
+          "type": "credit_card",
+          "issuer": "master"
+        },
+        {
+          "type": "credit_card",
+          "issuer": "visa"
+        }
+      ]
+    }
+  },
+  "offers": [
+    {
+      "id": "45301a91-6671-42f0-bd31-b4795dfa845a",
+      "benefit_id": "45301a91-6671-42f0-bd31-b4795dfa845a",
+      "name": ".",
+      "priority": 0,
+      "segmentations": {
+        "whitelist": [
+          "store_terminal_id",
+          "bin"
+        ],
+        "categories": [
+          {
+            "category_id": 4,
+            "subcategory_ids": [
+              8,
+              16
+            ]
+          }
+        ]
+      },
+      "requirements": {
+        "banks": {
+          "list": [
+            "88d8705e-2dda-46f9-8411-bb4916af858e"
+          ]
+        },
+        "amount_range": {
+          "min": 0
+        }
+      },
+      "outcomes": {
+        "financing": {
+          "installments": [
+            {
+              "type": "sin_interes",
+              "number": 2,
+              "coefficient": "0",
+              "annual_nominal_rate": "0",
+              "total_financial_cost": "0"
+            },
+            {
+              "type": "sin_interes",
+              "number": 3,
+              "coefficient": "0",
+              "annual_nominal_rate": "0",
+              "total_financial_cost": "0"
+            },
+            {
+              "type": "sin_interes",
+              "number": 4,
+              "coefficient": "0",
+              "annual_nominal_rate": "0",
+              "total_financial_cost": "0"
+            },
+            {
+              "type": "sin_interes",
+              "number": 5,
+              "coefficient": "0",
+              "annual_nominal_rate": "0",
+              "total_financial_cost": "0"
+            },
+            {
+              "type": "sin_interes",
+              "number": 6,
+              "coefficient": "0",
+              "annual_nominal_rate": "0",
+              "total_financial_cost": "0"
+            }
+          ]
+        }
+      },
+      "limits": null,
+      "categories": [
+        "4"
+      ],
+      "sub_categories": [
+        "16",
+        "8"
+      ],
+      "preselected": false,
+      "created_at": "2026-10-09T19:17:16.131Z",
+      "updated_at": "2026-10-09T19:17:32.982Z",
+      "deleted_at": null,
+      "offer_caps": [],
+      "offer_transaction_cap": null
+    }
+  ],
+  "debit_list": [],
+  "credit_list": [
+    "american_express",
+    "master",
+    "visa"
+  ],
+  "terms_and_conditions": "<p class=\"editor-paragraph\" dir=\"ltr\"><span style=\"white-space: pre-wrap;\">CARTERA DE CONSUMO. Promoción del 25% de ahorro y hasta 6 cuotas sin interés, en compras realizadas en el País para clientes Éminent. 50.000 en total por marca mientras dure la promoción. Válida para Sábado y Domingo comprendidos entre el 10/10/2026 y el 18/10/2026, para compras realizadas con Tarjeta Galicia Débito, Tarjeta Visa, Tarjeta Mastercard y Tarjeta American Express. Promoción valida únicamente en los comercios adheridos y en productos seleccionados. El importe ahorrado se acreditará dentro de los 10 días hábiles posteriores a la compra en la caja de ahorro común. Para acceder a la promoción, el participante deberá tener abierta una caja de ahorro común en el Banco, en donde se acreditará el monto del reintegro. Si el cliente tuviera más de una cuenta, el crédito se realizará en cualquiera de ellas a elección del Banco. Dicha promoción no es acumulable con otras promociones vigentes. Ejemplo: En una compra de $1000 y se paga en 6 cuotas: el importe del ahorro es de $ 250 y el valor de las cuotas será de $ 166.67. No aplica para compras realizadas con tarjetas de Credito Visa Business, Visa Rural y Tarjetas de Débito emitidas a por Anses para Asignación Universal por hijo ni Progresar. La promoción no aplica a pagos a través de billeteras virtuales (excepto Modo, Google Pay y Apple Pay), mPos y/o plataformas de pago online. MODO es marca registrada por Play Digital S.A., CUIT 30-71682943-6, con domicilio en Av. del Libertador 7208, Torre I, Piso 3, CABA (“PDSA”) y es un Proveedor de Servicios Tecnológicos de Banco de Galicia y Buenos Aires S.A. Sólo podrán participar de la promoción aquellos clientes que al momento de comprar se encuentren al día con sus productos. Banco Galicia solo es el medio de pago para la adquisición del producto/servicio. El Banco podrá limitar o excluir el acceso a promociones y beneficios vigentes o futuros en caso de incumplimiento de los términos y condiciones de los productos y/o promociones, o conductas abusivas o contrarias a su finalidad. En caso de anulación, devolución o reversión de la transacción que originó el beneficio, el Banco podrá revocar el reintegro y debitar el importe correspondiente de la cuenta acreditada, la tarjeta de crédito o compensarlo con otros saldos o beneficios futuros. Ofrecido por Banco de Galicia y Buenos Aires S.A. CUIT: 30-50000173-5, Tte. J.D. Perón 430 (C1038AAI), CABA, Argentina. Tasa Nominal Anual “TNA”: 0,00%, Tasa Efectiva Anual “TEA”: 0,00%, Costo Financiero Total Efectivo Anual “CFTEA”: 0,00%.“CFTEA”+IVA: 0,00%.</span></p>",
+  "terms_and_conditions_url": null,
+  "coupon": null,
+  "card": {
+    "benefit": "6 cuotas sin interés ",
+    "validity_place": "Get The Look",
+    "cashback_cap": "0",
+    "participating_bank": "Galicia",
+    "image": "https://assets.mobile.playdigital.com.ar/promotions_dynamics/publication-card/83a00cf9-e41c-4a90-af7f-9e17a5274dce_GET-THE-LOOK-Detalle.jpg",
+    "banner_image": "https://assets.mobile.playdigital.com.ar/images/promotions/hub/default_banner.png",
+    "banner_image_portrait": "https://assets.mobile.playdigital.com.ar/images/promotions/hub/default_new_banner.png"
+  },
+  "details": {
+    "name": "",
+    "faq": "",
+    "applicability_description": "Get The Look",
+    "primary_button": null,
+    "secondary_button": null,
+    "download_button": null
+  }
+}

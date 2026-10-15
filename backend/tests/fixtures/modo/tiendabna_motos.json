@@ -1,0 +1,142 @@
+{
+  "id": "ad41b629-abcc-4f41-b7c5-5f6a870eb0a0",
+  "name": "24 CSI Tienda BNA+ motos",
+  "description": "Pagando con MODO BNA+ y Visa o Mastercard de BNA",
+  "type": "financing",
+  "reward_type": "financing",
+  "scope": "Bancaria",
+  "status": "active",
+  "real_status": "RUNNING",
+  "is_engine_active": true,
+  "created_at": "2026-07-16T19:21:16.210Z",
+  "updated_at": "2026-09-17T18:30:16.597Z",
+  "deleted_at": null,
+  "short_description": "2604-BNA-TiendaBNA-Motos-U6533-Online-24cf",
+  "publication_description": "Pagando con MODO BNA+ y Visa o Mastercard de BNA",
+  "slug": "24cf-tiendabna-motos-bna-abr26",
+  "display_start_date": "2026-04-01T03:00:00.000Z",
+  "display_stop_date": "2026-12-01T02:59:59.999Z",
+  "search_tags": null,
+  "conditions": {
+    "schedule": {
+      "stop_date": "2026-12-31",
+      "start_date": "2026-04-01",
+      "days_of_week": [
+        "monday",
+        "tuesday",
+        "wednesday",
+        "thursday",
+        "friday",
+        "saturday",
+        "sunday"
+      ],
+      "daily_stop_time": "23:59:00",
+      "daily_start_time": "00:00:00"
+    },
+    "acquirers": {
+      "list": [],
+      "segmentation_mode": "no_segmentation"
+    },
+    "payment_flow": {
+      "flows": [
+        "online"
+      ]
+    },
+    "exclusiveness": "all",
+    "payment_methods": {
+      "methods": [
+        {
+          "type": "credit_card",
+          "issuer": "visa"
+        },
+        {
+          "type": "credit_card",
+          "issuer": "master"
+        }
+      ]
+    }
+  },
+  "offers": [
+    {
+      "id": "ad41b629-abcc-4f41-b7c5-5f6a870eb0a0",
+      "benefit_id": "ad41b629-abcc-4f41-b7c5-5f6a870eb0a0",
+      "name": "24 CSI Tienda BNA+ motos",
+      "priority": 0,
+      "segmentations": {
+        "whitelist": [
+          "bin",
+          "store_financing_online_id"
+        ],
+        "categories": [
+          {
+            "category_id": 15,
+            "subcategory_ids": [
+              11
+            ]
+          }
+        ]
+      },
+      "requirements": {
+        "banks": {
+          "list": [
+            "0330e59b-b6e3-43eb-9083-a88fcc61e845"
+          ]
+        },
+        "amount_range": {
+          "min": 0
+        }
+      },
+      "outcomes": {
+        "financing": {
+          "installments": [
+            {
+              "type": "con_interes_preferencial",
+              "number": 24,
+              "coefficient": "1.4017",
+              "annual_nominal_rate": "35.00",
+              "total_financial_cost": "0"
+            }
+          ]
+        }
+      },
+      "limits": null,
+      "categories": [
+        "15"
+      ],
+      "sub_categories": [
+        "11"
+      ],
+      "preselected": false,
+      "created_at": "2026-07-16T19:21:13.813Z",
+      "updated_at": "2026-07-16T19:21:13.813Z",
+      "deleted_at": null,
+      "offer_caps": [],
+      "offer_transaction_cap": null
+    }
+  ],
+  "debit_list": [],
+  "credit_list": [
+    "visa",
+    "master"
+  ],
+  "terms_and_conditions": "<p class=\"editor-paragraph\" dir=\"ltr\"><span style=\"white-space: pre-wrap;\">PROMOCIÓN VÁLIDA EN LA REPÚBLICA ARGENTINA TODOS LOS DÍAS DESDE EL 01/04/2026 AL 30/09/2026, AMBAS FECHAS INCLUSIVE, PAGANDO CON TARJETAS DE CRÉDITO VISA Y MASTERCARD DEL BANCO NACIÓN PARA LA COMPRA DE PRODUCTOS SELECCIONADOS DE: MOTOS. NO VÁLIDO PARA PAGOS CON SALDO EN CUENTA. EXCLUSIVO CARTERA DE CONSUMO. TASA NOMINAL ANUAL (TNA) FIJA 41,20%. TASA EFECTIVA ANUAL (TEA) FIJA 35,00%. COSTO FINANCIERO TOTAL EXPRESADO EN TEA (CFTEA) 51,64%. BANCO DE LA NACIÓN ARGENTINA - BARTOLOMÉ MITRE 326, CABA - CUIT 30-50001091-2. PARA MÁS INFORMACIÓN Y CONDICIONES O LIMITACIONES APLICABLES, CONSULTÁ EN WWW.TIENDABNA.COM.AR</span></p>",
+  "terms_and_conditions_url": null,
+  "coupon": null,
+  "card": {
+    "benefit": "24 cuotas fijas",
+    "validity_place": "Tienda BNA+ Motos",
+    "cashback_cap": "0",
+    "participating_bank": "Banco Nación  ",
+    "image": "https://assets.mobile.playdigital.com.ar/promotions_dynamics/2519fdf2-417b-4f52-922b-868cfcca1503/primary_image.jpg?v=1774462258085",
+    "banner_image": "https://assets.mobile.playdigital.com.ar/images/promotions/hub/default_banner.png",
+    "banner_image_portrait": "https://assets.mobile.playdigital.com.ar/images/promotions/hub/default_new_banner.png"
+  },
+  "details": {
+    "name": null,
+    "faq": null,
+    "applicability_description": "Tienda BNA+",
+    "primary_button": null,
+    "secondary_button": null,
+    "download_button": null
+  }
+}
