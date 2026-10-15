@@ -20,6 +20,7 @@ from normalization.sources.banco_del_sol import BancoDelSolNormalizer
 from normalization.sources.buepp import BueppNormalizer
 from normalization.sources.galicia import GaliciaNormalizer
 from normalization.sources.patagonia import PatagoniaNormalizer
+from normalization.sources.personal_pay import PersonalPayNormalizer
 
 BACKEND_DIR = Path(__file__).resolve().parents[1]
 SOURCES = {
@@ -28,6 +29,7 @@ SOURCES = {
     "bbva": (BBVANormalizer, False),
     "galicia": (GaliciaNormalizer, False),
     "patagonia": (PatagoniaNormalizer, True),
+    "personal_pay": (PersonalPayNormalizer, True),
 }
 
 
