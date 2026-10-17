@@ -1,0 +1,318 @@
+{
+  "source": "santander",
+  "source_id": "267:7961",
+  "scraped_at": "2026-10-15T21:37:52.261464+00:00",
+  "promotion_url": "https://www.santander.com.ar/personas/beneficios#/publication?brandId=267&programId=7961",
+  "catalog_url": "https://www.santander.com.ar/personas/beneficios#/results?category-code=ALL",
+  "catalog": {
+    "id": 267,
+    "code": "",
+    "name": "Open Sports",
+    "desktopImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/brand_54423f01-82a6-46b2-a2b3-cc7955e1f013.png",
+    "desktopMinImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/brand_6531f667-749a-44a3-a3ba-f3438766fc6a.png",
+    "mobileImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/brand_37fee676-ecc4-4185-8239-c72554fa43b3.png",
+    "mobileMinImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/brand_e6c7334a-ea70-43b6-a9dd-fb25035c3bc0.png",
+    "active": true,
+    "order": 2,
+    "benefitDescription": "20%",
+    "colorCode": "#257FA4",
+    "brandType": {
+      "id": 1,
+      "description": "Standar",
+      "code": "STA",
+      "active": true
+    }
+  },
+  "program": {
+    "startDatePublication": "2026-10-01T00:00:00",
+    "endDatePublication": "2026-12-31T00:00:00",
+    "id": 7961,
+    "idPromotion": 14118,
+    "monday": false,
+    "tuesday": false,
+    "wednesday": false,
+    "thursday": false,
+    "friday": false,
+    "saturday": true,
+    "sunday": false,
+    "fullWeek": false,
+    "multiPublication": true,
+    "customerDiscount": 20,
+    "topAmount": 50000,
+    "additionalText": "<p><span style=\"background-color: rgb(255, 255, 255); color: rgb(79, 84, 87); font-size: 14px;\">Pagando con </span><strong style=\"background-color: rgb(255, 255, 255); color: rgb(79, 84, 87); font-size: 14px;\">QR</strong><span style=\"background-color: rgb(255, 255, 255); color: rgb(79, 84, 87); font-size: 14px;\"> a través de la </span><strong style=\"background-color: rgb(255, 255, 255); color: rgb(79, 84, 87); font-size: 14px;\">App Santander</strong><span style=\"background-color: rgb(255, 255, 255); color: rgb(79, 84, 87); font-size: 14px;\">.</span></p><p></p><p><span style=\"background-color: rgb(255, 255, 255); color: rgb(79, 84, 87); font-size: 14px;\">Beneficio exclusivo para clientes suscriptos a </span><strong style=\"background-color: rgb(255, 255, 255); color: rgb(79, 84, 87); font-size: 14px;\">Sorpresa Santander</strong><span style=\"background-color: rgb(255, 255, 255); color: rgb(79, 84, 87); font-size: 14px;\">.</span></p>",
+    "monthlyCut": false,
+    "initialQuote": 2,
+    "finalQuote": 6,
+    "interestFreeFees": true,
+    "specialCondition": null,
+    "order": 3,
+    "legal": "<p>CFTNA: COSTO FINANCIERO TOTAL EFECTIVO ANUAL:</p><p>CFTNA: 0% 2,14%</p><p>Válida los sabados, en los locales adheridos, abonando con QR a través de la App Santander o App MODO con Tarjetas Santander Visa Crédito y/o Débito. El ahorro es exclusivo para clientes suscriptos al programa Sorpresa Santander. Comisión por membresía mensual Sorpresa Santander $5.289,26 + impuestos, importe final: $6.400 (Consumidor final), el que será debitado de la cuenta o tarjeta de crédito del cliente, el quinto día hábil del mes.</p><p>Se excluyen compras abonadas por transferencias o pagos realizados con dinero en cuenta, a través de billeteras virtuales o financiadas por programas Cuota a Cuota. No acumulable con otras promociones. Válido únicamente para clientes titulares de cuenta bancaria Santander. No aplica a clientes que posean tarjeta de crédito sin cuenta bancaria asociada. En caso que la compra sea realizada con una tarjeta adicional, el reintegro se verá reflejado en la cuenta bancaria del titular. El ahorro se hará efectivo vía reintegro dentro de los 30 días de efectuado el consumo en la cuenta bancaria titular del cliente. Ejemplo: en una compra con tarjeta de crédito de $500.000, el cliente recibirá un reintegro de $50.000 (TOPE) en la cuenta bancaria titular.</p>",
+    "benefitType": {
+      "id": 1,
+      "description": "Ahorro",
+      "code": "A"
+    },
+    "paymentType": {
+      "id": 3,
+      "description": "QR - Modo",
+      "code": "M"
+    },
+    "paymentMethod": {
+      "id": 5,
+      "description": "Ahorro y Cuotas",
+      "code": "AYC"
+    },
+    "frecuency": {
+      "id": 2,
+      "description": "Mensual",
+      "code": "M"
+    },
+    "tag": {
+      "id": 2,
+      "description": "Sorpresa",
+      "code": "SOR",
+      "status": false,
+      "colorCode": "#257FA4"
+    },
+    "brands": [
+      {
+        "id": 267,
+        "code": "",
+        "name": "Open Sports",
+        "desktopImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/brand_54423f01-82a6-46b2-a2b3-cc7955e1f013.png",
+        "desktopMinImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/brand_6531f667-749a-44a3-a3ba-f3438766fc6a.png",
+        "mobileImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/brand_37fee676-ecc4-4185-8239-c72554fa43b3.png",
+        "mobileMinImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/brand_e6c7334a-ea70-43b6-a9dd-fb25035c3bc0.png",
+        "active": true,
+        "order": 2,
+        "benefitDescription": null,
+        "colorCode": "",
+        "brandType": {
+          "id": 1,
+          "description": "Standar",
+          "code": "STA",
+          "active": true
+        }
+      }
+    ],
+    "relatedPublications": [],
+    "categories": [
+      {
+        "id": 5,
+        "description": "Deporte",
+        "code": "DEP"
+      },
+      {
+        "id": 13,
+        "description": "Indumentaria",
+        "code": "IND"
+      },
+      {
+        "id": 56,
+        "description": "Destacado",
+        "code": "DES"
+      }
+    ],
+    "texts": {
+      "title": "20% de ahorro + hasta 6 cuotas sin interés",
+      "description": "Tope de reintegro: $50.000 mensual",
+      "discount": 20,
+      "untilDiscount": false,
+      "fees": 6,
+      "inAPayment": false,
+      "interest": "sin interés",
+      "untilFees": true
+    }
+  },
+  "detail": {
+    "id": 7961,
+    "initialDate": "2026-10-01T00:00:00",
+    "endDate": "2026-12-31T00:00:00",
+    "monday": false,
+    "tuesday": false,
+    "wednesday": false,
+    "thursday": false,
+    "friday": false,
+    "saturday": true,
+    "sunday": false,
+    "fullWeek": false,
+    "legal": "<p>CFTNA: COSTO FINANCIERO TOTAL EFECTIVO ANUAL:</p><p>CFTNA: 0% 2,14%</p><p>Válida los sabados, en los locales adheridos, abonando con QR a través de la App Santander o App MODO con Tarjetas Santander Visa Crédito y/o Débito. El ahorro es exclusivo para clientes suscriptos al programa Sorpresa Santander. Comisión por membresía mensual Sorpresa Santander $5.289,26 + impuestos, importe final: $6.400 (Consumidor final), el que será debitado de la cuenta o tarjeta de crédito del cliente, el quinto día hábil del mes.</p><p>Se excluyen compras abonadas por transferencias o pagos realizados con dinero en cuenta, a través de billeteras virtuales o financiadas por programas Cuota a Cuota. No acumulable con otras promociones. Válido únicamente para clientes titulares de cuenta bancaria Santander. No aplica a clientes que posean tarjeta de crédito sin cuenta bancaria asociada. En caso que la compra sea realizada con una tarjeta adicional, el reintegro se verá reflejado en la cuenta bancaria del titular. El ahorro se hará efectivo vía reintegro dentro de los 30 días de efectuado el consumo en la cuenta bancaria titular del cliente. Ejemplo: en una compra con tarjeta de crédito de $500.000, el cliente recibirá un reintegro de $50.000 (TOPE) en la cuenta bancaria titular.</p>",
+    "customerDiscount": 20,
+    "topAmount": 50000,
+    "additionalText": "<p><span style=\"background-color: rgb(255, 255, 255); color: rgb(79, 84, 87); font-size: 14px;\">Pagando con </span><strong style=\"background-color: rgb(255, 255, 255); color: rgb(79, 84, 87); font-size: 14px;\">QR</strong><span style=\"background-color: rgb(255, 255, 255); color: rgb(79, 84, 87); font-size: 14px;\"> a través de la </span><strong style=\"background-color: rgb(255, 255, 255); color: rgb(79, 84, 87); font-size: 14px;\">App Santander</strong><span style=\"background-color: rgb(255, 255, 255); color: rgb(79, 84, 87); font-size: 14px;\">.</span></p><p></p><p><span style=\"background-color: rgb(255, 255, 255); color: rgb(79, 84, 87); font-size: 14px;\">Beneficio exclusivo para clientes suscriptos a </span><strong style=\"background-color: rgb(255, 255, 255); color: rgb(79, 84, 87); font-size: 14px;\">Sorpresa Santander</strong><span style=\"background-color: rgb(255, 255, 255); color: rgb(79, 84, 87); font-size: 14px;\">.</span></p>",
+    "showCurrentMonthOnly": false,
+    "initialQuote": 2,
+    "finalQuote": 6,
+    "interestFreeFees": true,
+    "specialCondition": null,
+    "stock": 0,
+    "productSegmentation": "Masiva",
+    "additionalBenefit": false,
+    "order": 3,
+    "tag": {
+      "id": 2,
+      "description": "Sorpresa",
+      "code": "SOR",
+      "status": false,
+      "colorCode": "#257FA4"
+    },
+    "frecuency": {
+      "id": 2,
+      "description": "Mensual",
+      "code": "M"
+    },
+    "paymentType": {
+      "id": 3,
+      "description": "QR - Modo",
+      "code": "M"
+    },
+    "paymentMethod": {
+      "id": 5,
+      "description": "Ahorro y Cuotas",
+      "code": "AYC"
+    },
+    "benefitType": {
+      "id": 1,
+      "description": "Ahorro",
+      "code": "A"
+    },
+    "categories": [
+      {
+        "id": 5,
+        "description": "Deporte",
+        "code": "DEP"
+      },
+      {
+        "id": 13,
+        "description": "Indumentaria",
+        "code": "IND"
+      },
+      {
+        "id": 56,
+        "description": "Destacado",
+        "code": "DES"
+      }
+    ],
+    "images": [],
+    "relatedPublications": [],
+    "cards": [
+      {
+        "id": 1,
+        "description": "VISA",
+        "code": "81",
+        "idType": 1,
+        "descriptionType": "DEBITO",
+        "codeType": "D",
+        "image": "https://microfe.santander.com.ar/premify/benefits/assets/images/visa_tarjeta_debito.png"
+      },
+      {
+        "id": 2,
+        "description": "VISA",
+        "code": "40",
+        "idType": 2,
+        "descriptionType": "CREDITO",
+        "codeType": "C",
+        "image": "https://microfe.santander.com.ar/premify/benefits/assets/images/visa_tarjeta_credito.png"
+      },
+      {
+        "id": 3,
+        "description": "VISA",
+        "code": "43",
+        "idType": 3,
+        "descriptionType": "RECARGABLE",
+        "codeType": "R",
+        "image": "https://microfe.santander.com.ar/premify/benefits/assets/images/visa_tarjeta_recargable.png"
+      }
+    ],
+    "brands": [
+      {
+        "id": 25321,
+        "brand": {
+          "id": 267,
+          "code": "",
+          "name": "Open Sports",
+          "desktopImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/brand_54423f01-82a6-46b2-a2b3-cc7955e1f013.png",
+          "desktopMinImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/brand_6531f667-749a-44a3-a3ba-f3438766fc6a.png",
+          "mobileImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/brand_37fee676-ecc4-4185-8239-c72554fa43b3.png",
+          "mobileMinImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/brand_e6c7334a-ea70-43b6-a9dd-fb25035c3bc0.png",
+          "active": true,
+          "order": 2,
+          "benefitDescription": null,
+          "colorCode": "",
+          "brandType": {
+            "id": 1,
+            "description": "Standar",
+            "code": "STA",
+            "active": true
+          }
+        },
+        "establishments": [
+          {
+            "id": 155706,
+            "address": "CALLE 29 Nº 823",
+            "city": "25 DE MAYO",
+            "province": "BUENOS AIRES",
+            "fantasyName": "OPEN SPORTS",
+            "homePage": "",
+            "shopping": "",
+            "isApp": false,
+            "latitude": -35.4308373,
+            "longitude": -60.1708761
+          }
+        ]
+      },
+      {
+        "id": 25322,
+        "brand": {
+          "id": 510,
+          "code": null,
+          "name": "Trip",
+          "desktopImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/Trip_desktopImage.png",
+          "desktopMinImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/Trip_desktopMinImage.png",
+          "mobileImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/Trip_mobileImage.png",
+          "mobileMinImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/Trip_mobileMinImage.png",
+          "active": true,
+          "order": 2,
+          "benefitDescription": null,
+          "colorCode": "",
+          "brandType": {
+            "id": 1,
+            "description": "Standar",
+            "code": "STA",
+            "active": true
+          }
+        },
+        "establishments": [
+          {
+            "id": 360758,
+            "address": "",
+            "city": "",
+            "province": "",
+            "fantasyName": "STADIO UNO S.A.",
+            "homePage": "www.tripstore.com.ar",
+            "shopping": "",
+            "isApp": false,
+            "latitude": null,
+            "longitude": null
+          }
+        ]
+      }
+    ],
+    "texts": {
+      "title": "20% de ahorro + hasta 6 cuotas sin interés",
+      "description": "Tope de reintegro: $50.000 mensual",
+      "discount": 20,
+      "untilDiscount": false,
+      "fees": 6,
+      "inAPayment": false,
+      "interest": "sin interés",
+      "untilFees": true
+    },
+    "homePages": [
+      "www.opensports.com.ar",
+      "www.runandbike.com.ar"
+    ]
+  },
+  "program_occurrences": 1,
+  "program_catalog_total": 1
+}

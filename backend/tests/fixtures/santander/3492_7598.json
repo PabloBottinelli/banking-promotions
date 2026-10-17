@@ -1,0 +1,262 @@
+{
+  "source": "santander",
+  "source_id": "3492:7598",
+  "scraped_at": "2026-10-15T21:37:52.261464+00:00",
+  "promotion_url": "https://www.santander.com.ar/personas/beneficios#/publication?brandId=3492&programId=7598",
+  "catalog_url": "https://www.santander.com.ar/personas/beneficios#/results?category-code=ALL",
+  "catalog": {
+    "id": 3492,
+    "code": "",
+    "name": "Supermercados de Córdoba",
+    "desktopImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/brand_7b11ce28-ceb7-4e88-83cc-728c5d405bdf.png",
+    "desktopMinImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/brand_ab7c48d0-79bb-4961-b2b2-3cc542c65a03.png",
+    "mobileImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/brand_96f902bf-5cc5-4848-aa86-e07f4c038018.png",
+    "mobileMinImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/brand_770a270c-9325-4025-a87a-a7f7e38ae122.png",
+    "active": true,
+    "order": 0,
+    "benefitDescription": "20%",
+    "colorCode": "#9E3667",
+    "brandType": {
+      "id": 1,
+      "description": "Standar",
+      "code": "STA",
+      "active": true
+    }
+  },
+  "program": {
+    "startDatePublication": "2026-08-01T00:00:00",
+    "endDatePublication": "2026-10-31T00:00:00",
+    "id": 7598,
+    "idPromotion": 13808,
+    "monday": false,
+    "tuesday": false,
+    "wednesday": false,
+    "thursday": false,
+    "friday": true,
+    "saturday": false,
+    "sunday": false,
+    "fullWeek": false,
+    "multiPublication": true,
+    "customerDiscount": 20,
+    "topAmount": 15000,
+    "additionalText": "<p>Pagando con <strong>QR</strong> a través de la <strong>App Santander</strong>.</p>",
+    "monthlyCut": false,
+    "initialQuote": 0,
+    "finalQuote": 0,
+    "interestFreeFees": false,
+    "specialCondition": null,
+    "order": 2,
+    "legal": "<p>Válida los viernes en los locales adheridos, con QR a través de la App Santander o App MODO con Tarjeta Santander crédito y/o débito VISA en locales adheridos. El ahorro se hará efectivo vía reintegro dentro de los 30 días de efectuado el consumo en la cuenta asociada del cliente. Es necesario que previo a realizarse el reintegro tengas asociada a MODO la cuenta que sea del mismo banco que la tarjeta con la que realizaste la compra. No aplica a clientes que posean cuentas vinculadas a cajas de ahorro en pesos gratuitas, ni pagos realizados con dinero en cuenta. El tope de ahorro se calcula considerando la suma de las compras realizadas por el titular de tarjeta y sus adicionales. EJEMPLO CARTERA DE CONSUMO: EN UNA COMPRA CON TARJETA DE CRÉDITO DE $ 100.000 REGISTRARÁ UN CONSUMO DE $100.000 Y UN REINTEGRO DE $15.000.</p>",
+    "benefitType": {
+      "id": 1,
+      "description": "Ahorro",
+      "code": "A"
+    },
+    "paymentType": {
+      "id": 3,
+      "description": "QR - Modo",
+      "code": "M"
+    },
+    "paymentMethod": null,
+    "frecuency": {
+      "id": 2,
+      "description": "Mensual",
+      "code": "M"
+    },
+    "tag": {
+      "id": 5,
+      "description": "Pagando con QR",
+      "code": "PQR",
+      "status": false,
+      "colorCode": "#9E3667"
+    },
+    "brands": [
+      {
+        "id": 3492,
+        "code": "",
+        "name": "Supermercados de Córdoba",
+        "desktopImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/brand_7b11ce28-ceb7-4e88-83cc-728c5d405bdf.png",
+        "desktopMinImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/brand_ab7c48d0-79bb-4961-b2b2-3cc542c65a03.png",
+        "mobileImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/brand_96f902bf-5cc5-4848-aa86-e07f4c038018.png",
+        "mobileMinImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/brand_770a270c-9325-4025-a87a-a7f7e38ae122.png",
+        "active": true,
+        "order": 0,
+        "benefitDescription": null,
+        "colorCode": "",
+        "brandType": {
+          "id": 1,
+          "description": "Standar",
+          "code": "STA",
+          "active": true
+        }
+      }
+    ],
+    "relatedPublications": [],
+    "categories": [
+      {
+        "id": 16,
+        "description": "Supermercados",
+        "code": "SUP"
+      },
+      {
+        "id": 36,
+        "description": "Modo",
+        "code": "MOD"
+      }
+    ],
+    "texts": {
+      "title": "20% de ahorro",
+      "description": "Tope de reintegro: $15.000 mensual",
+      "discount": 20,
+      "untilDiscount": false
+    }
+  },
+  "detail": {
+    "id": 7598,
+    "initialDate": "2026-08-01T00:00:00",
+    "endDate": "2026-10-31T00:00:00",
+    "monday": false,
+    "tuesday": false,
+    "wednesday": false,
+    "thursday": false,
+    "friday": true,
+    "saturday": false,
+    "sunday": false,
+    "fullWeek": false,
+    "legal": "<p>Válida los viernes en los locales adheridos, con QR a través de la App Santander o App MODO con Tarjeta Santander crédito y/o débito VISA en locales adheridos. El ahorro se hará efectivo vía reintegro dentro de los 30 días de efectuado el consumo en la cuenta asociada del cliente. Es necesario que previo a realizarse el reintegro tengas asociada a MODO la cuenta que sea del mismo banco que la tarjeta con la que realizaste la compra. No aplica a clientes que posean cuentas vinculadas a cajas de ahorro en pesos gratuitas, ni pagos realizados con dinero en cuenta. El tope de ahorro se calcula considerando la suma de las compras realizadas por el titular de tarjeta y sus adicionales. EJEMPLO CARTERA DE CONSUMO: EN UNA COMPRA CON TARJETA DE CRÉDITO DE $ 100.000 REGISTRARÁ UN CONSUMO DE $100.000 Y UN REINTEGRO DE $15.000.</p>",
+    "customerDiscount": 20,
+    "topAmount": 15000,
+    "additionalText": "<p>Pagando con <strong>QR</strong> a través de la <strong>App Santander</strong>.</p>",
+    "showCurrentMonthOnly": false,
+    "initialQuote": 0,
+    "finalQuote": 0,
+    "interestFreeFees": false,
+    "specialCondition": null,
+    "stock": 0,
+    "productSegmentation": "Masiva",
+    "additionalBenefit": false,
+    "order": 2,
+    "tag": {
+      "id": 5,
+      "description": "Pagando con QR",
+      "code": "PQR",
+      "status": false,
+      "colorCode": "#9E3667"
+    },
+    "frecuency": {
+      "id": 2,
+      "description": "Mensual",
+      "code": "M"
+    },
+    "paymentType": {
+      "id": 3,
+      "description": "QR - Modo",
+      "code": "M"
+    },
+    "paymentMethod": null,
+    "benefitType": {
+      "id": 1,
+      "description": "Ahorro",
+      "code": "A"
+    },
+    "categories": [
+      {
+        "id": 16,
+        "description": "Supermercados",
+        "code": "SUP"
+      },
+      {
+        "id": 36,
+        "description": "Modo",
+        "code": "MOD"
+      }
+    ],
+    "images": [],
+    "relatedPublications": [],
+    "cards": [
+      {
+        "id": 1,
+        "description": "VISA",
+        "code": "81",
+        "idType": 1,
+        "descriptionType": "DEBITO",
+        "codeType": "D",
+        "image": "https://microfe.santander.com.ar/premify/benefits/assets/images/visa_tarjeta_debito.png"
+      },
+      {
+        "id": 2,
+        "description": "VISA",
+        "code": "40",
+        "idType": 2,
+        "descriptionType": "CREDITO",
+        "codeType": "C",
+        "image": "https://microfe.santander.com.ar/premify/benefits/assets/images/visa_tarjeta_credito.png"
+      },
+      {
+        "id": 4,
+        "description": "MASTER",
+        "code": "41",
+        "idType": 2,
+        "descriptionType": "CREDITO",
+        "codeType": "C",
+        "image": "https://microfe.santander.com.ar/premify/benefits/assets/images/mastercard_tarjeta_credito.png"
+      },
+      {
+        "id": 5,
+        "description": "AMEX",
+        "code": "42",
+        "idType": 2,
+        "descriptionType": "CREDITO",
+        "codeType": "C",
+        "image": "https://microfe.santander.com.ar/premify/benefits/assets/images/amex_tarjeta_credito.png"
+      }
+    ],
+    "brands": [
+      {
+        "id": 23262,
+        "brand": {
+          "id": 3492,
+          "code": "",
+          "name": "Supermercados de Córdoba",
+          "desktopImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/brand_7b11ce28-ceb7-4e88-83cc-728c5d405bdf.png",
+          "desktopMinImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/brand_ab7c48d0-79bb-4961-b2b2-3cc542c65a03.png",
+          "mobileImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/brand_96f902bf-5cc5-4848-aa86-e07f4c038018.png",
+          "mobileMinImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/brand_770a270c-9325-4025-a87a-a7f7e38ae122.png",
+          "active": true,
+          "order": 0,
+          "benefitDescription": null,
+          "colorCode": "",
+          "brandType": {
+            "id": 1,
+            "description": "Standar",
+            "code": "STA",
+            "active": true
+          }
+        },
+        "establishments": [
+          {
+            "id": 418034,
+            "address": "San Martin Y 9 De Julio S/N",
+            "city": "Bengolea",
+            "province": "Cordoba",
+            "fantasyName": "COTAGRO CAL",
+            "homePage": "",
+            "shopping": "",
+            "isApp": false,
+            "latitude": null,
+            "longitude": null
+          }
+        ]
+      }
+    ],
+    "texts": {
+      "title": "20% de ahorro",
+      "description": "Tope de reintegro: $15.000 mensual",
+      "discount": 20,
+      "untilDiscount": false
+    },
+    "homePages": []
+  },
+  "program_occurrences": 1,
+  "program_catalog_total": 1
+}

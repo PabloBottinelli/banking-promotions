@@ -1,0 +1,232 @@
+{
+  "source": "santander",
+  "source_id": "146:8000",
+  "scraped_at": "2026-10-15T21:37:52.261464+00:00",
+  "promotion_url": "https://www.santander.com.ar/personas/beneficios#/publication?brandId=146&programId=8000",
+  "catalog_url": "https://www.santander.com.ar/personas/beneficios#/results?category-code=ALL",
+  "catalog": {
+    "id": 146,
+    "code": "",
+    "name": "Despegar",
+    "desktopImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/Despegar_v2_desktopImage.png",
+    "desktopMinImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/Despegar_v2_desktopMinImage.png",
+    "mobileImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/Despegar_v2_mobileImage.png",
+    "mobileMinImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/Despegar_v2_mobileMinImage.png",
+    "active": true,
+    "order": 5,
+    "benefitDescription": "6 cuotas sin interés",
+    "colorCode": null,
+    "brandType": {
+      "id": 1,
+      "description": "Standar",
+      "code": "STA",
+      "active": true
+    }
+  },
+  "program": {
+    "startDatePublication": "2026-10-20T00:00:00",
+    "endDatePublication": "2026-10-20T00:00:00",
+    "id": 8000,
+    "idPromotion": 14236,
+    "monday": false,
+    "tuesday": true,
+    "wednesday": false,
+    "thursday": false,
+    "friday": false,
+    "saturday": false,
+    "sunday": false,
+    "fullWeek": false,
+    "multiPublication": false,
+    "customerDiscount": 15,
+    "topAmount": 120000,
+    "additionalText": "<p>En vuelos y paquetes de Gol</p>",
+    "monthlyCut": false,
+    "initialQuote": 0,
+    "finalQuote": 0,
+    "interestFreeFees": false,
+    "specialCondition": null,
+    "order": 2,
+    "legal": "<p>Promoción únicamente válida para reservas de vuelos y paquetes abonados con Tarjeta de crédito del Banco Santander AMEX que contengan el vuelo de ida y vuelta operado por Gol y donde el vuelo se origine en Argentina. Aplica para compras realizadas el 20/10/26 desde las 00:00hs hasta el 20/10/26 a las 23:59hs a través de App Despegar, www.despegar.com.ar. Promoción limitada a un descuento por dispositivo y por reserva, solo para ciudadanos argentinos y/o residentes en el país. Tope de descuento: 120,000 pesos argentinos. Descuento válido hasta agotar el stock de 15,400,000 pesos argentinos. Solo aplicará a tarifas cotizadas en pesos argentinos. Únicamente para vuelos y paquetes con vuelos de ida y vuelta de Gol con origen en Argentina a todos los destinos Internacionales. No acumulable con otras promociones. Reservas no endosables ni reembolsables. En caso de requerir cambios, los mismos estarán sujetos a autorización del proveedor y con las penalidades que el mismo disponga. La cuenta con la que se efectúe la compra no podrá presentar ningún tipo de bloqueo, debe encontrarse en estado NORMAL y contar con el saldo necesario al momento de la compra. El descuento se verá reflejado en el flujo de compra. En caso de no visualizar el descuento, la promoción no aplicará. Banco Santander AMEX es el emisor del medio de pago a través del cual se puede acceder al beneficio mencionado, por tanto, Banco Santander AMEX será el responsable y encargado del producto financiero. Despegar no se responsabiliza por el correcto funcionamiento del producto financiero ni por su utilización por parte del usuario. Para obtener más información: www.despegar.com.ar. DESPEGAR.COM.AR S.A. CUIT: 30-70130711-5 | Lic. EVT LEG 15.332 – DISP. 1040/2010</p>",
+    "benefitType": {
+      "id": 1,
+      "description": "Ahorro",
+      "code": "A"
+    },
+    "paymentType": {
+      "id": 1,
+      "description": "No Aplica",
+      "code": "N"
+    },
+    "paymentMethod": null,
+    "frecuency": {
+      "id": 4,
+      "description": "Vigencia de la campania",
+      "code": "V"
+    },
+    "tag": {
+      "id": 8,
+      "description": "Exclusivo Amex",
+      "code": "EXA",
+      "status": false,
+      "colorCode": "#9E3667"
+    },
+    "brands": [
+      {
+        "id": 146,
+        "code": "",
+        "name": "Despegar",
+        "desktopImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/Despegar_v2_desktopImage.png",
+        "desktopMinImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/Despegar_v2_desktopMinImage.png",
+        "mobileImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/Despegar_v2_mobileImage.png",
+        "mobileMinImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/Despegar_v2_mobileMinImage.png",
+        "active": true,
+        "order": 5,
+        "benefitDescription": null,
+        "colorCode": "",
+        "brandType": {
+          "id": 1,
+          "description": "Standar",
+          "code": "STA",
+          "active": true
+        }
+      }
+    ],
+    "relatedPublications": null,
+    "categories": [
+      {
+        "id": 17,
+        "description": "Viajes",
+        "code": "VIA"
+      },
+      {
+        "id": 39,
+        "description": "Especial Viajes",
+        "code": "EVI"
+      },
+      {
+        "id": 66,
+        "description": "Exclusiva Amex",
+        "code": "EXA"
+      }
+    ],
+    "texts": {
+      "title": "15% de ahorro",
+      "description": "Tope de reintegro: $120.000 durante la vigencia de la promoción",
+      "discount": 15,
+      "untilDiscount": false
+    }
+  },
+  "detail": {
+    "id": 8000,
+    "initialDate": "2026-10-20T00:00:00",
+    "endDate": "2026-10-20T00:00:00",
+    "monday": false,
+    "tuesday": true,
+    "wednesday": false,
+    "thursday": false,
+    "friday": false,
+    "saturday": false,
+    "sunday": false,
+    "fullWeek": false,
+    "legal": "<p>Promoción únicamente válida para reservas de vuelos y paquetes abonados con Tarjeta de crédito del Banco Santander AMEX que contengan el vuelo de ida y vuelta operado por Gol y donde el vuelo se origine en Argentina. Aplica para compras realizadas el 20/10/26 desde las 00:00hs hasta el 20/10/26 a las 23:59hs a través de App Despegar, www.despegar.com.ar. Promoción limitada a un descuento por dispositivo y por reserva, solo para ciudadanos argentinos y/o residentes en el país. Tope de descuento: 120,000 pesos argentinos. Descuento válido hasta agotar el stock de 15,400,000 pesos argentinos. Solo aplicará a tarifas cotizadas en pesos argentinos. Únicamente para vuelos y paquetes con vuelos de ida y vuelta de Gol con origen en Argentina a todos los destinos Internacionales. No acumulable con otras promociones. Reservas no endosables ni reembolsables. En caso de requerir cambios, los mismos estarán sujetos a autorización del proveedor y con las penalidades que el mismo disponga. La cuenta con la que se efectúe la compra no podrá presentar ningún tipo de bloqueo, debe encontrarse en estado NORMAL y contar con el saldo necesario al momento de la compra. El descuento se verá reflejado en el flujo de compra. En caso de no visualizar el descuento, la promoción no aplicará. Banco Santander AMEX es el emisor del medio de pago a través del cual se puede acceder al beneficio mencionado, por tanto, Banco Santander AMEX será el responsable y encargado del producto financiero. Despegar no se responsabiliza por el correcto funcionamiento del producto financiero ni por su utilización por parte del usuario. Para obtener más información: www.despegar.com.ar. DESPEGAR.COM.AR S.A. CUIT: 30-70130711-5 | Lic. EVT LEG 15.332 – DISP. 1040/2010</p>",
+    "customerDiscount": 15,
+    "topAmount": 120000,
+    "additionalText": "<p>En vuelos y paquetes de Gol</p>",
+    "showCurrentMonthOnly": false,
+    "initialQuote": 0,
+    "finalQuote": 0,
+    "interestFreeFees": false,
+    "specialCondition": null,
+    "stock": 0,
+    "productSegmentation": "Masiva",
+    "additionalBenefit": false,
+    "order": 2,
+    "tag": {
+      "id": 8,
+      "description": "Exclusivo Amex",
+      "code": "EXA",
+      "status": false,
+      "colorCode": "#9E3667"
+    },
+    "frecuency": {
+      "id": 4,
+      "description": "Vigencia de la campania",
+      "code": "V"
+    },
+    "paymentType": {
+      "id": 1,
+      "description": "No Aplica",
+      "code": "N"
+    },
+    "paymentMethod": null,
+    "benefitType": {
+      "id": 1,
+      "description": "Ahorro",
+      "code": "A"
+    },
+    "categories": [
+      {
+        "id": 17,
+        "description": "Viajes",
+        "code": "VIA"
+      },
+      {
+        "id": 66,
+        "description": "Exclusiva Amex",
+        "code": "EXA"
+      },
+      {
+        "id": 39,
+        "description": "Especial Viajes",
+        "code": "EVI"
+      }
+    ],
+    "images": [],
+    "relatedPublications": null,
+    "cards": [
+      {
+        "id": 5,
+        "description": "AMEX",
+        "code": "42",
+        "idType": 2,
+        "descriptionType": "CREDITO",
+        "codeType": "C",
+        "image": "https://microfe.santander.com.ar/premify/benefits/assets/images/amex_tarjeta_credito.png"
+      }
+    ],
+    "brands": [
+      {
+        "id": 25415,
+        "brand": {
+          "id": 146,
+          "code": "",
+          "name": "Despegar",
+          "desktopImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/Despegar_v2_desktopImage.png",
+          "desktopMinImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/Despegar_v2_desktopMinImage.png",
+          "mobileImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/Despegar_v2_mobileImage.png",
+          "mobileMinImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/Despegar_v2_mobileMinImage.png",
+          "active": true,
+          "order": 5,
+          "benefitDescription": null,
+          "colorCode": "",
+          "brandType": {
+            "id": 1,
+            "description": "Standar",
+            "code": "STA",
+            "active": true
+          }
+        },
+        "establishments": []
+      }
+    ],
+    "texts": {
+      "title": "15% de ahorro",
+      "description": "Tope de reintegro: $120.000 durante la vigencia de la promoción",
+      "discount": 15,
+      "untilDiscount": false
+    },
+    "homePages": []
+  },
+  "program_occurrences": 1,
+  "program_catalog_total": 3
+}

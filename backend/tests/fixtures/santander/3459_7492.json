@@ -1,0 +1,273 @@
+{
+  "source": "santander",
+  "source_id": "3459:7492",
+  "scraped_at": "2026-10-15T21:37:52.261464+00:00",
+  "promotion_url": "https://www.santander.com.ar/personas/beneficios#/publication?brandId=3459&programId=7492",
+  "catalog_url": "https://www.santander.com.ar/personas/beneficios#/results?category-code=ALL",
+  "catalog": {
+    "id": 3459,
+    "code": "",
+    "name": "Grido",
+    "desktopImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/brand_8f048da5-61e9-4d42-88c1-5fe5f92f6341.png",
+    "desktopMinImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/brand_5a58e7c3-2d06-47a6-8365-2f7242ce9646.png",
+    "mobileImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/brand_f62dd462-fc30-4f53-97cc-1b29a1982185.png",
+    "mobileMinImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/brand_c71002d5-f3d8-446a-86e8-db0c3bb194e3.png",
+    "active": true,
+    "order": 4,
+    "benefitDescription": "20%",
+    "colorCode": "#257FA4",
+    "brandType": {
+      "id": 1,
+      "description": "Standar",
+      "code": "STA",
+      "active": true
+    }
+  },
+  "program": {
+    "startDatePublication": "2026-07-23T00:00:00",
+    "endDatePublication": "2026-10-31T00:00:00",
+    "id": 7492,
+    "idPromotion": 13695,
+    "monday": true,
+    "tuesday": true,
+    "wednesday": true,
+    "thursday": true,
+    "friday": true,
+    "saturday": true,
+    "sunday": true,
+    "fullWeek": true,
+    "multiPublication": true,
+    "customerDiscount": 20,
+    "topAmount": 10000,
+    "additionalText": "<p>Pagando con <strong>QR</strong> a través de la <strong>App Santander</strong>.</p><p></p><p>Beneficio exclusivo para clientes suscriptos a <strong>Sorpresa Santander</strong>.</p>",
+    "monthlyCut": false,
+    "initialQuote": 0,
+    "finalQuote": 0,
+    "interestFreeFees": false,
+    "specialCondition": null,
+    "order": 2,
+    "legal": "<p>Válido desde el 23/07/2026 hasta el 31/10/2026 abonando con QR a través de la App Santander o App MODO con Tarjeta Santander Visa crédito y/o débito, todos los días. El ahorro se hará efectivo vía reintegro dentro de los 30 días de efectuado el consumo en la cuenta asociada del cliente. Es necesario que previo a realizarse el reintegro tengas asociada a MODO la cuenta que sea del mismo banco que la tarjeta con la que realizaste la compra. El tope de ahorro se calcula considerando la suma de las compras realizadas por el titular de tarjeta y sus adicionales. El tope de reintegro mensual sera de $5.000, el tope de reintegro mensual para clientes adheridos a Sorpresa Santander será de $10.000. Ejemplo: En una compra con tarjeta Santander VISA debito de un cliente adherido a Sorpresa Santander de $20.000 registrara un consumo de $20.000 y un reintegro total de $3.000. Comisión por membresía mensual Sorpresa Santander $5.289,26 + impuestos, importe final: $6.400 (Consumidor final), el que será debitado de la cuenta o tarjeta de crédito del cliente, el quinto día hábil del mes.</p>",
+    "benefitType": {
+      "id": 1,
+      "description": "Ahorro",
+      "code": "A"
+    },
+    "paymentType": {
+      "id": 3,
+      "description": "QR - Modo",
+      "code": "M"
+    },
+    "paymentMethod": null,
+    "frecuency": {
+      "id": 2,
+      "description": "Mensual",
+      "code": "M"
+    },
+    "tag": {
+      "id": 2,
+      "description": "Sorpresa",
+      "code": "SOR",
+      "status": false,
+      "colorCode": "#257FA4"
+    },
+    "brands": [
+      {
+        "id": 3459,
+        "code": "",
+        "name": "Grido",
+        "desktopImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/brand_8f048da5-61e9-4d42-88c1-5fe5f92f6341.png",
+        "desktopMinImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/brand_5a58e7c3-2d06-47a6-8365-2f7242ce9646.png",
+        "mobileImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/brand_f62dd462-fc30-4f53-97cc-1b29a1982185.png",
+        "mobileMinImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/brand_c71002d5-f3d8-446a-86e8-db0c3bb194e3.png",
+        "active": true,
+        "order": 4,
+        "benefitDescription": null,
+        "colorCode": "",
+        "brandType": {
+          "id": 1,
+          "description": "Standar",
+          "code": "STA",
+          "active": true
+        }
+      }
+    ],
+    "relatedPublications": [],
+    "categories": [
+      {
+        "id": 11,
+        "description": "Gastronomía",
+        "code": "GAS"
+      },
+      {
+        "id": 56,
+        "description": "Destacado",
+        "code": "DES"
+      },
+      {
+        "id": 61,
+        "description": "Sorpresa",
+        "code": "SOR"
+      },
+      {
+        "id": 417,
+        "description": "Everyday",
+        "code": "DAY"
+      }
+    ],
+    "texts": {
+      "title": "20% de ahorro",
+      "description": "Tope de reintegro: $10.000 mensual",
+      "discount": 20,
+      "untilDiscount": false
+    }
+  },
+  "detail": {
+    "id": 7492,
+    "initialDate": "2026-07-23T00:00:00",
+    "endDate": "2026-10-31T00:00:00",
+    "monday": true,
+    "tuesday": true,
+    "wednesday": true,
+    "thursday": true,
+    "friday": true,
+    "saturday": true,
+    "sunday": true,
+    "fullWeek": true,
+    "legal": "<p>Válido desde el 23/07/2026 hasta el 31/10/2026 abonando con QR a través de la App Santander o App MODO con Tarjeta Santander Visa crédito y/o débito, todos los días. El ahorro se hará efectivo vía reintegro dentro de los 30 días de efectuado el consumo en la cuenta asociada del cliente. Es necesario que previo a realizarse el reintegro tengas asociada a MODO la cuenta que sea del mismo banco que la tarjeta con la que realizaste la compra. El tope de ahorro se calcula considerando la suma de las compras realizadas por el titular de tarjeta y sus adicionales. El tope de reintegro mensual sera de $5.000, el tope de reintegro mensual para clientes adheridos a Sorpresa Santander será de $10.000. Ejemplo: En una compra con tarjeta Santander VISA debito de un cliente adherido a Sorpresa Santander de $20.000 registrara un consumo de $20.000 y un reintegro total de $3.000. Comisión por membresía mensual Sorpresa Santander $5.289,26 + impuestos, importe final: $6.400 (Consumidor final), el que será debitado de la cuenta o tarjeta de crédito del cliente, el quinto día hábil del mes.</p>",
+    "customerDiscount": 20,
+    "topAmount": 10000,
+    "additionalText": "<p>Pagando con <strong>QR</strong> a través de la <strong>App Santander</strong>.</p><p></p><p>Beneficio exclusivo para clientes suscriptos a <strong>Sorpresa Santander</strong>.</p>",
+    "showCurrentMonthOnly": false,
+    "initialQuote": 0,
+    "finalQuote": 0,
+    "interestFreeFees": false,
+    "specialCondition": null,
+    "stock": 0,
+    "productSegmentation": "Sorpresa",
+    "additionalBenefit": false,
+    "order": 2,
+    "tag": {
+      "id": 2,
+      "description": "Sorpresa",
+      "code": "SOR",
+      "status": false,
+      "colorCode": "#257FA4"
+    },
+    "frecuency": {
+      "id": 2,
+      "description": "Mensual",
+      "code": "M"
+    },
+    "paymentType": {
+      "id": 3,
+      "description": "QR - Modo",
+      "code": "M"
+    },
+    "paymentMethod": null,
+    "benefitType": {
+      "id": 1,
+      "description": "Ahorro",
+      "code": "A"
+    },
+    "categories": [
+      {
+        "id": 417,
+        "description": "Everyday",
+        "code": "DAY"
+      },
+      {
+        "id": 11,
+        "description": "Gastronomía",
+        "code": "GAS"
+      },
+      {
+        "id": 61,
+        "description": "Sorpresa",
+        "code": "SOR"
+      },
+      {
+        "id": 56,
+        "description": "Destacado",
+        "code": "DES"
+      }
+    ],
+    "images": [],
+    "relatedPublications": [],
+    "cards": [
+      {
+        "id": 1,
+        "description": "VISA",
+        "code": "81",
+        "idType": 1,
+        "descriptionType": "DEBITO",
+        "codeType": "D",
+        "image": "https://microfe.santander.com.ar/premify/benefits/assets/images/visa_tarjeta_debito.png"
+      },
+      {
+        "id": 2,
+        "description": "VISA",
+        "code": "40",
+        "idType": 2,
+        "descriptionType": "CREDITO",
+        "codeType": "C",
+        "image": "https://microfe.santander.com.ar/premify/benefits/assets/images/visa_tarjeta_credito.png"
+      },
+      {
+        "id": 3,
+        "description": "VISA",
+        "code": "43",
+        "idType": 3,
+        "descriptionType": "RECARGABLE",
+        "codeType": "R",
+        "image": "https://microfe.santander.com.ar/premify/benefits/assets/images/visa_tarjeta_recargable.png"
+      }
+    ],
+    "brands": [
+      {
+        "id": 23114,
+        "brand": {
+          "id": 3459,
+          "code": "",
+          "name": "Grido",
+          "desktopImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/brand_8f048da5-61e9-4d42-88c1-5fe5f92f6341.png",
+          "desktopMinImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/brand_5a58e7c3-2d06-47a6-8365-2f7242ce9646.png",
+          "mobileImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/brand_f62dd462-fc30-4f53-97cc-1b29a1982185.png",
+          "mobileMinImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/brand_c71002d5-f3d8-446a-86e8-db0c3bb194e3.png",
+          "active": true,
+          "order": 4,
+          "benefitDescription": null,
+          "colorCode": "",
+          "brandType": {
+            "id": 1,
+            "description": "Standar",
+            "code": "STA",
+            "active": true
+          }
+        },
+        "establishments": [
+          {
+            "id": 424999,
+            "address": "CALLE 10 N` 814",
+            "city": "25 De Mayo",
+            "province": "Buenos Aires",
+            "fantasyName": "GRIDO",
+            "homePage": "",
+            "shopping": "",
+            "isApp": false,
+            "latitude": null,
+            "longitude": null
+          }
+        ]
+      }
+    ],
+    "texts": {
+      "title": "20% de ahorro",
+      "description": "Tope de reintegro: $10.000 mensual",
+      "discount": 20,
+      "untilDiscount": false
+    },
+    "homePages": []
+  },
+  "program_occurrences": 1,
+  "program_catalog_total": 2
+}

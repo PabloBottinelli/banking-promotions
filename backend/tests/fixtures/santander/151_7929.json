@@ -1,0 +1,262 @@
+{
+  "source": "santander",
+  "source_id": "151:7929",
+  "scraped_at": "2026-10-15T21:37:52.261464+00:00",
+  "promotion_url": "https://www.santander.com.ar/personas/beneficios#/publication?brandId=151&programId=7929",
+  "catalog_url": "https://www.santander.com.ar/personas/beneficios#/results?category-code=ALL",
+  "catalog": {
+    "id": 151,
+    "code": null,
+    "name": "Diarco",
+    "desktopImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/Diarco_desktopImage.png",
+    "desktopMinImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/Diarco_desktopMinImage.png",
+    "mobileImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/Diarco_mobileImage.png",
+    "mobileMinImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/Diarco_mobileMinImage.png",
+    "active": true,
+    "order": 0,
+    "benefitDescription": "20%",
+    "colorCode": "#9E3667",
+    "brandType": {
+      "id": 1,
+      "description": "Standar",
+      "code": "STA",
+      "active": true
+    }
+  },
+  "program": {
+    "startDatePublication": "2026-10-01T00:00:00",
+    "endDatePublication": "2026-11-01T00:00:00",
+    "id": 7929,
+    "idPromotion": 14171,
+    "monday": false,
+    "tuesday": false,
+    "wednesday": false,
+    "thursday": false,
+    "friday": false,
+    "saturday": true,
+    "sunday": true,
+    "fullWeek": false,
+    "multiPublication": true,
+    "customerDiscount": 15,
+    "topAmount": null,
+    "additionalText": "<p>Pagando con <strong>QR</strong> a través de la <strong>App Santander</strong>.</p><p></p><p>Mínimo de compra: $100.000.</p>",
+    "monthlyCut": false,
+    "initialQuote": 0,
+    "finalQuote": 0,
+    "interestFreeFees": false,
+    "specialCondition": null,
+    "order": 3,
+    "legal": "<p>Válida los Sabado y Domingo, en los locales adheridos, abonando con QR a través de la App Santander o App MODO con Tarjetas Santander Crédito y/o Débito. Se excluyen compras abonadas por transferencias o pagos realizados con dinero en cuenta, a través de billeteras virtuales o financiadas por programas Cuota a Cuota. No acumulable con otras promociones. Válido únicamente para clientes titulares de cuenta bancaria Santander. No aplica a clientes que posean tarjeta de crédito sin cuenta bancaria asociada. En caso que la compra sea realizada con una tarjeta adicional, el reintegro se verá reflejado en la cuenta bancaria del titular. Tope de reintegro $15.000 por mes para compras mayor o iguales a $100.000. El tope se calcula sumando las compras realizadas por el titular de la tarjeta de crédito y sus adicionales, y las efectuadas con todas las tarjetas de débito asociadas a la cuenta titular de la misma, El ahorro se hará efectivo vía reintegro dentro de los 30 días de efectuado el consumo en la cuenta bancaria titular del cliente. Ejemplo: en una compra con tarjeta de crédito de $100.000, el cliente recibirá un reintegro de $15.000 en la cuenta bancaria titular.</p>",
+    "benefitType": {
+      "id": 1,
+      "description": "Ahorro",
+      "code": "A"
+    },
+    "paymentType": {
+      "id": 3,
+      "description": "QR - Modo",
+      "code": "M"
+    },
+    "paymentMethod": null,
+    "frecuency": {
+      "id": 1,
+      "description": "No Aplica",
+      "code": "N"
+    },
+    "tag": {
+      "id": 5,
+      "description": "Pagando con QR",
+      "code": "PQR",
+      "status": false,
+      "colorCode": "#9E3667"
+    },
+    "brands": [
+      {
+        "id": 151,
+        "code": null,
+        "name": "Diarco",
+        "desktopImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/Diarco_desktopImage.png",
+        "desktopMinImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/Diarco_desktopMinImage.png",
+        "mobileImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/Diarco_mobileImage.png",
+        "mobileMinImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/Diarco_mobileMinImage.png",
+        "active": true,
+        "order": 0,
+        "benefitDescription": null,
+        "colorCode": "",
+        "brandType": {
+          "id": 1,
+          "description": "Standar",
+          "code": "STA",
+          "active": true
+        }
+      }
+    ],
+    "relatedPublications": [],
+    "categories": [
+      {
+        "id": 16,
+        "description": "Supermercados",
+        "code": "SUP"
+      },
+      {
+        "id": 36,
+        "description": "Modo",
+        "code": "MOD"
+      }
+    ],
+    "texts": {
+      "title": "15% de ahorro",
+      "description": "Sin tope de reintegro",
+      "discount": 15,
+      "untilDiscount": false
+    }
+  },
+  "detail": {
+    "id": 7929,
+    "initialDate": "2026-10-01T00:00:00",
+    "endDate": "2026-11-01T00:00:00",
+    "monday": false,
+    "tuesday": false,
+    "wednesday": false,
+    "thursday": false,
+    "friday": false,
+    "saturday": true,
+    "sunday": true,
+    "fullWeek": false,
+    "legal": "<p>Válida los Sabado y Domingo, en los locales adheridos, abonando con QR a través de la App Santander o App MODO con Tarjetas Santander Crédito y/o Débito. Se excluyen compras abonadas por transferencias o pagos realizados con dinero en cuenta, a través de billeteras virtuales o financiadas por programas Cuota a Cuota. No acumulable con otras promociones. Válido únicamente para clientes titulares de cuenta bancaria Santander. No aplica a clientes que posean tarjeta de crédito sin cuenta bancaria asociada. En caso que la compra sea realizada con una tarjeta adicional, el reintegro se verá reflejado en la cuenta bancaria del titular. Tope de reintegro $15.000 por mes para compras mayor o iguales a $100.000. El tope se calcula sumando las compras realizadas por el titular de la tarjeta de crédito y sus adicionales, y las efectuadas con todas las tarjetas de débito asociadas a la cuenta titular de la misma, El ahorro se hará efectivo vía reintegro dentro de los 30 días de efectuado el consumo en la cuenta bancaria titular del cliente. Ejemplo: en una compra con tarjeta de crédito de $100.000, el cliente recibirá un reintegro de $15.000 en la cuenta bancaria titular.</p>",
+    "customerDiscount": 15,
+    "topAmount": null,
+    "additionalText": "<p>Pagando con <strong>QR</strong> a través de la <strong>App Santander</strong>.</p><p></p><p>Mínimo de compra: $100.000.</p>",
+    "showCurrentMonthOnly": false,
+    "initialQuote": 0,
+    "finalQuote": 0,
+    "interestFreeFees": false,
+    "specialCondition": null,
+    "stock": 0,
+    "productSegmentation": "Masiva",
+    "additionalBenefit": false,
+    "order": 3,
+    "tag": {
+      "id": 5,
+      "description": "Pagando con QR",
+      "code": "PQR",
+      "status": false,
+      "colorCode": "#9E3667"
+    },
+    "frecuency": {
+      "id": 1,
+      "description": "No Aplica",
+      "code": "N"
+    },
+    "paymentType": {
+      "id": 3,
+      "description": "QR - Modo",
+      "code": "M"
+    },
+    "paymentMethod": null,
+    "benefitType": {
+      "id": 1,
+      "description": "Ahorro",
+      "code": "A"
+    },
+    "categories": [
+      {
+        "id": 16,
+        "description": "Supermercados",
+        "code": "SUP"
+      },
+      {
+        "id": 36,
+        "description": "Modo",
+        "code": "MOD"
+      }
+    ],
+    "images": [],
+    "relatedPublications": [],
+    "cards": [
+      {
+        "id": 1,
+        "description": "VISA",
+        "code": "81",
+        "idType": 1,
+        "descriptionType": "DEBITO",
+        "codeType": "D",
+        "image": "https://microfe.santander.com.ar/premify/benefits/assets/images/visa_tarjeta_debito.png"
+      },
+      {
+        "id": 2,
+        "description": "VISA",
+        "code": "40",
+        "idType": 2,
+        "descriptionType": "CREDITO",
+        "codeType": "C",
+        "image": "https://microfe.santander.com.ar/premify/benefits/assets/images/visa_tarjeta_credito.png"
+      },
+      {
+        "id": 4,
+        "description": "MASTER",
+        "code": "41",
+        "idType": 2,
+        "descriptionType": "CREDITO",
+        "codeType": "C",
+        "image": "https://microfe.santander.com.ar/premify/benefits/assets/images/mastercard_tarjeta_credito.png"
+      },
+      {
+        "id": 5,
+        "description": "AMEX",
+        "code": "42",
+        "idType": 2,
+        "descriptionType": "CREDITO",
+        "codeType": "C",
+        "image": "https://microfe.santander.com.ar/premify/benefits/assets/images/amex_tarjeta_credito.png"
+      }
+    ],
+    "brands": [
+      {
+        "id": 25055,
+        "brand": {
+          "id": 151,
+          "code": null,
+          "name": "Diarco",
+          "desktopImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/Diarco_desktopImage.png",
+          "desktopMinImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/Diarco_desktopMinImage.png",
+          "mobileImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/Diarco_mobileImage.png",
+          "mobileMinImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/Diarco_mobileMinImage.png",
+          "active": true,
+          "order": 0,
+          "benefitDescription": null,
+          "colorCode": "",
+          "brandType": {
+            "id": 1,
+            "description": "Standar",
+            "code": "STA",
+            "active": true
+          }
+        },
+        "establishments": [
+          {
+            "id": 417759,
+            "address": "Autopista Richieri - Av. de Circunvalación entre El Tallo y El Fruto Código",
+            "city": "Tapiales",
+            "province": "Buenos Aires",
+            "fantasyName": "DIARCO MAYORISTA",
+            "homePage": "",
+            "shopping": "",
+            "isApp": false,
+            "latitude": null,
+            "longitude": null
+          }
+        ]
+      }
+    ],
+    "texts": {
+      "title": "15% de ahorro",
+      "description": "Sin tope de reintegro",
+      "discount": 15,
+      "untilDiscount": false
+    },
+    "homePages": []
+  },
+  "program_occurrences": 1,
+  "program_catalog_total": 3
+}

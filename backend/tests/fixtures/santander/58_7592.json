@@ -1,0 +1,239 @@
+{
+  "source": "santander",
+  "source_id": "58:7592",
+  "scraped_at": "2026-10-15T21:37:52.261464+00:00",
+  "promotion_url": "https://www.santander.com.ar/personas/beneficios#/publication?brandId=58&programId=7592",
+  "catalog_url": "https://www.santander.com.ar/personas/beneficios#/results?category-code=ALL",
+  "catalog": {
+    "id": 58,
+    "code": null,
+    "name": "Cabify",
+    "desktopImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/brand_04ee4ab9-6be3-411b-8c0e-ce3523965dd0.png",
+    "desktopMinImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/brand_c30df1f2-ab59-4e8f-9464-882e18ab8380.png",
+    "mobileImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/brand_6a62674c-b22b-4918-8f5e-6f95c626f57a.png",
+    "mobileMinImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/brand_823addc2-26da-4d05-ab57-31f3e2143a42.png",
+    "active": true,
+    "order": 4,
+    "benefitDescription": "30%",
+    "colorCode": "#257FA4",
+    "brandType": {
+      "id": 1,
+      "description": "Standar",
+      "code": "STA",
+      "active": true
+    }
+  },
+  "program": {
+    "startDatePublication": "2026-09-01T00:00:00",
+    "endDatePublication": "2027-01-31T00:00:00",
+    "id": 7592,
+    "idPromotion": 13804,
+    "monday": false,
+    "tuesday": false,
+    "wednesday": true,
+    "thursday": false,
+    "friday": true,
+    "saturday": false,
+    "sunday": false,
+    "fullWeek": false,
+    "multiPublication": true,
+    "customerDiscount": 30,
+    "topAmount": 20000,
+    "additionalText": "<p>Pagando a través de la <strong>App Cabify</strong>.</p><p></p><p>Beneficio exclusivo para clientes suscriptos a <strong>Sorpresa Santander</strong>.</p>",
+    "monthlyCut": true,
+    "initialQuote": 0,
+    "finalQuote": 0,
+    "interestFreeFees": false,
+    "specialCondition": null,
+    "order": 4,
+    "legal": "<p>PARA CLIENTES SUSCRIPTOS AL PROGRAMA SORPRESA SANTANDER.</p><p>Válida todos los miércoles y viernes, abonando con Tarjetas Santander Crédito y/o Débito Visa, pagando únicamente a través de la App Cabify, incluidos los pagos realizados con MODO, Google Pay y Apple Pay. Se excluyen compras abonadas por transferencias, a través de billeteras virtuales o financiadas por programas Cuota Simple. No acumulable con otras promociones. Válido únicamente para clientes titulares de cuenta bancaria Santander. En caso que la compra sea realizada con una tarjeta adicional, el reintegro se verá reflejado en la cuenta bancaria de dicho titular. La comisión por membresía mensual Sorpresa Santander será debitado de la cuenta o tarjeta de crédito del cliente, según corresponda, el quinto día hábil del mes. Conocer precio vigente en: www.santander.com.ar/personas/beneficios/sorpresa</p><p>El ahorro se hará efectivo vía reintegro dentro de los 30 días de efectuado el consumo en la cuenta bancaria titular del cliente.</p><p>Ejemplo: en una compra de $80.000 realizada con su Tarjeta Santander Crédito y/o Débito Visa usted recibirá en el primer resumen, un consumo de $20.000 en la cuenta bancaria titular.</p>",
+    "benefitType": {
+      "id": 1,
+      "description": "Ahorro",
+      "code": "A"
+    },
+    "paymentType": {
+      "id": 4,
+      "description": "App Externa",
+      "code": "A"
+    },
+    "paymentMethod": {
+      "id": 4,
+      "description": "Ahorro",
+      "code": "AHO"
+    },
+    "frecuency": {
+      "id": 2,
+      "description": "Mensual",
+      "code": "M"
+    },
+    "tag": {
+      "id": 2,
+      "description": "Sorpresa",
+      "code": "SOR",
+      "status": false,
+      "colorCode": "#257FA4"
+    },
+    "brands": [
+      {
+        "id": 58,
+        "code": null,
+        "name": "Cabify",
+        "desktopImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/brand_04ee4ab9-6be3-411b-8c0e-ce3523965dd0.png",
+        "desktopMinImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/brand_c30df1f2-ab59-4e8f-9464-882e18ab8380.png",
+        "mobileImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/brand_6a62674c-b22b-4918-8f5e-6f95c626f57a.png",
+        "mobileMinImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/brand_823addc2-26da-4d05-ab57-31f3e2143a42.png",
+        "active": true,
+        "order": 4,
+        "benefitDescription": null,
+        "colorCode": "",
+        "brandType": {
+          "id": 1,
+          "description": "Standar",
+          "code": "STA",
+          "active": true
+        }
+      }
+    ],
+    "relatedPublications": [],
+    "categories": [
+      {
+        "id": 17,
+        "description": "Viajes",
+        "code": "VIA"
+      },
+      {
+        "id": 61,
+        "description": "Sorpresa",
+        "code": "SOR"
+      }
+    ],
+    "texts": {
+      "title": "30% de ahorro",
+      "description": "Tope de reintegro: $20.000 mensual",
+      "discount": 30,
+      "untilDiscount": false
+    }
+  },
+  "detail": {
+    "id": 7592,
+    "initialDate": "2026-09-01T00:00:00",
+    "endDate": "2027-01-31T00:00:00",
+    "monday": false,
+    "tuesday": false,
+    "wednesday": true,
+    "thursday": false,
+    "friday": true,
+    "saturday": false,
+    "sunday": false,
+    "fullWeek": false,
+    "legal": "<p>PARA CLIENTES SUSCRIPTOS AL PROGRAMA SORPRESA SANTANDER.</p><p>Válida todos los miércoles y viernes, abonando con Tarjetas Santander Crédito y/o Débito Visa, pagando únicamente a través de la App Cabify, incluidos los pagos realizados con MODO, Google Pay y Apple Pay. Se excluyen compras abonadas por transferencias, a través de billeteras virtuales o financiadas por programas Cuota Simple. No acumulable con otras promociones. Válido únicamente para clientes titulares de cuenta bancaria Santander. En caso que la compra sea realizada con una tarjeta adicional, el reintegro se verá reflejado en la cuenta bancaria de dicho titular. La comisión por membresía mensual Sorpresa Santander será debitado de la cuenta o tarjeta de crédito del cliente, según corresponda, el quinto día hábil del mes. Conocer precio vigente en: www.santander.com.ar/personas/beneficios/sorpresa</p><p>El ahorro se hará efectivo vía reintegro dentro de los 30 días de efectuado el consumo en la cuenta bancaria titular del cliente.</p><p>Ejemplo: en una compra de $80.000 realizada con su Tarjeta Santander Crédito y/o Débito Visa usted recibirá en el primer resumen, un consumo de $20.000 en la cuenta bancaria titular.</p>",
+    "customerDiscount": 30,
+    "topAmount": 20000,
+    "additionalText": "<p>Pagando a través de la <strong>App Cabify</strong>.</p><p></p><p>Beneficio exclusivo para clientes suscriptos a <strong>Sorpresa Santander</strong>.</p>",
+    "showCurrentMonthOnly": true,
+    "initialQuote": 0,
+    "finalQuote": 0,
+    "interestFreeFees": false,
+    "specialCondition": null,
+    "stock": 0,
+    "productSegmentation": "Sorpresa",
+    "additionalBenefit": false,
+    "order": 4,
+    "tag": {
+      "id": 2,
+      "description": "Sorpresa",
+      "code": "SOR",
+      "status": false,
+      "colorCode": "#257FA4"
+    },
+    "frecuency": {
+      "id": 2,
+      "description": "Mensual",
+      "code": "M"
+    },
+    "paymentType": {
+      "id": 4,
+      "description": "App Externa",
+      "code": "A"
+    },
+    "paymentMethod": {
+      "id": 4,
+      "description": "Ahorro",
+      "code": "AHO"
+    },
+    "benefitType": {
+      "id": 1,
+      "description": "Ahorro",
+      "code": "A"
+    },
+    "categories": [
+      {
+        "id": 17,
+        "description": "Viajes",
+        "code": "VIA"
+      },
+      {
+        "id": 61,
+        "description": "Sorpresa",
+        "code": "SOR"
+      }
+    ],
+    "images": [],
+    "relatedPublications": [],
+    "cards": [
+      {
+        "id": 1,
+        "description": "VISA",
+        "code": "81",
+        "idType": 1,
+        "descriptionType": "DEBITO",
+        "codeType": "D",
+        "image": "https://microfe.santander.com.ar/premify/benefits/assets/images/visa_tarjeta_debito.png"
+      },
+      {
+        "id": 2,
+        "description": "VISA",
+        "code": "40",
+        "idType": 2,
+        "descriptionType": "CREDITO",
+        "codeType": "C",
+        "image": "https://microfe.santander.com.ar/premify/benefits/assets/images/visa_tarjeta_credito.png"
+      }
+    ],
+    "brands": [
+      {
+        "id": 23256,
+        "brand": {
+          "id": 58,
+          "code": null,
+          "name": "Cabify",
+          "desktopImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/brand_04ee4ab9-6be3-411b-8c0e-ce3523965dd0.png",
+          "desktopMinImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/brand_c30df1f2-ab59-4e8f-9464-882e18ab8380.png",
+          "mobileImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/brand_6a62674c-b22b-4918-8f5e-6f95c626f57a.png",
+          "mobileMinImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/brand_823addc2-26da-4d05-ab57-31f3e2143a42.png",
+          "active": true,
+          "order": 4,
+          "benefitDescription": null,
+          "colorCode": "",
+          "brandType": {
+            "id": 1,
+            "description": "Standar",
+            "code": "STA",
+            "active": true
+          }
+        },
+        "establishments": []
+      }
+    ],
+    "texts": {
+      "title": "30% de ahorro",
+      "description": "Tope de reintegro: $20.000 mensual",
+      "discount": 30,
+      "untilDiscount": false
+    },
+    "homePages": []
+  },
+  "program_occurrences": 1,
+  "program_catalog_total": 1
+}

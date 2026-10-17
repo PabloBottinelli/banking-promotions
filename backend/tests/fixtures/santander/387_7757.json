@@ -1,0 +1,1010 @@
+{
+  "source": "santander",
+  "source_id": "387:7757",
+  "scraped_at": "2026-10-15T21:37:52.261464+00:00",
+  "promotion_url": "https://www.santander.com.ar/personas/beneficios#/publication?brandId=387&programId=7757",
+  "catalog_url": "https://www.santander.com.ar/personas/beneficios#/results?category-code=ALL",
+  "catalog": {
+    "id": 387,
+    "code": "",
+    "name": "Paseo del Jockey",
+    "desktopImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/Paseo_del_Jockey_desktopImage.png",
+    "desktopMinImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/Paseo_del_Jockey_desktopMinImage.png",
+    "mobileImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/Paseo_del_Jockey_mobileImage.png",
+    "mobileMinImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/Paseo_del_Jockey_mobileMinImage.png",
+    "active": true,
+    "order": 0,
+    "benefitDescription": "30%",
+    "colorCode": "#257FA4",
+    "brandType": {
+      "id": 2,
+      "description": "Shopping",
+      "code": "SHP",
+      "active": true
+    }
+  },
+  "program": {
+    "startDatePublication": "2026-09-02T00:00:00",
+    "endDatePublication": "2026-12-30T00:00:00",
+    "id": 7757,
+    "idPromotion": 13964,
+    "monday": false,
+    "tuesday": false,
+    "wednesday": true,
+    "thursday": false,
+    "friday": false,
+    "saturday": false,
+    "sunday": false,
+    "fullWeek": false,
+    "multiPublication": false,
+    "customerDiscount": 15,
+    "topAmount": null,
+    "additionalText": "<p>En perfumerías adheridas.</p><p></p><p>Pagando con <strong>QR</strong> a través de la <strong>App Santander</strong>.</p><p></p><p>Beneficio exclusivo para clientes suscriptos a <strong>Sorpresa Santander</strong>.</p>",
+    "monthlyCut": false,
+    "initialQuote": 2,
+    "finalQuote": 6,
+    "interestFreeFees": true,
+    "specialCondition": null,
+    "order": 4,
+    "legal": "<p>Cartera de Consumo y Comercial</p><p></p><p>CFTNA: COSTO FINANCIERO TOTAL EFECTIVO ANUAL.</p><p></p><p><span style=\"font-size: 48px;\">CFTNA: 0%</span> (CARTERA DE CONSUMO)</p><p></p><p><span style=\"font-size: 48px;\">CFTNA: 2,14%</span> (CARTERA COMERCIAL)</p><p></p><p>TASA FIJA NOMINAL Y EFECTIVA ANUAL: 0%.</p><p></p><p>Promoción válida los días miércoles, desde el 02/09/2026 hasta el 30/12/2026 (con excepción del 14/10/2026 y del 23/12/2026), en los locales adheridos, abonando con QR a través de la App Santander o App MODO con Tarjetas Santander Visa Crédito y/o Débito. Se excluyen compras abonadas por transferencias o pagos realizados con dinero en cuenta, a través de billeteras virtuales o financiadas por programas Cuota a Cuota. No acumulable con otras promociones. Válido únicamente para clientes titulares de cuenta bancaria Santander. No aplica a clientes que posean tarjeta de crédito sin cuenta bancaria asociada. En caso de que la compra sea realizada con una tarjeta adicional, el reintegro se verá reflejado en la cuenta bancaria del titular. El ahorro se hará efectivo vía reintegro dentro de los 30 días de efectuado el consumo en la cuenta bancaria titular del cliente. Ejemplo: en una compra con tarjeta de crédito de $120.000, en 6 cuotas, el cliente recibirá un reintegro de $18.000 en la cuenta bancaria titular. Del primer al sexto resumen de la tarjeta de crédito un consumo de $20.000 en cada uno. Comisión por membresía mensual Sorpresa Santander $5.289,26 + impuestos, importe final: $6.400 (Consumidor final), el que será debitado de la cuenta o tarjeta de crédito del cliente, el quinto día hábil del mes.</p><p></p><p></p>",
+    "benefitType": {
+      "id": 1,
+      "description": "Ahorro",
+      "code": "A"
+    },
+    "paymentType": {
+      "id": 1,
+      "description": "No Aplica",
+      "code": "N"
+    },
+    "paymentMethod": {
+      "id": 5,
+      "description": "Ahorro y Cuotas",
+      "code": "AYC"
+    },
+    "frecuency": {
+      "id": 1,
+      "description": "No Aplica",
+      "code": "N"
+    },
+    "tag": {
+      "id": 456,
+      "description": "Súper Miércoles Perfumerías - Sorpresa",
+      "code": "SPX",
+      "status": false,
+      "colorCode": "#ec0000"
+    },
+    "brands": [
+      {
+        "id": 387,
+        "code": "",
+        "name": "Paseo del Jockey",
+        "desktopImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/Paseo_del_Jockey_desktopImage.png",
+        "desktopMinImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/Paseo_del_Jockey_desktopMinImage.png",
+        "mobileImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/Paseo_del_Jockey_mobileImage.png",
+        "mobileMinImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/Paseo_del_Jockey_mobileMinImage.png",
+        "active": true,
+        "order": 0,
+        "benefitDescription": null,
+        "colorCode": "",
+        "brandType": {
+          "id": 2,
+          "description": "Shopping",
+          "code": "SHP",
+          "active": true
+        }
+      }
+    ],
+    "relatedPublications": null,
+    "categories": [
+      {
+        "id": 36,
+        "description": "Modo",
+        "code": "MOD"
+      },
+      {
+        "id": 58,
+        "description": "Exclusiva Visa",
+        "code": "EXV"
+      },
+      {
+        "id": 61,
+        "description": "Sorpresa",
+        "code": "SOR"
+      },
+      {
+        "id": 69,
+        "description": "Súper Miércoles",
+        "code": "SMI"
+      },
+      {
+        "id": 109,
+        "description": "Perfumerías",
+        "code": "PER"
+      }
+    ],
+    "texts": {
+      "title": "15% de ahorro + hasta 6 cuotas sin interés",
+      "description": "Sin tope de reintegro",
+      "discount": 15,
+      "untilDiscount": false,
+      "fees": 6,
+      "inAPayment": false,
+      "interest": "sin interés",
+      "untilFees": true
+    }
+  },
+  "detail": {
+    "id": 7757,
+    "initialDate": "2026-09-02T00:00:00",
+    "endDate": "2026-12-30T00:00:00",
+    "monday": false,
+    "tuesday": false,
+    "wednesday": true,
+    "thursday": false,
+    "friday": false,
+    "saturday": false,
+    "sunday": false,
+    "fullWeek": false,
+    "legal": "<p>Cartera de Consumo y Comercial</p><p></p><p>CFTNA: COSTO FINANCIERO TOTAL EFECTIVO ANUAL.</p><p></p><p><span style=\"font-size: 48px;\">CFTNA: 0%</span> (CARTERA DE CONSUMO)</p><p></p><p><span style=\"font-size: 48px;\">CFTNA: 2,14%</span> (CARTERA COMERCIAL)</p><p></p><p>TASA FIJA NOMINAL Y EFECTIVA ANUAL: 0%.</p><p></p><p>Promoción válida los días miércoles, desde el 02/09/2026 hasta el 30/12/2026 (con excepción del 14/10/2026 y del 23/12/2026), en los locales adheridos, abonando con QR a través de la App Santander o App MODO con Tarjetas Santander Visa Crédito y/o Débito. Se excluyen compras abonadas por transferencias o pagos realizados con dinero en cuenta, a través de billeteras virtuales o financiadas por programas Cuota a Cuota. No acumulable con otras promociones. Válido únicamente para clientes titulares de cuenta bancaria Santander. No aplica a clientes que posean tarjeta de crédito sin cuenta bancaria asociada. En caso de que la compra sea realizada con una tarjeta adicional, el reintegro se verá reflejado en la cuenta bancaria del titular. El ahorro se hará efectivo vía reintegro dentro de los 30 días de efectuado el consumo en la cuenta bancaria titular del cliente. Ejemplo: en una compra con tarjeta de crédito de $120.000, en 6 cuotas, el cliente recibirá un reintegro de $18.000 en la cuenta bancaria titular. Del primer al sexto resumen de la tarjeta de crédito un consumo de $20.000 en cada uno. Comisión por membresía mensual Sorpresa Santander $5.289,26 + impuestos, importe final: $6.400 (Consumidor final), el que será debitado de la cuenta o tarjeta de crédito del cliente, el quinto día hábil del mes.</p><p></p><p></p>",
+    "customerDiscount": 15,
+    "topAmount": null,
+    "additionalText": "<p>En perfumerías adheridas.</p><p></p><p>Pagando con <strong>QR</strong> a través de la <strong>App Santander</strong>.</p><p></p><p>Beneficio exclusivo para clientes suscriptos a <strong>Sorpresa Santander</strong>.</p>",
+    "showCurrentMonthOnly": false,
+    "initialQuote": 2,
+    "finalQuote": 6,
+    "interestFreeFees": true,
+    "specialCondition": null,
+    "stock": 0,
+    "productSegmentation": "Sorpresa",
+    "additionalBenefit": false,
+    "order": 4,
+    "tag": {
+      "id": 456,
+      "description": "Súper Miércoles Perfumerías - Sorpresa",
+      "code": "SPX",
+      "status": false,
+      "colorCode": "#ec0000"
+    },
+    "frecuency": {
+      "id": 1,
+      "description": "No Aplica",
+      "code": "N"
+    },
+    "paymentType": {
+      "id": 1,
+      "description": "No Aplica",
+      "code": "N"
+    },
+    "paymentMethod": {
+      "id": 5,
+      "description": "Ahorro y Cuotas",
+      "code": "AYC"
+    },
+    "benefitType": {
+      "id": 1,
+      "description": "Ahorro",
+      "code": "A"
+    },
+    "categories": [
+      {
+        "id": 36,
+        "description": "Modo",
+        "code": "MOD"
+      },
+      {
+        "id": 58,
+        "description": "Exclusiva Visa",
+        "code": "EXV"
+      },
+      {
+        "id": 61,
+        "description": "Sorpresa",
+        "code": "SOR"
+      },
+      {
+        "id": 69,
+        "description": "Súper Miércoles",
+        "code": "SMI"
+      },
+      {
+        "id": 109,
+        "description": "Perfumerías",
+        "code": "PER"
+      }
+    ],
+    "images": [],
+    "relatedPublications": null,
+    "cards": [
+      {
+        "id": 1,
+        "description": "VISA",
+        "code": "81",
+        "idType": 1,
+        "descriptionType": "DEBITO",
+        "codeType": "D",
+        "image": "https://microfe.santander.com.ar/premify/benefits/assets/images/visa_tarjeta_debito.png"
+      },
+      {
+        "id": 2,
+        "description": "VISA",
+        "code": "40",
+        "idType": 2,
+        "descriptionType": "CREDITO",
+        "codeType": "C",
+        "image": "https://microfe.santander.com.ar/premify/benefits/assets/images/visa_tarjeta_credito.png"
+      }
+    ],
+    "brands": [
+      {
+        "id": 24041,
+        "brand": {
+          "id": 364,
+          "code": "",
+          "name": "Nuevocentro",
+          "desktopImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/Nuevocentro_desktopImage.png",
+          "desktopMinImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/Nuevocentro_desktopMinImage.png",
+          "mobileImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/Nuevocentro_mobileImage.png",
+          "mobileMinImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/Nuevocentro_mobileMinImage.png",
+          "active": true,
+          "order": 0,
+          "benefitDescription": null,
+          "colorCode": "",
+          "brandType": {
+            "id": 2,
+            "description": "Shopping",
+            "code": "SHP",
+            "active": true
+          }
+        },
+        "establishments": [
+          {
+            "id": 433324,
+            "address": "DUARTE QUIROS 1440",
+            "city": "CORDOBA",
+            "province": "CORDOBA",
+            "fantasyName": "LA JOYERIA",
+            "homePage": "",
+            "shopping": "NUEVO CENTRO",
+            "isApp": false,
+            "latitude": null,
+            "longitude": null
+          }
+        ]
+      },
+      {
+        "id": 24042,
+        "brand": {
+          "id": 387,
+          "code": "",
+          "name": "Paseo del Jockey",
+          "desktopImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/Paseo_del_Jockey_desktopImage.png",
+          "desktopMinImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/Paseo_del_Jockey_desktopMinImage.png",
+          "mobileImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/Paseo_del_Jockey_mobileImage.png",
+          "mobileMinImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/Paseo_del_Jockey_mobileMinImage.png",
+          "active": true,
+          "order": 0,
+          "benefitDescription": null,
+          "colorCode": "",
+          "brandType": {
+            "id": 2,
+            "description": "Shopping",
+            "code": "SHP",
+            "active": true
+          }
+        },
+        "establishments": [
+          {
+            "id": 433392,
+            "address": "BV ELIAS YOFRE 1050",
+            "city": "CORDOBA",
+            "province": "CORDOBA",
+            "fantasyName": "MALLORCA JOYAS",
+            "homePage": "",
+            "shopping": "PASEO DEL JOCKEY",
+            "isApp": false,
+            "latitude": null,
+            "longitude": null
+          }
+        ]
+      },
+      {
+        "id": 24129,
+        "brand": {
+          "id": 4,
+          "code": "",
+          "name": "Abasto",
+          "desktopImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/Abasto_desktopImage.png",
+          "desktopMinImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/Abasto_desktopMinImage.png",
+          "mobileImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/Abasto_mobileImage.png",
+          "mobileMinImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/Abasto_mobileMinImage.png",
+          "active": true,
+          "order": 0,
+          "benefitDescription": null,
+          "colorCode": "",
+          "brandType": {
+            "id": 2,
+            "description": "Shopping",
+            "code": "SHP",
+            "active": true
+          }
+        },
+        "establishments": [
+          {
+            "id": 433658,
+            "address": "Av. Corrientes  3257",
+            "city": "CABA",
+            "province": "CABA",
+            "fantasyName": "LA PARFUMERIE",
+            "homePage": "",
+            "shopping": "ABASTO",
+            "isApp": false,
+            "latitude": null,
+            "longitude": null
+          }
+        ]
+      },
+      {
+        "id": 24130,
+        "brand": {
+          "id": 24,
+          "code": "",
+          "name": "Alto Avellaneda",
+          "desktopImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/Alto_Avellaneda_desktopImage.png",
+          "desktopMinImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/Alto_Avellaneda_desktopMinImage.png",
+          "mobileImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/Alto_Avellaneda_mobileImage.png",
+          "mobileMinImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/Alto_Avellaneda_mobileMinImage.png",
+          "active": true,
+          "order": 0,
+          "benefitDescription": null,
+          "colorCode": "",
+          "brandType": {
+            "id": 2,
+            "description": "Shopping",
+            "code": "SHP",
+            "active": true
+          }
+        },
+        "establishments": [
+          {
+            "id": 433665,
+            "address": "AV. GÜEMES  897",
+            "city": "AVELLANEDA",
+            "province": "BUENOS AIRES",
+            "fantasyName": "NATURA",
+            "homePage": "",
+            "shopping": "ALTO AVELLANEDA",
+            "isApp": false,
+            "latitude": null,
+            "longitude": null
+          }
+        ]
+      },
+      {
+        "id": 24131,
+        "brand": {
+          "id": 26,
+          "code": "",
+          "name": "Alto Noa",
+          "desktopImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/Alto_Noa_v2_desktopImage.png",
+          "desktopMinImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/Alto_Noa_v2_desktopMinImage.png",
+          "mobileImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/Alto_Noa_v2_mobileImage.png",
+          "mobileMinImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/brand_40af7c4f-bbf3-4efa-b8ef-e605db8ab796.png",
+          "active": true,
+          "order": 0,
+          "benefitDescription": null,
+          "colorCode": "",
+          "brandType": {
+            "id": 2,
+            "description": "Shopping",
+            "code": "SHP",
+            "active": true
+          }
+        },
+        "establishments": [
+          {
+            "id": 433677,
+            "address": "Av. Bicentenario de la Batalla de Salta 702 702",
+            "city": "SALTA",
+            "province": "SALTA",
+            "fantasyName": "BIFERDIL",
+            "homePage": "",
+            "shopping": "ALTO NOA",
+            "isApp": false,
+            "latitude": null,
+            "longitude": null
+          }
+        ]
+      },
+      {
+        "id": 24132,
+        "brand": {
+          "id": 27,
+          "code": "",
+          "name": "Alto Palermo",
+          "desktopImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/Alto_Palermo_desktopImage.png",
+          "desktopMinImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/Alto_Palermo_desktopMinImage.png",
+          "mobileImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/Alto_Palermo_mobileImage.png",
+          "mobileMinImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/Alto_Palermo_mobileMinImage.png",
+          "active": true,
+          "order": 0,
+          "benefitDescription": null,
+          "colorCode": "",
+          "brandType": {
+            "id": 2,
+            "description": "Shopping",
+            "code": "SHP",
+            "active": true
+          }
+        },
+        "establishments": [
+          {
+            "id": 433666,
+            "address": "Av Santa Fe  3253",
+            "city": "CABA",
+            "province": "CABA",
+            "fantasyName": "NATURA",
+            "homePage": "",
+            "shopping": "ALTO PALERMO",
+            "isApp": false,
+            "latitude": null,
+            "longitude": null
+          }
+        ]
+      },
+      {
+        "id": 24133,
+        "brand": {
+          "id": 28,
+          "code": "",
+          "name": "Alto Rosario",
+          "desktopImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/Alto_Rosario_v2_desktopImage.png",
+          "desktopMinImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/Alto_Rosario_v2_desktopMinImage.png",
+          "mobileImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/Alto_Rosario_v2_mobileImage.png",
+          "mobileMinImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/Alto_Rosario_v2_mobileMinImage.png",
+          "active": true,
+          "order": 0,
+          "benefitDescription": null,
+          "colorCode": "",
+          "brandType": {
+            "id": 2,
+            "description": "Shopping",
+            "code": "SHP",
+            "active": true
+          }
+        },
+        "establishments": [
+          {
+            "id": 433679,
+            "address": "JUNIN 501",
+            "city": "ROSARIO",
+            "province": "SANTA FE",
+            "fantasyName": "BIFERDIL",
+            "homePage": "",
+            "shopping": "ALTO ROSARIO",
+            "isApp": false,
+            "latitude": null,
+            "longitude": null
+          }
+        ]
+      },
+      {
+        "id": 24134,
+        "brand": {
+          "id": 128,
+          "code": "",
+          "name": "Cordoba Shopping",
+          "desktopImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/Cordoba_Shopping_v2_desktopImage.png",
+          "desktopMinImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/Cordoba_Shopping_v2_desktopMinImage.png",
+          "mobileImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/Cordoba_Shopping_v2_mobileImage.png",
+          "mobileMinImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/Cordoba_Shopping_v2_mobileMinImage.png",
+          "active": true,
+          "order": 0,
+          "benefitDescription": null,
+          "colorCode": "",
+          "brandType": {
+            "id": 2,
+            "description": "Shopping",
+            "code": "SHP",
+            "active": true
+          }
+        },
+        "establishments": [
+          {
+            "id": 433696,
+            "address": "Jose Antonio de Goyechea  2851",
+            "city": "CORDOBA",
+            "province": "CORDOBA",
+            "fantasyName": "MALLORCA",
+            "homePage": "",
+            "shopping": "CORDOBA SHOPPING",
+            "isApp": false,
+            "latitude": null,
+            "longitude": null
+          }
+        ]
+      },
+      {
+        "id": 24135,
+        "brand": {
+          "id": 672,
+          "code": "",
+          "name": "Distrito Arcos",
+          "desktopImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/Distrito_Arcos_desktopImage.png",
+          "desktopMinImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/Distrito_Arcos_desktopMinImage.png",
+          "mobileImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/Distrito_Arcos_mobileImage.png",
+          "mobileMinImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/Distrito_Arcos_mobileMinImage.png",
+          "active": true,
+          "order": 0,
+          "benefitDescription": null,
+          "colorCode": "",
+          "brandType": {
+            "id": 2,
+            "description": "Shopping",
+            "code": "SHP",
+            "active": true
+          }
+        },
+        "establishments": [
+          {
+            "id": 433667,
+            "address": "PARAGUAY 4979",
+            "city": "CABA",
+            "province": "CABA",
+            "fantasyName": "NATURA",
+            "homePage": "",
+            "shopping": "DISTRITO ARCOS",
+            "isApp": false,
+            "latitude": null,
+            "longitude": null
+          }
+        ]
+      },
+      {
+        "id": 24136,
+        "brand": {
+          "id": 178,
+          "code": "",
+          "name": "Factory Parque Brown",
+          "desktopImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/Factory_Parque_Brown_desktopImage.png",
+          "desktopMinImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/Factory_Parque_Brown_desktopMinImage.png",
+          "mobileImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/Factory_Parque_Brown_mobileImage.png",
+          "mobileMinImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/Factory_Parque_Brown_mobileMinImage.png",
+          "active": true,
+          "order": 0,
+          "benefitDescription": null,
+          "colorCode": "",
+          "brandType": {
+            "id": 2,
+            "description": "Shopping",
+            "code": "SHP",
+            "active": true
+          }
+        },
+        "establishments": [
+          {
+            "id": 433862,
+            "address": "Av. Gral. Francisco Fernández de la Cruz 4602",
+            "city": "CABA",
+            "province": "CABA",
+            "fantasyName": "ISLAVELLA",
+            "homePage": "",
+            "shopping": "FACTORY PARQUE BROWN",
+            "isApp": false,
+            "latitude": null,
+            "longitude": null
+          }
+        ]
+      },
+      {
+        "id": 24137,
+        "brand": {
+          "id": 374,
+          "code": "",
+          "name": "Palmas del Pilar",
+          "desktopImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/Palmas_del_Pilar_desktopImage.png",
+          "desktopMinImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/Palmas_del_Pilar_desktopMinImage.png",
+          "mobileImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/Palmas_del_Pilar_mobileImage.png",
+          "mobileMinImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/Palmas_del_Pilar_mobileMinImage.png",
+          "active": true,
+          "order": 0,
+          "benefitDescription": null,
+          "colorCode": "",
+          "brandType": {
+            "id": 2,
+            "description": "Shopping",
+            "code": "SHP",
+            "active": true
+          }
+        },
+        "establishments": [
+          {
+            "id": 433865,
+            "address": "Las Magnolias 754",
+            "city": "Pilar",
+            "province": "BUENOS AIRES",
+            "fantasyName": "BIGBOX",
+            "homePage": "",
+            "shopping": "PALMAS DEL PILAR",
+            "isApp": false,
+            "latitude": null,
+            "longitude": null
+          }
+        ]
+      },
+      {
+        "id": 24138,
+        "brand": {
+          "id": 387,
+          "code": "",
+          "name": "Paseo del Jockey",
+          "desktopImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/Paseo_del_Jockey_desktopImage.png",
+          "desktopMinImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/Paseo_del_Jockey_desktopMinImage.png",
+          "mobileImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/Paseo_del_Jockey_mobileImage.png",
+          "mobileMinImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/Paseo_del_Jockey_mobileMinImage.png",
+          "active": true,
+          "order": 0,
+          "benefitDescription": null,
+          "colorCode": "",
+          "brandType": {
+            "id": 2,
+            "description": "Shopping",
+            "code": "SHP",
+            "active": true
+          }
+        },
+        "establishments": [
+          {
+            "id": 433392,
+            "address": "BV ELIAS YOFRE 1050",
+            "city": "CORDOBA",
+            "province": "CORDOBA",
+            "fantasyName": "MALLORCA JOYAS",
+            "homePage": "",
+            "shopping": "PASEO DEL JOCKEY",
+            "isApp": false,
+            "latitude": null,
+            "longitude": null
+          }
+        ]
+      },
+      {
+        "id": 24139,
+        "brand": {
+          "id": 392,
+          "code": "",
+          "name": "Patio Olmos",
+          "desktopImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/Patio_Olmos_desktopImage.png",
+          "desktopMinImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/Patio_Olmos_desktopMinImage.png",
+          "mobileImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/Patio_Olmos_mobileImage.png",
+          "mobileMinImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/Patio_Olmos_mobileMinImage.png",
+          "active": true,
+          "order": 0,
+          "benefitDescription": null,
+          "colorCode": "",
+          "brandType": {
+            "id": 2,
+            "description": "Shopping",
+            "code": "SHP",
+            "active": true
+          }
+        },
+        "establishments": [
+          {
+            "id": 433390,
+            "address": "AV. VELEZ SARSFIELD  361",
+            "city": "CORDOBA",
+            "province": "CORDOBA",
+            "fantasyName": "MALLORCA JOYAS",
+            "homePage": "",
+            "shopping": "PATIO OLMOS",
+            "isApp": false,
+            "latitude": null,
+            "longitude": null
+          }
+        ]
+      },
+      {
+        "id": 24140,
+        "brand": {
+          "id": 407,
+          "code": "",
+          "name": "Plaza Oeste",
+          "desktopImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/Plaza_Oeste_desktopImage.png",
+          "desktopMinImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/Plaza_Oeste_desktopMinImage.png",
+          "mobileImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/Plaza_Oeste_mobileImage.png",
+          "mobileMinImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/Plaza_Oeste_mobileMinImage.png",
+          "active": true,
+          "order": 0,
+          "benefitDescription": null,
+          "colorCode": "",
+          "brandType": {
+            "id": 2,
+            "description": "Shopping",
+            "code": "SHP",
+            "active": true
+          }
+        },
+        "establishments": [
+          {
+            "id": 433866,
+            "address": "Boulevard Juan Manuel de Rosas 658",
+            "city": "MORON",
+            "province": "BUENOS AIRES",
+            "fantasyName": "BIGBOX",
+            "homePage": "",
+            "shopping": "PLAZA OESTE",
+            "isApp": false,
+            "latitude": null,
+            "longitude": null
+          }
+        ]
+      },
+      {
+        "id": 24141,
+        "brand": {
+          "id": 410,
+          "code": "",
+          "name": "Portal Los Andes",
+          "desktopImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/Portal_Los_Andes_desktopImage.png",
+          "desktopMinImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/Portal_Los_Andes_desktopMinImage.png",
+          "mobileImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/Portal_Los_Andes_mobileImage.png",
+          "mobileMinImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/Portal_Los_Andes_mobileMinImage.png",
+          "active": true,
+          "order": 0,
+          "benefitDescription": null,
+          "colorCode": "",
+          "brandType": {
+            "id": 2,
+            "description": "Shopping",
+            "code": "SHP",
+            "active": true
+          }
+        },
+        "establishments": [
+          {
+            "id": 433870,
+            "address": "Balcarce 897",
+            "city": "GODOY CRUZ",
+            "province": "MENDOZA",
+            "fantasyName": "ABALORIOS",
+            "homePage": "",
+            "shopping": "PORTAL LOS ANDES",
+            "isApp": false,
+            "latitude": null,
+            "longitude": null
+          }
+        ]
+      },
+      {
+        "id": 24142,
+        "brand": {
+          "id": 675,
+          "code": "",
+          "name": "Terrazas de Mayo",
+          "desktopImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/Terrazas_de_Mayo_desktopImage.png",
+          "desktopMinImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/Terrazas_de_Mayo_desktopMinImage.png",
+          "mobileImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/Terrazas_de_Mayo_mobileImage.png",
+          "mobileMinImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/Terrazas_de_Mayo_mobileMinImage.png",
+          "active": true,
+          "order": 0,
+          "benefitDescription": null,
+          "colorCode": "",
+          "brandType": {
+            "id": 2,
+            "description": "Shopping",
+            "code": "SHP",
+            "active": true
+          }
+        },
+        "establishments": [
+          {
+            "id": 433662,
+            "address": "Av Pte Arturo Illia  3770",
+            "city": "Los Polvorines",
+            "province": "BUENOS AIRES",
+            "fantasyName": "LA PARFUMERIE",
+            "homePage": "",
+            "shopping": "TERRZAS DE MAYO",
+            "isApp": false,
+            "latitude": null,
+            "longitude": null
+          }
+        ]
+      },
+      {
+        "id": 24143,
+        "brand": {
+          "id": 517,
+          "code": "",
+          "name": "Unicenter",
+          "desktopImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/Unicenter_desktopImage.png",
+          "desktopMinImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/Unicenter_desktopMinImage.png",
+          "mobileImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/Unicenter_mobileImage.png",
+          "mobileMinImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/Unicenter_mobileMinImage.png",
+          "active": true,
+          "order": 0,
+          "benefitDescription": null,
+          "colorCode": "",
+          "brandType": {
+            "id": 2,
+            "description": "Shopping",
+            "code": "SHP",
+            "active": true
+          }
+        },
+        "establishments": [
+          {
+            "id": 433864,
+            "address": "Parana 3745",
+            "city": "MARTINEZ",
+            "province": "BUENOS AIRES",
+            "fantasyName": "ARABIAN",
+            "homePage": "",
+            "shopping": "UNICENTER",
+            "isApp": false,
+            "latitude": null,
+            "longitude": null
+          }
+        ]
+      },
+      {
+        "id": 24144,
+        "brand": {
+          "id": 157,
+          "code": "",
+          "name": "DOT Baires",
+          "desktopImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/DOT_Baires_desktopImage.png",
+          "desktopMinImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/DOT_Baires_desktopMinImage.png",
+          "mobileImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/DOT_Baires_mobileImage.png",
+          "mobileMinImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/DOT_Baires_mobileMinImage.png",
+          "active": true,
+          "order": 0,
+          "benefitDescription": null,
+          "colorCode": "",
+          "brandType": {
+            "id": 2,
+            "description": "Shopping",
+            "code": "SHP",
+            "active": true
+          }
+        },
+        "establishments": [
+          {
+            "id": 433672,
+            "address": "VEDIA 3626",
+            "city": "CABA",
+            "province": "CABA",
+            "fantasyName": "BIGBOX",
+            "homePage": "",
+            "shopping": "DOT",
+            "isApp": false,
+            "latitude": null,
+            "longitude": null
+          }
+        ]
+      },
+      {
+        "id": 24145,
+        "brand": {
+          "id": 475,
+          "code": "",
+          "name": "Soleil Outlet",
+          "desktopImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/Soleil_Outlet_v2_desktopImage.png",
+          "desktopMinImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/Soleil_Outlet_v2_desktopMinImage.png",
+          "mobileImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/Soleil_Outlet_v2_mobileImage.png",
+          "mobileMinImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/Soleil_Outlet_v2_mobileMinImage.png",
+          "active": true,
+          "order": 0,
+          "benefitDescription": null,
+          "colorCode": "",
+          "brandType": {
+            "id": 2,
+            "description": "Shopping",
+            "code": "SHP",
+            "active": true
+          }
+        },
+        "establishments": [
+          {
+            "id": 433394,
+            "address": "AV. VELEZ SARSFIELD  361",
+            "city": "CORDOBA",
+            "province": "CORDOBA",
+            "fantasyName": "SOLEIL BIJOUTERIE",
+            "homePage": "",
+            "shopping": "PATIO OLMOS",
+            "isApp": false,
+            "latitude": null,
+            "longitude": null
+          }
+        ]
+      },
+      {
+        "id": 24146,
+        "brand": {
+          "id": 439,
+          "code": "",
+          "name": "Ribera Shopping",
+          "desktopImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/Ribera_Shopping_desktopImage.png",
+          "desktopMinImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/Ribera_Shopping_desktopMinImage.png",
+          "mobileImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/Ribera_Shopping_mobileImage.png",
+          "mobileMinImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/Ribera_Shopping_mobileMinImage.png",
+          "active": true,
+          "order": 0,
+          "benefitDescription": null,
+          "colorCode": "",
+          "brandType": {
+            "id": 2,
+            "description": "Shopping",
+            "code": "SHP",
+            "active": true
+          }
+        },
+        "establishments": [
+          {
+            "id": 433660,
+            "address": "DIQUE 1 PUERTO SANTA FE  1",
+            "city": "Santa fe",
+            "province": "Santa Fe",
+            "fantasyName": "LA PARFUMERIE",
+            "homePage": "",
+            "shopping": "RIBERA",
+            "isApp": false,
+            "latitude": null,
+            "longitude": null
+          }
+        ]
+      },
+      {
+        "id": 24147,
+        "brand": {
+          "id": 14,
+          "code": "",
+          "name": "Alcorta Shopping",
+          "desktopImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/Alcorta_desktopImage.png",
+          "desktopMinImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/Alcorta_desktopMinImage.png",
+          "mobileImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/Alcorta_mobileImage.png",
+          "mobileMinImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/Alcorta_mobileMinImage.png",
+          "active": true,
+          "order": 0,
+          "benefitDescription": null,
+          "colorCode": "",
+          "brandType": {
+            "id": 2,
+            "description": "Shopping",
+            "code": "SHP",
+            "active": true
+          }
+        },
+        "establishments": [
+          {
+            "id": 433669,
+            "address": "JERONIMO SALGUERO 3172",
+            "city": "CABA",
+            "province": "CABA",
+            "fantasyName": "BIGBOX",
+            "homePage": "",
+            "shopping": "ALCORTA",
+            "isApp": false,
+            "latitude": null,
+            "longitude": null
+          }
+        ]
+      }
+    ],
+    "texts": {
+      "title": "15% de ahorro + hasta 6 cuotas sin interés",
+      "description": "Sin tope de reintegro",
+      "discount": 15,
+      "untilDiscount": false,
+      "fees": 6,
+      "inAPayment": false,
+      "interest": "sin interés",
+      "untilFees": true
+    },
+    "homePages": []
+  },
+  "program_occurrences": 2,
+  "program_catalog_total": 4
+}

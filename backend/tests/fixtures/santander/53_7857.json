@@ -1,0 +1,287 @@
+{
+  "source": "santander",
+  "source_id": "53:7857",
+  "scraped_at": "2026-10-15T21:37:52.261464+00:00",
+  "promotion_url": "https://www.santander.com.ar/personas/beneficios#/publication?brandId=53&programId=7857",
+  "catalog_url": "https://www.santander.com.ar/personas/beneficios#/results?category-code=ALL",
+  "catalog": {
+    "id": 53,
+    "code": "",
+    "name": "Bridgestone",
+    "desktopImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/Bridgestone_desktopImage.png",
+    "desktopMinImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/Bridgestone_desktopMinImage.png",
+    "mobileImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/Bridgestone_mobileImage.png",
+    "mobileMinImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/Bridgestone_mobileMinImage.png",
+    "active": true,
+    "order": 0,
+    "benefitDescription": "15%",
+    "colorCode": "#257FA4",
+    "brandType": {
+      "id": 1,
+      "description": "Standar",
+      "code": "STA",
+      "active": true
+    }
+  },
+  "program": {
+    "startDatePublication": "2026-10-01T00:00:00",
+    "endDatePublication": "2026-12-31T00:00:00",
+    "id": 7857,
+    "idPromotion": 14034,
+    "monday": false,
+    "tuesday": false,
+    "wednesday": true,
+    "thursday": false,
+    "friday": false,
+    "saturday": false,
+    "sunday": false,
+    "fullWeek": false,
+    "multiPublication": true,
+    "customerDiscount": 15,
+    "topAmount": null,
+    "additionalText": "<p><span style=\"background-color: rgb(255, 255, 255); font-size: 14px; color: rgb(79, 84, 87);\">Beneficio exclusivo para clientes suscriptos a </span><strong style=\"background-color: rgb(255, 255, 255); font-size: 14px; color: rgb(79, 84, 87);\">Sorpresa Santander</strong><span style=\"background-color: rgb(255, 255, 255); font-size: 14px; color: rgb(79, 84, 87);\">.</span></p>",
+    "monthlyCut": false,
+    "initialQuote": 2,
+    "finalQuote": 6,
+    "interestFreeFees": true,
+    "specialCondition": null,
+    "order": 2,
+    "legal": "<p>CFTNA: COSTO FINANCIERO TOTAL NOMINAL ANUAL</p><p><span style=\"font-size: 48px;\">C.F.T.N.A.: 0%</span> (CARTERA DE CONSUMO)</p><p><span style=\"font-size: 48px;\">C.F.T.N.A.: 2,14%</span> (CARTERA COMERCIAL) POR “SEGURO DE VIDA E INVALIDEZ TOTAL O PERMANENTE”</p><p>TASA FIJA NOMINAL Y EFECTIVA ANUAL: 0%.</p><p>VÁLIDA LOS DIAS MIERFCOLES A PARTIR DEL 01-10-2026 HASTA EL 31-12-2026, ABONANDO CON TARJETAS SANTANDER RECARGABLE, CRÉDITO Y/O DÉBITO. EXCLUSIVO PARA CLIENTES SUSCRIPTOS AL PROGRAMA SORPRESA CON CUENTA EN BANCO SANTANDER, NO APLICA A TARJETAS DE DÉBITO VINCULADAS A CAJAS DE AHORRO EN PESOS GRATUITAS. NO ACUMULABLES CON OTRAS PROMOCIONES. EL AHORRO SE HARÁ EFECTIVO VÍA REINTEGRO DENTRO DE LOS 30 DÍAS DE EFECTUADO EL CONSUMO EN LA CUENTA BANCARIA ASOCIADA AL CLIENTE. EJEMPLO: EN UNA COMPRA DE $180.000 REALIZADA CON TU TARJETA SANTANDER DE CRÉDITO FINANCIADA EN SEIS (6) CUOTAS, RECIBIRÁS EN EL PRIMER RESUMEN, UN CONSUMO DE $30.000 Y UN REINTEGRO DE $.27.000, HASTA EL SEXTO RESUMEN POSTERIOR A LA COMPRA, RECIBIRÁS UN CONSUMO DE $30.000 EN CADA UNO DE ELLOS. LOS ACCIONISTAS DE BANCO SANTANDER ARGENTINA S.A. (CUIT 30-50000845-4, CON DOMICILIO EN AV. JUAN DE GARAY 151, CIUDAD AUTÓNOMA DE BUENOS AIRES) NO RESPONDEN EN EXCESO DE SU INTEGRACIÓN ACCIONARIA.</p>",
+    "benefitType": {
+      "id": 1,
+      "description": "Ahorro",
+      "code": "A"
+    },
+    "paymentType": {
+      "id": 1,
+      "description": "No Aplica",
+      "code": "N"
+    },
+    "paymentMethod": {
+      "id": 5,
+      "description": "Ahorro y Cuotas",
+      "code": "AYC"
+    },
+    "frecuency": {
+      "id": 1,
+      "description": "No Aplica",
+      "code": "N"
+    },
+    "tag": {
+      "id": 2,
+      "description": "Sorpresa",
+      "code": "SOR",
+      "status": false,
+      "colorCode": "#257FA4"
+    },
+    "brands": [
+      {
+        "id": 53,
+        "code": "",
+        "name": "Bridgestone",
+        "desktopImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/Bridgestone_desktopImage.png",
+        "desktopMinImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/Bridgestone_desktopMinImage.png",
+        "mobileImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/Bridgestone_mobileImage.png",
+        "mobileMinImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/Bridgestone_mobileMinImage.png",
+        "active": true,
+        "order": 0,
+        "benefitDescription": null,
+        "colorCode": "",
+        "brandType": {
+          "id": 1,
+          "description": "Standar",
+          "code": "STA",
+          "active": true
+        }
+      }
+    ],
+    "relatedPublications": [],
+    "categories": [
+      {
+        "id": 1,
+        "description": "Automotor",
+        "code": "AUT"
+      },
+      {
+        "id": 61,
+        "description": "Sorpresa",
+        "code": "SOR"
+      }
+    ],
+    "texts": {
+      "title": "15% de ahorro + hasta 6 cuotas sin interés",
+      "description": "Sin tope de reintegro",
+      "discount": 15,
+      "untilDiscount": false,
+      "fees": 6,
+      "inAPayment": false,
+      "interest": "sin interés",
+      "untilFees": true
+    }
+  },
+  "detail": {
+    "id": 7857,
+    "initialDate": "2026-10-01T00:00:00",
+    "endDate": "2026-12-31T00:00:00",
+    "monday": false,
+    "tuesday": false,
+    "wednesday": true,
+    "thursday": false,
+    "friday": false,
+    "saturday": false,
+    "sunday": false,
+    "fullWeek": false,
+    "legal": "<p>CFTNA: COSTO FINANCIERO TOTAL NOMINAL ANUAL</p><p><span style=\"font-size: 48px;\">C.F.T.N.A.: 0%</span> (CARTERA DE CONSUMO)</p><p><span style=\"font-size: 48px;\">C.F.T.N.A.: 2,14%</span> (CARTERA COMERCIAL) POR “SEGURO DE VIDA E INVALIDEZ TOTAL O PERMANENTE”</p><p>TASA FIJA NOMINAL Y EFECTIVA ANUAL: 0%.</p><p>VÁLIDA LOS DIAS MIERFCOLES A PARTIR DEL 01-10-2026 HASTA EL 31-12-2026, ABONANDO CON TARJETAS SANTANDER RECARGABLE, CRÉDITO Y/O DÉBITO. EXCLUSIVO PARA CLIENTES SUSCRIPTOS AL PROGRAMA SORPRESA CON CUENTA EN BANCO SANTANDER, NO APLICA A TARJETAS DE DÉBITO VINCULADAS A CAJAS DE AHORRO EN PESOS GRATUITAS. NO ACUMULABLES CON OTRAS PROMOCIONES. EL AHORRO SE HARÁ EFECTIVO VÍA REINTEGRO DENTRO DE LOS 30 DÍAS DE EFECTUADO EL CONSUMO EN LA CUENTA BANCARIA ASOCIADA AL CLIENTE. EJEMPLO: EN UNA COMPRA DE $180.000 REALIZADA CON TU TARJETA SANTANDER DE CRÉDITO FINANCIADA EN SEIS (6) CUOTAS, RECIBIRÁS EN EL PRIMER RESUMEN, UN CONSUMO DE $30.000 Y UN REINTEGRO DE $.27.000, HASTA EL SEXTO RESUMEN POSTERIOR A LA COMPRA, RECIBIRÁS UN CONSUMO DE $30.000 EN CADA UNO DE ELLOS. LOS ACCIONISTAS DE BANCO SANTANDER ARGENTINA S.A. (CUIT 30-50000845-4, CON DOMICILIO EN AV. JUAN DE GARAY 151, CIUDAD AUTÓNOMA DE BUENOS AIRES) NO RESPONDEN EN EXCESO DE SU INTEGRACIÓN ACCIONARIA.</p>",
+    "customerDiscount": 15,
+    "topAmount": null,
+    "additionalText": "<p><span style=\"background-color: rgb(255, 255, 255); font-size: 14px; color: rgb(79, 84, 87);\">Beneficio exclusivo para clientes suscriptos a </span><strong style=\"background-color: rgb(255, 255, 255); font-size: 14px; color: rgb(79, 84, 87);\">Sorpresa Santander</strong><span style=\"background-color: rgb(255, 255, 255); font-size: 14px; color: rgb(79, 84, 87);\">.</span></p>",
+    "showCurrentMonthOnly": false,
+    "initialQuote": 2,
+    "finalQuote": 6,
+    "interestFreeFees": true,
+    "specialCondition": null,
+    "stock": 0,
+    "productSegmentation": "Sorpresa",
+    "additionalBenefit": false,
+    "order": 2,
+    "tag": {
+      "id": 2,
+      "description": "Sorpresa",
+      "code": "SOR",
+      "status": false,
+      "colorCode": "#257FA4"
+    },
+    "frecuency": {
+      "id": 1,
+      "description": "No Aplica",
+      "code": "N"
+    },
+    "paymentType": {
+      "id": 1,
+      "description": "No Aplica",
+      "code": "N"
+    },
+    "paymentMethod": {
+      "id": 5,
+      "description": "Ahorro y Cuotas",
+      "code": "AYC"
+    },
+    "benefitType": {
+      "id": 1,
+      "description": "Ahorro",
+      "code": "A"
+    },
+    "categories": [
+      {
+        "id": 1,
+        "description": "Automotor",
+        "code": "AUT"
+      },
+      {
+        "id": 61,
+        "description": "Sorpresa",
+        "code": "SOR"
+      }
+    ],
+    "images": [],
+    "relatedPublications": [],
+    "cards": [
+      {
+        "id": 1,
+        "description": "VISA",
+        "code": "81",
+        "idType": 1,
+        "descriptionType": "DEBITO",
+        "codeType": "D",
+        "image": "https://microfe.santander.com.ar/premify/benefits/assets/images/visa_tarjeta_debito.png"
+      },
+      {
+        "id": 2,
+        "description": "VISA",
+        "code": "40",
+        "idType": 2,
+        "descriptionType": "CREDITO",
+        "codeType": "C",
+        "image": "https://microfe.santander.com.ar/premify/benefits/assets/images/visa_tarjeta_credito.png"
+      },
+      {
+        "id": 3,
+        "description": "VISA",
+        "code": "43",
+        "idType": 3,
+        "descriptionType": "RECARGABLE",
+        "codeType": "R",
+        "image": "https://microfe.santander.com.ar/premify/benefits/assets/images/visa_tarjeta_recargable.png"
+      },
+      {
+        "id": 4,
+        "description": "MASTER",
+        "code": "41",
+        "idType": 2,
+        "descriptionType": "CREDITO",
+        "codeType": "C",
+        "image": "https://microfe.santander.com.ar/premify/benefits/assets/images/mastercard_tarjeta_credito.png"
+      },
+      {
+        "id": 5,
+        "description": "AMEX",
+        "code": "42",
+        "idType": 2,
+        "descriptionType": "CREDITO",
+        "codeType": "C",
+        "image": "https://microfe.santander.com.ar/premify/benefits/assets/images/amex_tarjeta_credito.png"
+      }
+    ],
+    "brands": [
+      {
+        "id": 24765,
+        "brand": {
+          "id": 53,
+          "code": "",
+          "name": "Bridgestone",
+          "desktopImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/Bridgestone_desktopImage.png",
+          "desktopMinImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/Bridgestone_desktopMinImage.png",
+          "mobileImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/Bridgestone_mobileImage.png",
+          "mobileMinImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/Bridgestone_mobileMinImage.png",
+          "active": true,
+          "order": 0,
+          "benefitDescription": null,
+          "colorCode": "",
+          "brandType": {
+            "id": 1,
+            "description": "Standar",
+            "code": "STA",
+            "active": true
+          }
+        },
+        "establishments": [
+          {
+            "id": 357379,
+            "address": "Av. Pte. Peron 3051",
+            "city": "Haedo",
+            "province": "Buenos Aires",
+            "fantasyName": "Neumáticos Rosmi Srl",
+            "homePage": "",
+            "shopping": "",
+            "isApp": false,
+            "latitude": null,
+            "longitude": null
+          }
+        ]
+      }
+    ],
+    "texts": {
+      "title": "15% de ahorro + hasta 6 cuotas sin interés",
+      "description": "Sin tope de reintegro",
+      "discount": 15,
+      "untilDiscount": false,
+      "fees": 6,
+      "inAPayment": false,
+      "interest": "sin interés",
+      "untilFees": true
+    },
+    "homePages": []
+  },
+  "program_occurrences": 1,
+  "program_catalog_total": 1
+}

@@ -1,0 +1,4436 @@
+{
+  "source": "santander",
+  "source_id": "3194:7956",
+  "scraped_at": "2026-10-15T21:37:52.261464+00:00",
+  "promotion_url": "https://www.santander.com.ar/personas/beneficios#/publication?brandId=3194&programId=7956",
+  "catalog_url": "https://www.santander.com.ar/personas/beneficios#/results?category-code=ALL",
+  "catalog": {
+    "id": 3194,
+    "code": null,
+    "name": "Top Gnc",
+    "desktopImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/Varios_desktopImage_1168x120",
+    "desktopMinImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/Varios_desktopMinImage_428x120",
+    "mobileImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/Varios_mobileImage_725x160",
+    "mobileMinImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/Varios_mobileMinImage_178x75",
+    "active": true,
+    "order": 0,
+    "benefitDescription": "20%",
+    "colorCode": "#9E3667",
+    "brandType": {
+      "id": 1,
+      "description": "Standar",
+      "code": "STA",
+      "active": true
+    }
+  },
+  "program": {
+    "startDatePublication": "2026-10-07T00:00:00",
+    "endDatePublication": "2027-03-31T00:00:00",
+    "id": 7956,
+    "idPromotion": 14153,
+    "monday": false,
+    "tuesday": false,
+    "wednesday": true,
+    "thursday": false,
+    "friday": false,
+    "saturday": false,
+    "sunday": false,
+    "fullWeek": false,
+    "multiPublication": true,
+    "customerDiscount": 20,
+    "topAmount": null,
+    "additionalText": "",
+    "monthlyCut": true,
+    "initialQuote": 2,
+    "finalQuote": 3,
+    "interestFreeFees": true,
+    "specialCondition": null,
+    "order": 5,
+    "legal": "<p>Costo financiero total nominal anual: C.F.T.N.A.</p><p><span style=\"font-size: 48px;\">C.F.T.N.A: 2,14%</span> (cartera comercial por &quot;seguro de vida e invalidez total o permanente&quot;)</p><p><span style=\"font-size: 48px;\">C.F.T.N.A: 0%</span> (cartera de consumo).</p><p>Tasa fija nominal anual: 0%. Tasa fija efectiva anual : 0%.</p><p>Válida en los locales adheridos, abonando con Tarjetas Santander Visa débito y crédito, incluidos también los pagos realizados con App Santander, MODO, Google Pay y Apple Pay. Se excluyen compras abonadas por transferencias, a través de billeteras virtuales o financiadas por programas Cuota Simple. No acumulable con otras promociones. Válido únicamente para clientes titulares de cuenta bancaria Santander. En caso que la compra sea realizada con una tarjeta adicional, el reintegro se verá reflejado en la cuenta bancaria de dicho titular.</p><p>El ahorro se hará efectivo vía reintegro dentro de los 60 días de efectuado el consumo en la cuenta bancaria titular del cliente. No aplica a tarjetas de débito vinculadas a cajas de ahorro en pesos gratuitas, ni pagos realizados con dinero en cuenta. Promoción sin tope de reintegro. Ejemplo: en una compra con tarjeta de crédito de $90.000 en 3 cuotas, el cliente recibirá un reintegro de $18.000 en la cuenta bancaria titular.</p>",
+    "benefitType": {
+      "id": 1,
+      "description": "Ahorro",
+      "code": "A"
+    },
+    "paymentType": {
+      "id": 1,
+      "description": "No Aplica",
+      "code": "N"
+    },
+    "paymentMethod": {
+      "id": 5,
+      "description": "Ahorro y Cuotas",
+      "code": "AYC"
+    },
+    "frecuency": {
+      "id": 1,
+      "description": "No Aplica",
+      "code": "N"
+    },
+    "tag": {
+      "id": 7,
+      "description": "Exclusivo Visa",
+      "code": "EXV",
+      "status": false,
+      "colorCode": "#9E3667"
+    },
+    "brands": [
+      {
+        "id": 3194,
+        "code": null,
+        "name": "Top Gnc",
+        "desktopImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/Varios_desktopImage_1168x120",
+        "desktopMinImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/Varios_desktopMinImage_428x120",
+        "mobileImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/Varios_mobileImage_725x160",
+        "mobileMinImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/Varios_mobileMinImage_178x75",
+        "active": true,
+        "order": 0,
+        "benefitDescription": null,
+        "colorCode": "",
+        "brandType": {
+          "id": 1,
+          "description": "Standar",
+          "code": "STA",
+          "active": true
+        }
+      }
+    ],
+    "relatedPublications": [],
+    "categories": [
+      {
+        "id": 18,
+        "description": "Varios",
+        "code": "VAR"
+      },
+      {
+        "id": 41,
+        "description": "Getnet",
+        "code": "GET"
+      }
+    ],
+    "texts": {
+      "title": "20% de ahorro + hasta 3 cuotas sin interés",
+      "description": "Sin tope de reintegro",
+      "discount": 20,
+      "untilDiscount": false,
+      "fees": 3,
+      "inAPayment": false,
+      "interest": "sin interés",
+      "untilFees": true
+    }
+  },
+  "detail": {
+    "id": 7956,
+    "initialDate": "2026-10-07T00:00:00",
+    "endDate": "2027-03-31T00:00:00",
+    "monday": false,
+    "tuesday": false,
+    "wednesday": true,
+    "thursday": false,
+    "friday": false,
+    "saturday": false,
+    "sunday": false,
+    "fullWeek": false,
+    "legal": "<p>Costo financiero total nominal anual: C.F.T.N.A.</p><p><span style=\"font-size: 48px;\">C.F.T.N.A: 2,14%</span> (cartera comercial por &quot;seguro de vida e invalidez total o permanente&quot;)</p><p><span style=\"font-size: 48px;\">C.F.T.N.A: 0%</span> (cartera de consumo).</p><p>Tasa fija nominal anual: 0%. Tasa fija efectiva anual : 0%.</p><p>Válida en los locales adheridos, abonando con Tarjetas Santander Visa débito y crédito, incluidos también los pagos realizados con App Santander, MODO, Google Pay y Apple Pay. Se excluyen compras abonadas por transferencias, a través de billeteras virtuales o financiadas por programas Cuota Simple. No acumulable con otras promociones. Válido únicamente para clientes titulares de cuenta bancaria Santander. En caso que la compra sea realizada con una tarjeta adicional, el reintegro se verá reflejado en la cuenta bancaria de dicho titular.</p><p>El ahorro se hará efectivo vía reintegro dentro de los 60 días de efectuado el consumo en la cuenta bancaria titular del cliente. No aplica a tarjetas de débito vinculadas a cajas de ahorro en pesos gratuitas, ni pagos realizados con dinero en cuenta. Promoción sin tope de reintegro. Ejemplo: en una compra con tarjeta de crédito de $90.000 en 3 cuotas, el cliente recibirá un reintegro de $18.000 en la cuenta bancaria titular.</p>",
+    "customerDiscount": 20,
+    "topAmount": null,
+    "additionalText": "",
+    "showCurrentMonthOnly": true,
+    "initialQuote": 2,
+    "finalQuote": 3,
+    "interestFreeFees": true,
+    "specialCondition": null,
+    "stock": 0,
+    "productSegmentation": "Masiva",
+    "additionalBenefit": false,
+    "order": 5,
+    "tag": {
+      "id": 7,
+      "description": "Exclusivo Visa",
+      "code": "EXV",
+      "status": false,
+      "colorCode": "#9E3667"
+    },
+    "frecuency": {
+      "id": 1,
+      "description": "No Aplica",
+      "code": "N"
+    },
+    "paymentType": {
+      "id": 1,
+      "description": "No Aplica",
+      "code": "N"
+    },
+    "paymentMethod": {
+      "id": 5,
+      "description": "Ahorro y Cuotas",
+      "code": "AYC"
+    },
+    "benefitType": {
+      "id": 1,
+      "description": "Ahorro",
+      "code": "A"
+    },
+    "categories": [
+      {
+        "id": 18,
+        "description": "Varios",
+        "code": "VAR"
+      },
+      {
+        "id": 41,
+        "description": "Getnet",
+        "code": "GET"
+      }
+    ],
+    "images": [],
+    "relatedPublications": [],
+    "cards": [
+      {
+        "id": 1,
+        "description": "VISA",
+        "code": "81",
+        "idType": 1,
+        "descriptionType": "DEBITO",
+        "codeType": "D",
+        "image": "https://microfe.santander.com.ar/premify/benefits/assets/images/visa_tarjeta_debito.png"
+      },
+      {
+        "id": 2,
+        "description": "VISA",
+        "code": "40",
+        "idType": 2,
+        "descriptionType": "CREDITO",
+        "codeType": "C",
+        "image": "https://microfe.santander.com.ar/premify/benefits/assets/images/visa_tarjeta_credito.png"
+      }
+    ],
+    "brands": [
+      {
+        "id": 25200,
+        "brand": {
+          "id": 2344,
+          "code": null,
+          "name": "Aloha Denim",
+          "desktopImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/brand_11d3c539-e9b0-401a-af50-5adc1473d154.png",
+          "desktopMinImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/brand_93f7e3a7-daac-495d-9525-5fe26d28e6bf.png",
+          "mobileImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/brand_18aff02c-7621-4306-bf88-943fd2fc5b14.png",
+          "mobileMinImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/brand_7b37ccd2-b1fc-4ca9-ad57-9ae812279338.png",
+          "active": true,
+          "order": 0,
+          "benefitDescription": null,
+          "colorCode": "",
+          "brandType": {
+            "id": 1,
+            "description": "Standar",
+            "code": "STA",
+            "active": true
+          }
+        },
+        "establishments": [
+          {
+            "id": 436883,
+            "address": "5 de Junio 934",
+            "city": "maquinista savio",
+            "province": "Buenos Aires",
+            "fantasyName": "Aloha Denim",
+            "homePage": "",
+            "shopping": "",
+            "isApp": false,
+            "latitude": null,
+            "longitude": null
+          }
+        ]
+      },
+      {
+        "id": 25201,
+        "brand": {
+          "id": 3101,
+          "code": null,
+          "name": "Alta Pinta",
+          "desktopImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/Varios_desktopImage_1168x120",
+          "desktopMinImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/Varios_desktopMinImage_428x120",
+          "mobileImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/Varios_mobileImage_725x160",
+          "mobileMinImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/Varios_mobileMinImage_178x75",
+          "active": true,
+          "order": 0,
+          "benefitDescription": null,
+          "colorCode": "",
+          "brandType": {
+            "id": 1,
+            "description": "Standar",
+            "code": "STA",
+            "active": true
+          }
+        },
+        "establishments": [
+          {
+            "id": 437206,
+            "address": "BETBEDER 20",
+            "city": "VILLA MERCEDES",
+            "province": "San Luis",
+            "fantasyName": "ALTA PINTA",
+            "homePage": "",
+            "shopping": "",
+            "isApp": false,
+            "latitude": null,
+            "longitude": null
+          }
+        ]
+      },
+      {
+        "id": 25202,
+        "brand": {
+          "id": 1919,
+          "code": "",
+          "name": "Amici",
+          "desktopImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/brand_705ad9d5-4aec-4077-bf0d-fee406768a54.png",
+          "desktopMinImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/brand_1bd8b468-3a4e-442b-bd2d-c115eca73b2b.png",
+          "mobileImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/brand_cf716404-01c6-49e2-bde0-dcd0e9fc74a9.png",
+          "mobileMinImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/brand_3454b1b1-83c6-4792-a68e-d13b60bb9111.png",
+          "active": true,
+          "order": 0,
+          "benefitDescription": null,
+          "colorCode": "",
+          "brandType": {
+            "id": 1,
+            "description": "Standar",
+            "code": "STA",
+            "active": true
+          }
+        },
+        "establishments": [
+          {
+            "id": 437066,
+            "address": "Buenos aires 120",
+            "city": "neuquen",
+            "province": "Neuquén",
+            "fantasyName": "AMICI",
+            "homePage": "",
+            "shopping": "",
+            "isApp": false,
+            "latitude": null,
+            "longitude": null
+          }
+        ]
+      },
+      {
+        "id": 25203,
+        "brand": {
+          "id": 3102,
+          "code": null,
+          "name": "Andino Outfitters",
+          "desktopImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/Varios_desktopImage_1168x120",
+          "desktopMinImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/Varios_desktopMinImage_428x120",
+          "mobileImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/Varios_mobileImage_725x160",
+          "mobileMinImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/Varios_mobileMinImage_178x75",
+          "active": true,
+          "order": 0,
+          "benefitDescription": null,
+          "colorCode": "",
+          "brandType": {
+            "id": 1,
+            "description": "Standar",
+            "code": "STA",
+            "active": true
+          }
+        },
+        "establishments": [
+          {
+            "id": 436667,
+            "address": "CALLE 14 911",
+            "city": "MERCEDES",
+            "province": "Buenos Aires",
+            "fantasyName": "ANDINO OUTFITTERS",
+            "homePage": "",
+            "shopping": "",
+            "isApp": false,
+            "latitude": null,
+            "longitude": null
+          }
+        ]
+      },
+      {
+        "id": 25204,
+        "brand": {
+          "id": 3103,
+          "code": null,
+          "name": "Angeloni Deportes",
+          "desktopImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/Varios_desktopImage_1168x120",
+          "desktopMinImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/Varios_desktopMinImage_428x120",
+          "mobileImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/Varios_mobileImage_725x160",
+          "mobileMinImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/Varios_mobileMinImage_178x75",
+          "active": true,
+          "order": 0,
+          "benefitDescription": null,
+          "colorCode": "",
+          "brandType": {
+            "id": 1,
+            "description": "Standar",
+            "code": "STA",
+            "active": true
+          }
+        },
+        "establishments": [
+          {
+            "id": 437308,
+            "address": "LAVALLE 20",
+            "city": "COLON",
+            "province": "Entre Ríos",
+            "fantasyName": "angeloni deportes",
+            "homePage": "",
+            "shopping": "",
+            "isApp": false,
+            "latitude": null,
+            "longitude": null
+          }
+        ]
+      },
+      {
+        "id": 25205,
+        "brand": {
+          "id": 2283,
+          "code": "",
+          "name": "Antonieta",
+          "desktopImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/brand_27b7c0e8-f7f2-4ed0-b15f-6e4ae8924cb3.png",
+          "desktopMinImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/brand_a4c7b8a4-7b9b-4971-9835-3d586bdb0591.png",
+          "mobileImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/brand_dbc70796-f8d0-4d21-a6d6-4bea4abfa25d.png",
+          "mobileMinImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/brand_0d35f282-6905-48c7-a2eb-1fc384804e0f.png",
+          "active": true,
+          "order": 0,
+          "benefitDescription": null,
+          "colorCode": "",
+          "brandType": {
+            "id": 1,
+            "description": "Standar",
+            "code": "STA",
+            "active": true
+          }
+        },
+        "establishments": [
+          {
+            "id": 436911,
+            "address": "ROBBIO 980",
+            "city": "9 DE JULIO",
+            "province": "Buenos Aires",
+            "fantasyName": "ANTONIETA",
+            "homePage": "",
+            "shopping": "",
+            "isApp": false,
+            "latitude": null,
+            "longitude": null
+          }
+        ]
+      },
+      {
+        "id": 25206,
+        "brand": {
+          "id": 2350,
+          "code": null,
+          "name": "Argon Pirotecnia",
+          "desktopImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/brand_11d3c539-e9b0-401a-af50-5adc1473d154.png",
+          "desktopMinImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/brand_93f7e3a7-daac-495d-9525-5fe26d28e6bf.png",
+          "mobileImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/brand_18aff02c-7621-4306-bf88-943fd2fc5b14.png",
+          "mobileMinImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/brand_7b37ccd2-b1fc-4ca9-ad57-9ae812279338.png",
+          "active": true,
+          "order": 0,
+          "benefitDescription": null,
+          "colorCode": "",
+          "brandType": {
+            "id": 1,
+            "description": "Standar",
+            "code": "STA",
+            "active": true
+          }
+        },
+        "establishments": [
+          {
+            "id": 436674,
+            "address": "DONOFRIO 117",
+            "city": "CIUDADELA",
+            "province": "Buenos Aires",
+            "fantasyName": "Argon Pirotecnia",
+            "homePage": "",
+            "shopping": "",
+            "isApp": false,
+            "latitude": null,
+            "longitude": null
+          }
+        ]
+      },
+      {
+        "id": 25207,
+        "brand": {
+          "id": 38,
+          "code": null,
+          "name": "Arredo",
+          "desktopImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/Arredo_desktopImage.png",
+          "desktopMinImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/Arredo_desktopMinImage.png",
+          "mobileImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/Arredo_mobileImage.png",
+          "mobileMinImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/Arredo_mobileMinImage.png",
+          "active": true,
+          "order": 0,
+          "benefitDescription": null,
+          "colorCode": "",
+          "brandType": {
+            "id": 1,
+            "description": "Standar",
+            "code": "STA",
+            "active": true
+          }
+        },
+        "establishments": [
+          {
+            "id": 436984,
+            "address": "calle cantilo 437",
+            "city": "CITY BELL",
+            "province": "Buenos Aires",
+            "fantasyName": "Arredo",
+            "homePage": "",
+            "shopping": "",
+            "isApp": false,
+            "latitude": null,
+            "longitude": null
+          }
+        ]
+      },
+      {
+        "id": 25208,
+        "brand": {
+          "id": 2151,
+          "code": "",
+          "name": "Asaparri",
+          "desktopImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/brand_49d0402d-72cd-460d-bcc4-6ccf1b812079.png",
+          "desktopMinImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/brand_fa84b1f0-792b-48d3-bb68-e0a59d0c73b0.png",
+          "mobileImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/brand_1fd175a5-ca59-43d2-9db6-e6e2141d5bf9.png",
+          "mobileMinImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/brand_12cde241-faab-4856-80c4-df6adc8ffb17.png",
+          "active": true,
+          "order": 0,
+          "benefitDescription": null,
+          "colorCode": "",
+          "brandType": {
+            "id": 1,
+            "description": "Standar",
+            "code": "STA",
+            "active": true
+          }
+        },
+        "establishments": [
+          {
+            "id": 437279,
+            "address": "independencia 2552",
+            "city": "mar del plata",
+            "province": "Buenos Aires",
+            "fantasyName": "ASAPARRI",
+            "homePage": "",
+            "shopping": "",
+            "isApp": false,
+            "latitude": null,
+            "longitude": null
+          }
+        ]
+      },
+      {
+        "id": 25209,
+        "brand": {
+          "id": 3106,
+          "code": null,
+          "name": "Baby Junior",
+          "desktopImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/Varios_desktopImage_1168x120",
+          "desktopMinImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/Varios_desktopMinImage_428x120",
+          "mobileImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/Varios_mobileImage_725x160",
+          "mobileMinImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/Varios_mobileMinImage_178x75",
+          "active": true,
+          "order": 0,
+          "benefitDescription": null,
+          "colorCode": "",
+          "brandType": {
+            "id": 1,
+            "description": "Standar",
+            "code": "STA",
+            "active": true
+          }
+        },
+        "establishments": [
+          {
+            "id": 437209,
+            "address": "AV 7 DE MARZO 1864",
+            "city": "SANTO TOME",
+            "province": "Santa Fe",
+            "fantasyName": "BABY JUNIOR",
+            "homePage": "",
+            "shopping": "",
+            "isApp": false,
+            "latitude": null,
+            "longitude": null
+          }
+        ]
+      },
+      {
+        "id": 25210,
+        "brand": {
+          "id": 2354,
+          "code": null,
+          "name": "Bambinos",
+          "desktopImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/brand_5a930f97-88ab-4755-9d79-746c21a5a389.png",
+          "desktopMinImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/brand_54d30884-6c6a-452b-ad74-cb3ba137f4dc.png",
+          "mobileImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/brand_84dd815e-5089-4ab4-b1ca-3b2856c53c02.png",
+          "mobileMinImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/brand_8d5f0fb3-a277-4a6e-9e75-570a311cb3ee.png",
+          "active": true,
+          "order": 0,
+          "benefitDescription": null,
+          "colorCode": "",
+          "brandType": {
+            "id": 1,
+            "description": "Standar",
+            "code": "STA",
+            "active": true
+          }
+        },
+        "establishments": [
+          {
+            "id": 436826,
+            "address": "ESPANA 524",
+            "city": "VICU#A MACKENNA",
+            "province": "Córdoba",
+            "fantasyName": "BAMBINOS",
+            "homePage": "",
+            "shopping": "",
+            "isApp": false,
+            "latitude": null,
+            "longitude": null
+          }
+        ]
+      },
+      {
+        "id": 25211,
+        "brand": {
+          "id": 3107,
+          "code": null,
+          "name": "Barrio",
+          "desktopImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/Varios_desktopImage_1168x120",
+          "desktopMinImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/Varios_desktopMinImage_428x120",
+          "mobileImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/Varios_mobileImage_725x160",
+          "mobileMinImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/Varios_mobileMinImage_178x75",
+          "active": true,
+          "order": 0,
+          "benefitDescription": null,
+          "colorCode": "",
+          "brandType": {
+            "id": 1,
+            "description": "Standar",
+            "code": "STA",
+            "active": true
+          }
+        },
+        "establishments": [
+          {
+            "id": 437280,
+            "address": "MITRE 493",
+            "city": "PERGAMINO",
+            "province": "Buenos Aires",
+            "fantasyName": "BARRIO",
+            "homePage": "",
+            "shopping": "",
+            "isApp": false,
+            "latitude": null,
+            "longitude": null
+          }
+        ]
+      },
+      {
+        "id": 25212,
+        "brand": {
+          "id": 2367,
+          "code": "",
+          "name": "Baruja Toys",
+          "desktopImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/brand_6b7e181f-9c86-48ee-9241-66a432066f07.png",
+          "desktopMinImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/brand_6c177686-f64f-4f6a-b6a5-0a363e4032cd.png",
+          "mobileImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/brand_0e4c1232-ecfc-496f-b7d5-8b1e87b8230c.png",
+          "mobileMinImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/brand_f6a2da0f-0e26-4687-9f05-79807d982044.png",
+          "active": true,
+          "order": 0,
+          "benefitDescription": null,
+          "colorCode": "",
+          "brandType": {
+            "id": 1,
+            "description": "Standar",
+            "code": "STA",
+            "active": true
+          }
+        },
+        "establishments": [
+          {
+            "id": 436668,
+            "address": "ITALIA 23",
+            "city": "ROSARIO",
+            "province": "Santa Fe",
+            "fantasyName": "Baruja Toys",
+            "homePage": "",
+            "shopping": "",
+            "isApp": false,
+            "latitude": null,
+            "longitude": null
+          }
+        ]
+      },
+      {
+        "id": 25213,
+        "brand": {
+          "id": 3108,
+          "code": "",
+          "name": "BBC Desarrollos",
+          "desktopImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/brand_2f7e1993-fdcd-4baa-9f81-570138c09cdc.png",
+          "desktopMinImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/brand_b6f33fae-da73-46a9-a992-a67d18614d96.png",
+          "mobileImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/brand_5f586dcb-5b37-4e2f-b779-2c8b4c6a4520.png",
+          "mobileMinImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/brand_4721237d-df77-4c74-bca8-28acb514b762.png",
+          "active": true,
+          "order": 0,
+          "benefitDescription": null,
+          "colorCode": "",
+          "brandType": {
+            "id": 1,
+            "description": "Standar",
+            "code": "STA",
+            "active": true
+          }
+        },
+        "establishments": [
+          {
+            "id": 437096,
+            "address": "Jonas Salk 722",
+            "city": "San Francisco",
+            "province": "Córdoba",
+            "fantasyName": "BBC DESARROLLOS",
+            "homePage": "",
+            "shopping": "",
+            "isApp": false,
+            "latitude": null,
+            "longitude": null
+          }
+        ]
+      },
+      {
+        "id": 25214,
+        "brand": {
+          "id": 3109,
+          "code": null,
+          "name": "Blanco y Rustico",
+          "desktopImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/Varios_desktopImage_1168x120",
+          "desktopMinImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/Varios_desktopMinImage_428x120",
+          "mobileImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/Varios_mobileImage_725x160",
+          "mobileMinImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/Varios_mobileMinImage_178x75",
+          "active": true,
+          "order": 0,
+          "benefitDescription": null,
+          "colorCode": "",
+          "brandType": {
+            "id": 1,
+            "description": "Standar",
+            "code": "STA",
+            "active": true
+          }
+        },
+        "establishments": [
+          {
+            "id": 437262,
+            "address": "LA RIOJA 2735",
+            "city": "CASILDA",
+            "province": "Santa Fe",
+            "fantasyName": "BLANCO Y RUSTICO",
+            "homePage": "",
+            "shopping": "",
+            "isApp": false,
+            "latitude": null,
+            "longitude": null
+          }
+        ]
+      },
+      {
+        "id": 25215,
+        "brand": {
+          "id": 3110,
+          "code": null,
+          "name": "Boomin",
+          "desktopImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/Varios_desktopImage_1168x120",
+          "desktopMinImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/Varios_desktopMinImage_428x120",
+          "mobileImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/Varios_mobileImage_725x160",
+          "mobileMinImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/Varios_mobileMinImage_178x75",
+          "active": true,
+          "order": 0,
+          "benefitDescription": null,
+          "colorCode": "",
+          "brandType": {
+            "id": 1,
+            "description": "Standar",
+            "code": "STA",
+            "active": true
+          }
+        },
+        "establishments": [
+          {
+            "id": 437309,
+            "address": "AVENIDA BELGRANO 1054",
+            "city": "GARIN",
+            "province": "Buenos Aires",
+            "fantasyName": "Boomin",
+            "homePage": "",
+            "shopping": "",
+            "isApp": false,
+            "latitude": null,
+            "longitude": null
+          }
+        ]
+      },
+      {
+        "id": 25216,
+        "brand": {
+          "id": 3111,
+          "code": null,
+          "name": "Bounce",
+          "desktopImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/Varios_desktopImage_1168x120",
+          "desktopMinImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/Varios_desktopMinImage_428x120",
+          "mobileImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/Varios_mobileImage_725x160",
+          "mobileMinImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/Varios_mobileMinImage_178x75",
+          "active": true,
+          "order": 0,
+          "benefitDescription": null,
+          "colorCode": "",
+          "brandType": {
+            "id": 1,
+            "description": "Standar",
+            "code": "STA",
+            "active": true
+          }
+        },
+        "establishments": [
+          {
+            "id": 437281,
+            "address": "MORENO 3335",
+            "city": "SALADILLO",
+            "province": "Buenos Aires",
+            "fantasyName": "BOUNCE",
+            "homePage": "",
+            "shopping": "",
+            "isApp": false,
+            "latitude": null,
+            "longitude": null
+          }
+        ]
+      },
+      {
+        "id": 25217,
+        "brand": {
+          "id": 3112,
+          "code": null,
+          "name": "Bramor",
+          "desktopImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/Varios_desktopImage_1168x120",
+          "desktopMinImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/Varios_desktopMinImage_428x120",
+          "mobileImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/Varios_mobileImage_725x160",
+          "mobileMinImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/Varios_mobileMinImage_178x75",
+          "active": true,
+          "order": 0,
+          "benefitDescription": null,
+          "colorCode": "",
+          "brandType": {
+            "id": 1,
+            "description": "Standar",
+            "code": "STA",
+            "active": true
+          }
+        },
+        "establishments": [
+          {
+            "id": 437243,
+            "address": "7 E 60 Y 62 1375",
+            "city": "COLON",
+            "province": "Buenos Aires",
+            "fantasyName": "Bramor",
+            "homePage": "",
+            "shopping": "",
+            "isApp": false,
+            "latitude": null,
+            "longitude": null
+          }
+        ]
+      },
+      {
+        "id": 25218,
+        "brand": {
+          "id": 1879,
+          "code": "",
+          "name": "Briskbox",
+          "desktopImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/brand_b1e02b8c-4735-4dd1-bc1a-648de683e708.png",
+          "desktopMinImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/brand_aba15e7b-a631-4fbe-8622-f6b90841dea1.png",
+          "mobileImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/brand_852a301f-7284-41fb-b5b7-449ead329e57.png",
+          "mobileMinImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/brand_5a26d68f-38fa-4f18-a2ff-f5cab1529347.png",
+          "active": true,
+          "order": 0,
+          "benefitDescription": null,
+          "colorCode": "",
+          "brandType": {
+            "id": 1,
+            "description": "Standar",
+            "code": "STA",
+            "active": true
+          }
+        },
+        "establishments": [
+          {
+            "id": 437098,
+            "address": "rafael nunez 4344",
+            "city": "cordoba",
+            "province": "Córdoba",
+            "fantasyName": "Briskbox",
+            "homePage": "",
+            "shopping": "",
+            "isApp": false,
+            "latitude": null,
+            "longitude": null
+          }
+        ]
+      },
+      {
+        "id": 25219,
+        "brand": {
+          "id": 2835,
+          "code": "",
+          "name": "Burvela",
+          "desktopImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/brand_663534ac-7443-42ff-a2b9-2a1c752f6d84.png",
+          "desktopMinImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/brand_35df2f77-c70d-4b3b-b962-a48b163257bd.png",
+          "mobileImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/brand_3370b3d6-8f09-4b08-b27f-b066e1a729cb.png",
+          "mobileMinImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/brand_0feca1ee-ae8c-4c68-b17f-75abacc04ac2.png",
+          "active": true,
+          "order": 0,
+          "benefitDescription": null,
+          "colorCode": "",
+          "brandType": {
+            "id": 1,
+            "description": "Standar",
+            "code": "STA",
+            "active": true
+          }
+        },
+        "establishments": [
+          {
+            "id": 436735,
+            "address": "AV GAONA 3707",
+            "city": "Buenos Aires",
+            "province": "Ciudad Autónoma de Buenos Aires",
+            "fantasyName": "BURVELA",
+            "homePage": "",
+            "shopping": "",
+            "isApp": false,
+            "latitude": null,
+            "longitude": null
+          }
+        ]
+      },
+      {
+        "id": 25220,
+        "brand": {
+          "id": 3114,
+          "code": null,
+          "name": "Calzados del Valle",
+          "desktopImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/Varios_desktopImage_1168x120",
+          "desktopMinImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/Varios_desktopMinImage_428x120",
+          "mobileImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/Varios_mobileImage_725x160",
+          "mobileMinImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/Varios_mobileMinImage_178x75",
+          "active": true,
+          "order": 0,
+          "benefitDescription": null,
+          "colorCode": "",
+          "brandType": {
+            "id": 1,
+            "description": "Standar",
+            "code": "STA",
+            "active": true
+          }
+        },
+        "establishments": [
+          {
+            "id": 437314,
+            "address": "av velez sarsfield 4101",
+            "city": "CORDOBA",
+            "province": "Córdoba",
+            "fantasyName": "CALZADOS DEL VALLE",
+            "homePage": "",
+            "shopping": "",
+            "isApp": false,
+            "latitude": null,
+            "longitude": null
+          }
+        ]
+      },
+      {
+        "id": 25221,
+        "brand": {
+          "id": 3115,
+          "code": null,
+          "name": "Canada Mates",
+          "desktopImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/Varios_desktopImage_1168x120",
+          "desktopMinImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/Varios_desktopMinImage_428x120",
+          "mobileImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/Varios_mobileImage_725x160",
+          "mobileMinImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/Varios_mobileMinImage_178x75",
+          "active": true,
+          "order": 0,
+          "benefitDescription": null,
+          "colorCode": "",
+          "brandType": {
+            "id": 1,
+            "description": "Standar",
+            "code": "STA",
+            "active": true
+          }
+        },
+        "establishments": [
+          {
+            "id": 437248,
+            "address": "CHACABUCO 212",
+            "city": "CA ADA DE GOMEZ",
+            "province": "Santa Fe",
+            "fantasyName": "CANADA MATES",
+            "homePage": "",
+            "shopping": "",
+            "isApp": false,
+            "latitude": null,
+            "longitude": null
+          }
+        ]
+      },
+      {
+        "id": 25222,
+        "brand": {
+          "id": 606,
+          "code": "",
+          "name": "Charco",
+          "desktopImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/Charco_desktopImage.png",
+          "desktopMinImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/Charco_desktopMinImage.png",
+          "mobileImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/Charco_mobileImage.png",
+          "mobileMinImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/Charco_mobileMinImage.png",
+          "active": true,
+          "order": 0,
+          "benefitDescription": null,
+          "colorCode": "",
+          "brandType": {
+            "id": 1,
+            "description": "Standar",
+            "code": "STA",
+            "active": true
+          }
+        },
+        "establishments": [
+          {
+            "id": 436863,
+            "address": "junin 501",
+            "city": "ROSARIO",
+            "province": "Santa Fe",
+            "fantasyName": "CHARCO",
+            "homePage": "",
+            "shopping": "",
+            "isApp": false,
+            "latitude": null,
+            "longitude": null
+          }
+        ]
+      },
+      {
+        "id": 25223,
+        "brand": {
+          "id": 3117,
+          "code": null,
+          "name": "Chiquilines",
+          "desktopImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/Varios_desktopImage_1168x120",
+          "desktopMinImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/Varios_desktopMinImage_428x120",
+          "mobileImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/Varios_mobileImage_725x160",
+          "mobileMinImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/Varios_mobileMinImage_178x75",
+          "active": true,
+          "order": 0,
+          "benefitDescription": null,
+          "colorCode": "",
+          "brandType": {
+            "id": 1,
+            "description": "Standar",
+            "code": "STA",
+            "active": true
+          }
+        },
+        "establishments": [
+          {
+            "id": 437191,
+            "address": "SARMIENTO 510",
+            "city": "catamarca",
+            "province": "Catamarca",
+            "fantasyName": "CHIQUILINES",
+            "homePage": "",
+            "shopping": "",
+            "isApp": false,
+            "latitude": null,
+            "longitude": null
+          }
+        ]
+      },
+      {
+        "id": 25224,
+        "brand": {
+          "id": 3118,
+          "code": null,
+          "name": "Cintia Geoghegan",
+          "desktopImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/Varios_desktopImage_1168x120",
+          "desktopMinImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/Varios_desktopMinImage_428x120",
+          "mobileImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/Varios_mobileImage_725x160",
+          "mobileMinImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/Varios_mobileMinImage_178x75",
+          "active": true,
+          "order": 0,
+          "benefitDescription": null,
+          "colorCode": "",
+          "brandType": {
+            "id": 1,
+            "description": "Standar",
+            "code": "STA",
+            "active": true
+          }
+        },
+        "establishments": [
+          {
+            "id": 437299,
+            "address": "PUEYRREDON 644",
+            "city": "PERGAMINO",
+            "province": "Buenos Aires",
+            "fantasyName": "CINTIA GEOGHEGAN",
+            "homePage": "",
+            "shopping": "",
+            "isApp": false,
+            "latitude": null,
+            "longitude": null
+          }
+        ]
+      },
+      {
+        "id": 25225,
+        "brand": {
+          "id": 3119,
+          "code": null,
+          "name": "Clerico",
+          "desktopImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/Varios_desktopImage_1168x120",
+          "desktopMinImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/Varios_desktopMinImage_428x120",
+          "mobileImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/Varios_mobileImage_725x160",
+          "mobileMinImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/Varios_mobileMinImage_178x75",
+          "active": true,
+          "order": 0,
+          "benefitDescription": null,
+          "colorCode": "",
+          "brandType": {
+            "id": 1,
+            "description": "Standar",
+            "code": "STA",
+            "active": true
+          }
+        },
+        "establishments": [
+          {
+            "id": 437207,
+            "address": "SAN MARTIN 1005",
+            "city": "CRESPO",
+            "province": "Entre Ríos",
+            "fantasyName": "CLERICO",
+            "homePage": "",
+            "shopping": "",
+            "isApp": false,
+            "latitude": null,
+            "longitude": null
+          }
+        ]
+      },
+      {
+        "id": 25226,
+        "brand": {
+          "id": 134,
+          "code": "",
+          "name": "Creciendo",
+          "desktopImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/brand_07364011-40aa-47f4-8917-850cafb1d9dc.png",
+          "desktopMinImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/brand_4558ff45-f296-4e60-893c-ba3a64a4563e.png",
+          "mobileImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/brand_31440740-0812-475c-bcc4-e0e4d28b5cf1.png",
+          "mobileMinImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/brand_1a54a032-4d4b-4ad6-9627-1d98adef9894.png",
+          "active": true,
+          "order": 0,
+          "benefitDescription": null,
+          "colorCode": "",
+          "brandType": {
+            "id": 1,
+            "description": "Standar",
+            "code": "STA",
+            "active": true
+          }
+        },
+        "establishments": [
+          {
+            "id": 437046,
+            "address": "Av Boyaca 41",
+            "city": "caba",
+            "province": "Ciudad Autónoma de Buenos Aires",
+            "fantasyName": "CRECIENDO",
+            "homePage": "",
+            "shopping": "",
+            "isApp": false,
+            "latitude": null,
+            "longitude": null
+          }
+        ]
+      },
+      {
+        "id": 25227,
+        "brand": {
+          "id": 3122,
+          "code": null,
+          "name": "Da Vinci",
+          "desktopImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/Varios_desktopImage_1168x120",
+          "desktopMinImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/Varios_desktopMinImage_428x120",
+          "mobileImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/Varios_mobileImage_725x160",
+          "mobileMinImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/Varios_mobileMinImage_178x75",
+          "active": true,
+          "order": 0,
+          "benefitDescription": null,
+          "colorCode": "",
+          "brandType": {
+            "id": 1,
+            "description": "Standar",
+            "code": "STA",
+            "active": true
+          }
+        },
+        "establishments": [
+          {
+            "id": 436954,
+            "address": "SAN MARTIN 767",
+            "city": "NOGOYA",
+            "province": "Entre Ríos",
+            "fantasyName": "DA VINCI",
+            "homePage": "",
+            "shopping": "",
+            "isApp": false,
+            "latitude": null,
+            "longitude": null
+          }
+        ]
+      },
+      {
+        "id": 25228,
+        "brand": {
+          "id": 3123,
+          "code": null,
+          "name": "Deacero Srl",
+          "desktopImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/Varios_desktopImage_1168x120",
+          "desktopMinImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/Varios_desktopMinImage_428x120",
+          "mobileImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/Varios_mobileImage_725x160",
+          "mobileMinImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/Varios_mobileMinImage_178x75",
+          "active": true,
+          "order": 0,
+          "benefitDescription": null,
+          "colorCode": "",
+          "brandType": {
+            "id": 1,
+            "description": "Standar",
+            "code": "STA",
+            "active": true
+          }
+        },
+        "establishments": [
+          {
+            "id": 437120,
+            "address": "SUPERI 620",
+            "city": "ROSARIO",
+            "province": "Santa Fe",
+            "fantasyName": "DEACERO SRL",
+            "homePage": "",
+            "shopping": "",
+            "isApp": false,
+            "latitude": null,
+            "longitude": null
+          }
+        ]
+      },
+      {
+        "id": 25229,
+        "brand": {
+          "id": 3124,
+          "code": null,
+          "name": "Dejala Ser",
+          "desktopImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/Varios_desktopImage_1168x120",
+          "desktopMinImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/Varios_desktopMinImage_428x120",
+          "mobileImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/Varios_mobileImage_725x160",
+          "mobileMinImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/Varios_mobileMinImage_178x75",
+          "active": true,
+          "order": 0,
+          "benefitDescription": null,
+          "colorCode": "",
+          "brandType": {
+            "id": 1,
+            "description": "Standar",
+            "code": "STA",
+            "active": true
+          }
+        },
+        "establishments": [
+          {
+            "id": 437181,
+            "address": "ROCA 416",
+            "city": "PUNTA ALTA",
+            "province": "Buenos Aires",
+            "fantasyName": "DEJALA SER",
+            "homePage": "",
+            "shopping": "",
+            "isApp": false,
+            "latitude": null,
+            "longitude": null
+          }
+        ]
+      },
+      {
+        "id": 25230,
+        "brand": {
+          "id": 2976,
+          "code": "",
+          "name": "Delaostia",
+          "desktopImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/brand_9e3e1444-8bb6-4b04-b5a3-0b3cf4e2aa6f.png",
+          "desktopMinImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/brand_b72081d1-6240-4eba-a226-74050cd4bcb3.png",
+          "mobileImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/brand_1cfa5f11-91c4-4d86-b95d-d953e0425fd7.png",
+          "mobileMinImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/brand_860700fb-c726-493a-9d4a-250e30ebc632.png",
+          "active": true,
+          "order": 0,
+          "benefitDescription": null,
+          "colorCode": "",
+          "brandType": {
+            "id": 1,
+            "description": "Standar",
+            "code": "STA",
+            "active": true
+          }
+        },
+        "establishments": [
+          {
+            "id": 436967,
+            "address": "EL SALVADOR 4625",
+            "city": "CAPITAL",
+            "province": "Ciudad Autónoma de Buenos Aires",
+            "fantasyName": "Delaostia",
+            "homePage": "",
+            "shopping": "",
+            "isApp": false,
+            "latitude": null,
+            "longitude": null
+          }
+        ]
+      },
+      {
+        "id": 25231,
+        "brand": {
+          "id": 3125,
+          "code": null,
+          "name": "Delirios Fem",
+          "desktopImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/Varios_desktopImage_1168x120",
+          "desktopMinImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/Varios_desktopMinImage_428x120",
+          "mobileImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/Varios_mobileImage_725x160",
+          "mobileMinImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/Varios_mobileMinImage_178x75",
+          "active": true,
+          "order": 0,
+          "benefitDescription": null,
+          "colorCode": "",
+          "brandType": {
+            "id": 1,
+            "description": "Standar",
+            "code": "STA",
+            "active": true
+          }
+        },
+        "establishments": [
+          {
+            "id": 437263,
+            "address": "7 DE MARZO 1824",
+            "city": "SANTO TOME",
+            "province": "Santa Fe",
+            "fantasyName": "DELIRIOS FEM",
+            "homePage": "",
+            "shopping": "",
+            "isApp": false,
+            "latitude": null,
+            "longitude": null
+          }
+        ]
+      },
+      {
+        "id": 25232,
+        "brand": {
+          "id": 3474,
+          "code": "",
+          "name": "Diego Inflables",
+          "desktopImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/brand_b23149bf-9a7b-477c-8adf-ce69cbc5bd90.png",
+          "desktopMinImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/brand_ffff1615-46ae-458a-a421-7a0b70709435.png",
+          "mobileImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/brand_c68ffbc0-0e86-41a4-96bc-378599950422.png",
+          "mobileMinImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/brand_a168cbb9-71f2-485f-94ff-93cef878ab00.png",
+          "active": true,
+          "order": 0,
+          "benefitDescription": null,
+          "colorCode": "",
+          "brandType": {
+            "id": 1,
+            "description": "Standar",
+            "code": "STA",
+            "active": true
+          }
+        },
+        "establishments": [
+          {
+            "id": 437283,
+            "address": "AV CABILDO 480",
+            "city": "CAPITAL",
+            "province": "Ciudad Autónoma de Buenos Aires",
+            "fantasyName": "DIEGO INFLABLES",
+            "homePage": "",
+            "shopping": "",
+            "isApp": false,
+            "latitude": null,
+            "longitude": null
+          }
+        ]
+      },
+      {
+        "id": 25233,
+        "brand": {
+          "id": 3127,
+          "code": null,
+          "name": "Digi Center",
+          "desktopImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/Varios_desktopImage_1168x120",
+          "desktopMinImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/Varios_desktopMinImage_428x120",
+          "mobileImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/Varios_mobileImage_725x160",
+          "mobileMinImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/Varios_mobileMinImage_178x75",
+          "active": true,
+          "order": 0,
+          "benefitDescription": null,
+          "colorCode": "",
+          "brandType": {
+            "id": 1,
+            "description": "Standar",
+            "code": "STA",
+            "active": true
+          }
+        },
+        "establishments": [
+          {
+            "id": 437292,
+            "address": "25 DE MAYO 704",
+            "city": "ESQUINA",
+            "province": "Corrientes",
+            "fantasyName": "DIGI CENTER",
+            "homePage": "",
+            "shopping": "",
+            "isApp": false,
+            "latitude": null,
+            "longitude": null
+          }
+        ]
+      },
+      {
+        "id": 25234,
+        "brand": {
+          "id": 3128,
+          "code": null,
+          "name": "Distribuidora Ian",
+          "desktopImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/Varios_desktopImage_1168x120",
+          "desktopMinImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/Varios_desktopMinImage_428x120",
+          "mobileImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/Varios_mobileImage_725x160",
+          "mobileMinImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/Varios_mobileMinImage_178x75",
+          "active": true,
+          "order": 0,
+          "benefitDescription": null,
+          "colorCode": "",
+          "brandType": {
+            "id": 1,
+            "description": "Standar",
+            "code": "STA",
+            "active": true
+          }
+        },
+        "establishments": [
+          {
+            "id": 437000,
+            "address": "AVENIDA VILLAFANE 261",
+            "city": "PERICO",
+            "province": "Jujuy",
+            "fantasyName": "Distribuidora IAN",
+            "homePage": "",
+            "shopping": "",
+            "isApp": false,
+            "latitude": null,
+            "longitude": null
+          }
+        ]
+      },
+      {
+        "id": 25235,
+        "brand": {
+          "id": 3129,
+          "code": null,
+          "name": "DL Servicio Tecnico",
+          "desktopImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/Varios_desktopImage_1168x120",
+          "desktopMinImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/Varios_desktopMinImage_428x120",
+          "mobileImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/Varios_mobileImage_725x160",
+          "mobileMinImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/Varios_mobileMinImage_178x75",
+          "active": true,
+          "order": 0,
+          "benefitDescription": null,
+          "colorCode": "",
+          "brandType": {
+            "id": 1,
+            "description": "Standar",
+            "code": "STA",
+            "active": true
+          }
+        },
+        "establishments": [
+          {
+            "id": 437244,
+            "address": "SAN MARTIN 88",
+            "city": "CONCORDIA",
+            "province": "Entre Ríos",
+            "fantasyName": "DL SERVICIO TECNICO",
+            "homePage": "",
+            "shopping": "",
+            "isApp": false,
+            "latitude": null,
+            "longitude": null
+          }
+        ]
+      },
+      {
+        "id": 25236,
+        "brand": {
+          "id": 3130,
+          "code": null,
+          "name": "Domino",
+          "desktopImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/Varios_desktopImage_1168x120",
+          "desktopMinImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/Varios_desktopMinImage_428x120",
+          "mobileImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/Varios_mobileImage_725x160",
+          "mobileMinImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/Varios_mobileMinImage_178x75",
+          "active": true,
+          "order": 0,
+          "benefitDescription": null,
+          "colorCode": "",
+          "brandType": {
+            "id": 1,
+            "description": "Standar",
+            "code": "STA",
+            "active": true
+          }
+        },
+        "establishments": [
+          {
+            "id": 437236,
+            "address": "LEOPOLDO HERRERA 1230",
+            "city": "VILLAGUAY",
+            "province": "Entre Ríos",
+            "fantasyName": "DOMINO",
+            "homePage": "",
+            "shopping": "",
+            "isApp": false,
+            "latitude": null,
+            "longitude": null
+          }
+        ]
+      },
+      {
+        "id": 25237,
+        "brand": {
+          "id": 1717,
+          "code": "durigutti",
+          "name": "Durigutti",
+          "desktopImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/brand_6a623854-46d5-413c-ac1c-e8d6ddb7d966.png",
+          "desktopMinImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/brand_124964c3-9137-4332-bc39-23802f35c0e4.png",
+          "mobileImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/brand_66a63fb5-36fd-4a4d-be3e-de4c84b192ae.png",
+          "mobileMinImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/brand_6887a5ea-fb63-4cc5-ac95-f2dcbf18a14a.png",
+          "active": true,
+          "order": 0,
+          "benefitDescription": null,
+          "colorCode": "",
+          "brandType": {
+            "id": 1,
+            "description": "Standar",
+            "code": "STA",
+            "active": true
+          }
+        },
+        "establishments": [
+          {
+            "id": 437124,
+            "address": "Callejon de la Reta Las compuertas sn",
+            "city": "las compuertas",
+            "province": "Mendoza",
+            "fantasyName": "DURIGUTTI",
+            "homePage": "",
+            "shopping": "",
+            "isApp": false,
+            "latitude": null,
+            "longitude": null
+          }
+        ]
+      },
+      {
+        "id": 25238,
+        "brand": {
+          "id": 2390,
+          "code": null,
+          "name": "El Stand De Lucho",
+          "desktopImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/brand_11d3c539-e9b0-401a-af50-5adc1473d154.png",
+          "desktopMinImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/brand_93f7e3a7-daac-495d-9525-5fe26d28e6bf.png",
+          "mobileImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/brand_18aff02c-7621-4306-bf88-943fd2fc5b14.png",
+          "mobileMinImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/brand_7b37ccd2-b1fc-4ca9-ad57-9ae812279338.png",
+          "active": true,
+          "order": 0,
+          "benefitDescription": null,
+          "colorCode": "",
+          "brandType": {
+            "id": 1,
+            "description": "Standar",
+            "code": "STA",
+            "active": true
+          }
+        },
+        "establishments": [
+          {
+            "id": 436669,
+            "address": "CHILE 415",
+            "city": "GENERAL MADARIAGA",
+            "province": "Buenos Aires",
+            "fantasyName": "EL STAND DE LUCHO",
+            "homePage": "",
+            "shopping": "",
+            "isApp": false,
+            "latitude": null,
+            "longitude": null
+          }
+        ]
+      },
+      {
+        "id": 25239,
+        "brand": {
+          "id": 3134,
+          "code": null,
+          "name": "Emblema",
+          "desktopImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/Varios_desktopImage_1168x120",
+          "desktopMinImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/Varios_desktopMinImage_428x120",
+          "mobileImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/Varios_mobileImage_725x160",
+          "mobileMinImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/Varios_mobileMinImage_178x75",
+          "active": true,
+          "order": 0,
+          "benefitDescription": null,
+          "colorCode": "",
+          "brandType": {
+            "id": 1,
+            "description": "Standar",
+            "code": "STA",
+            "active": true
+          }
+        },
+        "establishments": [
+          {
+            "id": 437194,
+            "address": "AV LOS COLONIZADORES 1042",
+            "city": "ESPERANZA",
+            "province": "Santa Fe",
+            "fantasyName": "EMBLEMA",
+            "homePage": "",
+            "shopping": "",
+            "isApp": false,
+            "latitude": null,
+            "longitude": null
+          }
+        ]
+      },
+      {
+        "id": 25240,
+        "brand": {
+          "id": 3135,
+          "code": null,
+          "name": "Emma",
+          "desktopImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/Varios_desktopImage_1168x120",
+          "desktopMinImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/Varios_desktopMinImage_428x120",
+          "mobileImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/Varios_mobileImage_725x160",
+          "mobileMinImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/Varios_mobileMinImage_178x75",
+          "active": true,
+          "order": 0,
+          "benefitDescription": null,
+          "colorCode": "",
+          "brandType": {
+            "id": 1,
+            "description": "Standar",
+            "code": "STA",
+            "active": true
+          }
+        },
+        "establishments": [
+          {
+            "id": 437311,
+            "address": "9 DE JULIO 2285",
+            "city": "CHAJARI",
+            "province": "Entre Ríos",
+            "fantasyName": "EMMA",
+            "homePage": "",
+            "shopping": "",
+            "isApp": false,
+            "latitude": null,
+            "longitude": null
+          }
+        ]
+      },
+      {
+        "id": 25241,
+        "brand": {
+          "id": 3136,
+          "code": null,
+          "name": "Escorpio",
+          "desktopImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/Varios_desktopImage_1168x120",
+          "desktopMinImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/Varios_desktopMinImage_428x120",
+          "mobileImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/Varios_mobileImage_725x160",
+          "mobileMinImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/Varios_mobileMinImage_178x75",
+          "active": true,
+          "order": 0,
+          "benefitDescription": null,
+          "colorCode": "",
+          "brandType": {
+            "id": 1,
+            "description": "Standar",
+            "code": "STA",
+            "active": true
+          }
+        },
+        "establishments": [
+          {
+            "id": 437271,
+            "address": "25 DE MAYO 1081",
+            "city": "CRESPO",
+            "province": "Entre Ríos",
+            "fantasyName": "ESCORPIO",
+            "homePage": "",
+            "shopping": "",
+            "isApp": false,
+            "latitude": null,
+            "longitude": null
+          }
+        ]
+      },
+      {
+        "id": 25242,
+        "brand": {
+          "id": 3412,
+          "code": "",
+          "name": "Eva Polk",
+          "desktopImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/brand_9d5412d2-2fcf-4068-84b4-22c49b218b3c.png",
+          "desktopMinImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/brand_139fbcb9-940b-480e-be14-564c01c9ea1e.png",
+          "mobileImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/brand_139d56ef-178a-4e82-915d-22e654a926fb.png",
+          "mobileMinImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/brand_76d9e787-a438-44c5-a792-3800df6e8d90.png",
+          "active": true,
+          "order": 0,
+          "benefitDescription": null,
+          "colorCode": "",
+          "brandType": {
+            "id": 1,
+            "description": "Standar",
+            "code": "STA",
+            "active": true
+          }
+        },
+        "establishments": [
+          {
+            "id": 437025,
+            "address": "ENTRE RIOS 823",
+            "city": "ROSARIO",
+            "province": "Santa Fe",
+            "fantasyName": "EVA POLK",
+            "homePage": "",
+            "shopping": "",
+            "isApp": false,
+            "latitude": null,
+            "longitude": null
+          }
+        ]
+      },
+      {
+        "id": 25243,
+        "brand": {
+          "id": 3138,
+          "code": null,
+          "name": "Eze Mar",
+          "desktopImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/Varios_desktopImage_1168x120",
+          "desktopMinImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/Varios_desktopMinImage_428x120",
+          "mobileImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/Varios_mobileImage_725x160",
+          "mobileMinImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/Varios_mobileMinImage_178x75",
+          "active": true,
+          "order": 0,
+          "benefitDescription": null,
+          "colorCode": "",
+          "brandType": {
+            "id": 1,
+            "description": "Standar",
+            "code": "STA",
+            "active": true
+          }
+        },
+        "establishments": [
+          {
+            "id": 437237,
+            "address": "AV COLON 851",
+            "city": "GOYA",
+            "province": "Corrientes",
+            "fantasyName": "EZE MAR",
+            "homePage": "",
+            "shopping": "",
+            "isApp": false,
+            "latitude": null,
+            "longitude": null
+          }
+        ]
+      },
+      {
+        "id": 25244,
+        "brand": {
+          "id": 2159,
+          "code": "",
+          "name": "Farmacenter",
+          "desktopImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/brand_a2d9dbdb-8571-4e5e-88d1-f8186af6f828.png",
+          "desktopMinImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/brand_cab6011e-ac6d-4d06-926e-a1484562fbe7.png",
+          "mobileImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/brand_3695ade7-c1c7-4609-a56f-bc24cebebac4.png",
+          "mobileMinImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/brand_e157894c-99b7-4950-bc4a-f5af740973b9.png",
+          "active": true,
+          "order": 0,
+          "benefitDescription": null,
+          "colorCode": "",
+          "brandType": {
+            "id": 1,
+            "description": "Standar",
+            "code": "STA",
+            "active": true
+          }
+        },
+        "establishments": [
+          {
+            "id": 436690,
+            "address": "MEDRANO 1808",
+            "city": "Perez",
+            "province": "Santa Fe",
+            "fantasyName": "FARMACENTER",
+            "homePage": "",
+            "shopping": "",
+            "isApp": false,
+            "latitude": null,
+            "longitude": null
+          }
+        ]
+      },
+      {
+        "id": 25245,
+        "brand": {
+          "id": 3139,
+          "code": null,
+          "name": "Farmacia Pacheco",
+          "desktopImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/Varios_desktopImage_1168x120",
+          "desktopMinImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/Varios_desktopMinImage_428x120",
+          "mobileImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/Varios_mobileImage_725x160",
+          "mobileMinImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/Varios_mobileMinImage_178x75",
+          "active": true,
+          "order": 0,
+          "benefitDescription": null,
+          "colorCode": "",
+          "brandType": {
+            "id": 1,
+            "description": "Standar",
+            "code": "STA",
+            "active": true
+          }
+        },
+        "establishments": [
+          {
+            "id": 437231,
+            "address": "SANTIAGO DEL ESTERO 22",
+            "city": "GENERAL PACHECO",
+            "province": "Buenos Aires",
+            "fantasyName": "Farmacia Pacheco",
+            "homePage": "",
+            "shopping": "",
+            "isApp": false,
+            "latitude": null,
+            "longitude": null
+          }
+        ]
+      },
+      {
+        "id": 25246,
+        "brand": {
+          "id": 1416,
+          "code": "",
+          "name": "Fisher",
+          "desktopImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/brand_f2356175-6124-4fa6-9468-c0bb17c9c845.png",
+          "desktopMinImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/brand_9ee7b8f7-826a-414f-98ac-674d645e58be.png",
+          "mobileImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/brand_a7316e5c-70e8-4eac-8872-21f196fa4508.png",
+          "mobileMinImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/brand_044d70e0-7a9e-4a0d-b4dc-bfcc75def779.png",
+          "active": true,
+          "order": 0,
+          "benefitDescription": null,
+          "colorCode": "",
+          "brandType": {
+            "id": 1,
+            "description": "Standar",
+            "code": "STA",
+            "active": true
+          }
+        },
+        "establishments": [
+          {
+            "id": 436798,
+            "address": "av Olazabal 4954",
+            "city": "Buenos Aires",
+            "province": "Ciudad Autónoma de Buenos Aires",
+            "fantasyName": "FISHER",
+            "homePage": "",
+            "shopping": "",
+            "isApp": false,
+            "latitude": null,
+            "longitude": null
+          }
+        ]
+      },
+      {
+        "id": 25247,
+        "brand": {
+          "id": 2418,
+          "code": null,
+          "name": "Fitness De Cordoba Sas",
+          "desktopImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/brand_11d3c539-e9b0-401a-af50-5adc1473d154.png",
+          "desktopMinImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/brand_93f7e3a7-daac-495d-9525-5fe26d28e6bf.png",
+          "mobileImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/brand_18aff02c-7621-4306-bf88-943fd2fc5b14.png",
+          "mobileMinImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/brand_7b37ccd2-b1fc-4ca9-ad57-9ae812279338.png",
+          "active": true,
+          "order": 0,
+          "benefitDescription": null,
+          "colorCode": "",
+          "brandType": {
+            "id": 1,
+            "description": "Standar",
+            "code": "STA",
+            "active": true
+          }
+        },
+        "establishments": [
+          {
+            "id": 437090,
+            "address": "PALAU P 6488",
+            "city": "ARGUELLO",
+            "province": "Córdoba",
+            "fantasyName": "Fitness de Cordoba SAS",
+            "homePage": "",
+            "shopping": "",
+            "isApp": false,
+            "latitude": null,
+            "longitude": null
+          }
+        ]
+      },
+      {
+        "id": 25248,
+        "brand": {
+          "id": 2420,
+          "code": null,
+          "name": "Fitness Del Valle",
+          "desktopImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/brand_11d3c539-e9b0-401a-af50-5adc1473d154.png",
+          "desktopMinImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/brand_93f7e3a7-daac-495d-9525-5fe26d28e6bf.png",
+          "mobileImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/brand_18aff02c-7621-4306-bf88-943fd2fc5b14.png",
+          "mobileMinImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/brand_7b37ccd2-b1fc-4ca9-ad57-9ae812279338.png",
+          "active": true,
+          "order": 0,
+          "benefitDescription": null,
+          "colorCode": "",
+          "brandType": {
+            "id": 1,
+            "description": "Standar",
+            "code": "STA",
+            "active": true
+          }
+        },
+        "establishments": [
+          {
+            "id": 437016,
+            "address": "REPUBLICA DE CHINA 1920",
+            "city": "VALLE ESCONDI",
+            "province": "Córdoba",
+            "fantasyName": "Fitness del valle",
+            "homePage": "",
+            "shopping": "",
+            "isApp": false,
+            "latitude": null,
+            "longitude": null
+          }
+        ]
+      },
+      {
+        "id": 25249,
+        "brand": {
+          "id": 3141,
+          "code": null,
+          "name": "Fratello",
+          "desktopImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/Varios_desktopImage_1168x120",
+          "desktopMinImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/Varios_desktopMinImage_428x120",
+          "mobileImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/Varios_mobileImage_725x160",
+          "mobileMinImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/Varios_mobileMinImage_178x75",
+          "active": true,
+          "order": 0,
+          "benefitDescription": null,
+          "colorCode": "",
+          "brandType": {
+            "id": 1,
+            "description": "Standar",
+            "code": "STA",
+            "active": true
+          }
+        },
+        "establishments": [
+          {
+            "id": 437219,
+            "address": "SANTA FE 480",
+            "city": "CORRAL DE BUSTOS",
+            "province": "Córdoba",
+            "fantasyName": "FRATELLO",
+            "homePage": "",
+            "shopping": "",
+            "isApp": false,
+            "latitude": null,
+            "longitude": null
+          }
+        ]
+      },
+      {
+        "id": 25250,
+        "brand": {
+          "id": 2429,
+          "code": null,
+          "name": "Gardenia",
+          "desktopImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/brand_11d3c539-e9b0-401a-af50-5adc1473d154.png",
+          "desktopMinImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/brand_93f7e3a7-daac-495d-9525-5fe26d28e6bf.png",
+          "mobileImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/brand_18aff02c-7621-4306-bf88-943fd2fc5b14.png",
+          "mobileMinImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/brand_7b37ccd2-b1fc-4ca9-ad57-9ae812279338.png",
+          "active": true,
+          "order": 0,
+          "benefitDescription": null,
+          "colorCode": "",
+          "brandType": {
+            "id": 1,
+            "description": "Standar",
+            "code": "STA",
+            "active": true
+          }
+        },
+        "establishments": [
+          {
+            "id": 436728,
+            "address": "JULIO A ROCA 786",
+            "city": "vicuna mackenna",
+            "province": "Córdoba",
+            "fantasyName": "GARDENIA",
+            "homePage": "",
+            "shopping": "",
+            "isApp": false,
+            "latitude": null,
+            "longitude": null
+          }
+        ]
+      },
+      {
+        "id": 25251,
+        "brand": {
+          "id": 3142,
+          "code": null,
+          "name": "Gigacell",
+          "desktopImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/Varios_desktopImage_1168x120",
+          "desktopMinImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/Varios_desktopMinImage_428x120",
+          "mobileImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/Varios_mobileImage_725x160",
+          "mobileMinImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/Varios_mobileMinImage_178x75",
+          "active": true,
+          "order": 0,
+          "benefitDescription": null,
+          "colorCode": "",
+          "brandType": {
+            "id": 1,
+            "description": "Standar",
+            "code": "STA",
+            "active": true
+          }
+        },
+        "establishments": [
+          {
+            "id": 437310,
+            "address": "SANTOS DOMINGUEZ 785",
+            "city": "PARANA",
+            "province": "Entre Ríos",
+            "fantasyName": "GIGACELL",
+            "homePage": "",
+            "shopping": "",
+            "isApp": false,
+            "latitude": null,
+            "longitude": null
+          }
+        ]
+      },
+      {
+        "id": 25252,
+        "brand": {
+          "id": 2953,
+          "code": "",
+          "name": "Global Pets",
+          "desktopImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/brand_1905e17c-a8db-4034-a3a0-b682e2fe71ca.png",
+          "desktopMinImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/brand_2cd6bfb7-1c67-4b03-9f6d-5ac276c50b1f.png",
+          "mobileImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/brand_3c715ef2-f405-4043-9ca7-d52ec2b92685.png",
+          "mobileMinImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/brand_36de668c-b7a3-4bd0-ae60-74e75e2bc1fa.png",
+          "active": true,
+          "order": 0,
+          "benefitDescription": null,
+          "colorCode": "",
+          "brandType": {
+            "id": 1,
+            "description": "Standar",
+            "code": "STA",
+            "active": true
+          }
+        },
+        "establishments": [
+          {
+            "id": 436805,
+            "address": "mariano castex 1277",
+            "city": "Ezeiza",
+            "province": "Buenos Aires",
+            "fantasyName": "Global pets",
+            "homePage": "",
+            "shopping": "",
+            "isApp": false,
+            "latitude": null,
+            "longitude": null
+          }
+        ]
+      },
+      {
+        "id": 25253,
+        "brand": {
+          "id": 2435,
+          "code": null,
+          "name": "Gotland",
+          "desktopImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/brand_11d3c539-e9b0-401a-af50-5adc1473d154.png",
+          "desktopMinImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/brand_93f7e3a7-daac-495d-9525-5fe26d28e6bf.png",
+          "mobileImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/brand_18aff02c-7621-4306-bf88-943fd2fc5b14.png",
+          "mobileMinImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/brand_7b37ccd2-b1fc-4ca9-ad57-9ae812279338.png",
+          "active": true,
+          "order": 0,
+          "benefitDescription": null,
+          "colorCode": "",
+          "brandType": {
+            "id": 1,
+            "description": "Standar",
+            "code": "STA",
+            "active": true
+          }
+        },
+        "establishments": [
+          {
+            "id": 436743,
+            "address": "Sarmineto 556",
+            "city": "Quilmes",
+            "province": "Buenos Aires",
+            "fantasyName": "Gotland",
+            "homePage": "",
+            "shopping": "",
+            "isApp": false,
+            "latitude": null,
+            "longitude": null
+          }
+        ]
+      },
+      {
+        "id": 25254,
+        "brand": {
+          "id": 3144,
+          "code": null,
+          "name": "Hola Reina",
+          "desktopImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/Varios_desktopImage_1168x120",
+          "desktopMinImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/Varios_desktopMinImage_428x120",
+          "mobileImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/Varios_mobileImage_725x160",
+          "mobileMinImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/Varios_mobileMinImage_178x75",
+          "active": true,
+          "order": 0,
+          "benefitDescription": null,
+          "colorCode": "",
+          "brandType": {
+            "id": 1,
+            "description": "Standar",
+            "code": "STA",
+            "active": true
+          }
+        },
+        "establishments": [
+          {
+            "id": 437260,
+            "address": "SAN MARTIN 415",
+            "city": "WHEELWRIGHT",
+            "province": "Santa Fe",
+            "fantasyName": "Hola Reina",
+            "homePage": "",
+            "shopping": "",
+            "isApp": false,
+            "latitude": null,
+            "longitude": null
+          }
+        ]
+      },
+      {
+        "id": 25255,
+        "brand": {
+          "id": 3145,
+          "code": null,
+          "name": "Iluminacion Center",
+          "desktopImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/Varios_desktopImage_1168x120",
+          "desktopMinImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/Varios_desktopMinImage_428x120",
+          "mobileImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/Varios_mobileImage_725x160",
+          "mobileMinImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/Varios_mobileMinImage_178x75",
+          "active": true,
+          "order": 0,
+          "benefitDescription": null,
+          "colorCode": "",
+          "brandType": {
+            "id": 1,
+            "description": "Standar",
+            "code": "STA",
+            "active": true
+          }
+        },
+        "establishments": [
+          {
+            "id": 437241,
+            "address": "Arturo Umberto Illia 4366",
+            "city": "SAN MIGUEL",
+            "province": "Buenos Aires",
+            "fantasyName": "Iluminacion Center",
+            "homePage": "",
+            "shopping": "",
+            "isApp": false,
+            "latitude": null,
+            "longitude": null
+          }
+        ]
+      },
+      {
+        "id": 25256,
+        "brand": {
+          "id": 3146,
+          "code": null,
+          "name": "Inka",
+          "desktopImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/Varios_desktopImage_1168x120",
+          "desktopMinImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/Varios_desktopMinImage_428x120",
+          "mobileImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/Varios_mobileImage_725x160",
+          "mobileMinImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/Varios_mobileMinImage_178x75",
+          "active": true,
+          "order": 0,
+          "benefitDescription": null,
+          "colorCode": "",
+          "brandType": {
+            "id": 1,
+            "description": "Standar",
+            "code": "STA",
+            "active": true
+          }
+        },
+        "establishments": [
+          {
+            "id": 437205,
+            "address": "Av Luis Maria Campos 881",
+            "city": "CABA",
+            "province": "Ciudad Autónoma de Buenos Aires",
+            "fantasyName": "INKA",
+            "homePage": "",
+            "shopping": "",
+            "isApp": false,
+            "latitude": null,
+            "longitude": null
+          }
+        ]
+      },
+      {
+        "id": 25257,
+        "brand": {
+          "id": 3147,
+          "code": null,
+          "name": "Jmen",
+          "desktopImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/Varios_desktopImage_1168x120",
+          "desktopMinImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/Varios_desktopMinImage_428x120",
+          "mobileImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/Varios_mobileImage_725x160",
+          "mobileMinImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/Varios_mobileMinImage_178x75",
+          "active": true,
+          "order": 0,
+          "benefitDescription": null,
+          "colorCode": "",
+          "brandType": {
+            "id": 1,
+            "description": "Standar",
+            "code": "STA",
+            "active": true
+          }
+        },
+        "establishments": [
+          {
+            "id": 437286,
+            "address": "Tucumán 3835",
+            "city": "SANTA FE",
+            "province": "Santa Fe",
+            "fantasyName": "JMEN",
+            "homePage": "",
+            "shopping": "",
+            "isApp": false,
+            "latitude": null,
+            "longitude": null
+          }
+        ]
+      },
+      {
+        "id": 25258,
+        "brand": {
+          "id": 3149,
+          "code": null,
+          "name": "Josefina Calas",
+          "desktopImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/Varios_desktopImage_1168x120",
+          "desktopMinImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/Varios_desktopMinImage_428x120",
+          "mobileImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/Varios_mobileImage_725x160",
+          "mobileMinImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/Varios_mobileMinImage_178x75",
+          "active": true,
+          "order": 0,
+          "benefitDescription": null,
+          "colorCode": "",
+          "brandType": {
+            "id": 1,
+            "description": "Standar",
+            "code": "STA",
+            "active": true
+          }
+        },
+        "establishments": [
+          {
+            "id": 437257,
+            "address": "CATAMARCA 277",
+            "city": "LA RIOJA",
+            "province": "La Rioja",
+            "fantasyName": "Josefina Calas",
+            "homePage": "",
+            "shopping": "",
+            "isApp": false,
+            "latitude": null,
+            "longitude": null
+          }
+        ]
+      },
+      {
+        "id": 25259,
+        "brand": {
+          "id": 3151,
+          "code": null,
+          "name": "Jr Juniors",
+          "desktopImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/Varios_desktopImage_1168x120",
+          "desktopMinImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/Varios_desktopMinImage_428x120",
+          "mobileImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/Varios_mobileImage_725x160",
+          "mobileMinImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/Varios_mobileMinImage_178x75",
+          "active": true,
+          "order": 0,
+          "benefitDescription": null,
+          "colorCode": "",
+          "brandType": {
+            "id": 1,
+            "description": "Standar",
+            "code": "STA",
+            "active": true
+          }
+        },
+        "establishments": [
+          {
+            "id": 437215,
+            "address": "25 DE MAYO 1087",
+            "city": "CRESPO",
+            "province": "Entre Ríos",
+            "fantasyName": "JR JUNIORS",
+            "homePage": "",
+            "shopping": "",
+            "isApp": false,
+            "latitude": null,
+            "longitude": null
+          }
+        ]
+      },
+      {
+        "id": 25260,
+        "brand": {
+          "id": 3152,
+          "code": null,
+          "name": "Kaia Indumentaria",
+          "desktopImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/Varios_desktopImage_1168x120",
+          "desktopMinImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/Varios_desktopMinImage_428x120",
+          "mobileImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/Varios_mobileImage_725x160",
+          "mobileMinImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/Varios_mobileMinImage_178x75",
+          "active": true,
+          "order": 0,
+          "benefitDescription": null,
+          "colorCode": "",
+          "brandType": {
+            "id": 1,
+            "description": "Standar",
+            "code": "STA",
+            "active": true
+          }
+        },
+        "establishments": [
+          {
+            "id": 437297,
+            "address": "av del libertador 6430",
+            "city": "caba",
+            "province": "Ciudad Autónoma de Buenos Aires",
+            "fantasyName": "Kaia indumentaria",
+            "homePage": "",
+            "shopping": "",
+            "isApp": false,
+            "latitude": null,
+            "longitude": null
+          }
+        ]
+      },
+      {
+        "id": 25261,
+        "brand": {
+          "id": 251,
+          "code": "",
+          "name": "Kevingston",
+          "desktopImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/brand_5f4c5b06-75a1-4be1-ab3a-bfbad3b4785a.png",
+          "desktopMinImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/brand_f30df936-820b-4ce6-87ec-b11216e72acb.png",
+          "mobileImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/brand_efede64b-a622-4a0e-8c87-ffd1c6f233e7.png",
+          "mobileMinImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/brand_6d219dd6-1d09-4763-9966-f6b7e586fcf0.png",
+          "active": true,
+          "order": 0,
+          "benefitDescription": null,
+          "colorCode": "",
+          "brandType": {
+            "id": 1,
+            "description": "Standar",
+            "code": "STA",
+            "active": true
+          }
+        },
+        "establishments": [
+          {
+            "id": 437088,
+            "address": "Carlos Casares 918",
+            "city": "castelar",
+            "province": "Buenos Aires",
+            "fantasyName": "Kevingston",
+            "homePage": "",
+            "shopping": "",
+            "isApp": false,
+            "latitude": null,
+            "longitude": null
+          }
+        ]
+      },
+      {
+        "id": 25262,
+        "brand": {
+          "id": 3153,
+          "code": null,
+          "name": "Kira",
+          "desktopImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/Varios_desktopImage_1168x120",
+          "desktopMinImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/Varios_desktopMinImage_428x120",
+          "mobileImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/Varios_mobileImage_725x160",
+          "mobileMinImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/Varios_mobileMinImage_178x75",
+          "active": true,
+          "order": 0,
+          "benefitDescription": null,
+          "colorCode": "",
+          "brandType": {
+            "id": 1,
+            "description": "Standar",
+            "code": "STA",
+            "active": true
+          }
+        },
+        "establishments": [
+          {
+            "id": 437218,
+            "address": "JOSE GOMEZ 816",
+            "city": "GOYA",
+            "province": "Corrientes",
+            "fantasyName": "KIRA",
+            "homePage": "",
+            "shopping": "",
+            "isApp": false,
+            "latitude": null,
+            "longitude": null
+          }
+        ]
+      },
+      {
+        "id": 25263,
+        "brand": {
+          "id": 2457,
+          "code": null,
+          "name": "Kromacolor ",
+          "desktopImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/brand_11d3c539-e9b0-401a-af50-5adc1473d154.png",
+          "desktopMinImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/brand_93f7e3a7-daac-495d-9525-5fe26d28e6bf.png",
+          "mobileImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/brand_18aff02c-7621-4306-bf88-943fd2fc5b14.png",
+          "mobileMinImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/brand_7b37ccd2-b1fc-4ca9-ad57-9ae812279338.png",
+          "active": true,
+          "order": 0,
+          "benefitDescription": null,
+          "colorCode": "",
+          "brandType": {
+            "id": 1,
+            "description": "Standar",
+            "code": "STA",
+            "active": true
+          }
+        },
+        "establishments": [
+          {
+            "id": 436774,
+            "address": "av ricardo balbin 2199",
+            "city": "san martin",
+            "province": "Buenos Aires",
+            "fantasyName": "Kromacolor",
+            "homePage": "",
+            "shopping": "",
+            "isApp": false,
+            "latitude": null,
+            "longitude": null
+          }
+        ]
+      },
+      {
+        "id": 25264,
+        "brand": {
+          "id": 3154,
+          "code": null,
+          "name": "La Abadia",
+          "desktopImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/Varios_desktopImage_1168x120",
+          "desktopMinImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/Varios_desktopMinImage_428x120",
+          "mobileImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/Varios_mobileImage_725x160",
+          "mobileMinImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/Varios_mobileMinImage_178x75",
+          "active": true,
+          "order": 0,
+          "benefitDescription": null,
+          "colorCode": "",
+          "brandType": {
+            "id": 1,
+            "description": "Standar",
+            "code": "STA",
+            "active": true
+          }
+        },
+        "establishments": [
+          {
+            "id": 437189,
+            "address": "IRIONDO 2098",
+            "city": "SANTO TOME",
+            "province": "Santa Fe",
+            "fantasyName": "LA ABADIA",
+            "homePage": "",
+            "shopping": "",
+            "isApp": false,
+            "latitude": null,
+            "longitude": null
+          }
+        ]
+      },
+      {
+        "id": 25265,
+        "brand": {
+          "id": 3156,
+          "code": null,
+          "name": "La Esmeralda",
+          "desktopImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/Varios_desktopImage_1168x120",
+          "desktopMinImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/Varios_desktopMinImage_428x120",
+          "mobileImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/Varios_mobileImage_725x160",
+          "mobileMinImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/Varios_mobileMinImage_178x75",
+          "active": true,
+          "order": 0,
+          "benefitDescription": null,
+          "colorCode": "",
+          "brandType": {
+            "id": 1,
+            "description": "Standar",
+            "code": "STA",
+            "active": true
+          }
+        },
+        "establishments": [
+          {
+            "id": 437105,
+            "address": "ENTRE RIOS 1187",
+            "city": "VILLA MARIA",
+            "province": "Córdoba",
+            "fantasyName": "LA ESMERALDA",
+            "homePage": "",
+            "shopping": "",
+            "isApp": false,
+            "latitude": null,
+            "longitude": null
+          }
+        ]
+      },
+      {
+        "id": 25266,
+        "brand": {
+          "id": 280,
+          "code": "",
+          "name": "Lacoste",
+          "desktopImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/Lacoste_desktopImage.png",
+          "desktopMinImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/Lacoste_desktopMinImage.png",
+          "mobileImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/Lacoste_mobileImage.png",
+          "mobileMinImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/Lacoste_mobileMinImage.png",
+          "active": true,
+          "order": 0,
+          "benefitDescription": null,
+          "colorCode": "",
+          "brandType": {
+            "id": 1,
+            "description": "Standar",
+            "code": "STA",
+            "active": true
+          }
+        },
+        "establishments": [
+          {
+            "id": 436729,
+            "address": "libertad 408",
+            "city": "Rio Tercero",
+            "province": "Córdoba",
+            "fantasyName": "lacoste",
+            "homePage": "",
+            "shopping": "",
+            "isApp": false,
+            "latitude": null,
+            "longitude": null
+          }
+        ]
+      },
+      {
+        "id": 25267,
+        "brand": {
+          "id": 2986,
+          "code": "",
+          "name": "Leon 1985",
+          "desktopImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/brand_0a58341d-766d-4ea3-9494-a2927b5c742c.png",
+          "desktopMinImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/brand_d7ce22a0-421d-46c5-b08d-8e8cfdaedc67.png",
+          "mobileImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/brand_96b191c0-d621-4357-bc5a-62b9eddacf29.png",
+          "mobileMinImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/brand_e9d54800-263f-4a3a-ac6d-895af22f7b63.png",
+          "active": true,
+          "order": 0,
+          "benefitDescription": null,
+          "colorCode": "",
+          "brandType": {
+            "id": 1,
+            "description": "Standar",
+            "code": "STA",
+            "active": true
+          }
+        },
+        "establishments": [
+          {
+            "id": 436963,
+            "address": "RONDO 304",
+            "city": "CORDOBA",
+            "province": "Córdoba",
+            "fantasyName": "LEON 1985",
+            "homePage": "",
+            "shopping": "",
+            "isApp": false,
+            "latitude": null,
+            "longitude": null
+          }
+        ]
+      },
+      {
+        "id": 25268,
+        "brand": {
+          "id": 3158,
+          "code": null,
+          "name": "Luna de Granada",
+          "desktopImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/Varios_desktopImage_1168x120",
+          "desktopMinImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/Varios_desktopMinImage_428x120",
+          "mobileImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/Varios_mobileImage_725x160",
+          "mobileMinImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/Varios_mobileMinImage_178x75",
+          "active": true,
+          "order": 0,
+          "benefitDescription": null,
+          "colorCode": "",
+          "brandType": {
+            "id": 1,
+            "description": "Standar",
+            "code": "STA",
+            "active": true
+          }
+        },
+        "establishments": [
+          {
+            "id": 437232,
+            "address": "CALLE 20 1066",
+            "city": "LAS PAREJAS",
+            "province": "Santa Fe",
+            "fantasyName": "LUNA DE GRANADA",
+            "homePage": "",
+            "shopping": "",
+            "isApp": false,
+            "latitude": null,
+            "longitude": null
+          }
+        ]
+      },
+      {
+        "id": 25269,
+        "brand": {
+          "id": 3295,
+          "code": "",
+          "name": "Luxo",
+          "desktopImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/brand_034cac1e-0357-4365-80ad-365205129a03.png",
+          "desktopMinImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/brand_6e1ce1d2-d876-4105-a07f-67450554d729.png",
+          "mobileImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/brand_1d33b458-6dbf-4f8d-825f-075424f5cb6b.png",
+          "mobileMinImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/brand_c4b7a6e0-9572-48a6-95d3-721211a18b50.png",
+          "active": true,
+          "order": 0,
+          "benefitDescription": null,
+          "colorCode": "",
+          "brandType": {
+            "id": 1,
+            "description": "Standar",
+            "code": "STA",
+            "active": true
+          }
+        },
+        "establishments": [
+          {
+            "id": 437225,
+            "address": "ESPANA 145",
+            "city": "CAPITAL",
+            "province": "Buenos Aires",
+            "fantasyName": "LUXO",
+            "homePage": "",
+            "shopping": "",
+            "isApp": false,
+            "latitude": null,
+            "longitude": null
+          }
+        ]
+      },
+      {
+        "id": 25270,
+        "brand": {
+          "id": 2484,
+          "code": null,
+          "name": "Maktub Baires",
+          "desktopImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/brand_11d3c539-e9b0-401a-af50-5adc1473d154.png",
+          "desktopMinImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/brand_93f7e3a7-daac-495d-9525-5fe26d28e6bf.png",
+          "mobileImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/brand_18aff02c-7621-4306-bf88-943fd2fc5b14.png",
+          "mobileMinImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/brand_7b37ccd2-b1fc-4ca9-ad57-9ae812279338.png",
+          "active": true,
+          "order": 0,
+          "benefitDescription": null,
+          "colorCode": "",
+          "brandType": {
+            "id": 1,
+            "description": "Standar",
+            "code": "STA",
+            "active": true
+          }
+        },
+        "establishments": [
+          {
+            "id": 436815,
+            "address": "Ramon falcon 6191",
+            "city": "Isidro Casanova",
+            "province": "Buenos Aires",
+            "fantasyName": "Maktub Baires",
+            "homePage": "",
+            "shopping": "",
+            "isApp": false,
+            "latitude": null,
+            "longitude": null
+          }
+        ]
+      },
+      {
+        "id": 25271,
+        "brand": {
+          "id": 3160,
+          "code": null,
+          "name": "Maria Reyna Regaleria",
+          "desktopImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/Varios_desktopImage_1168x120",
+          "desktopMinImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/Varios_desktopMinImage_428x120",
+          "mobileImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/Varios_mobileImage_725x160",
+          "mobileMinImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/Varios_mobileMinImage_178x75",
+          "active": true,
+          "order": 0,
+          "benefitDescription": null,
+          "colorCode": "",
+          "brandType": {
+            "id": 1,
+            "description": "Standar",
+            "code": "STA",
+            "active": true
+          }
+        },
+        "establishments": [
+          {
+            "id": 437179,
+            "address": "SOBREMONTE 888",
+            "city": "RIO CUARTO",
+            "province": "Córdoba",
+            "fantasyName": "MARIA REYNA REGALERIA",
+            "homePage": "",
+            "shopping": "",
+            "isApp": false,
+            "latitude": null,
+            "longitude": null
+          }
+        ]
+      },
+      {
+        "id": 25272,
+        "brand": {
+          "id": 3162,
+          "code": "",
+          "name": "Matafuegos Donny",
+          "desktopImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/brand_c8d7e95e-10c5-4074-bae6-f657e77e8c76.png",
+          "desktopMinImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/brand_cd8ad35b-4e17-4f29-b3e3-af16fce53bfc.png",
+          "mobileImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/brand_22199c73-5248-4fae-abcc-a61dcea07c60.png",
+          "mobileMinImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/brand_6c3d18a1-f6df-47e2-aa29-4544d99e535c.png",
+          "active": true,
+          "order": 0,
+          "benefitDescription": null,
+          "colorCode": "",
+          "brandType": {
+            "id": 1,
+            "description": "Standar",
+            "code": "STA",
+            "active": true
+          }
+        },
+        "establishments": [
+          {
+            "id": 437245,
+            "address": "general manuel a rodriguez 2838",
+            "city": "CAPITAL",
+            "province": "Ciudad Autónoma de Buenos Aires",
+            "fantasyName": "Matafuegos Donny",
+            "homePage": "",
+            "shopping": "",
+            "isApp": false,
+            "latitude": null,
+            "longitude": null
+          }
+        ]
+      },
+      {
+        "id": 25273,
+        "brand": {
+          "id": 3163,
+          "code": null,
+          "name": "Milagro Roperia",
+          "desktopImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/Varios_desktopImage_1168x120",
+          "desktopMinImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/Varios_desktopMinImage_428x120",
+          "mobileImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/Varios_mobileImage_725x160",
+          "mobileMinImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/Varios_mobileMinImage_178x75",
+          "active": true,
+          "order": 0,
+          "benefitDescription": null,
+          "colorCode": "",
+          "brandType": {
+            "id": 1,
+            "description": "Standar",
+            "code": "STA",
+            "active": true
+          }
+        },
+        "establishments": [
+          {
+            "id": 437045,
+            "address": "9 DE JULIO 1681",
+            "city": "MONTE MAIZ",
+            "province": "Córdoba",
+            "fantasyName": "MILAGRO ROPERIA",
+            "homePage": "",
+            "shopping": "",
+            "isApp": false,
+            "latitude": null,
+            "longitude": null
+          }
+        ]
+      },
+      {
+        "id": 25274,
+        "brand": {
+          "id": 1724,
+          "code": "",
+          "name": "Monteviejo",
+          "desktopImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/brand_06b75b40-437f-437a-857c-8bc4ef108205.png",
+          "desktopMinImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/brand_53577763-0547-4c23-a2b0-34f1f366d123.png",
+          "mobileImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/brand_6537acf0-b6c3-4d01-8994-d4b940a79f00.png",
+          "mobileMinImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/brand_5c0232d9-0f33-499f-b3c8-3e730f74440f.png",
+          "active": true,
+          "order": 0,
+          "benefitDescription": null,
+          "colorCode": "",
+          "brandType": {
+            "id": 1,
+            "description": "Standar",
+            "code": "STA",
+            "active": true
+          }
+        },
+        "establishments": [
+          {
+            "id": 436816,
+            "address": "Montevideo 230",
+            "city": "Mendoza",
+            "province": "Mendoza",
+            "fantasyName": "MONTEVIEJO",
+            "homePage": "",
+            "shopping": "",
+            "isApp": false,
+            "latitude": null,
+            "longitude": null
+          }
+        ]
+      },
+      {
+        "id": 25275,
+        "brand": {
+          "id": 3165,
+          "code": null,
+          "name": "Muscetta Alem",
+          "desktopImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/Varios_desktopImage_1168x120",
+          "desktopMinImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/Varios_desktopMinImage_428x120",
+          "mobileImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/Varios_mobileImage_725x160",
+          "mobileMinImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/Varios_mobileMinImage_178x75",
+          "active": true,
+          "order": 0,
+          "benefitDescription": null,
+          "colorCode": "",
+          "brandType": {
+            "id": 1,
+            "description": "Standar",
+            "code": "STA",
+            "active": true
+          }
+        },
+        "establishments": [
+          {
+            "id": 437097,
+            "address": "Alem 3863",
+            "city": "MAR DEL PLATA",
+            "province": "Buenos Aires",
+            "fantasyName": "Muscetta Alem",
+            "homePage": "",
+            "shopping": "",
+            "isApp": false,
+            "latitude": null,
+            "longitude": null
+          }
+        ]
+      },
+      {
+        "id": 25276,
+        "brand": {
+          "id": 3166,
+          "code": null,
+          "name": "Muy Mucho",
+          "desktopImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/Varios_desktopImage_1168x120",
+          "desktopMinImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/Varios_desktopMinImage_428x120",
+          "mobileImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/Varios_mobileImage_725x160",
+          "mobileMinImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/Varios_mobileMinImage_178x75",
+          "active": true,
+          "order": 0,
+          "benefitDescription": null,
+          "colorCode": "",
+          "brandType": {
+            "id": 1,
+            "description": "Standar",
+            "code": "STA",
+            "active": true
+          }
+        },
+        "establishments": [
+          {
+            "id": 437109,
+            "address": "Hipolito Irigoyen 705",
+            "city": "neuquen",
+            "province": "Neuquén",
+            "fantasyName": "Muy Mucho",
+            "homePage": "",
+            "shopping": "",
+            "isApp": false,
+            "latitude": null,
+            "longitude": null
+          }
+        ]
+      },
+      {
+        "id": 25277,
+        "brand": {
+          "id": 3167,
+          "code": null,
+          "name": "My Toys",
+          "desktopImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/Varios_desktopImage_1168x120",
+          "desktopMinImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/Varios_desktopMinImage_428x120",
+          "mobileImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/Varios_mobileImage_725x160",
+          "mobileMinImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/Varios_mobileMinImage_178x75",
+          "active": true,
+          "order": 0,
+          "benefitDescription": null,
+          "colorCode": "",
+          "brandType": {
+            "id": 1,
+            "description": "Standar",
+            "code": "STA",
+            "active": true
+          }
+        },
+        "establishments": [
+          {
+            "id": 436758,
+            "address": "Laprida 643",
+            "city": "Lomas de Zamora",
+            "province": "Buenos Aires",
+            "fantasyName": "My Toys",
+            "homePage": "",
+            "shopping": "",
+            "isApp": false,
+            "latitude": null,
+            "longitude": null
+          }
+        ]
+      },
+      {
+        "id": 25278,
+        "brand": {
+          "id": 3169,
+          "code": null,
+          "name": "Nur",
+          "desktopImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/Varios_desktopImage_1168x120",
+          "desktopMinImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/Varios_desktopMinImage_428x120",
+          "mobileImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/Varios_mobileImage_725x160",
+          "mobileMinImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/Varios_mobileMinImage_178x75",
+          "active": true,
+          "order": 0,
+          "benefitDescription": null,
+          "colorCode": "",
+          "brandType": {
+            "id": 1,
+            "description": "Standar",
+            "code": "STA",
+            "active": true
+          }
+        },
+        "establishments": [
+          {
+            "id": 436929,
+            "address": "BOULEVAR SANTA FE 424",
+            "city": "RAFAELA",
+            "province": "Santa Fe",
+            "fantasyName": "NUR",
+            "homePage": "",
+            "shopping": "",
+            "isApp": false,
+            "latitude": null,
+            "longitude": null
+          }
+        ]
+      },
+      {
+        "id": 25279,
+        "brand": {
+          "id": 1770,
+          "code": "",
+          "name": "Octaviano",
+          "desktopImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/brand_e4f83e3c-b924-4428-aef9-e101c00cbdc3.png",
+          "desktopMinImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/brand_b5e906c3-3374-46db-9b2c-529a43eb9c6c.png",
+          "mobileImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/brand_dc4efb5a-ac84-4e2e-b6a6-321029dc0a6d.png",
+          "mobileMinImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/brand_fb9be720-bf83-40b1-aa9f-a2533b54faa0.png",
+          "active": true,
+          "order": 0,
+          "benefitDescription": null,
+          "colorCode": "",
+          "brandType": {
+            "id": 1,
+            "description": "Standar",
+            "code": "STA",
+            "active": true
+          }
+        },
+        "establishments": [
+          {
+            "id": 436852,
+            "address": "SAN MARTIN 607",
+            "city": "SAN MIGUEL DE TUCUMAN",
+            "province": "Tucumán",
+            "fantasyName": "OCTAVIANO",
+            "homePage": "",
+            "shopping": "",
+            "isApp": false,
+            "latitude": null,
+            "longitude": null
+          }
+        ]
+      },
+      {
+        "id": 25280,
+        "brand": {
+          "id": 3170,
+          "code": null,
+          "name": "Oddisea",
+          "desktopImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/Varios_desktopImage_1168x120",
+          "desktopMinImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/Varios_desktopMinImage_428x120",
+          "mobileImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/Varios_mobileImage_725x160",
+          "mobileMinImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/Varios_mobileMinImage_178x75",
+          "active": true,
+          "order": 0,
+          "benefitDescription": null,
+          "colorCode": "",
+          "brandType": {
+            "id": 1,
+            "description": "Standar",
+            "code": "STA",
+            "active": true
+          }
+        },
+        "establishments": [
+          {
+            "id": 437268,
+            "address": "SOBREMONTE 510",
+            "city": "RIO CUARTO",
+            "province": "Córdoba",
+            "fantasyName": "ODDISEA",
+            "homePage": "",
+            "shopping": "",
+            "isApp": false,
+            "latitude": null,
+            "longitude": null
+          }
+        ]
+      },
+      {
+        "id": 25281,
+        "brand": {
+          "id": 3171,
+          "code": null,
+          "name": "Olenka",
+          "desktopImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/Varios_desktopImage_1168x120",
+          "desktopMinImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/Varios_desktopMinImage_428x120",
+          "mobileImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/Varios_mobileImage_725x160",
+          "mobileMinImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/Varios_mobileMinImage_178x75",
+          "active": true,
+          "order": 0,
+          "benefitDescription": null,
+          "colorCode": "",
+          "brandType": {
+            "id": 1,
+            "description": "Standar",
+            "code": "STA",
+            "active": true
+          }
+        },
+        "establishments": [
+          {
+            "id": 437313,
+            "address": "Avenida Ignacio de la Rosa 806",
+            "city": "Rivadavia",
+            "province": "San Juan",
+            "fantasyName": "olenka",
+            "homePage": "",
+            "shopping": "",
+            "isApp": false,
+            "latitude": null,
+            "longitude": null
+          }
+        ]
+      },
+      {
+        "id": 25282,
+        "brand": {
+          "id": 3739,
+          "code": "",
+          "name": "Olivia",
+          "desktopImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/brand_27abb7cc-8bc8-473e-9c6d-ce2f5df1efd4.png",
+          "desktopMinImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/brand_32351b66-79ea-4aa3-b4b2-ac1fc6299667.png",
+          "mobileImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/brand_75bdb262-c5ad-4a73-8ee9-ab6ca96bd6ee.png",
+          "mobileMinImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/brand_c2e02c38-4468-42e9-96ad-6a29ea9f3581.png",
+          "active": true,
+          "order": 0,
+          "benefitDescription": null,
+          "colorCode": "",
+          "brandType": {
+            "id": 1,
+            "description": "Standar",
+            "code": "STA",
+            "active": true
+          }
+        },
+        "establishments": [
+          {
+            "id": 436904,
+            "address": "ENTRE RIOS 1819",
+            "city": "MONTE MAIZ",
+            "province": "Córdoba",
+            "fantasyName": "OLIVIA",
+            "homePage": "",
+            "shopping": "",
+            "isApp": false,
+            "latitude": null,
+            "longitude": null
+          }
+        ]
+      },
+      {
+        "id": 25283,
+        "brand": {
+          "id": 3172,
+          "code": null,
+          "name": "Óptica Imagen",
+          "desktopImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/Varios_desktopImage_1168x120",
+          "desktopMinImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/Varios_desktopMinImage_428x120",
+          "mobileImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/Varios_mobileImage_725x160",
+          "mobileMinImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/Varios_mobileMinImage_178x75",
+          "active": true,
+          "order": 0,
+          "benefitDescription": null,
+          "colorCode": "",
+          "brandType": {
+            "id": 1,
+            "description": "Standar",
+            "code": "STA",
+            "active": true
+          }
+        },
+        "establishments": [
+          {
+            "id": 437261,
+            "address": "av sabatini 4305",
+            "city": "cordoba",
+            "province": "Córdoba",
+            "fantasyName": "óptica imagen",
+            "homePage": "",
+            "shopping": "",
+            "isApp": false,
+            "latitude": null,
+            "longitude": null
+          }
+        ]
+      },
+      {
+        "id": 25284,
+        "brand": {
+          "id": 3176,
+          "code": null,
+          "name": "Orna",
+          "desktopImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/Varios_desktopImage_1168x120",
+          "desktopMinImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/Varios_desktopMinImage_428x120",
+          "mobileImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/Varios_mobileImage_725x160",
+          "mobileMinImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/Varios_mobileMinImage_178x75",
+          "active": true,
+          "order": 0,
+          "benefitDescription": null,
+          "colorCode": "",
+          "brandType": {
+            "id": 1,
+            "description": "Standar",
+            "code": "STA",
+            "active": true
+          }
+        },
+        "establishments": [
+          {
+            "id": 436818,
+            "address": "JOSE MARIA PAZ 193",
+            "city": "Carlos Casares",
+            "province": "Buenos Aires",
+            "fantasyName": "ORNA",
+            "homePage": "",
+            "shopping": "",
+            "isApp": false,
+            "latitude": null,
+            "longitude": null
+          }
+        ]
+      },
+      {
+        "id": 25285,
+        "brand": {
+          "id": 3177,
+          "code": null,
+          "name": "Ossadia",
+          "desktopImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/Varios_desktopImage_1168x120",
+          "desktopMinImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/Varios_desktopMinImage_428x120",
+          "mobileImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/Varios_mobileImage_725x160",
+          "mobileMinImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/Varios_mobileMinImage_178x75",
+          "active": true,
+          "order": 0,
+          "benefitDescription": null,
+          "colorCode": "",
+          "brandType": {
+            "id": 1,
+            "description": "Standar",
+            "code": "STA",
+            "active": true
+          }
+        },
+        "establishments": [
+          {
+            "id": 436941,
+            "address": "AV LIBERTADOR 1205",
+            "city": "LEONES",
+            "province": "Córdoba",
+            "fantasyName": "OSSADIA",
+            "homePage": "",
+            "shopping": "",
+            "isApp": false,
+            "latitude": null,
+            "longitude": null
+          }
+        ]
+      },
+      {
+        "id": 25286,
+        "brand": {
+          "id": 3178,
+          "code": null,
+          "name": "Pasion Matera",
+          "desktopImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/Varios_desktopImage_1168x120",
+          "desktopMinImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/Varios_desktopMinImage_428x120",
+          "mobileImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/Varios_mobileImage_725x160",
+          "mobileMinImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/Varios_mobileMinImage_178x75",
+          "active": true,
+          "order": 0,
+          "benefitDescription": null,
+          "colorCode": "",
+          "brandType": {
+            "id": 1,
+            "description": "Standar",
+            "code": "STA",
+            "active": true
+          }
+        },
+        "establishments": [
+          {
+            "id": 437312,
+            "address": "Brandsen 144",
+            "city": "Carlos Casares",
+            "province": "Buenos Aires",
+            "fantasyName": "Pasion Matera",
+            "homePage": "",
+            "shopping": "",
+            "isApp": false,
+            "latitude": null,
+            "longitude": null
+          }
+        ]
+      },
+      {
+        "id": 25287,
+        "brand": {
+          "id": 3179,
+          "code": null,
+          "name": "Pequenos Mimos",
+          "desktopImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/Varios_desktopImage_1168x120",
+          "desktopMinImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/Varios_desktopMinImage_428x120",
+          "mobileImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/Varios_mobileImage_725x160",
+          "mobileMinImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/Varios_mobileMinImage_178x75",
+          "active": true,
+          "order": 0,
+          "benefitDescription": null,
+          "colorCode": "",
+          "brandType": {
+            "id": 1,
+            "description": "Standar",
+            "code": "STA",
+            "active": true
+          }
+        },
+        "establishments": [
+          {
+            "id": 437212,
+            "address": "MITRE 1460",
+            "city": "SAN JOSE",
+            "province": "Entre Ríos",
+            "fantasyName": "PEQUENOS MIMOS",
+            "homePage": "",
+            "shopping": "",
+            "isApp": false,
+            "latitude": null,
+            "longitude": null
+          }
+        ]
+      },
+      {
+        "id": 25288,
+        "brand": {
+          "id": 3182,
+          "code": null,
+          "name": "Ponete Linda",
+          "desktopImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/Varios_desktopImage_1168x120",
+          "desktopMinImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/Varios_desktopMinImage_428x120",
+          "mobileImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/Varios_mobileImage_725x160",
+          "mobileMinImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/Varios_mobileMinImage_178x75",
+          "active": true,
+          "order": 0,
+          "benefitDescription": null,
+          "colorCode": "",
+          "brandType": {
+            "id": 1,
+            "description": "Standar",
+            "code": "STA",
+            "active": true
+          }
+        },
+        "establishments": [
+          {
+            "id": 437170,
+            "address": "RIVADAVIA 1085",
+            "city": "LEONES",
+            "province": "Córdoba",
+            "fantasyName": "PONETE LINDA",
+            "homePage": "",
+            "shopping": "",
+            "isApp": false,
+            "latitude": null,
+            "longitude": null
+          }
+        ]
+      },
+      {
+        "id": 25289,
+        "brand": {
+          "id": 3183,
+          "code": null,
+          "name": "Ponte Hindu",
+          "desktopImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/Varios_desktopImage_1168x120",
+          "desktopMinImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/Varios_desktopMinImage_428x120",
+          "mobileImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/Varios_mobileImage_725x160",
+          "mobileMinImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/Varios_mobileMinImage_178x75",
+          "active": true,
+          "order": 0,
+          "benefitDescription": null,
+          "colorCode": "",
+          "brandType": {
+            "id": 1,
+            "description": "Standar",
+            "code": "STA",
+            "active": true
+          }
+        },
+        "establishments": [
+          {
+            "id": 437238,
+            "address": "LAGOS 69",
+            "city": "SANTA ROSA",
+            "province": "La Pampa",
+            "fantasyName": "PONTE HINDU",
+            "homePage": "",
+            "shopping": "",
+            "isApp": false,
+            "latitude": null,
+            "longitude": null
+          }
+        ]
+      },
+      {
+        "id": 25290,
+        "brand": {
+          "id": 3184,
+          "code": "",
+          "name": "Primavera",
+          "desktopImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/Varios_desktopImage_1168x120",
+          "desktopMinImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/Varios_desktopMinImage_428x120",
+          "mobileImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/Varios_mobileImage_725x160",
+          "mobileMinImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/Varios_mobileMinImage_178x75",
+          "active": true,
+          "order": 0,
+          "benefitDescription": null,
+          "colorCode": "",
+          "brandType": {
+            "id": 1,
+            "description": "Standar",
+            "code": "STA",
+            "active": true
+          }
+        },
+        "establishments": [
+          {
+            "id": 437111,
+            "address": "Avenida de Mayo 148",
+            "city": "justiniano posse",
+            "province": "Córdoba",
+            "fantasyName": "PRIMAVERA",
+            "homePage": "",
+            "shopping": "",
+            "isApp": false,
+            "latitude": null,
+            "longitude": null
+          }
+        ]
+      },
+      {
+        "id": 25291,
+        "brand": {
+          "id": 1572,
+          "code": "",
+          "name": "Rebecca Leah",
+          "desktopImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/brand_a16c6fbb-3553-4baa-bd80-0da7dd81289b.png",
+          "desktopMinImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/brand_a24000bf-06a5-4e34-b765-c4d82fdc92d8.png",
+          "mobileImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/brand_305bb12e-ba29-40c0-a703-fa659f708fbc.png",
+          "mobileMinImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/brand_2a89f4d4-9787-4da3-96a7-5c3ce6834f92.png",
+          "active": true,
+          "order": 0,
+          "benefitDescription": null,
+          "colorCode": "",
+          "brandType": {
+            "id": 1,
+            "description": "Standar",
+            "code": "STA",
+            "active": true
+          }
+        },
+        "establishments": [
+          {
+            "id": 437123,
+            "address": "El Salvador 6026",
+            "city": "Palermo",
+            "province": "Buenos Aires",
+            "fantasyName": "Rebecca Leah",
+            "homePage": "",
+            "shopping": "",
+            "isApp": false,
+            "latitude": null,
+            "longitude": null
+          }
+        ]
+      },
+      {
+        "id": 25292,
+        "brand": {
+          "id": 1766,
+          "code": "",
+          "name": "Repuestos Lobos",
+          "desktopImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/brand_bc2f0365-fca8-4dc0-8b76-6424d93b585e.png",
+          "desktopMinImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/brand_ad55ea14-b5b5-471d-9d9c-8e0b0cf8fa45.png",
+          "mobileImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/brand_4f331d37-318e-4b1f-849e-541204d131ca.png",
+          "mobileMinImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/brand_59d2828c-a958-4821-986c-3f83d0269904.png",
+          "active": true,
+          "order": 0,
+          "benefitDescription": null,
+          "colorCode": "",
+          "brandType": {
+            "id": 1,
+            "description": "Standar",
+            "code": "STA",
+            "active": true
+          }
+        },
+        "establishments": [
+          {
+            "id": 436925,
+            "address": "Chacabuco 201",
+            "city": "Lobos",
+            "province": "Buenos Aires",
+            "fantasyName": "Repuestos Lobos",
+            "homePage": "",
+            "shopping": "",
+            "isApp": false,
+            "latitude": null,
+            "longitude": null
+          }
+        ]
+      },
+      {
+        "id": 25293,
+        "brand": {
+          "id": 2548,
+          "code": null,
+          "name": "Rio Shop Deco",
+          "desktopImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/brand_11d3c539-e9b0-401a-af50-5adc1473d154.png",
+          "desktopMinImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/brand_93f7e3a7-daac-495d-9525-5fe26d28e6bf.png",
+          "mobileImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/brand_18aff02c-7621-4306-bf88-943fd2fc5b14.png",
+          "mobileMinImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/brand_7b37ccd2-b1fc-4ca9-ad57-9ae812279338.png",
+          "active": true,
+          "order": 0,
+          "benefitDescription": null,
+          "colorCode": "",
+          "brandType": {
+            "id": 1,
+            "description": "Standar",
+            "code": "STA",
+            "active": true
+          }
+        },
+        "establishments": [
+          {
+            "id": 437134,
+            "address": "Av Ex Comb Malvinas esq Tavella 1",
+            "city": "salta",
+            "province": "Salta",
+            "fantasyName": "Rio Shop Deco",
+            "homePage": "",
+            "shopping": "",
+            "isApp": false,
+            "latitude": null,
+            "longitude": null
+          }
+        ]
+      },
+      {
+        "id": 25294,
+        "brand": {
+          "id": 2552,
+          "code": null,
+          "name": "Romero Modas",
+          "desktopImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/brand_11d3c539-e9b0-401a-af50-5adc1473d154.png",
+          "desktopMinImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/brand_93f7e3a7-daac-495d-9525-5fe26d28e6bf.png",
+          "mobileImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/brand_18aff02c-7621-4306-bf88-943fd2fc5b14.png",
+          "mobileMinImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/brand_7b37ccd2-b1fc-4ca9-ad57-9ae812279338.png",
+          "active": true,
+          "order": 0,
+          "benefitDescription": null,
+          "colorCode": "",
+          "brandType": {
+            "id": 1,
+            "description": "Standar",
+            "code": "STA",
+            "active": true
+          }
+        },
+        "establishments": [
+          {
+            "id": 436784,
+            "address": "DR MANUEL BELGRANO 822",
+            "city": "ONCATIVO",
+            "province": "Córdoba",
+            "fantasyName": "ROMERO MODAS",
+            "homePage": "",
+            "shopping": "",
+            "isApp": false,
+            "latitude": null,
+            "longitude": null
+          }
+        ]
+      },
+      {
+        "id": 25295,
+        "brand": {
+          "id": 3187,
+          "code": null,
+          "name": "Romisel",
+          "desktopImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/Varios_desktopImage_1168x120",
+          "desktopMinImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/Varios_desktopMinImage_428x120",
+          "mobileImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/Varios_mobileImage_725x160",
+          "mobileMinImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/Varios_mobileMinImage_178x75",
+          "active": true,
+          "order": 0,
+          "benefitDescription": null,
+          "colorCode": "",
+          "brandType": {
+            "id": 1,
+            "description": "Standar",
+            "code": "STA",
+            "active": true
+          }
+        },
+        "establishments": [
+          {
+            "id": 437265,
+            "address": "SAN MARTIN 140",
+            "city": "VICTORIA",
+            "province": "Entre Ríos",
+            "fantasyName": "ROMISEL",
+            "homePage": "",
+            "shopping": "",
+            "isApp": false,
+            "latitude": null,
+            "longitude": null
+          }
+        ]
+      },
+      {
+        "id": 25296,
+        "brand": {
+          "id": 449,
+          "code": null,
+          "name": "Sail",
+          "desktopImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/Sail_desktopImage.png",
+          "desktopMinImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/Sail_desktopMinImage.png",
+          "mobileImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/Sail_mobileImage.png",
+          "mobileMinImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/Sail_mobileMinImage.png",
+          "active": true,
+          "order": 0,
+          "benefitDescription": null,
+          "colorCode": "",
+          "brandType": {
+            "id": 1,
+            "description": "Standar",
+            "code": "STA",
+            "active": true
+          }
+        },
+        "establishments": [
+          {
+            "id": 436737,
+            "address": "Panamericana km 54500 paseo champagnat local 54500",
+            "city": "Pilar",
+            "province": "Buenos Aires",
+            "fantasyName": "SAIL",
+            "homePage": "",
+            "shopping": "",
+            "isApp": false,
+            "latitude": null,
+            "longitude": null
+          }
+        ]
+      },
+      {
+        "id": 25297,
+        "brand": {
+          "id": 3296,
+          "code": "",
+          "name": "Santa Bohemia",
+          "desktopImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/brand_b79c3e59-0411-45d0-af50-9733366d7f99.png",
+          "desktopMinImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/brand_4ac25692-6546-415e-ae52-5fdeebdda092.png",
+          "mobileImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/brand_0d3dd4e3-c987-4c35-a6d7-9ba75ea01aab.png",
+          "mobileMinImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/brand_b85ac23a-1a78-4fcf-acdc-ac0063624bfd.png",
+          "active": true,
+          "order": 0,
+          "benefitDescription": null,
+          "colorCode": "",
+          "brandType": {
+            "id": 1,
+            "description": "Standar",
+            "code": "STA",
+            "active": true
+          }
+        },
+        "establishments": [
+          {
+            "id": 436938,
+            "address": "Quevedo 3365",
+            "city": "CAPITAL FEDERAL",
+            "province": "Ciudad Autónoma de Buenos Aires",
+            "fantasyName": "Santa Bohemia",
+            "homePage": "",
+            "shopping": "",
+            "isApp": false,
+            "latitude": null,
+            "longitude": null
+          }
+        ]
+      },
+      {
+        "id": 25298,
+        "brand": {
+          "id": 2563,
+          "code": null,
+          "name": "Ser Urbano",
+          "desktopImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/brand_11d3c539-e9b0-401a-af50-5adc1473d154.png",
+          "desktopMinImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/brand_93f7e3a7-daac-495d-9525-5fe26d28e6bf.png",
+          "mobileImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/brand_18aff02c-7621-4306-bf88-943fd2fc5b14.png",
+          "mobileMinImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/brand_7b37ccd2-b1fc-4ca9-ad57-9ae812279338.png",
+          "active": true,
+          "order": 0,
+          "benefitDescription": null,
+          "colorCode": "",
+          "brandType": {
+            "id": 1,
+            "description": "Standar",
+            "code": "STA",
+            "active": true
+          }
+        },
+        "establishments": [
+          {
+            "id": 436979,
+            "address": "DORREGO 252",
+            "city": "LA RIOJA",
+            "province": "La Rioja",
+            "fantasyName": "ser urbano",
+            "homePage": "",
+            "shopping": "",
+            "isApp": false,
+            "latitude": null,
+            "longitude": null
+          }
+        ]
+      },
+      {
+        "id": 25299,
+        "brand": {
+          "id": 3188,
+          "code": null,
+          "name": "Sheraton Salta Hotel",
+          "desktopImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/Varios_desktopImage_1168x120",
+          "desktopMinImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/Varios_desktopMinImage_428x120",
+          "mobileImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/Varios_mobileImage_725x160",
+          "mobileMinImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/Varios_mobileMinImage_178x75",
+          "active": true,
+          "order": 0,
+          "benefitDescription": null,
+          "colorCode": "",
+          "brandType": {
+            "id": 1,
+            "description": "Standar",
+            "code": "STA",
+            "active": true
+          }
+        },
+        "establishments": [
+          {
+            "id": 437036,
+            "address": "CNEL URIONDO 330",
+            "city": "SALTA",
+            "province": "Salta",
+            "fantasyName": "Sheraton Salta Hotel",
+            "homePage": "",
+            "shopping": "",
+            "isApp": false,
+            "latitude": null,
+            "longitude": null
+          }
+        ]
+      },
+      {
+        "id": 25300,
+        "brand": {
+          "id": 3190,
+          "code": null,
+          "name": "Sin Limites",
+          "desktopImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/Varios_desktopImage_1168x120",
+          "desktopMinImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/Varios_desktopMinImage_428x120",
+          "mobileImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/Varios_mobileImage_725x160",
+          "mobileMinImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/Varios_mobileMinImage_178x75",
+          "active": true,
+          "order": 0,
+          "benefitDescription": null,
+          "colorCode": "",
+          "brandType": {
+            "id": 1,
+            "description": "Standar",
+            "code": "STA",
+            "active": true
+          }
+        },
+        "establishments": [
+          {
+            "id": 437198,
+            "address": "YRIGOYEN 1375",
+            "city": "SAN JORGE",
+            "province": "Santa Fe",
+            "fantasyName": "SIN LIMITES",
+            "homePage": "",
+            "shopping": "",
+            "isApp": false,
+            "latitude": null,
+            "longitude": null
+          }
+        ]
+      },
+      {
+        "id": 25301,
+        "brand": {
+          "id": 1780,
+          "code": "",
+          "name": "Sintra Accesorios",
+          "desktopImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/brand_98bfb906-8121-4569-be73-8c8cc9e9f57a.png",
+          "desktopMinImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/brand_5c5c5d7e-0507-4a4b-a0ff-5ae9aea8b221.png",
+          "mobileImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/brand_90d9cf6c-43a1-4f1f-98df-7b503dd1b3dc.png",
+          "mobileMinImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/brand_a975fb01-6621-409d-9f63-8ba472eb5882.png",
+          "active": true,
+          "order": 0,
+          "benefitDescription": null,
+          "colorCode": "",
+          "brandType": {
+            "id": 1,
+            "description": "Standar",
+            "code": "STA",
+            "active": true
+          }
+        },
+        "establishments": [
+          {
+            "id": 436907,
+            "address": "AV CONSTITUCION 5073",
+            "city": "Mar del Plata",
+            "province": "Buenos Aires",
+            "fantasyName": "SINTRA ACCESORIOS",
+            "homePage": "",
+            "shopping": "",
+            "isApp": false,
+            "latitude": null,
+            "longitude": null
+          }
+        ]
+      },
+      {
+        "id": 25302,
+        "brand": {
+          "id": 3191,
+          "code": null,
+          "name": "Soul",
+          "desktopImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/Varios_desktopImage_1168x120",
+          "desktopMinImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/Varios_desktopMinImage_428x120",
+          "mobileImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/Varios_mobileImage_725x160",
+          "mobileMinImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/Varios_mobileMinImage_178x75",
+          "active": true,
+          "order": 0,
+          "benefitDescription": null,
+          "colorCode": "",
+          "brandType": {
+            "id": 1,
+            "description": "Standar",
+            "code": "STA",
+            "active": true
+          }
+        },
+        "establishments": [
+          {
+            "id": 437233,
+            "address": "CALLE 49 843",
+            "city": "COLON",
+            "province": "Buenos Aires",
+            "fantasyName": "Soul",
+            "homePage": "",
+            "shopping": "",
+            "isApp": false,
+            "latitude": null,
+            "longitude": null
+          }
+        ]
+      },
+      {
+        "id": 25303,
+        "brand": {
+          "id": 2580,
+          "code": null,
+          "name": "Taller De Conceptos",
+          "desktopImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/brand_11d3c539-e9b0-401a-af50-5adc1473d154.png",
+          "desktopMinImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/brand_93f7e3a7-daac-495d-9525-5fe26d28e6bf.png",
+          "mobileImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/brand_18aff02c-7621-4306-bf88-943fd2fc5b14.png",
+          "mobileMinImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/brand_7b37ccd2-b1fc-4ca9-ad57-9ae812279338.png",
+          "active": true,
+          "order": 0,
+          "benefitDescription": null,
+          "colorCode": "",
+          "brandType": {
+            "id": 1,
+            "description": "Standar",
+            "code": "STA",
+            "active": true
+          }
+        },
+        "establishments": [
+          {
+            "id": 436761,
+            "address": "VICENTE STANIC 2919",
+            "city": "RIO GRANDE",
+            "province": "Tierra del Fuego",
+            "fantasyName": "TALLER DE CONCEPTOS",
+            "homePage": "",
+            "shopping": "",
+            "isApp": false,
+            "latitude": null,
+            "longitude": null
+          }
+        ]
+      },
+      {
+        "id": 25304,
+        "brand": {
+          "id": 3193,
+          "code": null,
+          "name": "Tateti",
+          "desktopImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/Varios_desktopImage_1168x120",
+          "desktopMinImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/Varios_desktopMinImage_428x120",
+          "mobileImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/Varios_mobileImage_725x160",
+          "mobileMinImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/Varios_mobileMinImage_178x75",
+          "active": true,
+          "order": 0,
+          "benefitDescription": null,
+          "colorCode": "",
+          "brandType": {
+            "id": 1,
+            "description": "Standar",
+            "code": "STA",
+            "active": true
+          }
+        },
+        "establishments": [
+          {
+            "id": 436920,
+            "address": "IDELFONSO DE LAS MUNECAS 168",
+            "city": "SAN MIGUEL DE TUCUMAN",
+            "province": "Tucumán",
+            "fantasyName": "TATETI",
+            "homePage": "",
+            "shopping": "",
+            "isApp": false,
+            "latitude": null,
+            "longitude": null
+          }
+        ]
+      },
+      {
+        "id": 25305,
+        "brand": {
+          "id": 3194,
+          "code": null,
+          "name": "Top Gnc",
+          "desktopImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/Varios_desktopImage_1168x120",
+          "desktopMinImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/Varios_desktopMinImage_428x120",
+          "mobileImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/Varios_mobileImage_725x160",
+          "mobileMinImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/Varios_mobileMinImage_178x75",
+          "active": true,
+          "order": 0,
+          "benefitDescription": null,
+          "colorCode": "",
+          "brandType": {
+            "id": 1,
+            "description": "Standar",
+            "code": "STA",
+            "active": true
+          }
+        },
+        "establishments": [
+          {
+            "id": 437284,
+            "address": "BANDERA DE LOS ANDES 1035",
+            "city": "SAN JOSE DE GUAYMALLEN",
+            "province": "Mendoza",
+            "fantasyName": "TOP GNC",
+            "homePage": "",
+            "shopping": "",
+            "isApp": false,
+            "latitude": null,
+            "longitude": null
+          }
+        ]
+      },
+      {
+        "id": 25306,
+        "brand": {
+          "id": 3195,
+          "code": null,
+          "name": "Tu Calzado",
+          "desktopImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/Varios_desktopImage_1168x120",
+          "desktopMinImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/Varios_desktopMinImage_428x120",
+          "mobileImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/Varios_mobileImage_725x160",
+          "mobileMinImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/Varios_mobileMinImage_178x75",
+          "active": true,
+          "order": 0,
+          "benefitDescription": null,
+          "colorCode": "",
+          "brandType": {
+            "id": 1,
+            "description": "Standar",
+            "code": "STA",
+            "active": true
+          }
+        },
+        "establishments": [
+          {
+            "id": 437235,
+            "address": "INTENDENTE JOSE FROUTE 123",
+            "city": "GENERAL DEHEZA",
+            "province": "Córdoba",
+            "fantasyName": "TU CALZADO",
+            "homePage": "",
+            "shopping": "",
+            "isApp": false,
+            "latitude": null,
+            "longitude": null
+          }
+        ]
+      },
+      {
+        "id": 25307,
+        "brand": {
+          "id": 3196,
+          "code": null,
+          "name": "Tu Teens",
+          "desktopImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/Varios_desktopImage_1168x120",
+          "desktopMinImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/Varios_desktopMinImage_428x120",
+          "mobileImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/Varios_mobileImage_725x160",
+          "mobileMinImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/Varios_mobileMinImage_178x75",
+          "active": true,
+          "order": 0,
+          "benefitDescription": null,
+          "colorCode": "",
+          "brandType": {
+            "id": 1,
+            "description": "Standar",
+            "code": "STA",
+            "active": true
+          }
+        },
+        "establishments": [
+          {
+            "id": 437192,
+            "address": "CALLE 62 2505",
+            "city": "NECOCHEA",
+            "province": "Buenos Aires",
+            "fantasyName": "TU teens",
+            "homePage": "",
+            "shopping": "",
+            "isApp": false,
+            "latitude": null,
+            "longitude": null
+          }
+        ]
+      },
+      {
+        "id": 25308,
+        "brand": {
+          "id": 3197,
+          "code": null,
+          "name": "Urban Breed",
+          "desktopImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/Varios_desktopImage_1168x120",
+          "desktopMinImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/Varios_desktopMinImage_428x120",
+          "mobileImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/Varios_mobileImage_725x160",
+          "mobileMinImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/Varios_mobileMinImage_178x75",
+          "active": true,
+          "order": 0,
+          "benefitDescription": null,
+          "colorCode": "",
+          "brandType": {
+            "id": 1,
+            "description": "Standar",
+            "code": "STA",
+            "active": true
+          }
+        },
+        "establishments": [
+          {
+            "id": 437249,
+            "address": "9 DE JULIO 170",
+            "city": "VICTORIA",
+            "province": "Entre Ríos",
+            "fantasyName": "URBAN BREED",
+            "homePage": "",
+            "shopping": "",
+            "isApp": false,
+            "latitude": null,
+            "longitude": null
+          }
+        ]
+      },
+      {
+        "id": 25309,
+        "brand": {
+          "id": 3536,
+          "code": "",
+          "name": "Usina Rhodia",
+          "desktopImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/brand_e7c2993a-5804-4d4a-9802-40508d8276fb.png",
+          "desktopMinImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/brand_4b959958-d196-4e8f-b29b-abb491cb2117.png",
+          "mobileImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/brand_a7892b41-1025-4316-9897-79302723b5f3.png",
+          "mobileMinImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/brand_3f9a45ca-9847-4311-b53d-fb1d29f5c1f3.png",
+          "active": true,
+          "order": 0,
+          "benefitDescription": null,
+          "colorCode": "",
+          "brandType": {
+            "id": 1,
+            "description": "Standar",
+            "code": "STA",
+            "active": true
+          }
+        },
+        "establishments": [
+          {
+            "id": 437163,
+            "address": "primera junta 525",
+            "city": "QUILMES",
+            "province": "Buenos Aires",
+            "fantasyName": "usina rhodia",
+            "homePage": "",
+            "shopping": "",
+            "isApp": false,
+            "latitude": null,
+            "longitude": null
+          }
+        ]
+      },
+      {
+        "id": 25310,
+        "brand": {
+          "id": 1924,
+          "code": "",
+          "name": "V y J Suplementos",
+          "desktopImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/brand_e328406d-0fc6-4c20-b3ef-454496c76c5a.png",
+          "desktopMinImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/brand_44acb7a1-ded4-4a5c-bfb0-436773ac3880.png",
+          "mobileImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/brand_d60bf8cb-c5df-4f14-b3ad-016114e66627.png",
+          "mobileMinImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/brand_a5072aa4-ae65-497d-9ddd-1f44411130be.png",
+          "active": true,
+          "order": 0,
+          "benefitDescription": null,
+          "colorCode": "",
+          "brandType": {
+            "id": 1,
+            "description": "Standar",
+            "code": "STA",
+            "active": true
+          }
+        },
+        "establishments": [
+          {
+            "id": 436898,
+            "address": "saavedra 1471",
+            "city": "rosario",
+            "province": "Santa Fe",
+            "fantasyName": "V y J Suplementos",
+            "homePage": "",
+            "shopping": "",
+            "isApp": false,
+            "latitude": null,
+            "longitude": null
+          }
+        ]
+      },
+      {
+        "id": 25311,
+        "brand": {
+          "id": 1417,
+          "code": "",
+          "name": "Veterinaria Alem",
+          "desktopImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/brand_e559e53c-d606-44a7-8413-de9cbd05d211.png",
+          "desktopMinImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/brand_027846b9-6aba-4a96-9233-a1dba93dbb7b.png",
+          "mobileImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/brand_11588c8a-9677-40cb-88bb-39b5f25db52e.png",
+          "mobileMinImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/brand_6887b0ba-e4c3-4686-aa72-29ffeddf6947.png",
+          "active": true,
+          "order": 0,
+          "benefitDescription": null,
+          "colorCode": "",
+          "brandType": {
+            "id": 1,
+            "description": "Standar",
+            "code": "STA",
+            "active": true
+          }
+        },
+        "establishments": [
+          {
+            "id": 436692,
+            "address": "AV RAFAEL NUnEZ 4430",
+            "city": "Cordoba",
+            "province": "Córdoba",
+            "fantasyName": "VETERINARIA ALEM",
+            "homePage": "",
+            "shopping": "",
+            "isApp": false,
+            "latitude": null,
+            "longitude": null
+          }
+        ]
+      },
+      {
+        "id": 25312,
+        "brand": {
+          "id": 3198,
+          "code": null,
+          "name": "Victoriana",
+          "desktopImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/Varios_desktopImage_1168x120",
+          "desktopMinImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/Varios_desktopMinImage_428x120",
+          "mobileImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/Varios_mobileImage_725x160",
+          "mobileMinImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/Varios_mobileMinImage_178x75",
+          "active": true,
+          "order": 0,
+          "benefitDescription": null,
+          "colorCode": "",
+          "brandType": {
+            "id": 1,
+            "description": "Standar",
+            "code": "STA",
+            "active": true
+          }
+        },
+        "establishments": [
+          {
+            "id": 437195,
+            "address": "Sarmiento 649",
+            "city": "VICTORIA",
+            "province": "Entre Ríos",
+            "fantasyName": "VICTORIANA",
+            "homePage": "",
+            "shopping": "",
+            "isApp": false,
+            "latitude": null,
+            "longitude": null
+          }
+        ]
+      },
+      {
+        "id": 25313,
+        "brand": {
+          "id": 3199,
+          "code": null,
+          "name": "Wapas",
+          "desktopImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/Varios_desktopImage_1168x120",
+          "desktopMinImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/Varios_desktopMinImage_428x120",
+          "mobileImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/Varios_mobileImage_725x160",
+          "mobileMinImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/Varios_mobileMinImage_178x75",
+          "active": true,
+          "order": 0,
+          "benefitDescription": null,
+          "colorCode": "",
+          "brandType": {
+            "id": 1,
+            "description": "Standar",
+            "code": "STA",
+            "active": true
+          }
+        },
+        "establishments": [
+          {
+            "id": 437182,
+            "address": "ESTRADA 1254",
+            "city": "VILLA ELISA",
+            "province": "Entre Ríos",
+            "fantasyName": "WAPAS",
+            "homePage": "",
+            "shopping": "",
+            "isApp": false,
+            "latitude": null,
+            "longitude": null
+          }
+        ]
+      },
+      {
+        "id": 25314,
+        "brand": {
+          "id": 785,
+          "code": null,
+          "name": "Wrangler",
+          "desktopImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/Wrangler_desktopImage.png",
+          "desktopMinImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/Wrangler_desktopMinImage.png",
+          "mobileImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/Wrangler_mobileImage.png",
+          "mobileMinImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/Wrangler_mobileMinImage.png",
+          "active": true,
+          "order": 0,
+          "benefitDescription": null,
+          "colorCode": "",
+          "brandType": {
+            "id": 1,
+            "description": "Standar",
+            "code": "STA",
+            "active": true
+          }
+        },
+        "establishments": [
+          {
+            "id": 436982,
+            "address": "PRIMERA JUNTA 525",
+            "city": "QUILMES",
+            "province": "Buenos Aires",
+            "fantasyName": "WRANGLER",
+            "homePage": "",
+            "shopping": "",
+            "isApp": false,
+            "latitude": null,
+            "longitude": null
+          }
+        ]
+      },
+      {
+        "id": 25315,
+        "brand": {
+          "id": 2618,
+          "code": null,
+          "name": "Yo Mujer Indumentaria",
+          "desktopImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/brand_829a94f1-ed42-476f-b69b-c1063f8b907e.png",
+          "desktopMinImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/brand_edb84d0a-723e-4a71-8770-8b68e040a0ea.png",
+          "mobileImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/brand_49963fa8-6030-4466-8f8d-c20badc9c109.png",
+          "mobileMinImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/brand_67ffd078-3d93-457b-8ed7-91dd2d93ef02.png",
+          "active": true,
+          "order": 0,
+          "benefitDescription": null,
+          "colorCode": "",
+          "brandType": {
+            "id": 1,
+            "description": "Standar",
+            "code": "STA",
+            "active": true
+          }
+        },
+        "establishments": [
+          {
+            "id": 437108,
+            "address": "GRAL SAN MARTIN 753",
+            "city": "ARROYO SECO",
+            "province": "Santa Fe",
+            "fantasyName": "Yo Mujer Indumentaria",
+            "homePage": "",
+            "shopping": "",
+            "isApp": false,
+            "latitude": null,
+            "longitude": null
+          }
+        ]
+      },
+      {
+        "id": 25316,
+        "brand": {
+          "id": 2621,
+          "code": null,
+          "name": "Zonic Longchamps",
+          "desktopImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/brand_11d3c539-e9b0-401a-af50-5adc1473d154.png",
+          "desktopMinImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/brand_93f7e3a7-daac-495d-9525-5fe26d28e6bf.png",
+          "mobileImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/brand_18aff02c-7621-4306-bf88-943fd2fc5b14.png",
+          "mobileMinImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/brand_7b37ccd2-b1fc-4ca9-ad57-9ae812279338.png",
+          "active": true,
+          "order": 0,
+          "benefitDescription": null,
+          "colorCode": "",
+          "brandType": {
+            "id": 1,
+            "description": "Standar",
+            "code": "STA",
+            "active": true
+          }
+        },
+        "establishments": [
+          {
+            "id": 436989,
+            "address": "Hipolito yrigoyen 17825",
+            "city": "LONGCHAMPS",
+            "province": "Buenos Aires",
+            "fantasyName": "ZONIC Longchamps",
+            "homePage": "",
+            "shopping": "",
+            "isApp": false,
+            "latitude": null,
+            "longitude": null
+          }
+        ]
+      }
+    ],
+    "texts": {
+      "title": "20% de ahorro + hasta 3 cuotas sin interés",
+      "description": "Sin tope de reintegro",
+      "discount": 20,
+      "untilDiscount": false,
+      "fees": 3,
+      "inAPayment": false,
+      "interest": "sin interés",
+      "untilFees": true
+    },
+    "homePages": []
+  },
+  "program_occurrences": 1,
+  "program_catalog_total": 1
+}

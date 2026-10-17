@@ -1,0 +1,274 @@
+{
+  "source": "santander",
+  "source_id": "546:7909",
+  "scraped_at": "2026-10-15T21:37:52.261464+00:00",
+  "promotion_url": "https://www.santander.com.ar/personas/beneficios#/publication?brandId=546&programId=7909",
+  "catalog_url": "https://www.santander.com.ar/personas/beneficios#/results?category-code=ALL",
+  "catalog": {
+    "id": 546,
+    "code": "",
+    "name": "YPF",
+    "desktopImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/brand_79982813-9a3b-410b-8991-9960f336cd83.png",
+    "desktopMinImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/brand_cd982956-ccef-42a4-8f4a-8844cbdb5806.png",
+    "mobileImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/brand_4d77acad-3282-4b44-bb5f-ba159331c27b.png",
+    "mobileMinImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/brand_e5b8a923-be2c-4edf-aea3-f3d53df1f549.png",
+    "active": true,
+    "order": 1,
+    "benefitDescription": "15%",
+    "colorCode": "#257FA4",
+    "brandType": {
+      "id": 1,
+      "description": "Standar",
+      "code": "STA",
+      "active": true
+    }
+  },
+  "program": {
+    "startDatePublication": "2026-10-01T00:00:00",
+    "endDatePublication": "2026-10-31T00:00:00",
+    "id": 7909,
+    "idPromotion": 14131,
+    "monday": false,
+    "tuesday": false,
+    "wednesday": false,
+    "thursday": true,
+    "friday": false,
+    "saturday": false,
+    "sunday": false,
+    "fullWeek": false,
+    "multiPublication": true,
+    "customerDiscount": 15,
+    "topAmount": 20000,
+    "additionalText": "<p>Pagando únicamente a través de la <strong>App YPF</strong>.<br><br>Aplica exclusivamente para la carga de combustible.<br>Aplica exclusivamente para INFINIA, INFINIA Diesel y SUPER.<br><br>Beneficio exclusivo para clientes suscriptos a <strong>Sorpresa Santander</strong>.</p>\n",
+    "monthlyCut": false,
+    "initialQuote": 0,
+    "finalQuote": 0,
+    "interestFreeFees": false,
+    "specialCondition": null,
+    "order": 2,
+    "legal": "<p>PARA CLIENTES SUSCRIPTOS AL PROGRAMA SORPRESA SANTANDER.</p><p>Válido en los locales adheridos todos los días Jueves de Octubre 2026, abonando con Tarjeta Santander Visa Débito y Crédito, pagando únicamente en las estaciones de servicio que acepten pago vía AppYPF. Aplica exclusivamente para la carga de combustible. Se excluyen compras abonadas por transferencias o pagos realizados con dinero en cuenta, a través de billeteras virtuales o financiadas por programas Cuota a Cuota. No acumulable con otras promociones. Válido únicamente para clientes titulares de cuenta bancaria Santander. No aplica a clientes que posean tarjeta de crédito sin cuenta bancaria asociada. En caso que la compra sea realizada con una tarjeta adicional, el reintegro se verá reflejado en la cuenta bancaria del titular.</p><p>El ahorro se hará efectivo vía reintegro dentro de los 30 días de efectuado el consumo en la cuenta bancaria titular del cliente.</p><p>Tope Mensual: $20.000 sumando las compras realizadas por el titular de la tarjeta de crédito y sus adicionales. En caso que la compra sea realizada con una tarjeta adicional, el reintegro se verá reflejado en la cuenta bancaria del titular de la misma. Ejemplo: en una compra con la Tarjetas Santander Visa Crédito a través de la AppYPF de $70.000 recibirás un reintegro de $10.500 (tope mensual $20.000) en la cuenta bancaria titular.</p>",
+    "benefitType": {
+      "id": 1,
+      "description": "Ahorro",
+      "code": "A"
+    },
+    "paymentType": {
+      "id": 4,
+      "description": "App Externa",
+      "code": "A"
+    },
+    "paymentMethod": null,
+    "frecuency": {
+      "id": 2,
+      "description": "Mensual",
+      "code": "M"
+    },
+    "tag": {
+      "id": 2,
+      "description": "Sorpresa",
+      "code": "SOR",
+      "status": false,
+      "colorCode": "#257FA4"
+    },
+    "brands": [
+      {
+        "id": 546,
+        "code": "",
+        "name": "YPF",
+        "desktopImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/brand_79982813-9a3b-410b-8991-9960f336cd83.png",
+        "desktopMinImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/brand_cd982956-ccef-42a4-8f4a-8844cbdb5806.png",
+        "mobileImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/brand_4d77acad-3282-4b44-bb5f-ba159331c27b.png",
+        "mobileMinImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/brand_e5b8a923-be2c-4edf-aea3-f3d53df1f549.png",
+        "active": true,
+        "order": 1,
+        "benefitDescription": null,
+        "colorCode": "",
+        "brandType": {
+          "id": 1,
+          "description": "Standar",
+          "code": "STA",
+          "active": true
+        }
+      }
+    ],
+    "relatedPublications": [],
+    "categories": [
+      {
+        "id": 1,
+        "description": "Automotor",
+        "code": "AUT"
+      },
+      {
+        "id": 2,
+        "description": "Combustible",
+        "code": "COM"
+      },
+      {
+        "id": 56,
+        "description": "Destacado",
+        "code": "DES"
+      },
+      {
+        "id": 61,
+        "description": "Sorpresa",
+        "code": "SOR"
+      },
+      {
+        "id": 65,
+        "description": "Select",
+        "code": "SEC"
+      }
+    ],
+    "texts": {
+      "title": "15% de ahorro",
+      "description": "Tope de reintegro: $20.000 mensual",
+      "discount": 15,
+      "untilDiscount": false
+    }
+  },
+  "detail": {
+    "id": 7909,
+    "initialDate": "2026-10-01T00:00:00",
+    "endDate": "2026-10-31T00:00:00",
+    "monday": false,
+    "tuesday": false,
+    "wednesday": false,
+    "thursday": true,
+    "friday": false,
+    "saturday": false,
+    "sunday": false,
+    "fullWeek": false,
+    "legal": "<p>PARA CLIENTES SUSCRIPTOS AL PROGRAMA SORPRESA SANTANDER.</p><p>Válido en los locales adheridos todos los días Jueves de Octubre 2026, abonando con Tarjeta Santander Visa Débito y Crédito, pagando únicamente en las estaciones de servicio que acepten pago vía AppYPF. Aplica exclusivamente para la carga de combustible. Se excluyen compras abonadas por transferencias o pagos realizados con dinero en cuenta, a través de billeteras virtuales o financiadas por programas Cuota a Cuota. No acumulable con otras promociones. Válido únicamente para clientes titulares de cuenta bancaria Santander. No aplica a clientes que posean tarjeta de crédito sin cuenta bancaria asociada. En caso que la compra sea realizada con una tarjeta adicional, el reintegro se verá reflejado en la cuenta bancaria del titular.</p><p>El ahorro se hará efectivo vía reintegro dentro de los 30 días de efectuado el consumo en la cuenta bancaria titular del cliente.</p><p>Tope Mensual: $20.000 sumando las compras realizadas por el titular de la tarjeta de crédito y sus adicionales. En caso que la compra sea realizada con una tarjeta adicional, el reintegro se verá reflejado en la cuenta bancaria del titular de la misma. Ejemplo: en una compra con la Tarjetas Santander Visa Crédito a través de la AppYPF de $70.000 recibirás un reintegro de $10.500 (tope mensual $20.000) en la cuenta bancaria titular.</p>",
+    "customerDiscount": 15,
+    "topAmount": 20000,
+    "additionalText": "<p>Pagando únicamente a través de la <strong>App YPF</strong>.<br><br>Aplica exclusivamente para la carga de combustible.<br>Aplica exclusivamente para INFINIA, INFINIA Diesel y SUPER.<br><br>Beneficio exclusivo para clientes suscriptos a <strong>Sorpresa Santander</strong>.</p>\n",
+    "showCurrentMonthOnly": false,
+    "initialQuote": 0,
+    "finalQuote": 0,
+    "interestFreeFees": false,
+    "specialCondition": null,
+    "stock": 0,
+    "productSegmentation": "Sorpresa",
+    "additionalBenefit": false,
+    "order": 2,
+    "tag": {
+      "id": 2,
+      "description": "Sorpresa",
+      "code": "SOR",
+      "status": false,
+      "colorCode": "#257FA4"
+    },
+    "frecuency": {
+      "id": 2,
+      "description": "Mensual",
+      "code": "M"
+    },
+    "paymentType": {
+      "id": 4,
+      "description": "App Externa",
+      "code": "A"
+    },
+    "paymentMethod": null,
+    "benefitType": {
+      "id": 1,
+      "description": "Ahorro",
+      "code": "A"
+    },
+    "categories": [
+      {
+        "id": 1,
+        "description": "Automotor",
+        "code": "AUT"
+      },
+      {
+        "id": 2,
+        "description": "Combustible",
+        "code": "COM"
+      },
+      {
+        "id": 56,
+        "description": "Destacado",
+        "code": "DES"
+      },
+      {
+        "id": 61,
+        "description": "Sorpresa",
+        "code": "SOR"
+      },
+      {
+        "id": 65,
+        "description": "Select",
+        "code": "SEC"
+      }
+    ],
+    "images": [],
+    "relatedPublications": [],
+    "cards": [
+      {
+        "id": 1,
+        "description": "VISA",
+        "code": "81",
+        "idType": 1,
+        "descriptionType": "DEBITO",
+        "codeType": "D",
+        "image": "https://microfe.santander.com.ar/premify/benefits/assets/images/visa_tarjeta_debito.png"
+      },
+      {
+        "id": 2,
+        "description": "VISA",
+        "code": "40",
+        "idType": 2,
+        "descriptionType": "CREDITO",
+        "codeType": "C",
+        "image": "https://microfe.santander.com.ar/premify/benefits/assets/images/visa_tarjeta_credito.png"
+      }
+    ],
+    "brands": [
+      {
+        "id": 25038,
+        "brand": {
+          "id": 546,
+          "code": "",
+          "name": "YPF",
+          "desktopImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/brand_79982813-9a3b-410b-8991-9960f336cd83.png",
+          "desktopMinImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/brand_cd982956-ccef-42a4-8f4a-8844cbdb5806.png",
+          "mobileImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/brand_4d77acad-3282-4b44-bb5f-ba159331c27b.png",
+          "mobileMinImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/brand_e5b8a923-be2c-4edf-aea3-f3d53df1f549.png",
+          "active": true,
+          "order": 1,
+          "benefitDescription": null,
+          "colorCode": "",
+          "brandType": {
+            "id": 1,
+            "description": "Standar",
+            "code": "STA",
+            "active": true
+          }
+        },
+        "establishments": [
+          {
+            "id": 263979,
+            "address": "TENIENTE ALESSO 585",
+            "city": "Cordoba",
+            "province": "Cordoba",
+            "fantasyName": "YPF",
+            "homePage": "",
+            "shopping": "",
+            "isApp": false,
+            "latitude": -31.42008329999999,
+            "longitude": -64.1887761
+          }
+        ]
+      }
+    ],
+    "texts": {
+      "title": "15% de ahorro",
+      "description": "Tope de reintegro: $20.000 mensual",
+      "discount": 15,
+      "untilDiscount": false
+    },
+    "homePages": []
+  },
+  "program_occurrences": 1,
+  "program_catalog_total": 1
+}

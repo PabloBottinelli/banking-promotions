@@ -1,0 +1,272 @@
+{
+  "source": "santander",
+  "source_id": "3721:8003",
+  "scraped_at": "2026-10-15T21:37:52.261464+00:00",
+  "promotion_url": "https://www.santander.com.ar/personas/beneficios#/publication?brandId=3721&programId=8003",
+  "catalog_url": "https://www.santander.com.ar/personas/beneficios#/results?category-code=ALL",
+  "catalog": {
+    "id": 3721,
+    "code": "",
+    "name": "Carrefour Market",
+    "desktopImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/brand_e0ac34e2-6b86-4a97-aa41-ce6c4d60d0a4.png",
+    "desktopMinImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/brand_c4986d94-eb85-4015-834b-5f85af13c6aa.png",
+    "mobileImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/brand_63c9aad9-64a8-472e-9aef-bf9ecdfc11e8.png",
+    "mobileMinImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/brand_86719a1a-d2e4-498a-80af-d65d3ed4e88e.png",
+    "active": true,
+    "order": 2,
+    "benefitDescription": "10%",
+    "colorCode": "#9E3667",
+    "brandType": {
+      "id": 1,
+      "description": "Standar",
+      "code": "STA",
+      "active": true
+    }
+  },
+  "program": {
+    "startDatePublication": "2026-10-14T00:00:00",
+    "endDatePublication": "2026-10-28T00:00:00",
+    "id": 8003,
+    "idPromotion": 14246,
+    "monday": false,
+    "tuesday": false,
+    "wednesday": true,
+    "thursday": false,
+    "friday": false,
+    "saturday": false,
+    "sunday": false,
+    "fullWeek": false,
+    "multiPublication": true,
+    "customerDiscount": 10,
+    "topAmount": 10000,
+    "additionalText": "<p>Tope compartido con las demás promociones en Carrefour.</p><p></p><p>Pagando con <strong>QR</strong> a través de la <strong>App Santander</strong>.</p><p></p><p>Compra mínima: $15.000. No aplica a compras online.</p>",
+    "monthlyCut": false,
+    "initialQuote": 0,
+    "finalQuote": 0,
+    "interestFreeFees": false,
+    "specialCondition": null,
+    "order": 1,
+    "legal": "<p>Válida los miércoles 14. 21 y 28 de Octubre del 2026, en los locales adheridos, abonando con QR a través de la App Santander o App MODO con Tarjetas Santander Crédito y/o Débito. Se excluyen compras abonadas por transferencias o pagos realizados con dinero en cuenta, a través de billeteras virtuales o financiadas por programas Cuota a Cuota. No acumulable con otras promociones. Válido únicamente para clientes titulares de cuenta bancaria Santander. No aplica a clientes que posean tarjeta de crédito sin cuenta bancaria asociada. En caso que la compra sea realizada con una tarjeta adicional, el reintegro se verá reflejado en la cuenta bancaria del titular. Tope de reintegro $10.000 mensual para compras mayor o iguales a $15.000. El tope se calcula sumando las compras realizadas por el titular de la tarjeta de crédito y sus adicionales, y las efectuadas con todas las tarjetas de débito asociadas a la cuenta titular de la misma, El ahorro se hará efectivo vía reintegro dentro de los 30 días de efectuado el consumo en la cuenta bancaria titular del cliente. Ejemplo: en una compra con tarjeta de crédito de $100.000, el cliente recibirá un reintegro de $10.000 en la cuenta bancaria titular.</p>",
+    "benefitType": {
+      "id": 1,
+      "description": "Ahorro",
+      "code": "A"
+    },
+    "paymentType": {
+      "id": 3,
+      "description": "QR - Modo",
+      "code": "M"
+    },
+    "paymentMethod": null,
+    "frecuency": {
+      "id": 2,
+      "description": "Mensual",
+      "code": "M"
+    },
+    "tag": {
+      "id": 5,
+      "description": "Pagando con QR",
+      "code": "PQR",
+      "status": false,
+      "colorCode": "#9E3667"
+    },
+    "brands": [
+      {
+        "id": 3721,
+        "code": "",
+        "name": "Carrefour Market",
+        "desktopImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/brand_e0ac34e2-6b86-4a97-aa41-ce6c4d60d0a4.png",
+        "desktopMinImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/brand_c4986d94-eb85-4015-834b-5f85af13c6aa.png",
+        "mobileImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/brand_63c9aad9-64a8-472e-9aef-bf9ecdfc11e8.png",
+        "mobileMinImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/brand_86719a1a-d2e4-498a-80af-d65d3ed4e88e.png",
+        "active": true,
+        "order": 2,
+        "benefitDescription": null,
+        "colorCode": "",
+        "brandType": {
+          "id": 1,
+          "description": "Standar",
+          "code": "STA",
+          "active": true
+        }
+      }
+    ],
+    "relatedPublications": [],
+    "categories": [
+      {
+        "id": 16,
+        "description": "Supermercados",
+        "code": "SUP"
+      },
+      {
+        "id": 36,
+        "description": "Modo",
+        "code": "MOD"
+      },
+      {
+        "id": 56,
+        "description": "Destacado",
+        "code": "DES"
+      }
+    ],
+    "texts": {
+      "title": "10% de ahorro",
+      "description": "Tope de reintegro: $10.000 mensual",
+      "discount": 10,
+      "untilDiscount": false
+    }
+  },
+  "detail": {
+    "id": 8003,
+    "initialDate": "2026-10-14T00:00:00",
+    "endDate": "2026-10-28T00:00:00",
+    "monday": false,
+    "tuesday": false,
+    "wednesday": true,
+    "thursday": false,
+    "friday": false,
+    "saturday": false,
+    "sunday": false,
+    "fullWeek": false,
+    "legal": "<p>Válida los miércoles 14. 21 y 28 de Octubre del 2026, en los locales adheridos, abonando con QR a través de la App Santander o App MODO con Tarjetas Santander Crédito y/o Débito. Se excluyen compras abonadas por transferencias o pagos realizados con dinero en cuenta, a través de billeteras virtuales o financiadas por programas Cuota a Cuota. No acumulable con otras promociones. Válido únicamente para clientes titulares de cuenta bancaria Santander. No aplica a clientes que posean tarjeta de crédito sin cuenta bancaria asociada. En caso que la compra sea realizada con una tarjeta adicional, el reintegro se verá reflejado en la cuenta bancaria del titular. Tope de reintegro $10.000 mensual para compras mayor o iguales a $15.000. El tope se calcula sumando las compras realizadas por el titular de la tarjeta de crédito y sus adicionales, y las efectuadas con todas las tarjetas de débito asociadas a la cuenta titular de la misma, El ahorro se hará efectivo vía reintegro dentro de los 30 días de efectuado el consumo en la cuenta bancaria titular del cliente. Ejemplo: en una compra con tarjeta de crédito de $100.000, el cliente recibirá un reintegro de $10.000 en la cuenta bancaria titular.</p>",
+    "customerDiscount": 10,
+    "topAmount": 10000,
+    "additionalText": "<p>Tope compartido con las demás promociones en Carrefour.</p><p></p><p>Pagando con <strong>QR</strong> a través de la <strong>App Santander</strong>.</p><p></p><p>Compra mínima: $15.000. No aplica a compras online.</p>",
+    "showCurrentMonthOnly": false,
+    "initialQuote": 0,
+    "finalQuote": 0,
+    "interestFreeFees": false,
+    "specialCondition": null,
+    "stock": 0,
+    "productSegmentation": "Masiva",
+    "additionalBenefit": false,
+    "order": 1,
+    "tag": {
+      "id": 5,
+      "description": "Pagando con QR",
+      "code": "PQR",
+      "status": false,
+      "colorCode": "#9E3667"
+    },
+    "frecuency": {
+      "id": 2,
+      "description": "Mensual",
+      "code": "M"
+    },
+    "paymentType": {
+      "id": 3,
+      "description": "QR - Modo",
+      "code": "M"
+    },
+    "paymentMethod": null,
+    "benefitType": {
+      "id": 1,
+      "description": "Ahorro",
+      "code": "A"
+    },
+    "categories": [
+      {
+        "id": 16,
+        "description": "Supermercados",
+        "code": "SUP"
+      },
+      {
+        "id": 36,
+        "description": "Modo",
+        "code": "MOD"
+      },
+      {
+        "id": 56,
+        "description": "Destacado",
+        "code": "DES"
+      }
+    ],
+    "images": [],
+    "relatedPublications": [],
+    "cards": [
+      {
+        "id": 1,
+        "description": "VISA",
+        "code": "81",
+        "idType": 1,
+        "descriptionType": "DEBITO",
+        "codeType": "D",
+        "image": "https://microfe.santander.com.ar/premify/benefits/assets/images/visa_tarjeta_debito.png"
+      },
+      {
+        "id": 2,
+        "description": "VISA",
+        "code": "40",
+        "idType": 2,
+        "descriptionType": "CREDITO",
+        "codeType": "C",
+        "image": "https://microfe.santander.com.ar/premify/benefits/assets/images/visa_tarjeta_credito.png"
+      },
+      {
+        "id": 4,
+        "description": "MASTER",
+        "code": "41",
+        "idType": 2,
+        "descriptionType": "CREDITO",
+        "codeType": "C",
+        "image": "https://microfe.santander.com.ar/premify/benefits/assets/images/mastercard_tarjeta_credito.png"
+      },
+      {
+        "id": 5,
+        "description": "AMEX",
+        "code": "42",
+        "idType": 2,
+        "descriptionType": "CREDITO",
+        "codeType": "C",
+        "image": "https://microfe.santander.com.ar/premify/benefits/assets/images/amex_tarjeta_credito.png"
+      }
+    ],
+    "brands": [
+      {
+        "id": 25418,
+        "brand": {
+          "id": 3721,
+          "code": "",
+          "name": "Carrefour Market",
+          "desktopImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/brand_e0ac34e2-6b86-4a97-aa41-ce6c4d60d0a4.png",
+          "desktopMinImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/brand_c4986d94-eb85-4015-834b-5f85af13c6aa.png",
+          "mobileImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/brand_63c9aad9-64a8-472e-9aef-bf9ecdfc11e8.png",
+          "mobileMinImage": "https://microfe.santander.com.ar/premify/benefits/assets/images/brand_86719a1a-d2e4-498a-80af-d65d3ed4e88e.png",
+          "active": true,
+          "order": 2,
+          "benefitDescription": null,
+          "colorCode": "",
+          "brandType": {
+            "id": 1,
+            "description": "Standar",
+            "code": "STA",
+            "active": true
+          }
+        },
+        "establishments": [
+          {
+            "id": 435484,
+            "address": "Colectora Panamericana esq. Champagnat",
+            "city": "Pilar",
+            "province": "BSAS",
+            "fantasyName": "CARREFOUR MARKET",
+            "homePage": "",
+            "shopping": "",
+            "isApp": false,
+            "latitude": null,
+            "longitude": null
+          }
+        ]
+      }
+    ],
+    "texts": {
+      "title": "10% de ahorro",
+      "description": "Tope de reintegro: $10.000 mensual",
+      "discount": 10,
+      "untilDiscount": false
+    },
+    "homePages": []
+  },
+  "program_occurrences": 1,
+  "program_catalog_total": 1
+}
