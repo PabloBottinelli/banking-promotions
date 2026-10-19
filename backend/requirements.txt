@@ -4,3 +4,4 @@ pydantic
 python-dotenv
 bs4
 playwright
+chromium
