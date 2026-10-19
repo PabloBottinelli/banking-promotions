@@ -27,7 +27,7 @@ SOURCES = {
     "santander": (SantanderNormalizer, True),
     "banco_del_sol": (BancoDelSolNormalizer, True),
     "buepp": (BueppNormalizer, True),
-    "bbva": (BBVANormalizer, False),
+    "bbva": (BBVANormalizer, True),
     "galicia": (GaliciaNormalizer, False),
     "patagonia": (PatagoniaNormalizer, True),
 }
