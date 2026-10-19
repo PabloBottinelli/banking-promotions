@@ -80,10 +80,23 @@ def test_bbva_failed_or_partial_upsert_never_deactivates(tmp_path,monkeypatch,mo
     assert s.output_path.exists() and repo.calls==1 and repo.deactivations==0
 
 
-@pytest.mark.parametrize('source_id,reason',[('88051','unresolved product/payment-dependent'),('88097','no autoriza')])
+@pytest.mark.parametrize('source_id,reason',[('88215','conflicting benefit percentage'),('88097','no autoriza')])
 def test_bbva_complex_unrepresented_offer_or_conflicting_redemption_blocks_writes(tmp_path,monkeypatch,module,source_id,reason):
     runner,s,repo=setup(tmp_path,monkeypatch,module,source_id=source_id)
     old=s.output_path.read_bytes()
     with pytest.raises(RuntimeError,match=reason): runner.run()
     assert s.output_path.read_bytes()==old and repo.calls==repo.deactivations==0
     assert s.coverage['requires_review'] is True and s.coverage['snapshot_replace_allowed'] is False
+
+
+def test_bbva_assist_card_mapped_variants_reach_only_mock_repository(tmp_path,monkeypatch,module):
+    runner,s,repo=setup(tmp_path,monkeypatch,module,source_id='88051')
+    runner.run()
+    assert repo.calls == 1 and repo.deactivations == 0
+    assert len(repo.received) > 1
+    assert len({p.source_id for p in repo.received}) == len(repo.received)
+    for p in repo.received:
+        has_additional = any(b.type == 'discount' and 'adicional' in (b.description or '').lower() for b in p.benefits)
+        if has_additional:
+            assert not any(b.type == 'installments' for b in p.benefits)
+    assert s.coverage['safe_to_deactivate'] is False

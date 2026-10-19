@@ -134,6 +134,12 @@ class BBVAScraper:
 
     @staticmethod
     def _commercial_review(records):
+        # Run the source's semantic checks against its actual V2 output as well
+        # as comparing raw fields. Structural validity alone cannot detect a
+        # dropped gift, stock or payment restriction. This never persists data.
+        from normalization.sources.bbva import BBVANormalizer
+
+        normalizer = BBVANormalizer()
         reasons = []
         for raw in records:
             detail = raw['detail']
@@ -142,10 +148,12 @@ class BBVAScraper:
             legal = re.search(r'(\d{1,3}(?:[.,]\d+)?)\s*%\s*(?:\([^)]*\)\s*)?de\s+(?:reintegro|descuento)', terms, re.I)
             if headline and legal and Decimal(headline.group(1).replace(',', '.')) != Decimal(legal.group(1).replace(',', '.')):
                 reasons.append(f"{raw['source_id']}: headline benefit percentage {headline.group(1)}% conflicts with legal {legal.group(1)}%")
-            offer = re.split(r'\bejemplo\b', terms, flags=re.I)[0]
-            rates = {Decimal(value.replace(',', '.')) for value in re.findall(r'(\d{1,3}(?:[.,]\d+)?)\s*%\s*(?:\([^)]*\)\s*)?de\s+(?:descuento|reintegro)', offer, re.I)}
-            if len(rates) > 1:
-                reasons.append(f"{raw['source_id']}: multiple product/payment-dependent benefit rates require complete variant mapping")
+            try:
+                variants = normalizer.normalize_many(raw)
+                semantic = normalizer.review_normalized(raw, variants)
+            except (ValueError, TypeError, KeyError) as exc:
+                semantic = [f"normalization/commercial review blocked: {exc}"]
+            reasons.extend(f"{raw['source_id']}: {reason}" for reason in semantic)
             legal_start = re.search(r'\b(?:del|desde)\s+(\d{1,2}/\d{1,2}/\d{4})\b', terms, re.I)
             if legal_start:
                 try:
@@ -165,9 +173,18 @@ class BBVAScraper:
                     if raw.get('catalog', {}).get('fechaHasta') and raw['catalog']['fechaHasta'] != end:
                         reasons.append(f"{raw['source_id']}: catalog end {raw['catalog']['fechaHasta']} conflicts with legal {end}")
             for benefit in detail['beneficios']:
-                period = str(benefit.get('frecuenciaTope', ''))
-                if re.search(r'mes|mensual', period, re.I) and re.search(r'tope\s+(?:de\s+)?\$\s*[\d.,]+\s+por\s+(?:usuario|cliente)\s+por\s+vigencia', terms, re.I):
-                    reasons.append(f"{raw['source_id']}: structured monthly cap conflicts with legal promotion-period cap")
+                cap_value = benefit.get('tope')
+                if cap_value in (None, ''):
+                    cap_value = raw.get('catalog', {}).get('montoTope')
+                cap = normalizer._normalize_amount(cap_value)
+                if cap is None:
+                    match = re.search(r'\btope(?:\s+de\s+reintegro)?\s*:?\s*(?:de\s*)?(?:ARS\s*|\$\s*)' + normalizer.MONEY, normalizer._clean_text(terms), re.I)
+                    cap = normalizer._normalize_amount(match.group(1)) if match else None
+                _, warning = normalizer._cap_period_evidence(
+                    normalizer._normalize_cap_period(benefit.get('frecuenciaTope')), cap,
+                    normalizer._clean_text(terms))
+                if warning:
+                    reasons.append(f"{raw['source_id']}: {warning}")
             if re.search(r'compartido.{0,90}adicional', terms, re.I) and re.search(r'no aplica para compras realizadas con tarjetas de cr[eé]dito adicionales', terms, re.I):
                 reasons.append(f"{raw['source_id']}: contradictory additional-card eligibility")
         return reasons

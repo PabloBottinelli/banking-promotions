@@ -238,3 +238,45 @@ def test_synthetic_conflict_detector_uses_source_rates_not_an_id():
     r=raw(123);r['detail']['cabecera']='Comercio 45%'
     r['detail']['basesCondiciones']='LA PROMOCIÓN CONSTA DE 35% DE REINTEGRO.'
     assert '45% conflicts with legal 35%' in BBVAScraper._commercial_review([r])[0]
+
+
+def post_qa3_official(source_id):
+    from pathlib import Path
+    rows = json.loads((Path(__file__).parents[1] / 'fixtures/bbva/official_post_qa3.json').read_text(encoding='utf8'))
+    return next(r for r in rows if str(r['source_id']) == source_id)
+
+
+@pytest.mark.parametrize('api,legal', [('Por Mes', 'vigencia'), ('Por Vigencia de la Promocion', 'mes')])
+def test_same_cap_period_conflict_is_detected_both_directions(api, legal):
+    r = raw(123)
+    r['detail']['beneficios'][0].update(tope='25.000', frecuenciaTope=api)
+    r['detail']['basesCondiciones'] = f'20% de reintegro con tope de $25.000 por cliente por {legal}.'
+    assert BBVAScraper._commercial_review([r])
+
+
+def test_different_legitimate_caps_are_not_a_period_conflict():
+    r = raw(123)
+    r['detail']['beneficios'][0].update(tope='25.000', frecuenciaTope='Por Mes')
+    r['detail']['basesCondiciones'] = '20% de reintegro. Tope de $25.000 por cliente por mes y tope de $100.000 por cliente por vigencia.'
+    assert BBVAScraper._commercial_review([r]) == []
+
+
+def test_official_bus_period_conflict_is_not_structurally_silent():
+    r = post_qa3_official('88081')
+    assert any(reason.startswith('88081:') for reason in BBVAScraper._commercial_review([r]))
+
+
+def test_dropped_official_gift_and_stock_are_detected_in_actual_output(monkeypatch):
+    from normalization.sources.bbva import BBVANormalizer
+    r = post_qa3_official('84091')
+    variants = BBVANormalizer().normalize_many(r)
+    for p in variants:
+        p.benefits = [b for b in p.benefits if b.type != 'gift']
+        p.limits = [limit for limit in p.limits if limit.type != 'stock']
+    monkeypatch.setattr(BBVANormalizer, 'normalize_many', lambda self, raw: variants)
+    reasons = BBVAScraper._commercial_review([r])
+    assert reasons  # Valid Pydantic variants still lost an official entitlement.
+
+
+def test_fully_mapped_official_assist_card_is_not_a_multiple_rate_false_positive():
+    assert BBVAScraper._commercial_review([post_qa3_official('88051')]) == []

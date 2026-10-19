@@ -30,6 +30,8 @@ class BBVANormalizer:
         terms = self._clean_text(detail.get('basesCondiciones')) or None
         if not title:
             raise ValueError('BBVA blank title')
+        if re.search(r'\(IV\).*?GRATIS HASTA', terms or '', re.I) and re.search(r'\(V\)\s+UN PRODUCTO', terms or '', re.I):
+            return self._assistance_variants(raw, terms)
         if re.search(r'no\s+aplica\s+para\s+compras\s+realizadas\s+con\s+tarjeta\s+de\s+cr[eé]dito', terms or '', re.I) and re.search(r'tope de descuento para vuelos.+?millas BBVA', terms or '', re.I):
             return self._mileage_redemption(raw, terms)
         if re.search(r'cuotas\s+en\s+vuelos\s+nacionales', ' '.join(self._normalize_requirements(nodes[0].get('requisitos'))), re.I) and re.search(r'paquetes\s+y\s+alojamientos', terms or '', re.I):
@@ -80,10 +82,7 @@ class BBVANormalizer:
                 cap = self._checked_amount(m.group(1), 'text cap') if m else None
             scope = self._normalize_cap_scope(node.get('tipoTope'))
             period = self._normalize_cap_period(node.get('frecuenciaTope'))
-            legal_cap = re.search(r'\btope\s+(?:de\s+)?\$\s*' + self.MONEY + r'\s+(?:por\s+(?:usuario|cliente)\s+)?por\s+vigencia', terms or '', re.I)
-            cap_conflict = bool(cap is not None and legal_cap and period == 'monthly')
-            if legal_cap:
-                period = 'promotion'
+            period, cap_warning = self._cap_period_evidence(period, cap, terms or '')
             if re.search(r'tope.{0,100}?por cuenta', terms or '', re.I):
                 scope = 'account'
             shared_merchants = re.search(r'tope.{0,100}?compartido\s+entre\s+(?:los\s+)?comercios\s+adheridos', terms or '', re.I)
@@ -131,7 +130,7 @@ class BBVANormalizer:
             channels = detail.get('canalesVenta') or {}
             merchant_check = requires_merchant_check(full) or self._has_physical_channels(channels)
             category = 'Gastronomía' if re.match(r'gastronom[ií]a\b', title, re.I) else None
-            warnings = 'Fuente inconsistente: el campo de frecuencia indica mensual y las bases indican por vigencia; se conservan las bases y requiere revisión.' if cap_conflict else None
+            warnings = cap_warning
             restriction_sentences = self._restrictions(terms or '')
             segment = self._exclusive_segment(full)
             p = NormalizedPromotion(source=raw['source'], source_id=str(raw['source_id']), scraped_at=datetime.fromisoformat(raw['scraped_at']),
@@ -146,6 +145,8 @@ class BBVANormalizer:
                     ('Modalidades indicadas', ', '.join(t for t in ['QR','NFC','contactless'] if self._contains_requirement(req,t))) if any(self._contains_requirement(req,t) for t in ['QR','NFC','contactless']) else None),
                 requires_merchant_verification=merchant_check, terms=terms)
             variants.append((node, p))
+            if re.search(r'\bsuscripci[oó]n\b', full, re.I) and re.search(r'recibir[aá]s\s+un\s+set', terms or '', re.I):
+                self._subscription_gift(p, terms or '')
             if installments and re.search(r'\bregalo\b', headline + ' ' + text, re.I):
                 gift = self._gift_variant(raw, p, group, req, terms or '')
                 variants.append(({'id': 'gift'}, gift))
@@ -182,12 +183,19 @@ class BBVANormalizer:
         output = [p for _, p in variants]
         if len({p.source_id for p in output}) != len(output):
             raise ValueError('BBVA duplicate variant identities')
+        issues = self.review_normalized(raw, output)
+        if issues:
+            raise ValueError('BBVA incomplete commercial representation: ' + '; '.join(issues))
         return output
 
     def _reject_unresolved_benefit_dimensions(self, detail, terms):
         # A list of product-dependent rates cannot safely collapse to its first
         # percentage. Preserve the raw offer and block it until represented.
         offer = re.split(r'\bejemplo\b', terms, flags=re.I)[0]
+        financing = any(self._normalize_installments(node.get('cuota')) for node in detail.get('beneficios', []))
+        one_payment = re.search(r'v[aá]lida\s+(?:[uú]nicamente\s+)?para\s+clientes\s+que\s+abonen\s+sus\s+compras\s+en\s+(?:un|1)\s+pago\s+con\s+tarjetas?\s+de\s+cr[eé]dito', offer, re.I)
+        if financing and one_payment:
+            raise ValueError('BBVA conflicting payment eligibility: API installments versus legal single-payment-only purchase; review required')
         rates = {Decimal(value.replace(',', '.')) for value in re.findall(
             r'(\d{1,3}(?:[.,]\d+)?)\s*%\s*(?:\([^)]*\)\s*)?de\s+(?:descuento|reintegro)', offer, re.I)}
         if len(rates) > 1:
@@ -197,6 +205,214 @@ class BBVANormalizer:
         quotas = {int(value) for value in re.findall(r'\b(\d+)\s+cuotas\b', positive, re.I)}
         if len(quotas) > 1 and not re.search(r'\b\d+\s+cuotas\s+(?:sin\s+inter[eé]s\s+)?para\s+compras\s+(?:mayores|superiores)\s+a\s*\$', offer, re.I):
             raise ValueError('BBVA unresolved product/payment-dependent installment options; complete variant mapping required (raw preserved)')
+
+    def _cap_period_evidence(self, api_period, cap, terms):
+        """Reconcile the same monetary cap, never another cap in the legal text."""
+        legal_periods = set()
+        pattern = (r'\btope(?:\s+de\s+(?:reintegro|descuento))?\s*:?'
+                   r'\s*(?:de\s*)?\$\s*' + self.MONEY +
+                   r'\s+(?:por\s+(?:usuario|cliente|persona|cuenta)\s+)?'
+                   r'(por\s+(?:mes|vigencia)|mensual)\b')
+        for match in re.finditer(pattern, terms, re.I):
+            if cap is not None and self._checked_amount(match.group(1), 'legal cap') == cap:
+                legal_periods.add(self._normalize_cap_period(match.group(2)))
+        # Different cap amounts, or explicit simultaneous limits for more than
+        # one period, are not evidence of a contradictory frequency field.
+        if len(legal_periods) == 1:
+            legal_period = next(iter(legal_periods))
+            if api_period and api_period != legal_period:
+                warning = (f'Fuente inconsistente: el mismo tope figura con frecuencia {api_period} '
+                           f'en el campo estructurado y {legal_period} en las bases. '
+                           'Periodicidad sin resolver; requiere revisión.')
+                return None, warning
+            return legal_period, None
+        return api_period, None
+
+    def _subscription_gift(self, promotion, terms):
+        gift = re.search(r'recibir[aá]s\s+(un\s+set\s+de\s+\d+\s+copas.+?\ben\s+la\s+[^.]+?entrega)\.', terms, re.I)
+        stock = re.search(r'stock\s+de\s+([\d.]+)\s+(sets\s+de\s+copas)', terms, re.I)
+        deliveries = re.search(r'descuento\s+durante\s+las\s+primeras\s+(\d+)\s+entregas', terms, re.I)
+        if not gift or not stock or not deliveries:
+            raise ValueError('BBVA subscription gift/stock/delivery conditions incomplete; review required')
+        quantity = self._checked_amount(stock.group(1), 'gift stock')
+        if quantity != quantity.to_integral_value():
+            raise ValueError('BBVA fractional gift stock')
+        promotion.benefits.append(Benefit(type='gift', description=gift.group(1)))
+        promotion.limits.append(PromotionLimit(type='stock', quantity=int(quantity), scope='campaign',
+            description=stock.group(2) + '; limita el regalo, no las suscripciones ni el descuento'))
+        promotion.limits.append(PromotionLimit(type='usage_count', quantity=int(deliveries.group(1)), scope='subscription',
+            description='Primeras entregas de la suscripción con descuento; el regalo se entrega según su condición específica'))
+        choices = re.search(r'aplicable a las opciones\s+(.+?)\.', terms, re.I)
+        payment = re.search(r'Para acceder,\s+(.+?)\.(?=\s|$)', terms, re.I)
+        renewal = re.search(r'A partir de la entrega n[úu]mero\s+\d+,.+?\.', terms, re.I)
+        variable_price = re.search(r'El precio de la suscripci[oó]n puede variar.+?\.', terms, re.I)
+        exclusion = re.search(r'No valido para venta online en\s+\S+', terms, re.I)
+        if not choices or not payment or not renewal or not variable_price or not exclusion:
+            raise ValueError('BBVA subscription restrictions incomplete; review required')
+        promotion.specific_conditions = conditions(('Suscripción', choices.group(1)),
+            ('Descuento', 'Solo las primeras ' + deliveries.group(1) + ' entregas de la suscripción.'),
+            ('Pago y adhesión', payment.group(1)), ('Regalo', gift.group(1) + '; ' + stock.group(0) + '.'),
+            ('Renovación', renewal.group(0) + ' ' + variable_price.group(0)), ('Exclusión', exclusion.group(0)))
+
+    def review_normalized(self, raw, variants):
+        """Evidence-based omissions, shared by conversion and scraper review.
+
+        This deliberately checks specific positive source clauses. It is not a
+        universal semantic proof or a substitute for independent source QA.
+        """
+        terms = self._clean_text(raw['detail'].get('basesCondiciones'))
+        req = ' '.join(' '.join(self._normalize_requirements(n.get('requisitos'))) for n in raw['detail'].get('beneficios', []))
+        text = terms + ' ' + req
+        issues = []
+        benefit_types = {b.type for p in variants for b in p.benefits}
+        if re.search(r'\b(?:de\s+regalo|recibir[aá]s\s+un\s+set|gratis\s+hasta\s+\d+\s+productos)\b', text, re.I) and not benefit_types.intersection({'gift', 'free_service'}):
+            issues.append('positive gift/free-product entitlement omitted')
+        for match in re.finditer(r'\bstock\s+de\s+([\d.]+)\s+(?:sets|cupos|cupones|tickets)\b', terms, re.I):
+            value = self._checked_amount(match.group(1), 'stock')
+            if not any(l.type == 'stock' and l.quantity == value for p in variants for l in p.limits):
+                issues.append('published stock quantity omitted')
+        paired = re.search(r'tarjetas?\s+de\s+cr[eé]dito\s+visa\s+y(?:/o)?\s+mastercard\s+emitidas?\s+por\s+BBVA', terms, re.I)
+        if paired and {m.network for p in variants for m in p.payment_methods} != {'visa', 'mastercard'}:
+            issues.append('explicit eligible Visa/Mastercard credit alternatives omitted or broadened')
+        if paired and any(m.card_type != 'credit' or m.issuer != 'BBVA' for p in variants for m in p.payment_methods):
+            issues.append('eligible credit issuer restriction omitted')
+        if re.search(r'primeras\s+\d+\s+entregas', terms, re.I) and not all(re.search(r'primeras\s+\d+\s+entregas', p.specific_conditions or '', re.I) for p in variants):
+            issues.append('subscription delivery eligibility omitted')
+        offer = re.split(r'\bEJEMPLO\b', terms, flags=re.I)[0]
+        legal_rates = {Decimal(value.replace(',', '.')) for value in re.findall(r'(\d{1,3}(?:[.,]\d+)?)\s*%\s*(?:\([^)]*\)\s*)?de\s+(?:descuento|reintegro)', offer, re.I)}
+        represented_rates = {b.percentage for p in variants for b in p.benefits if b.type in ('discount', 'cashback')}
+        if not legal_rates.issubset(represented_rates):
+            issues.append('published discount/cashback percentage omitted')
+        segment = self._exclusive_segment(text)
+        if segment and not any(segment.lower() in (p.specific_conditions or '').lower() for p in variants):
+            issues.append('explicit customer segment omitted')
+        for node in raw['detail'].get('beneficios', []):
+            cap_value = node.get('tope') if node.get('tope') not in (None, '') else raw['catalog'].get('montoTope')
+            cap = self._checked_amount(cap_value, 'cap')
+            _, warning = self._cap_period_evidence(self._normalize_cap_period(node.get('frecuenciaTope')), cap, terms)
+            if warning and not all('Fuente inconsistente' in (p.specific_conditions or '') for p in variants if any(l.type == 'monetary_cap' and l.amount == cap for l in p.limits)):
+                issues.append('contradictory cap periodicity warning omitted')
+        for p in variants:
+            for limit in p.limits:
+                if limit.type == 'monetary_cap':
+                    expected, warning = self._cap_period_evidence(limit.period, limit.amount, terms)
+                    if warning and (limit.period is not None or 'Fuente inconsistente' not in (p.specific_conditions or '')):
+                        issues.append('contradictory cap periodicity asserted or warning omitted')
+            if re.search(r'NO APLICABLE A CUOTAS', terms, re.I):
+                single_pay = [b for b in p.benefits if re.search(r'(?:adicional|un solo pago)', b.description or '', re.I)]
+                if single_pay and any(b.type == 'installments' for b in p.benefits):
+                    issues.append('single-payment-only benefit combined with installments')
+                additional = re.search(r'BENEFICIO ADICIONAL DEL\s+(\d+(?:[.,]\d+)?)%', terms, re.I)
+                if p.source_id.endswith(':single-payment') and additional and not any(b.type == 'discount' and b.percentage == Decimal(additional.group(1).replace(',', '.')) and 'adicional' in (b.description or '').lower() for b in p.benefits):
+                    issues.append('single-payment additional discount omitted')
+                annual = any(re.search(r'ANUAL M[ÚU]LTIPLES VIAJES', b.description or '', re.I) for b in p.benefits if b.type == 'discount')
+                child = re.search(r'GRATIS HASTA\s+(\d+)\s+PRODUCTOS.+?HIJOS MENORES DE\s+(\d+)\s+A[ÑN]OS', terms, re.I)
+                if annual and child:
+                    if not any(b.type == 'free_service' for b in p.benefits) or not any(l.type == 'usage_count' and l.quantity == int(child.group(1)) and l.scope == 'purchased_product' for l in p.limits):
+                        issues.append('annual free-child-products entitlement or quantity omitted')
+                    if not re.search(r'HIJOS MENORES DE\s+' + child.group(2) + r'\s+A[ÑN]OS', p.specific_conditions or '', re.I):
+                        issues.append('annual child-age eligibility omitted')
+        return list(dict.fromkeys(issues))
+
+    def _assistance_variants(self, raw, terms):
+        """Roman product clauses define this offer's disjoint payment options.
+
+        Rates, quantities, ages, dates and financing all come from the payload.
+        Unsupported clause shapes fail closed rather than emitting a subset.
+        """
+        boundaries = list(re.finditer(r'\((I|II|III|IV|V)\)\s+UN PRODUCTO ASSIST CARD\s+', terms, re.I))
+        if [m.group(1).upper() for m in boundaries] != ['I', 'II', 'III', 'IV', 'V']:
+            raise ValueError('BBVA assistance product clauses incomplete or reordered; review required')
+        prefix = terms[:boundaries[0].start()]
+        sections = {m.group(1).upper(): terms[m.end():boundaries[i+1].start() if i+1 < len(boundaries) else len(terms)]
+                    for i, m in enumerate(boundaries)}
+        parsed = []
+        for key in ['I', 'II', 'III', 'IV']:
+            section = sections[key]
+            offer = re.match(r'(.+?)\s+MODALIDAD\s+(DIARIA\s*\(HASTA\s+(\d+)\s+D[IÍ]AS\)|ANUAL M[ÚU]LTIPLES VIAJES)\s+OBTENGA UN BENEFICIO DEL\s+(\d+(?:[.,]\d+)?)%\s*\([^)]*\)\s+DE DESCUENTO SOBRE LA TARIFA PUBLICADA\.', section, re.I)
+            if not offer:
+                raise ValueError('BBVA assistance product/rate/modality clause not understood; review required')
+            products = tuple(sorted(part.strip().lower() for part in offer.group(1).split(',')))
+            modality = 'daily' if offer.group(3) else 'annual'
+            rate = Decimal(offer.group(4).replace(',', '.'))
+            parsed.append((products, modality, offer.group(2), rate, offer.group(0)))
+        extra = re.match(r'(.+?)\s+BAJO CUALQUIER MODALIDAD,\s+OBTENGA UN BENEFICIO ADICIONAL DEL\s+(\d+(?:[.,]\d+)?)%\s*\([^)]*\)\s+DE DESCUENTO SOBRE EL PRECIO FINAL PUBLICADO ABONANDO EL PRODUCTO ASSIST CARD EN\s+(\d+)\s*\([^)]*\)\s+SOLO PAGO CON TARJETAS DE CR[EÉ]DITO\s+(.+?)\.', sections['V'], re.I)
+        child = re.search(r'OBTENGA GRATIS HASTA\s+(\d+)\s+PRODUCTOS COMO M[ÁA]XIMO CON ID[ÉE]NTICA VIGENCIA, MODALIDAD Y CARACTER[ÍI]STICAS AL ABONADO PARA SUS HIJOS MENORES DE\s+(\d+)\s+A[ÑN]OS', sections['IV'], re.I)
+        service_start = re.search(r'FECHA L[IÍ]MITE DE INICIO DE VIGENCIA\s+(\d{2}/\d{2}/\d{4})', prefix, re.I)
+        if not extra or not child or not service_start or int(extra.group(3)) != 1 or not re.search(r'NO APLICABLE A CUOTAS', sections['V'], re.I):
+            raise ValueError('BBVA assistance payment/free-products/service-start dimensions incomplete; review required')
+        extra_products = tuple(sorted(part.strip().lower() for part in extra.group(1).split(',')))
+        annual = next((p for p in parsed if p[1] == 'annual'), None)
+        daily_products = [name for products, modality, *_ in parsed if modality == 'daily' for name in products]
+        if not annual or len(daily_products) != len(set(daily_products)) or set(daily_products) != set(extra_products) or annual[0] != extra_products:
+            raise ValueError('BBVA assistance product coverage not exhaustive; review required')
+        allowed_networks = []
+        remainder = extra.group(4)
+        for token in re.split(r'\s*,\s*|\s+O\s+', remainder, flags=re.I):
+            network = {'american express': 'american_express', 'visa': 'visa', 'mastercard': 'mastercard'}.get(token.lower())
+            if not network:
+                raise ValueError('BBVA assistance payment networks not understood; review required')
+            allowed_networks.append(network)
+        quota = self._normalize_installments(raw['detail']['beneficios'][0].get('cuota'))
+        if not quota:
+            raise ValueError('BBVA assistance financing option missing; review required')
+        common_tail = re.split(r'LOS ACCIONISTAS', sections['V'][extra.end():], flags=re.I)[0]
+        daily_exclusions = re.search(r'PROMOCI[ÓO]N\s+\(I\),\(II\)\s+Y\s+\(III\)\s+(.+?)\s*$', sections['III'], re.I)
+        annual_exclusions = re.search(r'PROMOCI[ÓO]N NO V[ÁA]LIDA.+?(?=A SU VEZ)', sections['IV'], re.I)
+        if not daily_exclusions or not annual_exclusions:
+            raise ValueError('BBVA assistance modality exclusions incomplete; review required')
+        title = re.sub(r'\s+\d+\s+cuotas.*$', '', self._clean_text(raw['detail']['cabecera']), flags=re.I)
+        output = []
+
+        def build(products, modality, modality_label, rate, source_clause, single_payment):
+            identity = '|'.join(products) + '|' + modality
+            suffix = hashlib.sha256(identity.encode()).hexdigest()[:16]
+            benefits = []
+            if rate is not None:
+                benefits.append(Benefit(type='discount', percentage=rate, description=source_clause + ' Descuento ya incluido en el precio publicado.'))
+            if single_payment:
+                benefits.append(Benefit(type='discount', percentage=Decimal(extra.group(2).replace(',', '.')),
+                    description='Descuento adicional sobre el precio final publicado, en un solo pago; no se suman los porcentajes y no aplica a cuotas.'))
+            else:
+                benefits.append(Benefit(type='installments', installment_options=[quota], interest_free=None))
+            p = NormalizedPromotion(source=raw['source'], source_id=f"{raw['source_id']}:product-{suffix}:" + ('single-payment' if single_payment else 'financing'),
+                promotion_group_id=str(raw['source_id']), scraped_at=datetime.fromisoformat(raw['scraped_at']),
+                title=title + ': ' + ', '.join(products) + ' / ' + modality_label + (' / un pago' if single_payment else ' / cuotas'),
+                scope='merchant', merchant=re.sub(r'\s+\d+\s+cuotas.*$', '', title, flags=re.I), promotion_url=raw.get('source_url') or self.PROMOTIONS_URL,
+                valid_from=self._parse_date(raw['catalog'].get('fechaDesde')), valid_to=self._parse_date(raw['catalog'].get('fechaHasta')),
+                benefits=benefits, online=True, days_of_week=self._normalize_days(raw['detail'].get('diasPromo') or raw['catalog'].get('diasPromo')), terms=terms)
+            p.applies_every_day = True if len(p.days_of_week) == 7 else None
+            if single_payment:
+                p.payment_methods = [PaymentMethod(raw_name='Tarjeta de crédito BBVA ' + network, issuer='BBVA', network=network, card_type='credit', payment_rail='card') for network in allowed_networks]
+            else:
+                p.payment_methods = [PaymentMethod(raw_name='Tarjeta de crédito BBVA', issuer='BBVA', card_type='credit', payment_rail='card')]
+            if modality == 'annual':
+                p.benefits.append(Benefit(type='free_service', description=child.group(0)))
+                p.limits.append(PromotionLimit(type='usage_count', quantity=int(child.group(1)), scope='purchased_product',
+                    description='Máximo de productos gratuitos para hijos por producto abonado, con idéntica vigencia, modalidad y características; no limita los productos abonados.'))
+            covered_modalities = '; '.join(dict.fromkeys(item[2] for item in parsed))
+            exclusions = daily_exclusions.group(0) if modality == 'daily' else annual_exclusions.group(0) if modality == 'annual' else 'Resto de modalidades: excluye ' + covered_modalities + ', ya representadas por separado. No se trasladan las exclusiones de I–IV al beneficio V.'
+            if modality == 'remaining-modalities' and not single_payment:
+                exclusions += ' Solo financiación publicada por la API para los productos enumerados; no se extrapolan los descuentos ni productos gratuitos de I–V.'
+            req = '; '.join(self._normalize_requirements(raw['detail']['beneficios'][0].get('requisitos')))
+            p.specific_conditions = conditions(('Productos', ', '.join(products)), ('Modalidad', modality_label),
+                ('Condiciones', exclusions), ('Pago', extra.group(0) if single_payment else f'{quota} cuotas según catálogo; sin promesa de interés cero. El descuento adicional de un pago no aplica.'),
+                ('Hijos', child.group(0)) if modality == 'annual' else None,
+                ('Inicio del servicio', 'Fecha límite ' + service_start.group(1) + '; no extiende la vigencia de compra.'),
+                ('Canales directos', req), ('Restricciones generales', prefix + ' ' + common_tail))
+            return p
+
+        for products, modality, label, rate, clause in parsed:
+            for single_payment in [False, True]:
+                output.append(build(products, modality, label, rate, clause, single_payment))
+        # The API financing node does not restrict modalities. I–IV restrict
+        # their discounts, and V excludes financing only for its extra discount.
+        output.append(build(extra_products, 'remaining-modalities', 'Otras modalidades fuera de I–IV', None, '', False))
+        output.append(build(extra_products, 'remaining-modalities', 'Otras modalidades fuera de I–IV', None, '', True))
+        issues = self.review_normalized(raw, output)
+        if issues:
+            raise ValueError('BBVA incomplete assistance representation: ' + '; '.join(issues))
+        return output
 
     def _mileage_redemption(self, raw, terms):
         catalog, detail = raw['catalog'], raw['detail']
@@ -499,7 +715,7 @@ class BBVANormalizer:
         if len(set(networks)) == 1: methods[0].network = networks[0]
         # A single explicit eligibility clause can name both networks for the same
         # credit card type; this is evidence for two alternatives, not a product.
-        paired_networks = re.search(r'tarjetas?\s+de\s+cr[eé]dito\s+visa\s+y\s+mastercard\s+emitidas?\s+por\s+BBVA', text, re.I)
+        paired_networks = re.search(r'tarjetas?\s+de\s+cr[eé]dito\s+visa\s+y(?:/o)?\s+mastercard\s+emitidas?\s+por\s+BBVA', text, re.I)
         if paired_networks:
             methods = [methods[0].model_copy(update={'network': network, 'card_type': 'credit'}) for network in ['visa', 'mastercard']]
         # The legally binding exclusive route has priority over a vague marketing list.

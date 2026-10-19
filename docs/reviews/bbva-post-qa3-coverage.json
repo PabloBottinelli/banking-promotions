@@ -1,0 +1,7199 @@
+{
+  "phase": "developer corrections after QA3; not an independent audit",
+  "reviewed_at": "2026-10-19T14:56:55.567683+00:00",
+  "input_note": "Prior 989-detail capture, twelve official details refreshed; no accepted snapshot replaced.",
+  "raw_count": 989,
+  "normalized_raw_count": 985,
+  "variant_count": 1047,
+  "unique_variant_ids": 1047,
+  "previous_normalized_raw_count": 985,
+  "previous_variant_count": 1038,
+  "removed_variant_ids": [
+    "86275"
+  ],
+  "added_variant_ids": [
+    "88051:product-10c21d9401c1a7bf:financing",
+    "88051:product-10c21d9401c1a7bf:single-payment",
+    "88051:product-1797a7c7e7e45497:financing",
+    "88051:product-1797a7c7e7e45497:single-payment",
+    "88051:product-7ad05c9ea06083ca:financing",
+    "88051:product-7ad05c9ea06083ca:single-payment",
+    "88051:product-bcf8d5a710da8f62:financing",
+    "88051:product-bcf8d5a710da8f62:single-payment",
+    "88051:product-ea9d35c26a87f0bc:financing",
+    "88051:product-ea9d35c26a87f0bc:single-payment"
+  ],
+  "changed_existing_variants": {
+    "84091": [
+      "benefits",
+      "limits",
+      "payment_methods",
+      "specific_conditions"
+    ],
+    "84535": [
+      "payment_methods"
+    ],
+    "85530": [
+      "limits"
+    ],
+    "88050": [
+      "limits",
+      "specific_conditions"
+    ],
+    "88081": [
+      "limits",
+      "specific_conditions"
+    ],
+    "88282": [
+      "limits",
+      "specific_conditions"
+    ],
+    "88313": [
+      "limits",
+      "specific_conditions"
+    ]
+  },
+  "blocked": [
+    {
+      "source_id": "88215",
+      "reason": "BBVA conflicting benefit percentage: headline/requirements 40% versus legal 30%; review required"
+    },
+    {
+      "source_id": "86275",
+      "reason": "BBVA conflicting payment eligibility: API installments versus legal single-payment-only purchase; review required"
+    },
+    {
+      "source_id": "87567",
+      "reason": "BBVA benefit not identifiable from source"
+    },
+    {
+      "source_id": "87797",
+      "reason": "BBVA conflicting benefit percentage: headline/requirements 10% versus legal 25%; review required"
+    }
+  ],
+  "commercial_review_reasons": [
+    "88410: contradictory additional-card eligibility",
+    "88313: Fuente inconsistente: el mismo tope figura con frecuencia promotion en el campo estructurado y monthly en las bases. Periodicidad sin resolver; requiere revisión.",
+    "88050: Fuente inconsistente: el mismo tope figura con frecuencia monthly en el campo estructurado y promotion en las bases. Periodicidad sin resolver; requiere revisión.",
+    "88152: invalid legal start date 01/20/2026",
+    "88215: headline benefit percentage 40% conflicts with legal 30%",
+    "88215: normalization/commercial review blocked: BBVA conflicting benefit percentage: headline/requirements 40% versus legal 30%; review required",
+    "88081: Fuente inconsistente: el mismo tope figura con frecuencia promotion en el campo estructurado y monthly en las bases. Periodicidad sin resolver; requiere revisión.",
+    "86275: normalization/commercial review blocked: BBVA conflicting payment eligibility: API installments versus legal single-payment-only purchase; review required",
+    "88097: catalog end 2026-10-31 conflicts with legal 2026-10-30",
+    "88302: catalog start 2026-10-13 conflicts with legal 2026-10-01",
+    "88307: catalog start 2026-10-13 conflicts with legal 2026-10-01",
+    "88282: Fuente inconsistente: el mismo tope figura con frecuencia promotion en el campo estructurado y monthly en las bases. Periodicidad sin resolver; requiere revisión.",
+    "87567: normalization/commercial review blocked: BBVA benefit not identifiable from source",
+    "88118: catalog start 2026-10-05 conflicts with legal 2026-10-01",
+    "88116: catalog start 2026-10-05 conflicts with legal 2026-10-01",
+    "88117: catalog start 2026-10-05 conflicts with legal 2026-10-01",
+    "82092: catalog start 2025-12-18 conflicts with legal 2025-12-17",
+    "87442: catalog start 2026-09-01 conflicts with legal 2026-08-01",
+    "88015: catalog start 2026-09-28 conflicts with legal 2026-08-18",
+    "87797: headline benefit percentage 10% conflicts with legal 25%",
+    "87797: normalization/commercial review blocked: BBVA conflicting benefit percentage: headline/requirements 10% versus legal 25%; review required",
+    "84535: catalog start 2026-04-20 conflicts with legal 2026-04-22",
+    "88016: catalog start 2026-09-28 conflicts with legal 2026-09-29"
+  ],
+  "catalog_comparison": {
+    "checked_at": "2026-10-19T14:48:53.760663+00:00",
+    "previous_count": 989,
+    "current_count": 989,
+    "added_ids": [],
+    "missing_ids": [],
+    "changed_catalog_ids": [
+      "87356"
+    ],
+    "official_total": 989,
+    "official_pages": 50,
+    "pagination_verified": true,
+    "page_ids": [
+      [
+        "88114",
+        "86278",
+        "87336",
+        "88410",
+        "87665",
+        "87739",
+        "87740",
+        "87741",
+        "88098",
+        "88099",
+        "88100",
+        "88102",
+        "88104",
+        "88105",
+        "88106",
+        "88115",
+        "88101",
+        "88103",
+        "88107",
+        "88108"
+      ],
+      [
+        "88109",
+        "88110",
+        "88111",
+        "88112",
+        "88113",
+        "87551",
+        "87569",
+        "87570",
+        "87571",
+        "87572",
+        "87583",
+        "87586",
+        "87584",
+        "87585",
+        "87587",
+        "87588",
+        "87589",
+        "87590",
+        "87591",
+        "87592"
+      ],
+      [
+        "87593",
+        "87594",
+        "87595",
+        "87596",
+        "87597",
+        "87598",
+        "87605",
+        "87606",
+        "87607",
+        "87608",
+        "87609",
+        "87610",
+        "87611",
+        "87612",
+        "87613",
+        "87614",
+        "87615",
+        "87616",
+        "87617",
+        "87618"
+      ],
+      [
+        "87619",
+        "87620",
+        "87621",
+        "87622",
+        "88313",
+        "84055",
+        "85000",
+        "88050",
+        "88051",
+        "88074",
+        "88076",
+        "88094",
+        "88095",
+        "83911",
+        "85529",
+        "85530",
+        "86277",
+        "86777",
+        "88152",
+        "87867"
+      ],
+      [
+        "87865",
+        "87862",
+        "87864",
+        "87868",
+        "88216",
+        "88215",
+        "87519",
+        "87520",
+        "87521",
+        "87522",
+        "87523",
+        "87557",
+        "87624",
+        "87894",
+        "87895",
+        "88005",
+        "88006",
+        "88008",
+        "87984",
+        "87988"
+      ],
+      [
+        "87983",
+        "87985",
+        "87989",
+        "87994",
+        "88022",
+        "88021",
+        "88407",
+        "87395",
+        "87663",
+        "87683",
+        "87684",
+        "87524",
+        "87525",
+        "87526",
+        "87527",
+        "87528",
+        "87529",
+        "87530",
+        "87531",
+        "87532"
+      ],
+      [
+        "87533",
+        "87534",
+        "87711",
+        "84091",
+        "87356",
+        "87357",
+        "87358",
+        "87359",
+        "87360",
+        "87999",
+        "87998",
+        "88083",
+        "87599",
+        "87600",
+        "87601",
+        "87602",
+        "87603",
+        "87604",
+        "84056",
+        "88081"
+      ],
+      [
+        "87734",
+        "85446",
+        "86275",
+        "88097",
+        "87863",
+        "87869",
+        "87856",
+        "87855",
+        "87866",
+        "87872",
+        "87873",
+        "87886",
+        "87890",
+        "87896",
+        "87889",
+        "87891",
+        "88003",
+        "88302",
+        "88307",
+        "87213"
+      ],
+      [
+        "87215",
+        "86294",
+        "87858",
+        "88282",
+        "87567",
+        "87887",
+        "87167",
+        "85528",
+        "87870",
+        "87349",
+        "87871",
+        "88012",
+        "88020",
+        "88019",
+        "88039",
+        "88001",
+        "88000",
+        "88002",
+        "88073",
+        "87874"
+      ],
+      [
+        "87879",
+        "87881",
+        "88009",
+        "87997",
+        "88013",
+        "88014",
+        "88018",
+        "88040",
+        "88075",
+        "87892",
+        "87893",
+        "87898",
+        "87897",
+        "87903",
+        "88017",
+        "88023",
+        "87662",
+        "88118",
+        "87875",
+        "87877"
+      ],
+      [
+        "87876",
+        "87878",
+        "88010",
+        "88044",
+        "88045",
+        "88046",
+        "88047",
+        "88048",
+        "88049",
+        "88079",
+        "84296",
+        "88116",
+        "88117",
+        "87880",
+        "87882",
+        "87899",
+        "87900",
+        "87902",
+        "87901",
+        "88011"
+      ],
+      [
+        "88041",
+        "88042",
+        "88043",
+        "82092",
+        "85037",
+        "87240",
+        "87241",
+        "87242",
+        "87243",
+        "87244",
+        "87245",
+        "87246",
+        "87247",
+        "87248",
+        "87249",
+        "87250",
+        "87251",
+        "87252",
+        "87253",
+        "87254"
+      ],
+      [
+        "87255",
+        "87256",
+        "87257",
+        "87258",
+        "87259",
+        "87264",
+        "87225",
+        "87226",
+        "87227",
+        "87228",
+        "87229",
+        "87230",
+        "87231",
+        "87232",
+        "87233",
+        "87234",
+        "87235",
+        "87236",
+        "87237",
+        "87238"
+      ],
+      [
+        "87239",
+        "87299",
+        "87333",
+        "87334",
+        "86703",
+        "86684",
+        "86899",
+        "87806",
+        "87366",
+        "87367",
+        "87371",
+        "87372",
+        "87374",
+        "87441",
+        "87442",
+        "87443",
+        "87444",
+        "88007",
+        "88015",
+        "86663"
+      ],
+      [
+        "84603",
+        "87187",
+        "84629",
+        "87676",
+        "87732",
+        "84627",
+        "84938",
+        "84628",
+        "86665",
+        "87860",
+        "87861",
+        "87796",
+        "87797",
+        "87803",
+        "84535",
+        "85689",
+        "88306",
+        "87853",
+        "85666",
+        "88016"
+      ],
+      [
+        "86125",
+        "86124",
+        "86129",
+        "86201",
+        "86202",
+        "86207",
+        "86208",
+        "86266",
+        "76010",
+        "86542",
+        "86544",
+        "86546",
+        "86543",
+        "86545",
+        "86547",
+        "86549",
+        "86551",
+        "86553",
+        "86496",
+        "86497"
+      ],
+      [
+        "86498",
+        "86499",
+        "86500",
+        "86501",
+        "86502",
+        "86503",
+        "86504",
+        "86505",
+        "86506",
+        "86507",
+        "86508",
+        "86509",
+        "86510",
+        "86511",
+        "86512",
+        "86513",
+        "86514",
+        "86515",
+        "86516",
+        "86517"
+      ],
+      [
+        "86518",
+        "86519",
+        "86520",
+        "86521",
+        "86522",
+        "86523",
+        "86524",
+        "86525",
+        "86526",
+        "86527",
+        "86528",
+        "86529",
+        "86530",
+        "86531",
+        "86532",
+        "86533",
+        "86534",
+        "86548",
+        "86550",
+        "86552"
+      ],
+      [
+        "86554",
+        "86556",
+        "84998",
+        "84997",
+        "87166",
+        "87170",
+        "87171",
+        "87111",
+        "87112",
+        "87113",
+        "87114",
+        "87115",
+        "87116",
+        "87117",
+        "87118",
+        "87119",
+        "87120",
+        "87122",
+        "87124",
+        "87126"
+      ],
+      [
+        "87128",
+        "87121",
+        "87123",
+        "87125",
+        "87127",
+        "87129",
+        "87165",
+        "87163",
+        "87168",
+        "87169",
+        "87172",
+        "87173",
+        "87200",
+        "87164",
+        "87197",
+        "87198",
+        "87199",
+        "87697",
+        "87698",
+        "87699"
+      ],
+      [
+        "87700",
+        "87701",
+        "88064",
+        "88065",
+        "88066",
+        "88067",
+        "88068",
+        "88069",
+        "88070",
+        "88071",
+        "88072",
+        "88085",
+        "88087",
+        "88088",
+        "88089",
+        "88086",
+        "86599",
+        "86600",
+        "86601",
+        "86602"
+      ],
+      [
+        "86603",
+        "86604",
+        "86606",
+        "86607",
+        "86608",
+        "86609",
+        "86610",
+        "86611",
+        "86612",
+        "86613",
+        "86614",
+        "86619",
+        "86620",
+        "86621",
+        "86622",
+        "86623",
+        "86624",
+        "86625",
+        "86626",
+        "86630"
+      ],
+      [
+        "86632",
+        "84974",
+        "86126",
+        "86127",
+        "86128",
+        "86130",
+        "86345",
+        "85088",
+        "85699",
+        "85698",
+        "85697",
+        "85700",
+        "85828",
+        "85830",
+        "85829",
+        "86295",
+        "86296",
+        "86297",
+        "86298",
+        "86299"
+      ],
+      [
+        "86300",
+        "86301",
+        "86302",
+        "86303",
+        "86304",
+        "86305",
+        "86306",
+        "86307",
+        "86308",
+        "86309",
+        "86310",
+        "86311",
+        "86312",
+        "86313",
+        "86314",
+        "86315",
+        "86316",
+        "86317",
+        "86318",
+        "86319"
+      ],
+      [
+        "86320",
+        "86321",
+        "86322",
+        "86323",
+        "86324",
+        "86325",
+        "86326",
+        "86327",
+        "86328",
+        "86329",
+        "86330",
+        "86331",
+        "86332",
+        "86333",
+        "86334",
+        "86336",
+        "86338",
+        "86340",
+        "86342",
+        "86344"
+      ],
+      [
+        "86390",
+        "86335",
+        "86337",
+        "86339",
+        "86341",
+        "86343",
+        "86346",
+        "86347",
+        "86348",
+        "86349",
+        "86350",
+        "86351",
+        "86352",
+        "86353",
+        "86354",
+        "86355",
+        "86356",
+        "86357",
+        "86358",
+        "86359"
+      ],
+      [
+        "86360",
+        "86361",
+        "86362",
+        "86363",
+        "86364",
+        "86365",
+        "86366",
+        "86367",
+        "86368",
+        "86369",
+        "86370",
+        "86371",
+        "86372",
+        "86373",
+        "86374",
+        "86375",
+        "86376",
+        "86377",
+        "86555",
+        "86557"
+      ],
+      [
+        "86558",
+        "86559",
+        "86378",
+        "86379",
+        "86380",
+        "86381",
+        "86382",
+        "86383",
+        "86384",
+        "86385",
+        "86386",
+        "86387",
+        "86388",
+        "86389",
+        "86391",
+        "86392",
+        "86393",
+        "86394",
+        "86395",
+        "86396"
+      ],
+      [
+        "86397",
+        "86398",
+        "86399",
+        "86400",
+        "86401",
+        "86402",
+        "86403",
+        "86404",
+        "86405",
+        "86406",
+        "86407",
+        "86408",
+        "86409",
+        "86410",
+        "86411",
+        "86412",
+        "86413",
+        "86414",
+        "86415",
+        "86416"
+      ],
+      [
+        "86417",
+        "86418",
+        "86419",
+        "86420",
+        "86421",
+        "86422",
+        "86423",
+        "86424",
+        "86425",
+        "86426",
+        "86427",
+        "86428",
+        "86429",
+        "86430",
+        "86431",
+        "86432",
+        "86433",
+        "86434",
+        "86435",
+        "86436"
+      ],
+      [
+        "86437",
+        "86438",
+        "86439",
+        "86440",
+        "86441",
+        "86442",
+        "86443",
+        "86444",
+        "86445",
+        "86446",
+        "86447",
+        "86448",
+        "86449",
+        "86450",
+        "86451",
+        "86452",
+        "86453",
+        "86454",
+        "86455",
+        "86456"
+      ],
+      [
+        "86457",
+        "86458",
+        "86495",
+        "86734",
+        "86628",
+        "86627",
+        "86629",
+        "86631",
+        "86633",
+        "86634",
+        "86635",
+        "86636",
+        "86761",
+        "86762",
+        "86764",
+        "86768",
+        "86763",
+        "86765",
+        "86766",
+        "86767"
+      ],
+      [
+        "86769",
+        "86770",
+        "86771",
+        "86772",
+        "86773",
+        "86774",
+        "86775",
+        "86776",
+        "86778",
+        "86779",
+        "86780",
+        "86781",
+        "86782",
+        "86783",
+        "86784",
+        "86785",
+        "86786",
+        "86787",
+        "86788",
+        "86789"
+      ],
+      [
+        "86791",
+        "86794",
+        "86790",
+        "86792",
+        "86939",
+        "86938",
+        "86886",
+        "86902",
+        "86919",
+        "86920",
+        "86921",
+        "86922",
+        "86923",
+        "86924",
+        "86925",
+        "86926",
+        "86927",
+        "86828",
+        "86928",
+        "86929"
+      ],
+      [
+        "86930",
+        "86931",
+        "86932",
+        "86933",
+        "86934",
+        "86935",
+        "86936",
+        "86937",
+        "86940",
+        "86941",
+        "86942",
+        "86943",
+        "86944",
+        "86945",
+        "86946",
+        "86947",
+        "86948",
+        "88090",
+        "88091",
+        "88092"
+      ],
+      [
+        "88093",
+        "88121",
+        "88122",
+        "88119",
+        "88120",
+        "88139",
+        "88141",
+        "88143",
+        "88145",
+        "88147",
+        "88149",
+        "88151",
+        "88140",
+        "88142",
+        "88144",
+        "88146",
+        "88148",
+        "88150",
+        "87810",
+        "87809"
+      ],
+      [
+        "87811",
+        "87812",
+        "87813",
+        "87814",
+        "87815",
+        "87816",
+        "87817",
+        "87818",
+        "87819",
+        "87743",
+        "87746",
+        "87744",
+        "87745",
+        "87747",
+        "87748",
+        "87749",
+        "87750",
+        "87751",
+        "87752",
+        "87794"
+      ],
+      [
+        "87808",
+        "87804",
+        "87807",
+        "87558",
+        "87559",
+        "87904",
+        "87906",
+        "87905",
+        "88028",
+        "88030",
+        "88032",
+        "88034",
+        "88036",
+        "88029",
+        "88031",
+        "88033",
+        "88035",
+        "88037",
+        "88283",
+        "88284"
+      ],
+      [
+        "88296",
+        "88297",
+        "88298",
+        "88299",
+        "88300",
+        "88301",
+        "87174",
+        "87175",
+        "87176",
+        "87177",
+        "87178",
+        "87179",
+        "87134",
+        "87135",
+        "87136",
+        "87137",
+        "87138",
+        "87139",
+        "87140",
+        "87141"
+      ],
+      [
+        "87142",
+        "87149",
+        "87150",
+        "87152",
+        "87151",
+        "87194",
+        "87201",
+        "87649",
+        "87650",
+        "87651",
+        "87704",
+        "88054",
+        "88055",
+        "88056",
+        "88057",
+        "88058",
+        "88059",
+        "86950",
+        "86951",
+        "86952"
+      ],
+      [
+        "86953",
+        "86955",
+        "86957",
+        "86954",
+        "86956",
+        "86958",
+        "86908",
+        "86909",
+        "86910",
+        "86912",
+        "86911",
+        "86949",
+        "87820",
+        "87821",
+        "87204",
+        "87206",
+        "87214",
+        "87189",
+        "87193",
+        "87203"
+      ],
+      [
+        "87205",
+        "87207",
+        "87190",
+        "87202",
+        "87754",
+        "87755",
+        "87756",
+        "87560",
+        "87561",
+        "87562",
+        "87563",
+        "87564",
+        "87565",
+        "87566",
+        "87631",
+        "87632",
+        "87633",
+        "87634",
+        "87635",
+        "87636"
+      ],
+      [
+        "87637",
+        "87638",
+        "87639",
+        "87640",
+        "87641",
+        "86480",
+        "87643",
+        "87644",
+        "87645",
+        "87646",
+        "87647",
+        "87648",
+        "87652",
+        "87653",
+        "87685",
+        "87686",
+        "87687",
+        "87690",
+        "87693",
+        "87694"
+      ],
+      [
+        "87705",
+        "87667",
+        "87668",
+        "87669",
+        "87670",
+        "87688",
+        "87689",
+        "87708",
+        "87706",
+        "87707",
+        "87709",
+        "87710",
+        "87714",
+        "88123",
+        "88124",
+        "88125",
+        "88126",
+        "88127",
+        "88128",
+        "88129"
+      ],
+      [
+        "88130",
+        "87822",
+        "87823",
+        "87824",
+        "87825",
+        "87826",
+        "87827",
+        "87828",
+        "87829",
+        "87830",
+        "87831",
+        "87832",
+        "87833",
+        "87835",
+        "87836",
+        "87837",
+        "87838",
+        "87834",
+        "87859",
+        "87758"
+      ],
+      [
+        "87800",
+        "87801",
+        "87759",
+        "87760",
+        "87761",
+        "87762",
+        "87763",
+        "87764",
+        "87765",
+        "87766",
+        "87767",
+        "87768",
+        "87769",
+        "87770",
+        "87771",
+        "87772",
+        "87773",
+        "87779",
+        "87780",
+        "87783"
+      ],
+      [
+        "87782",
+        "87781",
+        "87784",
+        "87491",
+        "87492",
+        "87493",
+        "87494",
+        "87495",
+        "87496",
+        "87497",
+        "87498",
+        "87499",
+        "87642",
+        "87907",
+        "87912",
+        "87914",
+        "87916",
+        "87908",
+        "87909",
+        "87910"
+      ],
+      [
+        "87911",
+        "87913",
+        "87915",
+        "87917",
+        "87918",
+        "87919",
+        "88285",
+        "87792",
+        "88060",
+        "88061",
+        "88062",
+        "88063",
+        "88131",
+        "88133",
+        "88135",
+        "88137",
+        "88132",
+        "88134",
+        "88136",
+        "88138"
+      ],
+      [
+        "88279",
+        "88280",
+        "88024",
+        "88025",
+        "88026",
+        "88286",
+        "88291",
+        "88287",
+        "88288",
+        "88289",
+        "88290",
+        "88293",
+        "88294",
+        "88292",
+        "88295",
+        "88312",
+        "88436",
+        "88437",
+        "88438",
+        "88439"
+      ],
+      [
+        "88440",
+        "88441",
+        "88442",
+        "88443",
+        "88444",
+        "88445",
+        "88446",
+        "87805",
+        "87657"
+      ],
+      []
+    ]
+  },
+  "catalog_complete": true,
+  "normalization_complete": false,
+  "snapshot_replace_allowed": false,
+  "requires_review": true,
+  "safe_to_deactivate": false,
+  "outcomes": {
+    "88114": {
+      "status": "normalized",
+      "variant_ids": [
+        "88114"
+      ]
+    },
+    "86278": {
+      "status": "normalized",
+      "variant_ids": [
+        "86278"
+      ]
+    },
+    "87336": {
+      "status": "normalized",
+      "variant_ids": [
+        "87336"
+      ]
+    },
+    "88410": {
+      "status": "normalized",
+      "variant_ids": [
+        "88410"
+      ]
+    },
+    "87665": {
+      "status": "normalized",
+      "variant_ids": [
+        "87665",
+        "87665:financing-minimum"
+      ]
+    },
+    "87739": {
+      "status": "normalized",
+      "variant_ids": [
+        "87739"
+      ]
+    },
+    "87740": {
+      "status": "normalized",
+      "variant_ids": [
+        "87740"
+      ]
+    },
+    "87741": {
+      "status": "normalized",
+      "variant_ids": [
+        "87741",
+        "87741:financing-minimum"
+      ]
+    },
+    "88098": {
+      "status": "normalized",
+      "variant_ids": [
+        "88098"
+      ]
+    },
+    "88099": {
+      "status": "normalized",
+      "variant_ids": [
+        "88099"
+      ]
+    },
+    "88100": {
+      "status": "normalized",
+      "variant_ids": [
+        "88100"
+      ]
+    },
+    "88102": {
+      "status": "normalized",
+      "variant_ids": [
+        "88102"
+      ]
+    },
+    "88104": {
+      "status": "normalized",
+      "variant_ids": [
+        "88104"
+      ]
+    },
+    "88105": {
+      "status": "normalized",
+      "variant_ids": [
+        "88105"
+      ]
+    },
+    "88106": {
+      "status": "normalized",
+      "variant_ids": [
+        "88106"
+      ]
+    },
+    "88115": {
+      "status": "normalized",
+      "variant_ids": [
+        "88115"
+      ]
+    },
+    "88101": {
+      "status": "normalized",
+      "variant_ids": [
+        "88101"
+      ]
+    },
+    "88103": {
+      "status": "normalized",
+      "variant_ids": [
+        "88103"
+      ]
+    },
+    "88107": {
+      "status": "normalized",
+      "variant_ids": [
+        "88107"
+      ]
+    },
+    "88108": {
+      "status": "normalized",
+      "variant_ids": [
+        "88108"
+      ]
+    },
+    "88109": {
+      "status": "normalized",
+      "variant_ids": [
+        "88109"
+      ]
+    },
+    "88110": {
+      "status": "normalized",
+      "variant_ids": [
+        "88110"
+      ]
+    },
+    "88111": {
+      "status": "normalized",
+      "variant_ids": [
+        "88111"
+      ]
+    },
+    "88112": {
+      "status": "normalized",
+      "variant_ids": [
+        "88112"
+      ]
+    },
+    "88113": {
+      "status": "normalized",
+      "variant_ids": [
+        "88113"
+      ]
+    },
+    "87551": {
+      "status": "normalized",
+      "variant_ids": [
+        "87551"
+      ]
+    },
+    "87569": {
+      "status": "normalized",
+      "variant_ids": [
+        "87569",
+        "87569:financing-minimum"
+      ]
+    },
+    "87570": {
+      "status": "normalized",
+      "variant_ids": [
+        "87570",
+        "87570:financing-minimum"
+      ]
+    },
+    "87571": {
+      "status": "normalized",
+      "variant_ids": [
+        "87571",
+        "87571:financing-minimum"
+      ]
+    },
+    "87572": {
+      "status": "normalized",
+      "variant_ids": [
+        "87572",
+        "87572:financing-minimum"
+      ]
+    },
+    "87583": {
+      "status": "normalized",
+      "variant_ids": [
+        "87583",
+        "87583:financing-minimum"
+      ]
+    },
+    "87586": {
+      "status": "normalized",
+      "variant_ids": [
+        "87586",
+        "87586:financing-minimum"
+      ]
+    },
+    "87584": {
+      "status": "normalized",
+      "variant_ids": [
+        "87584",
+        "87584:financing-minimum"
+      ]
+    },
+    "87585": {
+      "status": "normalized",
+      "variant_ids": [
+        "87585",
+        "87585:financing-minimum"
+      ]
+    },
+    "87587": {
+      "status": "normalized",
+      "variant_ids": [
+        "87587",
+        "87587:financing-minimum"
+      ]
+    },
+    "87588": {
+      "status": "normalized",
+      "variant_ids": [
+        "87588",
+        "87588:financing-minimum"
+      ]
+    },
+    "87589": {
+      "status": "normalized",
+      "variant_ids": [
+        "87589",
+        "87589:financing-minimum"
+      ]
+    },
+    "87590": {
+      "status": "normalized",
+      "variant_ids": [
+        "87590",
+        "87590:financing-minimum"
+      ]
+    },
+    "87591": {
+      "status": "normalized",
+      "variant_ids": [
+        "87591",
+        "87591:financing-minimum"
+      ]
+    },
+    "87592": {
+      "status": "normalized",
+      "variant_ids": [
+        "87592",
+        "87592:financing-minimum"
+      ]
+    },
+    "87593": {
+      "status": "normalized",
+      "variant_ids": [
+        "87593",
+        "87593:financing-minimum"
+      ]
+    },
+    "87594": {
+      "status": "normalized",
+      "variant_ids": [
+        "87594",
+        "87594:financing-minimum"
+      ]
+    },
+    "87595": {
+      "status": "normalized",
+      "variant_ids": [
+        "87595",
+        "87595:financing-minimum"
+      ]
+    },
+    "87596": {
+      "status": "normalized",
+      "variant_ids": [
+        "87596",
+        "87596:financing-minimum"
+      ]
+    },
+    "87597": {
+      "status": "normalized",
+      "variant_ids": [
+        "87597",
+        "87597:financing-minimum"
+      ]
+    },
+    "87598": {
+      "status": "normalized",
+      "variant_ids": [
+        "87598",
+        "87598:financing-minimum"
+      ]
+    },
+    "87605": {
+      "status": "normalized",
+      "variant_ids": [
+        "87605",
+        "87605:financing-minimum"
+      ]
+    },
+    "87606": {
+      "status": "normalized",
+      "variant_ids": [
+        "87606",
+        "87606:financing-minimum"
+      ]
+    },
+    "87607": {
+      "status": "normalized",
+      "variant_ids": [
+        "87607",
+        "87607:financing-minimum"
+      ]
+    },
+    "87608": {
+      "status": "normalized",
+      "variant_ids": [
+        "87608",
+        "87608:financing-minimum"
+      ]
+    },
+    "87609": {
+      "status": "normalized",
+      "variant_ids": [
+        "87609",
+        "87609:financing-minimum"
+      ]
+    },
+    "87610": {
+      "status": "normalized",
+      "variant_ids": [
+        "87610",
+        "87610:financing-minimum"
+      ]
+    },
+    "87611": {
+      "status": "normalized",
+      "variant_ids": [
+        "87611",
+        "87611:financing-minimum"
+      ]
+    },
+    "87612": {
+      "status": "normalized",
+      "variant_ids": [
+        "87612",
+        "87612:financing-minimum"
+      ]
+    },
+    "87613": {
+      "status": "normalized",
+      "variant_ids": [
+        "87613",
+        "87613:financing-minimum"
+      ]
+    },
+    "87614": {
+      "status": "normalized",
+      "variant_ids": [
+        "87614",
+        "87614:financing-minimum"
+      ]
+    },
+    "87615": {
+      "status": "normalized",
+      "variant_ids": [
+        "87615",
+        "87615:financing-minimum"
+      ]
+    },
+    "87616": {
+      "status": "normalized",
+      "variant_ids": [
+        "87616",
+        "87616:financing-minimum"
+      ]
+    },
+    "87617": {
+      "status": "normalized",
+      "variant_ids": [
+        "87617",
+        "87617:financing-minimum"
+      ]
+    },
+    "87618": {
+      "status": "normalized",
+      "variant_ids": [
+        "87618",
+        "87618:financing-minimum"
+      ]
+    },
+    "87619": {
+      "status": "normalized",
+      "variant_ids": [
+        "87619",
+        "87619:financing-minimum"
+      ]
+    },
+    "87620": {
+      "status": "normalized",
+      "variant_ids": [
+        "87620",
+        "87620:financing-minimum"
+      ]
+    },
+    "87621": {
+      "status": "normalized",
+      "variant_ids": [
+        "87621",
+        "87621:financing-minimum"
+      ]
+    },
+    "87622": {
+      "status": "normalized",
+      "variant_ids": [
+        "87622",
+        "87622:financing-minimum"
+      ]
+    },
+    "88313": {
+      "status": "normalized",
+      "variant_ids": [
+        "88313"
+      ]
+    },
+    "84055": {
+      "status": "normalized",
+      "variant_ids": [
+        "84055"
+      ]
+    },
+    "85000": {
+      "status": "normalized",
+      "variant_ids": [
+        "85000"
+      ]
+    },
+    "88050": {
+      "status": "normalized",
+      "variant_ids": [
+        "88050"
+      ]
+    },
+    "88051": {
+      "status": "normalized",
+      "variant_ids": [
+        "88051:product-1797a7c7e7e45497:financing",
+        "88051:product-1797a7c7e7e45497:single-payment",
+        "88051:product-ea9d35c26a87f0bc:financing",
+        "88051:product-ea9d35c26a87f0bc:single-payment",
+        "88051:product-bcf8d5a710da8f62:financing",
+        "88051:product-bcf8d5a710da8f62:single-payment",
+        "88051:product-10c21d9401c1a7bf:financing",
+        "88051:product-10c21d9401c1a7bf:single-payment",
+        "88051:product-7ad05c9ea06083ca:financing",
+        "88051:product-7ad05c9ea06083ca:single-payment"
+      ]
+    },
+    "88074": {
+      "status": "normalized",
+      "variant_ids": [
+        "88074"
+      ]
+    },
+    "88076": {
+      "status": "normalized",
+      "variant_ids": [
+        "88076"
+      ]
+    },
+    "88094": {
+      "status": "normalized",
+      "variant_ids": [
+        "88094"
+      ]
+    },
+    "88095": {
+      "status": "normalized",
+      "variant_ids": [
+        "88095"
+      ]
+    },
+    "83911": {
+      "status": "normalized",
+      "variant_ids": [
+        "83911"
+      ]
+    },
+    "85529": {
+      "status": "normalized",
+      "variant_ids": [
+        "85529"
+      ]
+    },
+    "85530": {
+      "status": "normalized",
+      "variant_ids": [
+        "85530"
+      ]
+    },
+    "86277": {
+      "status": "normalized",
+      "variant_ids": [
+        "86277"
+      ]
+    },
+    "86777": {
+      "status": "normalized",
+      "variant_ids": [
+        "86777"
+      ]
+    },
+    "88152": {
+      "status": "normalized",
+      "variant_ids": [
+        "88152"
+      ]
+    },
+    "87867": {
+      "status": "normalized",
+      "variant_ids": [
+        "87867"
+      ]
+    },
+    "87865": {
+      "status": "normalized",
+      "variant_ids": [
+        "87865"
+      ]
+    },
+    "87862": {
+      "status": "normalized",
+      "variant_ids": [
+        "87862",
+        "87862:gift"
+      ]
+    },
+    "87864": {
+      "status": "normalized",
+      "variant_ids": [
+        "87864"
+      ]
+    },
+    "87868": {
+      "status": "normalized",
+      "variant_ids": [
+        "87868"
+      ]
+    },
+    "88216": {
+      "status": "normalized",
+      "variant_ids": [
+        "88216"
+      ]
+    },
+    "88215": {
+      "status": "blocked",
+      "reason": "BBVA conflicting benefit percentage: headline/requirements 40% versus legal 30%; review required"
+    },
+    "87519": {
+      "status": "normalized",
+      "variant_ids": [
+        "87519"
+      ]
+    },
+    "87520": {
+      "status": "normalized",
+      "variant_ids": [
+        "87520"
+      ]
+    },
+    "87521": {
+      "status": "normalized",
+      "variant_ids": [
+        "87521"
+      ]
+    },
+    "87522": {
+      "status": "normalized",
+      "variant_ids": [
+        "87522"
+      ]
+    },
+    "87523": {
+      "status": "normalized",
+      "variant_ids": [
+        "87523"
+      ]
+    },
+    "87557": {
+      "status": "normalized",
+      "variant_ids": [
+        "87557"
+      ]
+    },
+    "87624": {
+      "status": "normalized",
+      "variant_ids": [
+        "87624"
+      ]
+    },
+    "87894": {
+      "status": "normalized",
+      "variant_ids": [
+        "87894"
+      ]
+    },
+    "87895": {
+      "status": "normalized",
+      "variant_ids": [
+        "87895"
+      ]
+    },
+    "88005": {
+      "status": "normalized",
+      "variant_ids": [
+        "88005"
+      ]
+    },
+    "88006": {
+      "status": "normalized",
+      "variant_ids": [
+        "88006"
+      ]
+    },
+    "88008": {
+      "status": "normalized",
+      "variant_ids": [
+        "88008"
+      ]
+    },
+    "87984": {
+      "status": "normalized",
+      "variant_ids": [
+        "87984"
+      ]
+    },
+    "87988": {
+      "status": "normalized",
+      "variant_ids": [
+        "87988"
+      ]
+    },
+    "87983": {
+      "status": "normalized",
+      "variant_ids": [
+        "87983"
+      ]
+    },
+    "87985": {
+      "status": "normalized",
+      "variant_ids": [
+        "87985"
+      ]
+    },
+    "87989": {
+      "status": "normalized",
+      "variant_ids": [
+        "87989"
+      ]
+    },
+    "87994": {
+      "status": "normalized",
+      "variant_ids": [
+        "87994"
+      ]
+    },
+    "88022": {
+      "status": "normalized",
+      "variant_ids": [
+        "88022"
+      ]
+    },
+    "88021": {
+      "status": "normalized",
+      "variant_ids": [
+        "88021"
+      ]
+    },
+    "88407": {
+      "status": "normalized",
+      "variant_ids": [
+        "88407",
+        "88407:mastercard-extra-chances"
+      ]
+    },
+    "87395": {
+      "status": "normalized",
+      "variant_ids": [
+        "87395"
+      ]
+    },
+    "87663": {
+      "status": "normalized",
+      "variant_ids": [
+        "87663"
+      ]
+    },
+    "87683": {
+      "status": "normalized",
+      "variant_ids": [
+        "87683"
+      ]
+    },
+    "87684": {
+      "status": "normalized",
+      "variant_ids": [
+        "87684"
+      ]
+    },
+    "87524": {
+      "status": "normalized",
+      "variant_ids": [
+        "87524"
+      ]
+    },
+    "87525": {
+      "status": "normalized",
+      "variant_ids": [
+        "87525"
+      ]
+    },
+    "87526": {
+      "status": "normalized",
+      "variant_ids": [
+        "87526"
+      ]
+    },
+    "87527": {
+      "status": "normalized",
+      "variant_ids": [
+        "87527"
+      ]
+    },
+    "87528": {
+      "status": "normalized",
+      "variant_ids": [
+        "87528"
+      ]
+    },
+    "87529": {
+      "status": "normalized",
+      "variant_ids": [
+        "87529"
+      ]
+    },
+    "87530": {
+      "status": "normalized",
+      "variant_ids": [
+        "87530"
+      ]
+    },
+    "87531": {
+      "status": "normalized",
+      "variant_ids": [
+        "87531"
+      ]
+    },
+    "87532": {
+      "status": "normalized",
+      "variant_ids": [
+        "87532"
+      ]
+    },
+    "87533": {
+      "status": "normalized",
+      "variant_ids": [
+        "87533"
+      ]
+    },
+    "87534": {
+      "status": "normalized",
+      "variant_ids": [
+        "87534"
+      ]
+    },
+    "87711": {
+      "status": "normalized",
+      "variant_ids": [
+        "87711"
+      ]
+    },
+    "84091": {
+      "status": "normalized",
+      "variant_ids": [
+        "84091"
+      ]
+    },
+    "87356": {
+      "status": "normalized",
+      "variant_ids": [
+        "87356"
+      ]
+    },
+    "87357": {
+      "status": "normalized",
+      "variant_ids": [
+        "87357"
+      ]
+    },
+    "87358": {
+      "status": "normalized",
+      "variant_ids": [
+        "87358"
+      ]
+    },
+    "87359": {
+      "status": "normalized",
+      "variant_ids": [
+        "87359"
+      ]
+    },
+    "87360": {
+      "status": "normalized",
+      "variant_ids": [
+        "87360"
+      ]
+    },
+    "87999": {
+      "status": "normalized",
+      "variant_ids": [
+        "87999"
+      ]
+    },
+    "87998": {
+      "status": "normalized",
+      "variant_ids": [
+        "87998"
+      ]
+    },
+    "88083": {
+      "status": "normalized",
+      "variant_ids": [
+        "88083"
+      ]
+    },
+    "87599": {
+      "status": "normalized",
+      "variant_ids": [
+        "87599",
+        "87599:financing-minimum"
+      ]
+    },
+    "87600": {
+      "status": "normalized",
+      "variant_ids": [
+        "87600",
+        "87600:financing-minimum"
+      ]
+    },
+    "87601": {
+      "status": "normalized",
+      "variant_ids": [
+        "87601",
+        "87601:financing-minimum"
+      ]
+    },
+    "87602": {
+      "status": "normalized",
+      "variant_ids": [
+        "87602",
+        "87602:financing-minimum"
+      ]
+    },
+    "87603": {
+      "status": "normalized",
+      "variant_ids": [
+        "87603",
+        "87603:financing-minimum"
+      ]
+    },
+    "87604": {
+      "status": "normalized",
+      "variant_ids": [
+        "87604",
+        "87604:financing-minimum"
+      ]
+    },
+    "84056": {
+      "status": "normalized",
+      "variant_ids": [
+        "84056"
+      ]
+    },
+    "88081": {
+      "status": "normalized",
+      "variant_ids": [
+        "88081"
+      ]
+    },
+    "87734": {
+      "status": "normalized",
+      "variant_ids": [
+        "87734",
+        "87734:gift"
+      ]
+    },
+    "85446": {
+      "status": "normalized",
+      "variant_ids": [
+        "85446"
+      ]
+    },
+    "86275": {
+      "status": "blocked",
+      "reason": "BBVA conflicting payment eligibility: API installments versus legal single-payment-only purchase; review required"
+    },
+    "88097": {
+      "status": "normalized",
+      "variant_ids": [
+        "88097:miles-4d82a37695b7ce9d",
+        "88097:miles-70be88b19f10908f"
+      ]
+    },
+    "87863": {
+      "status": "normalized",
+      "variant_ids": [
+        "87863:packages-accommodation",
+        "87863:domestic-flights"
+      ]
+    },
+    "87869": {
+      "status": "normalized",
+      "variant_ids": [
+        "87869"
+      ]
+    },
+    "87856": {
+      "status": "normalized",
+      "variant_ids": [
+        "87856"
+      ]
+    },
+    "87855": {
+      "status": "normalized",
+      "variant_ids": [
+        "87855"
+      ]
+    },
+    "87866": {
+      "status": "normalized",
+      "variant_ids": [
+        "87866"
+      ]
+    },
+    "87872": {
+      "status": "normalized",
+      "variant_ids": [
+        "87872"
+      ]
+    },
+    "87873": {
+      "status": "normalized",
+      "variant_ids": [
+        "87873"
+      ]
+    },
+    "87886": {
+      "status": "normalized",
+      "variant_ids": [
+        "87886"
+      ]
+    },
+    "87890": {
+      "status": "normalized",
+      "variant_ids": [
+        "87890"
+      ]
+    },
+    "87896": {
+      "status": "normalized",
+      "variant_ids": [
+        "87896"
+      ]
+    },
+    "87889": {
+      "status": "normalized",
+      "variant_ids": [
+        "87889"
+      ]
+    },
+    "87891": {
+      "status": "normalized",
+      "variant_ids": [
+        "87891"
+      ]
+    },
+    "88003": {
+      "status": "normalized",
+      "variant_ids": [
+        "88003"
+      ]
+    },
+    "88302": {
+      "status": "normalized",
+      "variant_ids": [
+        "88302"
+      ]
+    },
+    "88307": {
+      "status": "normalized",
+      "variant_ids": [
+        "88307"
+      ]
+    },
+    "87213": {
+      "status": "normalized",
+      "variant_ids": [
+        "87213"
+      ]
+    },
+    "87215": {
+      "status": "normalized",
+      "variant_ids": [
+        "87215"
+      ]
+    },
+    "86294": {
+      "status": "normalized",
+      "variant_ids": [
+        "86294"
+      ]
+    },
+    "87858": {
+      "status": "normalized",
+      "variant_ids": [
+        "87858"
+      ]
+    },
+    "88282": {
+      "status": "normalized",
+      "variant_ids": [
+        "88282"
+      ]
+    },
+    "87567": {
+      "status": "blocked",
+      "reason": "BBVA benefit not identifiable from source"
+    },
+    "87887": {
+      "status": "normalized",
+      "variant_ids": [
+        "87887"
+      ]
+    },
+    "87167": {
+      "status": "normalized",
+      "variant_ids": [
+        "87167"
+      ]
+    },
+    "85528": {
+      "status": "normalized",
+      "variant_ids": [
+        "85528"
+      ]
+    },
+    "87870": {
+      "status": "normalized",
+      "variant_ids": [
+        "87870"
+      ]
+    },
+    "87349": {
+      "status": "normalized",
+      "variant_ids": [
+        "87349"
+      ]
+    },
+    "87871": {
+      "status": "normalized",
+      "variant_ids": [
+        "87871"
+      ]
+    },
+    "88012": {
+      "status": "normalized",
+      "variant_ids": [
+        "88012"
+      ]
+    },
+    "88020": {
+      "status": "normalized",
+      "variant_ids": [
+        "88020"
+      ]
+    },
+    "88019": {
+      "status": "normalized",
+      "variant_ids": [
+        "88019"
+      ]
+    },
+    "88039": {
+      "status": "normalized",
+      "variant_ids": [
+        "88039"
+      ]
+    },
+    "88001": {
+      "status": "normalized",
+      "variant_ids": [
+        "88001"
+      ]
+    },
+    "88000": {
+      "status": "normalized",
+      "variant_ids": [
+        "88000"
+      ]
+    },
+    "88002": {
+      "status": "normalized",
+      "variant_ids": [
+        "88002"
+      ]
+    },
+    "88073": {
+      "status": "normalized",
+      "variant_ids": [
+        "88073"
+      ]
+    },
+    "87874": {
+      "status": "normalized",
+      "variant_ids": [
+        "87874"
+      ]
+    },
+    "87879": {
+      "status": "normalized",
+      "variant_ids": [
+        "87879"
+      ]
+    },
+    "87881": {
+      "status": "normalized",
+      "variant_ids": [
+        "87881"
+      ]
+    },
+    "88009": {
+      "status": "normalized",
+      "variant_ids": [
+        "88009"
+      ]
+    },
+    "87997": {
+      "status": "normalized",
+      "variant_ids": [
+        "87997"
+      ]
+    },
+    "88013": {
+      "status": "normalized",
+      "variant_ids": [
+        "88013"
+      ]
+    },
+    "88014": {
+      "status": "normalized",
+      "variant_ids": [
+        "88014"
+      ]
+    },
+    "88018": {
+      "status": "normalized",
+      "variant_ids": [
+        "88018"
+      ]
+    },
+    "88040": {
+      "status": "normalized",
+      "variant_ids": [
+        "88040"
+      ]
+    },
+    "88075": {
+      "status": "normalized",
+      "variant_ids": [
+        "88075"
+      ]
+    },
+    "87892": {
+      "status": "normalized",
+      "variant_ids": [
+        "87892"
+      ]
+    },
+    "87893": {
+      "status": "normalized",
+      "variant_ids": [
+        "87893"
+      ]
+    },
+    "87898": {
+      "status": "normalized",
+      "variant_ids": [
+        "87898"
+      ]
+    },
+    "87897": {
+      "status": "normalized",
+      "variant_ids": [
+        "87897"
+      ]
+    },
+    "87903": {
+      "status": "normalized",
+      "variant_ids": [
+        "87903"
+      ]
+    },
+    "88017": {
+      "status": "normalized",
+      "variant_ids": [
+        "88017"
+      ]
+    },
+    "88023": {
+      "status": "normalized",
+      "variant_ids": [
+        "88023"
+      ]
+    },
+    "87662": {
+      "status": "normalized",
+      "variant_ids": [
+        "87662"
+      ]
+    },
+    "88118": {
+      "status": "normalized",
+      "variant_ids": [
+        "88118"
+      ]
+    },
+    "87875": {
+      "status": "normalized",
+      "variant_ids": [
+        "87875"
+      ]
+    },
+    "87877": {
+      "status": "normalized",
+      "variant_ids": [
+        "87877"
+      ]
+    },
+    "87876": {
+      "status": "normalized",
+      "variant_ids": [
+        "87876"
+      ]
+    },
+    "87878": {
+      "status": "normalized",
+      "variant_ids": [
+        "87878"
+      ]
+    },
+    "88010": {
+      "status": "normalized",
+      "variant_ids": [
+        "88010"
+      ]
+    },
+    "88044": {
+      "status": "normalized",
+      "variant_ids": [
+        "88044"
+      ]
+    },
+    "88045": {
+      "status": "normalized",
+      "variant_ids": [
+        "88045"
+      ]
+    },
+    "88046": {
+      "status": "normalized",
+      "variant_ids": [
+        "88046"
+      ]
+    },
+    "88047": {
+      "status": "normalized",
+      "variant_ids": [
+        "88047"
+      ]
+    },
+    "88048": {
+      "status": "normalized",
+      "variant_ids": [
+        "88048"
+      ]
+    },
+    "88049": {
+      "status": "normalized",
+      "variant_ids": [
+        "88049"
+      ]
+    },
+    "88079": {
+      "status": "normalized",
+      "variant_ids": [
+        "88079"
+      ]
+    },
+    "84296": {
+      "status": "normalized",
+      "variant_ids": [
+        "84296"
+      ]
+    },
+    "88116": {
+      "status": "normalized",
+      "variant_ids": [
+        "88116"
+      ]
+    },
+    "88117": {
+      "status": "normalized",
+      "variant_ids": [
+        "88117"
+      ]
+    },
+    "87880": {
+      "status": "normalized",
+      "variant_ids": [
+        "87880"
+      ]
+    },
+    "87882": {
+      "status": "normalized",
+      "variant_ids": [
+        "87882"
+      ]
+    },
+    "87899": {
+      "status": "normalized",
+      "variant_ids": [
+        "87899"
+      ]
+    },
+    "87900": {
+      "status": "normalized",
+      "variant_ids": [
+        "87900"
+      ]
+    },
+    "87902": {
+      "status": "normalized",
+      "variant_ids": [
+        "87902"
+      ]
+    },
+    "87901": {
+      "status": "normalized",
+      "variant_ids": [
+        "87901"
+      ]
+    },
+    "88011": {
+      "status": "normalized",
+      "variant_ids": [
+        "88011"
+      ]
+    },
+    "88041": {
+      "status": "normalized",
+      "variant_ids": [
+        "88041"
+      ]
+    },
+    "88042": {
+      "status": "normalized",
+      "variant_ids": [
+        "88042"
+      ]
+    },
+    "88043": {
+      "status": "normalized",
+      "variant_ids": [
+        "88043"
+      ]
+    },
+    "82092": {
+      "status": "normalized",
+      "variant_ids": [
+        "82092"
+      ]
+    },
+    "85037": {
+      "status": "normalized",
+      "variant_ids": [
+        "85037"
+      ]
+    },
+    "87240": {
+      "status": "normalized",
+      "variant_ids": [
+        "87240"
+      ]
+    },
+    "87241": {
+      "status": "normalized",
+      "variant_ids": [
+        "87241"
+      ]
+    },
+    "87242": {
+      "status": "normalized",
+      "variant_ids": [
+        "87242"
+      ]
+    },
+    "87243": {
+      "status": "normalized",
+      "variant_ids": [
+        "87243"
+      ]
+    },
+    "87244": {
+      "status": "normalized",
+      "variant_ids": [
+        "87244"
+      ]
+    },
+    "87245": {
+      "status": "normalized",
+      "variant_ids": [
+        "87245"
+      ]
+    },
+    "87246": {
+      "status": "normalized",
+      "variant_ids": [
+        "87246"
+      ]
+    },
+    "87247": {
+      "status": "normalized",
+      "variant_ids": [
+        "87247"
+      ]
+    },
+    "87248": {
+      "status": "normalized",
+      "variant_ids": [
+        "87248"
+      ]
+    },
+    "87249": {
+      "status": "normalized",
+      "variant_ids": [
+        "87249"
+      ]
+    },
+    "87250": {
+      "status": "normalized",
+      "variant_ids": [
+        "87250"
+      ]
+    },
+    "87251": {
+      "status": "normalized",
+      "variant_ids": [
+        "87251"
+      ]
+    },
+    "87252": {
+      "status": "normalized",
+      "variant_ids": [
+        "87252"
+      ]
+    },
+    "87253": {
+      "status": "normalized",
+      "variant_ids": [
+        "87253"
+      ]
+    },
+    "87254": {
+      "status": "normalized",
+      "variant_ids": [
+        "87254"
+      ]
+    },
+    "87255": {
+      "status": "normalized",
+      "variant_ids": [
+        "87255"
+      ]
+    },
+    "87256": {
+      "status": "normalized",
+      "variant_ids": [
+        "87256"
+      ]
+    },
+    "87257": {
+      "status": "normalized",
+      "variant_ids": [
+        "87257"
+      ]
+    },
+    "87258": {
+      "status": "normalized",
+      "variant_ids": [
+        "87258"
+      ]
+    },
+    "87259": {
+      "status": "normalized",
+      "variant_ids": [
+        "87259"
+      ]
+    },
+    "87264": {
+      "status": "normalized",
+      "variant_ids": [
+        "87264"
+      ]
+    },
+    "87225": {
+      "status": "normalized",
+      "variant_ids": [
+        "87225"
+      ]
+    },
+    "87226": {
+      "status": "normalized",
+      "variant_ids": [
+        "87226"
+      ]
+    },
+    "87227": {
+      "status": "normalized",
+      "variant_ids": [
+        "87227"
+      ]
+    },
+    "87228": {
+      "status": "normalized",
+      "variant_ids": [
+        "87228"
+      ]
+    },
+    "87229": {
+      "status": "normalized",
+      "variant_ids": [
+        "87229"
+      ]
+    },
+    "87230": {
+      "status": "normalized",
+      "variant_ids": [
+        "87230"
+      ]
+    },
+    "87231": {
+      "status": "normalized",
+      "variant_ids": [
+        "87231"
+      ]
+    },
+    "87232": {
+      "status": "normalized",
+      "variant_ids": [
+        "87232"
+      ]
+    },
+    "87233": {
+      "status": "normalized",
+      "variant_ids": [
+        "87233"
+      ]
+    },
+    "87234": {
+      "status": "normalized",
+      "variant_ids": [
+        "87234"
+      ]
+    },
+    "87235": {
+      "status": "normalized",
+      "variant_ids": [
+        "87235"
+      ]
+    },
+    "87236": {
+      "status": "normalized",
+      "variant_ids": [
+        "87236"
+      ]
+    },
+    "87237": {
+      "status": "normalized",
+      "variant_ids": [
+        "87237"
+      ]
+    },
+    "87238": {
+      "status": "normalized",
+      "variant_ids": [
+        "87238"
+      ]
+    },
+    "87239": {
+      "status": "normalized",
+      "variant_ids": [
+        "87239"
+      ]
+    },
+    "87299": {
+      "status": "normalized",
+      "variant_ids": [
+        "87299"
+      ]
+    },
+    "87333": {
+      "status": "normalized",
+      "variant_ids": [
+        "87333"
+      ]
+    },
+    "87334": {
+      "status": "normalized",
+      "variant_ids": [
+        "87334"
+      ]
+    },
+    "86703": {
+      "status": "normalized",
+      "variant_ids": [
+        "86703"
+      ]
+    },
+    "86684": {
+      "status": "normalized",
+      "variant_ids": [
+        "86684"
+      ]
+    },
+    "86899": {
+      "status": "normalized",
+      "variant_ids": [
+        "86899"
+      ]
+    },
+    "87806": {
+      "status": "normalized",
+      "variant_ids": [
+        "87806"
+      ]
+    },
+    "87366": {
+      "status": "normalized",
+      "variant_ids": [
+        "87366"
+      ]
+    },
+    "87367": {
+      "status": "normalized",
+      "variant_ids": [
+        "87367"
+      ]
+    },
+    "87371": {
+      "status": "normalized",
+      "variant_ids": [
+        "87371"
+      ]
+    },
+    "87372": {
+      "status": "normalized",
+      "variant_ids": [
+        "87372"
+      ]
+    },
+    "87374": {
+      "status": "normalized",
+      "variant_ids": [
+        "87374"
+      ]
+    },
+    "87441": {
+      "status": "normalized",
+      "variant_ids": [
+        "87441"
+      ]
+    },
+    "87442": {
+      "status": "normalized",
+      "variant_ids": [
+        "87442"
+      ]
+    },
+    "87443": {
+      "status": "normalized",
+      "variant_ids": [
+        "87443"
+      ]
+    },
+    "87444": {
+      "status": "normalized",
+      "variant_ids": [
+        "87444"
+      ]
+    },
+    "88007": {
+      "status": "normalized",
+      "variant_ids": [
+        "88007"
+      ]
+    },
+    "88015": {
+      "status": "normalized",
+      "variant_ids": [
+        "88015",
+        "88015:gift"
+      ]
+    },
+    "86663": {
+      "status": "normalized",
+      "variant_ids": [
+        "86663"
+      ]
+    },
+    "84603": {
+      "status": "normalized",
+      "variant_ids": [
+        "84603"
+      ]
+    },
+    "87187": {
+      "status": "normalized",
+      "variant_ids": [
+        "87187"
+      ]
+    },
+    "84629": {
+      "status": "normalized",
+      "variant_ids": [
+        "84629"
+      ]
+    },
+    "87676": {
+      "status": "normalized",
+      "variant_ids": [
+        "87676"
+      ]
+    },
+    "87732": {
+      "status": "normalized",
+      "variant_ids": [
+        "87732"
+      ]
+    },
+    "84627": {
+      "status": "normalized",
+      "variant_ids": [
+        "84627"
+      ]
+    },
+    "84938": {
+      "status": "normalized",
+      "variant_ids": [
+        "84938"
+      ]
+    },
+    "84628": {
+      "status": "normalized",
+      "variant_ids": [
+        "84628"
+      ]
+    },
+    "86665": {
+      "status": "normalized",
+      "variant_ids": [
+        "86665"
+      ]
+    },
+    "87860": {
+      "status": "normalized",
+      "variant_ids": [
+        "87860"
+      ]
+    },
+    "87861": {
+      "status": "normalized",
+      "variant_ids": [
+        "87861"
+      ]
+    },
+    "87796": {
+      "status": "normalized",
+      "variant_ids": [
+        "87796"
+      ]
+    },
+    "87797": {
+      "status": "blocked",
+      "reason": "BBVA conflicting benefit percentage: headline/requirements 10% versus legal 25%; review required"
+    },
+    "87803": {
+      "status": "normalized",
+      "variant_ids": [
+        "87803"
+      ]
+    },
+    "84535": {
+      "status": "normalized",
+      "variant_ids": [
+        "84535"
+      ]
+    },
+    "85689": {
+      "status": "normalized",
+      "variant_ids": [
+        "85689"
+      ]
+    },
+    "88306": {
+      "status": "normalized",
+      "variant_ids": [
+        "88306"
+      ]
+    },
+    "87853": {
+      "status": "normalized",
+      "variant_ids": [
+        "87853"
+      ]
+    },
+    "85666": {
+      "status": "normalized",
+      "variant_ids": [
+        "85666"
+      ]
+    },
+    "88016": {
+      "status": "normalized",
+      "variant_ids": [
+        "88016"
+      ]
+    },
+    "86125": {
+      "status": "normalized",
+      "variant_ids": [
+        "86125"
+      ]
+    },
+    "86124": {
+      "status": "normalized",
+      "variant_ids": [
+        "86124"
+      ]
+    },
+    "86129": {
+      "status": "normalized",
+      "variant_ids": [
+        "86129"
+      ]
+    },
+    "86201": {
+      "status": "normalized",
+      "variant_ids": [
+        "86201"
+      ]
+    },
+    "86202": {
+      "status": "normalized",
+      "variant_ids": [
+        "86202"
+      ]
+    },
+    "86207": {
+      "status": "normalized",
+      "variant_ids": [
+        "86207"
+      ]
+    },
+    "86208": {
+      "status": "normalized",
+      "variant_ids": [
+        "86208"
+      ]
+    },
+    "86266": {
+      "status": "normalized",
+      "variant_ids": [
+        "86266"
+      ]
+    },
+    "76010": {
+      "status": "normalized",
+      "variant_ids": [
+        "76010",
+        "76010:combos"
+      ]
+    },
+    "86542": {
+      "status": "normalized",
+      "variant_ids": [
+        "86542"
+      ]
+    },
+    "86544": {
+      "status": "normalized",
+      "variant_ids": [
+        "86544"
+      ]
+    },
+    "86546": {
+      "status": "normalized",
+      "variant_ids": [
+        "86546"
+      ]
+    },
+    "86543": {
+      "status": "normalized",
+      "variant_ids": [
+        "86543"
+      ]
+    },
+    "86545": {
+      "status": "normalized",
+      "variant_ids": [
+        "86545"
+      ]
+    },
+    "86547": {
+      "status": "normalized",
+      "variant_ids": [
+        "86547"
+      ]
+    },
+    "86549": {
+      "status": "normalized",
+      "variant_ids": [
+        "86549"
+      ]
+    },
+    "86551": {
+      "status": "normalized",
+      "variant_ids": [
+        "86551"
+      ]
+    },
+    "86553": {
+      "status": "normalized",
+      "variant_ids": [
+        "86553"
+      ]
+    },
+    "86496": {
+      "status": "normalized",
+      "variant_ids": [
+        "86496"
+      ]
+    },
+    "86497": {
+      "status": "normalized",
+      "variant_ids": [
+        "86497"
+      ]
+    },
+    "86498": {
+      "status": "normalized",
+      "variant_ids": [
+        "86498"
+      ]
+    },
+    "86499": {
+      "status": "normalized",
+      "variant_ids": [
+        "86499"
+      ]
+    },
+    "86500": {
+      "status": "normalized",
+      "variant_ids": [
+        "86500"
+      ]
+    },
+    "86501": {
+      "status": "normalized",
+      "variant_ids": [
+        "86501"
+      ]
+    },
+    "86502": {
+      "status": "normalized",
+      "variant_ids": [
+        "86502"
+      ]
+    },
+    "86503": {
+      "status": "normalized",
+      "variant_ids": [
+        "86503"
+      ]
+    },
+    "86504": {
+      "status": "normalized",
+      "variant_ids": [
+        "86504"
+      ]
+    },
+    "86505": {
+      "status": "normalized",
+      "variant_ids": [
+        "86505"
+      ]
+    },
+    "86506": {
+      "status": "normalized",
+      "variant_ids": [
+        "86506"
+      ]
+    },
+    "86507": {
+      "status": "normalized",
+      "variant_ids": [
+        "86507"
+      ]
+    },
+    "86508": {
+      "status": "normalized",
+      "variant_ids": [
+        "86508"
+      ]
+    },
+    "86509": {
+      "status": "normalized",
+      "variant_ids": [
+        "86509"
+      ]
+    },
+    "86510": {
+      "status": "normalized",
+      "variant_ids": [
+        "86510"
+      ]
+    },
+    "86511": {
+      "status": "normalized",
+      "variant_ids": [
+        "86511"
+      ]
+    },
+    "86512": {
+      "status": "normalized",
+      "variant_ids": [
+        "86512"
+      ]
+    },
+    "86513": {
+      "status": "normalized",
+      "variant_ids": [
+        "86513"
+      ]
+    },
+    "86514": {
+      "status": "normalized",
+      "variant_ids": [
+        "86514"
+      ]
+    },
+    "86515": {
+      "status": "normalized",
+      "variant_ids": [
+        "86515"
+      ]
+    },
+    "86516": {
+      "status": "normalized",
+      "variant_ids": [
+        "86516"
+      ]
+    },
+    "86517": {
+      "status": "normalized",
+      "variant_ids": [
+        "86517"
+      ]
+    },
+    "86518": {
+      "status": "normalized",
+      "variant_ids": [
+        "86518"
+      ]
+    },
+    "86519": {
+      "status": "normalized",
+      "variant_ids": [
+        "86519"
+      ]
+    },
+    "86520": {
+      "status": "normalized",
+      "variant_ids": [
+        "86520"
+      ]
+    },
+    "86521": {
+      "status": "normalized",
+      "variant_ids": [
+        "86521"
+      ]
+    },
+    "86522": {
+      "status": "normalized",
+      "variant_ids": [
+        "86522"
+      ]
+    },
+    "86523": {
+      "status": "normalized",
+      "variant_ids": [
+        "86523"
+      ]
+    },
+    "86524": {
+      "status": "normalized",
+      "variant_ids": [
+        "86524"
+      ]
+    },
+    "86525": {
+      "status": "normalized",
+      "variant_ids": [
+        "86525"
+      ]
+    },
+    "86526": {
+      "status": "normalized",
+      "variant_ids": [
+        "86526"
+      ]
+    },
+    "86527": {
+      "status": "normalized",
+      "variant_ids": [
+        "86527"
+      ]
+    },
+    "86528": {
+      "status": "normalized",
+      "variant_ids": [
+        "86528"
+      ]
+    },
+    "86529": {
+      "status": "normalized",
+      "variant_ids": [
+        "86529"
+      ]
+    },
+    "86530": {
+      "status": "normalized",
+      "variant_ids": [
+        "86530"
+      ]
+    },
+    "86531": {
+      "status": "normalized",
+      "variant_ids": [
+        "86531"
+      ]
+    },
+    "86532": {
+      "status": "normalized",
+      "variant_ids": [
+        "86532"
+      ]
+    },
+    "86533": {
+      "status": "normalized",
+      "variant_ids": [
+        "86533"
+      ]
+    },
+    "86534": {
+      "status": "normalized",
+      "variant_ids": [
+        "86534"
+      ]
+    },
+    "86548": {
+      "status": "normalized",
+      "variant_ids": [
+        "86548"
+      ]
+    },
+    "86550": {
+      "status": "normalized",
+      "variant_ids": [
+        "86550"
+      ]
+    },
+    "86552": {
+      "status": "normalized",
+      "variant_ids": [
+        "86552"
+      ]
+    },
+    "86554": {
+      "status": "normalized",
+      "variant_ids": [
+        "86554"
+      ]
+    },
+    "86556": {
+      "status": "normalized",
+      "variant_ids": [
+        "86556"
+      ]
+    },
+    "84998": {
+      "status": "normalized",
+      "variant_ids": [
+        "84998"
+      ]
+    },
+    "84997": {
+      "status": "normalized",
+      "variant_ids": [
+        "84997"
+      ]
+    },
+    "87166": {
+      "status": "normalized",
+      "variant_ids": [
+        "87166"
+      ]
+    },
+    "87170": {
+      "status": "normalized",
+      "variant_ids": [
+        "87170"
+      ]
+    },
+    "87171": {
+      "status": "normalized",
+      "variant_ids": [
+        "87171"
+      ]
+    },
+    "87111": {
+      "status": "normalized",
+      "variant_ids": [
+        "87111"
+      ]
+    },
+    "87112": {
+      "status": "normalized",
+      "variant_ids": [
+        "87112"
+      ]
+    },
+    "87113": {
+      "status": "normalized",
+      "variant_ids": [
+        "87113"
+      ]
+    },
+    "87114": {
+      "status": "normalized",
+      "variant_ids": [
+        "87114"
+      ]
+    },
+    "87115": {
+      "status": "normalized",
+      "variant_ids": [
+        "87115"
+      ]
+    },
+    "87116": {
+      "status": "normalized",
+      "variant_ids": [
+        "87116"
+      ]
+    },
+    "87117": {
+      "status": "normalized",
+      "variant_ids": [
+        "87117"
+      ]
+    },
+    "87118": {
+      "status": "normalized",
+      "variant_ids": [
+        "87118"
+      ]
+    },
+    "87119": {
+      "status": "normalized",
+      "variant_ids": [
+        "87119"
+      ]
+    },
+    "87120": {
+      "status": "normalized",
+      "variant_ids": [
+        "87120"
+      ]
+    },
+    "87122": {
+      "status": "normalized",
+      "variant_ids": [
+        "87122"
+      ]
+    },
+    "87124": {
+      "status": "normalized",
+      "variant_ids": [
+        "87124"
+      ]
+    },
+    "87126": {
+      "status": "normalized",
+      "variant_ids": [
+        "87126"
+      ]
+    },
+    "87128": {
+      "status": "normalized",
+      "variant_ids": [
+        "87128"
+      ]
+    },
+    "87121": {
+      "status": "normalized",
+      "variant_ids": [
+        "87121"
+      ]
+    },
+    "87123": {
+      "status": "normalized",
+      "variant_ids": [
+        "87123"
+      ]
+    },
+    "87125": {
+      "status": "normalized",
+      "variant_ids": [
+        "87125"
+      ]
+    },
+    "87127": {
+      "status": "normalized",
+      "variant_ids": [
+        "87127"
+      ]
+    },
+    "87129": {
+      "status": "normalized",
+      "variant_ids": [
+        "87129"
+      ]
+    },
+    "87165": {
+      "status": "normalized",
+      "variant_ids": [
+        "87165"
+      ]
+    },
+    "87163": {
+      "status": "normalized",
+      "variant_ids": [
+        "87163"
+      ]
+    },
+    "87168": {
+      "status": "normalized",
+      "variant_ids": [
+        "87168"
+      ]
+    },
+    "87169": {
+      "status": "normalized",
+      "variant_ids": [
+        "87169"
+      ]
+    },
+    "87172": {
+      "status": "normalized",
+      "variant_ids": [
+        "87172"
+      ]
+    },
+    "87173": {
+      "status": "normalized",
+      "variant_ids": [
+        "87173"
+      ]
+    },
+    "87200": {
+      "status": "normalized",
+      "variant_ids": [
+        "87200"
+      ]
+    },
+    "87164": {
+      "status": "normalized",
+      "variant_ids": [
+        "87164"
+      ]
+    },
+    "87197": {
+      "status": "normalized",
+      "variant_ids": [
+        "87197"
+      ]
+    },
+    "87198": {
+      "status": "normalized",
+      "variant_ids": [
+        "87198"
+      ]
+    },
+    "87199": {
+      "status": "normalized",
+      "variant_ids": [
+        "87199"
+      ]
+    },
+    "87697": {
+      "status": "normalized",
+      "variant_ids": [
+        "87697"
+      ]
+    },
+    "87698": {
+      "status": "normalized",
+      "variant_ids": [
+        "87698"
+      ]
+    },
+    "87699": {
+      "status": "normalized",
+      "variant_ids": [
+        "87699"
+      ]
+    },
+    "87700": {
+      "status": "normalized",
+      "variant_ids": [
+        "87700"
+      ]
+    },
+    "87701": {
+      "status": "normalized",
+      "variant_ids": [
+        "87701"
+      ]
+    },
+    "88064": {
+      "status": "normalized",
+      "variant_ids": [
+        "88064"
+      ]
+    },
+    "88065": {
+      "status": "normalized",
+      "variant_ids": [
+        "88065"
+      ]
+    },
+    "88066": {
+      "status": "normalized",
+      "variant_ids": [
+        "88066"
+      ]
+    },
+    "88067": {
+      "status": "normalized",
+      "variant_ids": [
+        "88067"
+      ]
+    },
+    "88068": {
+      "status": "normalized",
+      "variant_ids": [
+        "88068"
+      ]
+    },
+    "88069": {
+      "status": "normalized",
+      "variant_ids": [
+        "88069"
+      ]
+    },
+    "88070": {
+      "status": "normalized",
+      "variant_ids": [
+        "88070"
+      ]
+    },
+    "88071": {
+      "status": "normalized",
+      "variant_ids": [
+        "88071"
+      ]
+    },
+    "88072": {
+      "status": "normalized",
+      "variant_ids": [
+        "88072"
+      ]
+    },
+    "88085": {
+      "status": "normalized",
+      "variant_ids": [
+        "88085"
+      ]
+    },
+    "88087": {
+      "status": "normalized",
+      "variant_ids": [
+        "88087"
+      ]
+    },
+    "88088": {
+      "status": "normalized",
+      "variant_ids": [
+        "88088"
+      ]
+    },
+    "88089": {
+      "status": "normalized",
+      "variant_ids": [
+        "88089"
+      ]
+    },
+    "88086": {
+      "status": "normalized",
+      "variant_ids": [
+        "88086"
+      ]
+    },
+    "86599": {
+      "status": "normalized",
+      "variant_ids": [
+        "86599"
+      ]
+    },
+    "86600": {
+      "status": "normalized",
+      "variant_ids": [
+        "86600"
+      ]
+    },
+    "86601": {
+      "status": "normalized",
+      "variant_ids": [
+        "86601"
+      ]
+    },
+    "86602": {
+      "status": "normalized",
+      "variant_ids": [
+        "86602"
+      ]
+    },
+    "86603": {
+      "status": "normalized",
+      "variant_ids": [
+        "86603"
+      ]
+    },
+    "86604": {
+      "status": "normalized",
+      "variant_ids": [
+        "86604"
+      ]
+    },
+    "86606": {
+      "status": "normalized",
+      "variant_ids": [
+        "86606"
+      ]
+    },
+    "86607": {
+      "status": "normalized",
+      "variant_ids": [
+        "86607"
+      ]
+    },
+    "86608": {
+      "status": "normalized",
+      "variant_ids": [
+        "86608"
+      ]
+    },
+    "86609": {
+      "status": "normalized",
+      "variant_ids": [
+        "86609"
+      ]
+    },
+    "86610": {
+      "status": "normalized",
+      "variant_ids": [
+        "86610"
+      ]
+    },
+    "86611": {
+      "status": "normalized",
+      "variant_ids": [
+        "86611"
+      ]
+    },
+    "86612": {
+      "status": "normalized",
+      "variant_ids": [
+        "86612"
+      ]
+    },
+    "86613": {
+      "status": "normalized",
+      "variant_ids": [
+        "86613"
+      ]
+    },
+    "86614": {
+      "status": "normalized",
+      "variant_ids": [
+        "86614"
+      ]
+    },
+    "86619": {
+      "status": "normalized",
+      "variant_ids": [
+        "86619"
+      ]
+    },
+    "86620": {
+      "status": "normalized",
+      "variant_ids": [
+        "86620"
+      ]
+    },
+    "86621": {
+      "status": "normalized",
+      "variant_ids": [
+        "86621"
+      ]
+    },
+    "86622": {
+      "status": "normalized",
+      "variant_ids": [
+        "86622"
+      ]
+    },
+    "86623": {
+      "status": "normalized",
+      "variant_ids": [
+        "86623"
+      ]
+    },
+    "86624": {
+      "status": "normalized",
+      "variant_ids": [
+        "86624"
+      ]
+    },
+    "86625": {
+      "status": "normalized",
+      "variant_ids": [
+        "86625"
+      ]
+    },
+    "86626": {
+      "status": "normalized",
+      "variant_ids": [
+        "86626"
+      ]
+    },
+    "86630": {
+      "status": "normalized",
+      "variant_ids": [
+        "86630"
+      ]
+    },
+    "86632": {
+      "status": "normalized",
+      "variant_ids": [
+        "86632"
+      ]
+    },
+    "84974": {
+      "status": "normalized",
+      "variant_ids": [
+        "84974"
+      ]
+    },
+    "86126": {
+      "status": "normalized",
+      "variant_ids": [
+        "86126"
+      ]
+    },
+    "86127": {
+      "status": "normalized",
+      "variant_ids": [
+        "86127"
+      ]
+    },
+    "86128": {
+      "status": "normalized",
+      "variant_ids": [
+        "86128"
+      ]
+    },
+    "86130": {
+      "status": "normalized",
+      "variant_ids": [
+        "86130"
+      ]
+    },
+    "86345": {
+      "status": "normalized",
+      "variant_ids": [
+        "86345"
+      ]
+    },
+    "85088": {
+      "status": "normalized",
+      "variant_ids": [
+        "85088"
+      ]
+    },
+    "85699": {
+      "status": "normalized",
+      "variant_ids": [
+        "85699"
+      ]
+    },
+    "85698": {
+      "status": "normalized",
+      "variant_ids": [
+        "85698"
+      ]
+    },
+    "85697": {
+      "status": "normalized",
+      "variant_ids": [
+        "85697"
+      ]
+    },
+    "85700": {
+      "status": "normalized",
+      "variant_ids": [
+        "85700"
+      ]
+    },
+    "85828": {
+      "status": "normalized",
+      "variant_ids": [
+        "85828"
+      ]
+    },
+    "85830": {
+      "status": "normalized",
+      "variant_ids": [
+        "85830"
+      ]
+    },
+    "85829": {
+      "status": "normalized",
+      "variant_ids": [
+        "85829"
+      ]
+    },
+    "86295": {
+      "status": "normalized",
+      "variant_ids": [
+        "86295"
+      ]
+    },
+    "86296": {
+      "status": "normalized",
+      "variant_ids": [
+        "86296"
+      ]
+    },
+    "86297": {
+      "status": "normalized",
+      "variant_ids": [
+        "86297"
+      ]
+    },
+    "86298": {
+      "status": "normalized",
+      "variant_ids": [
+        "86298"
+      ]
+    },
+    "86299": {
+      "status": "normalized",
+      "variant_ids": [
+        "86299"
+      ]
+    },
+    "86300": {
+      "status": "normalized",
+      "variant_ids": [
+        "86300"
+      ]
+    },
+    "86301": {
+      "status": "normalized",
+      "variant_ids": [
+        "86301"
+      ]
+    },
+    "86302": {
+      "status": "normalized",
+      "variant_ids": [
+        "86302"
+      ]
+    },
+    "86303": {
+      "status": "normalized",
+      "variant_ids": [
+        "86303"
+      ]
+    },
+    "86304": {
+      "status": "normalized",
+      "variant_ids": [
+        "86304"
+      ]
+    },
+    "86305": {
+      "status": "normalized",
+      "variant_ids": [
+        "86305"
+      ]
+    },
+    "86306": {
+      "status": "normalized",
+      "variant_ids": [
+        "86306"
+      ]
+    },
+    "86307": {
+      "status": "normalized",
+      "variant_ids": [
+        "86307"
+      ]
+    },
+    "86308": {
+      "status": "normalized",
+      "variant_ids": [
+        "86308"
+      ]
+    },
+    "86309": {
+      "status": "normalized",
+      "variant_ids": [
+        "86309"
+      ]
+    },
+    "86310": {
+      "status": "normalized",
+      "variant_ids": [
+        "86310"
+      ]
+    },
+    "86311": {
+      "status": "normalized",
+      "variant_ids": [
+        "86311"
+      ]
+    },
+    "86312": {
+      "status": "normalized",
+      "variant_ids": [
+        "86312"
+      ]
+    },
+    "86313": {
+      "status": "normalized",
+      "variant_ids": [
+        "86313"
+      ]
+    },
+    "86314": {
+      "status": "normalized",
+      "variant_ids": [
+        "86314"
+      ]
+    },
+    "86315": {
+      "status": "normalized",
+      "variant_ids": [
+        "86315"
+      ]
+    },
+    "86316": {
+      "status": "normalized",
+      "variant_ids": [
+        "86316"
+      ]
+    },
+    "86317": {
+      "status": "normalized",
+      "variant_ids": [
+        "86317"
+      ]
+    },
+    "86318": {
+      "status": "normalized",
+      "variant_ids": [
+        "86318"
+      ]
+    },
+    "86319": {
+      "status": "normalized",
+      "variant_ids": [
+        "86319"
+      ]
+    },
+    "86320": {
+      "status": "normalized",
+      "variant_ids": [
+        "86320"
+      ]
+    },
+    "86321": {
+      "status": "normalized",
+      "variant_ids": [
+        "86321"
+      ]
+    },
+    "86322": {
+      "status": "normalized",
+      "variant_ids": [
+        "86322"
+      ]
+    },
+    "86323": {
+      "status": "normalized",
+      "variant_ids": [
+        "86323"
+      ]
+    },
+    "86324": {
+      "status": "normalized",
+      "variant_ids": [
+        "86324"
+      ]
+    },
+    "86325": {
+      "status": "normalized",
+      "variant_ids": [
+        "86325"
+      ]
+    },
+    "86326": {
+      "status": "normalized",
+      "variant_ids": [
+        "86326"
+      ]
+    },
+    "86327": {
+      "status": "normalized",
+      "variant_ids": [
+        "86327"
+      ]
+    },
+    "86328": {
+      "status": "normalized",
+      "variant_ids": [
+        "86328"
+      ]
+    },
+    "86329": {
+      "status": "normalized",
+      "variant_ids": [
+        "86329"
+      ]
+    },
+    "86330": {
+      "status": "normalized",
+      "variant_ids": [
+        "86330"
+      ]
+    },
+    "86331": {
+      "status": "normalized",
+      "variant_ids": [
+        "86331"
+      ]
+    },
+    "86332": {
+      "status": "normalized",
+      "variant_ids": [
+        "86332"
+      ]
+    },
+    "86333": {
+      "status": "normalized",
+      "variant_ids": [
+        "86333"
+      ]
+    },
+    "86334": {
+      "status": "normalized",
+      "variant_ids": [
+        "86334"
+      ]
+    },
+    "86336": {
+      "status": "normalized",
+      "variant_ids": [
+        "86336"
+      ]
+    },
+    "86338": {
+      "status": "normalized",
+      "variant_ids": [
+        "86338"
+      ]
+    },
+    "86340": {
+      "status": "normalized",
+      "variant_ids": [
+        "86340"
+      ]
+    },
+    "86342": {
+      "status": "normalized",
+      "variant_ids": [
+        "86342"
+      ]
+    },
+    "86344": {
+      "status": "normalized",
+      "variant_ids": [
+        "86344"
+      ]
+    },
+    "86390": {
+      "status": "normalized",
+      "variant_ids": [
+        "86390"
+      ]
+    },
+    "86335": {
+      "status": "normalized",
+      "variant_ids": [
+        "86335"
+      ]
+    },
+    "86337": {
+      "status": "normalized",
+      "variant_ids": [
+        "86337"
+      ]
+    },
+    "86339": {
+      "status": "normalized",
+      "variant_ids": [
+        "86339"
+      ]
+    },
+    "86341": {
+      "status": "normalized",
+      "variant_ids": [
+        "86341"
+      ]
+    },
+    "86343": {
+      "status": "normalized",
+      "variant_ids": [
+        "86343"
+      ]
+    },
+    "86346": {
+      "status": "normalized",
+      "variant_ids": [
+        "86346"
+      ]
+    },
+    "86347": {
+      "status": "normalized",
+      "variant_ids": [
+        "86347"
+      ]
+    },
+    "86348": {
+      "status": "normalized",
+      "variant_ids": [
+        "86348"
+      ]
+    },
+    "86349": {
+      "status": "normalized",
+      "variant_ids": [
+        "86349"
+      ]
+    },
+    "86350": {
+      "status": "normalized",
+      "variant_ids": [
+        "86350"
+      ]
+    },
+    "86351": {
+      "status": "normalized",
+      "variant_ids": [
+        "86351"
+      ]
+    },
+    "86352": {
+      "status": "normalized",
+      "variant_ids": [
+        "86352"
+      ]
+    },
+    "86353": {
+      "status": "normalized",
+      "variant_ids": [
+        "86353"
+      ]
+    },
+    "86354": {
+      "status": "normalized",
+      "variant_ids": [
+        "86354"
+      ]
+    },
+    "86355": {
+      "status": "normalized",
+      "variant_ids": [
+        "86355"
+      ]
+    },
+    "86356": {
+      "status": "normalized",
+      "variant_ids": [
+        "86356"
+      ]
+    },
+    "86357": {
+      "status": "normalized",
+      "variant_ids": [
+        "86357"
+      ]
+    },
+    "86358": {
+      "status": "normalized",
+      "variant_ids": [
+        "86358"
+      ]
+    },
+    "86359": {
+      "status": "normalized",
+      "variant_ids": [
+        "86359"
+      ]
+    },
+    "86360": {
+      "status": "normalized",
+      "variant_ids": [
+        "86360"
+      ]
+    },
+    "86361": {
+      "status": "normalized",
+      "variant_ids": [
+        "86361"
+      ]
+    },
+    "86362": {
+      "status": "normalized",
+      "variant_ids": [
+        "86362"
+      ]
+    },
+    "86363": {
+      "status": "normalized",
+      "variant_ids": [
+        "86363"
+      ]
+    },
+    "86364": {
+      "status": "normalized",
+      "variant_ids": [
+        "86364"
+      ]
+    },
+    "86365": {
+      "status": "normalized",
+      "variant_ids": [
+        "86365"
+      ]
+    },
+    "86366": {
+      "status": "normalized",
+      "variant_ids": [
+        "86366"
+      ]
+    },
+    "86367": {
+      "status": "normalized",
+      "variant_ids": [
+        "86367"
+      ]
+    },
+    "86368": {
+      "status": "normalized",
+      "variant_ids": [
+        "86368"
+      ]
+    },
+    "86369": {
+      "status": "normalized",
+      "variant_ids": [
+        "86369"
+      ]
+    },
+    "86370": {
+      "status": "normalized",
+      "variant_ids": [
+        "86370"
+      ]
+    },
+    "86371": {
+      "status": "normalized",
+      "variant_ids": [
+        "86371"
+      ]
+    },
+    "86372": {
+      "status": "normalized",
+      "variant_ids": [
+        "86372"
+      ]
+    },
+    "86373": {
+      "status": "normalized",
+      "variant_ids": [
+        "86373"
+      ]
+    },
+    "86374": {
+      "status": "normalized",
+      "variant_ids": [
+        "86374"
+      ]
+    },
+    "86375": {
+      "status": "normalized",
+      "variant_ids": [
+        "86375"
+      ]
+    },
+    "86376": {
+      "status": "normalized",
+      "variant_ids": [
+        "86376"
+      ]
+    },
+    "86377": {
+      "status": "normalized",
+      "variant_ids": [
+        "86377"
+      ]
+    },
+    "86555": {
+      "status": "normalized",
+      "variant_ids": [
+        "86555"
+      ]
+    },
+    "86557": {
+      "status": "normalized",
+      "variant_ids": [
+        "86557"
+      ]
+    },
+    "86558": {
+      "status": "normalized",
+      "variant_ids": [
+        "86558"
+      ]
+    },
+    "86559": {
+      "status": "normalized",
+      "variant_ids": [
+        "86559"
+      ]
+    },
+    "86378": {
+      "status": "normalized",
+      "variant_ids": [
+        "86378"
+      ]
+    },
+    "86379": {
+      "status": "normalized",
+      "variant_ids": [
+        "86379"
+      ]
+    },
+    "86380": {
+      "status": "normalized",
+      "variant_ids": [
+        "86380"
+      ]
+    },
+    "86381": {
+      "status": "normalized",
+      "variant_ids": [
+        "86381"
+      ]
+    },
+    "86382": {
+      "status": "normalized",
+      "variant_ids": [
+        "86382"
+      ]
+    },
+    "86383": {
+      "status": "normalized",
+      "variant_ids": [
+        "86383"
+      ]
+    },
+    "86384": {
+      "status": "normalized",
+      "variant_ids": [
+        "86384"
+      ]
+    },
+    "86385": {
+      "status": "normalized",
+      "variant_ids": [
+        "86385"
+      ]
+    },
+    "86386": {
+      "status": "normalized",
+      "variant_ids": [
+        "86386"
+      ]
+    },
+    "86387": {
+      "status": "normalized",
+      "variant_ids": [
+        "86387"
+      ]
+    },
+    "86388": {
+      "status": "normalized",
+      "variant_ids": [
+        "86388"
+      ]
+    },
+    "86389": {
+      "status": "normalized",
+      "variant_ids": [
+        "86389"
+      ]
+    },
+    "86391": {
+      "status": "normalized",
+      "variant_ids": [
+        "86391"
+      ]
+    },
+    "86392": {
+      "status": "normalized",
+      "variant_ids": [
+        "86392"
+      ]
+    },
+    "86393": {
+      "status": "normalized",
+      "variant_ids": [
+        "86393"
+      ]
+    },
+    "86394": {
+      "status": "normalized",
+      "variant_ids": [
+        "86394"
+      ]
+    },
+    "86395": {
+      "status": "normalized",
+      "variant_ids": [
+        "86395"
+      ]
+    },
+    "86396": {
+      "status": "normalized",
+      "variant_ids": [
+        "86396"
+      ]
+    },
+    "86397": {
+      "status": "normalized",
+      "variant_ids": [
+        "86397"
+      ]
+    },
+    "86398": {
+      "status": "normalized",
+      "variant_ids": [
+        "86398"
+      ]
+    },
+    "86399": {
+      "status": "normalized",
+      "variant_ids": [
+        "86399"
+      ]
+    },
+    "86400": {
+      "status": "normalized",
+      "variant_ids": [
+        "86400"
+      ]
+    },
+    "86401": {
+      "status": "normalized",
+      "variant_ids": [
+        "86401"
+      ]
+    },
+    "86402": {
+      "status": "normalized",
+      "variant_ids": [
+        "86402"
+      ]
+    },
+    "86403": {
+      "status": "normalized",
+      "variant_ids": [
+        "86403"
+      ]
+    },
+    "86404": {
+      "status": "normalized",
+      "variant_ids": [
+        "86404"
+      ]
+    },
+    "86405": {
+      "status": "normalized",
+      "variant_ids": [
+        "86405"
+      ]
+    },
+    "86406": {
+      "status": "normalized",
+      "variant_ids": [
+        "86406"
+      ]
+    },
+    "86407": {
+      "status": "normalized",
+      "variant_ids": [
+        "86407"
+      ]
+    },
+    "86408": {
+      "status": "normalized",
+      "variant_ids": [
+        "86408"
+      ]
+    },
+    "86409": {
+      "status": "normalized",
+      "variant_ids": [
+        "86409"
+      ]
+    },
+    "86410": {
+      "status": "normalized",
+      "variant_ids": [
+        "86410"
+      ]
+    },
+    "86411": {
+      "status": "normalized",
+      "variant_ids": [
+        "86411"
+      ]
+    },
+    "86412": {
+      "status": "normalized",
+      "variant_ids": [
+        "86412"
+      ]
+    },
+    "86413": {
+      "status": "normalized",
+      "variant_ids": [
+        "86413"
+      ]
+    },
+    "86414": {
+      "status": "normalized",
+      "variant_ids": [
+        "86414"
+      ]
+    },
+    "86415": {
+      "status": "normalized",
+      "variant_ids": [
+        "86415"
+      ]
+    },
+    "86416": {
+      "status": "normalized",
+      "variant_ids": [
+        "86416"
+      ]
+    },
+    "86417": {
+      "status": "normalized",
+      "variant_ids": [
+        "86417"
+      ]
+    },
+    "86418": {
+      "status": "normalized",
+      "variant_ids": [
+        "86418"
+      ]
+    },
+    "86419": {
+      "status": "normalized",
+      "variant_ids": [
+        "86419"
+      ]
+    },
+    "86420": {
+      "status": "normalized",
+      "variant_ids": [
+        "86420"
+      ]
+    },
+    "86421": {
+      "status": "normalized",
+      "variant_ids": [
+        "86421"
+      ]
+    },
+    "86422": {
+      "status": "normalized",
+      "variant_ids": [
+        "86422"
+      ]
+    },
+    "86423": {
+      "status": "normalized",
+      "variant_ids": [
+        "86423"
+      ]
+    },
+    "86424": {
+      "status": "normalized",
+      "variant_ids": [
+        "86424"
+      ]
+    },
+    "86425": {
+      "status": "normalized",
+      "variant_ids": [
+        "86425"
+      ]
+    },
+    "86426": {
+      "status": "normalized",
+      "variant_ids": [
+        "86426"
+      ]
+    },
+    "86427": {
+      "status": "normalized",
+      "variant_ids": [
+        "86427"
+      ]
+    },
+    "86428": {
+      "status": "normalized",
+      "variant_ids": [
+        "86428"
+      ]
+    },
+    "86429": {
+      "status": "normalized",
+      "variant_ids": [
+        "86429"
+      ]
+    },
+    "86430": {
+      "status": "normalized",
+      "variant_ids": [
+        "86430"
+      ]
+    },
+    "86431": {
+      "status": "normalized",
+      "variant_ids": [
+        "86431"
+      ]
+    },
+    "86432": {
+      "status": "normalized",
+      "variant_ids": [
+        "86432"
+      ]
+    },
+    "86433": {
+      "status": "normalized",
+      "variant_ids": [
+        "86433"
+      ]
+    },
+    "86434": {
+      "status": "normalized",
+      "variant_ids": [
+        "86434"
+      ]
+    },
+    "86435": {
+      "status": "normalized",
+      "variant_ids": [
+        "86435"
+      ]
+    },
+    "86436": {
+      "status": "normalized",
+      "variant_ids": [
+        "86436"
+      ]
+    },
+    "86437": {
+      "status": "normalized",
+      "variant_ids": [
+        "86437"
+      ]
+    },
+    "86438": {
+      "status": "normalized",
+      "variant_ids": [
+        "86438"
+      ]
+    },
+    "86439": {
+      "status": "normalized",
+      "variant_ids": [
+        "86439"
+      ]
+    },
+    "86440": {
+      "status": "normalized",
+      "variant_ids": [
+        "86440"
+      ]
+    },
+    "86441": {
+      "status": "normalized",
+      "variant_ids": [
+        "86441"
+      ]
+    },
+    "86442": {
+      "status": "normalized",
+      "variant_ids": [
+        "86442"
+      ]
+    },
+    "86443": {
+      "status": "normalized",
+      "variant_ids": [
+        "86443"
+      ]
+    },
+    "86444": {
+      "status": "normalized",
+      "variant_ids": [
+        "86444"
+      ]
+    },
+    "86445": {
+      "status": "normalized",
+      "variant_ids": [
+        "86445"
+      ]
+    },
+    "86446": {
+      "status": "normalized",
+      "variant_ids": [
+        "86446"
+      ]
+    },
+    "86447": {
+      "status": "normalized",
+      "variant_ids": [
+        "86447"
+      ]
+    },
+    "86448": {
+      "status": "normalized",
+      "variant_ids": [
+        "86448"
+      ]
+    },
+    "86449": {
+      "status": "normalized",
+      "variant_ids": [
+        "86449"
+      ]
+    },
+    "86450": {
+      "status": "normalized",
+      "variant_ids": [
+        "86450"
+      ]
+    },
+    "86451": {
+      "status": "normalized",
+      "variant_ids": [
+        "86451"
+      ]
+    },
+    "86452": {
+      "status": "normalized",
+      "variant_ids": [
+        "86452"
+      ]
+    },
+    "86453": {
+      "status": "normalized",
+      "variant_ids": [
+        "86453"
+      ]
+    },
+    "86454": {
+      "status": "normalized",
+      "variant_ids": [
+        "86454"
+      ]
+    },
+    "86455": {
+      "status": "normalized",
+      "variant_ids": [
+        "86455"
+      ]
+    },
+    "86456": {
+      "status": "normalized",
+      "variant_ids": [
+        "86456"
+      ]
+    },
+    "86457": {
+      "status": "normalized",
+      "variant_ids": [
+        "86457"
+      ]
+    },
+    "86458": {
+      "status": "normalized",
+      "variant_ids": [
+        "86458"
+      ]
+    },
+    "86495": {
+      "status": "normalized",
+      "variant_ids": [
+        "86495"
+      ]
+    },
+    "86734": {
+      "status": "normalized",
+      "variant_ids": [
+        "86734"
+      ]
+    },
+    "86628": {
+      "status": "normalized",
+      "variant_ids": [
+        "86628"
+      ]
+    },
+    "86627": {
+      "status": "normalized",
+      "variant_ids": [
+        "86627"
+      ]
+    },
+    "86629": {
+      "status": "normalized",
+      "variant_ids": [
+        "86629"
+      ]
+    },
+    "86631": {
+      "status": "normalized",
+      "variant_ids": [
+        "86631"
+      ]
+    },
+    "86633": {
+      "status": "normalized",
+      "variant_ids": [
+        "86633"
+      ]
+    },
+    "86634": {
+      "status": "normalized",
+      "variant_ids": [
+        "86634"
+      ]
+    },
+    "86635": {
+      "status": "normalized",
+      "variant_ids": [
+        "86635"
+      ]
+    },
+    "86636": {
+      "status": "normalized",
+      "variant_ids": [
+        "86636"
+      ]
+    },
+    "86761": {
+      "status": "normalized",
+      "variant_ids": [
+        "86761"
+      ]
+    },
+    "86762": {
+      "status": "normalized",
+      "variant_ids": [
+        "86762"
+      ]
+    },
+    "86764": {
+      "status": "normalized",
+      "variant_ids": [
+        "86764"
+      ]
+    },
+    "86768": {
+      "status": "normalized",
+      "variant_ids": [
+        "86768"
+      ]
+    },
+    "86763": {
+      "status": "normalized",
+      "variant_ids": [
+        "86763"
+      ]
+    },
+    "86765": {
+      "status": "normalized",
+      "variant_ids": [
+        "86765"
+      ]
+    },
+    "86766": {
+      "status": "normalized",
+      "variant_ids": [
+        "86766"
+      ]
+    },
+    "86767": {
+      "status": "normalized",
+      "variant_ids": [
+        "86767"
+      ]
+    },
+    "86769": {
+      "status": "normalized",
+      "variant_ids": [
+        "86769"
+      ]
+    },
+    "86770": {
+      "status": "normalized",
+      "variant_ids": [
+        "86770"
+      ]
+    },
+    "86771": {
+      "status": "normalized",
+      "variant_ids": [
+        "86771"
+      ]
+    },
+    "86772": {
+      "status": "normalized",
+      "variant_ids": [
+        "86772"
+      ]
+    },
+    "86773": {
+      "status": "normalized",
+      "variant_ids": [
+        "86773"
+      ]
+    },
+    "86774": {
+      "status": "normalized",
+      "variant_ids": [
+        "86774"
+      ]
+    },
+    "86775": {
+      "status": "normalized",
+      "variant_ids": [
+        "86775"
+      ]
+    },
+    "86776": {
+      "status": "normalized",
+      "variant_ids": [
+        "86776"
+      ]
+    },
+    "86778": {
+      "status": "normalized",
+      "variant_ids": [
+        "86778"
+      ]
+    },
+    "86779": {
+      "status": "normalized",
+      "variant_ids": [
+        "86779"
+      ]
+    },
+    "86780": {
+      "status": "normalized",
+      "variant_ids": [
+        "86780"
+      ]
+    },
+    "86781": {
+      "status": "normalized",
+      "variant_ids": [
+        "86781"
+      ]
+    },
+    "86782": {
+      "status": "normalized",
+      "variant_ids": [
+        "86782"
+      ]
+    },
+    "86783": {
+      "status": "normalized",
+      "variant_ids": [
+        "86783"
+      ]
+    },
+    "86784": {
+      "status": "normalized",
+      "variant_ids": [
+        "86784"
+      ]
+    },
+    "86785": {
+      "status": "normalized",
+      "variant_ids": [
+        "86785"
+      ]
+    },
+    "86786": {
+      "status": "normalized",
+      "variant_ids": [
+        "86786"
+      ]
+    },
+    "86787": {
+      "status": "normalized",
+      "variant_ids": [
+        "86787"
+      ]
+    },
+    "86788": {
+      "status": "normalized",
+      "variant_ids": [
+        "86788"
+      ]
+    },
+    "86789": {
+      "status": "normalized",
+      "variant_ids": [
+        "86789"
+      ]
+    },
+    "86791": {
+      "status": "normalized",
+      "variant_ids": [
+        "86791"
+      ]
+    },
+    "86794": {
+      "status": "normalized",
+      "variant_ids": [
+        "86794"
+      ]
+    },
+    "86790": {
+      "status": "normalized",
+      "variant_ids": [
+        "86790"
+      ]
+    },
+    "86792": {
+      "status": "normalized",
+      "variant_ids": [
+        "86792"
+      ]
+    },
+    "86939": {
+      "status": "normalized",
+      "variant_ids": [
+        "86939"
+      ]
+    },
+    "86938": {
+      "status": "normalized",
+      "variant_ids": [
+        "86938"
+      ]
+    },
+    "86886": {
+      "status": "normalized",
+      "variant_ids": [
+        "86886"
+      ]
+    },
+    "86902": {
+      "status": "normalized",
+      "variant_ids": [
+        "86902"
+      ]
+    },
+    "86919": {
+      "status": "normalized",
+      "variant_ids": [
+        "86919"
+      ]
+    },
+    "86920": {
+      "status": "normalized",
+      "variant_ids": [
+        "86920"
+      ]
+    },
+    "86921": {
+      "status": "normalized",
+      "variant_ids": [
+        "86921"
+      ]
+    },
+    "86922": {
+      "status": "normalized",
+      "variant_ids": [
+        "86922"
+      ]
+    },
+    "86923": {
+      "status": "normalized",
+      "variant_ids": [
+        "86923"
+      ]
+    },
+    "86924": {
+      "status": "normalized",
+      "variant_ids": [
+        "86924"
+      ]
+    },
+    "86925": {
+      "status": "normalized",
+      "variant_ids": [
+        "86925"
+      ]
+    },
+    "86926": {
+      "status": "normalized",
+      "variant_ids": [
+        "86926"
+      ]
+    },
+    "86927": {
+      "status": "normalized",
+      "variant_ids": [
+        "86927"
+      ]
+    },
+    "86828": {
+      "status": "normalized",
+      "variant_ids": [
+        "86828"
+      ]
+    },
+    "86928": {
+      "status": "normalized",
+      "variant_ids": [
+        "86928"
+      ]
+    },
+    "86929": {
+      "status": "normalized",
+      "variant_ids": [
+        "86929"
+      ]
+    },
+    "86930": {
+      "status": "normalized",
+      "variant_ids": [
+        "86930"
+      ]
+    },
+    "86931": {
+      "status": "normalized",
+      "variant_ids": [
+        "86931"
+      ]
+    },
+    "86932": {
+      "status": "normalized",
+      "variant_ids": [
+        "86932"
+      ]
+    },
+    "86933": {
+      "status": "normalized",
+      "variant_ids": [
+        "86933"
+      ]
+    },
+    "86934": {
+      "status": "normalized",
+      "variant_ids": [
+        "86934"
+      ]
+    },
+    "86935": {
+      "status": "normalized",
+      "variant_ids": [
+        "86935"
+      ]
+    },
+    "86936": {
+      "status": "normalized",
+      "variant_ids": [
+        "86936"
+      ]
+    },
+    "86937": {
+      "status": "normalized",
+      "variant_ids": [
+        "86937"
+      ]
+    },
+    "86940": {
+      "status": "normalized",
+      "variant_ids": [
+        "86940"
+      ]
+    },
+    "86941": {
+      "status": "normalized",
+      "variant_ids": [
+        "86941"
+      ]
+    },
+    "86942": {
+      "status": "normalized",
+      "variant_ids": [
+        "86942"
+      ]
+    },
+    "86943": {
+      "status": "normalized",
+      "variant_ids": [
+        "86943"
+      ]
+    },
+    "86944": {
+      "status": "normalized",
+      "variant_ids": [
+        "86944"
+      ]
+    },
+    "86945": {
+      "status": "normalized",
+      "variant_ids": [
+        "86945"
+      ]
+    },
+    "86946": {
+      "status": "normalized",
+      "variant_ids": [
+        "86946"
+      ]
+    },
+    "86947": {
+      "status": "normalized",
+      "variant_ids": [
+        "86947"
+      ]
+    },
+    "86948": {
+      "status": "normalized",
+      "variant_ids": [
+        "86948"
+      ]
+    },
+    "88090": {
+      "status": "normalized",
+      "variant_ids": [
+        "88090"
+      ]
+    },
+    "88091": {
+      "status": "normalized",
+      "variant_ids": [
+        "88091"
+      ]
+    },
+    "88092": {
+      "status": "normalized",
+      "variant_ids": [
+        "88092"
+      ]
+    },
+    "88093": {
+      "status": "normalized",
+      "variant_ids": [
+        "88093"
+      ]
+    },
+    "88121": {
+      "status": "normalized",
+      "variant_ids": [
+        "88121"
+      ]
+    },
+    "88122": {
+      "status": "normalized",
+      "variant_ids": [
+        "88122"
+      ]
+    },
+    "88119": {
+      "status": "normalized",
+      "variant_ids": [
+        "88119"
+      ]
+    },
+    "88120": {
+      "status": "normalized",
+      "variant_ids": [
+        "88120"
+      ]
+    },
+    "88139": {
+      "status": "normalized",
+      "variant_ids": [
+        "88139"
+      ]
+    },
+    "88141": {
+      "status": "normalized",
+      "variant_ids": [
+        "88141"
+      ]
+    },
+    "88143": {
+      "status": "normalized",
+      "variant_ids": [
+        "88143"
+      ]
+    },
+    "88145": {
+      "status": "normalized",
+      "variant_ids": [
+        "88145"
+      ]
+    },
+    "88147": {
+      "status": "normalized",
+      "variant_ids": [
+        "88147"
+      ]
+    },
+    "88149": {
+      "status": "normalized",
+      "variant_ids": [
+        "88149"
+      ]
+    },
+    "88151": {
+      "status": "normalized",
+      "variant_ids": [
+        "88151"
+      ]
+    },
+    "88140": {
+      "status": "normalized",
+      "variant_ids": [
+        "88140"
+      ]
+    },
+    "88142": {
+      "status": "normalized",
+      "variant_ids": [
+        "88142"
+      ]
+    },
+    "88144": {
+      "status": "normalized",
+      "variant_ids": [
+        "88144"
+      ]
+    },
+    "88146": {
+      "status": "normalized",
+      "variant_ids": [
+        "88146"
+      ]
+    },
+    "88148": {
+      "status": "normalized",
+      "variant_ids": [
+        "88148"
+      ]
+    },
+    "88150": {
+      "status": "normalized",
+      "variant_ids": [
+        "88150"
+      ]
+    },
+    "87810": {
+      "status": "normalized",
+      "variant_ids": [
+        "87810"
+      ]
+    },
+    "87809": {
+      "status": "normalized",
+      "variant_ids": [
+        "87809"
+      ]
+    },
+    "87811": {
+      "status": "normalized",
+      "variant_ids": [
+        "87811"
+      ]
+    },
+    "87812": {
+      "status": "normalized",
+      "variant_ids": [
+        "87812"
+      ]
+    },
+    "87813": {
+      "status": "normalized",
+      "variant_ids": [
+        "87813"
+      ]
+    },
+    "87814": {
+      "status": "normalized",
+      "variant_ids": [
+        "87814"
+      ]
+    },
+    "87815": {
+      "status": "normalized",
+      "variant_ids": [
+        "87815"
+      ]
+    },
+    "87816": {
+      "status": "normalized",
+      "variant_ids": [
+        "87816"
+      ]
+    },
+    "87817": {
+      "status": "normalized",
+      "variant_ids": [
+        "87817"
+      ]
+    },
+    "87818": {
+      "status": "normalized",
+      "variant_ids": [
+        "87818"
+      ]
+    },
+    "87819": {
+      "status": "normalized",
+      "variant_ids": [
+        "87819"
+      ]
+    },
+    "87743": {
+      "status": "normalized",
+      "variant_ids": [
+        "87743"
+      ]
+    },
+    "87746": {
+      "status": "normalized",
+      "variant_ids": [
+        "87746"
+      ]
+    },
+    "87744": {
+      "status": "normalized",
+      "variant_ids": [
+        "87744"
+      ]
+    },
+    "87745": {
+      "status": "normalized",
+      "variant_ids": [
+        "87745"
+      ]
+    },
+    "87747": {
+      "status": "normalized",
+      "variant_ids": [
+        "87747"
+      ]
+    },
+    "87748": {
+      "status": "normalized",
+      "variant_ids": [
+        "87748"
+      ]
+    },
+    "87749": {
+      "status": "normalized",
+      "variant_ids": [
+        "87749"
+      ]
+    },
+    "87750": {
+      "status": "normalized",
+      "variant_ids": [
+        "87750"
+      ]
+    },
+    "87751": {
+      "status": "normalized",
+      "variant_ids": [
+        "87751"
+      ]
+    },
+    "87752": {
+      "status": "normalized",
+      "variant_ids": [
+        "87752"
+      ]
+    },
+    "87794": {
+      "status": "normalized",
+      "variant_ids": [
+        "87794"
+      ]
+    },
+    "87808": {
+      "status": "normalized",
+      "variant_ids": [
+        "87808"
+      ]
+    },
+    "87804": {
+      "status": "normalized",
+      "variant_ids": [
+        "87804"
+      ]
+    },
+    "87807": {
+      "status": "normalized",
+      "variant_ids": [
+        "87807"
+      ]
+    },
+    "87558": {
+      "status": "normalized",
+      "variant_ids": [
+        "87558"
+      ]
+    },
+    "87559": {
+      "status": "normalized",
+      "variant_ids": [
+        "87559"
+      ]
+    },
+    "87904": {
+      "status": "normalized",
+      "variant_ids": [
+        "87904"
+      ]
+    },
+    "87906": {
+      "status": "normalized",
+      "variant_ids": [
+        "87906"
+      ]
+    },
+    "87905": {
+      "status": "normalized",
+      "variant_ids": [
+        "87905"
+      ]
+    },
+    "88028": {
+      "status": "normalized",
+      "variant_ids": [
+        "88028"
+      ]
+    },
+    "88030": {
+      "status": "normalized",
+      "variant_ids": [
+        "88030"
+      ]
+    },
+    "88032": {
+      "status": "normalized",
+      "variant_ids": [
+        "88032"
+      ]
+    },
+    "88034": {
+      "status": "normalized",
+      "variant_ids": [
+        "88034"
+      ]
+    },
+    "88036": {
+      "status": "normalized",
+      "variant_ids": [
+        "88036"
+      ]
+    },
+    "88029": {
+      "status": "normalized",
+      "variant_ids": [
+        "88029"
+      ]
+    },
+    "88031": {
+      "status": "normalized",
+      "variant_ids": [
+        "88031"
+      ]
+    },
+    "88033": {
+      "status": "normalized",
+      "variant_ids": [
+        "88033"
+      ]
+    },
+    "88035": {
+      "status": "normalized",
+      "variant_ids": [
+        "88035"
+      ]
+    },
+    "88037": {
+      "status": "normalized",
+      "variant_ids": [
+        "88037"
+      ]
+    },
+    "88283": {
+      "status": "normalized",
+      "variant_ids": [
+        "88283"
+      ]
+    },
+    "88284": {
+      "status": "normalized",
+      "variant_ids": [
+        "88284"
+      ]
+    },
+    "88296": {
+      "status": "normalized",
+      "variant_ids": [
+        "88296"
+      ]
+    },
+    "88297": {
+      "status": "normalized",
+      "variant_ids": [
+        "88297"
+      ]
+    },
+    "88298": {
+      "status": "normalized",
+      "variant_ids": [
+        "88298"
+      ]
+    },
+    "88299": {
+      "status": "normalized",
+      "variant_ids": [
+        "88299"
+      ]
+    },
+    "88300": {
+      "status": "normalized",
+      "variant_ids": [
+        "88300"
+      ]
+    },
+    "88301": {
+      "status": "normalized",
+      "variant_ids": [
+        "88301"
+      ]
+    },
+    "87174": {
+      "status": "normalized",
+      "variant_ids": [
+        "87174"
+      ]
+    },
+    "87175": {
+      "status": "normalized",
+      "variant_ids": [
+        "87175"
+      ]
+    },
+    "87176": {
+      "status": "normalized",
+      "variant_ids": [
+        "87176"
+      ]
+    },
+    "87177": {
+      "status": "normalized",
+      "variant_ids": [
+        "87177"
+      ]
+    },
+    "87178": {
+      "status": "normalized",
+      "variant_ids": [
+        "87178"
+      ]
+    },
+    "87179": {
+      "status": "normalized",
+      "variant_ids": [
+        "87179"
+      ]
+    },
+    "87134": {
+      "status": "normalized",
+      "variant_ids": [
+        "87134"
+      ]
+    },
+    "87135": {
+      "status": "normalized",
+      "variant_ids": [
+        "87135"
+      ]
+    },
+    "87136": {
+      "status": "normalized",
+      "variant_ids": [
+        "87136"
+      ]
+    },
+    "87137": {
+      "status": "normalized",
+      "variant_ids": [
+        "87137"
+      ]
+    },
+    "87138": {
+      "status": "normalized",
+      "variant_ids": [
+        "87138"
+      ]
+    },
+    "87139": {
+      "status": "normalized",
+      "variant_ids": [
+        "87139"
+      ]
+    },
+    "87140": {
+      "status": "normalized",
+      "variant_ids": [
+        "87140"
+      ]
+    },
+    "87141": {
+      "status": "normalized",
+      "variant_ids": [
+        "87141"
+      ]
+    },
+    "87142": {
+      "status": "normalized",
+      "variant_ids": [
+        "87142"
+      ]
+    },
+    "87149": {
+      "status": "normalized",
+      "variant_ids": [
+        "87149"
+      ]
+    },
+    "87150": {
+      "status": "normalized",
+      "variant_ids": [
+        "87150"
+      ]
+    },
+    "87152": {
+      "status": "normalized",
+      "variant_ids": [
+        "87152"
+      ]
+    },
+    "87151": {
+      "status": "normalized",
+      "variant_ids": [
+        "87151"
+      ]
+    },
+    "87194": {
+      "status": "normalized",
+      "variant_ids": [
+        "87194"
+      ]
+    },
+    "87201": {
+      "status": "normalized",
+      "variant_ids": [
+        "87201"
+      ]
+    },
+    "87649": {
+      "status": "normalized",
+      "variant_ids": [
+        "87649"
+      ]
+    },
+    "87650": {
+      "status": "normalized",
+      "variant_ids": [
+        "87650"
+      ]
+    },
+    "87651": {
+      "status": "normalized",
+      "variant_ids": [
+        "87651"
+      ]
+    },
+    "87704": {
+      "status": "normalized",
+      "variant_ids": [
+        "87704"
+      ]
+    },
+    "88054": {
+      "status": "normalized",
+      "variant_ids": [
+        "88054"
+      ]
+    },
+    "88055": {
+      "status": "normalized",
+      "variant_ids": [
+        "88055"
+      ]
+    },
+    "88056": {
+      "status": "normalized",
+      "variant_ids": [
+        "88056"
+      ]
+    },
+    "88057": {
+      "status": "normalized",
+      "variant_ids": [
+        "88057"
+      ]
+    },
+    "88058": {
+      "status": "normalized",
+      "variant_ids": [
+        "88058"
+      ]
+    },
+    "88059": {
+      "status": "normalized",
+      "variant_ids": [
+        "88059"
+      ]
+    },
+    "86950": {
+      "status": "normalized",
+      "variant_ids": [
+        "86950"
+      ]
+    },
+    "86951": {
+      "status": "normalized",
+      "variant_ids": [
+        "86951"
+      ]
+    },
+    "86952": {
+      "status": "normalized",
+      "variant_ids": [
+        "86952"
+      ]
+    },
+    "86953": {
+      "status": "normalized",
+      "variant_ids": [
+        "86953"
+      ]
+    },
+    "86955": {
+      "status": "normalized",
+      "variant_ids": [
+        "86955"
+      ]
+    },
+    "86957": {
+      "status": "normalized",
+      "variant_ids": [
+        "86957"
+      ]
+    },
+    "86954": {
+      "status": "normalized",
+      "variant_ids": [
+        "86954"
+      ]
+    },
+    "86956": {
+      "status": "normalized",
+      "variant_ids": [
+        "86956"
+      ]
+    },
+    "86958": {
+      "status": "normalized",
+      "variant_ids": [
+        "86958"
+      ]
+    },
+    "86908": {
+      "status": "normalized",
+      "variant_ids": [
+        "86908"
+      ]
+    },
+    "86909": {
+      "status": "normalized",
+      "variant_ids": [
+        "86909"
+      ]
+    },
+    "86910": {
+      "status": "normalized",
+      "variant_ids": [
+        "86910"
+      ]
+    },
+    "86912": {
+      "status": "normalized",
+      "variant_ids": [
+        "86912"
+      ]
+    },
+    "86911": {
+      "status": "normalized",
+      "variant_ids": [
+        "86911"
+      ]
+    },
+    "86949": {
+      "status": "normalized",
+      "variant_ids": [
+        "86949"
+      ]
+    },
+    "87820": {
+      "status": "normalized",
+      "variant_ids": [
+        "87820"
+      ]
+    },
+    "87821": {
+      "status": "normalized",
+      "variant_ids": [
+        "87821"
+      ]
+    },
+    "87204": {
+      "status": "normalized",
+      "variant_ids": [
+        "87204"
+      ]
+    },
+    "87206": {
+      "status": "normalized",
+      "variant_ids": [
+        "87206"
+      ]
+    },
+    "87214": {
+      "status": "normalized",
+      "variant_ids": [
+        "87214"
+      ]
+    },
+    "87189": {
+      "status": "normalized",
+      "variant_ids": [
+        "87189"
+      ]
+    },
+    "87193": {
+      "status": "normalized",
+      "variant_ids": [
+        "87193"
+      ]
+    },
+    "87203": {
+      "status": "normalized",
+      "variant_ids": [
+        "87203"
+      ]
+    },
+    "87205": {
+      "status": "normalized",
+      "variant_ids": [
+        "87205"
+      ]
+    },
+    "87207": {
+      "status": "normalized",
+      "variant_ids": [
+        "87207"
+      ]
+    },
+    "87190": {
+      "status": "normalized",
+      "variant_ids": [
+        "87190"
+      ]
+    },
+    "87202": {
+      "status": "normalized",
+      "variant_ids": [
+        "87202"
+      ]
+    },
+    "87754": {
+      "status": "normalized",
+      "variant_ids": [
+        "87754"
+      ]
+    },
+    "87755": {
+      "status": "normalized",
+      "variant_ids": [
+        "87755"
+      ]
+    },
+    "87756": {
+      "status": "normalized",
+      "variant_ids": [
+        "87756"
+      ]
+    },
+    "87560": {
+      "status": "normalized",
+      "variant_ids": [
+        "87560"
+      ]
+    },
+    "87561": {
+      "status": "normalized",
+      "variant_ids": [
+        "87561"
+      ]
+    },
+    "87562": {
+      "status": "normalized",
+      "variant_ids": [
+        "87562"
+      ]
+    },
+    "87563": {
+      "status": "normalized",
+      "variant_ids": [
+        "87563"
+      ]
+    },
+    "87564": {
+      "status": "normalized",
+      "variant_ids": [
+        "87564"
+      ]
+    },
+    "87565": {
+      "status": "normalized",
+      "variant_ids": [
+        "87565"
+      ]
+    },
+    "87566": {
+      "status": "normalized",
+      "variant_ids": [
+        "87566"
+      ]
+    },
+    "87631": {
+      "status": "normalized",
+      "variant_ids": [
+        "87631"
+      ]
+    },
+    "87632": {
+      "status": "normalized",
+      "variant_ids": [
+        "87632"
+      ]
+    },
+    "87633": {
+      "status": "normalized",
+      "variant_ids": [
+        "87633"
+      ]
+    },
+    "87634": {
+      "status": "normalized",
+      "variant_ids": [
+        "87634"
+      ]
+    },
+    "87635": {
+      "status": "normalized",
+      "variant_ids": [
+        "87635"
+      ]
+    },
+    "87636": {
+      "status": "normalized",
+      "variant_ids": [
+        "87636"
+      ]
+    },
+    "87637": {
+      "status": "normalized",
+      "variant_ids": [
+        "87637"
+      ]
+    },
+    "87638": {
+      "status": "normalized",
+      "variant_ids": [
+        "87638"
+      ]
+    },
+    "87639": {
+      "status": "normalized",
+      "variant_ids": [
+        "87639"
+      ]
+    },
+    "87640": {
+      "status": "normalized",
+      "variant_ids": [
+        "87640"
+      ]
+    },
+    "87641": {
+      "status": "normalized",
+      "variant_ids": [
+        "87641"
+      ]
+    },
+    "86480": {
+      "status": "normalized",
+      "variant_ids": [
+        "86480"
+      ]
+    },
+    "87643": {
+      "status": "normalized",
+      "variant_ids": [
+        "87643"
+      ]
+    },
+    "87644": {
+      "status": "normalized",
+      "variant_ids": [
+        "87644"
+      ]
+    },
+    "87645": {
+      "status": "normalized",
+      "variant_ids": [
+        "87645"
+      ]
+    },
+    "87646": {
+      "status": "normalized",
+      "variant_ids": [
+        "87646"
+      ]
+    },
+    "87647": {
+      "status": "normalized",
+      "variant_ids": [
+        "87647"
+      ]
+    },
+    "87648": {
+      "status": "normalized",
+      "variant_ids": [
+        "87648"
+      ]
+    },
+    "87652": {
+      "status": "normalized",
+      "variant_ids": [
+        "87652"
+      ]
+    },
+    "87653": {
+      "status": "normalized",
+      "variant_ids": [
+        "87653"
+      ]
+    },
+    "87685": {
+      "status": "normalized",
+      "variant_ids": [
+        "87685"
+      ]
+    },
+    "87686": {
+      "status": "normalized",
+      "variant_ids": [
+        "87686"
+      ]
+    },
+    "87687": {
+      "status": "normalized",
+      "variant_ids": [
+        "87687"
+      ]
+    },
+    "87690": {
+      "status": "normalized",
+      "variant_ids": [
+        "87690"
+      ]
+    },
+    "87693": {
+      "status": "normalized",
+      "variant_ids": [
+        "87693"
+      ]
+    },
+    "87694": {
+      "status": "normalized",
+      "variant_ids": [
+        "87694"
+      ]
+    },
+    "87705": {
+      "status": "normalized",
+      "variant_ids": [
+        "87705"
+      ]
+    },
+    "87667": {
+      "status": "normalized",
+      "variant_ids": [
+        "87667"
+      ]
+    },
+    "87668": {
+      "status": "normalized",
+      "variant_ids": [
+        "87668"
+      ]
+    },
+    "87669": {
+      "status": "normalized",
+      "variant_ids": [
+        "87669"
+      ]
+    },
+    "87670": {
+      "status": "normalized",
+      "variant_ids": [
+        "87670"
+      ]
+    },
+    "87688": {
+      "status": "normalized",
+      "variant_ids": [
+        "87688"
+      ]
+    },
+    "87689": {
+      "status": "normalized",
+      "variant_ids": [
+        "87689"
+      ]
+    },
+    "87708": {
+      "status": "normalized",
+      "variant_ids": [
+        "87708"
+      ]
+    },
+    "87706": {
+      "status": "normalized",
+      "variant_ids": [
+        "87706"
+      ]
+    },
+    "87707": {
+      "status": "normalized",
+      "variant_ids": [
+        "87707"
+      ]
+    },
+    "87709": {
+      "status": "normalized",
+      "variant_ids": [
+        "87709"
+      ]
+    },
+    "87710": {
+      "status": "normalized",
+      "variant_ids": [
+        "87710"
+      ]
+    },
+    "87714": {
+      "status": "normalized",
+      "variant_ids": [
+        "87714"
+      ]
+    },
+    "88123": {
+      "status": "normalized",
+      "variant_ids": [
+        "88123"
+      ]
+    },
+    "88124": {
+      "status": "normalized",
+      "variant_ids": [
+        "88124"
+      ]
+    },
+    "88125": {
+      "status": "normalized",
+      "variant_ids": [
+        "88125"
+      ]
+    },
+    "88126": {
+      "status": "normalized",
+      "variant_ids": [
+        "88126"
+      ]
+    },
+    "88127": {
+      "status": "normalized",
+      "variant_ids": [
+        "88127"
+      ]
+    },
+    "88128": {
+      "status": "normalized",
+      "variant_ids": [
+        "88128"
+      ]
+    },
+    "88129": {
+      "status": "normalized",
+      "variant_ids": [
+        "88129"
+      ]
+    },
+    "88130": {
+      "status": "normalized",
+      "variant_ids": [
+        "88130"
+      ]
+    },
+    "87822": {
+      "status": "normalized",
+      "variant_ids": [
+        "87822"
+      ]
+    },
+    "87823": {
+      "status": "normalized",
+      "variant_ids": [
+        "87823"
+      ]
+    },
+    "87824": {
+      "status": "normalized",
+      "variant_ids": [
+        "87824"
+      ]
+    },
+    "87825": {
+      "status": "normalized",
+      "variant_ids": [
+        "87825"
+      ]
+    },
+    "87826": {
+      "status": "normalized",
+      "variant_ids": [
+        "87826"
+      ]
+    },
+    "87827": {
+      "status": "normalized",
+      "variant_ids": [
+        "87827"
+      ]
+    },
+    "87828": {
+      "status": "normalized",
+      "variant_ids": [
+        "87828"
+      ]
+    },
+    "87829": {
+      "status": "normalized",
+      "variant_ids": [
+        "87829"
+      ]
+    },
+    "87830": {
+      "status": "normalized",
+      "variant_ids": [
+        "87830"
+      ]
+    },
+    "87831": {
+      "status": "normalized",
+      "variant_ids": [
+        "87831"
+      ]
+    },
+    "87832": {
+      "status": "normalized",
+      "variant_ids": [
+        "87832"
+      ]
+    },
+    "87833": {
+      "status": "normalized",
+      "variant_ids": [
+        "87833"
+      ]
+    },
+    "87835": {
+      "status": "normalized",
+      "variant_ids": [
+        "87835"
+      ]
+    },
+    "87836": {
+      "status": "normalized",
+      "variant_ids": [
+        "87836"
+      ]
+    },
+    "87837": {
+      "status": "normalized",
+      "variant_ids": [
+        "87837"
+      ]
+    },
+    "87838": {
+      "status": "normalized",
+      "variant_ids": [
+        "87838"
+      ]
+    },
+    "87834": {
+      "status": "normalized",
+      "variant_ids": [
+        "87834"
+      ]
+    },
+    "87859": {
+      "status": "normalized",
+      "variant_ids": [
+        "87859"
+      ]
+    },
+    "87758": {
+      "status": "normalized",
+      "variant_ids": [
+        "87758"
+      ]
+    },
+    "87800": {
+      "status": "normalized",
+      "variant_ids": [
+        "87800"
+      ]
+    },
+    "87801": {
+      "status": "normalized",
+      "variant_ids": [
+        "87801"
+      ]
+    },
+    "87759": {
+      "status": "normalized",
+      "variant_ids": [
+        "87759"
+      ]
+    },
+    "87760": {
+      "status": "normalized",
+      "variant_ids": [
+        "87760"
+      ]
+    },
+    "87761": {
+      "status": "normalized",
+      "variant_ids": [
+        "87761"
+      ]
+    },
+    "87762": {
+      "status": "normalized",
+      "variant_ids": [
+        "87762"
+      ]
+    },
+    "87763": {
+      "status": "normalized",
+      "variant_ids": [
+        "87763"
+      ]
+    },
+    "87764": {
+      "status": "normalized",
+      "variant_ids": [
+        "87764"
+      ]
+    },
+    "87765": {
+      "status": "normalized",
+      "variant_ids": [
+        "87765"
+      ]
+    },
+    "87766": {
+      "status": "normalized",
+      "variant_ids": [
+        "87766"
+      ]
+    },
+    "87767": {
+      "status": "normalized",
+      "variant_ids": [
+        "87767"
+      ]
+    },
+    "87768": {
+      "status": "normalized",
+      "variant_ids": [
+        "87768"
+      ]
+    },
+    "87769": {
+      "status": "normalized",
+      "variant_ids": [
+        "87769"
+      ]
+    },
+    "87770": {
+      "status": "normalized",
+      "variant_ids": [
+        "87770"
+      ]
+    },
+    "87771": {
+      "status": "normalized",
+      "variant_ids": [
+        "87771"
+      ]
+    },
+    "87772": {
+      "status": "normalized",
+      "variant_ids": [
+        "87772"
+      ]
+    },
+    "87773": {
+      "status": "normalized",
+      "variant_ids": [
+        "87773"
+      ]
+    },
+    "87779": {
+      "status": "normalized",
+      "variant_ids": [
+        "87779"
+      ]
+    },
+    "87780": {
+      "status": "normalized",
+      "variant_ids": [
+        "87780"
+      ]
+    },
+    "87783": {
+      "status": "normalized",
+      "variant_ids": [
+        "87783"
+      ]
+    },
+    "87782": {
+      "status": "normalized",
+      "variant_ids": [
+        "87782"
+      ]
+    },
+    "87781": {
+      "status": "normalized",
+      "variant_ids": [
+        "87781"
+      ]
+    },
+    "87784": {
+      "status": "normalized",
+      "variant_ids": [
+        "87784"
+      ]
+    },
+    "87491": {
+      "status": "normalized",
+      "variant_ids": [
+        "87491"
+      ]
+    },
+    "87492": {
+      "status": "normalized",
+      "variant_ids": [
+        "87492"
+      ]
+    },
+    "87493": {
+      "status": "normalized",
+      "variant_ids": [
+        "87493"
+      ]
+    },
+    "87494": {
+      "status": "normalized",
+      "variant_ids": [
+        "87494"
+      ]
+    },
+    "87495": {
+      "status": "normalized",
+      "variant_ids": [
+        "87495"
+      ]
+    },
+    "87496": {
+      "status": "normalized",
+      "variant_ids": [
+        "87496"
+      ]
+    },
+    "87497": {
+      "status": "normalized",
+      "variant_ids": [
+        "87497"
+      ]
+    },
+    "87498": {
+      "status": "normalized",
+      "variant_ids": [
+        "87498"
+      ]
+    },
+    "87499": {
+      "status": "normalized",
+      "variant_ids": [
+        "87499"
+      ]
+    },
+    "87642": {
+      "status": "normalized",
+      "variant_ids": [
+        "87642"
+      ]
+    },
+    "87907": {
+      "status": "normalized",
+      "variant_ids": [
+        "87907"
+      ]
+    },
+    "87912": {
+      "status": "normalized",
+      "variant_ids": [
+        "87912"
+      ]
+    },
+    "87914": {
+      "status": "normalized",
+      "variant_ids": [
+        "87914"
+      ]
+    },
+    "87916": {
+      "status": "normalized",
+      "variant_ids": [
+        "87916"
+      ]
+    },
+    "87908": {
+      "status": "normalized",
+      "variant_ids": [
+        "87908"
+      ]
+    },
+    "87909": {
+      "status": "normalized",
+      "variant_ids": [
+        "87909"
+      ]
+    },
+    "87910": {
+      "status": "normalized",
+      "variant_ids": [
+        "87910"
+      ]
+    },
+    "87911": {
+      "status": "normalized",
+      "variant_ids": [
+        "87911"
+      ]
+    },
+    "87913": {
+      "status": "normalized",
+      "variant_ids": [
+        "87913"
+      ]
+    },
+    "87915": {
+      "status": "normalized",
+      "variant_ids": [
+        "87915"
+      ]
+    },
+    "87917": {
+      "status": "normalized",
+      "variant_ids": [
+        "87917"
+      ]
+    },
+    "87918": {
+      "status": "normalized",
+      "variant_ids": [
+        "87918"
+      ]
+    },
+    "87919": {
+      "status": "normalized",
+      "variant_ids": [
+        "87919"
+      ]
+    },
+    "88285": {
+      "status": "normalized",
+      "variant_ids": [
+        "88285"
+      ]
+    },
+    "87792": {
+      "status": "normalized",
+      "variant_ids": [
+        "87792"
+      ]
+    },
+    "88060": {
+      "status": "normalized",
+      "variant_ids": [
+        "88060"
+      ]
+    },
+    "88061": {
+      "status": "normalized",
+      "variant_ids": [
+        "88061"
+      ]
+    },
+    "88062": {
+      "status": "normalized",
+      "variant_ids": [
+        "88062"
+      ]
+    },
+    "88063": {
+      "status": "normalized",
+      "variant_ids": [
+        "88063"
+      ]
+    },
+    "88131": {
+      "status": "normalized",
+      "variant_ids": [
+        "88131"
+      ]
+    },
+    "88133": {
+      "status": "normalized",
+      "variant_ids": [
+        "88133"
+      ]
+    },
+    "88135": {
+      "status": "normalized",
+      "variant_ids": [
+        "88135"
+      ]
+    },
+    "88137": {
+      "status": "normalized",
+      "variant_ids": [
+        "88137"
+      ]
+    },
+    "88132": {
+      "status": "normalized",
+      "variant_ids": [
+        "88132"
+      ]
+    },
+    "88134": {
+      "status": "normalized",
+      "variant_ids": [
+        "88134"
+      ]
+    },
+    "88136": {
+      "status": "normalized",
+      "variant_ids": [
+        "88136"
+      ]
+    },
+    "88138": {
+      "status": "normalized",
+      "variant_ids": [
+        "88138"
+      ]
+    },
+    "88279": {
+      "status": "normalized",
+      "variant_ids": [
+        "88279"
+      ]
+    },
+    "88280": {
+      "status": "normalized",
+      "variant_ids": [
+        "88280"
+      ]
+    },
+    "88024": {
+      "status": "normalized",
+      "variant_ids": [
+        "88024"
+      ]
+    },
+    "88025": {
+      "status": "normalized",
+      "variant_ids": [
+        "88025"
+      ]
+    },
+    "88026": {
+      "status": "normalized",
+      "variant_ids": [
+        "88026"
+      ]
+    },
+    "88286": {
+      "status": "normalized",
+      "variant_ids": [
+        "88286"
+      ]
+    },
+    "88291": {
+      "status": "normalized",
+      "variant_ids": [
+        "88291"
+      ]
+    },
+    "88287": {
+      "status": "normalized",
+      "variant_ids": [
+        "88287"
+      ]
+    },
+    "88288": {
+      "status": "normalized",
+      "variant_ids": [
+        "88288"
+      ]
+    },
+    "88289": {
+      "status": "normalized",
+      "variant_ids": [
+        "88289"
+      ]
+    },
+    "88290": {
+      "status": "normalized",
+      "variant_ids": [
+        "88290"
+      ]
+    },
+    "88293": {
+      "status": "normalized",
+      "variant_ids": [
+        "88293"
+      ]
+    },
+    "88294": {
+      "status": "normalized",
+      "variant_ids": [
+        "88294"
+      ]
+    },
+    "88292": {
+      "status": "normalized",
+      "variant_ids": [
+        "88292"
+      ]
+    },
+    "88295": {
+      "status": "normalized",
+      "variant_ids": [
+        "88295"
+      ]
+    },
+    "88312": {
+      "status": "normalized",
+      "variant_ids": [
+        "88312"
+      ]
+    },
+    "88436": {
+      "status": "normalized",
+      "variant_ids": [
+        "88436"
+      ]
+    },
+    "88437": {
+      "status": "normalized",
+      "variant_ids": [
+        "88437"
+      ]
+    },
+    "88438": {
+      "status": "normalized",
+      "variant_ids": [
+        "88438"
+      ]
+    },
+    "88439": {
+      "status": "normalized",
+      "variant_ids": [
+        "88439"
+      ]
+    },
+    "88440": {
+      "status": "normalized",
+      "variant_ids": [
+        "88440"
+      ]
+    },
+    "88441": {
+      "status": "normalized",
+      "variant_ids": [
+        "88441"
+      ]
+    },
+    "88442": {
+      "status": "normalized",
+      "variant_ids": [
+        "88442"
+      ]
+    },
+    "88443": {
+      "status": "normalized",
+      "variant_ids": [
+        "88443"
+      ]
+    },
+    "88444": {
+      "status": "normalized",
+      "variant_ids": [
+        "88444"
+      ]
+    },
+    "88445": {
+      "status": "normalized",
+      "variant_ids": [
+        "88445"
+      ]
+    },
+    "88446": {
+      "status": "normalized",
+      "variant_ids": [
+        "88446"
+      ]
+    },
+    "87805": {
+      "status": "normalized",
+      "variant_ids": [
+        "87805"
+      ]
+    },
+    "87657": {
+      "status": "normalized",
+      "variant_ids": [
+        "87657"
+      ]
+    }
+  }
+}
