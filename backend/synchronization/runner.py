@@ -102,9 +102,6 @@ class SyncRunner:
             scraper, result = self.scrape_promotions()
             raw_promotions = result.promotions
 
-        self.validate_raw_promotions(raw_promotions)
-        print(f"\nPromociones crudas: {len(raw_promotions)}")
-
         # Fail closed: ni snapshot ni Supabase reciben extracciones incompletas.
         if result is not None and not result.complete:
             raise RuntimeError(
@@ -112,6 +109,9 @@ class SyncRunner:
                 "se conserva el snapshot y no se sincroniza Supabase. "
                 f"Errores: {result.failed_ids[:5]}"
             )
+
+        self.validate_raw_promotions(raw_promotions)
+        print(f"\nPromociones crudas: {len(raw_promotions)}")
 
         print("\nNormalizando y validando IDs...")
         promotions = self.normalize_promotions(raw_promotions)

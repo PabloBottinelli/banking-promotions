@@ -168,7 +168,9 @@ class BancoDelSolScraper:
             else:
                 errors.append("catalog: paginación sin límite verificado")
         except Exception as exc:
-            errors.append("catalog: " + str(exc))
+            errors.append(
+                f"catalog: {type(exc).__name__}: {exc}"
+            )
 
         # A browser's hidden load-more control and a short last page cannot
         # prove that older source IDs legitimately disappeared. Compare with
