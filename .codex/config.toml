@@ -1,14 +1,11 @@
-# No solicitar aprobación para ejecutar comandos
-approval_policy = "never"
-
-# Permitir modificaciones dentro del proyecto
+# Codex del proyecto: permite editar en workspace, pide autorización al escalar.
+approval_policy = "on-request"
 sandbox_mode = "workspace-write"
 
-# Permitir conexiones a internet desde los comandos
 [sandbox_workspace_write]
 network_access = true
 
-# Project-level Codex config. Merge with existing settings, never overwrite unrelated config.
 [agents]
 enabled = true
-max_concurrent_threads_per_session = 2
+# Un único subagente independiente a la vez (QA).
+max_concurrent_threads_per_session = 1
