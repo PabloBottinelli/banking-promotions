@@ -1,0 +1,3087 @@
+{
+  "raw_count": 350,
+  "unique_raw_ids": 350,
+  "detail_urls": 822,
+  "unique_detail_urls": 822,
+  "detail_urls_by_storefront": {
+    "ahorrosybeneficios": 243,
+    "plus": 230,
+    "singular": 242,
+    "on": 107
+  },
+  "variant_count": 583,
+  "unique_variant_ids": 583,
+  "normalization_errors": [],
+  "invalid_raw_records": [],
+  "review_count": 350,
+  "conflicting_storefront_campaigns": 31,
+  "conflicting_storefront_ids": [
+    "20250516_1355_CooperativaObreraCARGAESPECIAL",
+    "2026_09_16_Samsung_Comercios_Adheridos",
+    "2026_10_15_Tortugas_Open_Mall_DDLM:ahorrosybeneficios:tortugas-open-mall-ddlm",
+    "2026_09_15_Galerías_Pacífico_Comercios_Adheridos",
+    "2026_03_30_Super_Laguna",
+    "2026_04_08_Restaurante_Los_Alamos",
+    "2026_05_18_AR_Plack",
+    "2026_06_25_Hotel_Cordillera_Invierno",
+    "2024_11_13_1150_Paseo_de_compras_Allen",
+    "2024_11_13_1150_Paseo_de_compras_Bariloche",
+    "2026_09_18_Unicoop_Supermercados_Regionales",
+    "2026_03_11_Adidas_Exclusivo_Amex",
+    "2024_11_20_1231_Topper:ahorrosybeneficios:topper",
+    "20240114_1550_StockCenter",
+    "20240114_1550_Moov",
+    "20250930_1533_AtalayaPlanSueldoYJubilados",
+    "20250930_1533_DandyPlanSueldoYJubilados",
+    "20250114_1550_Freddo",
+    "20250327_1530_Kansas",
+    "20250516_1355_DandyCARGAESPECIAL",
+    "20250516_1355_KansasCARGAESPECIAL",
+    "20250710_0917_Rapanui",
+    "20250925_1739_FreddoPlanSueldoYJubilados",
+    "2024_21_11_1215_Paseo_de_compras_Munro",
+    "20241211_1617_ÁlvarezJonte",
+    "20241211_1617_Rafaela",
+    "20250318_1500_PaseoDeComprasRíoGrande",
+    "20250711_PaseoDeComprasSantaRosa",
+    "20250210_1313_TiendaDeMascotas",
+    "2026_05_10_Essen",
+    "2026_08_04_Shop_Gallery_Aeroparque:ahorrosybeneficios:shop-gallery-aeroparque"
+  ],
+  "previous_raw_count": 398,
+  "previous_unique_ids": 374,
+  "previous_urls_missing": [
+    "https://ahorrosybeneficios.bancopatagonia.com.ar/ahorrosybeneficios/aguila-mora-balc.html",
+    "https://ahorrosybeneficios.bancopatagonia.com.ar/ahorrosybeneficios/ambrosi-franco-almazen-de-sabores-balc.html",
+    "https://ahorrosybeneficios.bancopatagonia.com.ar/ahorrosybeneficios/american-sushi-balc.html",
+    "https://ahorrosybeneficios.bancopatagonia.com.ar/ahorrosybeneficios/anima-balc.html",
+    "https://ahorrosybeneficios.bancopatagonia.com.ar/ahorrosybeneficios/auita-balc.html",
+    "https://ahorrosybeneficios.bancopatagonia.com.ar/ahorrosybeneficios/batistin-villa-huinid-balc.html",
+    "https://ahorrosybeneficios.bancopatagonia.com.ar/ahorrosybeneficios/berlina-centro-balc.html",
+    "https://ahorrosybeneficios.bancopatagonia.com.ar/ahorrosybeneficios/berlina-km-12-balc.html",
+    "https://ahorrosybeneficios.bancopatagonia.com.ar/ahorrosybeneficios/bernabe-balc.html",
+    "https://ahorrosybeneficios.bancopatagonia.com.ar/ahorrosybeneficios/birka-cerveceria-balc.html",
+    "https://ahorrosybeneficios.bancopatagonia.com.ar/ahorrosybeneficios/blanco-es-negro-balc.html",
+    "https://ahorrosybeneficios.bancopatagonia.com.ar/ahorrosybeneficios/brava-focaccieria-balc.html",
+    "https://ahorrosybeneficios.bancopatagonia.com.ar/ahorrosybeneficios/brutus-balc.html",
+    "https://ahorrosybeneficios.bancopatagonia.com.ar/ahorrosybeneficios/cafe-don-rey-balc.html",
+    "https://ahorrosybeneficios.bancopatagonia.com.ar/ahorrosybeneficios/cafe-local-balc.html",
+    "https://ahorrosybeneficios.bancopatagonia.com.ar/ahorrosybeneficios/caliu-balc.html",
+    "https://ahorrosybeneficios.bancopatagonia.com.ar/ahorrosybeneficios/cantina-oni-balc.html",
+    "https://ahorrosybeneficios.bancopatagonia.com.ar/ahorrosybeneficios/carnera-brasas-y-sartenes-balc.html",
+    "https://ahorrosybeneficios.bancopatagonia.com.ar/ahorrosybeneficios/carnero-balc.html",
+    "https://ahorrosybeneficios.bancopatagonia.com.ar/ahorrosybeneficios/casa-fauca-balc.html",
+    "https://ahorrosybeneficios.bancopatagonia.com.ar/ahorrosybeneficios/cazuela-balc.html",
+    "https://ahorrosybeneficios.bancopatagonia.com.ar/ahorrosybeneficios/cerveceria-kuntsmann-balc.html",
+    "https://ahorrosybeneficios.bancopatagonia.com.ar/ahorrosybeneficios/cerveceria-patagonia-balc.html",
+    "https://ahorrosybeneficios.bancopatagonia.com.ar/ahorrosybeneficios/charming-lodge-sas-balc.html",
+    "https://ahorrosybeneficios.bancopatagonia.com.ar/ahorrosybeneficios/corteza-balc.html",
+    "https://ahorrosybeneficios.bancopatagonia.com.ar/ahorrosybeneficios/costa-82-balc.html",
+    "https://ahorrosybeneficios.bancopatagonia.com.ar/ahorrosybeneficios/coto-nfc.html",
+    "https://ahorrosybeneficios.bancopatagonia.com.ar/ahorrosybeneficios/deja-vu-balc.html",
+    "https://ahorrosybeneficios.bancopatagonia.com.ar/ahorrosybeneficios/design-suites-balc.html",
+    "https://ahorrosybeneficios.bancopatagonia.com.ar/ahorrosybeneficios/el-boliche-de-alberto-pastas-balc.html",
+    "https://ahorrosybeneficios.bancopatagonia.com.ar/ahorrosybeneficios/el-casco-balc.html",
+    "https://ahorrosybeneficios.bancopatagonia.com.ar/ahorrosybeneficios/el-pub-srl-balc.html",
+    "https://ahorrosybeneficios.bancopatagonia.com.ar/ahorrosybeneficios/entre-migas-cafe-balc.html",
+    "https://ahorrosybeneficios.bancopatagonia.com.ar/ahorrosybeneficios/hampton-by-hilton-bariloche-balc.html",
+    "https://ahorrosybeneficios.bancopatagonia.com.ar/ahorrosybeneficios/hotel-puerto-blest-balc.html",
+    "https://ahorrosybeneficios.bancopatagonia.com.ar/ahorrosybeneficios/huaiquil-isla-victoria-balc.html",
+    "https://ahorrosybeneficios.bancopatagonia.com.ar/ahorrosybeneficios/jauja-restaurant-y-parrilla-balc.html",
+    "https://ahorrosybeneficios.bancopatagonia.com.ar/ahorrosybeneficios/l-italiano-trattoria-calle-espa-a-590-balc.html",
+    "https://ahorrosybeneficios.bancopatagonia.com.ar/ahorrosybeneficios/l-italiano-trattoria-calle-quaglia-219-balc.html",
+    "https://ahorrosybeneficios.bancopatagonia.com.ar/ahorrosybeneficios/la-jirafa-restaurante-balc.html",
+    "https://ahorrosybeneficios.bancopatagonia.com.ar/ahorrosybeneficios/la-juana-balc.html",
+    "https://ahorrosybeneficios.bancopatagonia.com.ar/ahorrosybeneficios/la-marmite-balc.html",
+    "https://ahorrosybeneficios.bancopatagonia.com.ar/ahorrosybeneficios/la-parrilla-de-la-oveja-balc.html",
+    "https://ahorrosybeneficios.bancopatagonia.com.ar/ahorrosybeneficios/la-posta-del-rio-parrilla-balc.html",
+    "https://ahorrosybeneficios.bancopatagonia.com.ar/ahorrosybeneficios/la-tavola-hotel-nh-de-edelweiss-balc.html",
+    "https://ahorrosybeneficios.bancopatagonia.com.ar/ahorrosybeneficios/las-morillas-balc.html",
+    "https://ahorrosybeneficios.bancopatagonia.com.ar/ahorrosybeneficios/linguini-balc.html",
+    "https://ahorrosybeneficios.bancopatagonia.com.ar/ahorrosybeneficios/llao-llao-balc.html",
+    "https://ahorrosybeneficios.bancopatagonia.com.ar/ahorrosybeneficios/llofriu-ariel-la-parrilla-de-julian-balc.html",
+    "https://ahorrosybeneficios.bancopatagonia.com.ar/ahorrosybeneficios/lowther-balc.html",
+    "https://ahorrosybeneficios.bancopatagonia.com.ar/ahorrosybeneficios/madriguera-villa-huapi-balc.html",
+    "https://ahorrosybeneficios.bancopatagonia.com.ar/ahorrosybeneficios/madurado-balc.html",
+    "https://ahorrosybeneficios.bancopatagonia.com.ar/ahorrosybeneficios/maleza-balc.html",
+    "https://ahorrosybeneficios.bancopatagonia.com.ar/ahorrosybeneficios/manush-balc.html",
+    "https://ahorrosybeneficios.bancopatagonia.com.ar/ahorrosybeneficios/manush-km-4-balc.html",
+    "https://ahorrosybeneficios.bancopatagonia.com.ar/ahorrosybeneficios/mexicano-cafe-balc.html",
+    "https://ahorrosybeneficios.bancopatagonia.com.ar/ahorrosybeneficios/mi-piace-balc.html",
+    "https://ahorrosybeneficios.bancopatagonia.com.ar/ahorrosybeneficios/milvago-vermut-house-balc.html",
+    "https://ahorrosybeneficios.bancopatagonia.com.ar/ahorrosybeneficios/ne-ne-bar-balc.html",
+    "https://ahorrosybeneficios.bancopatagonia.com.ar/ahorrosybeneficios/nido-del-condor-selva-patagoni-sa-balc.html",
+    "https://ahorrosybeneficios.bancopatagonia.com.ar/ahorrosybeneficios/pizzeria-popular-balc.html",
+    "https://ahorrosybeneficios.bancopatagonia.com.ar/ahorrosybeneficios/potenza-quaglia-259-balc.html",
+    "https://ahorrosybeneficios.bancopatagonia.com.ar/ahorrosybeneficios/quiven-balc.html",
+    "https://ahorrosybeneficios.bancopatagonia.com.ar/ahorrosybeneficios/qv-cafe-balc.html",
+    "https://ahorrosybeneficios.bancopatagonia.com.ar/ahorrosybeneficios/radisson-balc.html",
+    "https://ahorrosybeneficios.bancopatagonia.com.ar/ahorrosybeneficios/rincon-patagonico-balc.html",
+    "https://ahorrosybeneficios.bancopatagonia.com.ar/ahorrosybeneficios/rudolf-balc.html",
+    "https://ahorrosybeneficios.bancopatagonia.com.ar/ahorrosybeneficios/serena-balc.html",
+    "https://ahorrosybeneficios.bancopatagonia.com.ar/ahorrosybeneficios/sheraton-bariloche-hotel-balc.html",
+    "https://ahorrosybeneficios.bancopatagonia.com.ar/ahorrosybeneficios/taberna-gallega-breogan-balc.html",
+    "https://ahorrosybeneficios.bancopatagonia.com.ar/ahorrosybeneficios/terra-alma-del-lago-balc.html",
+    "https://ahorrosybeneficios.bancopatagonia.com.ar/ahorrosybeneficios/the-station-patagonia-balc.html",
+    "https://ahorrosybeneficios.bancopatagonia.com.ar/ahorrosybeneficios/tre-resto-de-vinos-balc.html",
+    "https://ahorrosybeneficios.bancopatagonia.com.ar/ahorrosybeneficios/vertiente-cafe-con-ideas-balc.html"
+  ],
+  "gates": {
+    "catalog_complete": false,
+    "snapshot_replace_allowed": false,
+    "requires_review": true,
+    "safe_to_deactivate": false,
+    "review_reasons": [
+      "Accepted baseline invalid: Blank/duplicate raw ID or essential detail",
+      "Catalog coverage incomplete or limited",
+      "Official promotion contradictions require human review"
+    ]
+  },
+  "category_count": 101,
+  "empty_categories": [
+    "https://ahorrosybeneficios.bancopatagonia.com.ar/plus/automotor.html",
+    "https://ahorrosybeneficios.bancopatagonia.com.ar/plus/educacion.html",
+    "https://ahorrosybeneficios.bancopatagonia.com.ar/plus/servicios.html",
+    "https://ahorrosybeneficios.bancopatagonia.com.ar/plus/mundial.html",
+    "https://ahorrosybeneficios.bancopatagonia.com.ar/plus/patagonia-sale.html",
+    "https://ahorrosybeneficios.bancopatagonia.com.ar/plus/mes-de-las-infancias.html",
+    "https://ahorrosybeneficios.bancopatagonia.com.ar/singular/educacion.html",
+    "https://ahorrosybeneficios.bancopatagonia.com.ar/singular/servicios.html",
+    "https://ahorrosybeneficios.bancopatagonia.com.ar/singular/mundial.html",
+    "https://ahorrosybeneficios.bancopatagonia.com.ar/singular/patagonia-sale.html",
+    "https://ahorrosybeneficios.bancopatagonia.com.ar/singular/mes-de-las-infancias.html",
+    "https://ahorrosybeneficios.bancopatagonia.com.ar/singular/automotor.html",
+    "https://ahorrosybeneficios.bancopatagonia.com.ar/ahorrosybeneficios/automotor.html",
+    "https://ahorrosybeneficios.bancopatagonia.com.ar/ahorrosybeneficios/educacion.html",
+    "https://ahorrosybeneficios.bancopatagonia.com.ar/ahorrosybeneficios/servicios.html",
+    "https://ahorrosybeneficios.bancopatagonia.com.ar/ahorrosybeneficios/mundial.html",
+    "https://ahorrosybeneficios.bancopatagonia.com.ar/ahorrosybeneficios/patagonia-sale.html",
+    "https://ahorrosybeneficios.bancopatagonia.com.ar/on/combustibles.html",
+    "https://ahorrosybeneficios.bancopatagonia.com.ar/on/mascota.html",
+    "https://ahorrosybeneficios.bancopatagonia.com.ar/on/automotor.html",
+    "https://ahorrosybeneficios.bancopatagonia.com.ar/on/verano.html",
+    "https://ahorrosybeneficios.bancopatagonia.com.ar/on/invierno.html",
+    "https://ahorrosybeneficios.bancopatagonia.com.ar/on/transporte.html",
+    "https://ahorrosybeneficios.bancopatagonia.com.ar/on/servicios.html",
+    "https://ahorrosybeneficios.bancopatagonia.com.ar/on/mundial.html",
+    "https://ahorrosybeneficios.bancopatagonia.com.ar/on/patagonia-sale.html",
+    "https://ahorrosybeneficios.bancopatagonia.com.ar/on/laderas.html",
+    "https://ahorrosybeneficios.bancopatagonia.com.ar/on/centro-de-ski-catedral.html",
+    "https://ahorrosybeneficios.bancopatagonia.com.ar/on/mes-de-las-infancias.html"
+  ],
+  "coverage_errors": [
+    {
+      "url": "https://ahorrosybeneficios.bancopatagonia.com.ar/plus/automotor.html",
+      "error": "empty_or_repeated_category_page"
+    },
+    {
+      "url": "https://ahorrosybeneficios.bancopatagonia.com.ar/plus/educacion.html",
+      "error": "empty_or_repeated_category_page"
+    },
+    {
+      "url": "https://ahorrosybeneficios.bancopatagonia.com.ar/plus/servicios.html",
+      "error": "empty_or_repeated_category_page"
+    },
+    {
+      "url": "https://ahorrosybeneficios.bancopatagonia.com.ar/plus/mundial.html",
+      "error": "empty_or_repeated_category_page"
+    },
+    {
+      "url": "https://ahorrosybeneficios.bancopatagonia.com.ar/plus/patagonia-sale.html",
+      "error": "empty_or_repeated_category_page"
+    },
+    {
+      "url": "https://ahorrosybeneficios.bancopatagonia.com.ar/plus/mes-de-las-infancias.html",
+      "error": "empty_or_repeated_category_page"
+    },
+    {
+      "url": "https://ahorrosybeneficios.bancopatagonia.com.ar/singular/educacion.html",
+      "error": "empty_or_repeated_category_page"
+    },
+    {
+      "url": "https://ahorrosybeneficios.bancopatagonia.com.ar/singular/servicios.html",
+      "error": "empty_or_repeated_category_page"
+    },
+    {
+      "url": "https://ahorrosybeneficios.bancopatagonia.com.ar/singular/mundial.html",
+      "error": "empty_or_repeated_category_page"
+    },
+    {
+      "url": "https://ahorrosybeneficios.bancopatagonia.com.ar/singular/patagonia-sale.html",
+      "error": "empty_or_repeated_category_page"
+    },
+    {
+      "url": "https://ahorrosybeneficios.bancopatagonia.com.ar/singular/mes-de-las-infancias.html",
+      "error": "empty_or_repeated_category_page"
+    },
+    {
+      "url": "https://ahorrosybeneficios.bancopatagonia.com.ar/singular/automotor.html",
+      "error": "empty_or_repeated_category_page"
+    },
+    {
+      "url": "https://ahorrosybeneficios.bancopatagonia.com.ar/ahorrosybeneficios/automotor.html",
+      "error": "empty_or_repeated_category_page"
+    },
+    {
+      "url": "https://ahorrosybeneficios.bancopatagonia.com.ar/ahorrosybeneficios/educacion.html",
+      "error": "empty_or_repeated_category_page"
+    },
+    {
+      "url": "https://ahorrosybeneficios.bancopatagonia.com.ar/ahorrosybeneficios/servicios.html",
+      "error": "empty_or_repeated_category_page"
+    },
+    {
+      "url": "https://ahorrosybeneficios.bancopatagonia.com.ar/ahorrosybeneficios/mundial.html",
+      "error": "empty_or_repeated_category_page"
+    },
+    {
+      "url": "https://ahorrosybeneficios.bancopatagonia.com.ar/ahorrosybeneficios/patagonia-sale.html",
+      "error": "empty_or_repeated_category_page"
+    },
+    {
+      "url": "https://ahorrosybeneficios.bancopatagonia.com.ar/on/combustibles.html",
+      "error": "empty_or_repeated_category_page"
+    },
+    {
+      "url": "https://ahorrosybeneficios.bancopatagonia.com.ar/on/mascota.html",
+      "error": "empty_or_repeated_category_page"
+    },
+    {
+      "url": "https://ahorrosybeneficios.bancopatagonia.com.ar/on/automotor.html",
+      "error": "empty_or_repeated_category_page"
+    },
+    {
+      "url": "https://ahorrosybeneficios.bancopatagonia.com.ar/on/verano.html",
+      "error": "empty_or_repeated_category_page"
+    },
+    {
+      "url": "https://ahorrosybeneficios.bancopatagonia.com.ar/on/invierno.html",
+      "error": "empty_or_repeated_category_page"
+    },
+    {
+      "url": "https://ahorrosybeneficios.bancopatagonia.com.ar/on/transporte.html",
+      "error": "empty_or_repeated_category_page"
+    },
+    {
+      "url": "https://ahorrosybeneficios.bancopatagonia.com.ar/on/servicios.html",
+      "error": "empty_or_repeated_category_page"
+    },
+    {
+      "url": "https://ahorrosybeneficios.bancopatagonia.com.ar/on/mundial.html",
+      "error": "empty_or_repeated_category_page"
+    },
+    {
+      "url": "https://ahorrosybeneficios.bancopatagonia.com.ar/on/patagonia-sale.html",
+      "error": "empty_or_repeated_category_page"
+    },
+    {
+      "url": "https://ahorrosybeneficios.bancopatagonia.com.ar/on/laderas.html",
+      "error": "empty_or_repeated_category_page"
+    },
+    {
+      "url": "https://ahorrosybeneficios.bancopatagonia.com.ar/on/centro-de-ski-catedral.html",
+      "error": "empty_or_repeated_category_page"
+    },
+    {
+      "url": "https://ahorrosybeneficios.bancopatagonia.com.ar/on/mes-de-las-infancias.html",
+      "error": "empty_or_repeated_category_page"
+    }
+  ],
+  "header_audit": {
+    "recognized_distinct": 24,
+    "recognized_occurrences": 1022,
+    "unrecognized_headings": {}
+  },
+  "header_fix_comparison": {
+    "discarded_development_export_conflict_count": 50,
+    "corrected_export_conflict_count": 31,
+    "latest_extra_round_conflict_count": 31,
+    "latest_round_added_conflicts": [],
+    "latest_round_removed_conflicts": []
+  },
+  "new_url_count": 498,
+  "categories": [
+    {
+      "name": "Río Negro",
+      "url": "https://ahorrosybeneficios.bancopatagonia.com.ar/plus/rio-negro.html",
+      "segment": "plus",
+      "pages": [
+        {
+          "url": "https://ahorrosybeneficios.bancopatagonia.com.ar/plus/rio-negro.html",
+          "count": 12,
+          "next": "https://ahorrosybeneficios.bancopatagonia.com.ar/plus/rio-negro.html?p=2",
+          "reported_total": 62
+        },
+        {
+          "url": "https://ahorrosybeneficios.bancopatagonia.com.ar/plus/rio-negro.html?p=2",
+          "count": 12,
+          "next": "https://ahorrosybeneficios.bancopatagonia.com.ar/plus/rio-negro.html?p=3",
+          "reported_total": 62
+        },
+        {
+          "url": "https://ahorrosybeneficios.bancopatagonia.com.ar/plus/rio-negro.html?p=3",
+          "count": 12,
+          "next": "https://ahorrosybeneficios.bancopatagonia.com.ar/plus/rio-negro.html?p=4",
+          "reported_total": 62
+        },
+        {
+          "url": "https://ahorrosybeneficios.bancopatagonia.com.ar/plus/rio-negro.html?p=4",
+          "count": 12,
+          "next": "https://ahorrosybeneficios.bancopatagonia.com.ar/plus/rio-negro.html?p=5",
+          "reported_total": 62
+        },
+        {
+          "url": "https://ahorrosybeneficios.bancopatagonia.com.ar/plus/rio-negro.html?p=5",
+          "count": 12,
+          "next": "https://ahorrosybeneficios.bancopatagonia.com.ar/plus/rio-negro.html?p=6",
+          "reported_total": 62
+        },
+        {
+          "url": "https://ahorrosybeneficios.bancopatagonia.com.ar/plus/rio-negro.html?p=6",
+          "count": 2,
+          "next": null,
+          "reported_total": 62
+        }
+      ],
+      "count": 62
+    },
+    {
+      "name": "Supermercados",
+      "url": "https://ahorrosybeneficios.bancopatagonia.com.ar/plus/supermercados.html",
+      "segment": "plus",
+      "pages": [
+        {
+          "url": "https://ahorrosybeneficios.bancopatagonia.com.ar/plus/supermercados.html",
+          "count": 12,
+          "next": "https://ahorrosybeneficios.bancopatagonia.com.ar/plus/supermercados.html?p=2",
+          "reported_total": 26
+        },
+        {
+          "url": "https://ahorrosybeneficios.bancopatagonia.com.ar/plus/supermercados.html?p=2",
+          "count": 12,
+          "next": "https://ahorrosybeneficios.bancopatagonia.com.ar/plus/supermercados.html?p=3",
+          "reported_total": 26
+        },
+        {
+          "url": "https://ahorrosybeneficios.bancopatagonia.com.ar/plus/supermercados.html?p=3",
+          "count": 2,
+          "next": null,
+          "reported_total": 26
+        }
+      ],
+      "count": 26
+    },
+    {
+      "name": "Combustibles",
+      "url": "https://ahorrosybeneficios.bancopatagonia.com.ar/plus/combustibles.html",
+      "segment": "plus",
+      "pages": [
+        {
+          "url": "https://ahorrosybeneficios.bancopatagonia.com.ar/plus/combustibles.html",
+          "count": 1,
+          "next": null,
+          "reported_total": 1
+        }
+      ],
+      "count": 1
+    },
+    {
+      "name": "Indumentaria y Deportes",
+      "url": "https://ahorrosybeneficios.bancopatagonia.com.ar/plus/indumentaria-y-deportes.html",
+      "segment": "plus",
+      "pages": [
+        {
+          "url": "https://ahorrosybeneficios.bancopatagonia.com.ar/plus/indumentaria-y-deportes.html",
+          "count": 12,
+          "next": "https://ahorrosybeneficios.bancopatagonia.com.ar/plus/indumentaria-y-deportes.html?p=2",
+          "reported_total": 46
+        },
+        {
+          "url": "https://ahorrosybeneficios.bancopatagonia.com.ar/plus/indumentaria-y-deportes.html?p=2",
+          "count": 12,
+          "next": "https://ahorrosybeneficios.bancopatagonia.com.ar/plus/indumentaria-y-deportes.html?p=3",
+          "reported_total": 46
+        },
+        {
+          "url": "https://ahorrosybeneficios.bancopatagonia.com.ar/plus/indumentaria-y-deportes.html?p=3",
+          "count": 12,
+          "next": "https://ahorrosybeneficios.bancopatagonia.com.ar/plus/indumentaria-y-deportes.html?p=4",
+          "reported_total": 46
+        },
+        {
+          "url": "https://ahorrosybeneficios.bancopatagonia.com.ar/plus/indumentaria-y-deportes.html?p=4",
+          "count": 10,
+          "next": null,
+          "reported_total": 46
+        }
+      ],
+      "count": 46
+    },
+    {
+      "name": "Peluquería",
+      "url": "https://ahorrosybeneficios.bancopatagonia.com.ar/plus/peluqueria.html",
+      "segment": "plus",
+      "pages": [
+        {
+          "url": "https://ahorrosybeneficios.bancopatagonia.com.ar/plus/peluqueria.html",
+          "count": 1,
+          "next": null,
+          "reported_total": 1
+        }
+      ],
+      "count": 1
+    },
+    {
+      "name": "Gastronomía",
+      "url": "https://ahorrosybeneficios.bancopatagonia.com.ar/plus/gastronomia.html",
+      "segment": "plus",
+      "pages": [
+        {
+          "url": "https://ahorrosybeneficios.bancopatagonia.com.ar/plus/gastronomia.html",
+          "count": 12,
+          "next": "https://ahorrosybeneficios.bancopatagonia.com.ar/plus/gastronomia.html?p=2",
+          "reported_total": 33
+        },
+        {
+          "url": "https://ahorrosybeneficios.bancopatagonia.com.ar/plus/gastronomia.html?p=2",
+          "count": 12,
+          "next": "https://ahorrosybeneficios.bancopatagonia.com.ar/plus/gastronomia.html?p=3",
+          "reported_total": 33
+        },
+        {
+          "url": "https://ahorrosybeneficios.bancopatagonia.com.ar/plus/gastronomia.html?p=3",
+          "count": 9,
+          "next": null,
+          "reported_total": 33
+        }
+      ],
+      "count": 33
+    },
+    {
+      "name": "Espectáculos",
+      "url": "https://ahorrosybeneficios.bancopatagonia.com.ar/plus/espectaculos.html",
+      "segment": "plus",
+      "pages": [
+        {
+          "url": "https://ahorrosybeneficios.bancopatagonia.com.ar/plus/espectaculos.html",
+          "count": 3,
+          "next": null,
+          "reported_total": 3
+        }
+      ],
+      "count": 3
+    },
+    {
+      "name": "Librerías y Jugueterías",
+      "url": "https://ahorrosybeneficios.bancopatagonia.com.ar/plus/librerias-y-jugueterias.html",
+      "segment": "plus",
+      "pages": [
+        {
+          "url": "https://ahorrosybeneficios.bancopatagonia.com.ar/plus/librerias-y-jugueterias.html",
+          "count": 1,
+          "next": null,
+          "reported_total": 1
+        }
+      ],
+      "count": 1
+    },
+    {
+      "name": "Shopping y Paseos",
+      "url": "https://ahorrosybeneficios.bancopatagonia.com.ar/plus/shopping-y-paseos.html",
+      "segment": "plus",
+      "pages": [
+        {
+          "url": "https://ahorrosybeneficios.bancopatagonia.com.ar/plus/shopping-y-paseos.html",
+          "count": 12,
+          "next": "https://ahorrosybeneficios.bancopatagonia.com.ar/plus/shopping-y-paseos.html?p=2",
+          "reported_total": 61
+        },
+        {
+          "url": "https://ahorrosybeneficios.bancopatagonia.com.ar/plus/shopping-y-paseos.html?p=2",
+          "count": 12,
+          "next": "https://ahorrosybeneficios.bancopatagonia.com.ar/plus/shopping-y-paseos.html?p=3",
+          "reported_total": 61
+        },
+        {
+          "url": "https://ahorrosybeneficios.bancopatagonia.com.ar/plus/shopping-y-paseos.html?p=3",
+          "count": 12,
+          "next": "https://ahorrosybeneficios.bancopatagonia.com.ar/plus/shopping-y-paseos.html?p=4",
+          "reported_total": 61
+        },
+        {
+          "url": "https://ahorrosybeneficios.bancopatagonia.com.ar/plus/shopping-y-paseos.html?p=4",
+          "count": 12,
+          "next": "https://ahorrosybeneficios.bancopatagonia.com.ar/plus/shopping-y-paseos.html?p=5",
+          "reported_total": 61
+        },
+        {
+          "url": "https://ahorrosybeneficios.bancopatagonia.com.ar/plus/shopping-y-paseos.html?p=5",
+          "count": 12,
+          "next": "https://ahorrosybeneficios.bancopatagonia.com.ar/plus/shopping-y-paseos.html?p=6",
+          "reported_total": 61
+        },
+        {
+          "url": "https://ahorrosybeneficios.bancopatagonia.com.ar/plus/shopping-y-paseos.html?p=6",
+          "count": 1,
+          "next": null,
+          "reported_total": 61
+        }
+      ],
+      "count": 61
+    },
+    {
+      "name": "Mascotas",
+      "url": "https://ahorrosybeneficios.bancopatagonia.com.ar/plus/mascota.html",
+      "segment": "plus",
+      "pages": [
+        {
+          "url": "https://ahorrosybeneficios.bancopatagonia.com.ar/plus/mascota.html",
+          "count": 4,
+          "next": null,
+          "reported_total": 4
+        }
+      ],
+      "count": 4
+    },
+    {
+      "name": "MODO",
+      "url": "https://ahorrosybeneficios.bancopatagonia.com.ar/plus/modo.html",
+      "segment": "plus",
+      "pages": [
+        {
+          "url": "https://ahorrosybeneficios.bancopatagonia.com.ar/plus/modo.html",
+          "count": 12,
+          "next": "https://ahorrosybeneficios.bancopatagonia.com.ar/plus/modo.html?p=2",
+          "reported_total": 34
+        },
+        {
+          "url": "https://ahorrosybeneficios.bancopatagonia.com.ar/plus/modo.html?p=2",
+          "count": 12,
+          "next": "https://ahorrosybeneficios.bancopatagonia.com.ar/plus/modo.html?p=3",
+          "reported_total": 34
+        },
+        {
+          "url": "https://ahorrosybeneficios.bancopatagonia.com.ar/plus/modo.html?p=3",
+          "count": 10,
+          "next": null,
+          "reported_total": 34
+        }
+      ],
+      "count": 34
+    },
+    {
+      "name": "Automotor",
+      "url": "https://ahorrosybeneficios.bancopatagonia.com.ar/plus/automotor.html",
+      "segment": "plus",
+      "pages": [
+        {
+          "url": "https://ahorrosybeneficios.bancopatagonia.com.ar/plus/automotor.html",
+          "count": 0,
+          "next": null,
+          "reported_total": null
+        }
+      ],
+      "count": 0
+    },
+    {
+      "name": "Verano",
+      "url": "https://ahorrosybeneficios.bancopatagonia.com.ar/plus/verano.html",
+      "segment": "plus",
+      "pages": [
+        {
+          "url": "https://ahorrosybeneficios.bancopatagonia.com.ar/plus/verano.html",
+          "count": 4,
+          "next": null,
+          "reported_total": 4
+        }
+      ],
+      "count": 4
+    },
+    {
+      "name": "Educación",
+      "url": "https://ahorrosybeneficios.bancopatagonia.com.ar/plus/educacion.html",
+      "segment": "plus",
+      "pages": [
+        {
+          "url": "https://ahorrosybeneficios.bancopatagonia.com.ar/plus/educacion.html",
+          "count": 0,
+          "next": null,
+          "reported_total": null
+        }
+      ],
+      "count": 0
+    },
+    {
+      "name": "Invierno",
+      "url": "https://ahorrosybeneficios.bancopatagonia.com.ar/plus/invierno.html",
+      "segment": "plus",
+      "pages": [
+        {
+          "url": "https://ahorrosybeneficios.bancopatagonia.com.ar/plus/invierno.html",
+          "count": 11,
+          "next": null,
+          "reported_total": 11
+        }
+      ],
+      "count": 11
+    },
+    {
+      "name": "Chocolaterías",
+      "url": "https://ahorrosybeneficios.bancopatagonia.com.ar/plus/chocolaterias.html",
+      "segment": "plus",
+      "pages": [
+        {
+          "url": "https://ahorrosybeneficios.bancopatagonia.com.ar/plus/chocolaterias.html",
+          "count": 8,
+          "next": null,
+          "reported_total": 8
+        }
+      ],
+      "count": 8
+    },
+    {
+      "name": "Hogar",
+      "url": "https://ahorrosybeneficios.bancopatagonia.com.ar/plus/hogar.html",
+      "segment": "plus",
+      "pages": [
+        {
+          "url": "https://ahorrosybeneficios.bancopatagonia.com.ar/plus/hogar.html",
+          "count": 12,
+          "next": "https://ahorrosybeneficios.bancopatagonia.com.ar/plus/hogar.html?p=2",
+          "reported_total": 28
+        },
+        {
+          "url": "https://ahorrosybeneficios.bancopatagonia.com.ar/plus/hogar.html?p=2",
+          "count": 12,
+          "next": "https://ahorrosybeneficios.bancopatagonia.com.ar/plus/hogar.html?p=3",
+          "reported_total": 28
+        },
+        {
+          "url": "https://ahorrosybeneficios.bancopatagonia.com.ar/plus/hogar.html?p=3",
+          "count": 4,
+          "next": null,
+          "reported_total": 28
+        }
+      ],
+      "count": 28
+    },
+    {
+      "name": "Servicios",
+      "url": "https://ahorrosybeneficios.bancopatagonia.com.ar/plus/servicios.html",
+      "segment": "plus",
+      "pages": [
+        {
+          "url": "https://ahorrosybeneficios.bancopatagonia.com.ar/plus/servicios.html",
+          "count": 0,
+          "next": null,
+          "reported_total": null
+        }
+      ],
+      "count": 0
+    },
+    {
+      "name": "Mundial",
+      "url": "https://ahorrosybeneficios.bancopatagonia.com.ar/plus/mundial.html",
+      "segment": "plus",
+      "pages": [
+        {
+          "url": "https://ahorrosybeneficios.bancopatagonia.com.ar/plus/mundial.html",
+          "count": 0,
+          "next": null,
+          "reported_total": null
+        }
+      ],
+      "count": 0
+    },
+    {
+      "name": "Turismo",
+      "url": "https://ahorrosybeneficios.bancopatagonia.com.ar/plus/turismo.html",
+      "segment": "plus",
+      "pages": [
+        {
+          "url": "https://ahorrosybeneficios.bancopatagonia.com.ar/plus/turismo.html",
+          "count": 7,
+          "next": null,
+          "reported_total": 7
+        }
+      ],
+      "count": 7
+    },
+    {
+      "name": "Patagonia Sale",
+      "url": "https://ahorrosybeneficios.bancopatagonia.com.ar/plus/patagonia-sale.html",
+      "segment": "plus",
+      "pages": [
+        {
+          "url": "https://ahorrosybeneficios.bancopatagonia.com.ar/plus/patagonia-sale.html",
+          "count": 0,
+          "next": null,
+          "reported_total": null
+        }
+      ],
+      "count": 0
+    },
+    {
+      "name": "Centro de Ski Laderas",
+      "url": "https://ahorrosybeneficios.bancopatagonia.com.ar/plus/laderas.html",
+      "segment": "plus",
+      "pages": [
+        {
+          "url": "https://ahorrosybeneficios.bancopatagonia.com.ar/plus/laderas.html",
+          "count": 2,
+          "next": null,
+          "reported_total": 2
+        }
+      ],
+      "count": 2
+    },
+    {
+      "name": "Centro de Ski Catedral",
+      "url": "https://ahorrosybeneficios.bancopatagonia.com.ar/plus/centro-de-ski-catedral.html",
+      "segment": "plus",
+      "pages": [
+        {
+          "url": "https://ahorrosybeneficios.bancopatagonia.com.ar/plus/centro-de-ski-catedral.html",
+          "count": 4,
+          "next": null,
+          "reported_total": 4
+        }
+      ],
+      "count": 4
+    },
+    {
+      "name": "Mes de las infancias",
+      "url": "https://ahorrosybeneficios.bancopatagonia.com.ar/plus/mes-de-las-infancias.html",
+      "segment": "plus",
+      "pages": [
+        {
+          "url": "https://ahorrosybeneficios.bancopatagonia.com.ar/plus/mes-de-las-infancias.html",
+          "count": 0,
+          "next": null,
+          "reported_total": null
+        }
+      ],
+      "count": 0
+    },
+    {
+      "name": "Chocolaterías",
+      "url": "https://ahorrosybeneficios.bancopatagonia.com.ar/plus/transporte.html",
+      "segment": "plus",
+      "pages": [
+        {
+          "url": "https://ahorrosybeneficios.bancopatagonia.com.ar/plus/transporte.html",
+          "count": 8,
+          "next": null,
+          "reported_total": 8
+        }
+      ],
+      "count": 8
+    },
+    {
+      "name": "Farmacias y perfumerías",
+      "url": "https://ahorrosybeneficios.bancopatagonia.com.ar/plus/farmacias-y-perfumerias.html",
+      "segment": "plus",
+      "pages": [
+        {
+          "url": "https://ahorrosybeneficios.bancopatagonia.com.ar/plus/farmacias-y-perfumerias.html",
+          "count": 12,
+          "next": null,
+          "reported_total": 12
+        }
+      ],
+      "count": 12
+    },
+    {
+      "name": "Río Negro",
+      "url": "https://ahorrosybeneficios.bancopatagonia.com.ar/singular/rio-negro.html",
+      "segment": "singular",
+      "pages": [
+        {
+          "url": "https://ahorrosybeneficios.bancopatagonia.com.ar/singular/rio-negro.html",
+          "count": 12,
+          "next": "https://ahorrosybeneficios.bancopatagonia.com.ar/singular/rio-negro.html?p=2",
+          "reported_total": 62
+        },
+        {
+          "url": "https://ahorrosybeneficios.bancopatagonia.com.ar/singular/rio-negro.html?p=2",
+          "count": 12,
+          "next": "https://ahorrosybeneficios.bancopatagonia.com.ar/singular/rio-negro.html?p=3",
+          "reported_total": 62
+        },
+        {
+          "url": "https://ahorrosybeneficios.bancopatagonia.com.ar/singular/rio-negro.html?p=3",
+          "count": 12,
+          "next": "https://ahorrosybeneficios.bancopatagonia.com.ar/singular/rio-negro.html?p=4",
+          "reported_total": 62
+        },
+        {
+          "url": "https://ahorrosybeneficios.bancopatagonia.com.ar/singular/rio-negro.html?p=4",
+          "count": 12,
+          "next": "https://ahorrosybeneficios.bancopatagonia.com.ar/singular/rio-negro.html?p=5",
+          "reported_total": 62
+        },
+        {
+          "url": "https://ahorrosybeneficios.bancopatagonia.com.ar/singular/rio-negro.html?p=5",
+          "count": 12,
+          "next": "https://ahorrosybeneficios.bancopatagonia.com.ar/singular/rio-negro.html?p=6",
+          "reported_total": 62
+        },
+        {
+          "url": "https://ahorrosybeneficios.bancopatagonia.com.ar/singular/rio-negro.html?p=6",
+          "count": 2,
+          "next": null,
+          "reported_total": 62
+        }
+      ],
+      "count": 62
+    },
+    {
+      "name": "Supermercados",
+      "url": "https://ahorrosybeneficios.bancopatagonia.com.ar/singular/supermercados.html",
+      "segment": "singular",
+      "pages": [
+        {
+          "url": "https://ahorrosybeneficios.bancopatagonia.com.ar/singular/supermercados.html",
+          "count": 12,
+          "next": "https://ahorrosybeneficios.bancopatagonia.com.ar/singular/supermercados.html?p=2",
+          "reported_total": 28
+        },
+        {
+          "url": "https://ahorrosybeneficios.bancopatagonia.com.ar/singular/supermercados.html?p=2",
+          "count": 12,
+          "next": "https://ahorrosybeneficios.bancopatagonia.com.ar/singular/supermercados.html?p=3",
+          "reported_total": 28
+        },
+        {
+          "url": "https://ahorrosybeneficios.bancopatagonia.com.ar/singular/supermercados.html?p=3",
+          "count": 4,
+          "next": null,
+          "reported_total": 28
+        }
+      ],
+      "count": 28
+    },
+    {
+      "name": "Combustibles",
+      "url": "https://ahorrosybeneficios.bancopatagonia.com.ar/singular/combustibles.html",
+      "segment": "singular",
+      "pages": [
+        {
+          "url": "https://ahorrosybeneficios.bancopatagonia.com.ar/singular/combustibles.html",
+          "count": 2,
+          "next": null,
+          "reported_total": 2
+        }
+      ],
+      "count": 2
+    },
+    {
+      "name": "Indumentaria y Deportes",
+      "url": "https://ahorrosybeneficios.bancopatagonia.com.ar/singular/indumentaria-y-deportes.html",
+      "segment": "singular",
+      "pages": [
+        {
+          "url": "https://ahorrosybeneficios.bancopatagonia.com.ar/singular/indumentaria-y-deportes.html",
+          "count": 12,
+          "next": "https://ahorrosybeneficios.bancopatagonia.com.ar/singular/indumentaria-y-deportes.html?p=2",
+          "reported_total": 51
+        },
+        {
+          "url": "https://ahorrosybeneficios.bancopatagonia.com.ar/singular/indumentaria-y-deportes.html?p=2",
+          "count": 12,
+          "next": "https://ahorrosybeneficios.bancopatagonia.com.ar/singular/indumentaria-y-deportes.html?p=3",
+          "reported_total": 51
+        },
+        {
+          "url": "https://ahorrosybeneficios.bancopatagonia.com.ar/singular/indumentaria-y-deportes.html?p=3",
+          "count": 12,
+          "next": "https://ahorrosybeneficios.bancopatagonia.com.ar/singular/indumentaria-y-deportes.html?p=4",
+          "reported_total": 51
+        },
+        {
+          "url": "https://ahorrosybeneficios.bancopatagonia.com.ar/singular/indumentaria-y-deportes.html?p=4",
+          "count": 12,
+          "next": "https://ahorrosybeneficios.bancopatagonia.com.ar/singular/indumentaria-y-deportes.html?p=5",
+          "reported_total": 51
+        },
+        {
+          "url": "https://ahorrosybeneficios.bancopatagonia.com.ar/singular/indumentaria-y-deportes.html?p=5",
+          "count": 3,
+          "next": null,
+          "reported_total": 51
+        }
+      ],
+      "count": 51
+    },
+    {
+      "name": "Peluquería",
+      "url": "https://ahorrosybeneficios.bancopatagonia.com.ar/singular/peluqueria.html",
+      "segment": "singular",
+      "pages": [
+        {
+          "url": "https://ahorrosybeneficios.bancopatagonia.com.ar/singular/peluqueria.html",
+          "count": 1,
+          "next": null,
+          "reported_total": 1
+        }
+      ],
+      "count": 1
+    },
+    {
+      "name": "Gastronomía",
+      "url": "https://ahorrosybeneficios.bancopatagonia.com.ar/singular/gastronomia.html",
+      "segment": "singular",
+      "pages": [
+        {
+          "url": "https://ahorrosybeneficios.bancopatagonia.com.ar/singular/gastronomia.html",
+          "count": 12,
+          "next": "https://ahorrosybeneficios.bancopatagonia.com.ar/singular/gastronomia.html?p=2",
+          "reported_total": 35
+        },
+        {
+          "url": "https://ahorrosybeneficios.bancopatagonia.com.ar/singular/gastronomia.html?p=2",
+          "count": 12,
+          "next": "https://ahorrosybeneficios.bancopatagonia.com.ar/singular/gastronomia.html?p=3",
+          "reported_total": 35
+        },
+        {
+          "url": "https://ahorrosybeneficios.bancopatagonia.com.ar/singular/gastronomia.html?p=3",
+          "count": 11,
+          "next": null,
+          "reported_total": 35
+        }
+      ],
+      "count": 35
+    },
+    {
+      "name": "Espectáculos",
+      "url": "https://ahorrosybeneficios.bancopatagonia.com.ar/singular/espectaculos.html",
+      "segment": "singular",
+      "pages": [
+        {
+          "url": "https://ahorrosybeneficios.bancopatagonia.com.ar/singular/espectaculos.html",
+          "count": 5,
+          "next": null,
+          "reported_total": 5
+        }
+      ],
+      "count": 5
+    },
+    {
+      "name": "Librerías y Jugueterías",
+      "url": "https://ahorrosybeneficios.bancopatagonia.com.ar/singular/librerias-y-jugueterias.html",
+      "segment": "singular",
+      "pages": [
+        {
+          "url": "https://ahorrosybeneficios.bancopatagonia.com.ar/singular/librerias-y-jugueterias.html",
+          "count": 1,
+          "next": null,
+          "reported_total": 1
+        }
+      ],
+      "count": 1
+    },
+    {
+      "name": "Shopping y Paseos",
+      "url": "https://ahorrosybeneficios.bancopatagonia.com.ar/singular/shopping-y-paseos.html",
+      "segment": "singular",
+      "pages": [
+        {
+          "url": "https://ahorrosybeneficios.bancopatagonia.com.ar/singular/shopping-y-paseos.html",
+          "count": 12,
+          "next": "https://ahorrosybeneficios.bancopatagonia.com.ar/singular/shopping-y-paseos.html?p=2",
+          "reported_total": 61
+        },
+        {
+          "url": "https://ahorrosybeneficios.bancopatagonia.com.ar/singular/shopping-y-paseos.html?p=2",
+          "count": 12,
+          "next": "https://ahorrosybeneficios.bancopatagonia.com.ar/singular/shopping-y-paseos.html?p=3",
+          "reported_total": 61
+        },
+        {
+          "url": "https://ahorrosybeneficios.bancopatagonia.com.ar/singular/shopping-y-paseos.html?p=3",
+          "count": 12,
+          "next": "https://ahorrosybeneficios.bancopatagonia.com.ar/singular/shopping-y-paseos.html?p=4",
+          "reported_total": 61
+        },
+        {
+          "url": "https://ahorrosybeneficios.bancopatagonia.com.ar/singular/shopping-y-paseos.html?p=4",
+          "count": 12,
+          "next": "https://ahorrosybeneficios.bancopatagonia.com.ar/singular/shopping-y-paseos.html?p=5",
+          "reported_total": 61
+        },
+        {
+          "url": "https://ahorrosybeneficios.bancopatagonia.com.ar/singular/shopping-y-paseos.html?p=5",
+          "count": 12,
+          "next": "https://ahorrosybeneficios.bancopatagonia.com.ar/singular/shopping-y-paseos.html?p=6",
+          "reported_total": 61
+        },
+        {
+          "url": "https://ahorrosybeneficios.bancopatagonia.com.ar/singular/shopping-y-paseos.html?p=6",
+          "count": 1,
+          "next": null,
+          "reported_total": 61
+        }
+      ],
+      "count": 61
+    },
+    {
+      "name": "Mascotas",
+      "url": "https://ahorrosybeneficios.bancopatagonia.com.ar/singular/mascota.html",
+      "segment": "singular",
+      "pages": [
+        {
+          "url": "https://ahorrosybeneficios.bancopatagonia.com.ar/singular/mascota.html",
+          "count": 4,
+          "next": null,
+          "reported_total": 4
+        }
+      ],
+      "count": 4
+    },
+    {
+      "name": "MODO",
+      "url": "https://ahorrosybeneficios.bancopatagonia.com.ar/singular/modo.html",
+      "segment": "singular",
+      "pages": [
+        {
+          "url": "https://ahorrosybeneficios.bancopatagonia.com.ar/singular/modo.html",
+          "count": 12,
+          "next": "https://ahorrosybeneficios.bancopatagonia.com.ar/singular/modo.html?p=2",
+          "reported_total": 35
+        },
+        {
+          "url": "https://ahorrosybeneficios.bancopatagonia.com.ar/singular/modo.html?p=2",
+          "count": 12,
+          "next": "https://ahorrosybeneficios.bancopatagonia.com.ar/singular/modo.html?p=3",
+          "reported_total": 35
+        },
+        {
+          "url": "https://ahorrosybeneficios.bancopatagonia.com.ar/singular/modo.html?p=3",
+          "count": 11,
+          "next": null,
+          "reported_total": 35
+        }
+      ],
+      "count": 35
+    },
+    {
+      "name": "Verano",
+      "url": "https://ahorrosybeneficios.bancopatagonia.com.ar/singular/verano.html",
+      "segment": "singular",
+      "pages": [
+        {
+          "url": "https://ahorrosybeneficios.bancopatagonia.com.ar/singular/verano.html",
+          "count": 4,
+          "next": null,
+          "reported_total": 4
+        }
+      ],
+      "count": 4
+    },
+    {
+      "name": "Educacion",
+      "url": "https://ahorrosybeneficios.bancopatagonia.com.ar/singular/educacion.html",
+      "segment": "singular",
+      "pages": [
+        {
+          "url": "https://ahorrosybeneficios.bancopatagonia.com.ar/singular/educacion.html",
+          "count": 0,
+          "next": null,
+          "reported_total": null
+        }
+      ],
+      "count": 0
+    },
+    {
+      "name": "Invierno",
+      "url": "https://ahorrosybeneficios.bancopatagonia.com.ar/singular/invierno.html",
+      "segment": "singular",
+      "pages": [
+        {
+          "url": "https://ahorrosybeneficios.bancopatagonia.com.ar/singular/invierno.html",
+          "count": 11,
+          "next": null,
+          "reported_total": 11
+        }
+      ],
+      "count": 11
+    },
+    {
+      "name": "Chocolaterías",
+      "url": "https://ahorrosybeneficios.bancopatagonia.com.ar/singular/chocolaterias.html",
+      "segment": "singular",
+      "pages": [
+        {
+          "url": "https://ahorrosybeneficios.bancopatagonia.com.ar/singular/chocolaterias.html",
+          "count": 8,
+          "next": null,
+          "reported_total": 8
+        }
+      ],
+      "count": 8
+    },
+    {
+      "name": "Hogar",
+      "url": "https://ahorrosybeneficios.bancopatagonia.com.ar/singular/hogar.html",
+      "segment": "singular",
+      "pages": [
+        {
+          "url": "https://ahorrosybeneficios.bancopatagonia.com.ar/singular/hogar.html",
+          "count": 12,
+          "next": "https://ahorrosybeneficios.bancopatagonia.com.ar/singular/hogar.html?p=2",
+          "reported_total": 28
+        },
+        {
+          "url": "https://ahorrosybeneficios.bancopatagonia.com.ar/singular/hogar.html?p=2",
+          "count": 12,
+          "next": "https://ahorrosybeneficios.bancopatagonia.com.ar/singular/hogar.html?p=3",
+          "reported_total": 28
+        },
+        {
+          "url": "https://ahorrosybeneficios.bancopatagonia.com.ar/singular/hogar.html?p=3",
+          "count": 4,
+          "next": null,
+          "reported_total": 28
+        }
+      ],
+      "count": 28
+    },
+    {
+      "name": "Servicios",
+      "url": "https://ahorrosybeneficios.bancopatagonia.com.ar/singular/servicios.html",
+      "segment": "singular",
+      "pages": [
+        {
+          "url": "https://ahorrosybeneficios.bancopatagonia.com.ar/singular/servicios.html",
+          "count": 0,
+          "next": null,
+          "reported_total": null
+        }
+      ],
+      "count": 0
+    },
+    {
+      "name": "Mundial",
+      "url": "https://ahorrosybeneficios.bancopatagonia.com.ar/singular/mundial.html",
+      "segment": "singular",
+      "pages": [
+        {
+          "url": "https://ahorrosybeneficios.bancopatagonia.com.ar/singular/mundial.html",
+          "count": 0,
+          "next": null,
+          "reported_total": null
+        }
+      ],
+      "count": 0
+    },
+    {
+      "name": "Turismo",
+      "url": "https://ahorrosybeneficios.bancopatagonia.com.ar/singular/turismo.html",
+      "segment": "singular",
+      "pages": [
+        {
+          "url": "https://ahorrosybeneficios.bancopatagonia.com.ar/singular/turismo.html",
+          "count": 7,
+          "next": null,
+          "reported_total": 7
+        }
+      ],
+      "count": 7
+    },
+    {
+      "name": "Patagonia Sale",
+      "url": "https://ahorrosybeneficios.bancopatagonia.com.ar/singular/patagonia-sale.html",
+      "segment": "singular",
+      "pages": [
+        {
+          "url": "https://ahorrosybeneficios.bancopatagonia.com.ar/singular/patagonia-sale.html",
+          "count": 0,
+          "next": null,
+          "reported_total": null
+        }
+      ],
+      "count": 0
+    },
+    {
+      "name": "Centro de Ski Laderas",
+      "url": "https://ahorrosybeneficios.bancopatagonia.com.ar/singular/laderas.html",
+      "segment": "singular",
+      "pages": [
+        {
+          "url": "https://ahorrosybeneficios.bancopatagonia.com.ar/singular/laderas.html",
+          "count": 2,
+          "next": null,
+          "reported_total": 2
+        }
+      ],
+      "count": 2
+    },
+    {
+      "name": "Centro de Ski Catedral",
+      "url": "https://ahorrosybeneficios.bancopatagonia.com.ar/singular/centro-de-ski-catedral.html",
+      "segment": "singular",
+      "pages": [
+        {
+          "url": "https://ahorrosybeneficios.bancopatagonia.com.ar/singular/centro-de-ski-catedral.html",
+          "count": 4,
+          "next": null,
+          "reported_total": 4
+        }
+      ],
+      "count": 4
+    },
+    {
+      "name": "Mes de las infancias",
+      "url": "https://ahorrosybeneficios.bancopatagonia.com.ar/singular/mes-de-las-infancias.html",
+      "segment": "singular",
+      "pages": [
+        {
+          "url": "https://ahorrosybeneficios.bancopatagonia.com.ar/singular/mes-de-las-infancias.html",
+          "count": 0,
+          "next": null,
+          "reported_total": null
+        }
+      ],
+      "count": 0
+    },
+    {
+      "name": "Chocolaterías",
+      "url": "https://ahorrosybeneficios.bancopatagonia.com.ar/singular/transporte.html",
+      "segment": "singular",
+      "pages": [
+        {
+          "url": "https://ahorrosybeneficios.bancopatagonia.com.ar/singular/transporte.html",
+          "count": 8,
+          "next": null,
+          "reported_total": 8
+        }
+      ],
+      "count": 8
+    },
+    {
+      "name": "Farmacias y perfumerías",
+      "url": "https://ahorrosybeneficios.bancopatagonia.com.ar/singular/farmacias-y-perfumerias.html",
+      "segment": "singular",
+      "pages": [
+        {
+          "url": "https://ahorrosybeneficios.bancopatagonia.com.ar/singular/farmacias-y-perfumerias.html",
+          "count": 12,
+          "next": null,
+          "reported_total": 12
+        }
+      ],
+      "count": 12
+    },
+    {
+      "name": "Automotor",
+      "url": "https://ahorrosybeneficios.bancopatagonia.com.ar/singular/automotor.html",
+      "segment": "singular",
+      "pages": [
+        {
+          "url": "https://ahorrosybeneficios.bancopatagonia.com.ar/singular/automotor.html",
+          "count": 0,
+          "next": null,
+          "reported_total": null
+        }
+      ],
+      "count": 0
+    },
+    {
+      "name": "Río Negro",
+      "url": "https://ahorrosybeneficios.bancopatagonia.com.ar/ahorrosybeneficios/rio-negro.html",
+      "segment": null,
+      "pages": [
+        {
+          "url": "https://ahorrosybeneficios.bancopatagonia.com.ar/ahorrosybeneficios/rio-negro.html",
+          "count": 12,
+          "next": "https://ahorrosybeneficios.bancopatagonia.com.ar/ahorrosybeneficios/rio-negro.html?p=2",
+          "reported_total": 62
+        },
+        {
+          "url": "https://ahorrosybeneficios.bancopatagonia.com.ar/ahorrosybeneficios/rio-negro.html?p=2",
+          "count": 12,
+          "next": "https://ahorrosybeneficios.bancopatagonia.com.ar/ahorrosybeneficios/rio-negro.html?p=3",
+          "reported_total": 62
+        },
+        {
+          "url": "https://ahorrosybeneficios.bancopatagonia.com.ar/ahorrosybeneficios/rio-negro.html?p=3",
+          "count": 12,
+          "next": "https://ahorrosybeneficios.bancopatagonia.com.ar/ahorrosybeneficios/rio-negro.html?p=4",
+          "reported_total": 62
+        },
+        {
+          "url": "https://ahorrosybeneficios.bancopatagonia.com.ar/ahorrosybeneficios/rio-negro.html?p=4",
+          "count": 12,
+          "next": "https://ahorrosybeneficios.bancopatagonia.com.ar/ahorrosybeneficios/rio-negro.html?p=5",
+          "reported_total": 62
+        },
+        {
+          "url": "https://ahorrosybeneficios.bancopatagonia.com.ar/ahorrosybeneficios/rio-negro.html?p=5",
+          "count": 12,
+          "next": "https://ahorrosybeneficios.bancopatagonia.com.ar/ahorrosybeneficios/rio-negro.html?p=6",
+          "reported_total": 62
+        },
+        {
+          "url": "https://ahorrosybeneficios.bancopatagonia.com.ar/ahorrosybeneficios/rio-negro.html?p=6",
+          "count": 2,
+          "next": null,
+          "reported_total": 62
+        }
+      ],
+      "count": 62
+    },
+    {
+      "name": "Supermercados",
+      "url": "https://ahorrosybeneficios.bancopatagonia.com.ar/ahorrosybeneficios/supermercados.html",
+      "segment": null,
+      "pages": [
+        {
+          "url": "https://ahorrosybeneficios.bancopatagonia.com.ar/ahorrosybeneficios/supermercados.html",
+          "count": 12,
+          "next": "https://ahorrosybeneficios.bancopatagonia.com.ar/ahorrosybeneficios/supermercados.html?p=2",
+          "reported_total": 28
+        },
+        {
+          "url": "https://ahorrosybeneficios.bancopatagonia.com.ar/ahorrosybeneficios/supermercados.html?p=2",
+          "count": 12,
+          "next": "https://ahorrosybeneficios.bancopatagonia.com.ar/ahorrosybeneficios/supermercados.html?p=3",
+          "reported_total": 28
+        },
+        {
+          "url": "https://ahorrosybeneficios.bancopatagonia.com.ar/ahorrosybeneficios/supermercados.html?p=3",
+          "count": 4,
+          "next": null,
+          "reported_total": 28
+        }
+      ],
+      "count": 28
+    },
+    {
+      "name": "Combustibles",
+      "url": "https://ahorrosybeneficios.bancopatagonia.com.ar/ahorrosybeneficios/combustibles.html",
+      "segment": null,
+      "pages": [
+        {
+          "url": "https://ahorrosybeneficios.bancopatagonia.com.ar/ahorrosybeneficios/combustibles.html",
+          "count": 2,
+          "next": null,
+          "reported_total": 2
+        }
+      ],
+      "count": 2
+    },
+    {
+      "name": "Indumentaria y Deportes",
+      "url": "https://ahorrosybeneficios.bancopatagonia.com.ar/ahorrosybeneficios/indumentaria-y-deportes.html",
+      "segment": null,
+      "pages": [
+        {
+          "url": "https://ahorrosybeneficios.bancopatagonia.com.ar/ahorrosybeneficios/indumentaria-y-deportes.html",
+          "count": 12,
+          "next": "https://ahorrosybeneficios.bancopatagonia.com.ar/ahorrosybeneficios/indumentaria-y-deportes.html?p=2",
+          "reported_total": 51
+        },
+        {
+          "url": "https://ahorrosybeneficios.bancopatagonia.com.ar/ahorrosybeneficios/indumentaria-y-deportes.html?p=2",
+          "count": 12,
+          "next": "https://ahorrosybeneficios.bancopatagonia.com.ar/ahorrosybeneficios/indumentaria-y-deportes.html?p=3",
+          "reported_total": 51
+        },
+        {
+          "url": "https://ahorrosybeneficios.bancopatagonia.com.ar/ahorrosybeneficios/indumentaria-y-deportes.html?p=3",
+          "count": 12,
+          "next": "https://ahorrosybeneficios.bancopatagonia.com.ar/ahorrosybeneficios/indumentaria-y-deportes.html?p=4",
+          "reported_total": 51
+        },
+        {
+          "url": "https://ahorrosybeneficios.bancopatagonia.com.ar/ahorrosybeneficios/indumentaria-y-deportes.html?p=4",
+          "count": 12,
+          "next": "https://ahorrosybeneficios.bancopatagonia.com.ar/ahorrosybeneficios/indumentaria-y-deportes.html?p=5",
+          "reported_total": 51
+        },
+        {
+          "url": "https://ahorrosybeneficios.bancopatagonia.com.ar/ahorrosybeneficios/indumentaria-y-deportes.html?p=5",
+          "count": 3,
+          "next": null,
+          "reported_total": 51
+        }
+      ],
+      "count": 51
+    },
+    {
+      "name": "Peluquería",
+      "url": "https://ahorrosybeneficios.bancopatagonia.com.ar/ahorrosybeneficios/peluqueria.html",
+      "segment": null,
+      "pages": [
+        {
+          "url": "https://ahorrosybeneficios.bancopatagonia.com.ar/ahorrosybeneficios/peluqueria.html",
+          "count": 1,
+          "next": null,
+          "reported_total": 1
+        }
+      ],
+      "count": 1
+    },
+    {
+      "name": "Gastronomía",
+      "url": "https://ahorrosybeneficios.bancopatagonia.com.ar/ahorrosybeneficios/gastronomia.html",
+      "segment": null,
+      "pages": [
+        {
+          "url": "https://ahorrosybeneficios.bancopatagonia.com.ar/ahorrosybeneficios/gastronomia.html",
+          "count": 12,
+          "next": "https://ahorrosybeneficios.bancopatagonia.com.ar/ahorrosybeneficios/gastronomia.html?p=2",
+          "reported_total": 35
+        },
+        {
+          "url": "https://ahorrosybeneficios.bancopatagonia.com.ar/ahorrosybeneficios/gastronomia.html?p=2",
+          "count": 12,
+          "next": "https://ahorrosybeneficios.bancopatagonia.com.ar/ahorrosybeneficios/gastronomia.html?p=3",
+          "reported_total": 35
+        },
+        {
+          "url": "https://ahorrosybeneficios.bancopatagonia.com.ar/ahorrosybeneficios/gastronomia.html?p=3",
+          "count": 11,
+          "next": null,
+          "reported_total": 35
+        }
+      ],
+      "count": 35
+    },
+    {
+      "name": "Espectáculos",
+      "url": "https://ahorrosybeneficios.bancopatagonia.com.ar/ahorrosybeneficios/espectaculos.html",
+      "segment": null,
+      "pages": [
+        {
+          "url": "https://ahorrosybeneficios.bancopatagonia.com.ar/ahorrosybeneficios/espectaculos.html",
+          "count": 5,
+          "next": null,
+          "reported_total": 5
+        }
+      ],
+      "count": 5
+    },
+    {
+      "name": "Librerias y Jugueterias",
+      "url": "https://ahorrosybeneficios.bancopatagonia.com.ar/ahorrosybeneficios/librerias-y-jugueterias.html",
+      "segment": null,
+      "pages": [
+        {
+          "url": "https://ahorrosybeneficios.bancopatagonia.com.ar/ahorrosybeneficios/librerias-y-jugueterias.html",
+          "count": 2,
+          "next": null,
+          "reported_total": 2
+        }
+      ],
+      "count": 2
+    },
+    {
+      "name": "Shopping y Paseos",
+      "url": "https://ahorrosybeneficios.bancopatagonia.com.ar/ahorrosybeneficios/shopping-y-paseos.html",
+      "segment": null,
+      "pages": [
+        {
+          "url": "https://ahorrosybeneficios.bancopatagonia.com.ar/ahorrosybeneficios/shopping-y-paseos.html",
+          "count": 12,
+          "next": "https://ahorrosybeneficios.bancopatagonia.com.ar/ahorrosybeneficios/shopping-y-paseos.html?p=2",
+          "reported_total": 61
+        },
+        {
+          "url": "https://ahorrosybeneficios.bancopatagonia.com.ar/ahorrosybeneficios/shopping-y-paseos.html?p=2",
+          "count": 12,
+          "next": "https://ahorrosybeneficios.bancopatagonia.com.ar/ahorrosybeneficios/shopping-y-paseos.html?p=3",
+          "reported_total": 61
+        },
+        {
+          "url": "https://ahorrosybeneficios.bancopatagonia.com.ar/ahorrosybeneficios/shopping-y-paseos.html?p=3",
+          "count": 12,
+          "next": "https://ahorrosybeneficios.bancopatagonia.com.ar/ahorrosybeneficios/shopping-y-paseos.html?p=4",
+          "reported_total": 61
+        },
+        {
+          "url": "https://ahorrosybeneficios.bancopatagonia.com.ar/ahorrosybeneficios/shopping-y-paseos.html?p=4",
+          "count": 12,
+          "next": "https://ahorrosybeneficios.bancopatagonia.com.ar/ahorrosybeneficios/shopping-y-paseos.html?p=5",
+          "reported_total": 61
+        },
+        {
+          "url": "https://ahorrosybeneficios.bancopatagonia.com.ar/ahorrosybeneficios/shopping-y-paseos.html?p=5",
+          "count": 12,
+          "next": "https://ahorrosybeneficios.bancopatagonia.com.ar/ahorrosybeneficios/shopping-y-paseos.html?p=6",
+          "reported_total": 61
+        },
+        {
+          "url": "https://ahorrosybeneficios.bancopatagonia.com.ar/ahorrosybeneficios/shopping-y-paseos.html?p=6",
+          "count": 1,
+          "next": null,
+          "reported_total": 61
+        }
+      ],
+      "count": 61
+    },
+    {
+      "name": "Mascotas",
+      "url": "https://ahorrosybeneficios.bancopatagonia.com.ar/ahorrosybeneficios/mascota.html",
+      "segment": null,
+      "pages": [
+        {
+          "url": "https://ahorrosybeneficios.bancopatagonia.com.ar/ahorrosybeneficios/mascota.html",
+          "count": 4,
+          "next": null,
+          "reported_total": 4
+        }
+      ],
+      "count": 4
+    },
+    {
+      "name": "MODO",
+      "url": "https://ahorrosybeneficios.bancopatagonia.com.ar/ahorrosybeneficios/modo.html",
+      "segment": null,
+      "pages": [
+        {
+          "url": "https://ahorrosybeneficios.bancopatagonia.com.ar/ahorrosybeneficios/modo.html",
+          "count": 12,
+          "next": "https://ahorrosybeneficios.bancopatagonia.com.ar/ahorrosybeneficios/modo.html?p=2",
+          "reported_total": 35
+        },
+        {
+          "url": "https://ahorrosybeneficios.bancopatagonia.com.ar/ahorrosybeneficios/modo.html?p=2",
+          "count": 12,
+          "next": "https://ahorrosybeneficios.bancopatagonia.com.ar/ahorrosybeneficios/modo.html?p=3",
+          "reported_total": 35
+        },
+        {
+          "url": "https://ahorrosybeneficios.bancopatagonia.com.ar/ahorrosybeneficios/modo.html?p=3",
+          "count": 11,
+          "next": null,
+          "reported_total": 35
+        }
+      ],
+      "count": 35
+    },
+    {
+      "name": "Automotor",
+      "url": "https://ahorrosybeneficios.bancopatagonia.com.ar/ahorrosybeneficios/automotor.html",
+      "segment": null,
+      "pages": [
+        {
+          "url": "https://ahorrosybeneficios.bancopatagonia.com.ar/ahorrosybeneficios/automotor.html",
+          "count": 0,
+          "next": null,
+          "reported_total": null
+        }
+      ],
+      "count": 0
+    },
+    {
+      "name": "Educacion",
+      "url": "https://ahorrosybeneficios.bancopatagonia.com.ar/ahorrosybeneficios/educacion.html",
+      "segment": null,
+      "pages": [
+        {
+          "url": "https://ahorrosybeneficios.bancopatagonia.com.ar/ahorrosybeneficios/educacion.html",
+          "count": 0,
+          "next": null,
+          "reported_total": null
+        }
+      ],
+      "count": 0
+    },
+    {
+      "name": "Invierno",
+      "url": "https://ahorrosybeneficios.bancopatagonia.com.ar/ahorrosybeneficios/invierno.html",
+      "segment": null,
+      "pages": [
+        {
+          "url": "https://ahorrosybeneficios.bancopatagonia.com.ar/ahorrosybeneficios/invierno.html",
+          "count": 11,
+          "next": null,
+          "reported_total": 11
+        }
+      ],
+      "count": 11
+    },
+    {
+      "name": "Chocolaterías",
+      "url": "https://ahorrosybeneficios.bancopatagonia.com.ar/ahorrosybeneficios/chocolaterias.html",
+      "segment": null,
+      "pages": [
+        {
+          "url": "https://ahorrosybeneficios.bancopatagonia.com.ar/ahorrosybeneficios/chocolaterias.html",
+          "count": 8,
+          "next": null,
+          "reported_total": 8
+        }
+      ],
+      "count": 8
+    },
+    {
+      "name": "Hogar",
+      "url": "https://ahorrosybeneficios.bancopatagonia.com.ar/ahorrosybeneficios/hogar.html",
+      "segment": null,
+      "pages": [
+        {
+          "url": "https://ahorrosybeneficios.bancopatagonia.com.ar/ahorrosybeneficios/hogar.html",
+          "count": 12,
+          "next": "https://ahorrosybeneficios.bancopatagonia.com.ar/ahorrosybeneficios/hogar.html?p=2",
+          "reported_total": 28
+        },
+        {
+          "url": "https://ahorrosybeneficios.bancopatagonia.com.ar/ahorrosybeneficios/hogar.html?p=2",
+          "count": 12,
+          "next": "https://ahorrosybeneficios.bancopatagonia.com.ar/ahorrosybeneficios/hogar.html?p=3",
+          "reported_total": 28
+        },
+        {
+          "url": "https://ahorrosybeneficios.bancopatagonia.com.ar/ahorrosybeneficios/hogar.html?p=3",
+          "count": 4,
+          "next": null,
+          "reported_total": 28
+        }
+      ],
+      "count": 28
+    },
+    {
+      "name": "Servicios",
+      "url": "https://ahorrosybeneficios.bancopatagonia.com.ar/ahorrosybeneficios/servicios.html",
+      "segment": null,
+      "pages": [
+        {
+          "url": "https://ahorrosybeneficios.bancopatagonia.com.ar/ahorrosybeneficios/servicios.html",
+          "count": 0,
+          "next": null,
+          "reported_total": null
+        }
+      ],
+      "count": 0
+    },
+    {
+      "name": "Mundial",
+      "url": "https://ahorrosybeneficios.bancopatagonia.com.ar/ahorrosybeneficios/mundial.html",
+      "segment": null,
+      "pages": [
+        {
+          "url": "https://ahorrosybeneficios.bancopatagonia.com.ar/ahorrosybeneficios/mundial.html",
+          "count": 0,
+          "next": null,
+          "reported_total": null
+        }
+      ],
+      "count": 0
+    },
+    {
+      "name": "Turismo",
+      "url": "https://ahorrosybeneficios.bancopatagonia.com.ar/ahorrosybeneficios/turismo.html",
+      "segment": null,
+      "pages": [
+        {
+          "url": "https://ahorrosybeneficios.bancopatagonia.com.ar/ahorrosybeneficios/turismo.html",
+          "count": 7,
+          "next": null,
+          "reported_total": 7
+        }
+      ],
+      "count": 7
+    },
+    {
+      "name": "Patagonia Sale",
+      "url": "https://ahorrosybeneficios.bancopatagonia.com.ar/ahorrosybeneficios/patagonia-sale.html",
+      "segment": null,
+      "pages": [
+        {
+          "url": "https://ahorrosybeneficios.bancopatagonia.com.ar/ahorrosybeneficios/patagonia-sale.html",
+          "count": 0,
+          "next": null,
+          "reported_total": null
+        }
+      ],
+      "count": 0
+    },
+    {
+      "name": "Centro de Ski Laderas",
+      "url": "https://ahorrosybeneficios.bancopatagonia.com.ar/ahorrosybeneficios/laderas.html",
+      "segment": null,
+      "pages": [
+        {
+          "url": "https://ahorrosybeneficios.bancopatagonia.com.ar/ahorrosybeneficios/laderas.html",
+          "count": 2,
+          "next": null,
+          "reported_total": 2
+        }
+      ],
+      "count": 2
+    },
+    {
+      "name": "Centro de Ski Catedral",
+      "url": "https://ahorrosybeneficios.bancopatagonia.com.ar/ahorrosybeneficios/centro-de-ski-catedral.html",
+      "segment": null,
+      "pages": [
+        {
+          "url": "https://ahorrosybeneficios.bancopatagonia.com.ar/ahorrosybeneficios/centro-de-ski-catedral.html",
+          "count": 4,
+          "next": null,
+          "reported_total": 4
+        }
+      ],
+      "count": 4
+    },
+    {
+      "name": "Chocolaterías",
+      "url": "https://ahorrosybeneficios.bancopatagonia.com.ar/ahorrosybeneficios/transporte.html",
+      "segment": null,
+      "pages": [
+        {
+          "url": "https://ahorrosybeneficios.bancopatagonia.com.ar/ahorrosybeneficios/transporte.html",
+          "count": 8,
+          "next": null,
+          "reported_total": 8
+        }
+      ],
+      "count": 8
+    },
+    {
+      "name": "Farmacias y perfumerías",
+      "url": "https://ahorrosybeneficios.bancopatagonia.com.ar/ahorrosybeneficios/farmacias-y-perfumerias.html",
+      "segment": null,
+      "pages": [
+        {
+          "url": "https://ahorrosybeneficios.bancopatagonia.com.ar/ahorrosybeneficios/farmacias-y-perfumerias.html",
+          "count": 12,
+          "next": null,
+          "reported_total": 12
+        }
+      ],
+      "count": 12
+    },
+    {
+      "name": "Río Negro",
+      "url": "https://ahorrosybeneficios.bancopatagonia.com.ar/on/rio-negro.html",
+      "segment": "on",
+      "pages": [
+        {
+          "url": "https://ahorrosybeneficios.bancopatagonia.com.ar/on/rio-negro.html",
+          "count": 12,
+          "next": "https://ahorrosybeneficios.bancopatagonia.com.ar/on/rio-negro.html?p=2",
+          "reported_total": 15
+        },
+        {
+          "url": "https://ahorrosybeneficios.bancopatagonia.com.ar/on/rio-negro.html?p=2",
+          "count": 3,
+          "next": null,
+          "reported_total": 15
+        }
+      ],
+      "count": 15
+    },
+    {
+      "name": "Supermercados",
+      "url": "https://ahorrosybeneficios.bancopatagonia.com.ar/on/supermercados.html",
+      "segment": "on",
+      "pages": [
+        {
+          "url": "https://ahorrosybeneficios.bancopatagonia.com.ar/on/supermercados.html",
+          "count": 1,
+          "next": null,
+          "reported_total": 1
+        }
+      ],
+      "count": 1
+    },
+    {
+      "name": "Combustibles",
+      "url": "https://ahorrosybeneficios.bancopatagonia.com.ar/on/combustibles.html",
+      "segment": "on",
+      "pages": [
+        {
+          "url": "https://ahorrosybeneficios.bancopatagonia.com.ar/on/combustibles.html",
+          "count": 0,
+          "next": null,
+          "reported_total": null
+        }
+      ],
+      "count": 0
+    },
+    {
+      "name": "Indumentaria y Deportes",
+      "url": "https://ahorrosybeneficios.bancopatagonia.com.ar/on/indumentaria-y-deportes.html",
+      "segment": "on",
+      "pages": [
+        {
+          "url": "https://ahorrosybeneficios.bancopatagonia.com.ar/on/indumentaria-y-deportes.html",
+          "count": 12,
+          "next": "https://ahorrosybeneficios.bancopatagonia.com.ar/on/indumentaria-y-deportes.html?p=2",
+          "reported_total": 22
+        },
+        {
+          "url": "https://ahorrosybeneficios.bancopatagonia.com.ar/on/indumentaria-y-deportes.html?p=2",
+          "count": 10,
+          "next": null,
+          "reported_total": 22
+        }
+      ],
+      "count": 22
+    },
+    {
+      "name": "Peluquería",
+      "url": "https://ahorrosybeneficios.bancopatagonia.com.ar/on/peluqueria.html",
+      "segment": "on",
+      "pages": [
+        {
+          "url": "https://ahorrosybeneficios.bancopatagonia.com.ar/on/peluqueria.html",
+          "count": 1,
+          "next": null,
+          "reported_total": 1
+        }
+      ],
+      "count": 1
+    },
+    {
+      "name": "Gastronomía",
+      "url": "https://ahorrosybeneficios.bancopatagonia.com.ar/on/gastronomia.html",
+      "segment": "on",
+      "pages": [
+        {
+          "url": "https://ahorrosybeneficios.bancopatagonia.com.ar/on/gastronomia.html",
+          "count": 4,
+          "next": null,
+          "reported_total": 4
+        }
+      ],
+      "count": 4
+    },
+    {
+      "name": "Espectáculos",
+      "url": "https://ahorrosybeneficios.bancopatagonia.com.ar/on/espectaculos.html",
+      "segment": "on",
+      "pages": [
+        {
+          "url": "https://ahorrosybeneficios.bancopatagonia.com.ar/on/espectaculos.html",
+          "count": 1,
+          "next": null,
+          "reported_total": 1
+        }
+      ],
+      "count": 1
+    },
+    {
+      "name": "Librerías y Jugueterías",
+      "url": "https://ahorrosybeneficios.bancopatagonia.com.ar/on/librerias-y-jugueterias.html",
+      "segment": "on",
+      "pages": [
+        {
+          "url": "https://ahorrosybeneficios.bancopatagonia.com.ar/on/librerias-y-jugueterias.html",
+          "count": 2,
+          "next": null,
+          "reported_total": 2
+        }
+      ],
+      "count": 2
+    },
+    {
+      "name": "Shopping y Paseos",
+      "url": "https://ahorrosybeneficios.bancopatagonia.com.ar/on/shopping-y-paseos.html",
+      "segment": "on",
+      "pages": [
+        {
+          "url": "https://ahorrosybeneficios.bancopatagonia.com.ar/on/shopping-y-paseos.html",
+          "count": 12,
+          "next": "https://ahorrosybeneficios.bancopatagonia.com.ar/on/shopping-y-paseos.html?p=2",
+          "reported_total": 59
+        },
+        {
+          "url": "https://ahorrosybeneficios.bancopatagonia.com.ar/on/shopping-y-paseos.html?p=2",
+          "count": 12,
+          "next": "https://ahorrosybeneficios.bancopatagonia.com.ar/on/shopping-y-paseos.html?p=3",
+          "reported_total": 59
+        },
+        {
+          "url": "https://ahorrosybeneficios.bancopatagonia.com.ar/on/shopping-y-paseos.html?p=3",
+          "count": 12,
+          "next": "https://ahorrosybeneficios.bancopatagonia.com.ar/on/shopping-y-paseos.html?p=4",
+          "reported_total": 59
+        },
+        {
+          "url": "https://ahorrosybeneficios.bancopatagonia.com.ar/on/shopping-y-paseos.html?p=4",
+          "count": 12,
+          "next": "https://ahorrosybeneficios.bancopatagonia.com.ar/on/shopping-y-paseos.html?p=5",
+          "reported_total": 59
+        },
+        {
+          "url": "https://ahorrosybeneficios.bancopatagonia.com.ar/on/shopping-y-paseos.html?p=5",
+          "count": 11,
+          "next": null,
+          "reported_total": 59
+        }
+      ],
+      "count": 59
+    },
+    {
+      "name": "Mascotas",
+      "url": "https://ahorrosybeneficios.bancopatagonia.com.ar/on/mascota.html",
+      "segment": "on",
+      "pages": [
+        {
+          "url": "https://ahorrosybeneficios.bancopatagonia.com.ar/on/mascota.html",
+          "count": 0,
+          "next": null,
+          "reported_total": null
+        }
+      ],
+      "count": 0
+    },
+    {
+      "name": "MODO",
+      "url": "https://ahorrosybeneficios.bancopatagonia.com.ar/on/modo.html",
+      "segment": "on",
+      "pages": [
+        {
+          "url": "https://ahorrosybeneficios.bancopatagonia.com.ar/on/modo.html",
+          "count": 8,
+          "next": null,
+          "reported_total": 8
+        }
+      ],
+      "count": 8
+    },
+    {
+      "name": "Automotor",
+      "url": "https://ahorrosybeneficios.bancopatagonia.com.ar/on/automotor.html",
+      "segment": "on",
+      "pages": [
+        {
+          "url": "https://ahorrosybeneficios.bancopatagonia.com.ar/on/automotor.html",
+          "count": 0,
+          "next": null,
+          "reported_total": null
+        }
+      ],
+      "count": 0
+    },
+    {
+      "name": "Verano",
+      "url": "https://ahorrosybeneficios.bancopatagonia.com.ar/on/verano.html",
+      "segment": "on",
+      "pages": [
+        {
+          "url": "https://ahorrosybeneficios.bancopatagonia.com.ar/on/verano.html",
+          "count": 0,
+          "next": null,
+          "reported_total": null
+        }
+      ],
+      "count": 0
+    },
+    {
+      "name": "Educación",
+      "url": "https://ahorrosybeneficios.bancopatagonia.com.ar/on/educacion.html",
+      "segment": "on",
+      "pages": [
+        {
+          "url": "https://ahorrosybeneficios.bancopatagonia.com.ar/on/educacion.html",
+          "count": 2,
+          "next": null,
+          "reported_total": 2
+        }
+      ],
+      "count": 2
+    },
+    {
+      "name": "Invierno",
+      "url": "https://ahorrosybeneficios.bancopatagonia.com.ar/on/invierno.html",
+      "segment": "on",
+      "pages": [
+        {
+          "url": "https://ahorrosybeneficios.bancopatagonia.com.ar/on/invierno.html",
+          "count": 0,
+          "next": null,
+          "reported_total": null
+        }
+      ],
+      "count": 0
+    },
+    {
+      "name": "Transporte",
+      "url": "https://ahorrosybeneficios.bancopatagonia.com.ar/on/transporte.html",
+      "segment": "on",
+      "pages": [
+        {
+          "url": "https://ahorrosybeneficios.bancopatagonia.com.ar/on/transporte.html",
+          "count": 0,
+          "next": null,
+          "reported_total": null
+        }
+      ],
+      "count": 0
+    },
+    {
+      "name": "Hogar",
+      "url": "https://ahorrosybeneficios.bancopatagonia.com.ar/on/hogar.html",
+      "segment": "on",
+      "pages": [
+        {
+          "url": "https://ahorrosybeneficios.bancopatagonia.com.ar/on/hogar.html",
+          "count": 7,
+          "next": null,
+          "reported_total": 7
+        }
+      ],
+      "count": 7
+    },
+    {
+      "name": "Servicios",
+      "url": "https://ahorrosybeneficios.bancopatagonia.com.ar/on/servicios.html",
+      "segment": "on",
+      "pages": [
+        {
+          "url": "https://ahorrosybeneficios.bancopatagonia.com.ar/on/servicios.html",
+          "count": 0,
+          "next": null,
+          "reported_total": null
+        }
+      ],
+      "count": 0
+    },
+    {
+      "name": "Mundial",
+      "url": "https://ahorrosybeneficios.bancopatagonia.com.ar/on/mundial.html",
+      "segment": "on",
+      "pages": [
+        {
+          "url": "https://ahorrosybeneficios.bancopatagonia.com.ar/on/mundial.html",
+          "count": 0,
+          "next": null,
+          "reported_total": null
+        }
+      ],
+      "count": 0
+    },
+    {
+      "name": "Turismo",
+      "url": "https://ahorrosybeneficios.bancopatagonia.com.ar/on/turismo.html",
+      "segment": "on",
+      "pages": [
+        {
+          "url": "https://ahorrosybeneficios.bancopatagonia.com.ar/on/turismo.html",
+          "count": 2,
+          "next": null,
+          "reported_total": 2
+        }
+      ],
+      "count": 2
+    },
+    {
+      "name": "Patagonia Sale",
+      "url": "https://ahorrosybeneficios.bancopatagonia.com.ar/on/patagonia-sale.html",
+      "segment": "on",
+      "pages": [
+        {
+          "url": "https://ahorrosybeneficios.bancopatagonia.com.ar/on/patagonia-sale.html",
+          "count": 0,
+          "next": null,
+          "reported_total": null
+        }
+      ],
+      "count": 0
+    },
+    {
+      "name": "Centro de Ski Laderas",
+      "url": "https://ahorrosybeneficios.bancopatagonia.com.ar/on/laderas.html",
+      "segment": "on",
+      "pages": [
+        {
+          "url": "https://ahorrosybeneficios.bancopatagonia.com.ar/on/laderas.html",
+          "count": 0,
+          "next": null,
+          "reported_total": null
+        }
+      ],
+      "count": 0
+    },
+    {
+      "name": "Centro de Ski Catedral",
+      "url": "https://ahorrosybeneficios.bancopatagonia.com.ar/on/centro-de-ski-catedral.html",
+      "segment": "on",
+      "pages": [
+        {
+          "url": "https://ahorrosybeneficios.bancopatagonia.com.ar/on/centro-de-ski-catedral.html",
+          "count": 0,
+          "next": null,
+          "reported_total": null
+        }
+      ],
+      "count": 0
+    },
+    {
+      "name": "Mes de las infancias",
+      "url": "https://ahorrosybeneficios.bancopatagonia.com.ar/on/mes-de-las-infancias.html",
+      "segment": "on",
+      "pages": [
+        {
+          "url": "https://ahorrosybeneficios.bancopatagonia.com.ar/on/mes-de-las-infancias.html",
+          "count": 0,
+          "next": null,
+          "reported_total": null
+        }
+      ],
+      "count": 0
+    },
+    {
+      "name": "Farmacias y perfumerías",
+      "url": "https://ahorrosybeneficios.bancopatagonia.com.ar/on/farmacias-y-perfumerias.html",
+      "segment": "on",
+      "pages": [
+        {
+          "url": "https://ahorrosybeneficios.bancopatagonia.com.ar/on/farmacias-y-perfumerias.html",
+          "count": 5,
+          "next": null,
+          "reported_total": 5
+        }
+      ],
+      "count": 5
+    }
+  ],
+  "candidate_raw_ids": [
+    "2026_10_07_Temple_Bar:ahorrosybeneficios:temple-bar",
+    "2026_09_25_Supermercado_TODO",
+    "2026_04_01_Todo",
+    "20250516_1355_CarrefourPlanSueldoCARGAESPECIAL",
+    "20250516_1355_CarrefourCARGAESPECIAL:ahorrosybeneficios:carrefour3",
+    "20250516_1355_ChangomasCARGAESPECIAL",
+    "20250516_1355_CotoDigitalCARGAESPECIAL",
+    "20250516_1355_CooperativaObreraCARGAESPECIAL",
+    "20250516_1355_LaAnonimaCARGAESPECIAL",
+    "2026_09_16_Samsung_Comercios_Adheridos",
+    "2026_08_28_Frávega_12_Cuotas:ahorrosybeneficios:fravega-12-cuotas",
+    "2026_08_20_Casa_Elvira_12_Cuotas:ahorrosybeneficios:casa-elvira-12-cuotas",
+    "2026_08_13_Cetrogar_12_Cuotas:ahorrosybeneficios:cetrogar-12-cuotas",
+    "2026_08_12_Megatone_Agosto:ahorrosybeneficios:megatone-agosto",
+    "2026_07_30_Naldo",
+    "20250213_0939_CarlosIsla",
+    "2026_10_15_Tortugas_Open_Mall_DDLM:ahorrosybeneficios:tortugas-open-mall-ddlm",
+    "2026_10_07_Open_Sports_Octubre",
+    "2026_09_15_Galerías_Pacífico_Comercios_Adheridos",
+    "2026_10_02_Juleriaque_OCTUBRE:ahorrosybeneficios:juleriaque-promocion",
+    "2026_09_03_Get_the_Look_Normal:ahorrosybeneficios:get-the-look-normal",
+    "2026_09_03_Simplicity_Normal:ahorrosybeneficios:simplicity-normal",
+    "2026_09_01_Reebok_PSyJ",
+    "2026_05_05_Hush Puppies_PSyJ",
+    "2026_05_04_Grimoldi_PSyJ",
+    "2026_04_13_Awada-1",
+    "2026_10_3_Adidas-1",
+    "Multipack",
+    "20260503_1514_Brown",
+    "20260305_1514_CruzDelSur",
+    "2026_03_30_Farmacia_Ruta_40",
+    "2026_03_30_Farmacia_Favaloro",
+    "2026_03_30_Super_2000",
+    "2026_03_30_Autoservicio_Quillakas",
+    "2026_03_30_Super_Laguna",
+    "2026_03_30_Supermercado_Perello",
+    "2026_03_30_El_Triángulo_Corralon_de_Materiales",
+    "2026_03_30_Corralones_Surmat",
+    "2026_03_31_Corralones _NACIONES_UNIDAS",
+    "2026_03_31_Corralones_BALKA",
+    "2026_04_08_Corralones_Iriarte",
+    "2026_04_08_Restaurante_Los_Alamos",
+    "2026_04_08_Corralones_Pro_Services",
+    "2026_04_08_Tren_Patagónico",
+    "2026_04_08_Farmacia_Bari",
+    "2026_04_08_Corralones_Rosi_Materiales",
+    "2026_04_16_Gallo_Revestimiento",
+    "2026_04_16_Sólido_Materiales",
+    "2026_05_13_Mamuschka_Invierno",
+    "2026_05_18_AR_Plack",
+    "2026_05_20_Almundo_Hoteles",
+    "2026_06_08_Comercial_y_Energía",
+    "2026_06_08_La_Comarca",
+    "2026_06_08_Sanigas",
+    "2026_06_08_Mundo_Hierro",
+    "2026_06_16_Territorio_Café",
+    "2026_06_25_Hotel_Apres_Ski",
+    "2026_06_25_Hotel_Cordillera_Invierno",
+    "2026_06_30_Farmacia_Soriano",
+    "2026_07_07_Farmacia_Basile",
+    "2026_07_21_Planeta Empanada",
+    "Planeta-Empanada",
+    "2026_07_21_Planeta_Empanada3",
+    "Shop_Gallery_Aeropuerto_Bariloche:ahorrosybeneficios:shop-gallery-aeropuerto-bariloche",
+    "2026_08_31_Oxígeno_Laspeñas",
+    "2026_08_31_Placas_Bariloche",
+    "2024_11_13_1150_Paseo_de_compras_Allen",
+    "2024_11_13_1150_Paseo_de_compras_Bariloche",
+    "2014_11_20_1231_Havanna",
+    "2024_11_20_1231_Combustible_Exclusivo_Plan_Sueldo_PLUS",
+    "2024_11_13_1150_Paseo_de_compras_Cipolletti",
+    "2024_11_13_1150_Paseo_de_compras_El_Bolson",
+    "2024_12_02_1711_Todo_",
+    "20240114_1550_CinesTeatroyEspectáculos",
+    "20250207_1350_PaseoSanAntonioOeste",
+    "20250312_1234_PaseoDeComprasViedma",
+    "20250321_1743_PaseoDeComprasRíoColorado",
+    "20250404_1538_PaseoDeComprasGeneralConesa",
+    "20250612_1230_PaseoDeComprasGeneralRoca",
+    "20250627_1353_PaseoDeComprasCHOELECHOEL",
+    "20251203_0052_LaCooperativaPlanSueldoYJubilados",
+    "2026_03_31_Disco_Jumbo_y_Vea",
+    "2026_03_31_Disco Jumbo y Vea_Plan_Sueldo_Y_Jubilados",
+    "2026_06_02_Disco_Jumbo_y_Vea",
+    "2026_09_04_La_Anónima_NFC",
+    "2026_09_18_La_Agrícola_Regional_Supermercados_Regionales",
+    "2026_09_18_La_Agrícola_Regional_Supermercados_Regionales_PSyJ",
+    "2026_09_18_Unicoop_Supermercados_Regionales_PSyJ",
+    "2026_09_18_Unicoop_Supermercados_Regionales",
+    "2026_09_18_La_Economía_Supermercados_Regionales",
+    "2026_09_18_La_Economía_Supermercados_Regionales_PSyJ",
+    "2026_09_18_Cadena_Dar_Supermercados_Regionales",
+    "2026_09_18_Cadena_Dar_Supermercados_Regionales_PSyJ",
+    "2026_10_09_Todo_Chen",
+    "2024_11_20_1231_Combustible",
+    "20251104_1647_StockCenterPlanSueldoYJubilados",
+    "20251229_1126_SevenSportPlanSueldoYJubilados",
+    "20251229_1126_TopSportPlanSueldoYJubilados",
+    "20251229_1126_ChelseaPlanSueldoYJubilados",
+    "20251229_1126_ExitPlanSueldoYJubilados",
+    "2026_10_3_Adidas",
+    "2026_03_11_Adidas_Exclusivo_Amex",
+    "2026_04_10_Cheeky2",
+    "2026_04_10_Cheeky_Plan_Sueldo_y_Jubilados",
+    "2026_04_10_Como_Queres3",
+    "2026_04_10_Como_Quieres_Que_Te_Quiera_Plan_Sueldo_Y_Jubilados",
+    "2026_04_13_Awada",
+    "2026_05_04_Grimoldi",
+    "2026_05_04_The_North_Face",
+    "2026_05_04_The_North_Face_PSyJ",
+    "2026_05_04_Merrel",
+    "2026_05_05_Merrell_PSyJ",
+    "2026_05_05_Vans",
+    "2026_05_05_Vans_PSyJ",
+    "2026_05_05_Hush_Puppies",
+    "2026_05_20_Bensimon",
+    "2026_05_20_Bensimon_PSyJ",
+    "2026_06_30_Cebra_PSyJ",
+    "2026_09_01_Reebok_Normal",
+    "2026_09_01_Crocs_Normal",
+    "2026_09_01_Crocs_PSyJ",
+    "2026_09_01_Columbia_Normal",
+    "2026_09_01_Columbia_PSyJ",
+    "2026_09_14_Decathlon_Octubre:ahorrosybeneficios:decathlon-octubre",
+    "2026_09_15_Unicenter_Comercios_Adheridos",
+    "2024_11_20_1231_Topper:ahorrosybeneficios:topper",
+    "20240114_1550_Dexter",
+    "20240114_1550_StockCenter",
+    "20240114_1550_Moov",
+    "20250326_1204_Macowens:ahorrosybeneficios:macowens",
+    "20250326_1204_Devre:ahorrosybeneficios:devre",
+    "20250404_1627_Chelsea:ahorrosybeneficios:chelsea",
+    "20250404_1627_Exit:ahorrosybeneficios:exit",
+    "20250404_1627_TopSports:ahorrosybeneficios:top-sports",
+    "20250404_1627_SevenSport:ahorrosybeneficios:seven-sport",
+    "20250603_2300_MacowensSHOTESPECIAL",
+    "20250603_2300_DevreSHOTESPECIAL",
+    "20251104_1647_DexterPlanSueldoYJubilados",
+    "20251104_1647_MoovPlanSueldoYJubilados",
+    "2026_04_15_Peluquerías",
+    "20250930_1533_AtalayaPlanSueldoYJubilados",
+    "20250930_1533_DandyPlanSueldoYJubilados",
+    "20260122_1128_Negroni",
+    "20260122_1128_Demuru",
+    "20260122_1128_LaPulpería",
+    "2026_05_27_Ruta_Gastronómica_Amex",
+    "2026_06_30_Sushi_Pop",
+    "2026_08_31_Rubro_Gastronomía_Mastercard",
+    "The Food Market_Normal:ahorrosybeneficios:the-food-market-normal",
+    "2026_09_10_Niño_Gordo_NFC",
+    "2026_09_10_Parrilla_José_El_Carnicero_NFC",
+    "2026_09_10_Paquito_NFC",
+    "2026_09_10_Parrilla_La_Carnicería_NFC",
+    "2029_09_10_Los_Jardines_de_las_Barquins_NFC",
+    "20250114_1550_Freddo",
+    "20240114_1550_Atalaya",
+    "20240114_1550_Rapanui",
+    "20250213_1157_Albur",
+    "20250213_1618_ElTropezón",
+    "20250214_1011_ClásicaYModerna",
+    "20250327_1530_Kansas",
+    "20250516_1355_LaCabreraCARGAESPECIAL",
+    "20250516_1355_DandyCARGAESPECIAL",
+    "20250516_1355_RockAndFellersCARGAESPECIAL",
+    "20250516_1355_KansasCARGAESPECIAL",
+    "20250516_1355_PedidosYaCARGAESPECIAL:ahorrosybeneficios:pedidos-ya3",
+    "20250611_1206_PedidosYaDIADELPADRE",
+    "20250710_0917_Rapanui",
+    "20250925_1739_FreddoPlanSueldoYJubilados",
+    "2026_05_15_Preventa_de_Louis_Tomlinson_3",
+    "2026_09_09_Patagonia_Wine_Fest",
+    "2026_10_15_Filarmónica_de_Berlín_Teatro_Colon",
+    "2026_10_15_Ciclo_Grandes_Intérpretes_Teatro_Colon_Grigorian",
+    "2024_11_20_1231_Cebra:ahorrosybeneficios:cebra",
+    "20250210_1313_Cúspide:ahorrosybeneficios:cuspide",
+    "20250925_1145_PaseoDeComprasPosadas",
+    "20250930_1619_PaseoDeComprasMendoza",
+    "20251006_1804_PaseoDeComprasRawson",
+    "20251006_1804_PaseoDeComprasTrelew",
+    "20251006_1804_PaseoDeComprasParaná",
+    "20251009_1347_PaseoDeComprasComodoroIndustrial",
+    "20251009_1347_PaseoDeComprasCórdoba",
+    "20251029_1423_PaseoDeComprasConcepciónDelUruguay",
+    "20251107_1018_PaseoDeComprasSantaFé",
+    "20251203_1552_PaseoDeComprasNecochea",
+    "20260122_1135_PaseoDeComprasShoppingDelSiglo",
+    "20260122_1135_PaseoDeComprasShoppingCentenario",
+    "2026_03_17_Villa La Angostura",
+    "2026_04_07_Paseo_de_Compras_Reconquista-1:ahorrosybeneficios:paseo-de-compras-reconquista2",
+    "2026_06_16_Shopping_Del_Siglo_Día_del_Padre:ahorrosybeneficios:shopping-del-siglo-dia-del-padre",
+    "2026_06_16_Shopping_Bahía_Blanca_Día_Del_Padre:ahorrosybeneficios:shopping-bahia-blanca-dia-del-padre",
+    "2026_06_16_Shopping_Palmares_Día_Del_Padre:ahorrosybeneficios:shopping-palmares-dia-del-padre",
+    "2026_06_16_Shopping_Sarmiento_Día_Del_Padre:ahorrosybeneficios:shopping-sarmiento-dia-del-padre",
+    "2026_06_16_Shopping_Centenario_Día_Del_Padre:ahorrosybeneficios:shopping-centenario-dia-del-padre",
+    "2024_11_13_1150_Paseo_de_compras_Champagnat",
+    "2024_11_13_1150_Paseo_de_compras_Chivilcoy",
+    "2024_11_13_1150_Paseo_de_compras_Coronel_Suarez",
+    "2024_11_13_1150_Paseo_de_compras_Corrientes",
+    "2024_11_13_1150_Paseo_de_compras_Esquel",
+    "2024_11_13_1150_Paseo_de_compras_Formosa",
+    "2024_11_13_1150_Paseo_de_compras_La_Rioja",
+    "2024_11_13_1150_Paseo_de_compras_Laferrere",
+    "2024_21_11_1215_Paseo_de_compras_Munro",
+    "2024_21_11_1215_Paseo_de_compras_Paso_de_los_Libres",
+    "2024_21_11_1215_Paseo_de_compras_Pilar",
+    "2024_21_11_1215_Paseo_de_compras_Punta_Alta",
+    "2024_21_11_1215_Paseo_de_compras_Rosario_Centro",
+    "2024_21_11_1215_Paseo_de_compras_San_Lorenzo",
+    "2024_21_11_1215_Paseo_de_compras_Trenque_Launquen",
+    "2024_21_11_1215_Paseo_de_compras_Tres_Arroyos",
+    "2024_21_11_1215_Paseo_de_compras_Venado_Tuerto",
+    "2024_12_06_1254_Bahia_Blanca",
+    "20241211_1617_ComodoroRivadavia",
+    "20241211_1617_Resistencia",
+    "20241211_1617_Salta",
+    "20241211_1617_ÁlvarezJonte",
+    "20241211_1617_SantiagoDelEstero",
+    "20241211_1617_Rafaela",
+    "20241211_1617_Campana",
+    "20241219_1650_PaseoDeComprasGeneralPico",
+    "20250318_1500_PaseoDeComprasRíoGrande",
+    "20250724_1032_PaseoDeComprasSanIsidro",
+    "20250711_PaseoDeComprasSantaRosa",
+    "20250707_1250_PaseoDeComprasBarrioNaon",
+    "20250826_1600_PaseoDeComprasSaenzPeña",
+    "20250905_1630_PaseoDeComprasCongresoDeTucumán",
+    "20251125_1050_TiendaDeMascotasShotEspecialPlanSueldoYJubilados",
+    "20250210_1313_Nutrican",
+    "20250210_1313_TiendaDeMascotas",
+    "20250905_1119_Nutrican",
+    "2026_07_21_Cerro_Catedral_Alta_Patagonia",
+    "2026_07_21_LaHoyaSki",
+    "2026_07_21_Cerro_Chapelco",
+    "2026_07_21_BusPlus",
+    "2026_08_27_Blaistein_6_Cuotas:ahorrosybeneficios:blaistein-2026",
+    "2026_08_27_Easy_6_Cuotas:ahorrosybeneficios:easy-6-cuotas",
+    "2026_09_14_Arredo_Octubre",
+    "2026_09_16_Naldo_Singular",
+    "2026_05_10_Essen",
+    "2026_08_04_Shop_Gallery_Aeroparque:ahorrosybeneficios:shop-gallery-aeroparque",
+    "2026_09_09_Aerolíneas_Argentinas_Septiembre",
+    "2026_09_03_Farmacity_Normal:ahorrosybeneficios:farmacity-normal",
+    "Farmaplus:ahorrosybeneficios:farmaplus-normal",
+    "2026_09_14_Bares_ON",
+    "2026_09_14_Decathlon_Octubre:on:decathlon-octubre",
+    "2026_09_01_Columbia_ON",
+    "2026_09_01_Crocs_ON",
+    "2026_09_02_Reebok_ON",
+    "2026_05_04_The_North_Face_ON",
+    "2026_05_04_Grimoldi_ON",
+    "2026_04_10_Como_Quieres_Que_Te_Quiera_ON",
+    "2026_10_15_Tortugas_Open_Mall_DDLM:on:tortugas-open-mall-ddlm",
+    "2026_10_07_Open_Sports_Octubre_ON",
+    "20250328_0030_EducaciónITON",
+    "20250328_0030_CUIIdiomasON",
+    "20250217_1715_PaseoDeComprasAllen",
+    "20250217_1715_PaseoDeComprasBariloche",
+    "20250217_1715_PaseoDeComprasCipollettiON",
+    "20250217_1715_PaseoDeComprasElBolsónON",
+    "20250217_1715_PaseoDeComprasSanAntonioOesteON",
+    "20250313_1233_PaseoDeComprasVidema",
+    "20250321_1743_PaseoDeComprasRíoColoradoON",
+    "20250404_1538_PaseoDeComprasGeneralConesaON",
+    "20250516_1355_CarrefourCARGAESPECIAL:on:carrefour3",
+    "20250612_1230_PaseoDeComprasGeneralRocaON",
+    "20250627_1353_PaseoDeComprasCHOELECHOELON",
+    "2026_07_30_Naldo_ON",
+    "Shop_Gallery_Aeropuerto_Bariloche:on:shop-gallery-aeropuerto-bariloche",
+    "2026_08_20_Casa_Elvira_12_Cuotas:on:casa-elvira-12-cuotas",
+    "2024_11_20_1231_Topper:on:topper",
+    "20250326_1204_Macowens:on:macowens",
+    "20250326_1204_Devre:on:devre",
+    "20250404_1627_Chelsea:on:chelsea",
+    "20250404_1627_Exit:on:exit",
+    "20250404_1627_TopSports:on:top-sports",
+    "20250404_1627_SevenSport:on:seven-sport",
+    "20260227_1511_DexterON",
+    "20260227_1511_StockCenterON",
+    "20260227_1511_MoovON",
+    "2026_10_3_AdidasON",
+    "2026_04_10_Cheeky_ON",
+    "2026_05_05_Merrell_ON",
+    "2026_05_05_Vans_ON",
+    "2026_04_15_Peluquerías-1",
+    "20250516_1355_PedidosYaCARGAESPECIAL:on:pedidos-ya3",
+    "The Food Market_Normal:on:the-food-market-normal",
+    "2026_10_07_Temple_Bar:on:temple-bar",
+    "2026_09_14_Cines_ON",
+    "2024_11_20_1231_Cebra:on:cebra",
+    "20250210_1313_Cúspide:on:cuspide",
+    "20250217_1715_PaseoDeComprasChampagnatON",
+    "20250217_1715_PaseoDeComprasChivilcoyON",
+    "20250217_1715_PaseoDeComprasCoronelSuarezON",
+    "20250217_1715_PaseoDeComprasCorrientesON",
+    "20250217_1715_PaseoDeComprasEsquelON",
+    "20250217_1715_PaseoDeComprasFormosaON",
+    "20250217_1715_PaseoDeComprasLaRiojaON",
+    "20250217_1715_PaseoDeComprasLaferrereON",
+    "20250217_1715_PaseoDeComprasMunroON",
+    "20250217_1715_PaseoDeComprasPasoDeLosLibresON",
+    "20250217_1715_PaseoDeCompasPilarON",
+    "20250217_1715_PaseoDeComprasPuntaAltaON",
+    "20250217_1715_PaseoDeComprasRosarioCentroON",
+    "20250217_1715_PaseoDeComprasTrenqueLauquenON",
+    "20250217_1715_PaseoDeComprasTresArroyosON",
+    "20250217_1715_PaseoDeComprasVenadoTuertoON",
+    "20250217_1715_PaseoDeComprasComodoroRivadavia",
+    "20250217_1715_PaseoDeComprasResistenciaON",
+    "20250217_1715_PaseoDeComprasSaltaON",
+    "20250217_1715_PaseoDeComprasAlvarezJonteON",
+    "20250217_1715_PaseoDeComprasSantiagoDelEsteroON",
+    "20250217_1715_PaseoDeComprasRafaelaON",
+    "20250217_1715_PaseoDeComprasCampanaON",
+    "20250217_1715_PaseoDeComprasGeneralPicoON",
+    "20250318_1500_PaseoDeComprasRíoGrandeON",
+    "20250724_1032_PaseoDeComprasSanIsidroON",
+    "20250711_PaseoDeComprasSantaRosaON",
+    "20250707_1250_PaseoDeComprasBarrioNaonON",
+    "20250826_1600_PaseoDeComprasSaenzPeñaON",
+    "20250905_1630_PaseoDeComprasCongresoDeTucumánON",
+    "20250925_1145_PaseoDeComprasPosadasON",
+    "20250930_1619_PaseoDeComprasMendozaON",
+    "20251006_1804_PaseoDeComprasRawsonON",
+    "20251006_1804_PaseoDeComprasTrelewON",
+    "20251006_1804_PaseoDeComprasParanáON",
+    "20251009_1347_PaseoDeComprasComodoroIndustrialON",
+    "20251009_1347_PaseoDeComprasCórdobaON",
+    "20251029_1423_PaseoDeComprasConcepciónDelUruguayON",
+    "20251107_1018_PaseoDeComprasSantaFéON",
+    "20251203_1552_PaseoDeComprasNecocheaON",
+    "20260122_1135_PaseoDeComprasShoppingDelSigloON",
+    "20260122_1135_PaseoDeComprasShoppingCentenarioON",
+    "2026_03_18_Villa La Angostura ON",
+    "2026_04_07_Paseo_de_Compras_Reconquista-1:on:paseo-de-compras-reconquista2",
+    "2026_06_16_Shopping_Del_Siglo_Día_del_Padre:on:shopping-del-siglo-dia-del-padre",
+    "2026_06_16_Shopping_Bahía_Blanca_Día_Del_Padre:on:shopping-bahia-blanca-dia-del-padre",
+    "2026_06_16_Shopping_Palmares_Día_Del_Padre:on:shopping-palmares-dia-del-padre",
+    "2026_06_16_Shopping_Sarmiento_Día_Del_Padre:on:shopping-sarmiento-dia-del-padre",
+    "2026_06_16_Shopping_Centenario_Día_Del_Padre:on:shopping-centenario-dia-del-padre",
+    "2026_08_12_Megatone_Agosto:on:megatone-agosto",
+    "2026_08_13_Cetrogar_12_Cuotas:on:cetrogar-12-cuotas",
+    "2026_08_27_Blaistein_6_Cuotas:on:blaistein-2026",
+    "2026_08_27_Easy_6_Cuotas:on:easy-6-cuotas",
+    "2026_08_28_Frávega_12_Cuotas:on:fravega-12-cuotas",
+    "2026_08_04_Shop_Gallery_Aeroparque:on:shop-gallery-aeroparque",
+    "2026_09_03_Farmacity_Normal:on:farmacity-normal",
+    "Farmaplus:on:farmaplus-normal",
+    "2026_09_03_Simplicity_Normal:on:simplicity-normal",
+    "2026_09_03_Get_the_Look_Normal:on:get-the-look-normal",
+    "2026_10_02_Juleriaque_OCTUBRE:on:juleriaque-promocion"
+  ],
+  "review_reason_counts": {
+    "Vigencias contradictorias entre resumen, tabla y legales; consultar ficha oficial": 350,
+    "Condiciones contradictorias entre storefronts oficiales": 31,
+    "Días contradictorios entre resumen y legales": 9,
+    "Cuotas contradictorio entre resumen y legales": 11,
+    "Porcentaje contradictorio entre resumen y legales": 7,
+    "Tope contradictorio entre resumen y legales": 4
+  },
+  "storefront_signature_diagnostics": {
+    "differences_by_field": {
+      "legal_body": 17,
+      "benefit_text": 11,
+      "validity_candidates": 9,
+      "header_requirements": 9
+    },
+    "samples": [
+      {
+        "source_id": "20250516_1355_CooperativaObreraCARGAESPECIAL",
+        "segment": "plus",
+        "urls": [
+          "https://ahorrosybeneficios.bancopatagonia.com.ar/ahorrosybeneficios/cooperativa-obrera3.html",
+          "https://ahorrosybeneficios.bancopatagonia.com.ar/plus/cooperativa-obrera3.html"
+        ],
+        "changed_fields": [
+          "legal_body"
+        ],
+        "primary_header_requirements": [],
+        "extra_header_requirements": []
+      },
+      {
+        "source_id": "20250516_1355_CooperativaObreraCARGAESPECIAL",
+        "segment": "singular",
+        "urls": [
+          "https://ahorrosybeneficios.bancopatagonia.com.ar/ahorrosybeneficios/cooperativa-obrera3.html",
+          "https://ahorrosybeneficios.bancopatagonia.com.ar/singular/cooperativa-obrera3.html"
+        ],
+        "changed_fields": [
+          "legal_body"
+        ],
+        "primary_header_requirements": [],
+        "extra_header_requirements": []
+      },
+      {
+        "source_id": "2026_09_16_Samsung_Comercios_Adheridos",
+        "segment": "singular",
+        "urls": [
+          "https://ahorrosybeneficios.bancopatagonia.com.ar/ahorrosybeneficios/samsung-comercios-adheridos.html",
+          "https://ahorrosybeneficios.bancopatagonia.com.ar/singular/samsung-comercios-adheridos.html"
+        ],
+        "changed_fields": [
+          "legal_body"
+        ],
+        "primary_header_requirements": [
+          "jubilados",
+          "plan sueldo"
+        ],
+        "extra_header_requirements": [
+          "jubilados",
+          "plan sueldo"
+        ]
+      },
+      {
+        "source_id": "2026_10_15_Tortugas_Open_Mall_DDLM:ahorrosybeneficios:tortugas-open-mall-ddlm",
+        "segment": "singular",
+        "urls": [
+          "https://ahorrosybeneficios.bancopatagonia.com.ar/ahorrosybeneficios/tortugas-open-mall-ddlm.html",
+          "https://ahorrosybeneficios.bancopatagonia.com.ar/singular/tortugas-open-mall-ddlm.html"
+        ],
+        "changed_fields": [
+          "benefit_text"
+        ],
+        "primary_header_requirements": [],
+        "extra_header_requirements": []
+      },
+      {
+        "source_id": "2026_09_15_Galerías_Pacífico_Comercios_Adheridos",
+        "segment": "singular",
+        "urls": [
+          "https://ahorrosybeneficios.bancopatagonia.com.ar/ahorrosybeneficios/galerias-pacifico-comercios-adheridos.html",
+          "https://ahorrosybeneficios.bancopatagonia.com.ar/singular/galerias-pacifico-comercios-adheridos.html"
+        ],
+        "changed_fields": [
+          "legal_body"
+        ],
+        "primary_header_requirements": [
+          "jubilados",
+          "plan sueldo"
+        ],
+        "extra_header_requirements": [
+          "jubilados",
+          "plan sueldo"
+        ]
+      },
+      {
+        "source_id": "20250930_1533_AtalayaPlanSueldoYJubilados",
+        "segment": "plus",
+        "urls": [
+          "https://ahorrosybeneficios.bancopatagonia.com.ar/ahorrosybeneficios/atalaya2.html",
+          "https://ahorrosybeneficios.bancopatagonia.com.ar/plus/atalaya2.html"
+        ],
+        "changed_fields": [
+          "header_requirements"
+        ],
+        "primary_header_requirements": [
+          "jubilados",
+          "plan sueldo"
+        ],
+        "extra_header_requirements": []
+      },
+      {
+        "source_id": "20250930_1533_DandyPlanSueldoYJubilados",
+        "segment": "plus",
+        "urls": [
+          "https://ahorrosybeneficios.bancopatagonia.com.ar/ahorrosybeneficios/dandy3.html",
+          "https://ahorrosybeneficios.bancopatagonia.com.ar/plus/dandy3.html"
+        ],
+        "changed_fields": [
+          "header_requirements"
+        ],
+        "primary_header_requirements": [
+          "jubilados",
+          "plan sueldo"
+        ],
+        "extra_header_requirements": []
+      },
+      {
+        "source_id": "20250930_1533_DandyPlanSueldoYJubilados",
+        "segment": "singular",
+        "urls": [
+          "https://ahorrosybeneficios.bancopatagonia.com.ar/ahorrosybeneficios/dandy3.html",
+          "https://ahorrosybeneficios.bancopatagonia.com.ar/singular/dandy3.html"
+        ],
+        "changed_fields": [
+          "header_requirements"
+        ],
+        "primary_header_requirements": [
+          "jubilados",
+          "plan sueldo"
+        ],
+        "extra_header_requirements": []
+      },
+      {
+        "source_id": "20250327_1530_Kansas",
+        "segment": "singular",
+        "urls": [
+          "https://ahorrosybeneficios.bancopatagonia.com.ar/ahorrosybeneficios/kansas.html",
+          "https://ahorrosybeneficios.bancopatagonia.com.ar/singular/kansas.html"
+        ],
+        "changed_fields": [
+          "header_requirements"
+        ],
+        "primary_header_requirements": [
+          "jubilados",
+          "plan sueldo"
+        ],
+        "extra_header_requirements": []
+      },
+      {
+        "source_id": "20250710_0917_Rapanui",
+        "segment": "plus",
+        "urls": [
+          "https://ahorrosybeneficios.bancopatagonia.com.ar/ahorrosybeneficios/rapanui3.html",
+          "https://ahorrosybeneficios.bancopatagonia.com.ar/plus/rapanui3.html"
+        ],
+        "changed_fields": [
+          "header_requirements"
+        ],
+        "primary_header_requirements": [
+          "jubilados",
+          "plan sueldo"
+        ],
+        "extra_header_requirements": []
+      },
+      {
+        "source_id": "20250710_0917_Rapanui",
+        "segment": "singular",
+        "urls": [
+          "https://ahorrosybeneficios.bancopatagonia.com.ar/ahorrosybeneficios/rapanui3.html",
+          "https://ahorrosybeneficios.bancopatagonia.com.ar/singular/rapanui3.html"
+        ],
+        "changed_fields": [
+          "header_requirements"
+        ],
+        "primary_header_requirements": [
+          "jubilados",
+          "plan sueldo"
+        ],
+        "extra_header_requirements": []
+      },
+      {
+        "source_id": "20250925_1739_FreddoPlanSueldoYJubilados",
+        "segment": "plus",
+        "urls": [
+          "https://ahorrosybeneficios.bancopatagonia.com.ar/ahorrosybeneficios/freddo3.html",
+          "https://ahorrosybeneficios.bancopatagonia.com.ar/plus/freddo3.html"
+        ],
+        "changed_fields": [
+          "header_requirements"
+        ],
+        "primary_header_requirements": [
+          "jubilados",
+          "plan sueldo"
+        ],
+        "extra_header_requirements": []
+      },
+      {
+        "source_id": "20250925_1739_FreddoPlanSueldoYJubilados",
+        "segment": "singular",
+        "urls": [
+          "https://ahorrosybeneficios.bancopatagonia.com.ar/ahorrosybeneficios/freddo3.html",
+          "https://ahorrosybeneficios.bancopatagonia.com.ar/singular/freddo3.html"
+        ],
+        "changed_fields": [
+          "header_requirements"
+        ],
+        "primary_header_requirements": [
+          "jubilados",
+          "plan sueldo"
+        ],
+        "extra_header_requirements": []
+      }
+    ],
+    "interpretation": "Potential differences requiring human review, not independently established economic contradictions."
+  },
+  "delivery_status": "READY_FOR_HUMAN_REVIEW_QA5_PASS",
+  "production_ready": false,
+  "independent_qa": {
+    "author": "promotion_qa",
+    "verdict": "PASS",
+    "audit_number": 5,
+    "completed_audits": 5,
+    "read_only_enforcement": "instruction_only_no_technical_isolation",
+    "sample_raws": 16,
+    "sample_variants": 25,
+    "official_detail_pages": 19,
+    "additional_exploratory_campaign": "Almundo Paquetes",
+    "test_passed": 93,
+    "test_deselected": 16,
+    "test_failed": 0,
+    "read_only_test_options": [
+      "python -B",
+      "pytest -q -p no:cacheprovider",
+      "plugin autoload disabled",
+      "stub persistence before imports"
+    ],
+    "filesystem_tests_executed": false,
+    "filesystem_tests_inspected": 16,
+    "historical_gate_scenarios_in_memory_passed": 6,
+    "structural_recalculation_raws": 350,
+    "structural_recalculation_variants": 583,
+    "structural_recalculation_matches_export": true,
+    "normalization_errors": 0,
+    "exclusions": 0,
+    "review_count": 350,
+    "closed_cases": [
+      "QA001",
+      "QA002",
+      "QA003",
+      "QA004",
+      "QA005",
+      "QA006",
+      "QA007",
+      "QA008",
+      "QA009",
+      "QA010",
+      "QA011",
+      "QA012",
+      "Carrefour Plan Sueldo header regression"
+    ],
+    "remaining_findings": [],
+    "global_catalog_complete": "UNKNOWN",
+    "normalization_structural_complete": true,
+    "normalization_sample_fidelity": "CONFORMANT",
+    "normalization_global_fidelity": "UNKNOWN",
+    "report": "docs/patagonia-qa-5-20261019.md",
+    "next_audit": null,
+    "stop_reason": "PASS; one of two user-authorized additional rounds used; no QA6"
+  },
+  "review_artifacts": [
+    {
+      "path": "backend/data/patagonia_review_20261019_raw.json",
+      "kind": "raw",
+      "status": "CANDIDATE_NOT_APPROVED",
+      "records": 350,
+      "bytes": 36855489,
+      "sha256": "d7a49a114edf237a214c4f4dc71ce3253e61f632fceaeb508a71b6233aceb998"
+    },
+    {
+      "path": "backend/data/patagonia_review_20261019_normalized.json",
+      "kind": "normalized",
+      "status": "CANDIDATE_NOT_APPROVED",
+      "records": 583,
+      "bytes": 5908356,
+      "sha256": "7c4df5f32b515a84b22dd9b7140bed01097b93f7a6d3d18a0188c9e557ce00d1"
+    }
+  ],
+  "accepted_snapshot": {
+    "path": "backend/data/patagonia_promotions.json",
+    "sha256": "3c1bc8669d1e0555d55d97647ccfb416b83cdb8d8df3814b5fb9ecdef9b8d83a",
+    "modified": false
+  },
+  "development_round_4": {
+    "user_authorized": true,
+    "authorization": "dale una vuelta mas",
+    "fixes_pending_independent_acceptance": [
+      "QA009",
+      "QA010"
+    ],
+    "test_passed": 103,
+    "test_failed": 0,
+    "test_seconds": 3.04,
+    "raw_count": 350,
+    "variant_count": 583,
+    "normalization_errors": 0,
+    "scraper_changed": false,
+    "catalog_evidence_reused_from_qa3": true,
+    "independent_qa_result": "FAIL; QA009/QA010 closed in concrete cases; QA011/QA012 remain open"
+  },
+  "independent_qa_history": {
+    "qa3": {
+      "author": "promotion_qa",
+      "verdict": "FAIL",
+      "completed_audits": 3,
+      "read_only_enforcement": "instruction_only_no_technical_isolation",
+      "sample_raws": 20,
+      "sample_variants": 32,
+      "official_detail_pages": 24,
+      "test_passed": 83,
+      "test_deselected": 16,
+      "test_seconds": 1.74,
+      "closed_cases": [
+        "QA001",
+        "QA002",
+        "QA003",
+        "QA004",
+        "QA005",
+        "QA006",
+        "QA007",
+        "QA008",
+        "Carrefour Plan Sueldo header regression"
+      ],
+      "remaining_findings": [
+        {
+          "id": "QA009",
+          "severity": "HIGH",
+          "summary": "Official M?STER alias omitted from La Agr?cola Regional credit networks and wallet combinations",
+          "url": "https://ahorrosybeneficios.bancopatagonia.com.ar/ahorrosybeneficios/la-agricola-regional-supermercados-regionales.html"
+        },
+        {
+          "id": "QA010",
+          "severity": "MEDIUM",
+          "summary": "Teatro Col?n visible restrictions and Mastercard eligibility incomplete; full terms retained",
+          "urls": [
+            "https://ahorrosybeneficios.bancopatagonia.com.ar/ahorrosybeneficios/filarmonica-de-berlin-teatro-colon.html",
+            "https://ahorrosybeneficios.bancopatagonia.com.ar/ahorrosybeneficios/ciclo-grandes-interpretes-teatro-colon-grigorian.html"
+          ]
+        }
+      ],
+      "independent_catalog_comparison": {
+        "roots": 4,
+        "categories": 101,
+        "detail_urls": 822,
+        "missing_urls": 0,
+        "extra_urls": 0,
+        "empty_categories": 29
+      },
+      "global_catalog_complete": "UNKNOWN",
+      "normalization_structural_complete": true,
+      "normalization_fidelity": false,
+      "report": "docs/patagonia-qa-final-20261019.md",
+      "next_audit": {
+        "number": 4,
+        "status": "PENDING",
+        "authorization": "Explicit user request: dale una vuelta mas"
+      }
+    },
+    "note": "QA3 catalog evidence retained; QA4 usage resumption was the same audit. QA5 PASS stops the user-authorized extension after one of two extra rounds; QA6 not needed.",
+    "qa4": {
+      "author": "promotion_qa",
+      "verdict": "FAIL",
+      "audit_number": 4,
+      "completed_audits": 4,
+      "user_authorized_extra_round": true,
+      "read_only_enforcement": "instruction_only_no_technical_isolation",
+      "sample_raws": 18,
+      "sample_variants": 28,
+      "official_detail_pages": 22,
+      "test_passed": 87,
+      "test_deselected": 16,
+      "test_seconds": 1.52,
+      "read_only_test_options": [
+        "python -B",
+        "pytest -q -s",
+        "-p no:cacheprovider",
+        "-p no:logging",
+        "plugin autoload disabled",
+        "stub persistence",
+        "audit hook rejects writes"
+      ],
+      "filesystem_tests_executed": false,
+      "structural_recalculation_raws": 350,
+      "structural_recalculation_variants": 583,
+      "structural_recalculation_matches_export": true,
+      "closed_cases": [
+        "QA001",
+        "QA002",
+        "QA003",
+        "QA004",
+        "QA005",
+        "QA006",
+        "QA007",
+        "QA008",
+        "QA009",
+        "QA010",
+        "Carrefour Plan Sueldo header regression"
+      ],
+      "remaining_findings": [
+        {
+          "id": "QA011",
+          "severity": "HIGH",
+          "url": "https://ahorrosybeneficios.bancopatagonia.com.ar/ahorrosybeneficios/ciclo-grandes-interpretes-teatro-colon-grigorian.html",
+          "observed": {
+            "valid_from": "2026-12-07",
+            "valid_to": "2026-12-07",
+            "review_issues": []
+          },
+          "official_summary_date_representations": [
+            "08/12/2026",
+            "8/12/2026"
+          ],
+          "official_table_date": "2026-12-07",
+          "expected": "Canonicalize date representations before deduplication; conflicting 8 vs 7 requires nullable dates and human-review warning. Equal canonical dates without a conflict retain 8 December."
+        },
+        {
+          "id": "QA012",
+          "severity": "MEDIUM",
+          "url": "https://ahorrosybeneficios.bancopatagonia.com.ar/ahorrosybeneficios/patagonia-wine-fest.html",
+          "observed": {
+            "limits": [],
+            "online": null,
+            "visible_ticket_family_conditions": "omitted",
+            "terms": "preserved"
+          },
+          "expected": {
+            "visible_conditions": "Exclusive purchase through TuEntrada, family consumption, maximum four tickets per person",
+            "online": true,
+            "limit": {
+              "type": "other",
+              "quantity": 4,
+              "scope": "person",
+              "currency": null,
+              "period": null
+            },
+            "must_not_infer": "global stock"
+          }
+        }
+      ],
+      "global_catalog_complete": "UNKNOWN",
+      "normalization_structural_complete": true,
+      "normalization_fidelity": false,
+      "report": "docs/patagonia-qa-final-20261019.md",
+      "next_audit": {
+        "number": 5,
+        "status": "COMPLETED_PASS",
+        "maximum_authorized_completed_audits": 6,
+        "authorization": "Explicit user request: dale 2 vueltas mas si hace falta"
+      }
+    }
+  },
+  "runtime_review_count_note": "350 runtime review flags after canonical-date correction; structural flags do not establish full commercial fidelity.",
+  "temporary_cleanup": {
+    "status": "INCOMPLETE_AUTOMATIC_REVIEW_BLOCKED",
+    "reason": "automatic review blocked by policy",
+    "attempts": [
+      {
+        "action": "Remove explicit verified source-local files/directories with guarded recursive removal",
+        "result": "Rejected before execution: blocked by policy"
+      },
+      {
+        "action": "Remove explicit absolute source-local file paths without recursion",
+        "result": "Rejected before execution: blocked by policy"
+      }
+    ],
+    "removed": [],
+    "remaining_paths": [
+      "C:/Users/pablo/Desktop/proyectos/promociones-bancarias/backend/.tmp/pytest-patagonia",
+      "C:/Users/pablo/Desktop/proyectos/promociones-bancarias/backend/.tmp/patagonia-tests-20261019b",
+      "C:/Users/pablo/Desktop/proyectos/promociones-bancarias/backend/.tmp/patagonia-permissions-20261019c",
+      "C:/Users/pablo/Desktop/proyectos/promociones-bancarias/backend/.tmp/patagonia-check-20261019d",
+      "C:/Users/pablo/Desktop/proyectos/promociones-bancarias/backend/.tmp/patagonia-full-20261019e",
+      "C:/Users/pablo/Desktop/proyectos/promociones-bancarias/backend/.tmp/patagonia-check-20261019f",
+      "C:/Users/pablo/Desktop/proyectos/promociones-bancarias/backend/.tmp/patagonia-check-20261019g",
+      "C:/Users/pablo/Desktop/proyectos/promociones-bancarias/backend/.tmp/patagonia-qa1-fixes-20261019h",
+      "C:/Users/pablo/Desktop/proyectos/promociones-bancarias/backend/.tmp/patagonia-qa2-fixes-20261019i",
+      "C:/Users/pablo/Desktop/proyectos/promociones-bancarias/backend/.tmp/patagonia-salary-regression-20261019j",
+      "C:/Users/pablo/Desktop/proyectos/promociones-bancarias/backend/.tmp/patagonia-user-extra-qa4-20261019k",
+      "C:/Users/pablo/Desktop/proyectos/promociones-bancarias/backend/.tmp/patagonia-user-extra-qa4-20261019l",
+      "C:/Users/pablo/Desktop/proyectos/promociones-bancarias/backend/.tmp/patagonia-home.html",
+      "C:/Users/pablo/Desktop/proyectos/promociones-bancarias/backend/.tmp/patagonia-candidate.json",
+      "C:/Users/pablo/Desktop/proyectos/promociones-bancarias/backend/.tmp/patagonia-coverage.json",
+      "C:/Users/pablo/Desktop/proyectos/promociones-bancarias/backend/.tmp/patagonia-normalized.json",
+      "C:/Users/pablo/Desktop/proyectos/promociones-bancarias/backend/.tmp/patagonia-normalization-audit.json",
+      "C:/Users/pablo/Desktop/proyectos/promociones-bancarias/backend/.tmp/patagonia-plus-home.html",
+      "C:/Users/pablo/Desktop/proyectos/promociones-bancarias/backend/.tmp/patagonia-singular-home.html",
+      "C:/Users/pablo/Desktop/proyectos/promociones-bancarias/backend/.tmp/patagonia-plus-temple.json",
+      "C:/Users/pablo/Desktop/proyectos/promociones-bancarias/backend/.tmp/patagonia-singular-temple.json",
+      "C:/Users/pablo/Desktop/proyectos/promociones-bancarias/backend/.tmp/patagonia-four-storefronts-coverage.json",
+      "C:/Users/pablo/Desktop/proyectos/promociones-bancarias/backend/.tmp/patagonia-four-storefronts-audit.json",
+      "C:/Users/pablo/Desktop/proyectos/promociones-bancarias/backend/.tmp/patagonia-reexport.py",
+      "C:/Users/pablo/Desktop/proyectos/promociones-bancarias/backend/.tmp/patagonia-user-extra-qa5-20261019m",
+      "C:/Users/pablo/Desktop/proyectos/promociones-bancarias/backend/.tmp/patagonia-user-extra-qa5-20261019n",
+      "C:/Users/pablo/Desktop/proyectos/promociones-bancarias/backend/.tmp/patagonia-user-extra-qa5-20261019o"
+    ],
+    "permissions_changed": false,
+    "additional_attempts": "none",
+    "note": "No repeated cleanup attempts after automatic policy denials; additional regression-test directories retained."
+  },
+  "date_canonicalization_scan": {
+    "raw_records_scanned": 350,
+    "detail_summaries_scanned": 822,
+    "findings": [
+      {
+        "source_id": "2026_10_15_Ciclo_Grandes_Intérpretes_Teatro_Colon_Grigorian",
+        "url": "https://ahorrosybeneficios.bancopatagonia.com.ar/ahorrosybeneficios/ciclo-grandes-interpretes-teatro-colon-grigorian.html",
+        "equivalent_spellings": {
+          "2026-12-08": [
+            "08/12/2026",
+            "8/12/2026"
+          ]
+        }
+      },
+      {
+        "source_id": "2026_10_15_Ciclo_Grandes_Intérpretes_Teatro_Colon_Grigorian",
+        "url": "https://ahorrosybeneficios.bancopatagonia.com.ar/singular/ciclo-grandes-interpretes-teatro-colon-grigorian.html",
+        "equivalent_spellings": {
+          "2026-12-08": [
+            "08/12/2026",
+            "8/12/2026"
+          ]
+        }
+      }
+    ]
+  },
+  "development_round_5": {
+    "user_authorized": true,
+    "authorization": "dale 2 vueltas mas si hace falta",
+    "maximum_authorized_completed_audits": 6,
+    "fixes_pending_independent_acceptance": [],
+    "test_passed": 109,
+    "test_failed": 0,
+    "test_seconds": 1.78,
+    "raw_count": 350,
+    "variant_count": 583,
+    "normalization_errors": 0,
+    "review_count": 350,
+    "scraper_changed": false,
+    "catalog_evidence_reused_from_qa3": true,
+    "artifact_checks": {
+      "grigorian_conflict_dates_nullable_and_review_visible": true,
+      "wine_fest_online_and_other_ticket_limit_person": true,
+      "decimals_serialized_as_strings": true,
+      "no_legacy_flat_fields": true
+    },
+    "independently_closed_cases": [
+      "QA011",
+      "QA012"
+    ]
+  },
+  "candidate_freshness": {
+    "status": "PENDING_HUMAN_REVIEW",
+    "observed_at_utc": "2026-10-20T02:36:00+00:00",
+    "observed_at_art": "2026-10-19T23:36:00-03:00",
+    "url": "https://ahorrosybeneficios.bancopatagonia.com.ar/ahorrosybeneficios/almundo-paquetes.html",
+    "candidate_contains_campaign": false,
+    "current_category_parser_discovers": true,
+    "detail_normalization_conformant_in_exploratory_qa": true,
+    "first_publication_time": "UNKNOWN",
+    "parser_omission_demonstrated": false,
+    "candidate_refreshed": false,
+    "note": "Later official listing differs from approximately 17:55-18:00 UTC capture. Not inserted into the frozen candidate; QA3 coverage evidence does not establish current freshness."
+  },
+  "raw_review_metadata_traceability": {
+    "previous_sha256": "cc9c0b4068dd5c41ab9c1e153ef4af51b43d32c5fcc59fdc7f0cfd333162c00d",
+    "current_sha256": "d7a49a114edf237a214c4f4dc71ce3253e61f632fceaeb508a71b6233aceb998",
+    "bytes_added": 124,
+    "only_change": "Grigorian canonical raw review_reasons added after QA011 correction",
+    "proof": "Removing only that key in memory and serializing with original UTF-8/indent/CRLF reproduces previous SHA256 exactly",
+    "source_payloads_and_timestamps_changed": false,
+    "fresh_wine_fest_fixture_substituted_into_raw_candidate": false
+  }
+}

@@ -406,6 +406,7 @@ def test_scrape_uses_real_sku_and_preserves_on_segment():
                         <div>PATAGONIA ON</div>
                         <div>15%</div>
                     </div>
+                    <div class="product attribute description">Legales Patagonia ON: 15% de descuento</div>
                 </main>
                 """,
             )
@@ -458,7 +459,7 @@ def test_fetch_promotion_detail_retries_after_timeout(monkeypatch):
         )
 
     monkeypatch.setattr(
-        "scraping.http_client.time.sleep",
+        "scraping.sources.patagonia.scraper.time.sleep",
         lambda _: None,
     )
 
@@ -503,6 +504,9 @@ def test_scrape_marks_result_as_incomplete_when_detail_fails(monkeypatch):
         return {
             "sku": "ok",
             "title": "OK",
+            "url": url,
+            "summary_text": "20% de descuento",
+            "description_text": "Legales Patagonia: 20% de descuento",
         }
 
     monkeypatch.setattr(
