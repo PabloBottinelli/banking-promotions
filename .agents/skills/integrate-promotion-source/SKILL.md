@@ -1,9 +1,9 @@
 ---
 name: integrate-promotion-source
-description: Integrar una fuente de promociones bancarias V2 con Codex principal como desarrollador y una sola auditoría independiente del agente promotion_qa; detenerse para decisión humana ante hallazgos.
+description: Integrar una fuente de promociones bancarias con Codex principal como desarrollador y una sola auditoría independiente del agente promotion_qa; detenerse para decisión humana ante hallazgos.
 ---
 
-# Integrar fuente de promociones V2
+# Integrar fuente de promociones
 
 Usar esta skill cuando el usuario solicite integrar una fuente de banco/billetera o invocar `$integrate-promotion-source`. Leer `AGENTS.md`. **Codex principal desarrolla y coordina**; no hay un subagente de desarrollo obligatorio. La auditoría corresponde a `promotion_qa` en contexto nuevo.
 
@@ -15,7 +15,7 @@ Usar esta skill cuando el usuario solicite integrar una fuente de banco/billeter
 
 ## 2. Implementación del Codex principal
 
-- Crear scraper, normalizador V2 y entrypoint `sync_<fuente>.py` (sin ejecutarlo); agregar fixtures pequeñas y tests ordinarios. No modificar el contrato común salvo que el usuario pida ese trabajo explícitamente.
+- Crear scraper, normalizador y entrypoint `sync_<fuente>.py` (sin ejecutarlo); agregar fixtures pequeñas y tests ordinarios. No modificar el contrato común salvo que el usuario pida ese trabajo explícitamente.
 - `scrape()` devuelve candidato en memoria sin escribir snapshots; extraer evidencia raw completa, IDs/URLs/legales, detección de errores, paginación y cobertura real.
 - Normalizar todos los tipos de beneficios y sus variantes, topes/mínimos/stock/usos, pagos, fechas desconocidas, días, canales, comercios/condiciones según `backend/normalization/models.py`. Ningún fallback comercial inventado ni eliminación silenciosa de registros.
 - Reutilizar el runner y bloquear pérdida de datos antes de guardar o upsertear. El guardado específico debe ser atómico, rechazar detalles obligatorios vacíos e IDs previos desaparecidos/sustituidos sin revisión. Baseline ausente en CI = riesgo no resuelto.
@@ -38,4 +38,4 @@ Usar esta skill cuando el usuario solicite integrar una fuente de banco/billeter
 
 ## Informe final breve
 
-Entregar: fuente y fecha de observación, archivos cambiados, pruebas y resultados reales, campañas raw / variantes V2 / exclusiones justificadas, cinco decisiones de integridad (YES/NO/UNKNOWN/NOT EXPOSED según origen), hallazgos pendientes, estado final, evidencia de delegación y confirmación de que **no hubo sincronización, despliegue ni modificaciones de workflows**. Priorizar hechos verificables y riesgos, no una checklist extensa.
+Entregar: fuente y fecha de observación, archivos cambiados, pruebas y resultados reales, campañas crudas / variantes normalizadas / exclusiones justificadas, cinco decisiones de integridad (YES/NO/UNKNOWN/NOT EXPOSED según origen), hallazgos pendientes, estado final, evidencia de delegación y confirmación de que **no hubo sincronización, despliegue ni modificaciones de workflows**. Priorizar hechos verificables y riesgos, no una checklist extensa.
