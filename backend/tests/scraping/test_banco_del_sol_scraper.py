@@ -6,6 +6,10 @@ import pytest
 from scraping.sources.banco_del_sol.scraper import BancoDelSolScraper
 
 
+_FIRST_PAGE_IDS = ("one", "two", "three", "four", "five", "six", "seven", "eight", "nine")
+_COMPLETE_IDS = _FIRST_PAGE_IDS + ("ten",)
+
+
 def _page(slugs, wrapper='id="id-productos-vigentes"'):
     cards = "".join(f'<div><a class="card_link" href="/beneficios/{slug}" data-inicio="October 13, 2026">{slug}</a></div>' for slug in slugs)
     return f'<section {wrapper}><div class="collection-list">{cards}</div></section>'
@@ -29,41 +33,81 @@ def _scraper(tmp_path, states, failed_detail=None):
     )
 
 
-def test_complete_browser_states_and_atomic_snapshot(tmp_path):
-    states = [(_page(["one", "two", "three"]), True),
-              (_page(["one", "two", "three", "four"]), False)]
+@pytest.mark.parametrize("counts", [(9, 10), (9, 18), (9, 18, 20)])
+def test_complete_browser_states_and_atomic_snapshot(tmp_path, counts):
+    ids = _COMPLETE_IDS + tuple(f"promo-{n}" for n in range(10, counts[-1]))
+    states = [(_page(ids[:count]), index < len(counts) - 1)
+              for index, count in enumerate(counts)]
     scraper = _scraper(tmp_path, states)
     result = scraper.scrape()
     assert result.complete and scraper.coverage["catalog_complete"]
-    assert [p["source_id"] for p in result.promotions] == ["one", "two", "three", "four"]
+    assert [p["source_id"] for p in result.promotions] == list(ids)
+    assert scraper.coverage["pagination"]["terminal_verified"] is True
+    assert scraper.coverage["snapshot_replace_allowed"] is True
+    assert not scraper.output_path.exists()
     scraper.save_raw_promotions(result.promotions)
     saved = json.loads(scraper.output_path.read_text(encoding="utf-8"))
     assert saved[0]["detail"]["terms"] == "Beneficio legal de one"
     coverage = json.loads(scraper.output_path.with_name("banco_del_sol_coverage.json").read_text(encoding="utf-8"))
-    assert coverage["pagination"]["cumulative_counts"] == [3, 4]
+    assert coverage["pagination"]["cumulative_counts"] == list(counts)
     assert coverage["catalog_complete"] is True
     assert "html" not in coverage
 
 
-@pytest.mark.parametrize("states,failed_detail", [
-    ([(_page([]), False)], None),
-    ([(_page(["one", "two"]), True), (_page(["one", "two", "two"]), False)], None),
-    ([(_page(["one", "two"]), True), (_page(["one", "two"]), False)], None),
-    ([(_page(["one", "two"]), False)], None),
-    ([(_page(["one", "two"]), True), (_page(["one", "two", "three", "four"]), False)], None),
-    ([(_page(["one", "two"]), True)], None),
-    ([(_page(["one", "two"]), True), (_page(["one", "two", "three"]), False)], "three"),
-    ([('<section id="changed"></section>', False)], None),
+@pytest.mark.parametrize("states,failed_detail,error", [
+    pytest.param([(_page([]), False)], None, "vacía", id="empty-catalog"),
+    pytest.param([(_page(_FIRST_PAGE_IDS), True),
+                  (_page(_FIRST_PAGE_IDS + ("two",)), False)],
+                 None, "IDs repetidos", id="duplicate-id"),
+    pytest.param([(_page(_FIRST_PAGE_IDS), True), (_page(_FIRST_PAGE_IDS), False)],
+                 None, "lote nuevo y estable", id="no-growth"),
+    pytest.param([(_page(["one", "two"]), False)],
+                 None, "no verificable: [2]", id="short-single-state"),
+    pytest.param([(_page(["one", "two"]), True),
+                  (_page(["one", "two", "three", "four"]), False)],
+                 None, "no verificable: [2, 4]", id="short-first-load"),
+    pytest.param([(_page(_FIRST_PAGE_IDS), True)],
+                 None, "sin límite verificado", id="missing-terminal-state"),
+    pytest.param([(_page(_FIRST_PAGE_IDS), True), (_page(_COMPLETE_IDS), False)],
+                 "ten", "ten:", id="detail-http-error"),
+    pytest.param([('<section id="changed"></section>', False)],
+                 None, "colección oficial", id="missing-current-section"),
+    pytest.param([(_page(_FIRST_PAGE_IDS), False)],
+                 None, "no verificable: [9]", id="unverified-single-full-load"),
+    pytest.param([(_page(_FIRST_PAGE_IDS), True),
+                  (_page(_COMPLETE_IDS + tuple(f"extra-{n}" for n in range(9))), False)],
+                 None, "no verificable: [9, 19]", id="oversized-next-load"),
+    pytest.param([(_page(_COMPLETE_IDS), True),
+                  (_page(_COMPLETE_IDS + ("eleven",)), False)],
+                 None, "no verificable: [10, 11]", id="oversized-first-load"),
+    pytest.param([(_page(_FIRST_PAGE_IDS), True),
+                  (_page(("replacement",) + _COMPLETE_IDS[1:]), False)],
+                 None, "lote nuevo y estable", id="changed-prefix"),
+    pytest.param([(_page(_FIRST_PAGE_IDS), True),
+                  (_page(tuple(reversed(_FIRST_PAGE_IDS)) + ("ten",)), False)],
+                 None, "lote nuevo y estable", id="reordered-prefix"),
+    pytest.param([(_page(["one", "two", "three"]), True),
+                  (_page(["one", "two", "three", "four"]), False)],
+                 None, "no verificable: [3, 4]", id="former-short-positive"),
+    pytest.param([(_page(["one", "two"]), True),
+                  (_page(["one", "two", "three"]), False)],
+                 None, "no verificable: [2, 3]", id="former-short-helper"),
 ])
-def test_partial_or_unverifiable_catalog_never_replaces_snapshot(tmp_path, states, failed_detail):
+def test_partial_or_unverifiable_catalog_never_replaces_snapshot(tmp_path, states, failed_detail, error):
     scraper = _scraper(tmp_path, states, failed_detail)
-    previous = [{"source_id": "one"}]
-    scraper.output_path.write_text(json.dumps(previous), encoding="utf-8")
+    original = _baseline(scraper, ("one",))
     result = scraper.scrape()
     assert not scraper.coverage["catalog_complete"]
+    assert not result.complete
+    assert any(error in failure for failure in result.failed_ids)
+    assert scraper.coverage["snapshot_replace_allowed"] is False
+    if failed_detail:
+        assert result.catalog_count == 10 and len(result.promotions) == 9
+        assert len(result.failed_ids) == 1
+        assert scraper.coverage["pagination"]["terminal_verified"] is True
     with pytest.raises(ValueError):
         scraper.save_raw_promotions(result.promotions)
-    assert json.loads(scraper.output_path.read_text(encoding="utf-8")) == previous
+    assert scraper.output_path.read_text(encoding="utf-8") == original
 
 
 def test_html_variations_keep_current_section_boundary():
@@ -73,14 +117,11 @@ def test_html_variations_keep_current_section_boundary():
 
 
 def test_truncated_short_last_page_does_not_replace_previous_snapshot(tmp_path):
-    """Regression for QA: 65 -> 56 can mimic a legitimate short final page."""
     old_ids = [f"promo-{n}" for n in range(65)]
     new_ids = old_ids[:56]
-    previous = [{"source_id": slug} for slug in old_ids]
     states = [(_page(new_ids[:n]), n != 56) for n in [9, 18, 27, 36, 45, 54, 56]]
     scraper = _scraper(tmp_path, states)
-    original = json.dumps(previous)
-    scraper.output_path.write_text(original, encoding="utf-8")
+    original = _baseline(scraper, old_ids)
 
     result = scraper.scrape()
 
@@ -99,28 +140,23 @@ def test_truncated_short_last_page_does_not_replace_previous_snapshot(tmp_path):
 
 
 def test_adding_promotions_without_losing_old_ids_is_allowed(tmp_path):
-    states = [(_page(["one", "two", "three"]), True),
-              (_page(["one", "two", "three", "four"]), False)]
-    scraper = _scraper(tmp_path, states)
-    scraper.output_path.write_text(
-        json.dumps([{"source_id": slug} for slug in ["one", "two", "three"]]),
-        encoding="utf-8",
-    )
+    scraper = _complete_scraper(tmp_path)
+    _baseline(scraper, _FIRST_PAGE_IDS)
 
     result = scraper.scrape()
     assert result.complete
     assert scraper.coverage["snapshot_comparison"]["missing_ids"] == []
-    assert scraper.coverage["snapshot_comparison"]["new_ids"] == ["four"]
+    assert scraper.coverage["snapshot_comparison"]["new_ids"] == ["ten"]
     scraper.save_raw_promotions(result.promotions)
-    assert len(json.loads(scraper.output_path.read_text(encoding="utf-8"))) == 4
+    assert len(json.loads(scraper.output_path.read_text(encoding="utf-8"))) == 10
 
 
 def _complete_scraper(tmp_path):
-    return _scraper(tmp_path, [(_page(["one", "two"]), True),
-                               (_page(["one", "two", "three"]), False)])
+    return _scraper(tmp_path, [(_page(_FIRST_PAGE_IDS), True),
+                               (_page(_COMPLETE_IDS), False)])
 
 
-def _baseline(scraper, ids=("one", "two", "three")):
+def _baseline(scraper, ids=_COMPLETE_IDS):
     original = json.dumps([{"source_id": slug, "detail": {"title": "Anterior",
                           "terms": "Texto legal anterior"}} for slug in ids])
     scraper.output_path.write_text(original, encoding="utf-8")
@@ -139,9 +175,10 @@ def test_http_200_with_empty_detail_is_incomplete_and_preserves_snapshot(tmp_pat
     scraper.client = httpx.Client(transport=httpx.MockTransport(
         lambda request: httpx.Response(200, text=html if request.url.path.endswith("/two") else _detail("Válido"))))
     result = scraper.scrape()
-    assert result.catalog_count == 3 and len(result.promotions) == 2
+    assert result.catalog_count == 10 and len(result.promotions) == 9
     assert not result.complete
     assert len(result.failed_ids) == 1 and result.failed_ids[0].startswith("two:")
+    assert scraper.coverage["pagination"]["terminal_verified"] is True
     assert scraper.coverage["catalog_complete"] is False
     assert scraper.coverage["snapshot_replace_allowed"] is False
     with pytest.raises(ValueError):
@@ -186,6 +223,7 @@ def test_in_place_candidate_mutation_cannot_bypass_gate(tmp_path, mutation):
     scraper = _complete_scraper(tmp_path)
     original = _baseline(scraper)
     result = scraper.scrape()
+    assert result.complete and scraper.coverage["snapshot_replace_allowed"] is True
     if mutation == "remove":
         result.promotions.pop()
     elif mutation == "duplicate":
@@ -207,6 +245,7 @@ def test_baseline_change_after_scrape_is_rechecked(tmp_path, late_baseline):
     scraper = _complete_scraper(tmp_path)
     _baseline(scraper)
     result = scraper.scrape()
+    assert result.complete and scraper.coverage["snapshot_replace_allowed"] is True
     scraper.output_path.write_text(late_baseline, encoding="utf-8")
     with pytest.raises(ValueError):
         scraper.save_raw_promotions(result.promotions)
@@ -217,12 +256,13 @@ def test_baseline_change_after_scrape_is_rechecked(tmp_path, late_baseline):
 
 def test_same_count_with_replaced_id_requires_review(tmp_path):
     scraper = _complete_scraper(tmp_path)
-    original = _baseline(scraper, ("one", "two", "removed"))
+    original = _baseline(scraper, _FIRST_PAGE_IDS + ("removed",))
     result = scraper.scrape()
     assert result.complete
     assert scraper.coverage["catalog_complete"] is True
+    assert result.catalog_count == scraper.coverage["snapshot_comparison"]["previous_count"] == 10
     assert scraper.coverage["snapshot_comparison"]["missing_ids"] == ["removed"]
-    assert scraper.coverage["snapshot_comparison"]["new_ids"] == ["three"]
+    assert scraper.coverage["snapshot_comparison"]["new_ids"] == ["ten"]
     assert scraper.coverage["snapshot_replace_allowed"] is False
     with pytest.raises(ValueError):
         scraper.save_raw_promotions(result.promotions)
@@ -233,6 +273,7 @@ def test_baseline_rechecked_after_raw_serialization(tmp_path, monkeypatch):
     scraper = _complete_scraper(tmp_path)
     _baseline(scraper)
     result = scraper.scrape()
+    assert result.complete and scraper.coverage["snapshot_replace_allowed"] is True
     late_baseline = '[{"source_id":"added-by-other-process"}]'
     real_dump = json.dump
 
@@ -255,6 +296,7 @@ def test_write_failures_preserve_raw_and_cleanup_temporary_files(tmp_path, monke
     scraper = _complete_scraper(tmp_path)
     original = _baseline(scraper)
     result = scraper.scrape()
+    assert result.complete and scraper.coverage["snapshot_replace_allowed"] is True
     if failure in {"raw_replace", "metadata_replace"}:
         import os
         real_replace = os.replace
@@ -284,6 +326,7 @@ def test_explicit_replacement_permission_required_even_if_catalog_complete(tmp_p
     scraper = _complete_scraper(tmp_path)
     original = _baseline(scraper)
     result = scraper.scrape()
+    assert result.complete and scraper.coverage["snapshot_replace_allowed"] is True
     del scraper.coverage["snapshot_replace_allowed"]
     with pytest.raises(ValueError, match="autorizado"):
         scraper.save_raw_promotions(result.promotions)

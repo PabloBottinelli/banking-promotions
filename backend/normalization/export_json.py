@@ -1,12 +1,3 @@
-"""Export normalized promotions from saved raw JSON without touching Supabase.
-
-Run from backend/:
-    python -m normalization.export_json --source all
-    python -m normalization.export_json --source galicia
-
-The existing raw files in backend/data/ are never modified. If a record
-fails to normalize, no incomplete export is written for that source.
-"""
 
 import argparse
 import json
@@ -18,17 +9,13 @@ from typing import Any
 from normalization.sources.bbva import BBVANormalizer
 from normalization.sources.banco_del_sol import BancoDelSolNormalizer
 from normalization.sources.buepp import BueppNormalizer
-from normalization.sources.galicia import GaliciaNormalizer
 from normalization.sources.patagonia import PatagoniaNormalizer
-from normalization.sources.santander import SantanderNormalizer
 
 BACKEND_DIR = Path(__file__).resolve().parents[1]
 SOURCES = {
-    "santander": (SantanderNormalizer, True),
     "banco_del_sol": (BancoDelSolNormalizer, True),
     "buepp": (BueppNormalizer, True),
     "bbva": (BBVANormalizer, True),
-    "galicia": (GaliciaNormalizer, False),
     "patagonia": (PatagoniaNormalizer, True),
 }
 
@@ -39,10 +26,6 @@ def export_source(
     input_dir: Path | None = None,
     output_dir: Path | None = None,
 ) -> dict[str, Any]:
-    """Normalize a raw snapshot and atomically write its JSON export.
-
-    Raises without overwriting an older valid export if normalization fails.
-    """
     if source not in SOURCES:
         raise ValueError(f"Fuente desconocida: {source}. Opciones: {', '.join(SOURCES)}")
 
@@ -82,7 +65,6 @@ def export_source(
         raise ValueError(f"La normalización de {source} no produjo promociones")
 
     output_dir.mkdir(parents=True, exist_ok=True)
-    # The temporary file is in the same directory, so os.replace is atomic.
     temp_path = None
     try:
         with tempfile.NamedTemporaryFile(
@@ -107,7 +89,7 @@ def export_source(
 
 def main() -> None:
     parser = argparse.ArgumentParser(
-        description="Generar JSON V2 normalizado a partir de backend/data/*_promotions.json (sin Supabase)."
+        description="Generar JSON normalizado a partir de backend/data/*_promotions.json (sin Supabase)."
     )
     parser.add_argument("--source", choices=[*SOURCES, "all"], default="all")
     parser.add_argument("--input-dir", type=Path, default=BACKEND_DIR / "data")

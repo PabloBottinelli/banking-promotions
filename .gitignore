@@ -1,20 +1,17 @@
-# Python
 __pycache__/
 *.py[cod]
 *.pyo
 
-# Virtual environments
 .venv/
 venv/
 
-# Environment variables / secrets
 .env
 .env.*
 !.env.example
 
-# Generated raw data
 backend/data/
 
-# Temporary files
+docs/
+
 .tmp/
 .pytest_cache/

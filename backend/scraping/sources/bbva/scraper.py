@@ -1,4 +1,3 @@
-"""BBVA public communications API. Scraping returns a candidate, never saves."""
 from datetime import datetime, timezone
 import hashlib
 import html
@@ -134,9 +133,6 @@ class BBVAScraper:
 
     @staticmethod
     def _commercial_review(records):
-        # Run the source's semantic checks against its actual V2 output as well
-        # as comparing raw fields. Structural validity alone cannot detect a
-        # dropped gift, stock or payment restriction. This never persists data.
         from normalization.sources.bbva import BBVANormalizer
 
         normalizer = BBVANormalizer()

@@ -1,5 +1,4 @@
-﻿"""Evidence-based BBVA V2 conversion; ambiguous alternatives fail closed."""
-import hashlib
+﻿import hashlib
 import html
 import json
 import re
@@ -66,7 +65,6 @@ class BBVANormalizer:
             if installments:
                 free = bool(re.search(rf'\b{installments}\s+cuotas\s+sin\s+inter[eé]s', ' '.join([headline, text, terms or '']), re.I))
                 benefits.append(Benefit(type='installments', installment_options=[installments], interest_free=True if free else None))
-            # 2x1 is not a fictitious 50% discount. Preserve the actual entitlement.
             if re.search(r'\b2\s*[xX]\s*1\b', headline + ' ' + text):
                 entitlement = re.search(r'entradas\s+2\s*x\s*1|2\s*x\s*1\s+en\s+entradas', terms or subtitle, re.I)
                 benefits.append(Benefit(type='other', description=benefit_text or ((entitlement.group(0) + '. ') if entitlement else '') + (text or title)))
@@ -99,7 +97,6 @@ class BBVANormalizer:
                 limits.append(PromotionLimit(type='monetary_cap', amount=cap, currency=self._currency(full), scope=scope,
                     period=period, shared_group_id=shared_group,
                     description='Tope por persona compartido entre los comercios adheridos a la promoción; no es un tope por comercio.' if shared_merchants else None))
-            # A threshold attached to an alternative installment count is not a global minimum.
             conditional = re.search(r'\b(\d+)\s+cuotas\s+(?:sin\s+inter[eé]s\s+)?para\s+compras\s+(?:mayores|superiores)\s+a\s*\$\s*' + self.MONEY, terms or '', re.I)
             min_text = text if conditional else full
             if conditional:
@@ -154,7 +151,6 @@ class BBVANormalizer:
                 extra = self._lottery_variant(raw, p, req, terms or '')
                 variants.append(({'id': 'mastercard-extra-chances'}, extra))
             if any(b.type == 'other' and re.search(r'2\s*x\s*1', b.description or '', re.I) for b in p.benefits) and percent is not None and re.search(r'combos', terms or '', re.I):
-                # Tickets and food are different eligible products. The 20% must not apply to tickets.
                 p.benefits = [b for b in p.benefits if b.type == 'other']
                 p.promotion_group_id = str(raw['source_id'])
                 combos = p.model_copy(deep=True)
@@ -189,8 +185,6 @@ class BBVANormalizer:
         return output
 
     def _reject_unresolved_benefit_dimensions(self, detail, terms):
-        # A list of product-dependent rates cannot safely collapse to its first
-        # percentage. Preserve the raw offer and block it until represented.
         offer = re.split(r'\bejemplo\b', terms, flags=re.I)[0]
         financing = any(self._normalize_installments(node.get('cuota')) for node in detail.get('beneficios', []))
         one_payment = re.search(r'v[aá]lida\s+(?:[uú]nicamente\s+)?para\s+clientes\s+que\s+abonen\s+sus\s+compras\s+en\s+(?:un|1)\s+pago\s+con\s+tarjetas?\s+de\s+cr[eé]dito', offer, re.I)
@@ -207,7 +201,6 @@ class BBVANormalizer:
             raise ValueError('BBVA unresolved product/payment-dependent installment options; complete variant mapping required (raw preserved)')
 
     def _cap_period_evidence(self, api_period, cap, terms):
-        """Reconcile the same monetary cap, never another cap in the legal text."""
         legal_periods = set()
         pattern = (r'\btope(?:\s+de\s+(?:reintegro|descuento))?\s*:?'
                    r'\s*(?:de\s*)?\$\s*' + self.MONEY +
@@ -216,8 +209,6 @@ class BBVANormalizer:
         for match in re.finditer(pattern, terms, re.I):
             if cap is not None and self._checked_amount(match.group(1), 'legal cap') == cap:
                 legal_periods.add(self._normalize_cap_period(match.group(2)))
-        # Different cap amounts, or explicit simultaneous limits for more than
-        # one period, are not evidence of a contradictory frequency field.
         if len(legal_periods) == 1:
             legal_period = next(iter(legal_periods))
             if api_period and api_period != legal_period:
@@ -255,11 +246,6 @@ class BBVANormalizer:
             ('Renovación', renewal.group(0) + ' ' + variable_price.group(0)), ('Exclusión', exclusion.group(0)))
 
     def review_normalized(self, raw, variants):
-        """Evidence-based omissions, shared by conversion and scraper review.
-
-        This deliberately checks specific positive source clauses. It is not a
-        universal semantic proof or a substitute for independent source QA.
-        """
         terms = self._clean_text(raw['detail'].get('basesCondiciones'))
         req = ' '.join(' '.join(self._normalize_requirements(n.get('requisitos'))) for n in raw['detail'].get('beneficios', []))
         text = terms + ' ' + req
@@ -315,11 +301,6 @@ class BBVANormalizer:
         return list(dict.fromkeys(issues))
 
     def _assistance_variants(self, raw, terms):
-        """Roman product clauses define this offer's disjoint payment options.
-
-        Rates, quantities, ages, dates and financing all come from the payload.
-        Unsupported clause shapes fail closed rather than emitting a subset.
-        """
         boundaries = list(re.finditer(r'\((I|II|III|IV|V)\)\s+UN PRODUCTO ASSIST CARD\s+', terms, re.I))
         if [m.group(1).upper() for m in boundaries] != ['I', 'II', 'III', 'IV', 'V']:
             raise ValueError('BBVA assistance product clauses incomplete or reordered; review required')
@@ -405,8 +386,6 @@ class BBVANormalizer:
         for products, modality, label, rate, clause in parsed:
             for single_payment in [False, True]:
                 output.append(build(products, modality, label, rate, clause, single_payment))
-        # The API financing node does not restrict modalities. I–IV restrict
-        # their discounts, and V excludes financing only for its extra discount.
         output.append(build(extra_products, 'remaining-modalities', 'Otras modalidades fuera de I–IV', None, '', False))
         output.append(build(extra_products, 'remaining-modalities', 'Otras modalidades fuera de I–IV', None, '', True))
         issues = self.review_normalized(raw, output)
@@ -494,8 +473,6 @@ class BBVANormalizer:
         return limits
 
     def _gift_variant(self, raw, financing, group, requirements, terms):
-        # The threshold/card/channel/day clauses attached to a gift must not
-        # become unconditional requirements of the financing component.
         boundary = re.search(r'adem[aá]s\s+de\s+lunes|para\s+compras\s+en\s+tiendas\s+f[ií]sicas', terms, re.I)
         if not boundary:
             raise ValueError('BBVA gift eligibility cannot be separated faithfully; review required')
@@ -520,8 +497,6 @@ class BBVANormalizer:
         if count:
             gift.limits.append(PromotionLimit(type='usage_count', quantity=int(count.group(1)), period='promotion', scope='person', description='Regalos por cliente'))
         gift.payment_methods = self._payment_options(group, ' '.join(requirements), gift_terms)
-        # The gift clause specifies direct purchases; app acceptance in the
-        # general financing clause is not transferred to the gift.
         for method in gift.payment_methods:
             method.payment_rail, method.wallet = 'card', None
         physical_only = bool(re.search(r'tiendas\s+f[ií]sicas', gift_terms, re.I))
@@ -577,7 +552,6 @@ class BBVANormalizer:
         return extra
 
     def _resolve_nodes(self, raw, variants):
-        # Compatibility requires identical conditions/payment/limits and disjoint benefit kinds.
         first = variants[0][1]
         key = lambda p: (p.specific_conditions, [m.model_dump() for m in p.payment_methods], [l.model_dump() for l in p.limits])
         kinds = [b.type for _, p in variants for b in p.benefits]
@@ -626,7 +600,6 @@ class BBVANormalizer:
 
     def _extract_discount(self, title, subtitle, requirements, terms):
         text = ' '.join([title,subtitle,*requirements,terms or ''])
-        # Never interpret CFT/TNA/TEA or a worked example as the promotion's percentage.
         text = re.split(r'\b(?:EJEMPLO|CFT|TNA|TEA)\b',text,flags=re.I)[0]
         match = re.search(r'(\d{1,3}(?:[.,]\d+)?)\s*%',text)
         if not match: return None
@@ -651,7 +624,6 @@ class BBVANormalizer:
             elif re.fullmatch(r'\d{1,3}(?:\.\d{3})+(?:,\d{1,2})?',text): text = text.replace('.','').replace(',','.')
             elif re.fullmatch(r'\d+,\d{1,2}',text): text = text.replace(',','.')
             elif re.fullmatch(r'\d+\.\d{1,2}',text): pass
-            # US-style grouping is accepted only when both delimiters disambiguate it.
             elif re.fullmatch(r'\d{1,3}(?:,\d{3})+\.\d{1,2}',text): text = text.replace(',','')
             else: return None
             try: number = Decimal(text)
@@ -702,23 +674,18 @@ class BBVANormalizer:
         name = self._clean_text(card_group)
         networks = [v for pat,v in [(r'\bvisa\b','visa'),(r'\bmaster(?:card)?\b','mastercard'),(r'american express|\bamex\b','american_express')] if re.search(pat,name,re.I)]
         types = [v for pat,v in [(r'cr[eé]dito','credit'),(r'd[eé]bito','debit')] if re.search(pat,name,re.I)]
-        # One generic method preserves ambiguity; never infer a network/type product.
         return [PaymentMethod(raw_name=name,issuer='BBVA',network=networks[0] if len(networks)==1 else None,card_type=types[0] if len(types)==1 else None)]
 
     def _payment_options(self,group,requirements,terms):
         methods = self._normalize_payment_methods(group)
         if not methods: return []
-        # Only positive eligibility/payment clauses, excluding unrelated exclusions.
         positive = ' '.join(s for s in re.split(r'(?<=[.;])\s+',terms) if re.search(r'(?:con\s+(?:tu\s+)?tarjeta|exclusiv|pagos realizados|a trav[eé]s|desde tu celular)',s,re.I) and not re.match(r'(?:no\b|si\b|la promoci[oó]n no)',s,re.I))
         text = requirements + ' ' + positive
         networks = [v for pat,v in [(r'\bvisa\b','visa'),(r'\bmastercard\b','mastercard')] if re.search(pat,text,re.I)]
         if len(set(networks)) == 1: methods[0].network = networks[0]
-        # A single explicit eligibility clause can name both networks for the same
-        # credit card type; this is evidence for two alternatives, not a product.
         paired_networks = re.search(r'tarjetas?\s+de\s+cr[eé]dito\s+visa\s+y(?:/o)?\s+mastercard\s+emitidas?\s+por\s+BBVA', text, re.I)
         if paired_networks:
             methods = [methods[0].model_copy(update={'network': network, 'card_type': 'credit'}) for network in ['visa', 'mastercard']]
-        # The legally binding exclusive route has priority over a vague marketing list.
         nfc_clause = re.search(r'(?:exclusiv[^.]*?(?:NFC|SIN CONTACTO)|desde tu celular con NFC)[^.]*',positive,re.I)
         qr_clause = re.search(r'(?:a trav[eé]s de app BBVA[^.]*?(?:QR|escaneando)|desde app BBVA[^.]*?QR)',positive,re.I)
         if not nfc_clause and not qr_clause:
@@ -742,7 +709,6 @@ class BBVANormalizer:
         return None
 
     def _restrictions(self,terms):
-        # Keep actionable clauses; corporate boilerplate and worked examples stay in terms.
         text = re.split(r'LOS ACCIONISTAS|EJEMPLO:',terms,flags=re.I)[0]
         sentences = re.split(r'(?<=[.;])\s+',text)
         selected = [s for s in sentences if re.search(r'no (?:aplica|participan|se acumula)|exclusiv|requisito|vinculad|acumula|c[oó]digo|cup[oó]n|partido|stock|adherid|superior|mayor|adicional|por cuenta|titular|48 horas|compartido|m[aá]ximo|preventa|excluye|millas',s,re.I)]

@@ -4,8 +4,6 @@ from normalization.sources.patagonia import PatagoniaNormalizer
 
 
 
-# Compatibility accessors in tests keep assertions focused on the V2 schema:
-# percentages live in benefits; monetary caps and minima live in limits.
 def _percentage(p):
     return next((b.percentage for b in p.benefits if b.type in ("discount", "cashback")), None)
 
@@ -38,7 +36,6 @@ def _minimum_purchase(p):
 
 
 def _segments(p):
-    """Check what the normalizer actually exposes for segment-based offers."""
     for line in (p.specific_conditions or "").splitlines():
         if line.startswith(("Segmentos: ", "Segmentos/requisitos: ")):
             return [t.strip() for t in line.split(": ", 1)[1].split(", ")]
@@ -257,55 +254,9 @@ def test_regular_promotion_detects_channels():
     assert promotion.physical is True
 
 
-def test_regular_promotion_detects_payment_methods():
-    promotion = PatagoniaNormalizer().normalize_many(
-        build_regular_raw()
-    )[0]
-
-    methods = {
-        (
-            method.raw_name,
-            method.network,
-            method.card_type,
-        )
-        for method in promotion.payment_methods
-    }
-
-    assert (
-        "Visa Débito",
-        "visa",
-        "debit",
-    ) in methods
-
-    assert (
-        "Visa Crédito",
-        "visa",
-        "credit",
-    ) in methods
-
-    assert (
-        "American Express",
-        "american_express",
-        "credit",
-    ) in methods
-
-    assert (
-        "MODO",
-        None,
-        None,
-    ) in methods
-
-    assert (
-        "Google Pay",
-        None,
-        None,
-    ) in methods
-
-    assert (
-        "Apple Pay",
-        None,
-        None,
-    ) in methods
+def test_icons_alone_do_not_prove_payment_combinations():
+    promotion = PatagoniaNormalizer().normalize_many(build_regular_raw())[0]
+    assert promotion.payment_methods == []
 
 
 def test_normalizes_patagonia_on():
@@ -524,8 +475,8 @@ def test_extracts_validity_without_year():
         "2026-10-06T15:00:00+00:00",
     )
 
-    assert valid_from == date(2026, 5, 7)
-    assert valid_to == date(2026, 12, 31)
+    assert valid_from is None
+    assert valid_to is None
 
 
 def test_extracts_validity_without_year_crossing_year_boundary():
@@ -536,8 +487,8 @@ def test_extracts_validity_without_year_crossing_year_boundary():
         "2026-10-06T15:00:00+00:00",
     )
 
-    assert valid_from == date(2026, 7, 30)
-    assert valid_to == date(2027, 1, 31)
+    assert valid_from is None
+    assert valid_to is None
 
 def test_normalizes_coto_nfc_single_day_shared_segments():
     raw = {
@@ -598,8 +549,9 @@ LA PROMOCIÓN NO APLICA PARA PAGOS REALIZADOS MEDIANTE CÓDIGOS DE RESPUESTA RÁ
 
     assert promotion.source_id == "2026_07_29_Coto_NFC:clasica-plus-singular"
 
-    assert promotion.valid_from == date(2026, 10, 8)
-    assert promotion.valid_to == date(2026, 10, 8)
+    assert promotion.valid_from is None
+    assert promotion.valid_to is None
+    assert "Revisión humana" in promotion.specific_conditions
 
     assert promotion.days_of_week == ["thursday"]
 
@@ -624,16 +576,10 @@ LA PROMOCIÓN NO APLICA PARA PAGOS REALIZADOS MEDIANTE CÓDIGOS DE RESPUESTA RÁ
     assert _rail(promotion, "nfc") is True
     assert _rail(promotion, "contactless") is True
 
-    assert len(promotion.payment_methods) == 4
-
-    methods = {
-        method.raw_name
-        for method in promotion.payment_methods
+    assert len(promotion.payment_methods) == 3
+    assert {(m.card_type, m.wallet, m.payment_rail) for m in promotion.payment_methods} == {
+        ("debit", "Google Pay", "nfc"),
+        ("debit", "Apple Pay", "nfc"),
+        ("debit", "MODO", "nfc"),
     }
-
-    assert methods == {
-        "Visa Débito",
-        "Google Pay",
-        "Apple Pay",
-        "MODO",
-    }
+    assert all(m.network is None for m in promotion.payment_methods)

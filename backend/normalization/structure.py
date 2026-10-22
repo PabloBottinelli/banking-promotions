@@ -1,8 +1,3 @@
-"""Helpers for representing existing bank offers with the structured V2 model.
-
-Only promotes information supported by the source.  Unknown data stays unknown;
-free-form conditions preserve details that the model does not yet encode.
-"""
 
 import re
 from decimal import Decimal
@@ -25,10 +20,8 @@ def make_benefits(
     fixed_discount: float | int | None = None,
     installments_interest_free: bool | None = None,
 ) -> list[Benefit]:
-    """Keep combined discount/cashback and financing in one variant."""
     benefits: list[Benefit] = []
     if percentage is not None:
-        # Interpret the *specific benefit text*, not unrelated legal clauses.
         kind = "cashback" if re.search(r"\breintegro\b|\bcashback\b|\bdevoluci[oó]n\b", benefit_text, re.I) else "discount"
         benefits.append(Benefit(type=kind, percentage=to_decimal(percentage)))
     if fixed_discount is not None:
@@ -65,7 +58,6 @@ def make_limits(
 
 
 def conditions(*groups: tuple[str, str] | None) -> str | None:
-    """Produce displayable restrictions without inventing new eligibility rules."""
     parts = []
     for group in groups:
         if group is None:

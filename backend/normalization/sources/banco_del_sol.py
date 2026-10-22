@@ -1,4 +1,3 @@
-"""Normalize the published Banco del Sol benefit detail and its legal text."""
 
 import re
 import unicodedata
@@ -27,7 +26,6 @@ class BancoDelSolNormalizer:
         identifier = str(raw["source_id"])
 
         benefits: list[Benefit] = []
-        # Use only benefit-bearing clauses, before worked purchase examples.
         clause = re.split(r"\bejemplo:\s*(?:para|si)\b", legal, maxsplit=1)[0]
         if "-eliteplus" in identifier:
             segment = "Elite Plus"
@@ -64,7 +62,7 @@ class BancoDelSolNormalizer:
             elif exact:
                 benefits.append(Benefit(type="installments", installment_options=[int(exact.group(1))], interest_free=True))
             elif re.search(r"en\s+\d+\s*\([^)]*\)\s+y\s+hasta", clause):
-                pass  # Already handled by the range expression above.
+                pass
             else:
                 summary = _fold(detail.get("summary") or "")
                 if re.search(r"\d+\s+a\s+\d+\s+cuotas?\s+sin\s+interes", summary):

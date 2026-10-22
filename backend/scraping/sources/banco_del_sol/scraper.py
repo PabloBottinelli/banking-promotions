@@ -1,7 +1,3 @@
-"""Browser-rendered catalog of current Banco del Sol benefits.
-
-Install the browser once with ``python -m playwright install chromium``.
-"""
 
 import json
 import os
@@ -53,7 +49,6 @@ class BancoDelSolScraper:
         return cards
 
     def _browser_states(self) -> Iterable[tuple[str, bool]]:
-        """Yield cumulative DOM states after clicking the live load-more control."""
         with sync_playwright() as playwright:
             browser = playwright.chromium.launch(headless=True)
             try:
@@ -66,15 +61,23 @@ class BancoDelSolScraper:
                     cards = section.locator('a.card_link[href^="/beneficios/"]')
                     count = cards.count()
                     pager = section.locator("a.w-pagination-next")
-                    if pager.count() != 1:
-                        raise ValueError("Control de paginación ausente o ambiguo")
-                    visible = pager.is_visible() and pager.get_attribute("aria-hidden") != "true"
+                    def can_load_more() -> bool:
+                        pager_count = pager.count()
+                        if pager_count > 1:
+                            raise ValueError("Control de carga acumulativa ambiguo")
+                        return (
+                            pager_count == 1
+                            and pager.is_visible()
+                            and pager.is_enabled()
+                            and pager.get_attribute("aria-hidden") != "true"
+                        )
+
+                    visible = can_load_more()
                     page.wait_for_timeout(1000)
                     if cards.count() != count:
-                        raise ValueError("La colección cambió mientras se verificaba una página")
-                    if (pager.count() == 1 and pager.is_visible()
-                            and pager.get_attribute("aria-hidden") != "true") != visible:
-                        raise ValueError("El estado de paginación no se estabilizó")
+                        raise ValueError("La colección cambió mientras se verificaba una carga")
+                    if can_load_more() != visible:
+                        raise ValueError("El estado del botón Ver más no se estabilizó")
                     yield section.evaluate("node => node.outerHTML"), visible
                     if not visible:
                         break
@@ -128,10 +131,6 @@ class BancoDelSolScraper:
         return set(ids)
 
     def _previous_ids(self) -> set[str] | None:
-        """Read the last accepted source IDs; None means no historical baseline.
-
-        Fail closed on corrupt/unusable snapshots rather than silently replacing them.
-        """
         if not self.output_path.exists():
             return None
         previous = json.loads(self.output_path.read_text(encoding="utf-8"))
@@ -159,20 +158,21 @@ class BancoDelSolScraper:
                 discovered = {card["slug"]: card for card in cards}
                 counts.append(len(slugs))
                 if not has_next:
-                    # A hidden control alone does not establish exhaustion.
-                    if len(counts) >= 2 and counts[-1] - counts[-2] < counts[0]:
+                    batch_sizes = [
+                        current - previous
+                        for previous, current in zip(counts, counts[1:])
+                    ]
+
+                    if (len(counts) >= 2 and counts[0] == 9 and all(1 <= size <= 9 for size in batch_sizes)):
                         terminal_verified = True
                     else:
-                        errors.append("catalog: fin de paginación no verificable")
+                        errors.append(f"catalog: carga acumulativa no verificable: {counts}")
                     break
             else:
                 errors.append("catalog: paginación sin límite verificado")
         except Exception as exc:
-            errors.append("catalog: " + str(exc))
+            errors.append(f"catalog: {type(exc).__name__}: {exc}")
 
-        # A browser's hidden load-more control and a short last page cannot
-        # prove that older source IDs legitimately disappeared. Compare with
-        # the last accepted snapshot and require human review on ANY removal.
         previous_ids: set[str] | None = None
         missing_ids: list[str] = []
         new_ids: list[str] = []
@@ -203,7 +203,7 @@ class BancoDelSolScraper:
                          "errors": errors,
                          "pagination": {"states": len(counts), "cumulative_counts": counts,
                                         "terminal_verified": terminal_verified,
-                                        "verification": "short final batch and hidden load-more control" if terminal_verified else None},
+                                        "verification": "cumulative batches of up to 9 and stable unavailable load-more control" if terminal_verified else None},
                          "snapshot_comparison": {
                              "previous_count": len(previous_ids) if previous_ids is not None else None,
                              "missing_ids": missing_ids,
@@ -251,8 +251,6 @@ class BancoDelSolScraper:
                     f"desaparecieron sin revisión manual: {missing[:10]}"
                 )
         validate_before_replace()
-        # Metadata failure must not replace the accepted raw snapshot. Each file
-        # is atomic; these two files are not a multi-file transaction.
         self._atomic(self.output_path.with_name("banco_del_sol_coverage.json"), self.coverage)
         self._atomic(self.output_path, promotions, before_replace=validate_before_replace)
 

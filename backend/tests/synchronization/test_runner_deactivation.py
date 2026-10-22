@@ -1,4 +1,3 @@
-"""No escribimos Supabase ni snapshots reales en estas pruebas."""
 
 import pytest
 from scraping.models import ScrapeResult

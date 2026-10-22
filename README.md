@@ -20,7 +20,7 @@ The goal is to make it easier to save money by providing a quick and convenient 
 
 The project collects information from multiple sources, preserves the original data, transforms it into a standardized format, and stores it in a database that is updated periodically.
 
-It currently includes a Python backend that extracts, normalizes, and synchronizes promotions from Galicia, BBVA, and Patagonia.
+It currently includes a Python backend that extracts, normalizes, and synchronizes promotions from BBVA, Buepp, Banco del Sol, and Patagonia.
 
 The data is currently consumed by [Telegram Personal Assistant](https://github.com/PabloBottinelli/telegram-personal-assistant), another personal project that allows users to search for promotions directly through Telegram. I also plan to develop a standalone web interface in the future.
 
