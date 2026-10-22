@@ -26,7 +26,6 @@ class SyncRunner:
         self.scraper_class = scraper_class
         self.normalizer_class = normalizer_class
         self.normalize_many = normalize_many
-        # Opt-in: habilitar esto no basta sin evidencia explícita del scraper.
         self.allow_deactivation = allow_deactivation
         self.raw_path = BACKEND_DIR / "data" / f"{source}_promotions.json"
 
@@ -73,10 +72,9 @@ class SyncRunner:
                 if not isinstance(variants, list) or not variants:
                     raise ValueError("la normalización no generó ninguna variante")
 
-                # El control se realiza POR registro: no alcanza con un total > 0.
                 for promotion in variants:
                     if not isinstance(promotion, NormalizedPromotion):
-                        raise TypeError("la salida no es un NormalizedPromotion V2")
+                        raise TypeError("la salida no es un NormalizedPromotion")
                     if promotion.source != self.source:
                         raise ValueError(f"source incorrecto: {promotion.source!r}")
                     if not promotion.source_id.strip():
@@ -102,7 +100,6 @@ class SyncRunner:
             scraper, result = self.scrape_promotions()
             raw_promotions = result.promotions
 
-        # Fail closed: ni snapshot ni Supabase reciben extracciones incompletas.
         if result is not None and not result.complete:
             raise RuntimeError(
                 f"Scraping incompleto ({len(raw_promotions)}/{result.catalog_count}); "
@@ -132,8 +129,6 @@ class SyncRunner:
             print("\n[VALIDATE ONLY] Validación completa; no se guardó raw ni se accedió a Supabase.")
             return
 
-        # Se guarda SOLO DESPUÉS de validar todas las filas y variantes.
-        # El scraper sigue siendo dueño de las validaciones y el guardado atómico.
         if scraper is not None:
             scraper.save_raw_promotions(raw_promotions)
 

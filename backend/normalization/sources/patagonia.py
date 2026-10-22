@@ -50,8 +50,6 @@ class PatagoniaNormalizer:
         if conflicts:
             for row in rows:
                 if set(self._segments_from_conditions(row.specific_conditions)) & set(conflicts):
-                    # Preserve both official versions in terms, without choosing
-                    # rates/caps/payment eligibility from contradictory pages.
                     row.benefits = [Benefit(type=b.type, description="Condiciones oficiales contradictorias entre storefronts; consultar ambas fichas y solicitar revisión humana") for b in row.benefits]
                     row.limits = []
                     row.payment_methods = []
@@ -81,7 +79,6 @@ class PatagoniaNormalizer:
         groups = self._build_variants(self._extract_summary_groups(summary), self._extract_legal_groups(legal), summary, legal)
         result = {}
         for group in groups:
-            # Only segment labels and whitespace are presentation differences.
             terms = strip_legal_headers(group["terms"] or "")
             header_requirements = set()
             for line in (group["terms"] or "").splitlines():
@@ -521,9 +518,6 @@ class PatagoniaNormalizer:
                 if match:
                     return self._parse_date(match.group(1)), self._parse_date(match.group(2))
 
-        # Distinct spellings (8/12 and 08/12, or different separators) are the
-        # same evidenced day. Deduplicating strings can discard the summary
-        # and incorrectly let a conflicting metadata table prevail.
         summary_dates = list(dict.fromkeys(self._parse_date(value) for value in re.findall(full_date, summary_text)))
 
         if len(summary_dates) == 1:
@@ -728,11 +722,8 @@ class PatagoniaNormalizer:
         return self._parse_amount(match.group(1))
 
     def _extract_payment_methods(self, text: str, image_alts: list[str]) -> list[PaymentMethod]:
-        # Icons do not encode the card/wallet/rail relationship. Only legal
-        # clauses can establish a complete alternative.
         methods = []
         normalized = self._ascii(text)
-        # MÁSTER is the official alias used in Patagonia's credit-card lists.
         networks = {"visa": "visa", "mastercard": "mastercard", "master": "mastercard", "american express": "american_express", "amex": "american_express"}
         wallet_names = {"modo": "MODO", "google pay": "Google Pay", "apple pay": "Apple Pay"}
         required_rail = "nfc" if re.search(r"\bexclusiv\w*\s+nfc\b", normalized) else "qr" if re.search(r"\bexclusiv\w*\s+qr\b", normalized) else None
@@ -745,7 +736,6 @@ class PatagoniaNormalizer:
             if not any((m.network, m.card_type, m.wallet, m.payment_rail) == identity for m in methods):
                 methods.append(method)
 
-        # Split only at sentence boundaries, not at periods in domains/amounts.
         clauses = sorted(self._clauses(text), key=lambda clause: bool(re.search(r"reintegros? correspondientes|bonificaciones se acreditaran", self._ascii(clause))))
         for clause in clauses:
             n = self._ascii(clause)
@@ -759,8 +749,6 @@ class PatagoniaNormalizer:
             if not positive_eligibility and not settlement:
                 continue
             cards = []
-            # Associate a type with its own card phrase, stopping at the next
-            # occurrence of tarjetas. This avoids credit Visa leaking to debit.
             for match in re.finditer(r"\b(credito|debito)\b|patagonia 24", n):
                 kind = "debit" if match.group(0) == "patagonia 24" or match.group(1) == "debito" else "credit"
                 tail = n[match.end():]
@@ -769,22 +757,15 @@ class PatagoniaNormalizer:
                 tail = re.split(r"\btarjetas?\b|\b(?:credito|debito|abonando|pagando|emitidas|del banco|de banco)\b", tail, maxsplit=1)[0]
                 listed = list(dict.fromkeys(v for k, v in networks.items() if re.search(rf"\b{k}\b", tail)))
                 cards.extend((network, kind) for network in (listed or [None]))
-            # Alternative wording: VISA DE CR?DITO / MASTERCARD D?BITO.
             for label, network in networks.items():
                 for match in re.finditer(rf"\b{label}\s+(?:de\s+)?(credito|debito)\b", n):
                     cards.append((network, "credit" if match.group(1) == "credito" else "debit"))
             cards = list(dict.fromkeys(cards))
             if not cards and holder_eligibility:
-                # A network/tier membership requirement does not establish an
-                # issuer, credit/debit type, wallet or purchase payment rail.
                 for label, network in networks.items():
                     if re.search(rf"\b{label}\b", n):
                         add(clause, network, None, rail=None, issuer="Banco Patagonia" if "banco patagonia" in n else None)
             if settlement:
-                # Settlement boilerplate may refine a verified generic card
-                # family, but cannot introduce a new type or direct-payment
-                # alternative. In particular, a debit fragment does not confer
-                # financing eligibility.
                 for network, kind in cards:
                     if network is not None:
                         for method in list(methods):
@@ -804,8 +785,6 @@ class PatagoniaNormalizer:
                 else:
                     add(clause, network, kind, rail=rail or "card")
 
-        # A named exception grants the wallets only for the card types stated in
-        # that exception. It never widens to every card appearing in the page.
         for clause in clauses:
             n = self._ascii(clause)
             exception = re.search(r"ex(?:c)?epcion de", n)
@@ -922,7 +901,6 @@ class PatagoniaNormalizer:
             n = self._ascii(clause)
             if not re.search(target, n):
                 continue
-            # Wallet/payment-platform exclusions say nothing about the purchase channel.
             if re.search(r"billeteras|portales de pago|plataformas de pago", n):
                 continue
             if re.search(rf"(?:no\s+(?:(?:es|son)\s+)?valid[oa]s?\b|no aplica\b|excluye\b)[^.;]{{0,65}}{target}", n):

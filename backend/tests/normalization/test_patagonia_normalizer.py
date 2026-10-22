@@ -4,8 +4,6 @@ from normalization.sources.patagonia import PatagoniaNormalizer
 
 
 
-# Compatibility accessors in tests keep assertions focused on the V2 schema:
-# percentages live in benefits; monetary caps and minima live in limits.
 def _percentage(p):
     return next((b.percentage for b in p.benefits if b.type in ("discount", "cashback")), None)
 
@@ -258,7 +256,6 @@ def test_regular_promotion_detects_channels():
 
 
 def test_icons_alone_do_not_prove_payment_combinations():
-    # This synthetic fixture has icons but no legal payment eligibility.
     promotion = PatagoniaNormalizer().normalize_many(build_regular_raw())[0]
     assert promotion.payment_methods == []
 

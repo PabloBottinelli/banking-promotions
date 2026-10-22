@@ -182,9 +182,6 @@ class BancoDelSolScraper:
         except Exception as exc:
             errors.append(f"catalog: {type(exc).__name__}: {exc}")
 
-        # A browser's hidden load-more control and a short last page cannot
-        # prove that older source IDs legitimately disappeared. Compare with
-        # the last accepted snapshot and require human review on ANY removal.
         previous_ids: set[str] | None = None
         missing_ids: list[str] = []
         new_ids: list[str] = []
@@ -263,8 +260,6 @@ class BancoDelSolScraper:
                     f"desaparecieron sin revisión manual: {missing[:10]}"
                 )
         validate_before_replace()
-        # Metadata failure must not replace the accepted raw snapshot. Each file
-        # is atomic; these two files are not a multi-file transaction.
         self._atomic(self.output_path.with_name("banco_del_sol_coverage.json"), self.coverage)
         self._atomic(self.output_path, promotions, before_replace=validate_before_replace)
 

@@ -2,8 +2,6 @@ from normalization.sources.galicia import GaliciaNormalizer
 
 
 
-# Compatibility accessors in tests keep assertions focused on the V2 schema:
-# percentages live in benefits; monetary caps and minima live in limits.
 def _percentage(p):
     return next((b.percentage for b in p.benefits if b.type in ("discount", "cashback")), None)
 

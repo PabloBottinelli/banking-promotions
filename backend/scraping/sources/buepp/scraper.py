@@ -70,7 +70,6 @@ class BueppScraper:
                 if len(catalog) > total:
                     raise ValueError("Catalog exceeds published total")
                 if len(catalog) == total:
-                    # Verify that pagination actually ends.
                     payload["numero_pagina"] += 1
 
                     terminal = self._post("beneficios/filter", payload)
@@ -93,7 +92,6 @@ class BueppScraper:
         for identifier, item in catalog.items():
             try:
                 detail = self._post("beneficios/" + identifier, dict(latitud=None, longitud=None))
-                # The public response contains a Maps credential unrelated to promotion facts.
                 detail.pop("googleMapsKey", None)
                 benefit = detail.get("beneficio")
                 if not isinstance(benefit, dict) or str(benefit.get("id")) != identifier or not benefit.get("legales"):

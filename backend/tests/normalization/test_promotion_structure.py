@@ -1,4 +1,4 @@
-"""Integration-level assertions for the V2 promotion representation (offline)."""
+"""Integration-level assertions for the promotion representation (offline)."""
 
 from decimal import Decimal
 from datetime import date, datetime, timezone
@@ -68,7 +68,7 @@ def test_patagonia_has_stable_group_ids_and_per_variant_limits():
     assert all("salary" in (p.specific_conditions or "") for p in promos)
 
 
-def test_v2_allows_unknown_validity_without_inventing_dates():
+def test_allows_unknown_validity_without_inventing_dates():
     promo = NormalizedPromotion(
         source="example", source_id="unknown-dates", scraped_at=datetime.now(timezone.utc),
         title="Servicio sin vencimiento publicado", scope="other",

@@ -1,4 +1,4 @@
-"""Helpers for representing existing bank offers with the structured V2 model.
+"""Helpers for representing existing bank offers with the structured promotion model.
 
 Only promotes information supported by the source.  Unknown data stays unknown;
 free-form conditions preserve details that the model does not yet encode.
@@ -28,7 +28,6 @@ def make_benefits(
     """Keep combined discount/cashback and financing in one variant."""
     benefits: list[Benefit] = []
     if percentage is not None:
-        # Interpret the *specific benefit text*, not unrelated legal clauses.
         kind = "cashback" if re.search(r"\breintegro\b|\bcashback\b|\bdevoluci[oó]n\b", benefit_text, re.I) else "discount"
         benefits.append(Benefit(type=kind, percentage=to_decimal(percentage)))
     if fixed_discount is not None:

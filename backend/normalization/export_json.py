@@ -80,7 +80,6 @@ def export_source(
         raise ValueError(f"La normalización de {source} no produjo promociones")
 
     output_dir.mkdir(parents=True, exist_ok=True)
-    # The temporary file is in the same directory, so os.replace is atomic.
     temp_path = None
     try:
         with tempfile.NamedTemporaryFile(
@@ -105,7 +104,7 @@ def export_source(
 
 def main() -> None:
     parser = argparse.ArgumentParser(
-        description="Generar JSON V2 normalizado a partir de backend/data/*_promotions.json (sin Supabase)."
+        description="Generar JSON normalizado a partir de backend/data/*_promotions.json (sin Supabase)."
     )
     parser.add_argument("--source", choices=[*SOURCES, "all"], default="all")
     parser.add_argument("--input-dir", type=Path, default=BACKEND_DIR / "data")

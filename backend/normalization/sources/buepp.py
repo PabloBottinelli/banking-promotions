@@ -1,4 +1,4 @@
-"""Buepp V2: legal terms take precedence over often stale marketing labels."""
+"""Buepp: legal terms take precedence over often stale marketing labels."""
 import re
 import unicodedata
 from datetime import datetime
@@ -42,7 +42,6 @@ class BueppNormalizer:
             benefit_list.append(Benefit(type="installments", installment_options=options,
                                        interest_free=True, description="Hasta " + str(options[-1]) + " cuotas sin interés" if "hasta" in legal[max(0, installment.start()-15):installment.start()] else None))
         if not benefit_list:
-            # A changing/unsupported source format must become a visible error, not an invented benefit.
             raise ValueError("No verified benefit could be parsed from legal terms")
         identifier = str(raw["source_id"])
         limits = self._limits(legal, identifier)
@@ -51,7 +50,6 @@ class BueppNormalizer:
         prefix = legal[:400]
         names = ["lunes", "martes", "miercoles", "jueves", "viernes", "sabado", "domingo"]
         days = [day for day, name in zip(weekdays, names) if re.search(r"\b"+name+r"s?\b", prefix)]
-        # "Todos los días martes" modifies a weekday, not every calendar day.
         every_day = True if not days and re.search(r"\btodos los dias\b", prefix) else None
         if not days and not every_day:
             mask = b.get("dias", "")
@@ -87,7 +85,6 @@ class BueppNormalizer:
             for limit in limits:
                 if limit.type == "monetary_cap" and not limit.shared_group_id:
                     limit.shared_group_id = "buepp:" + identifier
-            # Financing is exclusive to credit cards. Keep cashback eligible debit options separate.
             noncredit_common = {**common, "title":f"{merchant or category}: " + " + ".join(labels[:-1]),
                                 "specific_conditions":conditions + " Financiación solo con tarjeta de crédito; esta variante corresponde a reintegro con otros medios admitidos."}
             return [NormalizedPromotion(**common, source_id=identifier+":credit", promotion_group_id=identifier,
@@ -97,7 +94,6 @@ class BueppNormalizer:
         payments = credit if has_financing else credit+debit+balance
         if re.search(r"funcionalidad nfc.*?unicamente para dispositivos android",legal):
             qr_payments = [p for p in payments if p.payment_rail == "qr"]
-            # This source clause specifies Buepp/MODO for NFC, and Buepp/App Ciudad for QR.
             nfc_payments = [p.model_copy(update={"wallet":wallet,"payment_rail":"nfc",
                                                "raw_name":f"{p.card_type} {p.network or ''} NFC vía {wallet}"})
                             for p in qr_payments if p.wallet == "Buepp" for wallet in ("Buepp","MODO")]
@@ -137,8 +133,6 @@ class BueppNormalizer:
     @staticmethod
     def _limits(legal, identifier):
         result = []
-        # Remove a negative cap clause before looking for an amount; its next amount
-        # may be a minimum purchase and must never be promoted to a reimbursement cap.
         cap_text = re.sub(r"\bsin tope(?: de reintegro)?\b","",legal)
         cap = re.search(r"(?:tope|importe maximo de descuento)[^$.;]{0,100}\$\s*([\d.]+(?:,\d+)?)", cap_text)
         if cap:
@@ -167,10 +161,8 @@ class BueppNormalizer:
 
     @staticmethod
     def _payments(legal, b):
-        # Ignore negative/exclusion clauses when establishing accepted options.
         legal = re.sub(r"\([^)]*\)","",legal)
         legal = re.split(r"quedan excluidas|no valido para|no aplica para|el reintegro|el descuento podra|la presente promocion es valida solo", legal)[0]
-        # Restrict networks to actual legal card clauses, never assemble independent API badges.
         credit_clause = re.search(r"tarjetas?\s+de\s+credito\s+(.{0,100}?)(?:de banco|del banco|de locales|a traves|exclusivamente|\. |\s*,\s*que\b)", legal)
         debit_clause = re.search(r"tarjetas?\s+de\s+debito\s+(.{0,70}?)(?:,| y de credito|escaneando|exclusivamente|\. )", legal)
         wallet_names = []
@@ -204,14 +196,12 @@ class BueppNormalizer:
             if "prepagas cabal" in legal:
                 debit += [PaymentMethod(raw_name="Prepaga Cabal vía " + wallet,issuer="Banco Ciudad",network="Cabal",card_type="prepaid",wallet=wallet,payment_rail="qr") for wallet in wallet_names]
         balance = [PaymentMethod(raw_name="Dinero en cuenta vía "+wallet,wallet=wallet,payment_rail="qr" if qr else "account_balance") for wallet in (wallet_names or ["Buepp"])] if "dinero en cuenta" in legal else []
-        # An explicit direct-card alternative is separate from QR wallet payment.
         if "y/o con qr modo" in legal or re.search(r"en comercios fisicos(?: adheridos)? pagando con tarjetas",legal):
             credit += [p.model_copy(update={"wallet":None,"payment_rail":"card","raw_name":"Tarjeta de crédito "+(p.network or "")}) for p in credit if p.wallet == wallets[0]]
         return credit,debit,balance
 
     @staticmethod
     def _conditions(text, b, raw, requires):
-        # Preserve concrete restrictions, summarize long product exclusion lists via official detail.
         parts = []
         if requires:
             parts.append("Solo comercios/sucursales adheridos: consultar listado y condiciones en la página oficial del beneficio.")
