@@ -53,7 +53,7 @@ class Normalizer:
         if kind == "duplicate":
             return [make_promotion("dup"), make_promotion("dup")]
         if kind == "wrong_source":
-            return [make_promotion(raw["source_id"], source="galicia")]
+            return [make_promotion(raw["source_id"], source="otra_fuente")]
         if kind == "bad_type":
             return [object()]
         if kind == "fail":
@@ -75,7 +75,7 @@ def setup(monkeypatch, records, *, complete=True, coverage=None, fail_count=Fals
     [{"source_id": "x"}, {"source_id": "x"}],
     [{"title": "sin ID"}],
     ["no es dict"],
-    [{"source_id": "x", "source": "galicia"}],
+    [{"source_id": "x", "source": "otra_fuente"}],
     [{"source_id": "x", "kind": "empty"}],
     [{"source_id": "x", "kind": "duplicate"}],
     [{"source_id": "x", "kind": "wrong_source"}],

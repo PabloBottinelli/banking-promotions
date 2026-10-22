@@ -20,7 +20,7 @@ El objetivo es facilitar el ahorro permitiendo encontrar descuentos, reintegros 
 
 El proyecto recopila información de distintas fuentes, conserva los datos originales, los transforma en un formato común y los almacena en una base de datos que se actualiza periódicamente.
 
-Actualmente cuenta con un backend desarrollado en Python que permite extraer, normalizar y sincronizar promociones de Galicia, BBVA y Patagonia.
+Actualmente cuenta con un backend desarrollado en Python que permite extraer, normalizar y sincronizar promociones de BBVA, Buepp, Banco del Sol y Patagonia.
 
 Actualmente, la información es utilizada por [Telegram Personal Assistant](https://github.com/PabloBottinelli/telegram-personal-assistant), otro proyecto personal que permite consultar las promociones directamente desde Telegram. A futuro, tengo previsto incorporar una interfaz web independiente.
 
