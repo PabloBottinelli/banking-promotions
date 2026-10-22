@@ -1,6 +1,6 @@
 ---
 name: integrate-promotion-source
-description: Integrar una fuente de promociones bancarias con Codex principal como desarrollador y una sola auditoría independiente del agente promotion_qa; detenerse para decisión humana ante hallazgos.
+description: Integrar una fuente de promociones bancarias con Codex principal como desarrollador y promotion_qa como auditor independiente, ejecutando los ciclos de desarrollo y QA que indique el usuario.
 ---
 
 # Integrar fuente de promociones
@@ -22,19 +22,27 @@ Usar esta skill cuando el usuario solicite integrar una fuente de banco/billeter
 - Agregar regresiones con mocks: captura parcial, campos esenciales vacíos bajo 200, 65→56 IDs, reemplazo de IDs con igual total, altas/actualizaciones legítimas, raw/variantes con IDs malos, guardado rechazado, upsert parcial y desactivación sin todos los permisos.
 - Ejecutar tests específicos y `python -m pytest -q tests` desde `backend/` si es posible. Comparar valores normalizados con la fuente oficial (hasta 30 campañas: todas; catálogo mayor: muestra diversa). No correr `SyncRunner.run()`, tampoco `--validate-only`, sin autorización expresa.
 
-## 3. Una auditoría independiente
+## 3. Auditoría independiente
 
-- Al completar desarrollo, delegar a **una sesión nueva** del agente `promotion_qa`, indicando nombre y URLs oficiales de la fuente y dónde está la implementación, **sin pasar los resultados del desarrollador como verdad esperada**. Debe investigar los hechos oficiales primero.
+- Al completar cada ciclo de desarrollo, delegar la auditoría a una nueva sesión independiente del agente `promotion_qa`, indicando nombre y URLs oficiales de la fuente y dónde está la implementación, sin pasar los resultados del desarrollador como verdad esperada. QA debe investigar los hechos oficiales primero.
 - Verificar que existió una delegación real al rol personalizado; `promotion_qa` es un nombre de agente, **no un modelo**. Si el cliente no permite delegar de forma independiente, devolver BLOCKED; nunca inventar una auditoría.
 - QA no modifica archivos. Sus instrucciones no imponen sandbox de solo lectura: reportar si la restricción fue solo por instrucciones. Evitar ediciones concurrentes.
 - QA inspecciona fidelidad comercial y las cinco decisiones distintas: `catalog_complete`, `normalization_complete`, `snapshot_replace_allowed`, `requires_review`, `safe_to_deactivate`. Nada habilita desactivación por inferencia.
 
-## 4. Parada para control humano
+## Ciclos de desarrollo y QA
 
-- QA `PASS` → `READY_FOR_HUMAN_REVIEW`; **no** sincronizar, publicar ni incorporar automáticamente.
-- QA `FAIL` → `NEEDS_CHANGES`: entregar hallazgos QA-### y **detenerse**; no corregir ni repetir QA hasta una nueva indicación del usuario.
-- QA `BLOCKED` → `BLOCKED`: identificar evidencia/acceso faltante, no inventar defectos ni realizar otro intento automático.
-- Ante una solicitud posterior de corrección: arreglar hallazgos con tests de regresión y convocar un **QA nuevo**, no reutilizar conclusiones previas; máximo tres auditorías por integración si el usuario pide iterar.
+- El usuario define la cantidad máxima de ciclos Desarrollo → QA.
+- Si no especifica una cantidad, solicitarla antes de iniciar.
+- Cada ciclo incluye desarrollo o correcciones y una auditoría independiente de promotion_qa.
+- Ante FAIL, Codex corrige los hallazgos y continúa con una nueva auditoría, siempre que queden ciclos autorizados.
+- Ante PASS, detener el proceso y presentar los resultados.
+- Ante BLOCKED, detener el proceso e informar el impedimento.
+- Si se alcanza el máximo de ciclos sin obtener PASS, detenerse y presentar los problemas pendientes.
+- Nunca superar la cantidad de ciclos autorizados sin consultar al usuario.
+- El primer ciclo comprende la implementación inicial y su primera auditoría QA.
+- Los ciclos siguientes comprenden la corrección de los hallazgos pendientes y una nueva auditoría independiente.
+- Una auditoría con resultado FAIL cuenta como un ciclo completado.
+- No iniciar un nuevo ciclo si se alcanzó el máximo autorizado.
 
 ## Informe final breve
 
