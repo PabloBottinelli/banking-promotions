@@ -15,6 +15,9 @@ venv/
 # Generated raw data
 backend/data/
 
+# Docs
+docs/
+
 # Temporary files
 .tmp/
 .pytest_cache/
