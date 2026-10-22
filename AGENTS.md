@@ -37,6 +37,7 @@ El snapshot raw y Supabase no son una transacción única. Informar los riesgos 
 
 ## Límites y permisos
 
+- No escribir comentarios de código (en líneas propias ni al final de instrucciones), docstrings descriptivos ni encabezados decorativos en archivos de implementación o pruebas. Conservar cadenas multilínea usadas como datos, textos requeridos por el programa y los títulos estructurales de documentación Markdown.
 - **Sin autorización expresa**, no ejecutar `sync_<fuente>`, `SyncRunner.run()`, `--from-file` ni siquiera `--validate-only`; este último puede ejecutar scraping real e importar configuración de Supabase. No escribir en Supabase, modificar migraciones/workflows, desplegar, hacer push ni merge.
 - Se permiten cambios en código/fixtures/tests de la fuente solicitada y pruebas locales con mocks, sin secretos ni producción. Revisar `git status` y respetar trabajo ajeno. Sin `verify=False`, evasión de bloqueos ni lectura/exposición de `.env`.
 - Las revisiones QA son independientes y **sin modificaciones**; las instrucciones del agente no crean por sí solas un sandbox de solo lectura. Declarar si no hubo aislamiento técnico.

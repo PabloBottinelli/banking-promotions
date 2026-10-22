@@ -43,7 +43,7 @@ def test_valid_additions_and_same_id_updates_can_save_atomically(tmp_path, monke
     scraper, path = prepare(tmp_path, monkeypatch, ("a",), ("a", "b"))
     before = path.read_bytes()
     result = scraper.scrape()
-    assert path.read_bytes() == before  # scrape has no write side effect
+    assert path.read_bytes() == before
     assert scraper.coverage["snapshot_replace_allowed"]
     scraper.save_raw_promotions(result.promotions)
     assert len(json.loads(path.read_bytes())) == 2
@@ -199,8 +199,6 @@ def test_http200_legal_heading_only_cannot_reach_writer(tmp_path, monkeypatch, h
     detail = record()["detail"]
     detail.update(title="Havanna", summary_text="CLASICA\nPLUS\nSINGULAR\n30%", description_text=heading, main_text="")
     if storefront:
-        # Independently validate extra storefront content, without trusting a
-        # nonempty primary legal body or a manually flipped coverage flag.
         candidate = record()
         candidate["storefront_details"] = [{"detail": detail}]
         scraper.coverage = {"catalog_complete": True, "snapshot_replace_allowed": True, "requires_review": False}

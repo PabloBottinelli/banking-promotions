@@ -1,7 +1,3 @@
-"""Official excerpts retrieved with certificate verification on 2026-10-19.
-
-Expected facts come from each linked detail/terms, including contradictions.
-"""
 import json
 import copy
 from pathlib import Path
@@ -36,7 +32,7 @@ def test_carrefour_tiers_caps_and_credit_wallet_exceptions(official):
         assert ("mastercard", "credit", None, "card") in methods(p)
         assert all(m.card_type for m in p.payment_methods)
         assert "PROGRAMANDO LA ENTREGA" in p.specific_conditions
-        assert p.valid_from is None and p.valid_to is None  # table dates contradict terms
+        assert p.valid_from is None and p.valid_to is None
         assert p.terms == PatagoniaNormalizer()._extract_terms_from_main(official["carrefour3"]["detail"]["main_text"])
 
 
@@ -77,7 +73,7 @@ def test_adidas_salary_segments_installments_and_promotion_cap(official):
         b = next(b for b in p.benefits if b.type == "installments")
         assert b.installment_options == [3] and b.interest_free is True
         assert all(m.network != "mastercard" for m in p.payment_methods)
-        assert p.requires_merchant_verification is True  # official typo ADHERIDIOS
+        assert p.requires_merchant_verification is True
         assert "Consultar locales/sucursales adheridos" in p.specific_conditions
         assert p.promotion_url.endswith("/adidas2.html")
 
@@ -160,10 +156,10 @@ def test_almundo_independent_discount_and_financing_scopes():
         assert token not in financing.specific_conditions
     assert [(b.type, b.installment_options, b.interest_free) for b in financing.benefits] == [("installments", [12], True)]
     assert financing.limits == []
-    assert discount.payment_methods == []  # discount clause gives no card requirement
+    assert discount.payment_methods == []
     assert {m.network for m in financing.payment_methods} == {"visa", "mastercard", "american_express"}
     assert discount.terms == financing.terms
-    assert "STOCK DE 30 UNIDADES" in financing.terms  # original complete terms preserved
+    assert "STOCK DE 30 UNIDADES" in financing.terms
 
 
 @pytest.mark.parametrize("store", ["ahorrosybeneficios", "on"])
@@ -193,10 +189,10 @@ def test_education_cart_discount_coupon_account_and_single_use(slug, percentage,
     assert "PREVIO AL PAGO" in row.specific_conditions
     assert "ÚNICA VEZ" in row.specific_conditions
     assert row.online is True
-    assert row.physical is None  # course modality does not establish purchase channel
+    assert row.physical is None
     if slug == "cui-idiomas":
         assert "PRECIO CORPORATE" in row.specific_conditions
-    assert "SIN TOPE DE REINTEGRO" in row.terms  # legal wording is retained
+    assert "SIN TOPE DE REINTEGRO" in row.terms
 
 
 def test_changomas_presentation_headers_do_not_erase_matching_segment_benefits():
@@ -212,7 +208,7 @@ def test_changomas_presentation_headers_do_not_erase_matching_segment_benefits()
         assert (row.limits[0].period, row.limits[0].scope) == ("monthly", "account")
         assert row.days_of_week == ["saturday"]
         assert row.payment_methods and {m.card_type for m in row.payment_methods} == {"credit"}
-        assert row.valid_from is None and row.valid_to is None  # actual date contradiction remains
+        assert row.valid_from is None and row.valid_to is None
         assert "Vigencias contradictorias" in row.specific_conditions
         assert "Patagonia Clásica Y Plus" in row.terms
         assert "Patagonia Plus" in row.terms
@@ -271,7 +267,7 @@ def test_colon_network_membership_conditions_without_invented_card_type_or_stock
     assert len(row.benefits) == 1 and row.benefits[0].type == "other"
     assert "2x1" in row.benefits[0].description
     assert methods(row) == {("mastercard", None, None, None)}
-    assert row.payment_methods[0].issuer is None  # global holders, not Patagonia-only
+    assert row.payment_methods[0].issuer is None
     for token in ("Black", "World Legend", "Priceless.com", "Argentina"):
         assert token in row.specific_conditions
     assert not any(limit.type == "stock" for limit in row.limits)

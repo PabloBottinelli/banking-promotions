@@ -62,8 +62,6 @@ class GaliciaNormalizer:
             bool(catalog.get("pagoQR")), bool(catalog.get("pagoNFC")), bool(catalog.get("contactLess"))
         )
         payment_methods = self._normalize_payment_methods(detail.get("mediosDePago", []))
-        # Catalog flags may indicate several accepted rails. Do not incorrectly
-        # pair a specific card with QR/NFC unless the offer establishes it.
         payment_rails = ", ".join(name for name, flag in (("QR", qr), ("NFC", nfc), ("contactless", contactless)) if flag)
         return NormalizedPromotion(
             source=raw["source"],

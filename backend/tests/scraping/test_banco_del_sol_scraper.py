@@ -6,10 +6,6 @@ import pytest
 from scraping.sources.banco_del_sol.scraper import BancoDelSolScraper
 
 
-# Synthetic IDs, independent of the changing commercial catalog. Valid test
-# states follow the current contract: nine initial cards, then 1..9 new cards
-# per cumulative load, with a verified terminal state. Keep reduced catalogs
-# only in tests that intentionally reject unverified pagination.
 _FIRST_PAGE_IDS = ("one", "two", "three", "four", "five", "six", "seven", "eight", "nine")
 _COMPLETE_IDS = _FIRST_PAGE_IDS + ("ten",)
 
@@ -48,7 +44,7 @@ def test_complete_browser_states_and_atomic_snapshot(tmp_path, counts):
     assert [p["source_id"] for p in result.promotions] == list(ids)
     assert scraper.coverage["pagination"]["terminal_verified"] is True
     assert scraper.coverage["snapshot_replace_allowed"] is True
-    assert not scraper.output_path.exists()  # scrape() only returns a candidate.
+    assert not scraper.output_path.exists()
     scraper.save_raw_promotions(result.promotions)
     saved = json.loads(scraper.output_path.read_text(encoding="utf-8"))
     assert saved[0]["detail"]["terms"] == "Beneficio legal de one"
@@ -121,7 +117,6 @@ def test_html_variations_keep_current_section_boundary():
 
 
 def test_truncated_short_last_page_does_not_replace_previous_snapshot(tmp_path):
-    """Regression for QA: 65 -> 56 can mimic a legitimate short final page."""
     old_ids = [f"promo-{n}" for n in range(65)]
     new_ids = old_ids[:56]
     states = [(_page(new_ids[:n]), n != 56) for n in [9, 18, 27, 36, 45, 54, 56]]

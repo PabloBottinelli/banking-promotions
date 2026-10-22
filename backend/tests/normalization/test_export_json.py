@@ -1,4 +1,3 @@
-"""Smoke tests for the read-only V2 JSON export command."""
 import json
 from datetime import datetime, timezone
 

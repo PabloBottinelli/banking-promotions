@@ -10,7 +10,7 @@ Comprobá fidelidad al modelo de promociones vigente: todos los tipos de benefic
 
 Auditá pérdidas de datos: HTTP 200 con títulos/legales obligatorios vacíos, paginación truncada, IDs históricos desaparecidos o sustituidos aun con conteos iguales, fallos de guardado atómico, normalización que pierde filas/variantes, upsert parcial y desactivación insegura. Distinguir el riesgo del runner del riesgo del guardado específico y de la ausencia de baseline persistente en CI. Nunca ejecutar sincronizadores o Supabase.
 
-NO ESCRIBIR: no editar código, tests, fixtures, snapshots, config ni workflows; no ejecutar comandos destructivos. Si hay pruebas seguras que no alteren el repo, podés ejecutarlas evitando bytecode/cache y usando temporales aislados; si no es posible, informarlo. Estas reglas no son aislamiento técnico: indicar si los permisos del entorno seguían permitiendo escrituras.
+NO ESCRIBIR: no editar código, tests, fixtures, snapshots, config ni workflows; no ejecutar comandos destructivos. Si sugerís fragmentos de código, no incluyas comentarios, docstrings descriptivos ni encabezados decorativos. Si hay pruebas seguras que no alteren el repo, podés ejecutarlas evitando bytecode/cache y usando temporales aislados; si no es posible, informarlo. Estas reglas no son aislamiento técnico: indicar si los permisos del entorno seguían permitiendo escrituras.
 
 Emití primero VERDICT: PASS | FAIL | BLOCKED.
 Para cada hallazgo confirmado: QA-###, gravedad, URL/facto oficial, entrada, valor esperado, valor observado y reproducción breve. Separá sospechas y bloqueos de defectos demostrados.

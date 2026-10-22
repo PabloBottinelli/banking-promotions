@@ -44,7 +44,6 @@ class PatagoniaScraper:
         self._pages = {}
 
     def _get(self, url: str) -> httpx.Response:
-        """Bounded source-local retries; certificate/security refusals never retried."""
         for attempt in range(3):
             try:
                 response = self.client.get(url, timeout=self.TIMEOUT)
@@ -104,7 +103,6 @@ class PatagoniaScraper:
             seen.add(url)
 
         self._pages[root_url] = {"categories": [url for _, url in categories]}
-        # Featured offers can be absent from a category; retain their discovery too.
         featured, _ = self._parse_category_page(soup, root_url, "Destacados")
         self._pages[root_url]["featured"] = featured
         return categories
@@ -373,8 +371,6 @@ class PatagoniaScraper:
         if errors:
             print(f"IDs con error: {errors}")
 
-        # Some official SKUs are reused by different URLs. Keep both records and
-        # disambiguate by stable path, never by arrival order.
         self.coverage["discovered_detail_urls"] = len(catalog)
         self.coverage["detail_success"] = len(promotions)
         promotions = self._aggregate_storefronts(promotions)
@@ -433,11 +429,6 @@ class PatagoniaScraper:
                 temporary.unlink(missing_ok=True)
 
     def _aggregate_storefronts(self, promotions):
-        """Group the same SKU+slug across general/Plus/Singular, retaining every detail.
-
-        ON is a separate offer family. Reused SKUs on different slugs are not
-        merged. Normalization independently compares the segment-specific terms.
-        """
         groups = {}
         priority = {None: 0, "plus": 1, "singular": 2, "on": 3}
         for record in sorted(promotions, key=lambda item: priority.get(item["catalog"].get("segment"), 9)):
@@ -463,14 +454,11 @@ class PatagoniaScraper:
             match = re.search(r"T[eé]rminos\s+y\s+Condiciones\s*(.*)", str(detail.get("main_text") or ""), re.I | re.S)
             if match:
                 legal = re.split(r"Available stores are loading|Ver todas las tiendas disponibles", match.group(1), maxsplit=1)[0].strip()
-        # A populated heading is not a populated legal body (HTTP 200 can
-        # contain only the segment tabs after a CMS failure).
         body = strip_legal_headers(legal)
         substantive = re.search(r"[A-Za-zÁÉÍÓÚáéíóúÑñ]{3,}|\d", body)
         return bool(str(detail.get("title") or "").strip() and str(detail.get("summary_text") or "").strip() and substantive)
 
     def _historically_reused_skus(self):
-        """Remember disambiguation even when one formerly colliding URL vanishes."""
         try:
             baseline = json.loads(self.output_path.read_bytes())
             counts = {}

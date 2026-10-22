@@ -1,7 +1,3 @@
-"""Browser-rendered catalog of current Banco del Sol benefits.
-
-Install the browser once with ``python -m playwright install chromium``.
-"""
 
 import json
 import os
@@ -53,7 +49,6 @@ class BancoDelSolScraper:
         return cards
 
     def _browser_states(self) -> Iterable[tuple[str, bool]]:
-        """Yield cumulative DOM states after clicking the live load-more control."""
         with sync_playwright() as playwright:
             browser = playwright.chromium.launch(headless=True)
             try:
@@ -136,10 +131,6 @@ class BancoDelSolScraper:
         return set(ids)
 
     def _previous_ids(self) -> set[str] | None:
-        """Read the last accepted source IDs; None means no historical baseline.
-
-        Fail closed on corrupt/unusable snapshots rather than silently replacing them.
-        """
         if not self.output_path.exists():
             return None
         previous = json.loads(self.output_path.read_text(encoding="utf-8"))
@@ -182,9 +173,6 @@ class BancoDelSolScraper:
         except Exception as exc:
             errors.append(f"catalog: {type(exc).__name__}: {exc}")
 
-        # A browser's hidden load-more control and a short last page cannot
-        # prove that older source IDs legitimately disappeared. Compare with
-        # the last accepted snapshot and require human review on ANY removal.
         previous_ids: set[str] | None = None
         missing_ids: list[str] = []
         new_ids: list[str] = []
@@ -263,8 +251,6 @@ class BancoDelSolScraper:
                     f"desaparecieron sin revisión manual: {missing[:10]}"
                 )
         validate_before_replace()
-        # Metadata failure must not replace the accepted raw snapshot. Each file
-        # is atomic; these two files are not a multi-file transaction.
         self._atomic(self.output_path.with_name("banco_del_sol_coverage.json"), self.coverage)
         self._atomic(self.output_path, promotions, before_replace=validate_before_replace)
 

@@ -37,8 +37,6 @@ class BBVANormalizer:
         discount = self._extract_discount(title, subtitle, requirements, terms)
         installments = self._normalize_installments(benefit.get("cuota"))
         cap_amount = self._normalize_amount(benefit.get("tope") or catalog.get("montoTope"))
-        # Cupón fijo y compra mínima aparecen en requisitos, no en las claves
-        # tradicionales de reintegro. No confundir con el tope monetario.
         requirements_text = " ".join(requirements)
         fixed_discount = self._extract_fixed_coupon_discount(requirements_text)
         minimum_purchase = self._extract_minimum_purchase(requirements_text)
@@ -48,9 +46,6 @@ class BBVANormalizer:
         black_segment = "black" in (terms or "").lower()
         days = self._normalize_days(detail.get("diasPromo") or catalog.get("diasPromo"))
         payment_methods = self._normalize_payment_methods(detail.get("grupoTarjeta") or catalog.get("grupoTarjeta"))
-        # An explicit QR payment requirement is different from a generic app mention.
-        # Keep unknown rail combinations in specific_conditions instead of claiming
-        # every card can be used via every rail.
         if qr and not (nfc or contactless):
             for method in payment_methods:
                 method.payment_rail = "qr"

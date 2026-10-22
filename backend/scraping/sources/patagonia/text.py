@@ -1,10 +1,8 @@
-"""Presentation-only Patagonia legal headings shared by extraction and parsing."""
 import re
 import unicodedata
 
 
 def legal_header_segments(line: str) -> list[str] | None:
-    """None means substantive text; [] is a heading without a named tier."""
     text = "".join(c for c in unicodedata.normalize("NFKD", line.lower()) if not unicodedata.combining(c))
     text = re.sub(r"\s+", " ", text).strip()
     if re.fullmatch(r"(?:terminos y condiciones|legales)\s*[:.]?", text):
