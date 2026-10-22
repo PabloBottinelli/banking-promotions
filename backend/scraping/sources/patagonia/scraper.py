@@ -44,7 +44,6 @@ class PatagoniaScraper:
         self._pages = {}
 
     def _get(self, url: str) -> httpx.Response:
-        """Bounded source-local retries; certificate/security refusals never retried."""
         for attempt in range(3):
             try:
                 response = self.client.get(url, timeout=self.TIMEOUT)
@@ -430,11 +429,6 @@ class PatagoniaScraper:
                 temporary.unlink(missing_ok=True)
 
     def _aggregate_storefronts(self, promotions):
-        """Group the same SKU+slug across general/Plus/Singular, retaining every detail.
-
-        ON is a separate offer family. Reused SKUs on different slugs are not
-        merged. Normalization independently compares the segment-specific terms.
-        """
         groups = {}
         priority = {None: 0, "plus": 1, "singular": 2, "on": 3}
         for record in sorted(promotions, key=lambda item: priority.get(item["catalog"].get("segment"), 9)):
@@ -465,7 +459,6 @@ class PatagoniaScraper:
         return bool(str(detail.get("title") or "").strip() and str(detail.get("summary_text") or "").strip() and substantive)
 
     def _historically_reused_skus(self):
-        """Remember disambiguation even when one formerly colliding URL vanishes."""
         try:
             baseline = json.loads(self.output_path.read_bytes())
             counts = {}

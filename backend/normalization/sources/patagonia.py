@@ -248,12 +248,6 @@ class PatagoniaNormalizer:
         return promotions
 
     def _split_numbered_benefits(self, variants):
-        """Independent numbered offers have their own eligibility and limits.
-
-        A benefit kind supplies stable identity; economic values and clause
-        positions never form IDs. Ambiguous repeated kinds remain unsplit and
-        are handled by the normal source-review path.
-        """
         result = []
         for variant in variants:
             parts = re.split(r"\(\d+\)\s*", variant.get("terms") or "")[1:]

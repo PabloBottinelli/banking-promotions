@@ -1,4 +1,3 @@
-"""Failure-path regressions for shared SyncRunner."""
 
 from datetime import datetime, timezone
 

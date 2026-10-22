@@ -1,4 +1,3 @@
-"""Orquestación compartida: validar antes de escribir raw o Supabase."""
 
 import argparse
 import json
@@ -34,7 +33,6 @@ class SyncRunner:
             return json.load(file)
 
     def scrape_promotions(self) -> tuple[object, ScrapeResult]:
-        """Scrapear sin guardar. El guardado ocurre tras validar normalización."""
         scraper = self.scraper_class()
         return scraper, scraper.scrape()
 

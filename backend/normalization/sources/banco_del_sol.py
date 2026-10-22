@@ -1,4 +1,3 @@
-"""Normalize the published Banco del Sol benefit detail and its legal text."""
 
 import re
 import unicodedata

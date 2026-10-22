@@ -1,12 +1,3 @@
-"""Export normalized promotions from saved raw JSON without touching Supabase.
-
-Run from backend/:
-    python -m normalization.export_json --source all
-    python -m normalization.export_json --source galicia
-
-The existing raw files in backend/data/ are never modified. If a record
-fails to normalize, no incomplete export is written for that source.
-"""
 
 import argparse
 import json
@@ -37,10 +28,6 @@ def export_source(
     input_dir: Path | None = None,
     output_dir: Path | None = None,
 ) -> dict[str, Any]:
-    """Normalize a raw snapshot and atomically write its JSON export.
-
-    Raises without overwriting an older valid export if normalization fails.
-    """
     if source not in SOURCES:
         raise ValueError(f"Fuente desconocida: {source}. Opciones: {', '.join(SOURCES)}")
 

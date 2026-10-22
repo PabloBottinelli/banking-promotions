@@ -1,7 +1,3 @@
-"""Official excerpts retrieved with certificate verification on 2026-10-19.
-
-Expected facts come from each linked detail/terms, including contradictions.
-"""
 import json
 import copy
 from pathlib import Path

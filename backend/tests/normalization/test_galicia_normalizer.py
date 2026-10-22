@@ -34,7 +34,6 @@ def _minimum_purchase(p):
 
 
 def _segments(p):
-    """Check what the normalizer actually exposes for segment-based offers."""
     for line in (p.specific_conditions or "").splitlines():
         if line.startswith(("Segmentos: ", "Segmentos/requisitos: ")):
             return [t.strip() for t in line.split(": ", 1)[1].split(", ")]

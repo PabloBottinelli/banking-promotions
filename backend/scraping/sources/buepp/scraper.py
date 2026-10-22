@@ -1,4 +1,3 @@
-"""Public Buepp catalog API used by the official Angular application."""
 import json
 import os
 import tempfile

@@ -1,4 +1,3 @@
-"""Buepp: legal terms take precedence over often stale marketing labels."""
 import re
 import unicodedata
 from datetime import datetime

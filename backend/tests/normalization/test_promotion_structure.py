@@ -1,4 +1,3 @@
-"""Integration-level assertions for the promotion representation (offline)."""
 
 from decimal import Decimal
 from datetime import date, datetime, timezone

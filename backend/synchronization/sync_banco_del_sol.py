@@ -1,4 +1,3 @@
-"""Banco del Sol synchronization entry point; this module is not run by tests."""
 
 from normalization.sources.banco_del_sol import BancoDelSolNormalizer
 from scraping.sources.banco_del_sol.scraper import BancoDelSolScraper

@@ -117,7 +117,6 @@ def test_html_variations_keep_current_section_boundary():
 
 
 def test_truncated_short_last_page_does_not_replace_previous_snapshot(tmp_path):
-    """Regression for QA: 65 -> 56 can mimic a legitimate short final page."""
     old_ids = [f"promo-{n}" for n in range(65)]
     new_ids = old_ids[:56]
     states = [(_page(new_ids[:n]), n != 56) for n in [9, 18, 27, 36, 45, 54, 56]]

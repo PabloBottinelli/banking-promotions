@@ -15,6 +15,7 @@ Usar esta skill cuando el usuario solicite integrar una fuente de banco/billeter
 
 ## 2. Implementación del Codex principal
 
+- No agregar comentarios de código, docstrings descriptivos ni encabezados decorativos. Conservar cadenas multilínea de datos y metadatos necesarios para el funcionamiento.
 - Crear scraper, normalizador y entrypoint `sync_<fuente>.py` (sin ejecutarlo); agregar fixtures pequeñas y tests ordinarios. No modificar el contrato común salvo que el usuario pida ese trabajo explícitamente.
 - `scrape()` devuelve candidato en memoria sin escribir snapshots; extraer evidencia raw completa, IDs/URLs/legales, detección de errores, paginación y cobertura real.
 - Normalizar todos los tipos de beneficios y sus variantes, topes/mínimos/stock/usos, pagos, fechas desconocidas, días, canales, comercios/condiciones según `backend/normalization/models.py`. Ningún fallback comercial inventado ni eliminación silenciosa de registros.
