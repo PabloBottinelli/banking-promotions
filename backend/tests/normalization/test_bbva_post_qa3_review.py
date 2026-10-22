@@ -1,4 +1,3 @@
-"""Additional official cases discovered while comparing post-QA3 output."""
 import json
 from pathlib import Path
 

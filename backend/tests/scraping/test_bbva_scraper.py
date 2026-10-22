@@ -1,4 +1,3 @@
-"""Synthetic API responses exercise capture safety, never real snapshots."""
 import json
 
 import httpx
@@ -275,7 +274,7 @@ def test_dropped_official_gift_and_stock_are_detected_in_actual_output(monkeypat
         p.limits = [limit for limit in p.limits if limit.type != 'stock']
     monkeypatch.setattr(BBVANormalizer, 'normalize_many', lambda self, raw: variants)
     reasons = BBVAScraper._commercial_review([r])
-    assert reasons  # Valid Pydantic variants still lost an official entitlement.
+    assert reasons
 
 
 def test_fully_mapped_official_assist_card_is_not_a_multiple_rate_false_positive():

@@ -1,0 +1,868 @@
+[
+  {
+    "source": "bbva",
+    "source_id": "85446",
+    "scraped_at": "2026-10-22T19:55:17.423169+00:00",
+    "source_url": "https://go.bbva.com.ar/willgo/fgo/API/v3/communication/85446",
+    "catalog": {
+      "id": "85446",
+      "imagen": "https://go.bbva.com.ar/fgo/sites/default/files/imagen/comercio/18837_changomas_311x208.png",
+      "cabecera": "Changomas QR Modo 20%",
+      "subcabecera": ". .Promoción válida desde 04-05-2026 hasta 31-10-2026",
+      "idCampania": "2474",
+      "esCampania": false,
+      "esCampaniaMadre": false,
+      "fechaDesde": "2026-05-04",
+      "fechaHasta": "2026-10-31",
+      "diasPromo": null,
+      "montoTope": "25000",
+      "grupoTarjeta": "Tarjetas de crédito y débito BBVA"
+    },
+    "detail": {
+      "id": "85446",
+      "imagen": "https://go.bbva.com.ar/fgo/sites/default/files/imagen/comercio/18837_changomas_311x208.png",
+      "cabecera": "Changomas QR Modo 20%",
+      "beneficios": [
+        {
+          "cuota": 0,
+          "tope": "25000",
+          "tipoTope": "Usuario",
+          "frecuenciaTope": "Por Mes",
+          "requisitos": [
+            "En compras mayores a $75.000 con QR MODO.\nLunes\nRecibí el reintegro en tu caja de ahorros vinculada a Modo"
+          ]
+        }
+      ],
+      "canalesVenta": {
+        "sucursales": [],
+        "web": [
+          {
+            "name": "Changomas",
+            "url": "https://www.modo.com.ar/promos/changomas-julio26"
+          }
+        ]
+      },
+      "basesCondiciones": "LA PROMOCIÓN CONSTA DE 20% DE REINTEGRO para compras superiores a $75000 CON TOPE DE $25.500 POR USUARIO POR MES. VÁLIDA PARA CLIENTES QUE ABONEN SUS COMPRAS EN un pago CON TARJETAS EMITIDAS POR BBVA. EXCLUSIVO PARA PAGOS REALIZADOS A TRAVÉS DE APP BBVA ESCANEANDO UN QR MODO. LA PRESENTE PROMOCIÓN ES VÁLIDA SÓLO PARA CONSUMOS DE TIPO FAMILIAR. EL REINTEGRO SE ACREDITARÁ DENTRO DE LOS 60 DÍAS POSTERIORES A LA COMPRA EN TU CAJA DE AHORROS ACTIVA EN BBVA Y VINCULADA A MODO. PARA PODER RECIBIR EL REINTEGRO, QUIEN REALIZA LA COMPRA DEBE SER TITULAR DE UNA CAJA DE AHORROS ACTIVA EN BBVA Y DICHA CUENTA DEBE ENCONTRARSE VINCULADA A MODO. SI QUIEN REALIZA LA COMPRA ES ADICIONAL DE TARJETA DE CREDITO Y NO POSEE UNA CAJA DE AHORROS EN BBVA, EL REINTEGRO SE ACREDITARÁ EN LA CAJA DE AHORROS ACTIVA EN BBVA DEL TITULAR DE LA TARJETA DE CREDITO. DICHA CAJA DE AHORROS DEBE ENCONTRARSE VINCULADA A MODO. ACUMULA ÚNICAMENTE CON PROMOCIONES DE MODO. LA PROMOCIÓN NO APLICA A PAGOS REALIZADOS A TRAVÉS DE OTRAS BILLETERAS VIRTUALES Y/O PLATAFORMAS DE PAGO ONLINE (POR EJEMPLO MERCADO PAGO, UALÁ, ETC.). LOS ACCIONISTAS DE BANCO BBVA ARGENTINA S.A. LIMITAN SU RESPONSABILIDAD A LA INTEGRACIÓN DE LAS ACCIONES SUSCRIPTAS LEY 19.550 Y LEY 25.738. CUIT 30-50000319-3. AVDA.CÓRDOBA 111- PISO 31 CABA - CP 1054AAA.",
+      "diasPromo": null,
+      "vigencia": "Del 04/05/2026 hasta 31/10/2026",
+      "grupoTarjeta": "Tarjetas de crédito y débito BBVA",
+      "tiempoAcreditacion": null,
+      "esModo": true
+    }
+  },
+  {
+    "source": "bbva",
+    "source_id": "86124",
+    "scraped_at": "2026-10-22T19:55:17.423169+00:00",
+    "source_url": "https://go.bbva.com.ar/willgo/fgo/API/v3/communication/86124",
+    "catalog": {
+      "id": "86124",
+      "imagen": "https://go.bbva.com.ar/fgo/sites/default/files/c2-subrubro-hogarydeco-pintureria-940x620-5.jpg",
+      "cabecera": "Kromacolor 30% y 6 cuotas",
+      "subcabecera": "30% y 6 cuotas sin interés .Promoción válida desde 01-07-2026 hasta 31-12-2026",
+      "idCampania": "",
+      "esCampania": false,
+      "esCampaniaMadre": false,
+      "fechaDesde": "2026-07-01",
+      "fechaHasta": "2026-12-31",
+      "diasPromo": "0,0,0,1,0,0,0",
+      "montoTope": "20000",
+      "grupoTarjeta": "Tarjetas de crédito BBVA"
+    },
+    "detail": {
+      "id": "86124",
+      "imagen": "https://go.bbva.com.ar/fgo/sites/default/files/c2-subrubro-hogarydeco-pintureria-940x620-5.jpg",
+      "cabecera": "Kromacolor 30% y 6 cuotas",
+      "beneficios": [
+        {
+          "cuota": 6,
+          "tope": "20000",
+          "tipoTope": "Usuario",
+          "frecuenciaTope": "Por Mes",
+          "requisitos": [
+            "Exclusivo para pagos con tus tarjetas de crédito BBVA a través de app BBVA escaneando un QR MODO. Todos los jueves disfrutá de 30% de reintegro (tope $20.000 por cuenta por mes) y hasta 6 cuotas sin interés. Recibí el reintegro en el resumen de tu tarjeta de crédito."
+          ]
+        }
+      ],
+      "canalesVenta": {
+        "sucursales": [
+          {
+            "direccion": "Juan Piñeiro 124",
+            "localidad": "Lanus Oeste",
+            "latitude": "-58.39350891113281",
+            "longitude": "-34.706939697265625"
+          },
+          {
+            "direccion": "Avenida Caseros 1750",
+            "localidad": "Quilmes",
+            "latitude": "-34.6998405456543",
+            "longitude": "-58.287105560302734"
+          },
+          {
+            "direccion": "Colectora oeste Panamericana Ramal Pilar ",
+            "localidad": "Pilar",
+            "latitude": "-58.81139373779297",
+            "longitude": "-34.436546325683594"
+          },
+          {
+            "direccion": "Av. Ricardo Balbín 2199",
+            "localidad": "San Martin",
+            "latitude": "-58.54314041137695",
+            "longitude": "-34.57942581176758"
+          },
+          {
+            "direccion": "Avenida Presidente Bernardino Rivadavia 901",
+            "localidad": "Avellaneda",
+            "latitude": "-34.67042541503906",
+            "longitude": "-58.39094161987305"
+          },
+          {
+            "direccion": "Av. 9 de Julio 1701",
+            "localidad": "Lanus Este",
+            "latitude": "-58.38494873046875",
+            "longitude": "-34.711910247802734"
+          },
+          {
+            "direccion": "Colectora este Panamericana Ramal Escobar 825",
+            "localidad": "Ingeniero Maschwitz",
+            "latitude": "-58.705806732177734",
+            "longitude": "-34.438961029052734"
+          }
+        ],
+        "web": []
+      },
+      "basesCondiciones": "LA PROMOCIÓN CONSTA DE 30% DE REINTEGRO LOS DIAS JUEVES CON TOPE DE $16.000 POR USUARIO POR MES. VÁLIDA PARA CLIENTES QUE ABONEN SUS COMPRAS EN HASTA 6 CUOTAS CON TARJETAS DE CRÉDITO EMITIDAS POR BBVA. EXCLUSIVO PARA PAGOS REALIZADOS A TRAVÉS DE APP BBVA ESCANEANDO UN QR MODO. LA PRESENTE PROMOCIÓN ES VÁLIDA SÓLO PARA CONSUMOS DE TIPO FAMILIAR. EL REINTEGRO SE ACREDITARÁ EN EL RESUMEN DE LA TARJETA DE CRÉDITO DENTRO DE LOS 60 DÍAS POSTERIORES AL CIERRE DE LA LIQUIDACIÓN. ACUMULA ÚNICAMENTE CON PROMOCIONES DE MODO. LA PROMOCIÓN NO APLICA A PAGOS REALIZADOS A TRAVÉS DE OTRAS BILLETERAS VIRTUALES Y/O PLATAFORMAS DE PAGO ONLINE (POR EJEMPLO MERCADO PAGO, UALÁ, ETC.). LOS ACCIONISTAS DE BANCO BBVA ARGENTINA S.A. LIMITAN SU RESPONSABILIDAD A LA INTEGRACIÓN DE LAS ACCIONES SUSCRIPTAS LEY 19.550 Y LEY 25.738. CUIT 30-50000319-3. AVDA.CÓRDOBA 111- PISO 31 CABA - CP 1054AAA.",
+      "diasPromo": "0,0,0,1,0,0,0",
+      "vigencia": "Del 01/07/2026 hasta 31/12/2026",
+      "grupoTarjeta": "Tarjetas de crédito BBVA",
+      "tiempoAcreditacion": null,
+      "esModo": false
+    }
+  },
+  {
+    "source": "bbva",
+    "source_id": "86599",
+    "scraped_at": "2026-10-22T19:55:17.423169+00:00",
+    "source_url": "https://go.bbva.com.ar/willgo/fgo/API/v3/communication/86599",
+    "catalog": {
+      "id": "86599",
+      "imagen": "https://go.bbva.com.ar/fgo/sites/default/files/c2-subrubro-regalos-libreria-940x620-5.jpg",
+      "cabecera": "Casa Conforti 30% y 6 cuotas",
+      "subcabecera": "30% y 6 cuotas sin interés .Promoción válida desde 22-07-2026 hasta 31-12-2026",
+      "idCampania": "",
+      "esCampania": false,
+      "esCampaniaMadre": false,
+      "fechaDesde": "2026-07-22",
+      "fechaHasta": "2026-12-31",
+      "diasPromo": "0,0,0,1,0,0,0",
+      "montoTope": "20000",
+      "grupoTarjeta": "Tarjetas de crédito BBVA"
+    },
+    "detail": {
+      "id": "86599",
+      "imagen": "https://go.bbva.com.ar/fgo/sites/default/files/c2-subrubro-regalos-libreria-940x620-5.jpg",
+      "cabecera": "Casa Conforti 30% y 6 cuotas",
+      "beneficios": [
+        {
+          "cuota": 6,
+          "tope": "20000",
+          "tipoTope": "Usuario",
+          "frecuenciaTope": "Por Mes",
+          "requisitos": [
+            "Exclusivo para pagos con tus tarjetas de crédito BBVA a través de app BBVA escaneando un QR MODO. Todos los jueves disfrutá de 30% de reintegro (tope $20.000 por cuenta por mes) y hasta 6 cuotas sin interés. Recibí el reintegro en el resumen de tu tarjeta de crédito."
+          ]
+        }
+      ],
+      "canalesVenta": {
+        "sucursales": [
+          {
+            "direccion": "Rivadavia 2701",
+            "localidad": "Mar Del Plata",
+            "latitude": "-37.99955749511719",
+            "longitude": "-57.548519134521484"
+          }
+        ],
+        "web": []
+      },
+      "basesCondiciones": "LA PROMOCIÓN CONSTA DE 30% DE REINTEGRO LOS DIAS JUEVES CON TOPE DE $16.000 POR USUARIO POR MES. VÁLIDA PARA CLIENTES QUE ABONEN SUS COMPRAS EN HASTA 6 CUOTAS CON TARJETAS DE CRÉDITO EMITIDAS POR BBVA. EXCLUSIVO PARA PAGOS REALIZADOS A TRAVÉS DE APP BBVA ESCANEANDO UN QR MODO. LA PRESENTE PROMOCIÓN ES VÁLIDA SÓLO PARA CONSUMOS DE TIPO FAMILIAR. EL REINTEGRO SE ACREDITARÁ EN EL RESUMEN DE LA TARJETA DE CRÉDITO DENTRO DE LOS 60 DÍAS POSTERIORES AL CIERRE DE LA LIQUIDACIÓN. ACUMULA ÚNICAMENTE CON PROMOCIONES DE MODO. LA PROMOCIÓN NO APLICA A PAGOS REALIZADOS A TRAVÉS DE OTRAS BILLETERAS VIRTUALES Y/O PLATAFORMAS DE PAGO ONLINE (POR EJEMPLO MERCADO PAGO, UALÁ, ETC.). LOS ACCIONISTAS DE BANCO BBVA ARGENTINA S.A. LIMITAN SU RESPONSABILIDAD A LA INTEGRACIÓN DE LAS ACCIONES SUSCRIPTAS LEY 19.550 Y LEY 25.738. CUIT 30-50000319-3. AVDA.CÓRDOBA 111- PISO 31 CABA - CP 1054AAA.",
+      "diasPromo": "0,0,0,1,0,0,0",
+      "vigencia": "Del 22/07/2026 hasta 31/12/2026",
+      "grupoTarjeta": "Tarjetas de crédito BBVA",
+      "tiempoAcreditacion": null,
+      "esModo": false
+    }
+  },
+  {
+    "source": "bbva",
+    "source_id": "85699",
+    "scraped_at": "2026-10-22T19:55:17.423169+00:00",
+    "source_url": "https://go.bbva.com.ar/willgo/fgo/API/v3/communication/85699",
+    "catalog": {
+      "id": "85699",
+      "imagen": "https://go.bbva.com.ar/fgo/sites/default/files/c2-subrubro-comerciosyservicios-vetypetshop-940x620-5.jpg",
+      "cabecera": "Oeste Mascotas 30% y 6 cuotas",
+      "subcabecera": "30% y 6 cuotas sin interés .Promoción válida desde 16-04-2026 hasta 31-12-2026",
+      "idCampania": "",
+      "esCampania": false,
+      "esCampaniaMadre": false,
+      "fechaDesde": "2026-04-16",
+      "fechaHasta": "2026-12-31",
+      "diasPromo": "0,0,0,1,0,0,0",
+      "montoTope": "20000",
+      "grupoTarjeta": "Tarjetas de crédito BBVA"
+    },
+    "detail": {
+      "id": "85699",
+      "imagen": "https://go.bbva.com.ar/fgo/sites/default/files/c2-subrubro-comerciosyservicios-vetypetshop-940x620-5.jpg",
+      "cabecera": "Oeste Mascotas 30% y 6 cuotas",
+      "beneficios": [
+        {
+          "cuota": 6,
+          "tope": "20000",
+          "tipoTope": "Usuario",
+          "frecuenciaTope": "Por Mes",
+          "requisitos": [
+            "Exclusivo para pagos con tus tarjetas de crédito BBVA a través de app BBVA escaneando un QR MODO. Todos los jueves disfrutá de 30% de reintegro (tope $20.000 por cuenta por mes) y hasta 6 cuotas sin interés. Recibí el reintegro en el resumen de tu tarjeta de crédito."
+          ]
+        }
+      ],
+      "canalesVenta": {
+        "sucursales": [
+          {
+            "direccion": "Colombia 1212",
+            "localidad": "El Talar",
+            "latitude": "-34.473995208740234",
+            "longitude": "-58.662837982177734"
+          },
+          {
+            "direccion": "Yatasto 198",
+            "localidad": "Malvinas Argentinas",
+            "latitude": "-34.499061584472656",
+            "longitude": "-58.711307525634766"
+          }
+        ],
+        "web": []
+      },
+      "basesCondiciones": "LA PROMOCIÓN CONSTA DE 30% DE REINTEGRO LOS DIAS JUEVES CON TOPE DE $16.000 POR USUARIO POR MES. VÁLIDA PARA CLIENTES QUE ABONEN SUS COMPRAS EN HASTA 6 CUOTAS CON TARJETAS DE CRÉDITO EMITIDAS POR BBVA. EXCLUSIVO PARA PAGOS REALIZADOS A TRAVÉS DE APP BBVA ESCANEANDO UN QR MODO. LA PRESENTE PROMOCIÓN ES VÁLIDA SÓLO PARA CONSUMOS DE TIPO FAMILIAR. EL REINTEGRO SE ACREDITARÁ EN EL RESUMEN DE LA TARJETA DE CRÉDITO DENTRO DE LOS 60 DÍAS POSTERIORES AL CIERRE DE LA LIQUIDACIÓN. ACUMULA ÚNICAMENTE CON PROMOCIONES DE MODO. LA PROMOCIÓN NO APLICA A PAGOS REALIZADOS A TRAVÉS DE OTRAS BILLETERAS VIRTUALES Y/O PLATAFORMAS DE PAGO ONLINE (POR EJEMPLO MERCADO PAGO, UALÁ, ETC.). LOS ACCIONISTAS DE BANCO BBVA ARGENTINA S.A. LIMITAN SU RESPONSABILIDAD A LA INTEGRACIÓN DE LAS ACCIONES SUSCRIPTAS LEY 19.550 Y LEY 25.738. CUIT 30-50000319-3. AVDA.CÓRDOBA 111- PISO 31 CABA - CP 1054AAA.",
+      "diasPromo": "0,0,0,1,0,0,0",
+      "vigencia": "Del 16/04/2026 hasta 31/12/2026",
+      "grupoTarjeta": "Tarjetas de crédito BBVA",
+      "tiempoAcreditacion": null,
+      "esModo": false
+    }
+  },
+  {
+    "source": "bbva",
+    "source_id": "85698",
+    "scraped_at": "2026-10-22T19:55:17.423169+00:00",
+    "source_url": "https://go.bbva.com.ar/willgo/fgo/API/v3/communication/85698",
+    "catalog": {
+      "id": "85698",
+      "imagen": "https://go.bbva.com.ar/fgo/sites/default/files/c2-subrubro-comerciosyservicios-vetypetshop-940x620-5.jpg",
+      "cabecera": "Sur 30% y 6 cuotas",
+      "subcabecera": "30% y 6 cuotas sin interés .Promoción válida desde 16-04-2026 hasta 31-12-2026",
+      "idCampania": "",
+      "esCampania": false,
+      "esCampaniaMadre": false,
+      "fechaDesde": "2026-04-16",
+      "fechaHasta": "2026-12-31",
+      "diasPromo": "0,0,0,1,0,0,0",
+      "montoTope": "20000",
+      "grupoTarjeta": "Tarjetas de crédito BBVA"
+    },
+    "detail": {
+      "id": "85698",
+      "imagen": "https://go.bbva.com.ar/fgo/sites/default/files/c2-subrubro-comerciosyservicios-vetypetshop-940x620-5.jpg",
+      "cabecera": "Sur 30% y 6 cuotas",
+      "beneficios": [
+        {
+          "cuota": 6,
+          "tope": "20000",
+          "tipoTope": "Usuario",
+          "frecuenciaTope": "Por Mes",
+          "requisitos": [
+            "Exclusivo para pagos con tus tarjetas de crédito BBVA a través de app BBVA escaneando un QR MODO. Todos los jueves disfrutá de 30% de reintegro (tope $20.000 por cuenta por mes) y hasta 6 cuotas sin interés. Recibí el reintegro en el resumen de tu tarjeta de crédito."
+          ]
+        }
+      ],
+      "canalesVenta": {
+        "sucursales": [
+          {
+            "direccion": "Avenida Galicia 598",
+            "localidad": "Avellaneda",
+            "latitude": "-34.67242431640625",
+            "longitude": "-58.388797760009766"
+          },
+          {
+            "direccion": "República Dominicana 3386",
+            "localidad": "Capital Federal",
+            "latitude": "-34.590843200683594",
+            "longitude": "-58.41389083862305"
+          },
+          {
+            "direccion": "Boulevard de los Italianos 321",
+            "localidad": "Lanus Este",
+            "latitude": "-34.71577835083008",
+            "longitude": "-58.348453521728516"
+          },
+          {
+            "direccion": "Guatemala 4831",
+            "localidad": "Capital Federal",
+            "latitude": "-34.58501052856445",
+            "longitude": "-58.42548370361328"
+          },
+          {
+            "direccion": "Avenida Espora 2074",
+            "localidad": "Adrogue",
+            "latitude": "-34.81645965576172",
+            "longitude": "-58.38969802856445"
+          },
+          {
+            "direccion": "Avenida San Juan 4293",
+            "localidad": "Capital Federal",
+            "latitude": "-34.62665557861328",
+            "longitude": "-58.42531967163086"
+          }
+        ],
+        "web": []
+      },
+      "basesCondiciones": "LA PROMOCIÓN CONSTA DE 30% DE REINTEGRO LOS DIAS JUEVES CON TOPE DE $16.000 POR USUARIO POR MES. VÁLIDA PARA CLIENTES QUE ABONEN SUS COMPRAS EN HASTA 6 CUOTAS CON TARJETAS DE CRÉDITO EMITIDAS POR BBVA. EXCLUSIVO PARA PAGOS REALIZADOS A TRAVÉS DE APP BBVA ESCANEANDO UN QR MODO. LA PRESENTE PROMOCIÓN ES VÁLIDA SÓLO PARA CONSUMOS DE TIPO FAMILIAR. EL REINTEGRO SE ACREDITARÁ EN EL RESUMEN DE LA TARJETA DE CRÉDITO DENTRO DE LOS 60 DÍAS POSTERIORES AL CIERRE DE LA LIQUIDACIÓN. ACUMULA ÚNICAMENTE CON PROMOCIONES DE MODO. LA PROMOCIÓN NO APLICA A PAGOS REALIZADOS A TRAVÉS DE OTRAS BILLETERAS VIRTUALES Y/O PLATAFORMAS DE PAGO ONLINE (POR EJEMPLO MERCADO PAGO, UALÁ, ETC.). LOS ACCIONISTAS DE BANCO BBVA ARGENTINA S.A. LIMITAN SU RESPONSABILIDAD A LA INTEGRACIÓN DE LAS ACCIONES SUSCRIPTAS LEY 19.550 Y LEY 25.738. CUIT 30-50000319-3. AVDA.CÓRDOBA 111- PISO 31 CABA - CP 1054AAA.",
+      "diasPromo": "0,0,0,1,0,0,0",
+      "vigencia": "Del 16/04/2026 hasta 31/12/2026",
+      "grupoTarjeta": "Tarjetas de crédito BBVA",
+      "tiempoAcreditacion": null,
+      "esModo": false
+    }
+  },
+  {
+    "source": "bbva",
+    "source_id": "85697",
+    "scraped_at": "2026-10-22T19:55:17.423169+00:00",
+    "source_url": "https://go.bbva.com.ar/willgo/fgo/API/v3/communication/85697",
+    "catalog": {
+      "id": "85697",
+      "imagen": "https://go.bbva.com.ar/fgo/sites/default/files/c2-subrubro-hogarydeco-disenointerior-940x620-5.jpg",
+      "cabecera": "Tolder Outdoor Life 30% y 6 cuotas",
+      "subcabecera": "30% y 6 cuotas sin interés .Promoción válida desde 16-04-2026 hasta 31-12-2026",
+      "idCampania": "",
+      "esCampania": false,
+      "esCampaniaMadre": false,
+      "fechaDesde": "2026-04-16",
+      "fechaHasta": "2026-12-31",
+      "diasPromo": "0,0,0,1,0,0,0",
+      "montoTope": "20000",
+      "grupoTarjeta": "Tarjetas de crédito BBVA"
+    },
+    "detail": {
+      "id": "85697",
+      "imagen": "https://go.bbva.com.ar/fgo/sites/default/files/c2-subrubro-hogarydeco-disenointerior-940x620-5.jpg",
+      "cabecera": "Tolder Outdoor Life 30% y 6 cuotas",
+      "beneficios": [
+        {
+          "cuota": 6,
+          "tope": "20000",
+          "tipoTope": "Usuario",
+          "frecuenciaTope": "Por Mes",
+          "requisitos": [
+            "Exclusivo para pagos con tus tarjetas de crédito BBVA a través de app BBVA escaneando un QR MODO. Todos los jueves disfrutá de 30% de reintegro (tope $20.000 por cuenta por mes) y hasta 6 cuotas sin interés. Recibí el reintegro en el resumen de tu tarjeta de crédito."
+          ]
+        }
+      ],
+      "canalesVenta": {
+        "sucursales": [
+          {
+            "direccion": "Avenida Alvear 1444",
+            "localidad": "Capital Federal",
+            "latitude": "-34.590721130371094",
+            "longitude": "-58.3846321105957"
+          }
+        ],
+        "web": []
+      },
+      "basesCondiciones": "LA PROMOCIÓN CONSTA DE 30% DE REINTEGRO LOS DIAS JUEVES CON TOPE DE $16.000 POR USUARIO POR MES. VÁLIDA PARA CLIENTES QUE ABONEN SUS COMPRAS EN HASTA 6 CUOTAS CON TARJETAS DE CRÉDITO EMITIDAS POR BBVA. EXCLUSIVO PARA PAGOS REALIZADOS A TRAVÉS DE APP BBVA ESCANEANDO UN QR MODO. LA PRESENTE PROMOCIÓN ES VÁLIDA SÓLO PARA CONSUMOS DE TIPO FAMILIAR. EL REINTEGRO SE ACREDITARÁ EN EL RESUMEN DE LA TARJETA DE CRÉDITO DENTRO DE LOS 60 DÍAS POSTERIORES AL CIERRE DE LA LIQUIDACIÓN. ACUMULA ÚNICAMENTE CON PROMOCIONES DE MODO. LA PROMOCIÓN NO APLICA A PAGOS REALIZADOS A TRAVÉS DE OTRAS BILLETERAS VIRTUALES Y/O PLATAFORMAS DE PAGO ONLINE (POR EJEMPLO MERCADO PAGO, UALÁ, ETC.). LOS ACCIONISTAS DE BANCO BBVA ARGENTINA S.A. LIMITAN SU RESPONSABILIDAD A LA INTEGRACIÓN DE LAS ACCIONES SUSCRIPTAS LEY 19.550 Y LEY 25.738. CUIT 30-50000319-3. AVDA.CÓRDOBA 111- PISO 31 CABA - CP 1054AAA.",
+      "diasPromo": "0,0,0,1,0,0,0",
+      "vigencia": "Del 16/04/2026 hasta 31/12/2026",
+      "grupoTarjeta": "Tarjetas de crédito BBVA",
+      "tiempoAcreditacion": null,
+      "esModo": false
+    }
+  },
+  {
+    "source": "bbva",
+    "source_id": "85700",
+    "scraped_at": "2026-10-22T19:55:17.423169+00:00",
+    "source_url": "https://go.bbva.com.ar/willgo/fgo/API/v3/communication/85700",
+    "catalog": {
+      "id": "85700",
+      "imagen": "https://go.bbva.com.ar/fgo/sites/default/files/c2-subrubro-hogarydeco-electricidad-940x620-5.jpg",
+      "cabecera": "Cable City 30% y 6 cuotas",
+      "subcabecera": "30% y 6 cuotas sin interés .Promoción válida desde 10-06-2026 hasta 31-12-2026",
+      "idCampania": "",
+      "esCampania": false,
+      "esCampaniaMadre": false,
+      "fechaDesde": "2026-06-10",
+      "fechaHasta": "2026-12-31",
+      "diasPromo": "0,0,0,1,0,0,0",
+      "montoTope": "20000",
+      "grupoTarjeta": "Tarjetas de crédito BBVA"
+    },
+    "detail": {
+      "id": "85700",
+      "imagen": "https://go.bbva.com.ar/fgo/sites/default/files/c2-subrubro-hogarydeco-electricidad-940x620-5.jpg",
+      "cabecera": "Cable City 30% y 6 cuotas",
+      "beneficios": [
+        {
+          "cuota": 6,
+          "tope": "20000",
+          "tipoTope": "Usuario",
+          "frecuenciaTope": "Por Mes",
+          "requisitos": [
+            "Exclusivo para pagos con tus tarjetas de crédito BBVA a través de app BBVA escaneando un QR MODO. Todos los jueves disfrutá de 30% de reintegro (tope $20.000 por cuenta por mes) y hasta 6 cuotas sin interés. Recibí el reintegro en el resumen de tu tarjeta de crédito."
+          ]
+        }
+      ],
+      "canalesVenta": {
+        "sucursales": [
+          {
+            "direccion": "Rivera Indarte 372",
+            "localidad": "Cordoba",
+            "latitude": "-31.411497116088867",
+            "longitude": "-64.1834487915039"
+          }
+        ],
+        "web": []
+      },
+      "basesCondiciones": "LA PROMOCIÓN CONSTA DE 30% DE REINTEGRO LOS DIAS JUEVES CON TOPE DE $16.000 POR USUARIO POR MES. VÁLIDA PARA CLIENTES QUE ABONEN SUS COMPRAS EN HASTA 6 CUOTAS CON TARJETAS DE CRÉDITO EMITIDAS POR BBVA. EXCLUSIVO PARA PAGOS REALIZADOS A TRAVÉS DE APP BBVA ESCANEANDO UN QR MODO. LA PRESENTE PROMOCIÓN ES VÁLIDA SÓLO PARA CONSUMOS DE TIPO FAMILIAR. EL REINTEGRO SE ACREDITARÁ EN EL RESUMEN DE LA TARJETA DE CRÉDITO DENTRO DE LOS 60 DÍAS POSTERIORES AL CIERRE DE LA LIQUIDACIÓN. ACUMULA ÚNICAMENTE CON PROMOCIONES DE MODO. LA PROMOCIÓN NO APLICA A PAGOS REALIZADOS A TRAVÉS DE OTRAS BILLETERAS VIRTUALES Y/O PLATAFORMAS DE PAGO ONLINE (POR EJEMPLO MERCADO PAGO, UALÁ, ETC.). LOS ACCIONISTAS DE BANCO BBVA ARGENTINA S.A. LIMITAN SU RESPONSABILIDAD A LA INTEGRACIÓN DE LAS ACCIONES SUSCRIPTAS LEY 19.550 Y LEY 25.738. CUIT 30-50000319-3. AVDA.CÓRDOBA 111- PISO 31 CABA - CP 1054AAA.",
+      "diasPromo": "0,0,0,1,0,0,0",
+      "vigencia": "Del 10/06/2026 hasta 31/12/2026",
+      "grupoTarjeta": "Tarjetas de crédito BBVA",
+      "tiempoAcreditacion": null,
+      "esModo": false
+    }
+  },
+  {
+    "source": "bbva",
+    "source_id": "85828",
+    "scraped_at": "2026-10-22T19:55:17.423169+00:00",
+    "source_url": "https://go.bbva.com.ar/willgo/fgo/API/v3/communication/85828",
+    "catalog": {
+      "id": "85828",
+      "imagen": "https://go.bbva.com.ar/fgo/sites/default/files/c2-subrubro-regalos-libreria-940x620-5.jpg",
+      "cabecera": "Iparraguirre Hnos 30% y 6 cuotas",
+      "subcabecera": "30% y 6 cuotas sin interés .Promoción válida desde 17-06-2026 hasta 31-12-2026",
+      "idCampania": "",
+      "esCampania": false,
+      "esCampaniaMadre": false,
+      "fechaDesde": "2026-06-17",
+      "fechaHasta": "2026-12-31",
+      "diasPromo": "0,0,0,1,0,0,0",
+      "montoTope": "20000",
+      "grupoTarjeta": "Tarjetas de crédito BBVA"
+    },
+    "detail": {
+      "id": "85828",
+      "imagen": "https://go.bbva.com.ar/fgo/sites/default/files/c2-subrubro-regalos-libreria-940x620-5.jpg",
+      "cabecera": "Iparraguirre Hnos 30% y 6 cuotas",
+      "beneficios": [
+        {
+          "cuota": 6,
+          "tope": "20000",
+          "tipoTope": "Usuario",
+          "frecuenciaTope": "Por Mes",
+          "requisitos": [
+            "Exclusivo para pagos con tus tarjetas de crédito BBVA a través de app BBVA escaneando un QR MODO. Todos los jueves disfrutá de 30% de reintegro (tope $20.000 por cuenta por mes) y hasta 6 cuotas sin interés. Recibí el reintegro en el resumen de tu tarjeta de crédito."
+          ]
+        }
+      ],
+      "canalesVenta": {
+        "sucursales": [
+          {
+            "direccion": "Vélez Sarsfield 470",
+            "localidad": "Rio Cuarto",
+            "latitude": "-33.125572204589844",
+            "longitude": "-64.3438949584961"
+          }
+        ],
+        "web": []
+      },
+      "basesCondiciones": "LA PROMOCIÓN CONSTA DE 30% DE REINTEGRO LOS DIAS JUEVES CON TOPE DE $16.000 POR USUARIO POR MES. VÁLIDA PARA CLIENTES QUE ABONEN SUS COMPRAS EN HASTA 6 CUOTAS CON TARJETAS DE CRÉDITO EMITIDAS POR BBVA. EXCLUSIVO PARA PAGOS REALIZADOS A TRAVÉS DE APP BBVA ESCANEANDO UN QR MODO. LA PRESENTE PROMOCIÓN ES VÁLIDA SÓLO PARA CONSUMOS DE TIPO FAMILIAR. EL REINTEGRO SE ACREDITARÁ EN EL RESUMEN DE LA TARJETA DE CRÉDITO DENTRO DE LOS 60 DÍAS POSTERIORES AL CIERRE DE LA LIQUIDACIÓN. ACUMULA ÚNICAMENTE CON PROMOCIONES DE MODO. LA PROMOCIÓN NO APLICA A PAGOS REALIZADOS A TRAVÉS DE OTRAS BILLETERAS VIRTUALES Y/O PLATAFORMAS DE PAGO ONLINE (POR EJEMPLO MERCADO PAGO, UALÁ, ETC.). LOS ACCIONISTAS DE BANCO BBVA ARGENTINA S.A. LIMITAN SU RESPONSABILIDAD A LA INTEGRACIÓN DE LAS ACCIONES SUSCRIPTAS LEY 19.550 Y LEY 25.738. CUIT 30-50000319-3. AVDA.CÓRDOBA 111- PISO 31 CABA - CP 1054AAA.",
+      "diasPromo": "0,0,0,1,0,0,0",
+      "vigencia": "Del 17/06/2026 hasta 31/12/2026",
+      "grupoTarjeta": "Tarjetas de crédito BBVA",
+      "tiempoAcreditacion": null,
+      "esModo": false
+    }
+  },
+  {
+    "source": "bbva",
+    "source_id": "85830",
+    "scraped_at": "2026-10-22T19:55:17.423169+00:00",
+    "source_url": "https://go.bbva.com.ar/willgo/fgo/API/v3/communication/85830",
+    "catalog": {
+      "id": "85830",
+      "imagen": "https://go.bbva.com.ar/fgo/sites/default/files/c2-subrubro-modayaccesorios-joyeriayrelojeria-940x620-5.jpg",
+      "cabecera": "Reims 30% y 6 cuotas",
+      "subcabecera": "30% y 6 cuotas sin interés .Promoción válida desde 17-06-2026 hasta 31-12-2026",
+      "idCampania": "",
+      "esCampania": false,
+      "esCampaniaMadre": false,
+      "fechaDesde": "2026-06-17",
+      "fechaHasta": "2026-12-31",
+      "diasPromo": "0,0,0,1,0,0,0",
+      "montoTope": "20000",
+      "grupoTarjeta": "Tarjetas de crédito BBVA"
+    },
+    "detail": {
+      "id": "85830",
+      "imagen": "https://go.bbva.com.ar/fgo/sites/default/files/c2-subrubro-modayaccesorios-joyeriayrelojeria-940x620-5.jpg",
+      "cabecera": "Reims 30% y 6 cuotas",
+      "beneficios": [
+        {
+          "cuota": 6,
+          "tope": "20000",
+          "tipoTope": "Usuario",
+          "frecuenciaTope": "Por Mes",
+          "requisitos": [
+            "Exclusivo para pagos con tus tarjetas de crédito BBVA a través de app BBVA escaneando un QR MODO. Todos los jueves disfrutá de 30% de reintegro (tope $20.000 por cuenta por mes) y hasta 6 cuotas sin interés. Recibí el reintegro en el resumen de tu tarjeta de crédito."
+          ]
+        }
+      ],
+      "canalesVenta": {
+        "sucursales": [
+          {
+            "direccion": "Brown 216",
+            "localidad": "Bahia Blanca",
+            "latitude": "-38.7216911315918",
+            "longitude": "-62.265785217285156"
+          },
+          {
+            "direccion": "Brown 218",
+            "localidad": "Bahia Blanca",
+            "latitude": "-38.721675872802734",
+            "longitude": "-62.265708923339844"
+          }
+        ],
+        "web": []
+      },
+      "basesCondiciones": "LA PROMOCIÓN CONSTA DE 30% DE REINTEGRO LOS DIAS JUEVES CON TOPE DE $16.000 POR USUARIO POR MES. VÁLIDA PARA CLIENTES QUE ABONEN SUS COMPRAS EN HASTA 6 CUOTAS CON TARJETAS DE CRÉDITO EMITIDAS POR BBVA. EXCLUSIVO PARA PAGOS REALIZADOS A TRAVÉS DE APP BBVA ESCANEANDO UN QR MODO. LA PRESENTE PROMOCIÓN ES VÁLIDA SÓLO PARA CONSUMOS DE TIPO FAMILIAR. EL REINTEGRO SE ACREDITARÁ EN EL RESUMEN DE LA TARJETA DE CRÉDITO DENTRO DE LOS 60 DÍAS POSTERIORES AL CIERRE DE LA LIQUIDACIÓN. ACUMULA ÚNICAMENTE CON PROMOCIONES DE MODO. LA PROMOCIÓN NO APLICA A PAGOS REALIZADOS A TRAVÉS DE OTRAS BILLETERAS VIRTUALES Y/O PLATAFORMAS DE PAGO ONLINE (POR EJEMPLO MERCADO PAGO, UALÁ, ETC.). LOS ACCIONISTAS DE BANCO BBVA ARGENTINA S.A. LIMITAN SU RESPONSABILIDAD A LA INTEGRACIÓN DE LAS ACCIONES SUSCRIPTAS LEY 19.550 Y LEY 25.738. CUIT 30-50000319-3. AVDA.CÓRDOBA 111- PISO 31 CABA - CP 1054AAA.",
+      "diasPromo": "0,0,0,1,0,0,0",
+      "vigencia": "Del 17/06/2026 hasta 31/12/2026",
+      "grupoTarjeta": "Tarjetas de crédito BBVA",
+      "tiempoAcreditacion": null,
+      "esModo": false
+    }
+  },
+  {
+    "source": "bbva",
+    "source_id": "85829",
+    "scraped_at": "2026-10-22T19:55:17.423169+00:00",
+    "source_url": "https://go.bbva.com.ar/willgo/fgo/API/v3/communication/85829",
+    "catalog": {
+      "id": "85829",
+      "imagen": "https://go.bbva.com.ar/fgo/sites/default/files/c2-subrubro-hogarydeco-ferreteria-940x620-5.jpg",
+      "cabecera": "Escaleras Mil 30% y 6 cuotas",
+      "subcabecera": "30% y 6 cuotas sin interés .Promoción válida desde 17-06-2026 hasta 31-12-2026",
+      "idCampania": "",
+      "esCampania": false,
+      "esCampaniaMadre": false,
+      "fechaDesde": "2026-06-17",
+      "fechaHasta": "2026-12-31",
+      "diasPromo": "0,0,0,1,0,0,0",
+      "montoTope": "20000",
+      "grupoTarjeta": "Tarjetas de crédito BBVA"
+    },
+    "detail": {
+      "id": "85829",
+      "imagen": "https://go.bbva.com.ar/fgo/sites/default/files/c2-subrubro-hogarydeco-ferreteria-940x620-5.jpg",
+      "cabecera": "Escaleras Mil 30% y 6 cuotas",
+      "beneficios": [
+        {
+          "cuota": 6,
+          "tope": "20000",
+          "tipoTope": "Usuario",
+          "frecuenciaTope": "Por Mes",
+          "requisitos": [
+            "Exclusivo para pagos con tus tarjetas de crédito BBVA a través de app BBVA escaneando un QR MODO. Todos los jueves disfrutá de 30% de reintegro (tope $20.000 por cuenta por mes) y hasta 6 cuotas sin interés. Recibí el reintegro en el resumen de tu tarjeta de crédito."
+          ]
+        }
+      ],
+      "canalesVenta": {
+        "sucursales": [
+          {
+            "direccion": "Avenida Caseros 1980",
+            "localidad": "Capital Federal",
+            "latitude": "-34.63424301147461",
+            "longitude": "-58.38996505737305"
+          }
+        ],
+        "web": []
+      },
+      "basesCondiciones": "LA PROMOCIÓN CONSTA DE 30% DE REINTEGRO LOS DIAS JUEVES CON TOPE DE $16.000 POR USUARIO POR MES. VÁLIDA PARA CLIENTES QUE ABONEN SUS COMPRAS EN HASTA 6 CUOTAS CON TARJETAS DE CRÉDITO EMITIDAS POR BBVA. EXCLUSIVO PARA PAGOS REALIZADOS A TRAVÉS DE APP BBVA ESCANEANDO UN QR MODO. LA PRESENTE PROMOCIÓN ES VÁLIDA SÓLO PARA CONSUMOS DE TIPO FAMILIAR. EL REINTEGRO SE ACREDITARÁ EN EL RESUMEN DE LA TARJETA DE CRÉDITO DENTRO DE LOS 60 DÍAS POSTERIORES AL CIERRE DE LA LIQUIDACIÓN. ACUMULA ÚNICAMENTE CON PROMOCIONES DE MODO. LA PROMOCIÓN NO APLICA A PAGOS REALIZADOS A TRAVÉS DE OTRAS BILLETERAS VIRTUALES Y/O PLATAFORMAS DE PAGO ONLINE (POR EJEMPLO MERCADO PAGO, UALÁ, ETC.). LOS ACCIONISTAS DE BANCO BBVA ARGENTINA S.A. LIMITAN SU RESPONSABILIDAD A LA INTEGRACIÓN DE LAS ACCIONES SUSCRIPTAS LEY 19.550 Y LEY 25.738. CUIT 30-50000319-3. AVDA.CÓRDOBA 111- PISO 31 CABA - CP 1054AAA.",
+      "diasPromo": "0,0,0,1,0,0,0",
+      "vigencia": "Del 17/06/2026 hasta 31/12/2026",
+      "grupoTarjeta": "Tarjetas de crédito BBVA",
+      "tiempoAcreditacion": null,
+      "esModo": false
+    }
+  },
+  {
+    "source": "bbva",
+    "source_id": "86761",
+    "scraped_at": "2026-10-22T19:55:17.423169+00:00",
+    "source_url": "https://go.bbva.com.ar/willgo/fgo/API/v3/communication/86761",
+    "catalog": {
+      "id": "86761",
+      "imagen": "https://go.bbva.com.ar/fgo/sites/default/files/c2-subrubro-comerciosyservicios-vetypetshop-940x620-5.jpg",
+      "cabecera": "Centro 30% y 6 cuotas",
+      "subcabecera": "30% y 6 cuotas sin interés .Promoción válida desde 29-07-2026 hasta 31-12-2026",
+      "idCampania": "",
+      "esCampania": false,
+      "esCampaniaMadre": false,
+      "fechaDesde": "2026-07-29",
+      "fechaHasta": "2026-12-31",
+      "diasPromo": "0,0,0,1,0,0,0",
+      "montoTope": "20000",
+      "grupoTarjeta": "Tarjetas de crédito BBVA"
+    },
+    "detail": {
+      "id": "86761",
+      "imagen": "https://go.bbva.com.ar/fgo/sites/default/files/c2-subrubro-comerciosyservicios-vetypetshop-940x620-5.jpg",
+      "cabecera": "Centro 30% y 6 cuotas",
+      "beneficios": [
+        {
+          "cuota": 6,
+          "tope": "20000",
+          "tipoTope": "Usuario",
+          "frecuenciaTope": "Por Mes",
+          "requisitos": [
+            "Exclusivo para pagos con tus tarjetas de crédito BBVA a través de app BBVA escaneando un QR MODO. Todos los jueves disfrutá de 30% de reintegro (tope $20.000 por cuenta por mes) y hasta 6 cuotas sin interés. Recibí el reintegro en el resumen de tu tarjeta de crédito."
+          ]
+        }
+      ],
+      "canalesVenta": {
+        "sucursales": [
+          {
+            "direccion": "Eva Perón 3308",
+            "localidad": "Lanus Este",
+            "latitude": "-34.720787048339844",
+            "longitude": "-58.36335754394531"
+          },
+          {
+            "direccion": "General Deheza 1468",
+            "localidad": "Lanus Este",
+            "latitude": "-34.71488952636719",
+            "longitude": "-58.37131118774414"
+          },
+          {
+            "direccion": "Ituzaingó 1088",
+            "localidad": "Lanus Este",
+            "latitude": "-34.70677947998047",
+            "longitude": "-58.38967514038086"
+          }
+        ],
+        "web": []
+      },
+      "basesCondiciones": "LA PROMOCIÓN CONSTA DE 30% DE REINTEGRO LOS DIAS JUEVES CON TOPE DE $16.000 POR USUARIO POR MES. VÁLIDA PARA CLIENTES QUE ABONEN SUS COMPRAS EN HASTA 6 CUOTAS CON TARJETAS DE CRÉDITO EMITIDAS POR BBVA. EXCLUSIVO PARA PAGOS REALIZADOS A TRAVÉS DE APP BBVA ESCANEANDO UN QR MODO. LA PRESENTE PROMOCIÓN ES VÁLIDA SÓLO PARA CONSUMOS DE TIPO FAMILIAR. EL REINTEGRO SE ACREDITARÁ EN EL RESUMEN DE LA TARJETA DE CRÉDITO DENTRO DE LOS 60 DÍAS POSTERIORES AL CIERRE DE LA LIQUIDACIÓN. ACUMULA ÚNICAMENTE CON PROMOCIONES DE MODO. LA PROMOCIÓN NO APLICA A PAGOS REALIZADOS A TRAVÉS DE OTRAS BILLETERAS VIRTUALES Y/O PLATAFORMAS DE PAGO ONLINE (POR EJEMPLO MERCADO PAGO, UALÁ, ETC.). LOS ACCIONISTAS DE BANCO BBVA ARGENTINA S.A. LIMITAN SU RESPONSABILIDAD A LA INTEGRACIÓN DE LAS ACCIONES SUSCRIPTAS LEY 19.550 Y LEY 25.738. CUIT 30-50000319-3. AVDA.CÓRDOBA 111- PISO 31 CABA - CP 1054AAA.",
+      "diasPromo": "0,0,0,1,0,0,0",
+      "vigencia": "Del 29/07/2026 hasta 31/12/2026",
+      "grupoTarjeta": "Tarjetas de crédito BBVA",
+      "tiempoAcreditacion": null,
+      "esModo": false
+    }
+  },
+  {
+    "source": "bbva",
+    "source_id": "87809",
+    "scraped_at": "2026-10-22T19:55:17.423169+00:00",
+    "source_url": "https://go.bbva.com.ar/willgo/fgo/API/v3/communication/87809",
+    "catalog": {
+      "id": "87809",
+      "imagen": "https://go.bbva.com.ar/fgo/sites/default/files/c2-subrubro-regalos-bazar-940x620-5.jpg",
+      "cabecera": "Cosas De Ushuaia 30% y 6 cuotas",
+      "subcabecera": "30% y 6 cuotas sin interés .Promoción válida desde 23-09-2026 hasta 31-12-2026",
+      "idCampania": "",
+      "esCampania": false,
+      "esCampaniaMadre": false,
+      "fechaDesde": "2026-09-23",
+      "fechaHasta": "2026-12-31",
+      "diasPromo": "0,0,0,1,0,0,0",
+      "montoTope": "20000",
+      "grupoTarjeta": "Tarjetas de crédito BBVA"
+    },
+    "detail": {
+      "id": "87809",
+      "imagen": "https://go.bbva.com.ar/fgo/sites/default/files/c2-subrubro-regalos-bazar-940x620-5.jpg",
+      "cabecera": "Cosas De Ushuaia 30% y 6 cuotas",
+      "beneficios": [
+        {
+          "cuota": 6,
+          "tope": "20000",
+          "tipoTope": "Usuario",
+          "frecuenciaTope": "Por Mes",
+          "requisitos": [
+            "Exclusivo para pagos con tus tarjetas de crédito BBVA a través de app BBVA escaneando un QR MODO. Todos los jueves disfrutá de 30% de reintegro (tope $20.000 por cuenta por mes) y hasta 6 cuotas sin interés. Recibí el reintegro en el resumen de tu tarjeta de crédito."
+          ]
+        }
+      ],
+      "canalesVenta": {
+        "sucursales": [
+          {
+            "direccion": "Magallanes 2124",
+            "localidad": "Ushuaia",
+            "latitude": "-54.808441162109375",
+            "longitude": "-68.3318862915039"
+          },
+          {
+            "direccion": "Magallanes 2118",
+            "localidad": "Ushuaia",
+            "latitude": "-54.808406829833984",
+            "longitude": "-68.3319091796875"
+          }
+        ],
+        "web": []
+      },
+      "basesCondiciones": "LA PROMOCIÓN CONSTA DE 30% DE REINTEGRO LOS DIAS JUEVES CON TOPE DE $16.000 POR USUARIO POR MES. VÁLIDA PARA CLIENTES QUE ABONEN SUS COMPRAS EN HASTA 6 CUOTAS CON TARJETAS DE CRÉDITO EMITIDAS POR BBVA. EXCLUSIVO PARA PAGOS REALIZADOS A TRAVÉS DE APP BBVA ESCANEANDO UN QR MODO. LA PRESENTE PROMOCIÓN ES VÁLIDA SÓLO PARA CONSUMOS DE TIPO FAMILIAR. EL REINTEGRO SE ACREDITARÁ EN EL RESUMEN DE LA TARJETA DE CRÉDITO DENTRO DE LOS 60 DÍAS POSTERIORES AL CIERRE DE LA LIQUIDACIÓN. ACUMULA ÚNICAMENTE CON PROMOCIONES DE MODO. LA PROMOCIÓN NO APLICA A PAGOS REALIZADOS A TRAVÉS DE OTRAS BILLETERAS VIRTUALES Y/O PLATAFORMAS DE PAGO ONLINE (POR EJEMPLO MERCADO PAGO, UALÁ, ETC.). LOS ACCIONISTAS DE BANCO BBVA ARGENTINA S.A. LIMITAN SU RESPONSABILIDAD A LA INTEGRACIÓN DE LAS ACCIONES SUSCRIPTAS LEY 19.550 Y LEY 25.738. CUIT 30-50000319-3. AVDA.CÓRDOBA 111- PISO 31 CABA - CP 1054AAA.",
+      "diasPromo": "0,0,0,1,0,0,0",
+      "vigencia": "Del 23/09/2026 hasta 31/12/2026",
+      "grupoTarjeta": "Tarjetas de crédito BBVA",
+      "tiempoAcreditacion": null,
+      "esModo": false
+    }
+  },
+  {
+    "source": "bbva",
+    "source_id": "87558",
+    "scraped_at": "2026-10-22T19:55:17.423169+00:00",
+    "source_url": "https://go.bbva.com.ar/willgo/fgo/API/v3/communication/87558",
+    "catalog": {
+      "id": "87558",
+      "imagen": "https://go.bbva.com.ar/fgo/sites/default/files/c2-subrubro-hogarydeco-muebles-940x620-5.jpg",
+      "cabecera": "Coin Vert 30% y 6 cuotas",
+      "subcabecera": "30% y 6 cuotas sin interés .Promoción válida desde 02-09-2026 hasta 31-12-2026",
+      "idCampania": "",
+      "esCampania": false,
+      "esCampaniaMadre": false,
+      "fechaDesde": "2026-09-02",
+      "fechaHasta": "2026-12-31",
+      "diasPromo": "0,0,0,1,0,0,0",
+      "montoTope": "20000",
+      "grupoTarjeta": "Tarjetas de crédito BBVA"
+    },
+    "detail": {
+      "id": "87558",
+      "imagen": "https://go.bbva.com.ar/fgo/sites/default/files/c2-subrubro-hogarydeco-muebles-940x620-5.jpg",
+      "cabecera": "Coin Vert 30% y 6 cuotas",
+      "beneficios": [
+        {
+          "cuota": 6,
+          "tope": "20000",
+          "tipoTope": "Usuario",
+          "frecuenciaTope": "Por Mes",
+          "requisitos": [
+            "Exclusivo para pagos con tus tarjetas de crédito BBVA a través de app BBVA escaneando un QR MODO. Todos los jueves disfrutá de 30% de reintegro (tope $20.000 por cuenta por mes) y hasta 6 cuotas sin interés. Recibí el reintegro en el resumen de tu tarjeta de crédito."
+          ]
+        }
+      ],
+      "canalesVenta": {
+        "sucursales": [
+          {
+            "direccion": "AV DEL LIBERTADOR 13402",
+            "localidad": "Acassuso",
+            "latitude": "-34.603763580322266",
+            "longitude": "-58.38172912597656"
+          },
+          {
+            "direccion": "AVDA DEL LIBERTADOR 13402",
+            "localidad": "Martinez",
+            "latitude": "-34.48700714111328",
+            "longitude": "-58.486087799072266"
+          }
+        ],
+        "web": []
+      },
+      "basesCondiciones": "LA PROMOCIÓN CONSTA DE 30% DE REINTEGRO LOS DIAS JUEVES CON TOPE DE $16.000 POR USUARIO POR MES. VÁLIDA PARA CLIENTES QUE ABONEN SUS COMPRAS EN HASTA 6 CUOTAS CON TARJETAS DE CRÉDITO EMITIDAS POR BBVA. EXCLUSIVO PARA PAGOS REALIZADOS A TRAVÉS DE APP BBVA ESCANEANDO UN QR MODO. LA PRESENTE PROMOCIÓN ES VÁLIDA SÓLO PARA CONSUMOS DE TIPO FAMILIAR. EL REINTEGRO SE ACREDITARÁ EN EL RESUMEN DE LA TARJETA DE CRÉDITO DENTRO DE LOS 60 DÍAS POSTERIORES AL CIERRE DE LA LIQUIDACIÓN. ACUMULA ÚNICAMENTE CON PROMOCIONES DE MODO. LA PROMOCIÓN NO APLICA A PAGOS REALIZADOS A TRAVÉS DE OTRAS BILLETERAS VIRTUALES Y/O PLATAFORMAS DE PAGO ONLINE (POR EJEMPLO MERCADO PAGO, UALÁ, ETC.). LOS ACCIONISTAS DE BANCO BBVA ARGENTINA S.A. LIMITAN SU RESPONSABILIDAD A LA INTEGRACIÓN DE LAS ACCIONES SUSCRIPTAS LEY 19.550 Y LEY 25.738. CUIT 30-50000319-3. AVDA.CÓRDOBA 111- PISO 31 CABA - CP 1054AAA.",
+      "diasPromo": "0,0,0,1,0,0,0",
+      "vigencia": "Del 02/09/2026 hasta 31/12/2026",
+      "grupoTarjeta": "Tarjetas de crédito BBVA",
+      "tiempoAcreditacion": null,
+      "esModo": false
+    }
+  },
+  {
+    "source": "bbva",
+    "source_id": "87904",
+    "scraped_at": "2026-10-22T19:55:17.423169+00:00",
+    "source_url": "https://go.bbva.com.ar/willgo/fgo/API/v3/communication/87904",
+    "catalog": {
+      "id": "87904",
+      "imagen": "https://go.bbva.com.ar/fgo/sites/default/files/c2-subrubro-modayaccesorios-masculina-940x620-5.jpg",
+      "cabecera": "American South 30% y 6 cuotas",
+      "subcabecera": "30% y 6 cuotas sin interés .Promoción válida desde 30-09-2026 hasta 31-12-2026",
+      "idCampania": "",
+      "esCampania": false,
+      "esCampaniaMadre": false,
+      "fechaDesde": "2026-09-30",
+      "fechaHasta": "2026-12-31",
+      "diasPromo": "0,0,0,1,0,0,0",
+      "montoTope": "20000",
+      "grupoTarjeta": "Tarjetas de crédito BBVA"
+    },
+    "detail": {
+      "id": "87904",
+      "imagen": "https://go.bbva.com.ar/fgo/sites/default/files/c2-subrubro-modayaccesorios-masculina-940x620-5.jpg",
+      "cabecera": "American South 30% y 6 cuotas",
+      "beneficios": [
+        {
+          "cuota": 6,
+          "tope": "20000",
+          "tipoTope": "Usuario",
+          "frecuenciaTope": "Por Mes",
+          "requisitos": [
+            "Exclusivo para pagos con tus tarjetas de crédito BBVA a través de app BBVA escaneando un QR MODO. Todos los jueves disfrutá de 30% de reintegro (tope $20.000 por cuenta por mes) y hasta 6 cuotas sin interés. Recibí el reintegro en el resumen de tu tarjeta de crédito."
+          ]
+        }
+      ],
+      "canalesVenta": {
+        "sucursales": [
+          {
+            "direccion": "Avenida Juan B. Justo 1529",
+            "localidad": "Mar Del Plata",
+            "latitude": "-38.0298957824707",
+            "longitude": "-57.55642318725586"
+          },
+          {
+            "direccion": " ",
+            "localidad": "Paseo Aldrey",
+            "latitude": "-38.0054771",
+            "longitude": "-57.54261059999999"
+          },
+          {
+            "direccion": "Malabia 1727",
+            "localidad": "Capital Federal",
+            "latitude": "-34.58997344970703",
+            "longitude": "-58.42558288574219"
+          },
+          {
+            "direccion": "Rivadavia 2527",
+            "localidad": "Mar Del Plata",
+            "latitude": "-38.000526428222656",
+            "longitude": "-57.54679870605469"
+          },
+          {
+            "direccion": "Argerich 448",
+            "localidad": "Capital Federal",
+            "latitude": "-34.62745666503906",
+            "longitude": "-58.47333526611328"
+          }
+        ],
+        "web": []
+      },
+      "basesCondiciones": "LA PROMOCIÓN CONSTA DE 30% DE REINTEGRO LOS DIAS JUEVES CON TOPE DE $16.000 POR USUARIO POR MES. VÁLIDA PARA CLIENTES QUE ABONEN SUS COMPRAS EN HASTA 6 CUOTAS CON TARJETAS DE CRÉDITO EMITIDAS POR BBVA. EXCLUSIVO PARA PAGOS REALIZADOS A TRAVÉS DE APP BBVA ESCANEANDO UN QR MODO. LA PRESENTE PROMOCIÓN ES VÁLIDA SÓLO PARA CONSUMOS DE TIPO FAMILIAR. EL REINTEGRO SE ACREDITARÁ EN EL RESUMEN DE LA TARJETA DE CRÉDITO DENTRO DE LOS 60 DÍAS POSTERIORES AL CIERRE DE LA LIQUIDACIÓN. ACUMULA ÚNICAMENTE CON PROMOCIONES DE MODO. LA PROMOCIÓN NO APLICA A PAGOS REALIZADOS A TRAVÉS DE OTRAS BILLETERAS VIRTUALES Y/O PLATAFORMAS DE PAGO ONLINE (POR EJEMPLO MERCADO PAGO, UALÁ, ETC.). LOS ACCIONISTAS DE BANCO BBVA ARGENTINA S.A. LIMITAN SU RESPONSABILIDAD A LA INTEGRACIÓN DE LAS ACCIONES SUSCRIPTAS LEY 19.550 Y LEY 25.738. CUIT 30-50000319-3. AVDA.CÓRDOBA 111- PISO 31 CABA - CP 1054AAA.",
+      "diasPromo": "0,0,0,1,0,0,0",
+      "vigencia": "Del 30/09/2026 hasta 31/12/2026",
+      "grupoTarjeta": "Tarjetas de crédito BBVA",
+      "tiempoAcreditacion": null,
+      "esModo": false
+    }
+  }
+]

@@ -1,4 +1,3 @@
-"""Real BBVA normalization/snapshot guards, fake HTTP and persistence only."""
 import importlib
 import json
 from pathlib import Path

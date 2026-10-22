@@ -1,4 +1,3 @@
-"""Official examples have unmodified API provenance; synthetic cases are named."""
 from copy import deepcopy
 from decimal import Decimal
 import json
@@ -36,7 +35,7 @@ def test_amount_formats_are_decimal_and_ambiguous_values_unknown(value,expected)
 def test_official_cashback_and_financing_are_compatible(official):
     p=BBVANormalizer().normalize(official['88114'])
     assert [(b.type,b.percentage,b.installment_options) for b in p.benefits] == [('cashback',Decimal(20),[]),('installments',None,[6])]
-    assert p.benefits[1].interest_free is None  # Neither the API nor legal terms promises this here.
+    assert p.benefits[1].interest_free is None
     assert p.days_of_week==['tuesday']
     assert p.limits[0].amount==50000 and p.limits[0].period=='monthly'
     assert [(m.issuer,m.card_type,m.wallet,m.payment_rail) for m in p.payment_methods]==[('BBVA','credit','BBVA','qr')]
@@ -51,8 +50,8 @@ def test_official_vea_minimum_is_strict_and_friday_not_unknown(official):
     assert cap.amount==25000 and cap.period=='monthly'
     assert minimum.type=='minimum_purchase' and minimum.amount==100000
     assert 'estrictamente superior' in minimum.description
-    assert p.online is None  # MODO promo link is not a purchase channel.
-    assert p.payment_methods[0].card_type is None  # Both types named; no artificial type/network product.
+    assert p.online is None
+    assert p.payment_methods[0].card_type is None
 
 
 def test_official_nfc_requires_specific_card_and_wallets(official):
@@ -60,7 +59,7 @@ def test_official_nfc_requires_specific_card_and_wallets(official):
     assert p.scope=='category' and p.category=='Gastronomía'
     assert {(m.network,m.card_type,m.wallet,m.payment_rail) for m in p.payment_methods} == {
         ('visa','credit','Apple Pay','nfc'),('visa','credit','Google Pay','nfc'),('visa','credit','MODO','nfc')}
-    assert p.online is None  # BBVA package information under canalesVenta.web.
+    assert p.online is None
     assert p.applies_every_day is True
     assert p.limits[0].amount==100000 and p.limits[0].scope=='account'
     assert p.limits[0].shared_group_id
@@ -106,7 +105,7 @@ def test_official_fixed_coupon_minimum_stock_and_codes(official):
     assert [(l.type,l.amount,l.quantity) for l in p.limits]==[('minimum_purchase',Decimal(15000),None),('stock',None,15000)]
     assert p.payment_methods[0].network=='mastercard'
     assert 'BOCAMASTERF14' in p.specific_conditions and '48 horas' in p.specific_conditions
-    assert '01/20/2026' in p.terms  # Invalid source typo preserved, never invented/repaired.
+    assert '01/20/2026' in p.terms
 
 
 def test_official_cinemark_keeps_two_product_benefits_separate(official):
@@ -142,7 +141,7 @@ def test_official_unidentifiable_benefit_blocks_instead_of_misusing_cap(official
 
 def test_official_cap_period_conflict_is_visible(official):
     p=BBVANormalizer().normalize(official['88050'])
-    assert p.limits[0].period is None  # Contradiction is unresolved; neither source silently wins.
+    assert p.limits[0].period is None
     assert 'Fuente inconsistente' in p.specific_conditions
 
 
@@ -226,7 +225,6 @@ def test_official_export_uses_variants_and_blocks_partial_overwrite(official,tmp
 def test_official_puppis_gift_does_not_restrict_general_financing(official,source_id):
     financing,gift=BBVANormalizer().normalize_many(official[source_id])
     assert financing.limits==[]
-    # 87734 publishes Friday/Saturday in its API bitmask; 87862 leaves it null.
     assert financing.days_of_week==(['friday','saturday'] if source_id=='87734' else [])
     assert financing.payment_methods[0].network is None
     assert [b.type for b in gift.benefits]==['installments','gift']

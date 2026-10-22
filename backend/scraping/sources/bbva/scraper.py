@@ -148,7 +148,8 @@ class BBVAScraper:
                 variants = normalizer.normalize_many(raw)
                 semantic = normalizer.review_normalized(raw, variants)
             except (ValueError, TypeError, KeyError) as exc:
-                semantic = [f"normalization/commercial review blocked: {exc}"]
+                reasons.append(f"{raw['source_id']}: normalization/commercial review blocked: {exc}")
+                continue
             reasons.extend(f"{raw['source_id']}: {reason}" for reason in semantic)
             legal_start = re.search(r'\b(?:del|desde)\s+(\d{1,2}/\d{1,2}/\d{4})\b', terms, re.I)
             if legal_start:
@@ -174,11 +175,15 @@ class BBVAScraper:
                     cap_value = raw.get('catalog', {}).get('montoTope')
                 cap = normalizer._normalize_amount(cap_value)
                 if cap is None:
-                    match = re.search(r'\btope(?:\s+de\s+reintegro)?\s*:?\s*(?:de\s*)?(?:ARS\s*|\$\s*)' + normalizer.MONEY, normalizer._clean_text(terms), re.I)
-                    cap = normalizer._normalize_amount(match.group(1)) if match else None
+                    try:
+                        cap = normalizer._text_cap_amount(terms,
+                            normalizer._normalize_cap_period(benefit.get('frecuenciaTope')),
+                            ' '.join(normalizer._normalize_requirements(benefit.get('requisitos'))))
+                    except ValueError as exc:
+                        reasons.append(f"{raw['source_id']}: {exc}")
                 _, warning = normalizer._cap_period_evidence(
                     normalizer._normalize_cap_period(benefit.get('frecuenciaTope')), cap,
-                    normalizer._clean_text(terms))
+                    terms)
                 if warning:
                     reasons.append(f"{raw['source_id']}: {warning}")
             if re.search(r'compartido.{0,90}adicional', terms, re.I) and re.search(r'no aplica para compras realizadas con tarjetas de cr[eé]dito adicionales', terms, re.I):
@@ -229,6 +234,10 @@ class BBVAScraper:
         allowed, missing, reason = self._baseline_check(promotions)
         if not allowed:
             raise ValueError(f"BBVA baseline review required: {missing or reason}")
+        review = self._commercial_review(promotions)
+        if review:
+            self.coverage.update(snapshot_replace_allowed=False, requires_review=True, commercial_review_reasons=review)
+            raise ValueError('BBVA commercial review required: ' + '; '.join(review))
         self.output_path.parent.mkdir(parents=True, exist_ok=True)
         temp_path = None
         try:
