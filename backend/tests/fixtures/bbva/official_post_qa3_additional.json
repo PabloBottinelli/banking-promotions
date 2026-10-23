@@ -1,0 +1,492 @@
+[
+  {
+    "source": "bbva",
+    "source_id": "84535",
+    "scraped_at": "2026-10-19T14:52:34.821955+00:00",
+    "source_url": "https://go.bbva.com.ar/willgo/fgo/API/v3/communication/84535",
+    "catalog": {
+      "id": "84535",
+      "imagen": "https://go.bbva.com.ar/fgo/sites/default/files/imagen/comercio/33503_ratablanca_317x112.png",
+      "cabecera": "Rata Blanca 3 cuotas",
+      "subcabecera": "3 cuotas sin interés .Promoción válida desde 20-04-2026 hasta 02-12-2026",
+      "idCampania": "2416",
+      "esCampania": false,
+      "esCampaniaMadre": false,
+      "fechaDesde": "2026-04-20",
+      "fechaHasta": "2026-12-02",
+      "diasPromo": "1,1,1,1,1,1,1",
+      "montoTope": null,
+      "grupoTarjeta": "Tarjetas de crédito BBVA"
+    },
+    "detail": {
+      "id": "84535",
+      "imagen": "https://go.bbva.com.ar/fgo/sites/default/files/imagen/comercio/33503_ratablanca_317x112.png",
+      "cabecera": "Rata Blanca 3 cuotas",
+      "beneficios": [
+        {
+          "cuota": 3,
+          "tope": null,
+          "tipoTope": "ninguno",
+          "frecuenciaTope": " ",
+          "requisitos": [
+            "Con tus tarjetas de crédito de BBVA"
+          ]
+        }
+      ],
+      "canalesVenta": {
+        "sucursales": [],
+        "web": [
+          {
+            "name": "Rata Blanca",
+            "url": "https://www.movistararena.com.ar"
+          }
+        ]
+      },
+      "basesCondiciones": "CARTERA DE CONSUMO. PROMOCIÓN VÁLIDA PARA LA REPÚBLICA ARGENTINA DESDE LAS 16:00 HS DEL 22/04/2026 HASTA EL 02/12/2026. PARA COMPRAS REALIZADAS EXCLUSIVAMENTE A TRAVÉS DE HTTP://MOVISTARARENA.COM.AR/ Y SOLO ABONANDO CON TARJETAS DE CRÉDITO VISA Y/O MASTERCARD EMITIDAS POR BBVA. VÁLIDA SÓLO PARA CONSUMO DE TIPO FAMILIAR. NO SE ACUMULAN A OTRAS PROMOCIONES. LA FINANCIACIÓN APLICA ÚNICAMENTE AL COSTO DE LAS ENTRADAS, NO APLICA A LOS COSTOS DE EMISIÓN, RETIRO Y/O ENVÍO DE LAS MISMAS. NO PARTICIPAN TARJETAS VISA PURCHASING, DISTRIBUTION Y CORPORATE. NO APLICA A PAGOS REALIZADOS A TRAVÉS DE OTRAS BILLETERAS VIRTUALES Y/O PLATAFORMAS DE PAGO ONLINE (POR EJEMPLO, PAYPAL, MERCADO PAGO, UALÁ, ETC.). EJEMPLO: EN UNA COMPRA DE $60.000 REALIZADA CON TARJETA DE CRÉDITO BBVA, FINANCIADA EN TRES CUOTAS, RECIBIRÁ DEL PRIMER AL TERCER RESUMEN DE SU TARJETA UN CONSUMO DE $20.000. LOS ACCIONISTAS DE BANCO BBVA ARGENTINA S.A LIMITAN SU RESPONSABILIDAD A LA INTEGRACIÓN DE LAS ACCIONES SUSCRIPTAS A LA LEY 19.550 Y LEY 25.738. CUIT 30-50000319-3. AVDA. CÓRDOBA 111- PISO 31 CABA - CP C1054AAA. COSTO FINANCIERO TOTAL NOMINAL ANUAL: 0,00%. TASA NOMINAL ANUAL 0,00%. TASA EFECTIVA ANUAL 0,00%. CFTNA 0,00%.",
+      "diasPromo": "1,1,1,1,1,1,1",
+      "vigencia": "Del 20/04/2026 hasta 02/12/2026",
+      "grupoTarjeta": "Tarjetas de crédito BBVA",
+      "tiempoAcreditacion": null,
+      "esModo": false
+    }
+  },
+  {
+    "source": "bbva",
+    "source_id": "85530",
+    "scraped_at": "2026-10-19T14:52:34.898820+00:00",
+    "source_url": "https://go.bbva.com.ar/willgo/fgo/API/v3/communication/85530",
+    "catalog": {
+      "id": "85530",
+      "imagen": "https://go.bbva.com.ar/fgo/sites/default/files/c2-subrubro-comerciosyservicios-supermercado-940x620-5_0.jpg",
+      "cabecera": "Supermercados La Gallega QR Modo 20%",
+      "subcabecera": "20% de reintegro .Promoción válida desde 04-05-2026 hasta 31-10-2026",
+      "idCampania": "2474",
+      "esCampania": false,
+      "esCampaniaMadre": false,
+      "fechaDesde": "2026-05-04",
+      "fechaHasta": "2026-10-31",
+      "diasPromo": null,
+      "montoTope": "20000",
+      "grupoTarjeta": "Tarjetas de crédito y débito BBVA"
+    },
+    "detail": {
+      "id": "85530",
+      "imagen": "https://go.bbva.com.ar/fgo/sites/default/files/c2-subrubro-comerciosyservicios-supermercado-940x620-5_0.jpg",
+      "cabecera": "Supermercados La Gallega QR Modo 20%",
+      "beneficios": [
+        {
+          "cuota": 0,
+          "tope": "20000",
+          "tipoTope": "Usuario",
+          "frecuenciaTope": " ",
+          "requisitos": [
+            "Pagando desde APP BBVA con QR MODO. Recibí el reintegro en tu caja de ahorros\nTodos los lunes"
+          ]
+        }
+      ],
+      "canalesVenta": {
+        "sucursales": [],
+        "web": [
+          {
+            "name": "Supermercados La Gallega",
+            "url": "https://www.modo.com.ar/promos/lagallega-junio26"
+          }
+        ]
+      },
+      "basesCondiciones": "LA PROMOCIÓN CONSTA DE 20% DE REINTEGRO CON TOPE DE $20.000 POR USUARIO POR MES. VÁLIDA PARA CLIENTES QUE ABONEN SUS COMPRAS un pago CON TARJETAS EMITIDAS POR BBVA. EXCLUSIVO PARA PAGOS REALIZADOS A TRAVÉS DE APP BBVA ESCANEANDO UN QR MODO. LA PRESENTE PROMOCIÓN ES VÁLIDA SÓLO PARA CONSUMOS DE TIPO FAMILIAR. EL REINTEGRO SE ACREDITARÁ DENTRO DE LOS 60 DÍAS POSTERIORES A LA COMPRA EN TU CAJA DE AHORROS ACTIVA EN BBVA Y VINCULADA A MODO. PARA PODER RECIBIR EL REINTEGRO, QUIEN REALIZA LA COMPRA DEBE SER TITULAR DE UNA CAJA DE AHORROS ACTIVA EN BBVA Y DICHA CUENTA DEBE ENCONTRARSE VINCULADA A MODO. SI QUIEN REALIZA LA COMPRA ES ADICIONAL DE TARJETA DE CREDITO Y NO POSEE UNA CAJA DE AHORROS EN BBVA, EL REINTEGRO SE ACREDITARÁ EN LA CAJA DE AHORROS ACTIVA EN BBVA DEL TITULAR DE LA TARJETA DE CREDITO. DICHA CAJA DE AHORROS DEBE ENCONTRARSE VINCULADA A MODO. ACUMULA ÚNICAMENTE CON PROMOCIONES DE MODO. LA PROMOCIÓN NO APLICA A PAGOS REALIZADOS A TRAVÉS DE OTRAS BILLETERAS VIRTUALES Y/O PLATAFORMAS DE PAGO ONLINE (POR EJEMPLO MERCADO PAGO, UALÁ, ETC.). LOS ACCIONISTAS DE BANCO BBVA ARGENTINA S.A. LIMITAN SU RESPONSABILIDAD A LA INTEGRACIÓN DE LAS ACCIONES SUSCRIPTAS LEY 19.550 Y LEY 25.738. CUIT 30-50000319-3. AVDA.CÓRDOBA 111- PISO 31 CABA - CP 1054AAA.",
+      "diasPromo": null,
+      "vigencia": "Del 04/05/2026 hasta 31/10/2026",
+      "grupoTarjeta": "Tarjetas de crédito y débito BBVA",
+      "tiempoAcreditacion": null,
+      "esModo": true
+    }
+  },
+  {
+    "source": "bbva",
+    "source_id": "86275",
+    "scraped_at": "2026-10-19T14:52:34.946217+00:00",
+    "source_url": "https://go.bbva.com.ar/willgo/fgo/API/v3/communication/86275",
+    "catalog": {
+      "id": "86275",
+      "imagen": "https://go.bbva.com.ar/fgo/sites/default/files/imagen/comercio/20727_toledo_311x208.png",
+      "cabecera": "Supermercados Toledo QR Modo 30%",
+      "subcabecera": ". .Promoción válida desde 03-06-2026 hasta 31-10-2026",
+      "idCampania": "2474",
+      "esCampania": false,
+      "esCampaniaMadre": false,
+      "fechaDesde": "2026-06-03",
+      "fechaHasta": "2026-10-31",
+      "diasPromo": null,
+      "montoTope": "12000",
+      "grupoTarjeta": "Tarjetas de crédito y débito BBVA"
+    },
+    "detail": {
+      "id": "86275",
+      "imagen": "https://go.bbva.com.ar/fgo/sites/default/files/imagen/comercio/20727_toledo_311x208.png",
+      "cabecera": "Supermercados Toledo QR Modo 30%",
+      "beneficios": [
+        {
+          "cuota": 3,
+          "tope": "12000",
+          "tipoTope": "Usuario",
+          "frecuenciaTope": " ",
+          "requisitos": [
+            "Pagando desde APP BBVA con QR MODO. Recibí el reintegro en tu caja de ahorros.\nTodos los miércoles."
+          ]
+        }
+      ],
+      "canalesVenta": {
+        "sucursales": [],
+        "web": [
+          {
+            "name": "Supermercados Toledo",
+            "url": "https://www.modo.com.ar/promos/supermercados-toledo-jul26"
+          }
+        ]
+      },
+      "basesCondiciones": "LA PROMOCIÓN CONSTA DE 30% DE REINTEGRO CON TOPE DE $12.000 POR USUARIO POR MES. VÁLIDA PARA CLIENTES QUE ABONEN SUS COMPRAS EN un pago CON TARJETAS DE CRÉDITO EMITIDAS POR BBVA. EXCLUSIVO PARA PAGOS REALIZADOS A TRAVÉS DE APP BBVA ESCANEANDO UN QR MODO. LA PRESENTE PROMOCIÓN ES VÁLIDA SÓLO PARA CONSUMOS DE TIPO FAMILIAR. EL REINTEGRO SE ACREDITARÁ DENTRO DE LOS 60 DÍAS POSTERIORES A LA COMPRA EN TU CAJA DE AHORROS ACTIVA EN BBVA Y VINCULADA A MODO. PARA PODER RECIBIR EL REINTEGRO, QUIEN REALIZA LA COMPRA DEBE SER TITULAR DE UNA CAJA DE AHORROS ACTIVA EN BBVA Y DICHA CUENTA DEBE ENCONTRARSE VINCULADA A MODO. SI QUIEN REALIZA LA COMPRA ES ADICIONAL DE TARJETA DE CREDITO Y NO POSEE UNA CAJA DE AHORROS EN BBVA, EL REINTEGRO SE ACREDITARÁ EN LA CAJA DE AHORROS ACTIVA EN BBVA DEL TITULAR DE LA TARJETA DE CREDITO. DICHA CAJA DE AHORROS DEBE ENCONTRARSE VINCULADA A MODO. ACUMULA ÚNICAMENTE CON PROMOCIONES DE MODO. LA PROMOCIÓN NO APLICA A PAGOS REALIZADOS A TRAVÉS DE OTRAS BILLETERAS VIRTUALES Y/O PLATAFORMAS DE PAGO ONLINE (POR EJEMPLO MERCADO PAGO, UALÁ, ETC.). LOS ACCIONISTAS DE BANCO BBVA ARGENTINA S.A. LIMITAN SU RESPONSABILIDAD A LA INTEGRACIÓN DE LAS ACCIONES SUSCRIPTAS LEY 19.550 Y LEY 25.738. CUIT 30-50000319-3. AVDA.CÓRDOBA 111- PISO 31 CABA - CP 1054AAA.",
+      "diasPromo": null,
+      "vigencia": "Del 03/06/2026 hasta 31/10/2026",
+      "grupoTarjeta": "Tarjetas de crédito y débito BBVA",
+      "tiempoAcreditacion": null,
+      "esModo": true
+    }
+  },
+  {
+    "source": "bbva",
+    "source_id": "88050",
+    "scraped_at": "2026-10-19T14:52:35.016264+00:00",
+    "source_url": "https://go.bbva.com.ar/willgo/fgo/API/v3/communication/88050",
+    "catalog": {
+      "id": "88050",
+      "imagen": "https://assets.caasbbva.com/content/dam/caas/argentina/beneficios/comunicacion/duty_visa_317x112.png",
+      "cabecera": "Duty Free Shop 20%",
+      "subcabecera": "20% de reintegro .Promoción válida desde 01-10-2026 hasta 31-10-2026",
+      "idCampania": "",
+      "esCampania": false,
+      "esCampaniaMadre": false,
+      "fechaDesde": "2026-10-01",
+      "fechaHasta": "2026-10-31",
+      "diasPromo": "1,1,1,1,1,1,1",
+      "montoTope": "30000",
+      "grupoTarjeta": "Tarjetas de crédito BBVA"
+    },
+    "detail": {
+      "id": "88050",
+      "imagen": "https://assets.caasbbva.com/content/dam/caas/argentina/beneficios/comunicacion/duty_visa_317x112.png",
+      "cabecera": "Duty Free Shop 20%",
+      "beneficios": [
+        {
+          "cuota": 0,
+          "tope": "30000",
+          "tipoTope": "Usuario",
+          "frecuenciaTope": "Por Mes",
+          "requisitos": [
+            "Exclusivo VISA. Pagando con NFC (ApplePay y GooglePay). \nRecibí el reintegro en tu caja de ahorro."
+          ]
+        }
+      ],
+      "canalesVenta": {
+        "sucursales": [
+          {
+            "direccion": "Ruta Provincial 80 400",
+            "localidad": "San Carlos De Bariloche",
+            "latitude": "-41.1470823",
+            "longitude": "-71.1618074"
+          },
+          {
+            "direccion": "Autopista Teniente General Pablo Riccheri 0",
+            "localidad": "Ezeiza",
+            "latitude": "-34.81572723388672",
+            "longitude": "-58.54157257080078"
+          },
+          {
+            "direccion": "Acceso A Aeropuerto Internacional Gabrielli F. J. 2000",
+            "localidad": "Las Heras",
+            "latitude": "-32.827735900878906",
+            "longitude": "-68.7984390258789"
+          },
+          {
+            "direccion": "Avenida La Voz del Interior 8500",
+            "localidad": "Cordoba",
+            "latitude": "-31.31085777282715",
+            "longitude": "-64.2227554321289"
+          },
+          {
+            "direccion": "Avenida Jorge Newbery 1",
+            "localidad": "Rosario",
+            "latitude": "-32.90907287597656",
+            "longitude": "-60.75590515136719"
+          },
+          {
+            "direccion": "Avenida Costanera Rafael Obligado 600",
+            "localidad": "Capital Federal",
+            "latitude": "-34.55530548095703",
+            "longitude": "-58.414772033691406"
+          }
+        ],
+        "web": []
+      },
+      "basesCondiciones": "LA PROMOCIÓN CONSTA DE 20% DE REINTEGRO CON TOPE DE $30.000 POR USUARIO POR VIGENCIA. VÁLIDA PARA CLIENTES QUE ABONEN SUS COMPRAS EN UN PAGO CON TARJETAS DE CRÉDITO VISA EMITIDAS POR BBVA. EXCLUSIVO PARA PAGOS REALIZADOS DESDE EL CELULAR VÍA NFC (&#34;SIN CONTACTO&#34;) A TRAVÉS APPLE PAY (DISPONIBLE SÓLO EN IOS), GOOGLE PAY, O MODO CONTACTLESS. ES REQUISITO TENER UNA CAJA DE AHORRO EN PESOS ACTIVA EN BBVA PARA RECIBIR LA ACREDITACIÓN DEL REINTEGRO. LA PRESENTE PROMOCIÓN ES VÁLIDA SÓLO PARA CONSUMOS DE TIPO FAMILIAR Y NO SE ACUMULA A OTRAS PROMOCIONES. NO PARTICIPAN TARJETAS VISA PURCHASING, DISTRIBUTION, BUSINESS Y CORPORATE. LA BONIFICACIÓN SE ACREDITARÁ  DENTRO DE LOS 60 DÍAS POSTERIORES A LA COMPRA EN TU CAJA DE AHORROS ACTIVA EN BBVA. EN EL CASO DE DUDA SOBRE EL DESTINO DEL CONSUMO, EL BANCO SE RESERVA LA FACULTAD DE NO ACREDITAR EL MONTO DE LA BONIFICACIÓN HASTA TANTO SE ACLARE EL MISMO. LA PROMOCIÓN NO APLICA A PAGOS REALIZADOS A TRAVÉS DE BILLETERAS VIRTUALES Y/O PLATAFORMAS DE PAGO ONLINE (POR EJEMPLO, PAYPAL, TODO PAGO, MERCADO PAGO, UALÁ, ETC.). LOS ACCIONISTAS DE BANCO BBVA ARGENTINA S.A. LIMITAN SU RESPONSABILIDAD A LA INTEGRACIÓN DE LAS ACCIONES SUSCRIPTAS LEY 19.550 Y LEY 25.738. CUIT 30-50000319-3. AVDA.CÓRDOBA 111- PISO 31 CABA - CP 1054AAA.",
+      "diasPromo": "1,1,1,1,1,1,1",
+      "vigencia": "Del 01/10/2026 hasta 31/10/2026",
+      "grupoTarjeta": "Tarjetas de crédito BBVA",
+      "tiempoAcreditacion": null,
+      "esModo": false
+    }
+  },
+  {
+    "source": "bbva",
+    "source_id": "88282",
+    "scraped_at": "2026-10-19T14:52:35.065787+00:00",
+    "source_url": "https://go.bbva.com.ar/willgo/fgo/API/v3/communication/88282",
+    "catalog": {
+      "id": "88282",
+      "imagen": "https://go.bbva.com.ar/fgo/sites/default/files/farmacia320x144.png",
+      "cabecera": "Puntofarma 10% y 3 cuotas",
+      "subcabecera": "  .Promoción válida desde 12-10-2026 hasta 31-12-2026",
+      "idCampania": "",
+      "esCampania": false,
+      "esCampaniaMadre": false,
+      "fechaDesde": "2026-10-12",
+      "fechaHasta": "2026-12-31",
+      "diasPromo": "1,0,0,0,0,0,0",
+      "montoTope": "10000",
+      "grupoTarjeta": "Tarjetas de crédito BBVA"
+    },
+    "detail": {
+      "id": "88282",
+      "imagen": "https://go.bbva.com.ar/fgo/sites/default/files/farmacia320x144.png",
+      "cabecera": "Puntofarma 10% y 3 cuotas",
+      "beneficios": [
+        {
+          "cuota": 3,
+          "tope": "10000",
+          "tipoTope": "Usuario",
+          "frecuenciaTope": "Por Vigencia de la Promocion",
+          "requisitos": [
+            "Pagando desde APP BBVA con QR MODO. Recibí el reintegro en tu caja de ahorros."
+          ]
+        }
+      ],
+      "canalesVenta": {
+        "sucursales": [
+          {
+            "direccion": "Avenida Remedios de Escalada de San Martín 1307",
+            "localidad": "Lanus",
+            "latitude": "-34.685855865478516",
+            "longitude": "-58.39751434326172"
+          },
+          {
+            "direccion": "José Álvarez Condarco 1586",
+            "localidad": "Lanus",
+            "latitude": "-34.72683334350586",
+            "longitude": "-58.35547637939453"
+          },
+          {
+            "direccion": "Avenida Rivadavia 300",
+            "localidad": "Quilmes",
+            "latitude": "-34.721134185791016",
+            "longitude": "-58.25534439086914"
+          },
+          {
+            "direccion": "Avenida San Martín 2199",
+            "localidad": "Lanus",
+            "latitude": "-34.69496536254883",
+            "longitude": "-58.407283782958984"
+          },
+          {
+            "direccion": "Alsina 214",
+            "localidad": "Avellaneda",
+            "latitude": "-34.664634704589844",
+            "longitude": "-58.366737365722656"
+          },
+          {
+            "direccion": "Adolfo Alsina 649",
+            "localidad": "Burzaco",
+            "latitude": "-34.82815933227539",
+            "longitude": "-58.39365768432617"
+          },
+          {
+            "direccion": "9 de Julio 102",
+            "localidad": "Bernal",
+            "latitude": "-34.7115478515625",
+            "longitude": "-58.28230667114258"
+          },
+          {
+            "direccion": "Avenida 25 de Mayo 398",
+            "localidad": "Lanus Oeste",
+            "latitude": "-34.707916259765625",
+            "longitude": "-58.39687728881836"
+          },
+          {
+            "direccion": "Avenida San Martín 3300",
+            "localidad": "Lanus Oeste",
+            "latitude": "-34.70507049560547",
+            "longitude": "-58.416038513183594"
+          },
+          {
+            "direccion": "General Olazábal 4602",
+            "localidad": "Lanus",
+            "latitude": "-34.69570541381836",
+            "longitude": "-58.432579040527344"
+          },
+          {
+            "direccion": "Avenida San Martín 4151",
+            "localidad": "Lanus Oeste",
+            "latitude": "-34.71181869506836",
+            "longitude": "-58.4251594543457"
+          },
+          {
+            "direccion": "Avenida Hipólito Yrigoyen 3765",
+            "localidad": "Lanus Oeste",
+            "latitude": "-34.69895935058594",
+            "longitude": "-58.39232635498047"
+          },
+          {
+            "direccion": "Bernardo de Monteagudo 3299",
+            "localidad": "Florencio Varela",
+            "latitude": "-34.80991744995117",
+            "longitude": "-58.27463912963867"
+          },
+          {
+            "direccion": "Hipólito Yrigoyen 6201",
+            "localidad": "Remedios de Escalada",
+            "latitude": "-34.72737121582031",
+            "longitude": "-58.395870208740234"
+          },
+          {
+            "direccion": "Avenida Hipólito Yrigoyen 4583",
+            "localidad": "Lanus Oeste",
+            "latitude": "-34.70782470703125",
+            "longitude": "-58.39212417602539"
+          },
+          {
+            "direccion": "Crisólogo Larralde 4602",
+            "localidad": "Avellaneda",
+            "latitude": "-34.55961990356445",
+            "longitude": "-58.48818588256836"
+          },
+          {
+            "direccion": "Avenida Manuel Belgrano 900",
+            "localidad": "Avellaneda",
+            "latitude": "-34.6666374206543",
+            "longitude": "-58.364830017089844"
+          },
+          {
+            "direccion": "Marco Avellaneda 2502",
+            "localidad": "Remedios de Escalada",
+            "latitude": "-34.71453857421875",
+            "longitude": "-58.41560363769531"
+          },
+          {
+            "direccion": "Avenida San Martín 3737",
+            "localidad": "Lanus Oeste",
+            "latitude": "-34.709232330322266",
+            "longitude": "-58.420101165771484"
+          },
+          {
+            "direccion": "Adolfo Alsina 998",
+            "localidad": "Burzaco",
+            "latitude": "-34.8281364440918",
+            "longitude": "-58.389400482177734"
+          },
+          {
+            "direccion": "Avenida Bartolomé Mitre 844",
+            "localidad": "Avellaneda",
+            "latitude": "-34.66291046142578",
+            "longitude": "-58.36386489868164"
+          },
+          {
+            "direccion": "Virgen de Itatí 919",
+            "localidad": "Banfield",
+            "latitude": "-34.722434997558594",
+            "longitude": "-58.435585021972656"
+          },
+          {
+            "direccion": "Avenida General Pinto 4743",
+            "localidad": "Lanus",
+            "latitude": "-34.73136520385742",
+            "longitude": "-58.35094451904297"
+          },
+          {
+            "direccion": "Coronel Warnes 3861",
+            "localidad": "Lanus Oeste",
+            "latitude": "-34.67554473876953",
+            "longitude": "-58.42947769165039"
+          },
+          {
+            "direccion": "Avenida Bartolomé Mitre 1100",
+            "localidad": "Avellaneda",
+            "latitude": "-34.66412353515625",
+            "longitude": "-58.361202239990234"
+          },
+          {
+            "direccion": "Juan Manuel de Rosas 2212",
+            "localidad": "Ingeniero Budge",
+            "latitude": "-34.737876892089844",
+            "longitude": "-58.47584533691406"
+          }
+        ],
+        "web": []
+      },
+      "basesCondiciones": "CARTERA DE CONSUMO. PROMOCIÓN VÁLIDA LOS LUNES DESDE EL 12/10/2026 HASTA EL 31/12/2026 INCLUSIVE. LA PROMOCIÓN CONSTA DE 10% DE REINTEGRO CON TOPE DE $10.000 POR USUARIO POR MES. VÁLIDA PARA CLIENTES QUE ABONEN SUS COMPRAS EN HASTA 3 CUOTAS CON TARJETAS DE CRÉDITO EMITIDAS POR BBVA. EXCLUSIVO PARA PAGOS REALIZADOS A TRAVÉS DE APP BBVA ESCANEANDO UN QR MODO. LA PRESENTE PROMOCIÓN ES VÁLIDA SÓLO PARA CONSUMOS DE TIPO FAMILIAR. EL REINTEGRO SE ACREDITARÁ DENTRO DE LOS 60 DÍAS POSTERIORES A LA COMPRA EN TU CAJA DE AHORROS ACTIVA EN BBVA Y VINCULADA A MODO. PARA PODER RECIBIR EL REINTEGRO, QUIEN REALIZA LA COMPRA DEBE SER TITULAR DE UNA CAJA DE AHORROS ACTIVA EN BBVA Y DICHA CUENTA DEBE ENCONTRARSE VINCULADA A MODO. ACUMULA ÚNICAMENTE CON PROMOCIONES DE MODO. LA PROMOCIÓN NO APLICA A PAGOS REALIZADOS A TRAVÉS DE OTRAS BILLETERAS VIRTUALES Y/O PLATAFORMAS DE PAGO ONLINE (POR EJEMPLO MERCADO PAGO, UALÁ, ETC.). LOS ACCIONISTAS DE BANCO BBVA ARGENTINA S.A. LIMITAN SU RESPONSABILIDAD A LA INTEGRACIÓN DE LAS ACCIONES SUSCRIPTAS LEY 19.550 Y LEY 25.738. CUIT 30-50000319-3. AVDA.CÓRDOBA 111- PISO 31 CABA - CP 1054AAA.",
+      "diasPromo": "1,0,0,0,0,0,0",
+      "vigencia": "Del 12/10/2026 hasta 31/12/2026",
+      "grupoTarjeta": "Tarjetas de crédito BBVA",
+      "tiempoAcreditacion": null,
+      "esModo": false
+    }
+  },
+  {
+    "source": "bbva",
+    "source_id": "88313",
+    "scraped_at": "2026-10-19T14:52:35.131326+00:00",
+    "source_url": "https://go.bbva.com.ar/willgo/fgo/API/v3/communication/88313",
+    "catalog": {
+      "id": "88313",
+      "imagen": "https://go.bbva.com.ar/fgo/sites/default/files/imagen/comercio/18983_carrefour_320x320.png",
+      "cabecera": "Carrefour QR Modo 10%",
+      "subcabecera": ". .Promoción válida desde 14-10-2026 hasta 28-10-2026",
+      "idCampania": "",
+      "esCampania": false,
+      "esCampaniaMadre": false,
+      "fechaDesde": "2026-10-14",
+      "fechaHasta": "2026-10-28",
+      "diasPromo": null,
+      "montoTope": "10000",
+      "grupoTarjeta": "Tarjetas de crédito y débito BBVA"
+    },
+    "detail": {
+      "id": "88313",
+      "imagen": "https://go.bbva.com.ar/fgo/sites/default/files/imagen/comercio/18983_carrefour_320x320.png",
+      "cabecera": "Carrefour QR Modo 10%",
+      "beneficios": [
+        {
+          "cuota": 0,
+          "tope": "10000",
+          "tipoTope": "Usuario",
+          "frecuenciaTope": "Por Vigencia de la Promocion",
+          "requisitos": [
+            "Para compras mayores a $15.000.\nMiércoles.\nPagando desde APP BBVA con QR MODO. Recibí el reintegro en tu caja de ahorros."
+          ]
+        }
+      ],
+      "canalesVenta": {
+        "sucursales": [],
+        "web": [
+          {
+            "name": "Carrefour",
+            "url": "https://www.modo.com.ar/promos/carrefour-hiper-market-express-oct26"
+          }
+        ]
+      },
+      "basesCondiciones": "LA PROMOCIÓN CONSTA DE 10% DE REINTEGRO para compras mayores a $15.000 CON TOPE DE $10.000 POR USUARIO POR MES. VÁLIDA PARA CLIENTES QUE ABONEN SUS COMPRAS EN un pago CON TARJETAS EMITIDAS POR BBVA. EXCLUSIVO PARA PAGOS REALIZADOS A TRAVÉS DE APP BBVA ESCANEANDO UN QR MODO. LA PRESENTE PROMOCIÓN ES VÁLIDA SÓLO PARA CONSUMOS DE TIPO FAMILIAR. EL REINTEGRO SE ACREDITARÁ DENTRO DE LOS 60 DÍAS POSTERIORES A LA COMPRA EN TU CAJA DE AHORROS ACTIVA EN BBVA Y VINCULADA A MODO. PARA PODER RECIBIR EL REINTEGRO, QUIEN REALIZA LA COMPRA DEBE SER TITULAR DE UNA CAJA DE AHORROS ACTIVA EN BBVA Y DICHA CUENTA DEBE ENCONTRARSE VINCULADA A MODO. SI QUIEN REALIZA LA COMPRA ES ADICIONAL DE TARJETA DE CREDITO Y NO POSEE UNA CAJA DE AHORROS EN BBVA, EL REINTEGRO SE ACREDITARÁ EN LA CAJA DE AHORROS ACTIVA EN BBVA DEL TITULAR DE LA TARJETA DE CREDITO. DICHA CAJA DE AHORROS DEBE ENCONTRARSE VINCULADA A MODO. ACUMULA ÚNICAMENTE CON PROMOCIONES DE MODO. LA PROMOCIÓN NO APLICA A PAGOS REALIZADOS A TRAVÉS DE OTRAS BILLETERAS VIRTUALES Y/O PLATAFORMAS DE PAGO ONLINE (POR EJEMPLO MERCADO PAGO, UALÁ, ETC.). LOS ACCIONISTAS DE BANCO BBVA ARGENTINA S.A. LIMITAN SU RESPONSABILIDAD A LA INTEGRACIÓN DE LAS ACCIONES SUSCRIPTAS LEY 19.550 Y LEY 25.738. CUIT 30-50000319-3. AVDA.CÓRDOBA 111- PISO 31 CABA - CP 1054AAA.",
+      "diasPromo": null,
+      "vigencia": "Del 14/10/2026 hasta 28/10/2026",
+      "grupoTarjeta": "Tarjetas de crédito y débito BBVA",
+      "tiempoAcreditacion": null,
+      "esModo": true
+    }
+  }
+]

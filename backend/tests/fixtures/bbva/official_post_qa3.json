@@ -1,0 +1,317 @@
+[
+  {
+    "source": "bbva",
+    "source_id": "84091",
+    "scraped_at": "2026-10-19T14:47:53.576515+00:00",
+    "source_url": "https://go.bbva.com.ar/willgo/fgo/API/v3/communication/84091",
+    "catalog": {
+      "id": "84091",
+      "imagen": "https://go.bbva.com.ar/fgo/sites/default/files/imagen/beneficio/84091_bonvi_recu_317x112.png",
+      "cabecera": "Bonvivir Descuentos en suscripciones",
+      "subcabecera": "20% de descuento. .Promoción válida desde 19-03-2026 hasta 31-12-2026",
+      "idCampania": "",
+      "esCampania": false,
+      "esCampaniaMadre": false,
+      "fechaDesde": "2026-03-19",
+      "fechaHasta": "2026-12-31",
+      "diasPromo": null,
+      "montoTope": null,
+      "grupoTarjeta": "Tarjetas de crédito BBVA"
+    },
+    "detail": {
+      "id": "84091",
+      "imagen": "https://go.bbva.com.ar/fgo/sites/default/files/imagen/beneficio/84091_bonvi_recu_317x112.png",
+      "cabecera": "Bonvivir Descuentos en suscripciones",
+      "beneficios": [
+        {
+          "cuota": 0,
+          "tope": null,
+          "tipoTope": "ninguno",
+          "frecuenciaTope": " ",
+          "requisitos": [
+            "Beneficio sumándote al club de vinos Bonvivir a través del botón Venta online o desde https://bonvivir.com/club/bbva\nDisfrutá 20% off por un año en las selecciones Exclusiva 6 botellas y Alta Gama 4 botellas.  \nRecibí 2 copas de regalo BBVA marca Volf en la segunda entrega (hasta agotar stock)."
+          ]
+        }
+      ],
+      "canalesVenta": {
+        "sucursales": [],
+        "web": [
+          {
+            "name": "Bonvivir",
+            "url": "https://bonvivir.com/club/bbva"
+          }
+        ]
+      },
+      "basesCondiciones": "Cartera de consumo. Promoción valida desde el 19/03/2026 al 31/12/2026 podes obtener 20% de descuento durante las primeras 12 entregas en la suscripción de Bonvivir, aplicable a las opciones Selección Exclusiva de 6 botellas o Selección Alta Gama de 4 botellas. Para acceder, deberas suscribirte exclusivamente con tus tarjetas de credito Visa y/o Mastercard emitidas por BBVA a traves de https://bonvivir.com/club/bbva. El descuento se vera reflejado en la etapa de busqueda y aplicara al momento de realizar el pago de la suscripcion. \nCon la suscripcion o hasta agotar stock de 300 sets de copas, recibiras un set de 2 copas con el logo BBVA marca Volf en la segunda entrega. \nEl descuento aplicara exclusivamente en las primeras 12 entregas de la suscripcion. A partir de la entrega número 13, se cobrara el precio vigente al momento de la facturacion. \nEl precio de la suscripcion puede variar a lo largo de los meses. PARA MAS INFORMACION O LIMITACIONES APLICABLES CONSULTE EN https://bonvivir.com/club/bbva.\nNo valido para venta online en https://bonvivir.com. LOS ACCIONISTAS DE BANCO BBVA ARGENTINA S.A. LIMITAN SU RESPONSABILIDAD A LA INTEGRACION DE LAS ACCIONES SUSCRIPTAS A LA LEY 19.550 Y LEY 25.738. CUIT 30-50000319-3. AVENIDA CÓRDOBA 111 PISO 31 CABA - CP: 1054.",
+      "diasPromo": null,
+      "vigencia": "Del 19/03/2026 hasta 31/12/2026",
+      "grupoTarjeta": "Tarjetas de crédito BBVA",
+      "tiempoAcreditacion": null,
+      "esModo": false
+    }
+  },
+  {
+    "source": "bbva",
+    "source_id": "88081",
+    "scraped_at": "2026-10-19T14:47:53.618769+00:00",
+    "source_url": "https://go.bbva.com.ar/willgo/fgo/API/v3/communication/88081",
+    "catalog": {
+      "id": "88081",
+      "imagen": "https://assets.caasbbva.com/content/dam/caas/argentina/beneficios/comunicacion/colectivosMC_317x112.png",
+      "cabecera": "Colectivos 100% de descuento",
+      "subcabecera": ". .Promoción válida desde 01-10-2026 hasta 31-10-2026",
+      "idCampania": "",
+      "esCampania": false,
+      "esCampaniaMadre": false,
+      "fechaDesde": "2026-10-01",
+      "fechaHasta": "2026-10-31",
+      "diasPromo": null,
+      "montoTope": "25000",
+      "grupoTarjeta": "Tarjetas de crédito BBVA"
+    },
+    "detail": {
+      "id": "88081",
+      "imagen": "https://assets.caasbbva.com/content/dam/caas/argentina/beneficios/comunicacion/colectivosMC_317x112.png",
+      "cabecera": "Colectivos 100% de descuento",
+      "beneficios": [
+        {
+          "cuota": 0,
+          "tope": "25000",
+          "tipoTope": "Usuario",
+          "frecuenciaTope": "Por Vigencia de la Promocion",
+          "requisitos": [
+            "Tope: $25.000 por mes exclusivo Mastercard con NFC Apple Pay y Google Pay.\nEn todas las líneas de colectivo.\nRecibí el reintegro en tu resumen."
+          ]
+        }
+      ],
+      "canalesVenta": {
+        "sucursales": [],
+        "web": [
+          {
+            "name": "Colectivos",
+            "url": "https://www.mastercard.com.ar/es-ar/consumidores/conozca-nuestras-ofertas-y-promociones.html"
+          }
+        ]
+      },
+      "basesCondiciones": "100% de reintegro pagando exclusivamente con tu tarjeta MASTERCARD BBVA desde tu celular con NFC  a través Apple Pay (disponible sólo en IOS), Google Pay, Modo Contacless (disponible solo en Android) sin contacto al pagar en las líneas de colectivo habilitadas. Tope de reintegro: $25.000  por cliente por mes. La Promoción estará vigente en la República Argentina desde las 00:01 del 1 de OCTUBRE de 2026 y hasta las 23:59 del 31 de OCTUBRE 2026 inclusive o hasta agotar stock asignado a esta promoción, lo que ocurra primero. Para más información consulte términos, condiciones y locales adheridos en go.bbva.com.ar. El reintegro se acreditará dentro de los 30 días posteriores en el resumen de tu tarjeta mastercard. LOS ACCIONISTAS DE BANCO BBVA ARGENTINA S.A. LIMITAN SU RESPONSABILIDAD A LA INTEGRACIÓN DE LAS ACCIONES SUSCRIPTAS LEY 19.550 Y LEY 25.738 CUIT 30-50000319-3. AVDA.CÓRDOBA 111- PISO 31 CABA - CP C1054AAA",
+      "diasPromo": null,
+      "vigencia": "Del 01/10/2026 hasta 31/10/2026",
+      "grupoTarjeta": "Tarjetas de crédito BBVA",
+      "tiempoAcreditacion": null,
+      "esModo": false
+    }
+  },
+  {
+    "source": "bbva",
+    "source_id": "88051",
+    "scraped_at": "2026-10-19T14:47:53.658338+00:00",
+    "source_url": "https://go.bbva.com.ar/willgo/fgo/API/v3/communication/88051",
+    "catalog": {
+      "id": "88051",
+      "imagen": "https://go.bbva.com.ar/fgo/sites/default/files/imagen/comercio/3998_assistcard_320x320.png",
+      "cabecera": "Assist Card 12 cuotas",
+      "subcabecera": "  .Promoción válida desde 01-10-2026 hasta 31-10-2026",
+      "idCampania": "",
+      "esCampania": false,
+      "esCampaniaMadre": false,
+      "fechaDesde": "2026-10-01",
+      "fechaHasta": "2026-10-31",
+      "diasPromo": "1,1,1,1,1,1,1",
+      "montoTope": null,
+      "grupoTarjeta": "Tarjetas de crédito BBVA"
+    },
+    "detail": {
+      "id": "88051",
+      "imagen": "https://go.bbva.com.ar/fgo/sites/default/files/imagen/comercio/3998_assistcard_320x320.png",
+      "cabecera": "Assist Card 12 cuotas",
+      "beneficios": [
+        {
+          "cuota": 12,
+          "tope": null,
+          "tipoTope": " ",
+          "frecuenciaTope": " ",
+          "requisitos": [
+            "Ingresando en https://www.assistcard.com/ar/b2c/asistencia-al-viajero-bbva-argentina.\nLínea exclusiva de venta telefónica 5555-2009."
+          ]
+        }
+      ],
+      "canalesVenta": {
+        "sucursales": [],
+        "web": [
+          {
+            "name": "Assist Card",
+            "url": "WWW.ASSIST-CARD.COM/AR"
+          }
+        ]
+      },
+      "basesCondiciones": "EL DESCUENTO YA SE ENCUENTRA PUBLICADO EN LA ETAPA DE BÚSQUEDA. ABONANDO UNICAMENTE CON TARJETA DE CRÉDITO BBVA. FECHA LÍMITE DE INICIO DE VIGENCIA 31/03/2027. SIN LÍMITE DE STOCK. ADQUIRIENDO EXCLUSIVAMENTE A TRAVÉS DE LOS CANALES DIRECTOS HABILITADOS: (I) UN PRODUCTO ASSIST CARD CLASSIC, PREMIUM, PRIVILEGED MODALIDAD DIARIA (HASTA 30 DÍAS) OBTENGA UN BENEFICIO DEL 40% (CUARENTA POR CIENTO) DE DESCUENTO SOBRE LA TARIFA PUBLICADA. (II) UN PRODUCTO ASSIST CARD MILLION MODALIDAD DIARIA (HASTA 30 DÍAS) OBTENGA UN BENEFICIO DEL 45% (CUARENTA Y CINCO POR CIENTO) DE DESCUENTO SOBRE LA TARIFA PUBLICADA. (III) UN PRODUCTO ASSIST CARD INFINITY MODALIDAD DIARIA (HASTA 30 DÍAS) OBTENGA UN BENEFICIO DEL 55% (CINCUENTA Y CINCO POR CIENTO) DE DESCUENTO SOBRE LA TARIFA PUBLICADA. PROMOCIÓN (I),(II) Y (III) NO VÁLIDA PARA MODALIDAD ANUAL MÚLTIPLES VIAJES, LONG STAY DAILY, LONG STAY ANUAL, PACK FAMILIAR NI PARA CONTRATACIONES DE AMPLIACIONES DE LÍMITES DE ASISTENCIAS Y/O CONTRATACIÓN DE BENEFICIOS ADICIONALES; NI ACUMULABLES CON NINGÚN OTRO BENEFICIO SALVO LO DISPUESTO EXPRESAMENTE EN LA PRESENTE PROMOCION. (IV) UN PRODUCTO ASSIST CARD CLASSIC, PREMIUM, PRIVILEGED, MILLION, INFINITY MODALIDAD ANUAL MÚLTIPLES VIAJES OBTENGA UN BENEFICIO DEL 50% (CINCUENTA POR CIENTO) DE DESCUENTO SOBRE LA TARIFA PUBLICADA. PROMOCIÓN NO VÁLIDA PARA MODALIDAD DAILY, LONG STAY DAILY, LONG STAY ANUAL NI PARA CONTRATACIONES DE AMPLIACIONES DE LÍMITES DE ASISTENCIAS Y/O CONTRATACIÓN DE BENEFICIOS ADICIONALES; NI ACUMULABLE CON NINGÚN OTRO BENEFICIO SALVO LO DISPUESTO EXPRESAMENTE EN LA PRESENTE PROMOCION. A SU VEZ, PARA EL PUNTO (IV) OBTENGA GRATIS HASTA 4 PRODUCTOS COMO MÁXIMO CON IDÉNTICA VIGENCIA, MODALIDAD Y CARACTERÍSTICAS AL ABONADO PARA SUS HIJOS MENORES DE 21 AÑOS. PARA LOS PUNTOS (I), (II), (III) Y (IV) EL DESCUENTO YA SE ENCUENTRA INCLUIDO AL PRECIO FINAL PUBLICADO EN EL PORTAL WEB. (V) UN PRODUCTO ASSIST CARD CLASSIC, PREMIUM, PRIVILEGED, MILLION, INFINITY BAJO CUALQUIER MODALIDAD, OBTENGA UN BENEFICIO ADICIONAL DEL 20% (VEINTE POR CIENTO) DE DESCUENTO SOBRE EL PRECIO FINAL PUBLICADO ABONANDO EL PRODUCTO ASSIST CARD EN 1 (UN) SOLO PAGO CON TARJETAS DE CRÉDITO AMERICAN EXPRESS, VISA O MASTERCARD. PROMOCIÓN VÁLIDA ÚNICAMENTE PARA PAGOS REALIZADOS EN UN SOLO PAGO CON TARJETAS DE CRÉDITO AMERICAN EXPRESS, VISA O MASTERCARD, NO APLICABLE A CUOTAS. LOS SERVICIOS ASSIST CARD TIENEN LIMITACIONES EXCLUSIVAS SEGÚN EL TIPO DE PRODUCTO ADQUIRIDO. APLICAN LAS LIMITACIONES Y EXCLUSIONES DE USO HABITUAL Y/O LEGAL EN EL PAÍS EN QUE SE EMITA EL PRODUCTO ASSIST CARD. A PARTIR DE LOS 70 AÑOS INCLUSIVE SE APLICA UN INCREMENTO DEL 50% (CINCUENTA POR CIENTO) SOBRE LAS TARIFAS Y A PARTIR DE LOS 75 AÑOS INCLUSIVE SE APLICA UN INCREMENTO DEL 100% (CIEN POR CIENTO). LOS SERVICIOS Y PRODUCTOS SE RIGEN POR CONDICIONES GENERALES QUE SE INFORMAN CON LA COMPRA DE CADA PRODUCTO ASSIST CARD Y SE HALLAN A SU DISPOSICIÓN INGRESANDO EN EL PORTAL WEB, ASÍ COMO EN LAS OFICINAS COMERCIALES Y LOCALES DE ASSIST CARD DONDE PUEDEN SER SOLICITADAS EN FORMA PERSONAL, TELEFÓNICAMENTE O POR E-MAIL. LAS ENFERMEDADES PREEXISTENTES TIENEN EXCLUSIONES Y LIMITACIONES. ASSIST CARD NO ES UNA EMPRESA DE SEGUROS, SINO QUE ACTÚA EN CALIDAD DE TOMADORA EN BENEFICIO DE SUS CLIENTES. ASSIST CARD ARGENTINA S.A. DE SERVICIOS, ARIAS Nº 3751°, PISO 10, CP 1430, CABA. CUIT 33-54799242-9. DOMICILIO ELECTRONICO: ATENCIONALCLIENTE&#64;ASSISTCARD.COM. LOS ACCIONISTAS DE BANCO BBVA ARGENTINA S.A. LIMITAN SU RESPONSABILIDAD A LA INTEGRACIÓN DE LAS ACCIONES SUSCRIPTAS LEY 19.550 Y LEY 25.738. CUIT 30-50000319-3. AVDA.CÓRDOBA 111- PISO 31 CABA - CP 1054AAA",
+      "diasPromo": "1,1,1,1,1,1,1",
+      "vigencia": "Del 01/10/2026 hasta 31/10/2026",
+      "grupoTarjeta": "Tarjetas de crédito BBVA",
+      "tiempoAcreditacion": null,
+      "esModo": false
+    }
+  },
+  {
+    "source": "bbva",
+    "source_id": "88215",
+    "scraped_at": "2026-10-19T14:47:53.697027+00:00",
+    "source_url": "https://go.bbva.com.ar/willgo/fgo/API/v3/communication/88215",
+    "catalog": {
+      "id": "88215",
+      "imagen": "https://assets.caasbbva.com/content/dam/caas/argentina/beneficios/campania/hardrockboca_317x112.png",
+      "cabecera": "Hard Rock Café Boca Juniors 40%",
+      "subcabecera": "  .Promoción válida desde 01-10-2026 hasta 31-10-2026",
+      "idCampania": "",
+      "esCampania": false,
+      "esCampaniaMadre": false,
+      "fechaDesde": "2026-10-01",
+      "fechaHasta": "2026-10-31",
+      "diasPromo": null,
+      "montoTope": "30000",
+      "grupoTarjeta": "Tarjetas de crédito BBVA"
+    },
+    "detail": {
+      "id": "88215",
+      "imagen": "https://assets.caasbbva.com/content/dam/caas/argentina/beneficios/campania/hardrockboca_317x112.png",
+      "cabecera": "Hard Rock Café Boca Juniors 40%",
+      "beneficios": [
+        {
+          "cuota": 0,
+          "tope": "30000",
+          "tipoTope": "Transaccion",
+          "frecuenciaTope": " ",
+          "requisitos": [
+            "Pagando con Mastercard NFC (ApplePay y GooglePay). Recibí el reintegro en el resumen de tu tarjeta de crédito."
+          ]
+        }
+      ],
+      "canalesVenta": {
+        "sucursales": [],
+        "web": [
+          {
+            "name": "Hard Rock Café Boca Juniors",
+            "url": "https://www.mastercard.com/ar/es/personal/experience-mastercard/conozca-nuestras-ofertas-y-promociones.html"
+          }
+        ]
+      },
+      "basesCondiciones": "CARTERA DE CONSUMO. PROMOCIÓN VÁLIDA TODOS LOS DÍAS DEL 01/10/2026 AL 31/10/2026.  LA PROMOCIÓN CONSTA DE 30% DE REINTEGRO CON TOPE $30.000 POR CLIENTE POR TRANSACCION. VÁLIDA PARA CLIENTES QUE ABONEN SUS COMPRAS EN UN PAGO CON TARJETA DE CRÉDITO MASTERCARD EMITIDAS POR BBVA. EXCLUSIVO PARA PAGOS REALIZADOS DESDE EL CELULAR VÍA NFC (&#34;SIN CONTACTO&#34;) A TRAVÉS APPLE PAY (DISPONIBLE SÓLO EN IOS), GOOGLE PAY, O MODO CONTACTLESS. NO APLICA PARA COMPRAS REALIZADAS CON TARJETAS DE CRÉDITO ADICIONALES. LA PRESENTE PROMOCIÓN ES VÁLIDA SÓLO PARA CONSUMOS DE TIPO FAMILIAR Y NO SE ACUMULA A OTRAS PROMOCIONES. LA BONIFICACIÓN SE ACREDITARÁ  DENTRO DE LOS 60 DÍAS POSTERIORES A LA COMPRA EN EL RESUMEN DE LA TARJETA DE CREDITO. EN EL CASO DE DUDA SOBRE EL DESTINO DEL CONSUMO, EL BANCO SE RESERVA LA FACULTAD DE NO ACREDITAR EL MONTO DE LA BONIFICACIÓN HASTA TANTO SE ACLARE EL MISMO. LA PROMOCIÓN NO APLICA A PAGOS REALIZADOS A TRAVÉS DE BILLETERAS VIRTUALES Y/O PLATAFORMAS DE PAGO ONLINE (POR EJEMPLO, PAYPAL, TODO PAGO, MERCADO PAGO, UALÁ, ETC.). LOS ACCIONISTAS DE BANCO BBVA ARGENTINA S.A. LIMITAN SU RESPONSABILIDAD A LA INTEGRACIÓN DE LAS ACCIONES SUSCRIPTAS LEY 19.550 Y LEY 25.738. CUIT 30-50000319-3. AVDA.CÓRDOBA 111- PISO 31 CABA - CP 1054AAA",
+      "diasPromo": null,
+      "vigencia": "Del 01/10/2026 hasta 31/10/2026",
+      "grupoTarjeta": "Tarjetas de crédito BBVA",
+      "tiempoAcreditacion": null,
+      "esModo": false
+    }
+  },
+  {
+    "source": "bbva",
+    "source_id": "87567",
+    "scraped_at": "2026-10-19T14:47:53.747215+00:00",
+    "source_url": "https://go.bbva.com.ar/willgo/fgo/API/v3/communication/87567",
+    "catalog": {
+      "id": "87567",
+      "imagen": "https://assets.caasbbva.com/content/dam/caas/argentina/beneficios/campania/bocamaster_317x112.png",
+      "cabecera": "Boca Juniors - Cuota Social Cuota Social",
+      "subcabecera": ". .Promoción válida desde 28-08-2026 hasta 31-12-2026",
+      "idCampania": "2534",
+      "esCampania": false,
+      "esCampaniaMadre": false,
+      "fechaDesde": "2026-08-28",
+      "fechaHasta": "2026-12-31",
+      "diasPromo": null,
+      "montoTope": "8000",
+      "grupoTarjeta": "Tarjetas de crédito y débito BBVA"
+    },
+    "detail": {
+      "id": "87567",
+      "imagen": "https://assets.caasbbva.com/content/dam/caas/argentina/beneficios/campania/bocamaster_317x112.png",
+      "cabecera": "Boca Juniors - Cuota Social Cuota Social",
+      "beneficios": [
+        {
+          "cuota": 0,
+          "tope": "8000",
+          "tipoTope": "Usuario",
+          "frecuenciaTope": "Por Mes",
+          "requisitos": [
+            "Exclusivo Mastercard adhiriendo el débito automático de tu cuota social."
+          ]
+        }
+      ],
+      "canalesVenta": {
+        "sucursales": [
+          {
+            "direccion": "Brandsen 805",
+            "localidad": "Capital Federal",
+            "latitude": "-34.63663101196289",
+            "longitude": "-58.364742279052734"
+          }
+        ],
+        "web": []
+      },
+      "basesCondiciones": "PROMOCIÓN VÁLIDA PARA COMPRAS CON TARJETAS EMITIDAS POR BBVA. PARA COMPRAS CON TARJETA DE CRÉDITO  MASTERCARD, LAS COMPRAS EN CUOTAS PUEDEN REALIZARSE ÚNICAMENTE CON TARJETA DE CRÉDITO.NO PARTICIPAN TARJETAS VISA PURCHASING, DISTRIBUTION Y CORPORATE. LA PRESENTE PROMOCIÓN ES VÁLIDA SÓLO PARA CONSUMOS DE TIPO FAMILIAR, Y NO SE ACUMULA A OTRAS PROMOCIONES. EN EL CASO DE DUDA SOBRE EL DESTINO DEL CONSUMO. VÁLIDO PARA PAGOS REALIZADOS CON TARJETAS DEL BBVA A TRAVÉS DE MODO. LA PROMOCIÓN NO APLICA A PAGOS REALIZADOS A TRAVÉS DE OTRAS BILLETERAS VIRTUALES Y/O PLATAFORMAS DE PAGO ONLINE (POR EJEMPLO, PAYPAL, TODO PAGO, MERCADO PAGO, UALÁ, ETC.). NO PARTICIPAN COMPRAS REALIZADAS CON UNA FINANCIACIÓN DE 3, 6 , 9, 12 Y 18 MESES BAJO EL PROGRAMA DE FOMENTO AL CONSUMO Y A LA PRODUCCIÓN DE BIENES Y SERVICIOS, DENOMINADO &#39;AHORA 12&#39;. \nLOS ACCIONISTAS DE BANCO BBVA ARGENTINA S.A. LIMITAN SU RESPONSABILIDAD A LA INTEGRACIÓN DE LAS ACCIONES SUSCRIPTAS LEY 19.550 Y LEY 25.738 CUIT 30-50000319-3. AVDA.CÓRDOBA 111- PISO 31 CABA - CP C1054AAA",
+      "diasPromo": null,
+      "vigencia": "Del 28/08/2026 hasta 31/12/2026",
+      "grupoTarjeta": "Tarjetas de crédito y débito BBVA",
+      "tiempoAcreditacion": null,
+      "esModo": false
+    }
+  },
+  {
+    "source": "bbva",
+    "source_id": "87797",
+    "scraped_at": "2026-10-19T14:47:53.834695+00:00",
+    "source_url": "https://go.bbva.com.ar/willgo/fgo/API/v3/communication/87797",
+    "catalog": {
+      "id": "87797",
+      "imagen": "https://go.bbva.com.ar/fgo/sites/default/files/imagen/comercio/7360_river_311x208.png",
+      "cabecera": "Colegio River Plate 10%",
+      "subcabecera": "Con tarjetas de crédito de BBVA .Promoción válida desde 01-10-2026 hasta 30-11-2026",
+      "idCampania": "",
+      "esCampania": false,
+      "esCampaniaMadre": false,
+      "fechaDesde": "2026-10-01",
+      "fechaHasta": "2026-11-30",
+      "diasPromo": "1,1,1,1,1,1,1",
+      "montoTope": null,
+      "grupoTarjeta": "Tarjetas de crédito BBVA"
+    },
+    "detail": {
+      "id": "87797",
+      "imagen": "https://go.bbva.com.ar/fgo/sites/default/files/imagen/comercio/7360_river_311x208.png",
+      "cabecera": "Colegio River Plate 10%",
+      "beneficios": [
+        {
+          "cuota": 0,
+          "tope": null,
+          "tipoTope": "Usuario",
+          "frecuenciaTope": "Por Mes",
+          "requisitos": [
+            "Todos los días 10% de reintegro con tarjetas de crédito de BBVA"
+          ]
+        }
+      ],
+      "canalesVenta": {
+        "sucursales": [
+          {
+            "direccion": "Avenida Presidente Figueroa Alcorta 7597",
+            "localidad": "Capital Federal",
+            "latitude": "-34.54530715942383",
+            "longitude": "-58.44977569580078"
+          }
+        ],
+        "web": [
+          {
+            "name": "Colegio River Plate",
+            "url": "https://bbva.info/RiverInstituto"
+          }
+        ]
+      },
+      "basesCondiciones": "CARTERA DE CONSUMO.  PROMOCIÓN VÁLIDA DEL  01/10/2026 AL 30/11/2026   PARA LA REPÚBLICA ARGENTINA, SÓLO PARA CONSUMOS DE TIPO FAMILIAR. NO SE ACUMULA OTRAS PROMOCIONES. NO PARTICIPAN TARJETAS VISA PURCHASING, DISTRIBUTION Y CORPORATE. LA PROMOCIÓN NO APLICA A PAGOS REALIZADOS A TRAVÉS DE  BILLETERAS VIRTUALES Y/O PLATAFORMAS DE PAGO ONLINE (POR EJEMPLO,PAYPAL, TODO PAGO, MERCADO PAGO, UALÁ, ETC.)  25% DE DESCUENTO EN TUS COMPRAS Y 3 CUOTAS  EN TIENDA RIVER ÚNICAMENTE SI PAGÁS CON TUS TARJETAS DE CRÉDITO BBVA.  LA BONIFICACIÓN SE ACREDITARÁ DENTRO DE LOS 60 DÍAS DE CERRADA LA PRIMERA LIQUIDACIÓN DONDE FIGURE EL CONSUMO. EJEMPLO: PARA UNA COMPRA DE $ 9.000.- VERÁS UN CONSUMO DE $ 3000.- DEL PRIMER AL TERCER RESUMEN Y LA BONIFICACIÓN DE $2.250.- SE VERÁ REFLEJADA EN LA PRIMERA O SEGUNDA LIQUIDACIÓN POSTERIOR AL CONSUMO.  TASA NOMINAL ANUAL (TNA) 0.00%, TASA EFECTIVO ANUAL (TEA) 0.00%. COSTO FINANCIERO TOTAL NOMINAL ANUAL (CFTNA) 0.00%.",
+      "diasPromo": "1,1,1,1,1,1,1",
+      "vigencia": "Del 01/10/2026 hasta 30/11/2026",
+      "grupoTarjeta": "Tarjetas de crédito BBVA",
+      "tiempoAcreditacion": null,
+      "esModo": false
+    }
+  }
+]

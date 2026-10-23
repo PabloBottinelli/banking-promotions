@@ -15,7 +15,7 @@ BACKEND_DIR = Path(__file__).resolve().parents[1]
 SOURCES = {
     "banco_del_sol": (BancoDelSolNormalizer, True),
     "buepp": (BueppNormalizer, True),
-    "bbva": (BBVANormalizer, False),
+    "bbva": (BBVANormalizer, True),
     "patagonia": (PatagoniaNormalizer, True),
 }
 

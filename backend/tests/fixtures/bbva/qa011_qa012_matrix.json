@@ -1,0 +1,233 @@
+{
+  "provenance": "Exact inputs and expectations recovered from prior promotion_qa session /root/bbva_qa005_audit; synthetic data; prior result 24 passed / 14 failed; individual exception text was not retained for the 24 successful controls.",
+  "cases": [
+    {
+      "id": "inline-strong-tope",
+      "terms": "20% de reintegro. <strong>Ejemplo: compra con</strong> tope de $12.000. Tope de $20.000 por cliente por mes.",
+      "expected_block": false,
+      "previous_result": "false_positive"
+    },
+    {
+      "id": "inline-strong-80% ",
+      "terms": "20% de reintegro. <strong>Ejemplo: compra con</strong> 80% de reintegro con tope de $12.000. Tope de $20.000 por cliente por mes.",
+      "expected_block": false,
+      "previous_result": "false_positive"
+    },
+    {
+      "id": "inline-span-tope",
+      "terms": "20% de reintegro. <span>Ejemplo: compra con</span> tope de $12.000. Tope de $20.000 por cliente por mes.",
+      "expected_block": false,
+      "previous_result": "false_positive"
+    },
+    {
+      "id": "inline-span-80% ",
+      "terms": "20% de reintegro. <span>Ejemplo: compra con</span> 80% de reintegro con tope de $12.000. Tope de $20.000 por cliente por mes.",
+      "expected_block": false,
+      "previous_result": "false_positive"
+    },
+    {
+      "id": "inline-b-tope",
+      "terms": "20% de reintegro. <b>Ejemplo: compra con</b> tope de $12.000. Tope de $20.000 por cliente por mes.",
+      "expected_block": false,
+      "previous_result": "false_positive"
+    },
+    {
+      "id": "inline-b-80% ",
+      "terms": "20% de reintegro. <b>Ejemplo: compra con</b> 80% de reintegro con tope de $12.000. Tope de $20.000 por cliente por mes.",
+      "expected_block": false,
+      "previous_result": "false_positive"
+    },
+    {
+      "id": "inline-em-tope",
+      "terms": "20% de reintegro. <em>Ejemplo: compra con</em> tope de $12.000. Tope de $20.000 por cliente por mes.",
+      "expected_block": false,
+      "previous_result": "false_positive"
+    },
+    {
+      "id": "inline-em-80% ",
+      "terms": "20% de reintegro. <em>Ejemplo: compra con</em> 80% de reintegro con tope de $12.000. Tope de $20.000 por cliente por mes.",
+      "expected_block": false,
+      "previous_result": "false_positive"
+    },
+    {
+      "id": "inline-i-tope",
+      "terms": "20% de reintegro. <i>Ejemplo: compra con</i> tope de $12.000. Tope de $20.000 por cliente por mes.",
+      "expected_block": false,
+      "previous_result": "false_positive"
+    },
+    {
+      "id": "inline-i-80% ",
+      "terms": "20% de reintegro. <i>Ejemplo: compra con</i> 80% de reintegro con tope de $12.000. Tope de $20.000 por cliente por mes.",
+      "expected_block": false,
+      "previous_result": "false_positive"
+    },
+    {
+      "id": "inline-u-tope",
+      "terms": "20% de reintegro. <u>Ejemplo: compra con</u> tope de $12.000. Tope de $20.000 por cliente por mes.",
+      "expected_block": false,
+      "previous_result": "false_positive"
+    },
+    {
+      "id": "inline-u-80% ",
+      "terms": "20% de reintegro. <u>Ejemplo: compra con</u> 80% de reintegro con tope de $12.000. Tope de $20.000 por cliente por mes.",
+      "expected_block": false,
+      "previous_result": "false_positive"
+    },
+    {
+      "id": "bounded-12",
+      "terms": "20% de reintegro. Ejemplo: compra con tope de $12.000<hr>Tope de $16.000 por cliente por mes.",
+      "expected_block": true,
+      "previous_result": "correct_block"
+    },
+    {
+      "id": "bounded-13",
+      "terms": "20% de reintegro. Ejemplo: compra con tope de $12.000<hr>Tope de $20.000 por cliente por mes.",
+      "expected_block": false,
+      "previous_result": "correct_accept"
+    },
+    {
+      "id": "bounded-14",
+      "terms": "20% de reintegro. <div>Ejemplo: compra con tope de $12.000</div><section>Tope de $16.000 por cliente por mes.</section>",
+      "expected_block": true,
+      "previous_result": "correct_block"
+    },
+    {
+      "id": "bounded-15",
+      "terms": "20% de reintegro. <div>Ejemplo: compra con tope de $12.000</div><section>Tope de $20.000 por cliente por mes.</section>",
+      "expected_block": false,
+      "previous_result": "correct_accept"
+    },
+    {
+      "id": "bounded-16",
+      "terms": "20% de reintegro. <table><tr><td>Ejemplo: compra con tope de $12.000</td><td>Tope de $16.000 por cliente por mes.</td></tr></table>",
+      "expected_block": true,
+      "previous_result": "correct_block"
+    },
+    {
+      "id": "bounded-17",
+      "terms": "20% de reintegro. <table><tr><td>Ejemplo: compra con tope de $12.000</td><td>Tope de $20.000 por cliente por mes.</td></tr></table>",
+      "expected_block": false,
+      "previous_result": "correct_accept"
+    },
+    {
+      "id": "bounded-18",
+      "terms": "20% de reintegro. <table><tr><td>Ejemplo: compra con tope de $12.000</td></tr><tr><td>Tope de $16.000 por cliente por mes.</td></tr></table>",
+      "expected_block": true,
+      "previous_result": "correct_block"
+    },
+    {
+      "id": "bounded-19",
+      "terms": "20% de reintegro. <table><tr><td>Ejemplo: compra con tope de $12.000</td></tr><tr><td>Tope de $20.000 por cliente por mes.</td></tr></table>",
+      "expected_block": false,
+      "previous_result": "correct_accept"
+    },
+    {
+      "id": "bounded-20",
+      "terms": "20% de reintegro. (Ejemplo: compra con tope de $12.000) Tope de $16.000 por cliente por mes.",
+      "expected_block": true,
+      "previous_result": "correct_block"
+    },
+    {
+      "id": "bounded-21",
+      "terms": "20% de reintegro. (Ejemplo: compra con tope de $12.000) Tope de $20.000 por cliente por mes.",
+      "expected_block": false,
+      "previous_result": "correct_accept"
+    },
+    {
+      "id": "bounded-22",
+      "terms": "20% de reintegro. Ejemplo: compra con tope de $12.000; Tope de $16.000 por cliente por mes.",
+      "expected_block": true,
+      "previous_result": "correct_block"
+    },
+    {
+      "id": "bounded-23",
+      "terms": "20% de reintegro. Ejemplo: compra con tope de $12.000; Tope de $20.000 por cliente por mes.",
+      "expected_block": false,
+      "previous_result": "correct_accept"
+    },
+    {
+      "id": "bounded-24",
+      "terms": "20% de reintegro. Ejemplo: compra con tope de $12.000. Tope de $16.000 por cliente por mes.",
+      "expected_block": true,
+      "previous_result": "correct_block"
+    },
+    {
+      "id": "bounded-25",
+      "terms": "20% de reintegro. Ejemplo: compra con tope de $12.000. Tope de $20.000 por cliente por mes.",
+      "expected_block": false,
+      "previous_result": "correct_accept"
+    },
+    {
+      "id": "bounded-26",
+      "terms": "20% de reintegro. Ejemplo: compra con tope de $12.000<br>Tope de $16.000 por cliente por mes.",
+      "expected_block": true,
+      "previous_result": "correct_block"
+    },
+    {
+      "id": "bounded-27",
+      "terms": "20% de reintegro. Ejemplo: compra con tope de $12.000<br>Tope de $20.000 por cliente por mes.",
+      "expected_block": false,
+      "previous_result": "correct_accept"
+    },
+    {
+      "id": "punctuation-\". \"-16.000",
+      "terms": "20% de reintegro. Ejemplo: una compra de $100.000 recibe $20.000. Tope de $16.000 por cliente por mes.",
+      "expected_block": true,
+      "previous_result": "correct_block"
+    },
+    {
+      "id": "punctuation-\". \"-20.000",
+      "terms": "20% de reintegro. Ejemplo: una compra de $100.000 recibe $20.000. Tope de $20.000 por cliente por mes.",
+      "expected_block": false,
+      "previous_result": "correct_accept"
+    },
+    {
+      "id": "punctuation-\"; \"-16.000",
+      "terms": "20% de reintegro. Ejemplo: una compra de $100.000 recibe $20.000; Tope de $16.000 por cliente por mes.",
+      "expected_block": true,
+      "previous_result": "correct_block"
+    },
+    {
+      "id": "punctuation-\"; \"-20.000",
+      "terms": "20% de reintegro. Ejemplo: una compra de $100.000 recibe $20.000; Tope de $20.000 por cliente por mes.",
+      "expected_block": false,
+      "previous_result": "correct_accept"
+    },
+    {
+      "id": "punctuation-\"\\n\"-16.000",
+      "terms": "20% de reintegro. Ejemplo: una compra de $100.000 recibe $20.000\nTope de $16.000 por cliente por mes.",
+      "expected_block": true,
+      "previous_result": "correct_block"
+    },
+    {
+      "id": "punctuation-\"\\n\"-20.000",
+      "terms": "20% de reintegro. Ejemplo: una compra de $100.000 recibe $20.000\nTope de $20.000 por cliente por mes.",
+      "expected_block": false,
+      "previous_result": "correct_accept"
+    },
+    {
+      "id": "punctuation-\"! \"-16.000",
+      "terms": "20% de reintegro. Ejemplo: una compra de $100.000 recibe $20.000! Tope de $16.000 por cliente por mes.",
+      "expected_block": true,
+      "previous_result": "false_negative"
+    },
+    {
+      "id": "punctuation-\"! \"-20.000",
+      "terms": "20% de reintegro. Ejemplo: una compra de $100.000 recibe $20.000! Tope de $20.000 por cliente por mes.",
+      "expected_block": false,
+      "previous_result": "correct_accept"
+    },
+    {
+      "id": "punctuation-\"? \"-16.000",
+      "terms": "20% de reintegro. Ejemplo: una compra de $100.000 recibe $20.000? Tope de $16.000 por cliente por mes.",
+      "expected_block": true,
+      "previous_result": "false_negative"
+    },
+    {
+      "id": "punctuation-\"? \"-20.000",
+      "terms": "20% de reintegro. Ejemplo: una compra de $100.000 recibe $20.000? Tope de $20.000 por cliente por mes.",
+      "expected_block": false,
+      "previous_result": "correct_accept"
+    }
+  ]
+}

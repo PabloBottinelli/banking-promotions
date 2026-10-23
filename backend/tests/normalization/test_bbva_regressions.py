@@ -1,0 +1,546 @@
+from copy import deepcopy
+from decimal import Decimal
+import json
+from pathlib import Path
+
+import pytest
+
+from normalization.sources.bbva import BBVANormalizer
+
+FIXTURES = Path(__file__).parents[1] / 'fixtures' / 'bbva'
+
+
+@pytest.fixture
+def official():
+    return {r['source_id']: r for r in json.loads((FIXTURES/'official_sample.json').read_text(encoding='utf8'))}
+
+
+@pytest.fixture
+def post_qa3():
+    return {r['source_id']: r for r in json.loads((FIXTURES/'official_post_qa3.json').read_text(encoding='utf8'))}
+
+
+@pytest.mark.parametrize('value,expected', [
+    ('15.000','15000'), ('15000','15000'), (15000,'15000'), (15000.25,'15000.25'),
+    ('$15.000,50','15000.50'), ('15.000.000,50','15000000.50'), ('15.000.000','15000000'),
+    ('15000,50','15000.50'), ('15000.50','15000.50'), ('$15,000.50','15000.50'),
+    ('ARS 15.000,50','15000.50'), ('15\u00a0000,50','15000.50'),
+    ('15,000',None), ('1.23.456',None), ('12,345,678',None), ('15000.123',None),
+    (True,None), ('NaN',None), (float('inf'),None), ('-15',None), ('',None), (None,None),
+])
+def test_amount_formats_are_decimal_and_ambiguous_values_unknown(value,expected):
+    assert BBVANormalizer()._normalize_amount(value) == (Decimal(expected) if expected is not None else None)
+
+
+def test_official_cashback_and_financing_are_compatible(official):
+    p=BBVANormalizer().normalize(official['88114'])
+    assert [(b.type,b.percentage,b.installment_options) for b in p.benefits] == [('cashback',Decimal(20),[]),('installments',None,[6])]
+    assert p.benefits[1].interest_free is None
+    assert p.days_of_week==['tuesday']
+    assert p.limits[0].amount==50000 and p.limits[0].period=='monthly'
+    assert [(m.issuer,m.card_type,m.wallet,m.payment_rail) for m in p.payment_methods]==[('BBVA','credit','BBVA','qr')]
+    assert p.valid_from.isoformat()=='2026-10-06'
+    assert p.model_dump(mode='json')['limits'][0]['amount']=='50000'
+
+
+def test_official_vea_minimum_is_strict_and_friday_not_unknown(official):
+    p=BBVANormalizer().normalize(official['86278'])
+    assert p.days_of_week==['friday'] and p.applies_every_day is None
+    cap,minimum=p.limits
+    assert cap.amount==25000 and cap.period=='monthly'
+    assert minimum.type=='minimum_purchase' and minimum.amount==100000
+    assert 'estrictamente superior' in minimum.description
+    assert p.online is None
+    assert p.payment_methods[0].card_type is None
+
+
+def test_official_nfc_requires_specific_card_and_wallets(official):
+    p=BBVANormalizer().normalize(official['88410'])
+    assert p.scope=='category' and p.category=='Gastronomía'
+    assert {(m.network,m.card_type,m.wallet,m.payment_rail) for m in p.payment_methods} == {
+        ('visa','credit','Apple Pay','nfc'),('visa','credit','Google Pay','nfc'),('visa','credit','MODO','nfc')}
+    assert p.online is None
+    assert p.applies_every_day is True
+    assert p.limits[0].amount==100000 and p.limits[0].scope=='account'
+    assert p.limits[0].shared_group_id
+    assert 'Black+ Travel / Black+ All' in p.specific_conditions
+    assert 'ADICIONALES' in p.specific_conditions
+    assert p.requires_merchant_verification and p.promotion_url
+
+
+def test_official_legal_qr_does_not_create_nfc_product(official):
+    p=BBVANormalizer().normalize(official['88098'])
+    assert {m.payment_rail for m in p.payment_methods}=={'qr'}
+    assert p.limits[0].type=='minimum_purchase' and p.limits[0].amount==250000
+    assert p.benefits[0].installment_options==[9]
+
+
+def test_official_grimoldi_conditional_financing_is_separate(official):
+    p,alt=BBVANormalizer().normalize_many(official['87593'])
+    assert p.source_id=='87593' and alt.source_id=='87593:financing-minimum'
+    assert p.promotion_group_id==alt.promotion_group_id=='87593'
+    assert [(b.type,b.percentage,b.installment_options) for b in p.benefits]==[('cashback',Decimal(20),[]),('installments',None,[6])]
+    assert not any(l.type=='minimum_purchase' for l in p.limits)
+    assert len(alt.benefits)==1 and alt.benefits[0].installment_options==[9]
+    assert alt.benefits[0].interest_free is True
+    assert alt.limits[0].amount==250000 and alt.limits[0].type=='minimum_purchase'
+    assert not any(l.type=='monetary_cap' for l in alt.limits)
+    assert all(m.network=='visa' for m in p.payment_methods)
+    with pytest.raises(ValueError,match='normalize_many'): BBVANormalizer().normalize(official['87593'])
+
+
+def test_official_cabify_text_only_cap_usage_and_black(official):
+    p=BBVANormalizer().normalize(official['87336'])
+    assert p.benefits[0].type=='discount' and p.benefits[0].percentage==100
+    assert [(l.type,l.amount,l.quantity) for l in p.limits]==[('monetary_cap',Decimal(50000),None),('usage_count',None,1)]
+    assert p.limits[1].period=='promotion'
+    assert p.payment_methods[0].network=='mastercard'
+    assert 'MCBBVA2026' in p.specific_conditions and 'Black' in p.specific_conditions
+    assert p.online is None
+
+
+def test_official_fixed_coupon_minimum_stock_and_codes(official):
+    p=BBVANormalizer().normalize(official['88152'])
+    assert p.benefits[0].amount==7500 and p.benefits[0].currency=='ARS'
+    assert [(l.type,l.amount,l.quantity) for l in p.limits]==[('minimum_purchase',Decimal(15000),None),('stock',None,15000)]
+    assert p.payment_methods[0].network=='mastercard'
+    assert 'BOCAMASTERF14' in p.specific_conditions and '48 horas' in p.specific_conditions
+    assert '01/20/2026' in p.terms
+
+
+def test_official_cinemark_keeps_two_product_benefits_separate(official):
+    tickets,combos=BBVANormalizer().normalize_many(official['76010'])
+    assert len(tickets.benefits)==1 and tickets.benefits[0].type=='other'
+    assert '2x1' in tickets.benefits[0].description
+    assert tickets.online is True and tickets.applies_every_day is True
+    assert tickets.limits[0].type=='usage_count' and tickets.limits[0].quantity==2
+    assert combos.source_id=='76010:combos'
+    assert combos.benefits[0].type=='discount' and combos.benefits[0].percentage==20
+    assert 'Combos seleccionados' in combos.benefits[0].description
+    assert all(b.percentage is None for b in tickets.benefits)
+
+
+def test_official_lottery_is_not_lost(official):
+    p,extra=BBVANormalizer().normalize_many(official['88407'])
+    assert p.benefits[0].type=='other'
+    assert 'Australian Open 2027' in p.benefits[0].description
+    assert p.payment_methods==[] and p.scope=='other'
+    assert 'Mastercard' not in p.benefits[0].description
+    assert '400 millas por chance' in p.specific_conditions
+    assert 'Salta, Neuquén, Río Negro, Tierra del Fuego, Jujuy, Formosa y Mendoza' in p.specific_conditions
+    assert extra.source_id=='88407:mastercard-extra-chances'
+    assert extra.benefits[0].description.startswith('5 chances extra')
+    assert extra.payment_methods[0].network=='mastercard'
+    assert extra.limits[0].quantity==1 and extra.limits[0].scope=='person'
+
+
+def test_official_unidentifiable_benefit_blocks_instead_of_misusing_cap(official):
+    with pytest.raises(ValueError,match='benefit not identifiable'):
+        BBVANormalizer().normalize_many(official['87567'])
+
+
+def test_official_cap_period_conflict_is_visible(official):
+    p=BBVANormalizer().normalize(official['88050'])
+    assert p.limits[0].period is None
+    assert 'Fuente inconsistente' in p.specific_conditions
+
+
+def synthetic(official):
+    r=deepcopy(official['88114'])
+    r['detail']['basesCondiciones']='Promoción válida con las tarjetas indicadas en requisitos. Los beneficios son acumulables entre sí.'
+    r['detail']['beneficios']=[{'descripcion':'20% de reintegro','requisitos':['Con tarjetas de crédito BBVA'],'cuota':0},
+                             {'descripcion':'6 cuotas sin interés','requisitos':['Con tarjetas de crédito BBVA'],'cuota':6}]
+    r['catalog']['montoTope']=None
+    return r
+
+
+def test_synthetic_multiple_compatible_nodes_preserve_all_benefits(official):
+    r=synthetic(official)
+    p=BBVANormalizer().normalize_many(r)
+    assert len(p)==1 and [b.type for b in p[0].benefits]==['cashback','installments']
+    assert p[0].benefits[1].interest_free is True
+
+
+def test_synthetic_payment_variants_have_stable_ids_across_rates_and_order(official):
+    r=synthetic(official)
+    r['detail']['beneficios'][0]['requisitos']=['Exclusivo tarjetas de crédito Visa BBVA']
+    r['detail']['beneficios'][1].update(descripcion='30% de descuento',cuota=0,requisitos=['Exclusivo tarjetas de crédito Mastercard BBVA'])
+    n=BBVANormalizer()
+    before={p.payment_methods[0].network:p.source_id for p in n.normalize_many(r)}
+    r['detail']['beneficios'].reverse()
+    r['detail']['beneficios'][0]['descripcion']='40% de descuento'
+    r['detail']['cabecera']='Marketing actualizado'
+    after={p.payment_methods[0].network:p.source_id for p in n.normalize_many(r)}
+    assert before==after and len(set(after.values()))==2
+
+
+def test_synthetic_ambiguous_compatibility_blocks(official):
+    r=synthetic(official)
+    r['detail']['beneficios'][1].update(descripcion='30% de reintegro',cuota=0)
+    with pytest.raises(ValueError,match='ambiguous benefit'): BBVANormalizer().normalize_many(r)
+
+
+def test_synthetic_nfc_mention_alone_does_not_create_wallets(official):
+    r=synthetic(official)
+    r['detail']['beneficios']=r['detail']['beneficios'][:1]
+    r['detail']['beneficios'][0]['requisitos']=['Pagá mediante NFC o con tus tarjetas físicas BBVA']
+    p=BBVANormalizer().normalize(r)
+    assert all(m.wallet is None and m.payment_rail is None for m in p.payment_methods)
+
+
+def test_synthetic_ambiguous_cap_blocks_without_numeric_fallback(official):
+    r=deepcopy(official['88114']);r['detail']['beneficios'][0]['tope']='15,000'
+    with pytest.raises(ValueError,match='ambiguous or invalid cap'): BBVANormalizer().normalize_many(r)
+
+
+def test_synthetic_unknown_dates_and_exclusion_weekdays(official):
+    r=deepcopy(official['88114'])
+    r['catalog']['fechaDesde']=r['catalog']['fechaHasta']=None
+    r['catalog']['diasPromo']=r['detail']['diasPromo']=None
+    r['detail']['beneficios'][0]['requisitos']=['Responsabilidad de BBVA. No aplica viernes.']
+    r['detail']['basesCondiciones']='Promoción BBVA. No aplica sábados.'
+    p=BBVANormalizer().normalize(r)
+    assert p.valid_from is None and p.valid_to is None
+    assert p.days_of_week==[] and p.applies_every_day is None
+
+
+def test_synthetic_vehicle_name_not_a_multibuy_benefit(official):
+    r=deepcopy(official['88114']);r['detail']['cabecera']='Comercio 4x4 20%'
+    assert all(b.type!='other' for b in BBVANormalizer().normalize(r).benefits)
+
+
+def test_official_export_uses_variants_and_blocks_partial_overwrite(official,tmp_path):
+    from normalization.export_json import export_source
+    path=tmp_path/'bbva_promotions.json'
+    path.write_text(json.dumps([official['87593']]),encoding='utf8')
+    result=export_source('bbva',input_dir=tmp_path)
+    assert result['raw_count']==1 and result['normalized_count']==2
+    output=Path(result['output']);old=output.read_bytes()
+    path.write_text(json.dumps([official['87593'],official['87567']]),encoding='utf8')
+    with pytest.raises(RuntimeError,match='87567'): export_source('bbva',input_dir=tmp_path)
+    assert output.read_bytes()==old
+
+
+@pytest.mark.parametrize('source_id', ['87862','87734'])
+def test_official_puppis_gift_does_not_restrict_general_financing(official,source_id):
+    financing,gift=BBVANormalizer().normalize_many(official[source_id])
+    assert financing.limits==[]
+    assert financing.days_of_week==(['friday','saturday'] if source_id=='87734' else [])
+    assert financing.payment_methods[0].network is None
+    assert [b.type for b in gift.benefits]==['installments','gift']
+    assert gift.benefits[0].installment_options==[3]
+    assert 'COMEDERO' in gift.benefits[1].description
+    assert gift.limits[0].amount==70000 and 'igual o superior' in gift.limits[0].description
+    assert gift.limits[1].quantity==1 and gift.limits[1].scope=='person'
+    assert gift.payment_methods[0].network=='mastercard'
+    assert gift.physical is True and gift.online is False
+    assert gift.days_of_week==['friday','saturday']
+    assert gift.source_id==source_id+':gift'
+    assert financing.requires_merchant_verification and gift.requires_merchant_verification
+
+
+def test_official_oncity_gift_has_its_own_minimum_weekdays_and_products(official):
+    financing,gift=BBVANormalizer().normalize_many(official['88015'])
+    assert financing.benefits[0].installment_options==[12] and financing.benefits[0].interest_free is True
+    assert financing.limits==[] and financing.days_of_week==[]
+    assert 'productos seleccionados' in financing.specific_conditions
+    assert gift.benefits[0].type=='gift' and 'JBL' in gift.benefits[0].description
+    assert gift.limits[0].amount==350000 and 'estrictamente superior' in gift.limits[0].description
+    assert gift.limits[1].quantity==1
+    assert gift.days_of_week==['monday','tuesday','wednesday','thursday','friday']
+    assert gift.online is True and gift.physical is False
+    assert gift.payment_methods[0].network=='mastercard'
+
+
+@pytest.mark.parametrize('source_id',['86498','87700'])
+def test_official_additive_qr_preserves_direct_card_and_account_cap(official,source_id):
+    p=BBVANormalizer().normalize(official[source_id])
+    assert {(m.wallet,m.payment_rail) for m in p.payment_methods}=={(None,'card'),('BBVA','qr')}
+    cap=p.limits[0]
+    assert cap.amount==18000 and cap.scope=='account' and cap.period=='monthly'
+    assert cap.shared_group_id is None
+
+
+def test_official_explicit_network_alternatives_are_not_unknown(official):
+    p=BBVANormalizer().normalize(official['87255'])
+    assert {(m.network,m.card_type,m.issuer) for m in p.payment_methods}=={('visa','credit','BBVA'),('mastercard','credit','BBVA')}
+
+
+@pytest.mark.parametrize('source_id,amount,campaign',[('87865',15000,'2502'),('86320',10000,None)])
+def test_official_shared_caps_are_not_per_merchant(official,source_id,amount,campaign):
+    p=BBVANormalizer().normalize(official[source_id]);cap=p.limits[0]
+    assert cap.amount==amount and cap.scope=='person'
+    assert 'compartido entre los comercios adheridos' in cap.description
+    assert ('COMPARTIDO ENTRE' in p.specific_conditions)
+    assert cap.shared_group_id==(f'bbva:campaign:{campaign}:cap' if campaign else None)
+
+
+@pytest.mark.parametrize('source_id',['88215','87797'])
+def test_official_contradictory_rates_block_instead_of_silent_precedence(official,source_id):
+    with pytest.raises(ValueError,match='conflicting benefit percentage'):
+        BBVANormalizer().normalize_many(official[source_id])
+
+
+@pytest.mark.parametrize('source_id',['87657','84603'])
+def test_official_ticket_quantities_have_transaction_scope(official,source_id):
+    p=BBVANormalizer().normalize(official[source_id])
+    usage=next(l for l in p.limits if l.type=='usage_count')
+    assert usage.quantity==6 and usage.period=='transaction' and usage.scope=='transaction'
+    assert usage.description=='Entradas por transacción'
+    if source_id=='87657':
+        stock=next(l for l in p.limits if l.type=='stock')
+        assert stock.quantity==300 and stock.period=='presale'
+        assert 'no limita la venta general' in stock.description
+        assert 'Venta general:' in p.specific_conditions
+
+
+def test_official_cabify_trip_count_and_discount_semantics(official):
+    p=BBVANormalizer().normalize(official['87856'])
+    assert p.benefits[0].type=='discount' and p.benefits[0].percentage==50
+    usage=next(l for l in p.limits if l.type=='usage_count')
+    assert usage.quantity==5 and usage.scope=='person' and usage.period=='promotion'
+    assert usage.description=='Viajes elegibles por usuario'
+
+
+def test_synthetic_changed_gift_amount_keeps_identity_and_general_financing(official):
+    r=deepcopy(official['87862']);n=BBVANormalizer();before=n.normalize_many(r)
+    r['detail']['basesCondiciones']=r['detail']['basesCondiciones'].replace('$70.000','$80.000')
+    r['detail']['beneficios'][0]['requisitos']=[s.replace('$70.000','$80.000') for s in r['detail']['beneficios'][0]['requisitos']]
+    after=n.normalize_many(r)
+    assert [p.source_id for p in before]==[p.source_id for p in after]
+    assert after[0].limits==[] and after[1].limits[0].amount==80000
+
+
+def test_synthetic_lottery_quantities_and_card_are_not_defaults(official):
+    r=deepcopy(official['88407'])
+    r['detail']['basesCondiciones']=r['detail']['basesCondiciones'].replace('400 (cuatrocientas)','500 (quinientas)').replace('5 chances extra','7 chances extra').replace('1 canje por cliente','2 canjes por cliente').replace('Mastercard','Visa').replace('18 años','21 años')
+    r['detail']['beneficios'][0]['requisitos']=[s.replace('Mastercard','Visa').replace('5 chances extra','7 chances extra') for s in r['detail']['beneficios'][0]['requisitos']]
+    general,extra=BBVANormalizer().normalize_many(r)
+    assert general.payment_methods==[] and '500 millas por chance' in general.specific_conditions
+    assert 'mayores de 21 años' in general.specific_conditions
+    assert extra.payment_methods[0].network=='visa'
+    assert extra.benefits[0].description.startswith('7 chances extra') and extra.limits[0].quantity==2
+
+
+def test_official_mileage_redemption_is_not_credit_and_caps_are_not_money(official):
+    variants=BBVANormalizer().normalize_many(official['88097'])
+    assert len(variants)==2
+    caps={p.limits[0].quantity for p in variants}
+    assert caps=={3100,16000}
+    for p in variants:
+        assert p.valid_to.isoformat()=='2026-10-30'
+        assert '2026-10-31' in p.specific_conditions and 'requiere revisión' in p.specific_conditions
+        assert 'no aplica a compras con tarjeta de crédito' in p.specific_conditions
+        assert p.benefits[0].type=='discount' and p.benefits[0].percentage==20
+        assert p.benefits[0].description.startswith('hasta un 20%')
+        assert p.limits[0].type=='other' and 'Millas BBVA' in p.limits[0].description
+        assert all(l.amount is None and l.currency is None for l in p.limits)
+        assert p.limits[1].type=='stock' and p.limits[1].quantity==1500 and p.limits[1].shared_group_id
+        assert p.limits[2].type=='usage_count' and p.limits[2].quantity==1 and p.limits[2].scope=='person'
+        assert p.payment_methods[0].payment_rail=='other'
+        assert p.payment_methods[0].card_type is None
+        assert 'Portal' in p.payment_methods[0].raw_name and p.online is True
+    assert variants[0].limits[1].shared_group_id==variants[1].limits[1].shared_group_id
+    assert variants[0].limits[2].shared_group_id==variants[1].limits[2].shared_group_id
+    assert variants[0].promotion_group_id==variants[1].promotion_group_id=='88097'
+
+
+def test_synthetic_mileage_limits_stock_and_date_are_parsed_not_defaults(official):
+    r=deepcopy(official['88097']);n=BBVANormalizer();before=n.normalize_many(r)
+    r['detail']['basesCondiciones']=r['detail']['basesCondiciones'].replace('3.100','4.200').replace('16.000','17.000').replace('1500 cupos','1800 cupos').replace('30/10/2026','29/10/2026')
+    with pytest.raises(ValueError, match='unresolved non-monetary cap benefit assignment'):
+        n.normalize_many(r)
+    r['detail']['beneficios'][0]['requisitos'] = [text.replace('3.100', '4.200').replace('16.000', '17.000') for text in r['detail']['beneficios'][0]['requisitos']]
+    after=n.normalize_many(r)
+    assert [p.source_id for p in before]==[p.source_id for p in after]
+    assert {p.limits[0].quantity for p in after}=={4200,17000}
+    assert all(p.limits[1].quantity==1800 and p.valid_to.isoformat()=='2026-10-29' for p in after)
+
+
+def test_official_travel_financing_has_two_product_specific_options(official):
+    packages,flights=BBVANormalizer().normalize_many(official['87863'])
+    assert packages.source_id=='87863:packages-accommodation' and flights.source_id=='87863:domestic-flights'
+    assert packages.benefits[0].installment_options==[9]
+    assert flights.benefits[0].installment_options==[3]
+    assert packages.benefits[0].interest_free is flights.benefits[0].interest_free is True
+    assert 'PAQUETES Y ALOJAMIENTOS EN ARGENTINA' in packages.specific_conditions
+    assert 'VUELOS CON DESTINO Y ORIGEN EN ARGENTINA' in flights.specific_conditions
+    assert 'HASTA 9 CUOTAS' not in flights.specific_conditions
+    for p in (packages,flights):
+        assert p.online is True and 'Portal de Millas' in p.specific_conditions
+        assert p.payment_methods[0].card_type=='credit' and p.payment_methods[0].issuer=='BBVA'
+        assert p.applies_every_day is True
+
+
+def test_official_assistcard_all_dimensions_are_represented(official):
+    r=official['88051']
+    for text in ['40%', '45%', '55%', '50%', '20%', 'GRATIS HASTA 4 PRODUCTOS', 'NO APLICABLE A CUOTAS']:
+        assert text in r['detail']['basesCondiciones']
+    variants=BBVANormalizer().normalize_many(r)
+    assert len(variants)==10
+    assert {b.percentage for p in variants for b in p.benefits if b.type=='discount'}=={Decimal(v) for v in [40,45,55,50,20]}
+    assert all(p.promotion_group_id=='88051' for p in variants)
+
+
+@pytest.mark.parametrize('terms,reason', [
+    ('Producto A: 15% de descuento. Producto B: 25% de descuento.', 'benefit rates'),
+    ('Hasta 3 cuotas para alimentos. Hasta 6 cuotas para electrodomésticos.', 'installment options'),
+])
+def test_synthetic_unrepresented_multi_product_dimensions_never_emit_first_only(official,terms,reason):
+    r=deepcopy(official['88114']);r['detail']['basesCondiciones']=terms
+    with pytest.raises(ValueError,match=reason): BBVANormalizer().normalize_many(r)
+
+
+def test_official_bonvivir_subscription_discount_gift_stock_and_networks(post_qa3):
+    r=post_qa3['84091'];p=BBVANormalizer().normalize(r)
+    assert [(b.type,b.percentage) for b in p.benefits]==[('discount',Decimal(20)),('gift',None)]
+    assert 'set de 2 copas' in p.benefits[1].description and 'segunda entrega' in p.benefits[1].description
+    assert [(l.type,l.quantity,l.scope) for l in p.limits]==[('stock',300,'campaign'),('usage_count',12,'subscription')]
+    assert 'limita el regalo' in p.limits[0].description
+    assert {(m.network,m.card_type,m.issuer) for m in p.payment_methods}=={('visa','credit','BBVA'),('mastercard','credit','BBVA')}
+    for text in ['Selección Exclusiva de 6 botellas', 'Selección Alta Gama de 4 botellas', 'primeras 12 entregas', 'número 13', 'puede variar', 'https://bonvivir.com/club/bbva', 'No valido para venta online']:
+        assert text in p.specific_conditions
+    assert p.online is True and p.terms==BBVANormalizer()._clean_text(r['detail']['basesCondiciones'])
+    assert len(p.specific_conditions)<1300
+
+
+def test_synthetic_bonvivir_economics_and_deliveries_are_not_defaults(post_qa3):
+    r=deepcopy(post_qa3['84091']);n=BBVANormalizer()
+    r['detail']['basesCondiciones']=r['detail']['basesCondiciones'].replace('20%','17%').replace('300 sets','425 sets').replace('primeras 12','primeras 9').replace('set de 2 copas','set de 3 copas')
+    r['catalog']['subcabecera']=r['catalog']['subcabecera'].replace('20%','17%')
+    r['detail']['beneficios'][0]['requisitos']=[s.replace('20%','17%') for s in r['detail']['beneficios'][0]['requisitos']]
+    p=n.normalize(r)
+    assert p.source_id=='84091' and p.benefits[0].percentage==17
+    assert p.limits[0].quantity==425 and p.limits[1].quantity==9
+    assert '3 copas' in p.benefits[1].description
+    r['detail']['basesCondiciones']=r['detail']['basesCondiciones'].replace('425 sets','muchos sets')
+    with pytest.raises(ValueError,match='gift/stock/delivery'): n.normalize(r)
+
+
+@pytest.mark.parametrize('source_id',['88081','88050'])
+def test_official_cap_conflict_both_directions_never_assert_period(post_qa3,official,source_id):
+    r=(post_qa3 if source_id=='88081' else official)[source_id]
+    p=BBVANormalizer().normalize(r)
+    cap=next(l for l in p.limits if l.type=='monetary_cap')
+    assert cap.period is None and cap.amount==Decimal(r['detail']['beneficios'][0]['tope'])
+    assert 'Fuente inconsistente' in p.specific_conditions and 'Periodicidad sin resolver' in p.specific_conditions
+    assert r['detail']['beneficios'][0]['frecuenciaTope'] in ['Por Mes','Por Vigencia de la Promocion']
+    assert p.terms==BBVANormalizer()._clean_text(r['detail']['basesCondiciones'])
+
+
+def test_synthetic_separate_period_caps_can_coexist_without_false_conflict():
+    n=BBVANormalizer()
+    assert n._cap_period_evidence('monthly',Decimal('25000'),'Tope de $25.000 por mes. Tope de $80.000 por vigencia.')==('monthly',None)
+    assert n._cap_period_evidence('promotion',Decimal('80000'),'Tope de $25.000 por mes. Tope de $80.000 por vigencia.')==('promotion',None)
+    assert n._cap_period_evidence('monthly',Decimal('25000'),'Tope de $25.000 por mes. Tope de $25.000 por vigencia.')==('monthly',None)
+    assert n._cap_period_evidence(None,Decimal('25000'),'Tope de reintegro: $25.000 por cliente por mes.')==('monthly',None)
+
+
+def test_official_assistance_disjoint_products_payment_and_child_benefits(post_qa3):
+    variants=BBVANormalizer().normalize_many(post_qa3['88051'])
+    financing=[p for p in variants if p.source_id.endswith(':financing')]
+    single=[p for p in variants if p.source_id.endswith(':single-payment')]
+    assert len(financing)==5 and len(single)==5 and len({p.source_id for p in variants})==10
+    assert {p.benefits[0].percentage for p in financing}=={None,*[Decimal(v) for v in [40,45,55,50]]}
+    for p in financing:
+        assert [(b.installment_options,b.interest_free) for b in p.benefits if b.type=='installments']==[([12],None)]
+        assert len(p.payment_methods)==1 and p.payment_methods[0].network is None
+        assert not any(b.percentage==20 for b in p.benefits)
+    for p in single:
+        assert not any(b.type=='installments' for b in p.benefits)
+        assert {m.network for m in p.payment_methods}=={'american_express','visa','mastercard'}
+        assert all(m.card_type=='credit' and m.issuer=='BBVA' for m in p.payment_methods)
+        assert any(b.percentage==20 and 'precio final' in b.description for b in p.benefits)
+        assert 'no se suman' in next(b.description for b in p.benefits if b.percentage==20)
+    annual=[p for p in variants if any(b.type=='free_service' for b in p.benefits)]
+    assert len(annual)==2
+    for p in annual:
+        assert 'HIJOS MENORES DE 21 AÑOS' in p.specific_conditions
+        assert p.limits[0].quantity==4 and p.limits[0].scope=='purchased_product'
+        assert p.limits[0].period is None and p.limits[0].shared_group_id is None
+        assert 'IDÉNTICA VIGENCIA, MODALIDAD Y CARACTERÍSTICAS' in p.specific_conditions
+    rest=single[-1]
+    assert len(rest.benefits)==1 and rest.benefits[0].percentage==20
+    assert 'excluye DIARIA (HASTA 30 DÍAS); ANUAL MÚLTIPLES VIAJES' in rest.specific_conditions
+    assert 'No se trasladan las exclusiones de I–IV' in rest.specific_conditions
+    rest_financing=financing[-1]
+    assert len(rest_financing.benefits)==1 and rest_financing.benefits[0].type=='installments'
+    assert rest_financing.benefits[0].installment_options==[12]
+    assert not rest_financing.limits
+    assert 'excluye DIARIA (HASTA 30 DÍAS); ANUAL MÚLTIPLES VIAJES' in rest_financing.specific_conditions
+    assert all(name in rest_financing.specific_conditions for name in ['classic','premium','privileged','million','infinity'])
+    for p in variants:
+        assert p.valid_from.isoformat()=='2026-10-01' and p.valid_to.isoformat()=='2026-10-31'
+        assert '31/03/2027' in p.specific_conditions and '70 AÑOS' in p.specific_conditions and '75 AÑOS' in p.specific_conditions
+        assert p.online is True and p.applies_every_day is True
+        assert p.terms==BBVANormalizer()._clean_text(post_qa3['88051']['detail']['basesCondiciones'])
+
+
+def test_synthetic_assistance_changed_rates_quantity_age_dates_and_networks(post_qa3):
+    n=BBVANormalizer();r=deepcopy(post_qa3['88051']);before=n.normalize_many(r)
+    r['detail']['basesCondiciones']=r['detail']['basesCondiciones'].replace('40%','38%').replace('20%','18%').replace('HASTA 4 PRODUCTOS','HASTA 3 PRODUCTOS').replace('21 AÑOS','19 AÑOS').replace('31/03/2027','28/02/2027').replace('AMERICAN EXPRESS, VISA O MASTERCARD','VISA O MASTERCARD')
+    r['detail']['beneficios'][0]['cuota']=9
+    after=n.normalize_many(r)
+    assert [p.source_id for p in before]==[p.source_id for p in after]
+    assert after[0].benefits[0].percentage==38
+    assert after[0].benefits[1].installment_options==[9]
+    assert after[-2].benefits[0].installment_options==[9]
+    assert after[1].benefits[1].percentage==18
+    assert {m.network for m in after[1].payment_methods}=={'visa','mastercard'}
+    assert after[6].limits[0].quantity==3 and 'HIJOS MENORES DE 19 AÑOS' in after[6].specific_conditions
+    assert all('28/02/2027' in p.specific_conditions for p in after)
+    r['detail']['basesCondiciones']=r['detail']['basesCondiciones'].replace('(IV) UN PRODUCTO','(VI) UN PRODUCTO')
+    with pytest.raises(ValueError,match='clauses incomplete'): n.normalize_many(r)
+
+
+@pytest.mark.parametrize('kind',['gift','stock','networks','deliveries','rate'])
+def test_synthetic_commercial_review_detects_omissions(post_qa3,kind):
+    n=BBVANormalizer();r=post_qa3['84091'];p=n.normalize(r)
+    if kind=='gift': p.benefits=[b for b in p.benefits if b.type!='gift']
+    if kind=='stock': p.limits=[l for l in p.limits if l.type!='stock']
+    if kind=='networks': p.payment_methods=p.payment_methods[:1]
+    if kind=='deliveries': p.specific_conditions='Suscripción elegible.'
+    if kind=='rate': p.benefits[0].percentage=Decimal(99)
+    assert n.review_normalized(r,[p])
+
+
+def test_synthetic_commercial_review_detects_period_warning_omitted(post_qa3):
+    n=BBVANormalizer();r=post_qa3['88081'];p=n.normalize(r)
+    p.specific_conditions='Requisitos conservados; advertencia eliminada.'
+    assert 'contradictory cap periodicity warning omitted' in n.review_normalized(r,[p])
+    p.limits[0].period='promotion'
+    assert 'contradictory cap periodicity asserted or warning omitted' in n.review_normalized(r,[p])
+
+
+@pytest.mark.parametrize('kind',['extra','children','age','incompatible'])
+def test_synthetic_assistance_review_detects_extra_eligibility_and_incompatibility(post_qa3,kind):
+    n=BBVANormalizer();r=post_qa3['88051'];variants=n.normalize_many(r)
+    if kind=='extra': variants[1].benefits=variants[1].benefits[:1]
+    if kind=='children': variants[6].benefits=[b for b in variants[6].benefits if b.type!='free_service']
+    if kind=='age': variants[6].specific_conditions=variants[6].specific_conditions.replace('21 AÑOS','99 AÑOS')
+    if kind=='incompatible': variants[1].benefits.append(variants[0].benefits[1])
+    assert n.review_normalized(r,variants)
+
+
+@pytest.mark.parametrize('source_id,reason',[('88215','conflicting benefit percentage'),('87797','conflicting benefit percentage'),('87567','benefit not identifiable')])
+def test_official_remaining_blocks_confirmed_by_fresh_detail(post_qa3,source_id,reason):
+    with pytest.raises(ValueError,match=reason): BBVANormalizer().normalize_many(post_qa3[source_id])
+
+
+def test_synthetic_single_payment_legal_clause_blocks_unconditional_financing(official):
+    r=deepcopy(official['88114'])
+    r['detail']['basesCondiciones']='20% de reintegro. Válida para clientes que abonen sus compras en un pago con tarjetas de crédito emitidas por BBVA.'
+    with pytest.raises(ValueError,match='conflicting payment eligibility'): BBVANormalizer().normalize_many(r)
+
+
+def test_synthetic_single_payment_mention_outside_eligibility_is_not_a_conflict(official):
+    r=deepcopy(official['88114'])
+    r['detail']['basesCondiciones']='20% de reintegro y 6 cuotas. Ejemplo de otro producto abonado en un pago con tarjetas de crédito BBVA.'
+    p=BBVANormalizer().normalize(r)
+    assert [b.type for b in p.benefits]==['cashback','installments']
+
+
+def test_synthetic_unknown_additional_gift_never_silently_omitted(official):
+    r=deepcopy(official['88114'])
+    r['detail']['basesCondiciones']='20% de reintegro. Además recibís un producto de regalo. Stock de 25 sets.'
+    with pytest.raises(ValueError,match='gift eligibility|commercial representation'): BBVANormalizer().normalize_many(r)

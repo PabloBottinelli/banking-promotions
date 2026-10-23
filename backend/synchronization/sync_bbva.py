@@ -8,6 +8,7 @@ def main():
         source="bbva",
         scraper_class=BBVAScraper,
         normalizer_class=BBVANormalizer,
+        normalize_many=True,
         allow_deactivation=False,
     )
     runner.main()

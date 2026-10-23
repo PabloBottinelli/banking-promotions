@@ -1,0 +1,24 @@
+{
+  "observed_at": "2026-10-22T19:55:17.423169+00:00",
+  "catalog_url": "https://go.bbva.com.ar/willgo/fgo/API/v3/communications?pager={page}",
+  "catalog_pages_requested": 52,
+  "catalog_unique_ids": 1015,
+  "fixture_sha256": "92d128d7538ab254d5d3dc46706d7054bbd39876b20a634e949d83f54d8048dd",
+  "detail_urls": [
+    "https://go.bbva.com.ar/willgo/fgo/API/v3/communication/85446",
+    "https://go.bbva.com.ar/willgo/fgo/API/v3/communication/86124",
+    "https://go.bbva.com.ar/willgo/fgo/API/v3/communication/86599",
+    "https://go.bbva.com.ar/willgo/fgo/API/v3/communication/85699",
+    "https://go.bbva.com.ar/willgo/fgo/API/v3/communication/85698",
+    "https://go.bbva.com.ar/willgo/fgo/API/v3/communication/85697",
+    "https://go.bbva.com.ar/willgo/fgo/API/v3/communication/85700",
+    "https://go.bbva.com.ar/willgo/fgo/API/v3/communication/85828",
+    "https://go.bbva.com.ar/willgo/fgo/API/v3/communication/85830",
+    "https://go.bbva.com.ar/willgo/fgo/API/v3/communication/85829",
+    "https://go.bbva.com.ar/willgo/fgo/API/v3/communication/86761",
+    "https://go.bbva.com.ar/willgo/fgo/API/v3/communication/87809",
+    "https://go.bbva.com.ar/willgo/fgo/API/v3/communication/87558",
+    "https://go.bbva.com.ar/willgo/fgo/API/v3/communication/87904"
+  ],
+  "scope": "Fourteen official monetary-cap contradictions identified by independent QA; unchanged catalog and detail objects"
+}

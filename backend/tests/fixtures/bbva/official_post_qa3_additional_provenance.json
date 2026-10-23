@@ -1,0 +1,17 @@
+{
+  "retrieved_on": "2026-10-19",
+  "timezone": "America/Argentina/Buenos_Aires",
+  "detail_url_template": "https://go.bbva.com.ar/willgo/fgo/API/v3/communication/{id}",
+  "fixture": "official_post_qa3_additional.json",
+  "selection": "All additional source records whose normalized commercial fields changed during the post-QA3 comparison, excluding the six original pending cases. Complete unmodified official detail nodes fetched via the shared HTTP client; catalog nodes come from the previous complete capture. Individual timestamps and URLs are in each raw record.",
+  "source_ids": ["84535", "85530", "86275", "88050", "88282", "88313"],
+  "comparison": "Live details matched the previous capture except branch ordering in canalesVenta for 88050 and 88282. The same branches and counts were present (6 and 26 respectively); commercial text and terms were unchanged.",
+  "facts": {
+    "84535": "Rata Blanca: BBVA Visa and/or Mastercard credit only; three installments. Existing start-date discrepancy remains under review.",
+    "85530": "La Gallega: ARS 20000 per user per month in legal terms; API frequency blank.",
+    "86275": "Toledo: API three installments versus legal positive eligibility requiring purchases in one payment. Blocked pending source clarification.",
+    "88050": "Duty Free: API monthly versus legal ARS 30000 per user per promotion.",
+    "88282": "Puntofarma: API per promotion versus legal ARS 10000 per user per month.",
+    "88313": "Carrefour: API per promotion versus legal ARS 10000 per user per month; purchases strictly above ARS 15000."
+  }
+}

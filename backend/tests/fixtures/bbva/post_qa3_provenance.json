@@ -1,0 +1,15 @@
+{
+  "retrieved_on": "2026-10-19",
+  "detail_capture": "Unmodified public BBVA API detail nodes retrieved via httpx with TLS verification. Per-record scraped_at is the detail retrieval timestamp in UTC. No credentials used.",
+  "catalog_provenance": "Catalog nodes retained from prior 2026-10-19 exhaustive capture backend/.tmp/bbva-review/bbva_promotions.json; do not interpret updated detail timestamp as a second catalog retrieval. Coordinator separately repeats catalog enumeration and verifies identifiers and changed fields.",
+  "detail_url_template": "https://go.bbva.com.ar/willgo/fgo/API/v3/communication/{id}",
+  "source_ids": [
+    "84091",
+    "88081",
+    "88051",
+    "88215",
+    "87567",
+    "87797"
+  ],
+  "purpose": "Developer post-QA3 evidence for six requested cases; does not constitute independent QA. Official contradictory/unidentifiable records retained as negative fixtures."
+}

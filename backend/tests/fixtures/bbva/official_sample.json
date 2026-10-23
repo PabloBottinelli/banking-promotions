@@ -1,0 +1,4279 @@
+[
+  {
+    "source": "bbva",
+    "source_id": "88114",
+    "scraped_at": "2026-10-19T13:50:00.502884+00:00",
+    "source_url": "https://go.bbva.com.ar/willgo/fgo/API/v3/communication/88114",
+    "catalog": {
+      "id": "88114",
+      "imagen": "https://assets.caasbbva.com/content/dam/caas/argentina/beneficios/comercio/lazaro_317x112.png",
+      "cabecera": "Lazaro 20% y 6 cuotas",
+      "subcabecera": ". .Promoción válida desde 06-10-2026 hasta 27-10-2026",
+      "idCampania": "",
+      "esCampania": false,
+      "esCampaniaMadre": false,
+      "fechaDesde": "2026-10-06",
+      "fechaHasta": "2026-10-27",
+      "diasPromo": "0,1,0,0,0,0,0",
+      "montoTope": "50000",
+      "grupoTarjeta": "Tarjetas de crédito BBVA"
+    },
+    "detail": {
+      "id": "88114",
+      "imagen": "https://assets.caasbbva.com/content/dam/caas/argentina/beneficios/comercio/lazaro_317x112.png",
+      "cabecera": "Lazaro 20% y 6 cuotas",
+      "beneficios": [
+        {
+          "cuota": 6,
+          "tope": "50000",
+          "tipoTope": "Usuario",
+          "frecuenciaTope": "Por Mes",
+          "requisitos": [
+            "Pagando desde APP BBVA con QR MODO. Recibí el reintegro en tu caja de ahorros."
+          ]
+        }
+      ],
+      "canalesVenta": {
+        "sucursales": [
+          {
+            "direccion": "Las Magnolias 698",
+            "localidad": "Pilar",
+            "latitude": "-34.44697952270508",
+            "longitude": "-58.870033264160156"
+          },
+          {
+            "direccion": "Av. Rivadavia 5108",
+            "localidad": "Capital Federal",
+            "latitude": "-34.6189079",
+            "longitude": "-58.43782550000003"
+          },
+          {
+            "direccion": "España 265",
+            "localidad": "Lomas de Zamora",
+            "latitude": "-34.76385498046875",
+            "longitude": "-58.400264739990234"
+          },
+          {
+            "direccion": "Vicente López 2000",
+            "localidad": "Capital Federal",
+            "latitude": "-34.5892448425293",
+            "longitude": "-58.392967224121094"
+          },
+          {
+            "direccion": "Velez Sarfield 361",
+            "localidad": "Cordoba",
+            "latitude": "-31.4194902",
+            "longitude": "-64.18885160000002"
+          },
+          {
+            "direccion": "Gurruchaga 890",
+            "localidad": "Capital Federal",
+            "latitude": "-34.594337463378906",
+            "longitude": "-58.437217712402344"
+          },
+          {
+            "direccion": " ",
+            "localidad": "SHOPPING DEL SIGLO",
+            "latitude": "-32.9453835",
+            "longitude": "-60.6456005"
+          },
+          {
+            "direccion": "20 de Febrero 1437",
+            "localidad": "Salta",
+            "latitude": "-24.77134895324707",
+            "longitude": "-65.41193389892578"
+          },
+          {
+            "direccion": "Las Cañas 1833",
+            "localidad": "Mendoza",
+            "latitude": "-32.912574768066406",
+            "longitude": "-68.82025909423828"
+          },
+          {
+            "direccion": " ",
+            "localidad": "Unicenter",
+            "latitude": "-34.5087642",
+            "longitude": "-58.52176429999997"
+          },
+          {
+            "direccion": "San Martin 768",
+            "localidad": "Capital Federal",
+            "latitude": "-34.5990119",
+            "longitude": "-58.374185899999986"
+          },
+          {
+            "direccion": "Gral. Belgrano 563",
+            "localidad": "San Salvador De Jujuy",
+            "latitude": "-24.185232162475586",
+            "longitude": "-65.30101013183594"
+          },
+          {
+            "direccion": "Av. Santa Fe 3253",
+            "localidad": "Capital Federal",
+            "latitude": "-34.5884743",
+            "longitude": "-58.410921099999996"
+          },
+          {
+            "direccion": "Nicasio Oroño 1561",
+            "localidad": "Capital Federal",
+            "latitude": "-34.6074875",
+            "longitude": "-58.459214900000006"
+          },
+          {
+            "direccion": " ",
+            "localidad": "Dot Baires Shopping",
+            "latitude": "-34.546656",
+            "longitude": "-58.488133"
+          },
+          {
+            "direccion": "Acceso Este Lateral Norte 3280",
+            "localidad": "Guaymallen",
+            "latitude": "-32.901719",
+            "longitude": "-68.79933870000002"
+          },
+          {
+            "direccion": "Quevedo 3365",
+            "localidad": "Capital Federal",
+            "latitude": "-34.61184310913086",
+            "longitude": "-58.51780319213867"
+          }
+        ],
+        "web": [
+          {
+            "name": "Lazaro",
+            "url": "https://www.lazarocuero.com.ar/"
+          }
+        ]
+      },
+      "basesCondiciones": "LA PROMOCIÓN CONSTA DE 20% DE REINTEGRO CON TOPE DE $50.000 POR USUARIO POR MES. VÁLIDA PARA CLIENTES QUE ABONEN SUS COMPRAS EN HASTA 6 CUOTAS CON TARJETAS DE CRÉDITO EMITIDAS POR BBVA. EXCLUSIVO PARA PAGOS REALIZADOS A TRAVÉS DE APP BBVA ESCANEANDO UN QR MODO. LA PRESENTE PROMOCIÓN ES VÁLIDA SÓLO PARA CONSUMOS DE TIPO FAMILIAR. EL REINTEGRO SE ACREDITARÁ DENTRO DE LOS 60 DÍAS POSTERIORES A LA COMPRA EN TU CAJA DE AHORROS ACTIVA EN BBVA Y VINCULADA A MODO. PARA PODER RECIBIR EL REINTEGRO, QUIEN REALIZA LA COMPRA DEBE SER TITULAR DE UNA CAJA DE AHORROS ACTIVA EN BBVA Y DICHA CUENTA DEBE ENCONTRARSE VINCULADA A MODO. SI QUIEN REALIZA LA COMPRA ES ADICIONAL DE TARJETA DE CREDITO Y NO POSEE UNA CAJA DE AHORROS EN BBVA, EL REINTEGRO SE ACREDITARÁ EN LA CAJA DE AHORROS ACTIVA EN BBVA DEL TITULAR DE LA TARJETA DE CREDITO. DICHA CAJA DE AHORROS DEBE ENCONTRARSE VINCULADA A MODO. ACUMULA ÚNICAMENTE CON PROMOCIONES DE MODO. LA PROMOCIÓN NO APLICA A PAGOS REALIZADOS A TRAVÉS DE OTRAS BILLETERAS VIRTUALES Y/O PLATAFORMAS DE PAGO ONLINE (POR EJEMPLO MERCADO PAGO, UALÁ, ETC.). LOS ACCIONISTAS DE BANCO BBVA ARGENTINA S.A. LIMITAN SU RESPONSABILIDAD A LA INTEGRACIÓN DE LAS ACCIONES SUSCRIPTAS LEY 19.550 Y LEY 25.738. CUIT 30-50000319-3. AVDA.CÓRDOBA 111- PISO 31 CABA - CP 1054AAA.",
+      "diasPromo": "0,1,0,0,0,0,0",
+      "vigencia": "Del 06/10/2026 hasta 27/10/2026",
+      "grupoTarjeta": "Tarjetas de crédito BBVA",
+      "tiempoAcreditacion": null,
+      "esModo": false
+    }
+  },
+  {
+    "source": "bbva",
+    "source_id": "86278",
+    "scraped_at": "2026-10-19T13:50:00.575622+00:00",
+    "source_url": "https://go.bbva.com.ar/willgo/fgo/API/v3/communication/86278",
+    "catalog": {
+      "id": "86278",
+      "imagen": "https://go.bbva.com.ar/fgo/sites/default/files/imagen/comercio/20324_vea_317x112.png",
+      "cabecera": "Supermercados Vea QR Modo 20%",
+      "subcabecera": ". .Promoción válida desde 01-07-2026 hasta 31-10-2026",
+      "idCampania": "2474",
+      "esCampania": false,
+      "esCampaniaMadre": false,
+      "fechaDesde": "2026-07-01",
+      "fechaHasta": "2026-10-31",
+      "diasPromo": null,
+      "montoTope": "25000",
+      "grupoTarjeta": "Tarjetas de crédito y débito BBVA"
+    },
+    "detail": {
+      "id": "86278",
+      "imagen": "https://go.bbva.com.ar/fgo/sites/default/files/imagen/comercio/20324_vea_317x112.png",
+      "cabecera": "Supermercados Vea QR Modo 20%",
+      "beneficios": [
+        {
+          "cuota": 0,
+          "tope": "25000",
+          "tipoTope": "Usuario",
+          "frecuenciaTope": "Por Mes",
+          "requisitos": [
+            "En compras mayores a $100.000 con QR MODO.\nViernes.\nRecibí el reintegro en tu caja de ahorros vinculada a Modo"
+          ]
+        }
+      ],
+      "canalesVenta": {
+        "sucursales": [],
+        "web": [
+          {
+            "name": "Supermercados Vea",
+            "url": "https://www.modo.com.ar/promos/vea-julio26"
+          }
+        ]
+      },
+      "basesCondiciones": "CARTERA DE CONSUMO. PROMOCIÓN VÁLIDA los dias viernes DESDE 01/07/2026 HASTA 31/10/2026 INCLUSIVE.LA PROMOCIÓN CONSTA DE 20% DE REINTEGRO para compras mayores a $100.000 CON TOPE DE $25.000 POR USUARIO POR MES. VÁLIDA PARA CLIENTES QUE ABONEN SUS COMPRAS EN un pago CON TARJETAS EMITIDAS POR BBVA. EXCLUSIVO PARA PAGOS REALIZADOS A TRAVÉS DE APP BBVA ESCANEANDO UN QR MODO. LA PRESENTE PROMOCIÓN ES VÁLIDA SÓLO PARA CONSUMOS DE TIPO FAMILIAR. EL REINTEGRO SE ACREDITARÁ DENTRO DE LOS 60 DÍAS POSTERIORES A LA COMPRA EN TU CAJA DE AHORROS ACTIVA EN BBVA Y VINCULADA A MODO. PARA PODER RECIBIR EL REINTEGRO, QUIEN REALIZA LA COMPRA DEBE SER TITULAR DE UNA CAJA DE AHORROS ACTIVA EN BBVA Y DICHA CUENTA DEBE ENCONTRARSE VINCULADA A MODO. SI QUIEN REALIZA LA COMPRA ES ADICIONAL DE TARJETA DE CREDITO Y NO POSEE UNA CAJA DE AHORROS EN BBVA, EL REINTEGRO SE ACREDITARÁ EN LA CAJA DE AHORROS ACTIVA EN BBVA DEL TITULAR DE LA TARJETA DE CREDITO. DICHA CAJA DE AHORROS DEBE ENCONTRARSE VINCULADA A MODO. ACUMULA ÚNICAMENTE CON PROMOCIONES DE MODO. LA PROMOCIÓN NO APLICA A PAGOS REALIZADOS A TRAVÉS DE OTRAS BILLETERAS VIRTUALES Y/O PLATAFORMAS DE PAGO ONLINE (POR EJEMPLO MERCADO PAGO, UALÁ, ETC.). LOS ACCIONISTAS DE BANCO BBVA ARGENTINA S.A. LIMITAN SU RESPONSABILIDAD A LA INTEGRACIÓN DE LAS ACCIONES SUSCRIPTAS LEY 19.550 Y LEY 25.738. CUIT 30-50000319-3. AVDA.CÓRDOBA 111- PISO 31 CABA - CP 1054AAA.",
+      "diasPromo": null,
+      "vigencia": "Del 01/07/2026 hasta 31/10/2026",
+      "grupoTarjeta": "Tarjetas de crédito y débito BBVA",
+      "tiempoAcreditacion": null,
+      "esModo": true
+    }
+  },
+  {
+    "source": "bbva",
+    "source_id": "87336",
+    "scraped_at": "2026-10-19T13:50:00.757437+00:00",
+    "source_url": "https://go.bbva.com.ar/willgo/fgo/API/v3/communication/87336",
+    "catalog": {
+      "id": "87336",
+      "imagen": "https://assets.caasbbva.com/content/dam/caas/argentina/beneficios/comunicacion/cabify_ezeiza_317x112.png",
+      "cabecera": "Cabify 100% OFF",
+      "subcabecera": ". .Promoción válida desde 01-02-2026 hasta 31-12-2026",
+      "idCampania": "2518",
+      "esCampania": false,
+      "esCampaniaMadre": false,
+      "fechaDesde": "2026-02-01",
+      "fechaHasta": "2026-12-31",
+      "diasPromo": null,
+      "montoTope": null,
+      "grupoTarjeta": "Tarjetas de crédito BBVA"
+    },
+    "detail": {
+      "id": "87336",
+      "imagen": "https://assets.caasbbva.com/content/dam/caas/argentina/beneficios/comunicacion/cabify_ezeiza_317x112.png",
+      "cabecera": "Cabify 100% OFF",
+      "beneficios": [
+        {
+          "cuota": 0,
+          "tope": null,
+          "tipoTope": "ninguno",
+          "frecuenciaTope": " ",
+          "requisitos": [
+            "Con el código MCBBVA2026.Tope: $50.000. \nVálido en 1 viaje por vigencia.\nSeleccionando como medio de pago tu tarjeta de crédito Mastercard Black BBVA en la App de CABIFY en tu viaje hacia o desde el Aeropuerto de Ezeiza."
+          ]
+        }
+      ],
+      "canalesVenta": {
+        "sucursales": [],
+        "web": [
+          {
+            "name": "Cabify",
+            "url": "https://app.adjust.com/3hek07"
+          }
+        ]
+      },
+      "basesCondiciones": "INGRESA EL CODIGO MCBBVA2026 EN LA APP DE CABIFY, SELECCIONA TU TARJETA MASTERCARD BLACK BBVA Y REALIZA TU VIAJE. LA PROMOCION CONSTA DE UN 100% OFF CON TOPE $50.000 EN TU VIAJE HACIA O DESDE EL AEROPUERTO DE EZEIZA.VÁLIDO EN 1 VIAJE POR VIGENCIA. PROMOCIÓN VÁLIDA PARA COMPRAS CON TARJETAS MASTERCARD BLACK EMITIDAS POR BBVA. VÁLIDO EN UN VIAJE POR VIGENCIA EXCLUSIVAMENTE CON DESTINO AEROPUERTO DE EZEIZA O DESDE AEROPUERTO DE EZEIZA. LA PRESENTE PROMOCIÓN ES VÁLIDA SÓLO PARA CONSUMOS DE TIPO FAMILIAR, Y NO SE ACUMULA A OTRAS PROMOCIONES. EN EL CASO DE DUDA SOBRE EL DESTINO DEL CONSUMO. LA PROMOCIÓN NO APLICA A PAGOS REALIZADOS A TRAVÉS DE OTRAS BILLETERAS VIRTUALES Y/O PLATAFORMAS DE PAGO ONLINE (POR EJEMPLO, PAYPAL, TODO PAGO, MERCADO PAGO, UALÁ, ETC.). EL DESCUENTO SE VERA REFLEJADO EN LA APLICACIÓN DE CABIFY. LOS ACCIONISTAS DE BANCO BBVA ARGENTINA S.A. LIMITAN SU RESPONSABILIDAD A LA INTEGRACIÓN DE LAS ACCIONES SUSCRIPTAS LEY 19.550 Y LEY 25.738 CUIT 30-50000319-3. AVDA.CÓRDOBA 111- PISO 31 CABA - CP C1054AAA",
+      "diasPromo": null,
+      "vigencia": "Del 01/02/2026 hasta 31/12/2026",
+      "grupoTarjeta": "Tarjetas de crédito BBVA",
+      "tiempoAcreditacion": null,
+      "esModo": false
+    }
+  },
+  {
+    "source": "bbva",
+    "source_id": "88410",
+    "scraped_at": "2026-10-19T13:50:00.850779+00:00",
+    "source_url": "https://go.bbva.com.ar/willgo/fgo/API/v3/communication/88410",
+    "catalog": {
+      "id": "88410",
+      "imagen": "https://assets.caasbbva.com/content/dam/caas/argentina/beneficios/campania/blacktravelall_gastro_317x112.png",
+      "cabecera": "Gastronomía 20% NFC",
+      "subcabecera": "  .Promoción válida desde 01-10-2026 hasta 31-12-2026",
+      "idCampania": "",
+      "esCampania": false,
+      "esCampaniaMadre": false,
+      "fechaDesde": "2026-10-01",
+      "fechaHasta": "2026-12-31",
+      "diasPromo": null,
+      "montoTope": "100000",
+      "grupoTarjeta": "Tarjetas de crédito BBVA"
+    },
+    "detail": {
+      "id": "88410",
+      "imagen": "https://assets.caasbbva.com/content/dam/caas/argentina/beneficios/campania/blacktravelall_gastro_317x112.png",
+      "cabecera": "Gastronomía 20% NFC",
+      "beneficios": [
+        {
+          "cuota": 0,
+          "tope": "100000",
+          "tipoTope": "Usuario",
+          "frecuenciaTope": "Por Mes",
+          "requisitos": [
+            "Exclusivo Visa Signature Black&#43; All y Black&#43; Travel. \nPagando con NFC (ApplePay y GooglePay). Recibí el reintegro en tu caja de ahorros."
+          ]
+        }
+      ],
+      "canalesVenta": {
+        "sucursales": [],
+        "web": [
+          {
+            "name": "Gastronomía 20%",
+            "url": "https://www.bbva.com.ar/personas/productos/paquetes/black-plus.html"
+          }
+        ]
+      },
+      "basesCondiciones": "CARTERA DE CONSUMO. PROMOCIÓN VÁLIDA TODOS LOS DÍAS DEL 01/10/2026 AL 31/12/2026. LA PROMOCIÓN CONSTA DE 20% DE REINTEGRO CON TOPE MENSUAL $100.000 POR CLIENTE. VÁLIDA PARA CLIENTES QUE ABONEN SUS COMPRAS EN UN PAGO CON TARJETAS DE CRÉDITO VISA SIGNATURE BLACK TRAVEL Y ALL EMITIDAS POR BBVA. EXCLUSIVO PARA PAGOS REALIZADOS DESDE EL CELULAR VÍA NFC (&#34;SIN CONTACTO&#34;) A TRAVÉS APPLE PAY (DISPONIBLE SÓLO EN IOS), GOOGLE PAY, O MODO CONTACTLESS. ES REQUISITO TENER UNA CAJA DE AHORRO EN PESOS ACTIVA EN BBVA PARA RECIBIR LA ACREDITACIÓN DEL REINTEGRO, APLICA EN COMERCIOS ADHERIDOS AL RUBRO GASTRONOMIA EN ARGENTINA (RESTAURANTES,BARES,CAFETERIAS Y FAST FOOD). EL TOPE MENSUAL DEL REINTEGRO APLICA POR CUENTA Y ES COMPARTIDO ENTRE EL TITULAS Y AS TARJETAS ADICIONALES.SI EL ADICIONAL TIENE UNA CAJA DE AHORRO ACTIVA EN BBVA, SE ACREDITARA ALLI DE LO CONTRARIO EN LA CUENTA DEL TITULAR. NO APLICA PARA COMPRAS REALIZADAS CON TARJETAS DE CRÉDITO ADICIONALES. LA PRESENTE PROMOCIÓN ES VÁLIDA SÓLO PARA CONSUMOS DE TIPO FAMILIAR Y NO SE ACUMULA A OTRAS PROMOCIONES. LA BONIFICACIÓN SE ACREDITARÁ DENTRO DE LOS 60 DÍAS POSTERIORES A LA COMPRA EN TU CAJA DE AHORROS ACTIVA EN BBVA. EN EL CASO DE DUDA SOBRE EL DESTINO DEL CONSUMO, EL BANCO SE RESERVA LA FACULTAD DE NO ACREDITAR EL MONTO DE LA BONIFICACIÓN HASTA TANTO SE ACLARE EL MISMO. LA PROMOCIÓN NO APLICA A PAGOS REALIZADOS A TRAVÉS DE BILLETERAS VIRTUALES Y/O PLATAFORMAS DE PAGO ONLINE (POR EJEMPLO, PAYPAL, TODO PAGO, MERCADO PAGO, UALÁ, ETC.). LOS ACCIONISTAS DE BANCO BBVA ARGENTINA S.A. LIMITAN SU RESPONSABILIDAD A LA INTEGRACIÓN DE LAS ACCIONES SUSCRIPTAS LEY 19.550 Y LEY 25.738. CUIT 30-50000319-3. AVDA.CÓRDOBA 111- PISO 31 CABA - CP 1054AAA",
+      "diasPromo": null,
+      "vigencia": "Del 01/10/2026 hasta 31/12/2026",
+      "grupoTarjeta": "Tarjetas de crédito BBVA",
+      "tiempoAcreditacion": null,
+      "esModo": false
+    }
+  },
+  {
+    "source": "bbva",
+    "source_id": "88098",
+    "scraped_at": "2026-10-19T13:50:01.336950+00:00",
+    "source_url": "https://go.bbva.com.ar/willgo/fgo/API/v3/communication/88098",
+    "catalog": {
+      "id": "88098",
+      "imagen": "https://go.bbva.com.ar/fgo/sites/default/files/imagen/comercio/3228_grimoldi_311x208.png",
+      "cabecera": "Grimoldi 9 cuotas",
+      "subcabecera": ". .Promoción válida desde 01-09-2026 hasta 27-10-2026",
+      "idCampania": "",
+      "esCampania": false,
+      "esCampaniaMadre": false,
+      "fechaDesde": "2026-09-01",
+      "fechaHasta": "2026-10-27",
+      "diasPromo": "0,1,0,0,0,0,0",
+      "montoTope": null,
+      "grupoTarjeta": "Tarjetas de crédito BBVA"
+    },
+    "detail": {
+      "id": "88098",
+      "imagen": "https://go.bbva.com.ar/fgo/sites/default/files/imagen/comercio/3228_grimoldi_311x208.png",
+      "cabecera": "Grimoldi 9 cuotas",
+      "beneficios": [
+        {
+          "cuota": 9,
+          "tope": null,
+          "tipoTope": " ",
+          "frecuenciaTope": " ",
+          "requisitos": [
+            "Pagando con NFC, MODO, o tarjetas físicas."
+          ]
+        }
+      ],
+      "canalesVenta": {
+        "sucursales": [
+          {
+            "direccion": "Ruta Panamericana 2650",
+            "localidad": "Godoy Cruz",
+            "latitude": "-32.955647",
+            "longitude": "-68.85922800000003"
+          },
+          {
+            "direccion": "Junin 501",
+            "localidad": "Rosario",
+            "latitude": "-32.92813491821289",
+            "longitude": "-60.66783142089844"
+          },
+          {
+            "direccion": "25 de Mayo 275",
+            "localidad": "Moron",
+            "latitude": "-34.6513671875",
+            "longitude": "-58.6199836730957"
+          },
+          {
+            "direccion": "Güemes 329",
+            "localidad": "Resistencia",
+            "latitude": "-27.449235916137695",
+            "longitude": "-58.98284149169922"
+          },
+          {
+            "direccion": "San Martin 768",
+            "localidad": "Capital Federal",
+            "latitude": "-34.5990119",
+            "longitude": "-58.374185899999986"
+          },
+          {
+            "direccion": "Vedia 3632",
+            "localidad": "Capital Federal",
+            "latitude": "-34.5450579",
+            "longitude": "-58.487633500000015"
+          },
+          {
+            "direccion": "AV DR RAMON 355",
+            "localidad": "Neuquen",
+            "latitude": "-38.9420456",
+            "longitude": "-68.06477869999998"
+          },
+          {
+            "direccion": "Sarmiento 2143",
+            "localidad": "Bahia Blanca",
+            "latitude": "-38.69886109999999",
+            "longitude": "-62.24411620000001"
+          },
+          {
+            "direccion": "Caseros 658",
+            "localidad": "Salta",
+            "latitude": "-24.78959083557129",
+            "longitude": "-65.41168212890625"
+          },
+          {
+            "direccion": "Av. Fermin Cariola 42",
+            "localidad": "San Miguel De Tucuman",
+            "latitude": "-26.821811",
+            "longitude": "-65.267655"
+          },
+          {
+            "direccion": "O Higgins 83",
+            "localidad": "Bahia Blanca",
+            "latitude": "-38.72037359999999",
+            "longitude": "-62.26686960000001"
+          },
+          {
+            "direccion": "Florida 110",
+            "localidad": "Capital Federal",
+            "latitude": "-34.60680389404297",
+            "longitude": "-58.37509536743164"
+          },
+          {
+            "direccion": "Parana 3745",
+            "localidad": "Martinez",
+            "latitude": "-34.5087642",
+            "longitude": "-58.52176429999997"
+          },
+          {
+            "direccion": "Calle 8 826",
+            "localidad": "La Plata",
+            "latitude": "-34.91485595703125",
+            "longitude": "-57.95181655883789"
+          },
+          {
+            "direccion": "Avenida Santa Fe 1649",
+            "localidad": "Capital Federal",
+            "latitude": "-34.59575653076172",
+            "longitude": "-58.390804290771484"
+          },
+          {
+            "direccion": "Florida 251",
+            "localidad": "Capital Federal",
+            "latitude": "-34.60533142089844",
+            "longitude": "-58.37509536743164"
+          },
+          {
+            "direccion": "Juan Manuel de Rosas 658",
+            "localidad": "Moron",
+            "latitude": "-34.7011085",
+            "longitude": "-58.6478649"
+          },
+          {
+            "direccion": "Arce 940",
+            "localidad": "Capital Federal",
+            "latitude": "-34.5672932",
+            "longitude": "-58.4371074"
+          },
+          {
+            "direccion": "Juan Julián Lastra 2400",
+            "localidad": "Neuquen",
+            "latitude": "-38.95957946777344",
+            "longitude": "-68.09260559082031"
+          },
+          {
+            "direccion": "Av. Santa Fe 3253",
+            "localidad": "Capital Federal",
+            "latitude": "-34.5884743",
+            "longitude": "-58.410921099999996"
+          },
+          {
+            "direccion": "Bartolomé Mitre 369",
+            "localidad": "El Bolson",
+            "latitude": "-41.94569396972656",
+            "longitude": "-71.53076171875"
+          },
+          {
+            "direccion": "Av. Corrientes 3247",
+            "localidad": "Capital Federal",
+            "latitude": "-34.60396050000001",
+            "longitude": "-58.411008100000004"
+          },
+          {
+            "direccion": "Avenida Rivadavia 6782",
+            "localidad": "Capital Federal",
+            "latitude": "-34.62841796875",
+            "longitude": "-58.460716247558594"
+          },
+          {
+            "direccion": "Martín Miguel de Güemes 2595",
+            "localidad": "Mar Del Plata",
+            "latitude": "-38.01304244995117",
+            "longitude": "-57.53975296020508"
+          },
+          {
+            "direccion": "Panamericana Ramal Pilar Km 36",
+            "localidad": "Tortuguitas",
+            "latitude": "-34.49596349999999",
+            "longitude": "-58.78826579999998"
+          },
+          {
+            "direccion": "Quevedo 3365",
+            "localidad": "Capital Federal",
+            "latitude": "-34.611843",
+            "longitude": "-58.51780340000005"
+          },
+          {
+            "direccion": "Nansen 323",
+            "localidad": "Rosario",
+            "latitude": "-32.9091112",
+            "longitude": "-60.68345629999999"
+          },
+          {
+            "direccion": "Avenida Meeks 222",
+            "localidad": "Lomas de Zamora",
+            "latitude": "-34.76374053955078",
+            "longitude": "-58.39850616455078"
+          },
+          {
+            "direccion": "Pinto 682",
+            "localidad": "Tandil",
+            "latitude": "-37.3268928527832",
+            "longitude": "-59.13515090942383"
+          },
+          {
+            "direccion": "General Alvear 301",
+            "localidad": "Martinez",
+            "latitude": "-34.487953186035156",
+            "longitude": "-58.4973030090332"
+          },
+          {
+            "direccion": "Rivadavia 3050",
+            "localidad": "Mar Del Plata",
+            "latitude": "-37.9979761",
+            "longitude": "-57.55202809999997"
+          },
+          {
+            "direccion": "Enrique Bodereau 7571",
+            "localidad": "Cordoba",
+            "latitude": "-64.288242",
+            "longitude": "-31.33471"
+          },
+          {
+            "direccion": "Av. Cordoba 1292",
+            "localidad": "Rosario",
+            "latitude": "-32.94593811035156",
+            "longitude": "-60.640846252441406"
+          },
+          {
+            "direccion": "Arce 940",
+            "localidad": "Capital Federal",
+            "latitude": "-34.5672932",
+            "longitude": "-58.4371074"
+          },
+          {
+            "direccion": " ",
+            "localidad": "Portal Rosario",
+            "latitude": "-32.9091112",
+            "longitude": "-60.68345629999999"
+          },
+          {
+            "direccion": "Alsina 134",
+            "localidad": "Bahia Blanca",
+            "latitude": "-38.7173792",
+            "longitude": "-62.26340589999995"
+          },
+          {
+            "direccion": "Nazarre 3175",
+            "localidad": "Capital Federal",
+            "latitude": "-34.6020936",
+            "longitude": "-58.49443009999999"
+          },
+          {
+            "direccion": "San Martín 485",
+            "localidad": "Comodoro Rivadavia",
+            "latitude": "-45.86096954345703",
+            "longitude": "-67.48114013671875"
+          },
+          {
+            "direccion": "Avenida Santa Fe 2422",
+            "localidad": "Capital Federal",
+            "latitude": "-34.59479522705078",
+            "longitude": "-58.401458740234375"
+          },
+          {
+            "direccion": "Av. de los Lagos 7010",
+            "localidad": "Tigre",
+            "latitude": "-34.4238006",
+            "longitude": "-58.658180000000016"
+          },
+          {
+            "direccion": "General Espejo 55",
+            "localidad": "Mendoza",
+            "latitude": "-32.88920593261719",
+            "longitude": "-68.83995819091797"
+          },
+          {
+            "direccion": "San Martín 3025",
+            "localidad": "Mar Del Plata",
+            "latitude": "-37.961280822753906",
+            "longitude": "-57.622005462646484"
+          },
+          {
+            "direccion": "Avenida de Mayo 201",
+            "localidad": "Ramos Mejia",
+            "latitude": "-34.64275360107422",
+            "longitude": "-58.5655632019043"
+          },
+          {
+            "direccion": "Avenida Victorica 1128",
+            "localidad": "Moreno",
+            "latitude": "-34.6355293",
+            "longitude": "-58.7921404"
+          },
+          {
+            "direccion": "Av. Int. Bullrich 345",
+            "localidad": "Capital Federal",
+            "latitude": "-34.57508869999999",
+            "longitude": "-58.425270100000034"
+          },
+          {
+            "direccion": "Acceso Este Lateral Norte 3280",
+            "localidad": "Guaymallen",
+            "latitude": "-32.901719",
+            "longitude": "-68.79933870000002"
+          },
+          {
+            "direccion": " ",
+            "localidad": "Alto Comahue Shopping",
+            "latitude": "-38.9420114",
+            "longitude": "-68.06477699999999"
+          },
+          {
+            "direccion": "Rivadavia 701",
+            "localidad": "Catamarca",
+            "latitude": "-28.469573974609375",
+            "longitude": "-65.77835845947266"
+          },
+          {
+            "direccion": "Parana 3745",
+            "localidad": "Martinez",
+            "latitude": "-34.5087642",
+            "longitude": "-58.52176429999997"
+          },
+          {
+            "direccion": "9 de Julio 32",
+            "localidad": "Cordoba",
+            "latitude": "-31.414709091186523",
+            "longitude": "-64.18375396728516"
+          },
+          {
+            "direccion": "Velez Sarfield 361",
+            "localidad": "Cordoba",
+            "latitude": "-31.4194902",
+            "longitude": "-64.18885160000002"
+          },
+          {
+            "direccion": "Bv. Elias Yofre 1050",
+            "localidad": "Cordoba",
+            "latitude": "-31.450695037841797",
+            "longitude": "-64.18035125732422"
+          },
+          {
+            "direccion": "Vicente López 2000",
+            "localidad": "Capital Federal",
+            "latitude": "-34.5892452",
+            "longitude": "-58.39296619999999"
+          },
+          {
+            "direccion": "Guemes 897",
+            "localidad": "Avellaneda",
+            "latitude": "-34.6924055",
+            "longitude": "-58.38732060000001"
+          },
+          {
+            "direccion": "Río de Janeiro 1725",
+            "localidad": "Villa Allende",
+            "latitude": "0.0",
+            "longitude": "0.0"
+          },
+          {
+            "direccion": "Panamericana Ramal Pilar Km 36",
+            "localidad": "Tortuguitas",
+            "latitude": "-34.49596349999999",
+            "longitude": "-58.78826579999998"
+          },
+          {
+            "direccion": "O&#39;Higgins 83",
+            "localidad": "Bahia Blanca",
+            "latitude": "-58.381553649902344",
+            "longitude": "-34.60542678833008"
+          },
+          {
+            "direccion": "Balcarse 897",
+            "localidad": "Godoy Cruz",
+            "latitude": "-32.9161659",
+            "longitude": "-68.8406597"
+          },
+          {
+            "direccion": "Arce 940",
+            "localidad": "Capital Federal",
+            "latitude": "-34.5672932",
+            "longitude": "-58.4371074"
+          },
+          {
+            "direccion": "Sarmiento 2685",
+            "localidad": "Mar Del Plata",
+            "latitude": "-38.0054771",
+            "longitude": "-57.54261059999999"
+          },
+          {
+            "direccion": "Las Magnolias 698",
+            "localidad": "Pilar",
+            "latitude": "-34.446981",
+            "longitude": "-58.870032"
+          },
+          {
+            "direccion": "Venezuela 61",
+            "localidad": "Parana",
+            "latitude": "-31.734689",
+            "longitude": "-60.5324167"
+          },
+          {
+            "direccion": " ",
+            "localidad": "La Barraca Mall",
+            "latitude": "-32.912576",
+            "longitude": "-68.82026239999999"
+          },
+          {
+            "direccion": "San Martin 483",
+            "localidad": "Comodoro Rivadavia",
+            "latitude": "-58.381553649902344",
+            "longitude": "-34.60542678833008"
+          },
+          {
+            "direccion": "Parana 3745",
+            "localidad": "Martinez",
+            "latitude": "-34.5087642",
+            "longitude": "-58.52176429999997"
+          },
+          {
+            "direccion": "Damian Garat 3255",
+            "localidad": "Cordoba",
+            "latitude": "-31.363021850585938",
+            "longitude": "-64.21514892578125"
+          },
+          {
+            "direccion": "Calle 50 486",
+            "localidad": "La Plata",
+            "latitude": "-34.912750244140625",
+            "longitude": "-57.94724655151367"
+          },
+          {
+            "direccion": "Sarmiento 2153",
+            "localidad": "Bahia Blanca",
+            "latitude": "-34.603763580322266",
+            "longitude": "-58.38172912597656"
+          },
+          {
+            "direccion": "Parana 3745",
+            "localidad": "Martinez",
+            "latitude": "-34.5087642",
+            "longitude": "-58.52176429999997"
+          },
+          {
+            "direccion": "Pinto 682",
+            "localidad": "Tandil",
+            "latitude": "-37.3268928527832",
+            "longitude": "-59.13515090942383"
+          },
+          {
+            "direccion": "Córdoba 1292",
+            "localidad": "Rosario",
+            "latitude": "-32.94593811035156",
+            "longitude": "-60.640777587890625"
+          },
+          {
+            "direccion": "Av. Rivadavia 5108",
+            "localidad": "Capital Federal",
+            "latitude": "-34.6189079",
+            "longitude": "-58.43782550000003"
+          },
+          {
+            "direccion": "Avenida Cabildo 1716",
+            "localidad": "Capital Federal",
+            "latitude": "-34.56553268432617",
+            "longitude": "-58.45381546020508"
+          }
+        ],
+        "web": []
+      },
+      "basesCondiciones": "PROMOCIÓN VÁLIDA PARA PARA CLIENTES QUE ABONEN SUS COMPRAS MAYORES DE $250.000 EN HASTA 9 CUOTAS CON TARJETAS DE CRÉDITO EMITIDAS POR BBVA. APLICA A PAGOS REALIZADOS A TRAVÉS DE APP BBVA ESCANEANDO UN QR MODO. LA PRESENTE PROMOCIÓN ES VÁLIDA SÓLO PARA CONSUMOS DE TIPO FAMILIAR. ACUMULA ÚNICAMENTE CON PROMOCIONES DE MODO. NO PARTICIPAN TARJETAS VISA PURCHASING, DISTRIBUTION Y CORPORATE. LA PROMOCIÓN NO APLICA A PAGOS REALIZADOS A TRAVÉS DE OTRAS BILLETERAS VIRTUALES Y/O PLATAFORMAS DE PAGO ONLINE (POR EJEMPLO MERCADOPAGO, UALÁ, ETC.). LOS ACCIONISTAS DE BANCO BBVA ARGENTINA S.A. LIMITAN SU RESPONSABILIDAD A LA INTEGRACIÓN DE LAS ACCIONES SUSCRIPTAS LEY 19.550 Y LEY 25.738. CUIT 30-50000319-3. AVDA.CÓRDOBA 111- PISO 31 CABA - CP 1054AAA",
+      "diasPromo": "0,1,0,0,0,0,0",
+      "vigencia": "Del 01/09/2026 hasta 27/10/2026",
+      "grupoTarjeta": "Tarjetas de crédito BBVA",
+      "tiempoAcreditacion": null,
+      "esModo": false
+    }
+  },
+  {
+    "source": "bbva",
+    "source_id": "87593",
+    "scraped_at": "2026-10-19T13:50:04.026996+00:00",
+    "source_url": "https://go.bbva.com.ar/willgo/fgo/API/v3/communication/87593",
+    "catalog": {
+      "id": "87593",
+      "imagen": "https://go.bbva.com.ar/fgo/sites/default/files/imagen/comercio/3228_grimoldi_311x208.png",
+      "cabecera": "Grimoldi 20% y 6 cuotas",
+      "subcabecera": ". .Promoción válida desde 01-09-2026 hasta 27-10-2026",
+      "idCampania": "2530",
+      "esCampania": false,
+      "esCampaniaMadre": false,
+      "fechaDesde": "2026-09-01",
+      "fechaHasta": "2026-10-27",
+      "diasPromo": "0,1,0,0,0,0,0",
+      "montoTope": "50000",
+      "grupoTarjeta": "Tarjetas de crédito BBVA"
+    },
+    "detail": {
+      "id": "87593",
+      "imagen": "https://go.bbva.com.ar/fgo/sites/default/files/imagen/comercio/3228_grimoldi_311x208.png",
+      "cabecera": "Grimoldi 20% y 6 cuotas",
+      "beneficios": [
+        {
+          "cuota": 6,
+          "tope": "50000",
+          "tipoTope": "Usuario",
+          "frecuenciaTope": "Por Mes",
+          "requisitos": [
+            "9 cuotas para compras superiores a $250.000.\nPagando desde APP BBVA con QR MODO. Exclusivo tarjetas de crédito VISA."
+          ]
+        }
+      ],
+      "canalesVenta": {
+        "sucursales": [
+          {
+            "direccion": "Avenida Rivadavia 6782",
+            "localidad": "Capital Federal",
+            "latitude": "-34.62841796875",
+            "longitude": "-58.460716247558594"
+          },
+          {
+            "direccion": "Panamericana Ramal Pilar Km 36",
+            "localidad": "Tortuguitas",
+            "latitude": "-34.49596349999999",
+            "longitude": "-58.78826579999998"
+          },
+          {
+            "direccion": "Venezuela 61",
+            "localidad": "Parana",
+            "latitude": "-31.734689",
+            "longitude": "-60.5324167"
+          },
+          {
+            "direccion": "General Espejo 55",
+            "localidad": "Mendoza",
+            "latitude": "-32.88920593261719",
+            "longitude": "-68.83995819091797"
+          },
+          {
+            "direccion": "Av. Corrientes 3247",
+            "localidad": "Capital Federal",
+            "latitude": "-34.60396050000001",
+            "longitude": "-58.411008100000004"
+          },
+          {
+            "direccion": "Sarmiento 2153",
+            "localidad": "Bahia Blanca",
+            "latitude": "-34.603763580322266",
+            "longitude": "-58.38172912597656"
+          },
+          {
+            "direccion": "Nazarre 3175",
+            "localidad": "Capital Federal",
+            "latitude": "-34.6020936",
+            "longitude": "-58.49443009999999"
+          },
+          {
+            "direccion": "Vedia 3632",
+            "localidad": "Capital Federal",
+            "latitude": "-34.5450579",
+            "longitude": "-58.487633500000015"
+          },
+          {
+            "direccion": "Quevedo 3365",
+            "localidad": "Capital Federal",
+            "latitude": "-34.611843",
+            "longitude": "-58.51780340000005"
+          },
+          {
+            "direccion": "Avenida Cabildo 1716",
+            "localidad": "Capital Federal",
+            "latitude": "-34.56553268432617",
+            "longitude": "-58.45381546020508"
+          },
+          {
+            "direccion": "Calle 50 486",
+            "localidad": "La Plata",
+            "latitude": "-34.912750244140625",
+            "longitude": "-57.94724655151367"
+          },
+          {
+            "direccion": "Av. Santa Fe 3253",
+            "localidad": "Capital Federal",
+            "latitude": "-34.5884743",
+            "longitude": "-58.410921099999996"
+          },
+          {
+            "direccion": "Güemes 329",
+            "localidad": "Resistencia",
+            "latitude": "-27.449235916137695",
+            "longitude": "-58.98284149169922"
+          },
+          {
+            "direccion": "Bartolomé Mitre 369",
+            "localidad": "El Bolson",
+            "latitude": "-41.94569396972656",
+            "longitude": "-71.53076171875"
+          },
+          {
+            "direccion": "Damian Garat 3255",
+            "localidad": "Cordoba",
+            "latitude": "-31.363021850585938",
+            "longitude": "-64.21514892578125"
+          },
+          {
+            "direccion": "Parana 3745",
+            "localidad": "Martinez",
+            "latitude": "-34.5087642",
+            "longitude": "-58.52176429999997"
+          },
+          {
+            "direccion": "Florida 251",
+            "localidad": "Capital Federal",
+            "latitude": "-34.60533142089844",
+            "longitude": "-58.37509536743164"
+          },
+          {
+            "direccion": "Av. Rivadavia 5108",
+            "localidad": "Capital Federal",
+            "latitude": "-34.6189079",
+            "longitude": "-58.43782550000003"
+          },
+          {
+            "direccion": "Arce 940",
+            "localidad": "Capital Federal",
+            "latitude": "-34.5672932",
+            "longitude": "-58.4371074"
+          },
+          {
+            "direccion": "Junin 501",
+            "localidad": "Rosario",
+            "latitude": "-32.92813491821289",
+            "longitude": "-60.66783142089844"
+          },
+          {
+            "direccion": "San Martin 483",
+            "localidad": "Comodoro Rivadavia",
+            "latitude": "-58.381553649902344",
+            "longitude": "-34.60542678833008"
+          },
+          {
+            "direccion": "Rivadavia 3050",
+            "localidad": "Mar Del Plata",
+            "latitude": "-37.9979761",
+            "longitude": "-57.55202809999997"
+          },
+          {
+            "direccion": "General Alvear 301",
+            "localidad": "Martinez",
+            "latitude": "-34.487953186035156",
+            "longitude": "-58.4973030090332"
+          },
+          {
+            "direccion": "Río de Janeiro 1725",
+            "localidad": "Villa Allende",
+            "latitude": "0.0",
+            "longitude": "0.0"
+          },
+          {
+            "direccion": "O Higgins 83",
+            "localidad": "Bahia Blanca",
+            "latitude": "-38.72037359999999",
+            "longitude": "-62.26686960000001"
+          },
+          {
+            "direccion": "AV DR RAMON 355",
+            "localidad": "Neuquen",
+            "latitude": "-38.9420456",
+            "longitude": "-68.06477869999998"
+          },
+          {
+            "direccion": "Enrique Bodereau 7571",
+            "localidad": "Cordoba",
+            "latitude": "-64.288242",
+            "longitude": "-31.33471"
+          },
+          {
+            "direccion": "Pinto 682",
+            "localidad": "Tandil",
+            "latitude": "-37.3268928527832",
+            "longitude": "-59.13515090942383"
+          },
+          {
+            "direccion": "Acceso Este Lateral Norte 3280",
+            "localidad": "Guaymallen",
+            "latitude": "-32.901719",
+            "longitude": "-68.79933870000002"
+          },
+          {
+            "direccion": "Bv. Elias Yofre 1050",
+            "localidad": "Cordoba",
+            "latitude": "-31.450695037841797",
+            "longitude": "-64.18035125732422"
+          },
+          {
+            "direccion": "Arce 940",
+            "localidad": "Capital Federal",
+            "latitude": "-34.5672932",
+            "longitude": "-58.4371074"
+          },
+          {
+            "direccion": "Av. Int. Bullrich 345",
+            "localidad": "Capital Federal",
+            "latitude": "-34.57508869999999",
+            "longitude": "-58.425270100000034"
+          },
+          {
+            "direccion": "9 de Julio 32",
+            "localidad": "Cordoba",
+            "latitude": "-31.414709091186523",
+            "longitude": "-64.18375396728516"
+          },
+          {
+            "direccion": "Panamericana Ramal Pilar Km 36",
+            "localidad": "Tortuguitas",
+            "latitude": "-34.49596349999999",
+            "longitude": "-58.78826579999998"
+          },
+          {
+            "direccion": "Guemes 897",
+            "localidad": "Avellaneda",
+            "latitude": "-34.6924055",
+            "longitude": "-58.38732060000001"
+          },
+          {
+            "direccion": "Balcarse 897",
+            "localidad": "Godoy Cruz",
+            "latitude": "-32.9161659",
+            "longitude": "-68.8406597"
+          },
+          {
+            "direccion": "Avenida Meeks 222",
+            "localidad": "Lomas de Zamora",
+            "latitude": "-34.76374053955078",
+            "longitude": "-58.39850616455078"
+          },
+          {
+            "direccion": "Calle 8 826",
+            "localidad": "La Plata",
+            "latitude": "-34.91485595703125",
+            "longitude": "-57.95181655883789"
+          },
+          {
+            "direccion": "Sarmiento 2685",
+            "localidad": "Mar Del Plata",
+            "latitude": "-38.0054771",
+            "longitude": "-57.54261059999999"
+          },
+          {
+            "direccion": "Parana 3745",
+            "localidad": "Martinez",
+            "latitude": "-34.5087642",
+            "longitude": "-58.52176429999997"
+          },
+          {
+            "direccion": "Velez Sarfield 361",
+            "localidad": "Cordoba",
+            "latitude": "-31.4194902",
+            "longitude": "-64.18885160000002"
+          },
+          {
+            "direccion": "Avenida Victorica 1128",
+            "localidad": "Moreno",
+            "latitude": "-34.6355293",
+            "longitude": "-58.7921404"
+          },
+          {
+            "direccion": "Vicente López 2000",
+            "localidad": "Capital Federal",
+            "latitude": "-34.5892452",
+            "longitude": "-58.39296619999999"
+          },
+          {
+            "direccion": "Av. de los Lagos 7010",
+            "localidad": "Tigre",
+            "latitude": "-34.4238006",
+            "longitude": "-58.658180000000016"
+          },
+          {
+            "direccion": "Ruta Panamericana 2650",
+            "localidad": "Godoy Cruz",
+            "latitude": "-32.955647",
+            "longitude": "-68.85922800000003"
+          },
+          {
+            "direccion": "Córdoba 1292",
+            "localidad": "Rosario",
+            "latitude": "-32.94593811035156",
+            "longitude": "-60.640777587890625"
+          },
+          {
+            "direccion": "Avenida Santa Fe 1649",
+            "localidad": "Capital Federal",
+            "latitude": "-34.59575653076172",
+            "longitude": "-58.390804290771484"
+          },
+          {
+            "direccion": "Las Magnolias 698",
+            "localidad": "Pilar",
+            "latitude": "-34.446981",
+            "longitude": "-58.870032"
+          },
+          {
+            "direccion": "San Martín 3025",
+            "localidad": "Mar Del Plata",
+            "latitude": "-37.961280822753906",
+            "longitude": "-57.622005462646484"
+          },
+          {
+            "direccion": "Avenida Santa Fe 2422",
+            "localidad": "Capital Federal",
+            "latitude": "-34.59479522705078",
+            "longitude": "-58.401458740234375"
+          },
+          {
+            "direccion": "25 de Mayo 275",
+            "localidad": "Moron",
+            "latitude": "-34.6513671875",
+            "longitude": "-58.6199836730957"
+          },
+          {
+            "direccion": "Florida 110",
+            "localidad": "Capital Federal",
+            "latitude": "-34.60680389404297",
+            "longitude": "-58.37509536743164"
+          },
+          {
+            "direccion": " ",
+            "localidad": "Portal Rosario",
+            "latitude": "-32.9091112",
+            "longitude": "-60.68345629999999"
+          },
+          {
+            "direccion": "Martín Miguel de Güemes 2595",
+            "localidad": "Mar Del Plata",
+            "latitude": "-38.01304244995117",
+            "longitude": "-57.53975296020508"
+          },
+          {
+            "direccion": "San Martín 485",
+            "localidad": "Comodoro Rivadavia",
+            "latitude": "-45.86096954345703",
+            "longitude": "-67.48114013671875"
+          },
+          {
+            "direccion": "Pinto 682",
+            "localidad": "Tandil",
+            "latitude": "-37.3268928527832",
+            "longitude": "-59.13515090942383"
+          },
+          {
+            "direccion": "Arce 940",
+            "localidad": "Capital Federal",
+            "latitude": "-34.5672932",
+            "longitude": "-58.4371074"
+          },
+          {
+            "direccion": " ",
+            "localidad": "La Barraca Mall",
+            "latitude": "-32.912576",
+            "longitude": "-68.82026239999999"
+          },
+          {
+            "direccion": "Juan Julián Lastra 2400",
+            "localidad": "Neuquen",
+            "latitude": "-38.95957946777344",
+            "longitude": "-68.09260559082031"
+          },
+          {
+            "direccion": "Juan Manuel de Rosas 658",
+            "localidad": "Moron",
+            "latitude": "-34.7011085",
+            "longitude": "-58.6478649"
+          },
+          {
+            "direccion": "San Martin 768",
+            "localidad": "Capital Federal",
+            "latitude": "-34.5990119",
+            "longitude": "-58.374185899999986"
+          },
+          {
+            "direccion": "Sarmiento 2143",
+            "localidad": "Bahia Blanca",
+            "latitude": "-38.69886109999999",
+            "longitude": "-62.24411620000001"
+          },
+          {
+            "direccion": "Rivadavia 701",
+            "localidad": "Catamarca",
+            "latitude": "-28.469573974609375",
+            "longitude": "-65.77835845947266"
+          },
+          {
+            "direccion": "Parana 3745",
+            "localidad": "Martinez",
+            "latitude": "-34.5087642",
+            "longitude": "-58.52176429999997"
+          },
+          {
+            "direccion": " ",
+            "localidad": "Alto Comahue Shopping",
+            "latitude": "-38.9420114",
+            "longitude": "-68.06477699999999"
+          },
+          {
+            "direccion": "Alsina 134",
+            "localidad": "Bahia Blanca",
+            "latitude": "-38.7173792",
+            "longitude": "-62.26340589999995"
+          },
+          {
+            "direccion": "Caseros 658",
+            "localidad": "Salta",
+            "latitude": "-24.78959083557129",
+            "longitude": "-65.41168212890625"
+          },
+          {
+            "direccion": "Parana 3745",
+            "localidad": "Martinez",
+            "latitude": "-34.5087642",
+            "longitude": "-58.52176429999997"
+          },
+          {
+            "direccion": "Avenida de Mayo 201",
+            "localidad": "Ramos Mejia",
+            "latitude": "-34.64275360107422",
+            "longitude": "-58.5655632019043"
+          },
+          {
+            "direccion": "Av. Fermin Cariola 42",
+            "localidad": "San Miguel De Tucuman",
+            "latitude": "-26.821811",
+            "longitude": "-65.267655"
+          },
+          {
+            "direccion": "O&#39;Higgins 83",
+            "localidad": "Bahia Blanca",
+            "latitude": "-58.381553649902344",
+            "longitude": "-34.60542678833008"
+          },
+          {
+            "direccion": "Nansen 323",
+            "localidad": "Rosario",
+            "latitude": "-32.9091112",
+            "longitude": "-60.68345629999999"
+          },
+          {
+            "direccion": "Av. Cordoba 1292",
+            "localidad": "Rosario",
+            "latitude": "-32.94593811035156",
+            "longitude": "-60.640846252441406"
+          }
+        ],
+        "web": []
+      },
+      "basesCondiciones": "EN LOCALES ADHERIDOS DE ARGENTINA PARA CLIENTES BBVA QUE ABONEN SUS COMPRAS EXCLUSIVAMENTE CON TARJETAS DE CREDITO VISA A TRAVÉS DE APP BBVA ESCANEANDO QR MODO. 6 CUOTAS SIN INTERÉS Y 20% DE REINTEGRO CON TOPE DE $50.000 POR CLIENTE POR MES. 9 CUOTAS SIN INTERÉS PARA COMPRAS MAYORES A $250.000. CONSULTA LOCALES ADHERIDOS EN HTTPS://WWW.BBVA.COM.AR/BENEFICIOS/ . LA PRESENTE PROMOCIÓN ES VÁLIDA SÓLO PARA CONSUMOS DE TIPO FAMILIAR. EL REINTEGRO SE ACREDITARÁ DENTRO DE LOS 60 DÍAS POSTERIORES A LA COMPRA EN TU CAJA DE AHORROS ACTIVA EN BBVA Y VINCULADA A MODO. PARA PODER RECIBIR EL REINTEGRO, QUIEN REALIZA LA COMPRA DEBE SER TITULAR DE UNA CAJA DE AHORROS ACTIVA EN BBVA Y DICHA CUENTA DEBE ENCONTRARSE VINCULADA A MODO. SI QUIEN REALIZA LA COMPRA ES ADICIONAL DE TARJETA DE CRÉDITO Y NO POSEE UNA CAJA DE AHORROS EN BBVA, EL REINTEGRO SE ACREDITARÁ EN LA CAJA DE AHORROS ACTIVA EN BBVA DEL TITULAR DE LA TARJETA DE CRÉDITO. DICHA CAJA DE AHORROS DEBE ENCONTRARSE VINCULADA A MODO. ACUMULA ÚNICAMENTE CON PROMOCIONES DE MODO. LA PROMOCIÓN NO APLICA A PAGOS REALIZADOS A TRAVÉS DE OTRAS BILLETERAS VIRTUALES Y/O PLATAFORMAS DE PAGO ONLINE (POR EJEMPLO MERCADO PAGO, UALÁ, ETC.). EJEMPLO: EN UNA COMPRA DE $240.000 REALIZADA EN 6 CUOTAS SIN INTERÉS CON TARJETA DE CRÉDITO BBVA, TENDRÁS DEL PRIMER AL SEXTO RESUMEN UN CONSUMO DE $40.000 Y UN REINTEGRO EQUIVALE A $48.000, QUE SE ACREDITARÁN DENTRO DE LOS 60 DÍAS POSTERIORES A LA COMPRA EN TU CAJA DE AHORROS ACTIVA EN BBVA VINCULADA A MODO.LOS ACCIONISTAS DE BANCO BBVA ARGENTINA S.A. LIMITAN SU RESPONSABILIDAD A LA INTEGRACIÓN DE LAS ACCIONES SUSCRIPTAS LEY 19.550 Y LEY 25.738. CUIT 30-50000319-3. AVDA.CÓRDOBA 111- PISO 31 CABA - CP 1054AAA.",
+      "diasPromo": "0,1,0,0,0,0,0",
+      "vigencia": "Del 01/09/2026 hasta 27/10/2026",
+      "grupoTarjeta": "Tarjetas de crédito BBVA",
+      "tiempoAcreditacion": null,
+      "esModo": false
+    }
+  },
+  {
+    "source": "bbva",
+    "source_id": "88050",
+    "scraped_at": "2026-10-19T13:50:06.391153+00:00",
+    "source_url": "https://go.bbva.com.ar/willgo/fgo/API/v3/communication/88050",
+    "catalog": {
+      "id": "88050",
+      "imagen": "https://assets.caasbbva.com/content/dam/caas/argentina/beneficios/comunicacion/duty_visa_317x112.png",
+      "cabecera": "Duty Free Shop 20%",
+      "subcabecera": "20% de reintegro .Promoción válida desde 01-10-2026 hasta 31-10-2026",
+      "idCampania": "",
+      "esCampania": false,
+      "esCampaniaMadre": false,
+      "fechaDesde": "2026-10-01",
+      "fechaHasta": "2026-10-31",
+      "diasPromo": "1,1,1,1,1,1,1",
+      "montoTope": "30000",
+      "grupoTarjeta": "Tarjetas de crédito BBVA"
+    },
+    "detail": {
+      "id": "88050",
+      "imagen": "https://assets.caasbbva.com/content/dam/caas/argentina/beneficios/comunicacion/duty_visa_317x112.png",
+      "cabecera": "Duty Free Shop 20%",
+      "beneficios": [
+        {
+          "cuota": 0,
+          "tope": "30000",
+          "tipoTope": "Usuario",
+          "frecuenciaTope": "Por Mes",
+          "requisitos": [
+            "Exclusivo VISA. Pagando con NFC (ApplePay y GooglePay). \nRecibí el reintegro en tu caja de ahorro."
+          ]
+        }
+      ],
+      "canalesVenta": {
+        "sucursales": [
+          {
+            "direccion": "Avenida La Voz del Interior 8500",
+            "localidad": "Cordoba",
+            "latitude": "-31.31085777282715",
+            "longitude": "-64.2227554321289"
+          },
+          {
+            "direccion": "Autopista Teniente General Pablo Riccheri 0",
+            "localidad": "Ezeiza",
+            "latitude": "-34.81572723388672",
+            "longitude": "-58.54157257080078"
+          },
+          {
+            "direccion": "Avenida Jorge Newbery 1",
+            "localidad": "Rosario",
+            "latitude": "-32.90907287597656",
+            "longitude": "-60.75590515136719"
+          },
+          {
+            "direccion": "Avenida Costanera Rafael Obligado 600",
+            "localidad": "Capital Federal",
+            "latitude": "-34.55530548095703",
+            "longitude": "-58.414772033691406"
+          },
+          {
+            "direccion": "Acceso A Aeropuerto Internacional Gabrielli F. J. 2000",
+            "localidad": "Las Heras",
+            "latitude": "-32.827735900878906",
+            "longitude": "-68.7984390258789"
+          },
+          {
+            "direccion": "Ruta Provincial 80 400",
+            "localidad": "San Carlos De Bariloche",
+            "latitude": "-41.1470823",
+            "longitude": "-71.1618074"
+          }
+        ],
+        "web": []
+      },
+      "basesCondiciones": "LA PROMOCIÓN CONSTA DE 20% DE REINTEGRO CON TOPE DE $30.000 POR USUARIO POR VIGENCIA. VÁLIDA PARA CLIENTES QUE ABONEN SUS COMPRAS EN UN PAGO CON TARJETAS DE CRÉDITO VISA EMITIDAS POR BBVA. EXCLUSIVO PARA PAGOS REALIZADOS DESDE EL CELULAR VÍA NFC (&#34;SIN CONTACTO&#34;) A TRAVÉS APPLE PAY (DISPONIBLE SÓLO EN IOS), GOOGLE PAY, O MODO CONTACTLESS. ES REQUISITO TENER UNA CAJA DE AHORRO EN PESOS ACTIVA EN BBVA PARA RECIBIR LA ACREDITACIÓN DEL REINTEGRO. LA PRESENTE PROMOCIÓN ES VÁLIDA SÓLO PARA CONSUMOS DE TIPO FAMILIAR Y NO SE ACUMULA A OTRAS PROMOCIONES. NO PARTICIPAN TARJETAS VISA PURCHASING, DISTRIBUTION, BUSINESS Y CORPORATE. LA BONIFICACIÓN SE ACREDITARÁ  DENTRO DE LOS 60 DÍAS POSTERIORES A LA COMPRA EN TU CAJA DE AHORROS ACTIVA EN BBVA. EN EL CASO DE DUDA SOBRE EL DESTINO DEL CONSUMO, EL BANCO SE RESERVA LA FACULTAD DE NO ACREDITAR EL MONTO DE LA BONIFICACIÓN HASTA TANTO SE ACLARE EL MISMO. LA PROMOCIÓN NO APLICA A PAGOS REALIZADOS A TRAVÉS DE BILLETERAS VIRTUALES Y/O PLATAFORMAS DE PAGO ONLINE (POR EJEMPLO, PAYPAL, TODO PAGO, MERCADO PAGO, UALÁ, ETC.). LOS ACCIONISTAS DE BANCO BBVA ARGENTINA S.A. LIMITAN SU RESPONSABILIDAD A LA INTEGRACIÓN DE LAS ACCIONES SUSCRIPTAS LEY 19.550 Y LEY 25.738. CUIT 30-50000319-3. AVDA.CÓRDOBA 111- PISO 31 CABA - CP 1054AAA.",
+      "diasPromo": "1,1,1,1,1,1,1",
+      "vigencia": "Del 01/10/2026 hasta 31/10/2026",
+      "grupoTarjeta": "Tarjetas de crédito BBVA",
+      "tiempoAcreditacion": null,
+      "esModo": false
+    }
+  },
+  {
+    "source": "bbva",
+    "source_id": "88051",
+    "scraped_at": "2026-10-19T13:50:06.461553+00:00",
+    "source_url": "https://go.bbva.com.ar/willgo/fgo/API/v3/communication/88051",
+    "catalog": {
+      "id": "88051",
+      "imagen": "https://go.bbva.com.ar/fgo/sites/default/files/imagen/comercio/3998_assistcard_320x320.png",
+      "cabecera": "Assist Card 12 cuotas",
+      "subcabecera": "  .Promoción válida desde 01-10-2026 hasta 31-10-2026",
+      "idCampania": "",
+      "esCampania": false,
+      "esCampaniaMadre": false,
+      "fechaDesde": "2026-10-01",
+      "fechaHasta": "2026-10-31",
+      "diasPromo": "1,1,1,1,1,1,1",
+      "montoTope": null,
+      "grupoTarjeta": "Tarjetas de crédito BBVA"
+    },
+    "detail": {
+      "id": "88051",
+      "imagen": "https://go.bbva.com.ar/fgo/sites/default/files/imagen/comercio/3998_assistcard_320x320.png",
+      "cabecera": "Assist Card 12 cuotas",
+      "beneficios": [
+        {
+          "cuota": 12,
+          "tope": null,
+          "tipoTope": " ",
+          "frecuenciaTope": " ",
+          "requisitos": [
+            "Ingresando en https://www.assistcard.com/ar/b2c/asistencia-al-viajero-bbva-argentina.\nLínea exclusiva de venta telefónica 5555-2009."
+          ]
+        }
+      ],
+      "canalesVenta": {
+        "sucursales": [],
+        "web": [
+          {
+            "name": "Assist Card",
+            "url": "WWW.ASSIST-CARD.COM/AR"
+          }
+        ]
+      },
+      "basesCondiciones": "EL DESCUENTO YA SE ENCUENTRA PUBLICADO EN LA ETAPA DE BÚSQUEDA. ABONANDO UNICAMENTE CON TARJETA DE CRÉDITO BBVA. FECHA LÍMITE DE INICIO DE VIGENCIA 31/03/2027. SIN LÍMITE DE STOCK. ADQUIRIENDO EXCLUSIVAMENTE A TRAVÉS DE LOS CANALES DIRECTOS HABILITADOS: (I) UN PRODUCTO ASSIST CARD CLASSIC, PREMIUM, PRIVILEGED MODALIDAD DIARIA (HASTA 30 DÍAS) OBTENGA UN BENEFICIO DEL 40% (CUARENTA POR CIENTO) DE DESCUENTO SOBRE LA TARIFA PUBLICADA. (II) UN PRODUCTO ASSIST CARD MILLION MODALIDAD DIARIA (HASTA 30 DÍAS) OBTENGA UN BENEFICIO DEL 45% (CUARENTA Y CINCO POR CIENTO) DE DESCUENTO SOBRE LA TARIFA PUBLICADA. (III) UN PRODUCTO ASSIST CARD INFINITY MODALIDAD DIARIA (HASTA 30 DÍAS) OBTENGA UN BENEFICIO DEL 55% (CINCUENTA Y CINCO POR CIENTO) DE DESCUENTO SOBRE LA TARIFA PUBLICADA. PROMOCIÓN (I),(II) Y (III) NO VÁLIDA PARA MODALIDAD ANUAL MÚLTIPLES VIAJES, LONG STAY DAILY, LONG STAY ANUAL, PACK FAMILIAR NI PARA CONTRATACIONES DE AMPLIACIONES DE LÍMITES DE ASISTENCIAS Y/O CONTRATACIÓN DE BENEFICIOS ADICIONALES; NI ACUMULABLES CON NINGÚN OTRO BENEFICIO SALVO LO DISPUESTO EXPRESAMENTE EN LA PRESENTE PROMOCION. (IV) UN PRODUCTO ASSIST CARD CLASSIC, PREMIUM, PRIVILEGED, MILLION, INFINITY MODALIDAD ANUAL MÚLTIPLES VIAJES OBTENGA UN BENEFICIO DEL 50% (CINCUENTA POR CIENTO) DE DESCUENTO SOBRE LA TARIFA PUBLICADA. PROMOCIÓN NO VÁLIDA PARA MODALIDAD DAILY, LONG STAY DAILY, LONG STAY ANUAL NI PARA CONTRATACIONES DE AMPLIACIONES DE LÍMITES DE ASISTENCIAS Y/O CONTRATACIÓN DE BENEFICIOS ADICIONALES; NI ACUMULABLE CON NINGÚN OTRO BENEFICIO SALVO LO DISPUESTO EXPRESAMENTE EN LA PRESENTE PROMOCION. A SU VEZ, PARA EL PUNTO (IV) OBTENGA GRATIS HASTA 4 PRODUCTOS COMO MÁXIMO CON IDÉNTICA VIGENCIA, MODALIDAD Y CARACTERÍSTICAS AL ABONADO PARA SUS HIJOS MENORES DE 21 AÑOS. PARA LOS PUNTOS (I), (II), (III) Y (IV) EL DESCUENTO YA SE ENCUENTRA INCLUIDO AL PRECIO FINAL PUBLICADO EN EL PORTAL WEB. (V) UN PRODUCTO ASSIST CARD CLASSIC, PREMIUM, PRIVILEGED, MILLION, INFINITY BAJO CUALQUIER MODALIDAD, OBTENGA UN BENEFICIO ADICIONAL DEL 20% (VEINTE POR CIENTO) DE DESCUENTO SOBRE EL PRECIO FINAL PUBLICADO ABONANDO EL PRODUCTO ASSIST CARD EN 1 (UN) SOLO PAGO CON TARJETAS DE CRÉDITO AMERICAN EXPRESS, VISA O MASTERCARD. PROMOCIÓN VÁLIDA ÚNICAMENTE PARA PAGOS REALIZADOS EN UN SOLO PAGO CON TARJETAS DE CRÉDITO AMERICAN EXPRESS, VISA O MASTERCARD, NO APLICABLE A CUOTAS. LOS SERVICIOS ASSIST CARD TIENEN LIMITACIONES EXCLUSIVAS SEGÚN EL TIPO DE PRODUCTO ADQUIRIDO. APLICAN LAS LIMITACIONES Y EXCLUSIONES DE USO HABITUAL Y/O LEGAL EN EL PAÍS EN QUE SE EMITA EL PRODUCTO ASSIST CARD. A PARTIR DE LOS 70 AÑOS INCLUSIVE SE APLICA UN INCREMENTO DEL 50% (CINCUENTA POR CIENTO) SOBRE LAS TARIFAS Y A PARTIR DE LOS 75 AÑOS INCLUSIVE SE APLICA UN INCREMENTO DEL 100% (CIEN POR CIENTO). LOS SERVICIOS Y PRODUCTOS SE RIGEN POR CONDICIONES GENERALES QUE SE INFORMAN CON LA COMPRA DE CADA PRODUCTO ASSIST CARD Y SE HALLAN A SU DISPOSICIÓN INGRESANDO EN EL PORTAL WEB, ASÍ COMO EN LAS OFICINAS COMERCIALES Y LOCALES DE ASSIST CARD DONDE PUEDEN SER SOLICITADAS EN FORMA PERSONAL, TELEFÓNICAMENTE O POR E-MAIL. LAS ENFERMEDADES PREEXISTENTES TIENEN EXCLUSIONES Y LIMITACIONES. ASSIST CARD NO ES UNA EMPRESA DE SEGUROS, SINO QUE ACTÚA EN CALIDAD DE TOMADORA EN BENEFICIO DE SUS CLIENTES. ASSIST CARD ARGENTINA S.A. DE SERVICIOS, ARIAS Nº 3751°, PISO 10, CP 1430, CABA. CUIT 33-54799242-9. DOMICILIO ELECTRONICO: ATENCIONALCLIENTE&#64;ASSISTCARD.COM. LOS ACCIONISTAS DE BANCO BBVA ARGENTINA S.A. LIMITAN SU RESPONSABILIDAD A LA INTEGRACIÓN DE LAS ACCIONES SUSCRIPTAS LEY 19.550 Y LEY 25.738. CUIT 30-50000319-3. AVDA.CÓRDOBA 111- PISO 31 CABA - CP 1054AAA",
+      "diasPromo": "1,1,1,1,1,1,1",
+      "vigencia": "Del 01/10/2026 hasta 31/10/2026",
+      "grupoTarjeta": "Tarjetas de crédito BBVA",
+      "tiempoAcreditacion": null,
+      "esModo": false
+    }
+  },
+  {
+    "source": "bbva",
+    "source_id": "88152",
+    "scraped_at": "2026-10-19T13:50:07.326240+00:00",
+    "source_url": "https://go.bbva.com.ar/willgo/fgo/API/v3/communication/88152",
+    "catalog": {
+      "id": "88152",
+      "imagen": "https://assets.caasbbva.com/content/dam/caas/argentina/beneficios/campania/bocapedidosya_317x112.png",
+      "cabecera": "Pedidosya Boca Mastercard",
+      "subcabecera": "  .Promoción válida desde 02-10-2026 hasta 31-10-2026",
+      "idCampania": "",
+      "esCampania": false,
+      "esCampaniaMadre": false,
+      "fechaDesde": "2026-10-02",
+      "fechaHasta": "2026-10-31",
+      "diasPromo": null,
+      "montoTope": null,
+      "grupoTarjeta": "Tarjetas de crédito BBVA"
+    },
+    "detail": {
+      "id": "88152",
+      "imagen": "https://assets.caasbbva.com/content/dam/caas/argentina/beneficios/campania/bocapedidosya_317x112.png",
+      "cabecera": "Pedidosya Boca Mastercard",
+      "beneficios": [
+        {
+          "cuota": 0,
+          "tope": null,
+          "tipoTope": "ninguno",
+          "frecuenciaTope": " ",
+          "requisitos": [
+            "Usá el cupón del partido por $7.500 de descuento. Compra mínima: $15.000."
+          ]
+        }
+      ],
+      "canalesVenta": {
+        "sucursales": [],
+        "web": [
+          {
+            "name": "Pedidosya Boca",
+            "url": "https://www.mastercard.com/ar/es/personal/experience-mastercard/conozca-nuestras-ofertas-y-promociones.html"
+          }
+        ]
+      },
+      "basesCondiciones": "Promoción válida en la República Argentina, desde 01/20/2026 al 31/10/2026 o hasta agotar stock,\nlo que ocurra primero. Durante el Plazo de Vigencia, se pondrá a disposición 1 código de cupón de descuento por un valor de ARS 7.500 aplicable a compras por un monto mínimo de ARS 15.000 a favor de los tarjetahabientes titulares de tarjetas de crédito Mastercard emitidas por BBVA que utilicen las Tarjetas como medio de pago para\nrealizar compras a través de la aplicación y/o la página web de PedidosYa durante los partidos de fútbol del Club Atlético Boca Juniors el 2, 11, 18 y 25 de octubre de 2026, frente a Club Atlético Unión de Santa Fe, Instituto Atlético Central Córdoba, Club Atlético Talleres y Club Atlético Independiente, respectivamente.\nEl código del Cupón correspondiente a cada Partido será:BOCAMASTERF11, para\nel Partido del 2 de octubre de 2026;BOCAMASTERF12, para el Partido del 11 de\noctubre de 2026; BOCAMASTERF13, para el Partido del 18 de octubre de 2026; y\nBOCAMASTERF14, para el Partido del 25 de octubre de 2026.La disponibilidad de\nCupones estará sujeta a un stock de 15.000 Cupones por Partido. Para\npoder utilizar un Cupón, los tenedores de las Tarjetas deberán ingresar el código del\nCupón de forma proactiva en la sección Cupones de su perfil de la Plataforma. El\nCupón podrá ser utilizado en una sola compra y su valor no podrá fraccionarse en varias\ncompras, así como tampoco generar un saldo a favor del tenedor de la Tarjeta. La\nposibilidad de cargar el Cupón estará habilitada desde 2 horas antes del inicio de\ncada Partido, durante el desarrollo de cada Partido y hasta 2  horas posteriores a la\nfinalización de cada Partido. Cada Cupón tendrán una validez de 48 horas corridas desde el momento de su carga en el perfil de la Plataforma del tenedor de\nla Tarjeta y una vez transcurrido ese plazo, el Cupón expirará automáticamente y no\npodrá ser utilizado.\nLas fechas de los Partidos podrán ser modificadas por la Asociación del Fútbol Argentino\nAFA. En tal caso, los Cupones correspondientes estarán disponibles en las fechas en\nlas que efectivamente se disputen los Partidos y podrán cargarse dentro de la franja\nhoraria indicada en los presentes términos y condiciones.",
+      "diasPromo": null,
+      "vigencia": "Del 02/10/2026 hasta 31/10/2026",
+      "grupoTarjeta": "Tarjetas de crédito BBVA",
+      "tiempoAcreditacion": null,
+      "esModo": false
+    }
+  },
+  {
+    "source": "bbva",
+    "source_id": "87865",
+    "scraped_at": "2026-10-19T13:50:07.635804+00:00",
+    "source_url": "https://go.bbva.com.ar/willgo/fgo/API/v3/communication/87865",
+    "catalog": {
+      "id": "87865",
+      "imagen": "https://go.bbva.com.ar/fgo/sites/default/files/imagen/comercio/25610_luccianos_320x320.png",
+      "cabecera": "Luccianos 20%",
+      "subcabecera": "  .Promoción válida desde 01-10-2026 hasta 31-10-2026",
+      "idCampania": "2502",
+      "esCampania": false,
+      "esCampaniaMadre": false,
+      "fechaDesde": "2026-10-01",
+      "fechaHasta": "2026-10-31",
+      "diasPromo": "1,1,1,1,1,1,1",
+      "montoTope": "15000",
+      "grupoTarjeta": "Tarjetas de crédito BBVA"
+    },
+    "detail": {
+      "id": "87865",
+      "imagen": "https://go.bbva.com.ar/fgo/sites/default/files/imagen/comercio/25610_luccianos_320x320.png",
+      "cabecera": "Luccianos 20%",
+      "beneficios": [
+        {
+          "cuota": 0,
+          "tope": "15000",
+          "tipoTope": "Usuario",
+          "frecuenciaTope": "Por Mes",
+          "requisitos": [
+            "Pagando con NFC (ApplePay y GooglePay). Recibí el reintegro"
+          ]
+        }
+      ],
+      "canalesVenta": {
+        "sucursales": [
+          {
+            "direccion": "Olga Cossettini 1185",
+            "localidad": "Capital Federal",
+            "latitude": "-34.61132049560547",
+            "longitude": "-58.3635368347168"
+          },
+          {
+            "direccion": "Avenida Costanera 3200",
+            "localidad": "Posadas",
+            "latitude": "-27.354839324951172",
+            "longitude": "-55.9028205871582"
+          },
+          {
+            "direccion": "Av. Corrientes 3247",
+            "localidad": "Capital Federal",
+            "latitude": "-58.410987854003906",
+            "longitude": "-34.6038818359375"
+          },
+          {
+            "direccion": "General Roca 93",
+            "localidad": "Cipolletti",
+            "latitude": "-38.93844985961914",
+            "longitude": "-68.00059509277344"
+          },
+          {
+            "direccion": "Jujuy 2204",
+            "localidad": "Rosario",
+            "latitude": "-32.93539810180664",
+            "longitude": "-60.65146255493164"
+          },
+          {
+            "direccion": "Peatonal San Martín 2502",
+            "localidad": "Mar Del Plata",
+            "latitude": "-37.999942779541016",
+            "longitude": "-57.546016693115234"
+          },
+          {
+            "direccion": "Av. Córdoba  - Local Nº 3 2135",
+            "localidad": "Capital Federal",
+            "latitude": "-34.603763580322266",
+            "longitude": "-58.38172912597656"
+          },
+          {
+            "direccion": "Avenida Leandro Niceforo Alem 293",
+            "localidad": "Bahia Blanca",
+            "latitude": "-38.7117896",
+            "longitude": "-62.2621358"
+          },
+          {
+            "direccion": "Avenida del Libertador 2607",
+            "localidad": "Victoria",
+            "latitude": "-34.44774627685547",
+            "longitude": "-58.54044723510742"
+          },
+          {
+            "direccion": "Junin 385",
+            "localidad": "Rosario",
+            "latitude": "-32.92645359999999",
+            "longitude": "-60.669064400000025"
+          },
+          {
+            "direccion": "Avenida Juan José Paso 2002",
+            "localidad": "Mar Del Plata",
+            "latitude": "-38.02244186401367",
+            "longitude": "-57.55705642700195"
+          },
+          {
+            "direccion": "Avenida Congreso 4980",
+            "localidad": "Capital Federal",
+            "latitude": "-34.56927490234375",
+            "longitude": "-58.4888801574707"
+          },
+          {
+            "direccion": "Rivadavia 3050",
+            "localidad": "Mar Del Plata",
+            "latitude": "-37.9979761",
+            "longitude": "-57.55202809999997"
+          },
+          {
+            "direccion": "Necochea 322",
+            "localidad": "Ramos Mejia",
+            "latitude": "-34.64398193359375",
+            "longitude": "-58.56654739379883"
+          },
+          {
+            "direccion": "Avenida Corrientes 985",
+            "localidad": "Capital Federal",
+            "latitude": "-34.603492",
+            "longitude": "-58.380744"
+          },
+          {
+            "direccion": "Rivadavia 4955",
+            "localidad": "Capital Federal",
+            "latitude": "-34.61772537231445",
+            "longitude": "-58.435550689697266"
+          },
+          {
+            "direccion": "Sarmiento 2685",
+            "localidad": "Mar Del Plata",
+            "latitude": "-38.0054771",
+            "longitude": "-57.54261059999999"
+          },
+          {
+            "direccion": "Colectora Sur Acceso Oeste 47",
+            "localidad": "General Rodriguez",
+            "latitude": "-34.598731994628906",
+            "longitude": "-58.92631149291992"
+          },
+          {
+            "direccion": "4785 4785",
+            "localidad": "Castelar",
+            "latitude": "-34.6068228",
+            "longitude": "-58.5635735"
+          },
+          {
+            "direccion": "Cuba 1920",
+            "localidad": "Capital Federal",
+            "latitude": "-34.56264877319336",
+            "longitude": "-58.45338439941406"
+          },
+          {
+            "direccion": "Juan Manuel de Rosas 658",
+            "localidad": "Moron",
+            "latitude": "-34.6342658996582",
+            "longitude": "-58.62928009033203"
+          },
+          {
+            "direccion": "Avenida del Bicentenario de la Batalla de Salta 702",
+            "localidad": "Salta",
+            "latitude": "-24.7813068",
+            "longitude": "-65.40277739999999"
+          },
+          {
+            "direccion": "Bartolomé Mitre 10",
+            "localidad": "San Nicolas de los Arroyos",
+            "latitude": "-33.327354431152344",
+            "longitude": "-60.2156867980957"
+          },
+          {
+            "direccion": "Avenida Medrano 3309",
+            "localidad": "Capital Federal",
+            "latitude": "-34.58912658691406",
+            "longitude": "-58.415870666503906"
+          },
+          {
+            "direccion": "Avenida Intendente Jorge Ruben Varela 360",
+            "localidad": "Campana",
+            "latitude": "-34.163552",
+            "longitude": "-58.9582164"
+          },
+          {
+            "direccion": "Avenida Pedro Goyena 1602",
+            "localidad": "Capital Federal",
+            "latitude": "-34.62831115722656",
+            "longitude": "-58.45039367675781"
+          },
+          {
+            "direccion": "Parana 3745",
+            "localidad": "Martinez",
+            "latitude": "-34.50876235961914",
+            "longitude": "-58.52176284790039"
+          },
+          {
+            "direccion": "Colón 263",
+            "localidad": "Quilmes",
+            "latitude": "-34.71844",
+            "longitude": "-58.2583198"
+          },
+          {
+            "direccion": "Dique 1 Puerto de Santa Fe ",
+            "localidad": "Santa Fe",
+            "latitude": "-60.70211410522461",
+            "longitude": "-31.65125846862793"
+          },
+          {
+            "direccion": "Calle 1 799",
+            "localidad": "General Pico",
+            "latitude": "-35.655643463134766",
+            "longitude": "-63.76176071166992"
+          },
+          {
+            "direccion": "Avenida Constitución 5001",
+            "localidad": "Mar Del Plata",
+            "latitude": "-37.965362548828125",
+            "longitude": "-57.553646087646484"
+          },
+          {
+            "direccion": "Santa Rosa 1494",
+            "localidad": "Castelar",
+            "latitude": "-34.64302444458008",
+            "longitude": "-58.6568489074707"
+          },
+          {
+            "direccion": "Leandro N. Alem 2427",
+            "localidad": "Mar Del Plata",
+            "latitude": "-38.017154693603516",
+            "longitude": "-57.52775955200195"
+          },
+          {
+            "direccion": "Pueyrredon 3050",
+            "localidad": "Mar Del Plata",
+            "latitude": "-37.998902",
+            "longitude": "-57.551259"
+          },
+          {
+            "direccion": "Castaño 244",
+            "localidad": "Carilo",
+            "latitude": "-37.16681671142578",
+            "longitude": "-56.90180206298828"
+          },
+          {
+            "direccion": "Defensa 998",
+            "localidad": "Capital Federal",
+            "latitude": "-34.61942672729492",
+            "longitude": "-58.37139892578125"
+          },
+          {
+            "direccion": "Avenida Arquitecto Jorge Bunge 149",
+            "localidad": "Pinamar",
+            "latitude": "-37.11592102050781",
+            "longitude": "-56.856910705566406"
+          },
+          {
+            "direccion": "Lafinur 3105",
+            "localidad": "Capital Federal",
+            "latitude": "-34.57955551147461",
+            "longitude": "-58.41378402709961"
+          },
+          {
+            "direccion": "Av. del libertador 105",
+            "localidad": "Vicente Lopez",
+            "latitude": "-34.603763580322266",
+            "longitude": "-58.38172912597656"
+          },
+          {
+            "direccion": "Rawson 1312",
+            "localidad": "Mar Del Plata",
+            "latitude": "-38.014156341552734",
+            "longitude": "-57.540626525878906"
+          },
+          {
+            "direccion": "Washington 3480",
+            "localidad": "Capital Federal",
+            "latitude": "-34.5570827",
+            "longitude": "-58.4797277"
+          },
+          {
+            "direccion": "San Martín 6371",
+            "localidad": "Lujan De Cuyo",
+            "latitude": "-32.9791043",
+            "longitude": "-68.8582106"
+          },
+          {
+            "direccion": "Avenida Presidente Juan Domingo Peron 50",
+            "localidad": "Pilar",
+            "latitude": "-34.46934127807617",
+            "longitude": "-58.856346130371094"
+          },
+          {
+            "direccion": "Avenida del Libertador 14141",
+            "localidad": "Martinez",
+            "latitude": "-34.481666564941406",
+            "longitude": "-58.49103546142578"
+          },
+          {
+            "direccion": "Hipólito Yrigoyen 1295",
+            "localidad": "Corrientes",
+            "latitude": "-27.4687413",
+            "longitude": "-58.8345763"
+          },
+          {
+            "direccion": "Corrientes 461",
+            "localidad": "Olivos",
+            "latitude": "-34.50788116455078",
+            "longitude": "-58.479148864746094"
+          },
+          {
+            "direccion": "La Pampa 661",
+            "localidad": "Capital Federal",
+            "latitude": "-34.5538215637207",
+            "longitude": "-58.436126708984375"
+          },
+          {
+            "direccion": "Gorostiaga 1614",
+            "localidad": "Capital Federal",
+            "latitude": "-34.565406799316406",
+            "longitude": "-58.4362907409668"
+          },
+          {
+            "direccion": "General Bartolomé Mitre 196",
+            "localidad": "Lomas de Zamora",
+            "latitude": "-34.76533126831055",
+            "longitude": "-58.40013122558594"
+          },
+          {
+            "direccion": "Avenida de los Lagos 7010",
+            "localidad": "Nordelta",
+            "latitude": "-34.399715423583984",
+            "longitude": "-58.65394592285156"
+          },
+          {
+            "direccion": "Paseo Jesús de Galindez 0",
+            "localidad": "Mar Del Plata",
+            "latitude": "-38.014320373535156",
+            "longitude": "-57.530277252197266"
+          },
+          {
+            "direccion": "Avenida Comodoro Martín Rivadavia 2369",
+            "localidad": "Capital Federal",
+            "latitude": "-34.5483021",
+            "longitude": "-58.4681029"
+          },
+          {
+            "direccion": "Ramal Pilar 50000",
+            "localidad": "Pilar",
+            "latitude": "-34.43603515625",
+            "longitude": "-58.80792999267578"
+          },
+          {
+            "direccion": "Bartolomé Mitre 37",
+            "localidad": "Salta",
+            "latitude": "-24.789377212524414",
+            "longitude": "-65.41120147705078"
+          },
+          {
+            "direccion": "López José 219",
+            "localidad": "Neuquen",
+            "latitude": "-38.9597924",
+            "longitude": "-68.0458769"
+          },
+          {
+            "direccion": "Sarmiento 445",
+            "localidad": "Catamarca",
+            "latitude": "-28.466293334960938",
+            "longitude": "-65.78006744384766"
+          },
+          {
+            "direccion": "Cuenca 3122",
+            "localidad": "Capital Federal",
+            "latitude": "-34.601165771484375",
+            "longitude": "-58.49565505981445"
+          },
+          {
+            "direccion": "Larrea 1567",
+            "localidad": "Capital Federal",
+            "latitude": "-34.589176177978516",
+            "longitude": "-58.39798355102539"
+          },
+          {
+            "direccion": "Avenida Infanta Isabel 3883",
+            "localidad": "Capital Federal",
+            "latitude": "-34.57018280029297",
+            "longitude": "-58.421756744384766"
+          },
+          {
+            "direccion": "Avenida Santa Fe 2876",
+            "localidad": "Capital Federal",
+            "latitude": "-34.59197235107422",
+            "longitude": "-58.40700149536133"
+          },
+          {
+            "direccion": "Calle 6 entre calle 7 y calle 9 0",
+            "localidad": "Mar Del Plata",
+            "latitude": "-37.998138427734375",
+            "longitude": "-57.66438674926758"
+          },
+          {
+            "direccion": "San Martin 768",
+            "localidad": "Capital Federal",
+            "latitude": "-34.5990104675293",
+            "longitude": "-58.37418746948242"
+          },
+          {
+            "direccion": "Esteban Adrogué 1098",
+            "localidad": "Adrogue",
+            "latitude": "-34.798709869384766",
+            "longitude": "-58.39143371582031"
+          },
+          {
+            "direccion": "Av. Buenos Aires 210",
+            "localidad": "Villa Gesell",
+            "latitude": "-37.2598939",
+            "longitude": "-56.97141939999999"
+          },
+          {
+            "direccion": "Hipólito Yrigoyen 737",
+            "localidad": "General Roca",
+            "latitude": "-39.0308272",
+            "longitude": "-67.5755015"
+          },
+          {
+            "direccion": "Santa Fe 512",
+            "localidad": "San Miguel De Tucuman",
+            "latitude": "-26.820148468017578",
+            "longitude": "-65.20252227783203"
+          },
+          {
+            "direccion": "Jerónimo Salguero 3172",
+            "localidad": "Capital Federal",
+            "latitude": "-34.57560348510742",
+            "longitude": "-58.404029846191406"
+          },
+          {
+            "direccion": "Au. Bs. As. - La Plata, Km 9",
+            "localidad": "Avellaneda",
+            "latitude": "-34.692405700683594",
+            "longitude": "-58.38732147216797"
+          },
+          {
+            "direccion": "Fernández de Enciso 3979",
+            "localidad": "Capital Federal",
+            "latitude": "-34.601173400878906",
+            "longitude": "-58.512481689453125"
+          },
+          {
+            "direccion": "Duarte Quiros 1400",
+            "localidad": "Cordoba",
+            "latitude": "-31.4129543",
+            "longitude": "-64.20453479999999"
+          },
+          {
+            "direccion": "Paraguay 4979",
+            "localidad": "Capital Federal",
+            "latitude": "-34.58110809326172",
+            "longitude": "-58.428810119628906"
+          },
+          {
+            "direccion": "Avenida San Martín Sur 2875",
+            "localidad": "Mendoza",
+            "latitude": "-32.95539474487305",
+            "longitude": "-68.8593978881836"
+          },
+          {
+            "direccion": "Vedia 3632",
+            "localidad": "Capital Federal",
+            "latitude": "-34.54665756225586",
+            "longitude": "-58.48813247680664"
+          },
+          {
+            "direccion": "Avenida Hugo Wast 4653",
+            "localidad": "Cordoba",
+            "latitude": "-31.363662719726562",
+            "longitude": "-64.23871612548828"
+          },
+          {
+            "direccion": "Larrea 1557",
+            "localidad": "Capital Federal",
+            "latitude": "-34.5873825",
+            "longitude": "-58.39727620000001"
+          },
+          {
+            "direccion": "Avenida Marconi 3200",
+            "localidad": "Posadas",
+            "latitude": "-27.380544662475586",
+            "longitude": "-55.888038635253906"
+          },
+          {
+            "direccion": "Avenida El Lucero 423",
+            "localidad": "Mar de las Pampas",
+            "latitude": "-37.32609939575195",
+            "longitude": "-57.02180480957031"
+          },
+          {
+            "direccion": "50 535",
+            "localidad": "La Plata",
+            "latitude": "-34.920494079589844",
+            "longitude": "-57.95356750488281"
+          },
+          {
+            "direccion": "Martín Fierro 3351",
+            "localidad": "Parque Leloir",
+            "latitude": "-34.62513732910156",
+            "longitude": "-58.694496154785156"
+          },
+          {
+            "direccion": "Av. Corrientes 3247",
+            "localidad": "Capital Federal",
+            "latitude": "-34.60396050000001",
+            "longitude": "-58.411008100000004"
+          },
+          {
+            "direccion": "Avenida Corrientes 1471",
+            "localidad": "Capital Federal",
+            "latitude": "-34.60393524169922",
+            "longitude": "-58.38751983642578"
+          },
+          {
+            "direccion": "Leandro N. Alem 3704",
+            "localidad": "Mar Del Plata",
+            "latitude": "-38.027645111083984",
+            "longitude": "-57.53575134277344"
+          },
+          {
+            "direccion": " ",
+            "localidad": "Galerias Pacifico",
+            "latitude": "-34.5990119",
+            "longitude": "-58.374185899999986"
+          },
+          {
+            "direccion": "Avenida José María Eguía Zanón 9107",
+            "localidad": "Cordoba",
+            "latitude": "-31.341346740722656",
+            "longitude": "-64.2935562133789"
+          },
+          {
+            "direccion": "Avenida Díaz Vélez 5501",
+            "localidad": "Capital Federal",
+            "latitude": "-34.60784149169922",
+            "longitude": "-58.443931579589844"
+          },
+          {
+            "direccion": "Holmberg 1932",
+            "localidad": "Capital Federal",
+            "latitude": "-34.57392120361328",
+            "longitude": "-58.47285461425781"
+          },
+          {
+            "direccion": "San Martín 6057",
+            "localidad": "Bahia Blanca",
+            "latitude": "-38.720359802246094",
+            "longitude": "-62.26039505004883"
+          },
+          {
+            "direccion": "Avenida Monroe 2801",
+            "localidad": "Capital Federal",
+            "latitude": "-34.5604064",
+            "longitude": "-58.46370349999999"
+          },
+          {
+            "direccion": "Acceso Este Lateral Norte 3280",
+            "localidad": "Guaymallen",
+            "latitude": "-32.90213394165039",
+            "longitude": "-68.79682159423828"
+          },
+          {
+            "direccion": "Calle 152 152",
+            "localidad": "Hudson",
+            "latitude": "-34.793724060058594",
+            "longitude": "-58.1697883605957"
+          },
+          {
+            "direccion": "Avenida del Libertador 6021",
+            "localidad": "Capital Federal",
+            "latitude": "-34.55633544921875",
+            "longitude": "-58.447601318359375"
+          },
+          {
+            "direccion": "Calle Corrientes 700",
+            "localidad": "Resistencia",
+            "latitude": "-27.443347930908203",
+            "longitude": "-58.99002456665039"
+          },
+          {
+            "direccion": "Avenida Santa Fe 1501",
+            "localidad": "Capital Federal",
+            "latitude": "-34.595584869384766",
+            "longitude": "-58.38853454589844"
+          },
+          {
+            "direccion": "Corvalán 64",
+            "localidad": "Capital Federal",
+            "latitude": "-34.639312744140625",
+            "longitude": "-58.508426666259766"
+          },
+          {
+            "direccion": "Avenida Presidente Juan Domingo Perón 291",
+            "localidad": "San Miguel",
+            "latitude": "-34.53282928466797",
+            "longitude": "-58.725013732910156"
+          },
+          {
+            "direccion": "Avenida Alicia Moreau de Justo 390",
+            "localidad": "Capital Federal",
+            "latitude": "-34.60279846191406",
+            "longitude": "-58.36695861816406"
+          },
+          {
+            "direccion": "Camino General Manuel Belgrano 515",
+            "localidad": "City Bell",
+            "latitude": "-34.88082504272461",
+            "longitude": "-58.05614471435547"
+          },
+          {
+            "direccion": "Honduras 4881",
+            "localidad": "Capital Federal",
+            "latitude": "-34.58942794799805",
+            "longitude": "-58.42885971069336"
+          },
+          {
+            "direccion": "Calle 50 535",
+            "localidad": "La Plata",
+            "latitude": "-34.9132489",
+            "longitude": "-57.9481577"
+          },
+          {
+            "direccion": "1249 1249",
+            "localidad": "Yerba Buena",
+            "latitude": "-26.814116",
+            "longitude": "-65.28697079999999"
+          },
+          {
+            "direccion": "Avenida Elcano 3385",
+            "localidad": "Capital Federal",
+            "latitude": "-34.5749832",
+            "longitude": "-58.4600966"
+          },
+          {
+            "direccion": "Roque Sáenz Peña 55",
+            "localidad": "Puerto Madryn",
+            "latitude": "-42.76484298706055",
+            "longitude": "-65.03507232666016"
+          },
+          {
+            "direccion": "Paseo Sarmiento 164",
+            "localidad": "Mendoza",
+            "latitude": "-32.89042282104492",
+            "longitude": "-68.84153747558594"
+          },
+          {
+            "direccion": "Posadas 1245",
+            "localidad": "Capital Federal",
+            "latitude": "-34.5891227722168",
+            "longitude": "-58.384090423583984"
+          },
+          {
+            "direccion": "Avenida España 798",
+            "localidad": "Tandil",
+            "latitude": "-37.3238623",
+            "longitude": "-59.1425294"
+          },
+          {
+            "direccion": "Perito Francisco Moreno 512",
+            "localidad": "Ushuaia",
+            "latitude": "-54.8040095",
+            "longitude": "-68.2894981"
+          },
+          {
+            "direccion": "Diagonal 74 1616",
+            "localidad": "La Plata",
+            "latitude": "-34.91828918457031",
+            "longitude": "-57.954612731933594"
+          },
+          {
+            "direccion": "Calle 6 entre calle 7 y calle 9 1",
+            "localidad": "Mar Del Plata",
+            "latitude": "-38.0054771",
+            "longitude": "-57.5426106"
+          },
+          {
+            "direccion": "Enrique Del Valle Iberlucea 2827",
+            "localidad": "Lanus",
+            "latitude": "-34.70412063598633",
+            "longitude": "-58.39334487915039"
+          },
+          {
+            "direccion": "Baez 216",
+            "localidad": "Capital Federal",
+            "latitude": "-34.5620844",
+            "longitude": "-58.4566864"
+          }
+        ],
+        "web": []
+      },
+      "basesCondiciones": "CARTERA DE CONSUMO. PROMOCIÓN VÁLIDA DEL 01/10/2026 AL 31/10/2026 INCLUSIVE.  LA PROMOCIÓN CONSTA DE 20% DE REINTEGRO CON TOPE MENSUAL DE $15.000 POR CLIENTE. TOPE COMPARTIDO ENTRE COMERCIOS ADHERIDOS. VÁLIDA PARA CLIENTES QUE ABONEN SUS COMPRAS EN UN PAGO CON TARJETAS DE CRÉDITO EMITIDAS POR BBVA. EXCLUSIVO PARA PAGOS REALIZADOS DESDE EL CELULAR VÍA NFC (&#34;SIN CONTACTO&#34;) A TRAVÉS APPLE PAY (DISPONIBLE SÓLO EN IOS), GOOGLE PAY, O MODO CONTACTLESS. ES REQUISITO TENER UNA CAJA DE AHORRO EN PESOS ACTIVA EN BBVA PARA RECIBIR LA ACREDITACIÓN DEL REINTEGRO. NO APLICA PARA COMPRAS REALIZADAS CON TARJETAS DE CRÉDITO ADICIONALES. LA PRESENTE PROMOCIÓN ES VÁLIDA SÓLO PARA CONSUMOS DE TIPO FAMILIAR Y NO SE ACUMULA A OTRAS PROMOCIONES. LA BONIFICACIÓN SE ACREDITARÁ  DENTRO DE LOS 60 DÍAS POSTERIORES A LA COMPRA EN TU CAJA DE AHORROS ACTIVA EN BBVA. EN EL CASO DE DUDA SOBRE EL DESTINO DEL CONSUMO, EL BANCO SE RESERVA LA FACULTAD DE NO ACREDITAR EL MONTO DE LA BONIFICACIÓN HASTA TANTO SE ACLARE EL MISMO. LA PROMOCIÓN NO APLICA A PAGOS REALIZADOS A TRAVÉS DE BILLETERAS VIRTUALES Y/O PLATAFORMAS DE PAGO ONLINE (POR EJEMPLO, PAYPAL, TODO PAGO, MERCADO PAGO, UALÁ, ETC.).LOS ACCIONISTAS DE BANCO BBVA ARGENTINA S.A. LIMITAN SU RESPONSABILIDAD A LA INTEGRACIÓN DE LAS ACCIONES SUSCRIPTAS LEY 19.550 Y LEY 25.738 CUIT 30-50000319-3. AVDA.CÓRDOBA 111- PISO 31 CABA - CP C1054AAA",
+      "diasPromo": "1,1,1,1,1,1,1",
+      "vigencia": "Del 01/10/2026 hasta 31/10/2026",
+      "grupoTarjeta": "Tarjetas de crédito BBVA",
+      "tiempoAcreditacion": null,
+      "esModo": false
+    }
+  },
+  {
+    "source": "bbva",
+    "source_id": "87862",
+    "scraped_at": "2026-10-19T13:50:07.726356+00:00",
+    "source_url": "https://go.bbva.com.ar/willgo/fgo/API/v3/communication/87862",
+    "catalog": {
+      "id": "87862",
+      "imagen": "https://assets.caasbbva.com/content/dam/caas/argentina/beneficios/campania/puppismaster_317x112.png",
+      "cabecera": "Puppis 3 cuotas y regalo por compra",
+      "subcabecera": "  .Promoción válida desde 18-09-2026 hasta 31-10-2026",
+      "idCampania": "",
+      "esCampania": false,
+      "esCampaniaMadre": false,
+      "fechaDesde": "2026-09-18",
+      "fechaHasta": "2026-10-31",
+      "diasPromo": null,
+      "montoTope": null,
+      "grupoTarjeta": "Tarjetas de crédito BBVA"
+    },
+    "detail": {
+      "id": "87862",
+      "imagen": "https://assets.caasbbva.com/content/dam/caas/argentina/beneficios/campania/puppismaster_317x112.png",
+      "cabecera": "Puppis 3 cuotas y regalo por compra",
+      "beneficios": [
+        {
+          "cuota": 3,
+          "tope": null,
+          "tipoTope": "ninguno",
+          "frecuenciaTope": " ",
+          "requisitos": [
+            "Comprá en tiendas físicas más de $70.000 con Mastercard y recibí un regalo. \nViernes y Sábados."
+          ]
+        }
+      ],
+      "canalesVenta": {
+        "sucursales": [
+          {
+            "direccion": "General Laprida 248",
+            "localidad": "Escobar",
+            "latitude": "-34.35417175292969",
+            "longitude": "-58.80391311645508"
+          },
+          {
+            "direccion": "Avenida de los Constituyentes 6020",
+            "localidad": "Capital Federal",
+            "latitude": "-34.57433319091797",
+            "longitude": "-58.50618362426758"
+          },
+          {
+            "direccion": "Avenida Cabildo 3890",
+            "localidad": "Capital Federal",
+            "latitude": "-34.54766082763672",
+            "longitude": "-58.46946716308594"
+          },
+          {
+            "direccion": "Avenida Meeks 250",
+            "localidad": "Lomas de Zamora",
+            "latitude": "-34.76389694213867",
+            "longitude": "-58.398597717285156"
+          },
+          {
+            "direccion": "Caseros 1750",
+            "localidad": "Quilmes",
+            "latitude": "-34.731048583984375",
+            "longitude": "-58.22846603393555"
+          },
+          {
+            "direccion": "Avenida del Libertador 13154",
+            "localidad": "San Isidro",
+            "latitude": "-34.48942184448242",
+            "longitude": "-58.485252380371094"
+          },
+          {
+            "direccion": "Avenida Maipú 3835",
+            "localidad": "Olivos",
+            "latitude": "-34.50051498413086",
+            "longitude": "-58.49586486816406"
+          },
+          {
+            "direccion": "Avenida Sir Alexander Fleming 1564",
+            "localidad": "Martinez",
+            "latitude": "-34.49497985839844",
+            "longitude": "-58.52156448364258"
+          },
+          {
+            "direccion": "Avenida Nazca 1673",
+            "localidad": "Capital Federal",
+            "latitude": "-34.614593505859375",
+            "longitude": "-58.47873306274414"
+          },
+          {
+            "direccion": "Avenida Brigadier General Juan Manuel de Rosas 3990",
+            "localidad": "San Justo",
+            "latitude": "-34.685302734375",
+            "longitude": "-58.55698013305664"
+          },
+          {
+            "direccion": "Guemes 897",
+            "localidad": "Avellaneda",
+            "latitude": "-34.6924055",
+            "longitude": "-58.38732060000001"
+          },
+          {
+            "direccion": "Rivadavia 14374",
+            "localidad": "Ramos Mejia",
+            "latitude": "-34.6417121887207",
+            "longitude": "-58.569644927978516"
+          },
+          {
+            "direccion": "Valentín Vergara 194",
+            "localidad": "Boulogne Sur Mer",
+            "latitude": "-34.49596405029297",
+            "longitude": "-58.55710220336914"
+          },
+          {
+            "direccion": "Guemes 897",
+            "localidad": "Avellaneda",
+            "latitude": "-34.6924055",
+            "longitude": "-58.38732060000001"
+          },
+          {
+            "direccion": "Avenida Centenario 161",
+            "localidad": "San Isidro",
+            "latitude": "-34.472896575927734",
+            "longitude": "-58.51383590698242"
+          },
+          {
+            "direccion": "Las Magnolias 783",
+            "localidad": "Pilar",
+            "latitude": "-34.4477653503418",
+            "longitude": "-58.86995315551758"
+          },
+          {
+            "direccion": "Camino Parque Centenario 1876",
+            "localidad": "La Plata",
+            "latitude": "-34.890647888183594",
+            "longitude": "-57.996707916259766"
+          },
+          {
+            "direccion": "Avenida Segurola 1701",
+            "localidad": "Capital Federal",
+            "latitude": "-34.62030792236328",
+            "longitude": "-58.49925994873047"
+          },
+          {
+            "direccion": "Avenida Bartolomé Mitre 3690",
+            "localidad": "Munro",
+            "latitude": "-34.518184661865234",
+            "longitude": "-58.52656555175781"
+          },
+          {
+            "direccion": "Avenida General San Martín 3057",
+            "localidad": "Escobar",
+            "latitude": "-34.327789306640625",
+            "longitude": "-58.76020812988281"
+          },
+          {
+            "direccion": "Av. Calchaqui 3950",
+            "localidad": "Quilmes",
+            "latitude": "-34.75970909999999",
+            "longitude": "-58.27881690000004"
+          },
+          {
+            "direccion": "Avenida Maipú 1118",
+            "localidad": "Vicente Lopez",
+            "latitude": "-34.527679443359375",
+            "longitude": "-58.48191833496094"
+          },
+          {
+            "direccion": "Ramallo 889",
+            "localidad": "Sarandi",
+            "latitude": "-34.68001937866211",
+            "longitude": "-58.33134078979492"
+          },
+          {
+            "direccion": "Avenida Pueyrredón 1639",
+            "localidad": "Capital Federal",
+            "latitude": "-34.592166900634766",
+            "longitude": "-58.4011116027832"
+          },
+          {
+            "direccion": "Avenida Angel Gallardo 34",
+            "localidad": "Capital Federal",
+            "latitude": "-34.60247039794922",
+            "longitude": "-58.43269348144531"
+          },
+          {
+            "direccion": "Colectora Este Ramal Escobar 2099",
+            "localidad": "Escobar",
+            "latitude": "-34.32135772705078",
+            "longitude": "-58.85784912109375"
+          },
+          {
+            "direccion": "Autopista Acceso Oeste 0",
+            "localidad": "Lujan",
+            "latitude": "-34.5461540222168",
+            "longitude": "-59.10995101928711"
+          },
+          {
+            "direccion": "Camino Bancalari 120",
+            "localidad": "Victoria",
+            "latitude": "-34.48279571533203",
+            "longitude": "-58.599342346191406"
+          },
+          {
+            "direccion": "Avenida Congreso 2756",
+            "localidad": "Capital Federal",
+            "latitude": "-34.557254791259766",
+            "longitude": "-58.46574020385742"
+          },
+          {
+            "direccion": "Avenida Corrientes 5452",
+            "localidad": "Capital Federal",
+            "latitude": "-34.59782791137695",
+            "longitude": "-58.441436767578125"
+          },
+          {
+            "direccion": "Ortega y Gasset 1876",
+            "localidad": "Capital Federal",
+            "latitude": "-34.570716857910156",
+            "longitude": "-58.4327392578125"
+          },
+          {
+            "direccion": "Avenida San Martín 2150",
+            "localidad": "Capital Federal",
+            "latitude": "-34.604801177978516",
+            "longitude": "-58.45790481567383"
+          },
+          {
+            "direccion": "Avenida Bartolomé Mitre 1852",
+            "localidad": "Martinez",
+            "latitude": "-34.53268814086914",
+            "longitude": "-58.511234283447266"
+          },
+          {
+            "direccion": "Panamericana Ramal Pilar Km 36",
+            "localidad": "Tortuguitas",
+            "latitude": "-34.49596349999999",
+            "longitude": "-58.78826579999998"
+          },
+          {
+            "direccion": "Bulnes 2052",
+            "localidad": "Capital Federal",
+            "latitude": "-34.58748245239258",
+            "longitude": "-58.411415100097656"
+          },
+          {
+            "direccion": "Garibaldi 265",
+            "localidad": "Quilmes",
+            "latitude": "-34.72309112548828",
+            "longitude": "-58.25490951538086"
+          },
+          {
+            "direccion": "Avenida Francisco Beiró 3479",
+            "localidad": "Capital Federal",
+            "latitude": "-34.599552154541016",
+            "longitude": "-58.501949310302734"
+          },
+          {
+            "direccion": "Avenida Elcano 3150",
+            "localidad": "Capital Federal",
+            "latitude": "-34.57270812988281",
+            "longitude": "-58.45893478393555"
+          },
+          {
+            "direccion": "Balcarse 897",
+            "localidad": "Godoy Cruz",
+            "latitude": "-32.9161659",
+            "longitude": "-68.8406597"
+          },
+          {
+            "direccion": "Edison 2519",
+            "localidad": "Martinez",
+            "latitude": "-34.50508499145508",
+            "longitude": "-58.52589416503906"
+          },
+          {
+            "direccion": "Rivadavia 3601",
+            "localidad": "Capital Federal",
+            "latitude": "-34.61063003540039",
+            "longitude": "-58.41752624511719"
+          },
+          {
+            "direccion": "Estanislao López 513",
+            "localidad": "Pilar",
+            "latitude": "-34.45444869995117",
+            "longitude": "-58.912174224853516"
+          },
+          {
+            "direccion": "Acceso Este Lateral Norte 3280",
+            "localidad": "Guaymallen",
+            "latitude": "-32.901719",
+            "longitude": "-68.79933870000002"
+          },
+          {
+            "direccion": "Avenida Pedro Goyena 171",
+            "localidad": "Capital Federal",
+            "latitude": "-34.62512969970703",
+            "longitude": "-58.4297981262207"
+          }
+        ],
+        "web": []
+      },
+      "basesCondiciones": "PROMOCIÓN VÁLIDA PARA CLIENTES QUE ABONEN SUS COMPRAS EN HASTA 3 CUOTAS CON TARJETAS DE CRÉDITO EMITIDAS POR BBVA. APLICA TAMBIÉN A PAGOS REALIZADOS A TRAVÉS DE APP BBVA. SÓLO PARA CONSUMOS DE TIPO FAMILIAR. PARA COMPRAS EN TIENDAS FÍSICAS POR UN MONTO FINAL IGUAL O SUPERIOR A $70.000 CON TARJETAS DE CRÉDITO MASTERCARD BBVA SE ENTREGARÁ UNO DE LOS SIGUIENTES PRODUCTOS, SUJETO A DISPONIBILIDAD DE STOCK EN LA SUCURSAL DEL COMERCIO: 1 COMEDERO C DOSIFIC 1,5LT PETSPLAST, O UN 1 BEBEDERO C DOSIF 1,5LT PETSPLAST O UN 1 COMEDERO MIRA NEGRO XL FERPLA, O UN 1 SPEEDE PELOTA AZUL BEEPAW, O UN 1 WHEELE JUGUETE CELESTE BEEPAW, O UN 1 COMEDERO JOLIE 1 UN NEGRO L FERPLA ACC O UN 1 COMEDERO MIRA 1 UN NEGRO XXL FERPLA ACC. SE TENDRÁ EN CONSIDERACIÓN EL IMPORTE NETO ABONADO. MÁXIMO 1 BENEFICIO POR CLIENTE. EL BENEFICIO NO ES CANJEABLE POR DINERO EN EFECTIVO U OTROS PRODUCTOS. NO PARTICIPAN TARJETAS VISA PURCHASING, DISTRIBUTION Y CORPORATE. LA PROMOCIÓN NO APLICA A PAGOS REALIZADOS A TRAVÉS DE OTRAS BILLETERAS VIRTUALES Y/O PLATAFORMAS DE PAGO ONLINE (POR EJEMPLO MERCADOPAGO, UALÁ, ETC.). LOS ACCIONISTAS DE BANCO BBVA ARGENTINA S.A. LIMITAN SU RESPONSABILIDAD A LA INTEGRACIÓN DE LAS ACCIONES SUSCRIPTAS LEY 19.550 Y LEY 25.738. CUIT 30-50000319-3. AVDA.CÓRDOBA 111- PISO 31 CABA - CP 1054AAA",
+      "diasPromo": null,
+      "vigencia": "Del 18/09/2026 hasta 31/10/2026",
+      "grupoTarjeta": "Tarjetas de crédito BBVA",
+      "tiempoAcreditacion": null,
+      "esModo": false
+    }
+  },
+  {
+    "source": "bbva",
+    "source_id": "88215",
+    "scraped_at": "2026-10-19T13:50:08.101468+00:00",
+    "source_url": "https://go.bbva.com.ar/willgo/fgo/API/v3/communication/88215",
+    "catalog": {
+      "id": "88215",
+      "imagen": "https://assets.caasbbva.com/content/dam/caas/argentina/beneficios/campania/hardrockboca_317x112.png",
+      "cabecera": "Hard Rock Café Boca Juniors 40%",
+      "subcabecera": "  .Promoción válida desde 01-10-2026 hasta 31-10-2026",
+      "idCampania": "",
+      "esCampania": false,
+      "esCampaniaMadre": false,
+      "fechaDesde": "2026-10-01",
+      "fechaHasta": "2026-10-31",
+      "diasPromo": null,
+      "montoTope": "30000",
+      "grupoTarjeta": "Tarjetas de crédito BBVA"
+    },
+    "detail": {
+      "id": "88215",
+      "imagen": "https://assets.caasbbva.com/content/dam/caas/argentina/beneficios/campania/hardrockboca_317x112.png",
+      "cabecera": "Hard Rock Café Boca Juniors 40%",
+      "beneficios": [
+        {
+          "cuota": 0,
+          "tope": "30000",
+          "tipoTope": "Transaccion",
+          "frecuenciaTope": " ",
+          "requisitos": [
+            "Pagando con Mastercard NFC (ApplePay y GooglePay). Recibí el reintegro en el resumen de tu tarjeta de crédito."
+          ]
+        }
+      ],
+      "canalesVenta": {
+        "sucursales": [],
+        "web": [
+          {
+            "name": "Hard Rock Café Boca Juniors",
+            "url": "https://www.mastercard.com/ar/es/personal/experience-mastercard/conozca-nuestras-ofertas-y-promociones.html"
+          }
+        ]
+      },
+      "basesCondiciones": "CARTERA DE CONSUMO. PROMOCIÓN VÁLIDA TODOS LOS DÍAS DEL 01/10/2026 AL 31/10/2026.  LA PROMOCIÓN CONSTA DE 30% DE REINTEGRO CON TOPE $30.000 POR CLIENTE POR TRANSACCION. VÁLIDA PARA CLIENTES QUE ABONEN SUS COMPRAS EN UN PAGO CON TARJETA DE CRÉDITO MASTERCARD EMITIDAS POR BBVA. EXCLUSIVO PARA PAGOS REALIZADOS DESDE EL CELULAR VÍA NFC (&#34;SIN CONTACTO&#34;) A TRAVÉS APPLE PAY (DISPONIBLE SÓLO EN IOS), GOOGLE PAY, O MODO CONTACTLESS. NO APLICA PARA COMPRAS REALIZADAS CON TARJETAS DE CRÉDITO ADICIONALES. LA PRESENTE PROMOCIÓN ES VÁLIDA SÓLO PARA CONSUMOS DE TIPO FAMILIAR Y NO SE ACUMULA A OTRAS PROMOCIONES. LA BONIFICACIÓN SE ACREDITARÁ  DENTRO DE LOS 60 DÍAS POSTERIORES A LA COMPRA EN EL RESUMEN DE LA TARJETA DE CREDITO. EN EL CASO DE DUDA SOBRE EL DESTINO DEL CONSUMO, EL BANCO SE RESERVA LA FACULTAD DE NO ACREDITAR EL MONTO DE LA BONIFICACIÓN HASTA TANTO SE ACLARE EL MISMO. LA PROMOCIÓN NO APLICA A PAGOS REALIZADOS A TRAVÉS DE BILLETERAS VIRTUALES Y/O PLATAFORMAS DE PAGO ONLINE (POR EJEMPLO, PAYPAL, TODO PAGO, MERCADO PAGO, UALÁ, ETC.). LOS ACCIONISTAS DE BANCO BBVA ARGENTINA S.A. LIMITAN SU RESPONSABILIDAD A LA INTEGRACIÓN DE LAS ACCIONES SUSCRIPTAS LEY 19.550 Y LEY 25.738. CUIT 30-50000319-3. AVDA.CÓRDOBA 111- PISO 31 CABA - CP 1054AAA",
+      "diasPromo": null,
+      "vigencia": "Del 01/10/2026 hasta 31/10/2026",
+      "grupoTarjeta": "Tarjetas de crédito BBVA",
+      "tiempoAcreditacion": null,
+      "esModo": false
+    }
+  },
+  {
+    "source": "bbva",
+    "source_id": "88407",
+    "scraped_at": "2026-10-19T13:50:09.827279+00:00",
+    "source_url": "https://go.bbva.com.ar/willgo/fgo/API/v3/communication/88407",
+    "catalog": {
+      "id": "88407",
+      "imagen": "https://assets.caasbbva.com/content/dam/caas/argentina/beneficios/campania/australianopen_317x112.png",
+      "cabecera": "Millas Bbva Sorteo Australian Open 2027",
+      "subcabecera": "  .Promoción válida desde 28-09-2026 hasta 23-11-2026",
+      "idCampania": "",
+      "esCampania": false,
+      "esCampaniaMadre": false,
+      "fechaDesde": "2026-09-28",
+      "fechaHasta": "2026-11-23",
+      "diasPromo": null,
+      "montoTope": null,
+      "grupoTarjeta": "Tarjetas de crédito BBVA"
+    },
+    "detail": {
+      "id": "88407",
+      "imagen": "https://assets.caasbbva.com/content/dam/caas/argentina/beneficios/campania/australianopen_317x112.png",
+      "cabecera": "Millas Bbva Sorteo Australian Open 2027",
+      "beneficios": [
+        {
+          "cuota": 0,
+          "tope": null,
+          "tipoTope": "ninguno",
+          "frecuenciaTope": " ",
+          "requisitos": [
+            "Canjeá millas por chances para participar por uno de los 3 viajes al Australian Open 2027. \nEntra a App BBVA/ sección Millas BBVA/ Sorteos/ Participar y listo!\nSi tenés tarjeta de crédito Mastercard, te llevas 5 chances extra en tu primer canje."
+          ]
+        }
+      ],
+      "canalesVenta": {
+        "sucursales": [],
+        "web": [
+          {
+            "name": "Millas Bbva",
+            "url": "https://online.bbva.com.ar/fnetcore/loginClementeApp.html?init&#61;puntos"
+          }
+        ]
+      },
+      "basesCondiciones": "Para el sorteo a realizarse el día 26/11/2026. Podrán participar los clientes de BBVA adheridos al programa Millas BBVA canjeando sus millas por chances. 1 (una) chance &#61; 400 (cuatrocientas) millas. \n\nLos clientes titulares de tarjeta de crédito Mastercard emitidas por BBVA que realicen un canje de chances, recibirán automáticamente 5 chances extra. Válido únicamente para 1 canje por cliente. \n\nPremio\nEl premio serán 3 (tres) paquetes para 2 personas mayores de 18 años para viajar a la final del Australian Open 2027 que incluyen:\nPasajes aéreos de Buenos Aires a Melbourne, ida y vuelta, en clase económica programados para el 29 de enero de 2027 hasta el día 1 de febrero de 2027.\nEntradas categoría Lower Bowl para presenciar las finales femenina y masculina  del Australian Open.\nUna habitación de hotel de ocupación doble (dos personas por habitación)\n\nVálido para mayores de 18 años. Excluye personas jurídicas y personas humanas con domicilio y/o productos BBVA en las provincias de Salta, Neuquén, Río Negro, Tierra del Fuego, Jujuy, Formosa y Mendoza.\n\nEl Premio no incluye\nPermisos de viaje o entrada que puedan ser necesarios para que los ganadores puedan hacer uso del premio.\nLos traslados del ganador y su acompañante desde su ciudad de origen al aeropuerto de salida y desde el aeropuerto de llegada hacia su ciudad de origen, los que correrán por cuenta del ganador.\nCualquier gasto que no sea parte del Premio (por ejemplo, eventos, actividades fuera del itinerario del programa, compras, transporte a sitios locales durante el tiempo libre, gastos de comidas que no sean las programadas).\n\nPara poder hacerse acreedor del Premio y viajar, el potencial ganador y su acompañante deberán contar con la documentación personal vigente y válida exigida para el ingreso a Australia. BBVA Argentina y Mastercard Cono Sur S.R.L.\nSe deja establecido que el Premio es personal e intransferible y no podrá ser canjeado por dinero en efectivo o servicios, en ningún caso y sin excepción alguna.\n\nMillas BBVA es un programa exclusivo para clientes del BBVA adheridos al Programa de Millas.\n\nLOS ACCIONISTAS DE BANCO BBVA ARGENTINA S.A. LIMITAN SU RESPONSABILIDAD A LA INTEGRACIÓN DE LAS ACCIONES SUSCRIPTAS LEY 19.550 Y LEY 25.738 CUIT 30-50000319-3. AVDA.CÓRDOBA 111- PISO 31 CABA - CP C1054AAA",
+      "diasPromo": null,
+      "vigencia": "Del 28/09/2026 hasta 23/11/2026",
+      "grupoTarjeta": "Tarjetas de crédito BBVA",
+      "tiempoAcreditacion": null,
+      "esModo": false
+    }
+  },
+  {
+    "source": "bbva",
+    "source_id": "87734",
+    "scraped_at": "2026-10-19T13:50:12.715694+00:00",
+    "source_url": "https://go.bbva.com.ar/willgo/fgo/API/v3/communication/87734",
+    "catalog": {
+      "id": "87734",
+      "imagen": "https://assets.caasbbva.com/content/dam/caas/argentina/beneficios/campania/puppisama_317x112.png",
+      "cabecera": "Puppis 3 cuotas",
+      "subcabecera": ". .Promoción válida desde 18-09-2026 hasta 31-10-2026",
+      "idCampania": "",
+      "esCampania": false,
+      "esCampaniaMadre": false,
+      "fechaDesde": "2026-09-18",
+      "fechaHasta": "2026-10-31",
+      "diasPromo": "0,0,0,0,1,1,0",
+      "montoTope": null,
+      "grupoTarjeta": "Tarjetas de crédito BBVA"
+    },
+    "detail": {
+      "id": "87734",
+      "imagen": "https://assets.caasbbva.com/content/dam/caas/argentina/beneficios/campania/puppisama_317x112.png",
+      "cabecera": "Puppis 3 cuotas",
+      "beneficios": [
+        {
+          "cuota": 3,
+          "tope": null,
+          "tipoTope": " ",
+          "frecuenciaTope": " ",
+          "requisitos": [
+            "Comprá en tiendas físicas más de $70.000 con Mastercard y recibí un regalo."
+          ]
+        }
+      ],
+      "canalesVenta": {
+        "sucursales": [
+          {
+            "direccion": "General Laprida 248",
+            "localidad": "Escobar",
+            "latitude": "-34.35417175292969",
+            "longitude": "-58.80391311645508"
+          },
+          {
+            "direccion": "Acceso Este Lateral Norte 3280",
+            "localidad": "Guaymallen",
+            "latitude": "-32.901719",
+            "longitude": "-68.79933870000002"
+          },
+          {
+            "direccion": "Avenida Corrientes 5452",
+            "localidad": "Capital Federal",
+            "latitude": "-34.59782791137695",
+            "longitude": "-58.441436767578125"
+          },
+          {
+            "direccion": "Avenida Nazca 1673",
+            "localidad": "Capital Federal",
+            "latitude": "-34.614593505859375",
+            "longitude": "-58.47873306274414"
+          },
+          {
+            "direccion": "Avenida Pueyrredón 1639",
+            "localidad": "Capital Federal",
+            "latitude": "-34.592166900634766",
+            "longitude": "-58.4011116027832"
+          },
+          {
+            "direccion": "Avenida Bartolomé Mitre 1852",
+            "localidad": "Martinez",
+            "latitude": "-34.53268814086914",
+            "longitude": "-58.511234283447266"
+          },
+          {
+            "direccion": "Colectora Este Ramal Escobar 2099",
+            "localidad": "Escobar",
+            "latitude": "-34.32135772705078",
+            "longitude": "-58.85784912109375"
+          },
+          {
+            "direccion": "Avenida Bartolomé Mitre 3690",
+            "localidad": "Munro",
+            "latitude": "-34.518184661865234",
+            "longitude": "-58.52656555175781"
+          },
+          {
+            "direccion": "Rivadavia 14374",
+            "localidad": "Ramos Mejia",
+            "latitude": "-34.6417121887207",
+            "longitude": "-58.569644927978516"
+          },
+          {
+            "direccion": "Avenida Pedro Goyena 171",
+            "localidad": "Capital Federal",
+            "latitude": "-34.62512969970703",
+            "longitude": "-58.4297981262207"
+          },
+          {
+            "direccion": "Av. Calchaqui 3950",
+            "localidad": "Quilmes",
+            "latitude": "-34.75970909999999",
+            "longitude": "-58.27881690000004"
+          },
+          {
+            "direccion": "Avenida Maipú 3835",
+            "localidad": "Olivos",
+            "latitude": "-34.50051498413086",
+            "longitude": "-58.49586486816406"
+          },
+          {
+            "direccion": "Avenida San Martín 2150",
+            "localidad": "Capital Federal",
+            "latitude": "-34.604801177978516",
+            "longitude": "-58.45790481567383"
+          },
+          {
+            "direccion": "Las Magnolias 783",
+            "localidad": "Pilar",
+            "latitude": "-34.4477653503418",
+            "longitude": "-58.86995315551758"
+          },
+          {
+            "direccion": "Guemes 897",
+            "localidad": "Avellaneda",
+            "latitude": "-34.6924055",
+            "longitude": "-58.38732060000001"
+          },
+          {
+            "direccion": "Avenida Congreso 2756",
+            "localidad": "Capital Federal",
+            "latitude": "-34.557254791259766",
+            "longitude": "-58.46574020385742"
+          },
+          {
+            "direccion": "Garibaldi 265",
+            "localidad": "Quilmes",
+            "latitude": "-34.72309112548828",
+            "longitude": "-58.25490951538086"
+          },
+          {
+            "direccion": "Panamericana Ramal Pilar Km 36",
+            "localidad": "Tortuguitas",
+            "latitude": "-34.49596349999999",
+            "longitude": "-58.78826579999998"
+          },
+          {
+            "direccion": "Autopista Acceso Oeste 0",
+            "localidad": "Lujan",
+            "latitude": "-34.5461540222168",
+            "longitude": "-59.10995101928711"
+          },
+          {
+            "direccion": "Avenida Sir Alexander Fleming 1564",
+            "localidad": "Martinez",
+            "latitude": "-34.49497985839844",
+            "longitude": "-58.52156448364258"
+          },
+          {
+            "direccion": "Avenida Segurola 1701",
+            "localidad": "Capital Federal",
+            "latitude": "-34.62030792236328",
+            "longitude": "-58.49925994873047"
+          },
+          {
+            "direccion": "Balcarse 897",
+            "localidad": "Godoy Cruz",
+            "latitude": "-32.9161659",
+            "longitude": "-68.8406597"
+          },
+          {
+            "direccion": "Caseros 1750",
+            "localidad": "Quilmes",
+            "latitude": "-34.731048583984375",
+            "longitude": "-58.22846603393555"
+          },
+          {
+            "direccion": "Rivadavia 3601",
+            "localidad": "Capital Federal",
+            "latitude": "-34.61063003540039",
+            "longitude": "-58.41752624511719"
+          },
+          {
+            "direccion": "Avenida Meeks 250",
+            "localidad": "Lomas de Zamora",
+            "latitude": "-34.76389694213867",
+            "longitude": "-58.398597717285156"
+          },
+          {
+            "direccion": "Avenida Centenario 161",
+            "localidad": "San Isidro",
+            "latitude": "-34.472896575927734",
+            "longitude": "-58.51383590698242"
+          },
+          {
+            "direccion": "Avenida Maipú 1118",
+            "localidad": "Vicente Lopez",
+            "latitude": "-34.527679443359375",
+            "longitude": "-58.48191833496094"
+          },
+          {
+            "direccion": "Avenida Francisco Beiró 3479",
+            "localidad": "Capital Federal",
+            "latitude": "-34.599552154541016",
+            "longitude": "-58.501949310302734"
+          },
+          {
+            "direccion": "Estanislao López 513",
+            "localidad": "Pilar",
+            "latitude": "-34.45444869995117",
+            "longitude": "-58.912174224853516"
+          },
+          {
+            "direccion": "Guemes 897",
+            "localidad": "Avellaneda",
+            "latitude": "-34.6924055",
+            "longitude": "-58.38732060000001"
+          },
+          {
+            "direccion": "Edison 2519",
+            "localidad": "Martinez",
+            "latitude": "-34.50508499145508",
+            "longitude": "-58.52589416503906"
+          },
+          {
+            "direccion": "Ortega y Gasset 1876",
+            "localidad": "Capital Federal",
+            "latitude": "-34.570716857910156",
+            "longitude": "-58.4327392578125"
+          },
+          {
+            "direccion": "Avenida Elcano 3150",
+            "localidad": "Capital Federal",
+            "latitude": "-34.57270812988281",
+            "longitude": "-58.45893478393555"
+          },
+          {
+            "direccion": "Ramallo 889",
+            "localidad": "Sarandi",
+            "latitude": "-34.68001937866211",
+            "longitude": "-58.33134078979492"
+          },
+          {
+            "direccion": "Avenida General San Martín 3057",
+            "localidad": "Escobar",
+            "latitude": "-34.327789306640625",
+            "longitude": "-58.76020812988281"
+          },
+          {
+            "direccion": "Avenida del Libertador 13154",
+            "localidad": "San Isidro",
+            "latitude": "-34.48942184448242",
+            "longitude": "-58.485252380371094"
+          },
+          {
+            "direccion": "Avenida de los Constituyentes 6020",
+            "localidad": "Capital Federal",
+            "latitude": "-34.57433319091797",
+            "longitude": "-58.50618362426758"
+          },
+          {
+            "direccion": "Avenida Brigadier General Juan Manuel de Rosas 3990",
+            "localidad": "San Justo",
+            "latitude": "-34.685302734375",
+            "longitude": "-58.55698013305664"
+          },
+          {
+            "direccion": "Camino Parque Centenario 1876",
+            "localidad": "La Plata",
+            "latitude": "-34.890647888183594",
+            "longitude": "-57.996707916259766"
+          },
+          {
+            "direccion": "Camino Bancalari 120",
+            "localidad": "Victoria",
+            "latitude": "-34.48279571533203",
+            "longitude": "-58.599342346191406"
+          },
+          {
+            "direccion": "Valentín Vergara 194",
+            "localidad": "Boulogne Sur Mer",
+            "latitude": "-34.49596405029297",
+            "longitude": "-58.55710220336914"
+          },
+          {
+            "direccion": "Avenida Cabildo 3890",
+            "localidad": "Capital Federal",
+            "latitude": "-34.54766082763672",
+            "longitude": "-58.46946716308594"
+          },
+          {
+            "direccion": "Bulnes 2052",
+            "localidad": "Capital Federal",
+            "latitude": "-34.58748245239258",
+            "longitude": "-58.411415100097656"
+          }
+        ],
+        "web": [
+          {
+            "name": "Puppis",
+            "url": "https://www.puppis.com.ar/"
+          }
+        ]
+      },
+      "basesCondiciones": "PROMOCIÓN VÁLIDA PARA CLIENTES QUE ABONEN SUS COMPRAS EN HASTA 3 CUOTAS CON TARJETAS DE CRÉDITO EMITIDAS POR BBVA. APLICA TAMBIÉN A PAGOS REALIZADOS A TRAVÉS DE APP BBVA. SÓLO PARA CONSUMOS DE TIPO FAMILIAR. PARA COMPRAS EN TIENDAS FÍSICAS POR UN MONTO FINAL IGUAL O SUPERIOR A $70.000 CON TARJETAS DE CRÉDITO MASTERCARD BBVA SE ENTREGARÁ UNO DE LOS SIGUIENTES PRODUCTOS, SUJETO A DISPONIBILIDAD DE STOCK EN LA SUCURSAL DEL COMERCIO: 1 COMEDERO C DOSIFIC 1,5LT PETSPLAST, O UN 1 BEBEDERO C DOSIF 1,5LT PETSPLAST O UN 1 COMEDERO MIRA NEGRO XL FERPLA, O UN 1 SPEEDE PELOTA AZUL BEEPAW, O UN 1 WHEELE JUGUETE CELESTE BEEPAW, O UN 1 COMEDERO JOLIE 1 UN NEGRO L FERPLA ACC O UN 1 COMEDERO MIRA 1 UN NEGRO XXL FERPLA ACC. SE TENDRÁ EN CONSIDERACIÓN EL IMPORTE NETO ABONADO. MÁXIMO 1 BENEFICIO POR CLIENTE. EL BENEFICIO NO ES CANJEABLE POR DINERO EN EFECTIVO U OTROS PRODUCTOS. NO PARTICIPAN TARJETAS VISA PURCHASING, DISTRIBUTION Y CORPORATE. LA PROMOCIÓN NO APLICA A PAGOS REALIZADOS A TRAVÉS DE OTRAS BILLETERAS VIRTUALES Y/O PLATAFORMAS DE PAGO ONLINE (POR EJEMPLO MERCADOPAGO, UALÁ, ETC.). LOS ACCIONISTAS DE BANCO BBVA ARGENTINA S.A. LIMITAN SU RESPONSABILIDAD A LA INTEGRACIÓN DE LAS ACCIONES SUSCRIPTAS LEY 19.550 Y LEY 25.738. CUIT 30-50000319-3. AVDA.CÓRDOBA 111- PISO 31 CABA - CP 1054AAA",
+      "diasPromo": "0,0,0,0,1,1,0",
+      "vigencia": "Del 18/09/2026 hasta 31/10/2026",
+      "grupoTarjeta": "Tarjetas de crédito BBVA",
+      "tiempoAcreditacion": null,
+      "esModo": false
+    }
+  },
+  {
+    "source": "bbva",
+    "source_id": "88097",
+    "scraped_at": "2026-10-19T13:50:12.966498+00:00",
+    "source_url": "https://go.bbva.com.ar/willgo/fgo/API/v3/communication/88097",
+    "catalog": {
+      "id": "88097",
+      "imagen": "https://assets.caasbbva.com/content/dam/caas/argentina/beneficios/comunicacion/nominas_millas_317x112.png",
+      "cabecera": "Millas Exclusivo Nominas 20% en vuelos seleccionados",
+      "subcabecera": ". .Promoción válida desde 01-10-2026 hasta 31-10-2026",
+      "idCampania": "",
+      "esCampania": false,
+      "esCampaniaMadre": false,
+      "fechaDesde": "2026-10-01",
+      "fechaHasta": "2026-10-31",
+      "diasPromo": null,
+      "montoTope": null,
+      "grupoTarjeta": "Tarjetas de crédito BBVA"
+    },
+    "detail": {
+      "id": "88097",
+      "imagen": "https://assets.caasbbva.com/content/dam/caas/argentina/beneficios/comunicacion/nominas_millas_317x112.png",
+      "cabecera": "Millas Exclusivo Nominas 20% en vuelos seleccionados",
+      "beneficios": [
+        {
+          "cuota": 0,
+          "tope": null,
+          "tipoTope": "ninguno",
+          "frecuenciaTope": " ",
+          "requisitos": [
+            "Exclusivo primer canje. \nExclusivo dentro del Portal de Millas. \nTope de descuento para vuelos a Córdoba, Iguazú, Bariloche: 3.100 Millas BBVA.\nTope de descuento para vuelos a Miami, Cancún, Río de Janeiro: 16.000 Millas BBVA."
+          ]
+        }
+      ],
+      "canalesVenta": {
+        "sucursales": [],
+        "web": [
+          {
+            "name": "Millas Exclusivo Nominas",
+            "url": "https://online.bbva.com.ar/fnetcore/loginClementeApp.html?init&#61;puntos"
+          }
+        ]
+      },
+      "basesCondiciones": "Del 01/10/2026 al 30/10/2026, o hasta agotar stock de 1500 cupos, obtené en tu primer canje de Millas BBVA, hasta un 20% de descuento en la compra de pasajes aéreos con origen en Buenos Aires (Ezeiza o Aeroparque) hacia Córdoba, Iguazú, Bariloche, Miami, Cancún, o Río de Janeiro, utilizando tus Millas BBVA dentro del Portal de Millas BBVA. El descuento lo verás reflejado en la etapa de búsqueda y en el último paso de la compra. El descuento no aplica para compras realizadas con tarjeta de crédito. El beneficio podrá utilizarse una única vez por cliente, en su primer canje, y estará sujeto al tope de descuento correspondiente según el destino.  \nTope de descuento para vuelos a Córdoba, Iguazú, Bariloche: 3.100 Millas BBVA.\nTope de descuento para vuelos a Miami, Cancún, Río de Janeiro: 16.000 Millas BBVA.\nLOS ACCIONISTAS DE BANCO BBVA ARGENTINA S.A. LIMITAN SU RESPONSABILIDAD A LA INTEGRACIÓN DE LAS ACCIONES SUSCRIPTAS LEY 19.550 Y LEY 25.738 CUIT 30-50000319-3. AVDA.CÓRDOBA 111- PISO 31 CABA - CP C1054AAA",
+      "diasPromo": null,
+      "vigencia": "Del 01/10/2026 hasta 31/10/2026",
+      "grupoTarjeta": "Tarjetas de crédito BBVA",
+      "tiempoAcreditacion": null,
+      "esModo": false
+    }
+  },
+  {
+    "source": "bbva",
+    "source_id": "87863",
+    "scraped_at": "2026-10-19T13:50:13.103433+00:00",
+    "source_url": "https://go.bbva.com.ar/willgo/fgo/API/v3/communication/87863",
+    "catalog": {
+      "id": "87863",
+      "imagen": "https://assets.caasbbva.com/content/dam/caas/argentina/beneficios/comercio/millasbbva_317x112.png",
+      "cabecera": "Millas Bbva 9 cuotas",
+      "subcabecera": ". .Promoción válida desde 01-10-2026 hasta 31-10-2026",
+      "idCampania": "",
+      "esCampania": false,
+      "esCampaniaMadre": false,
+      "fechaDesde": "2026-10-01",
+      "fechaHasta": "2026-10-31",
+      "diasPromo": "1,1,1,1,1,1,1",
+      "montoTope": null,
+      "grupoTarjeta": "Tarjetas de crédito BBVA"
+    },
+    "detail": {
+      "id": "87863",
+      "imagen": "https://assets.caasbbva.com/content/dam/caas/argentina/beneficios/comercio/millasbbva_317x112.png",
+      "cabecera": "Millas Bbva 9 cuotas",
+      "beneficios": [
+        {
+          "cuota": 9,
+          "tope": null,
+          "tipoTope": "ninguno",
+          "frecuenciaTope": " ",
+          "requisitos": [
+            "3 cuotas en vuelos nacionales y 9 cuotas en paquetes y alojamientos de Argentina.\nExclusivo en el portal de Millas BBVA."
+          ]
+        }
+      ],
+      "canalesVenta": {
+        "sucursales": [],
+        "web": [
+          {
+            "name": "Millas Bbva",
+            "url": "https://online.bbva.com.ar/fnetcore/loginClementeApp.html?init&#61;puntos"
+          }
+        ]
+      },
+      "basesCondiciones": "HASTA 9 CUOTAS SIN INTERÉS PAGANDO CON TARJETAS DE CRÉDITO BBVA PAQUETES Y ALOJAMIENTOS EN ARGENTINA EN EL PORTAL DE MILLAS BBVA. Y HASTA 3 CUOTAS SIN INTERES EN VUELOS CON DESTINO Y ORIGEN EN ARGENTINA.EJEMPLO EN UNA COMPRA DE UNA RESERVA DE ALOJAMIENTO EN ARGENTINA POR $90.000 EN 9 PAGOS TENDRÁ DEL PRIMER AL NOVENO RESUMEN UN CONSUMO DE $10.000. NO PARTICIPAN TARJETAS VISA PURCHASING, DISTRIBUTION Y CORPORATE. VÁLIDA SÓLO PARA CONSUMOS DE TIPO FAMILIAR, Y NO SE ACUMULA A OTRAS PROMOCIONES. LOS ACCIONISTAS DE BANCO BBVA ARGENTINA S.A. LIMITAN SU RESPONSABILIDAD A LA INTEGRACIÓN DE LAS ACCIONES SUSCRIPTAS LEY 19.550 Y LEY 25.738 CUIT 30-50000319-3. AVDA.CÓRDOBA 111- PISO 31 CABA - CP C1054AAA.",
+      "diasPromo": "1,1,1,1,1,1,1",
+      "vigencia": "Del 01/10/2026 hasta 31/10/2026",
+      "grupoTarjeta": "Tarjetas de crédito BBVA",
+      "tiempoAcreditacion": null,
+      "esModo": false
+    }
+  },
+  {
+    "source": "bbva",
+    "source_id": "87856",
+    "scraped_at": "2026-10-19T13:50:13.329774+00:00",
+    "source_url": "https://go.bbva.com.ar/willgo/fgo/API/v3/communication/87856",
+    "catalog": {
+      "id": "87856",
+      "imagen": "https://assets.caasbbva.com/content/dam/caas/argentina/beneficios/comunicacion/cabify_usuariosnuevos_317x112.png",
+      "cabecera": "Nuevo Usuario Cabify 50%",
+      "subcabecera": ". .Promoción válida desde 01-10-2026 hasta 31-10-2026",
+      "idCampania": "",
+      "esCampania": false,
+      "esCampaniaMadre": false,
+      "fechaDesde": "2026-10-01",
+      "fechaHasta": "2026-10-31",
+      "diasPromo": null,
+      "montoTope": "4000",
+      "grupoTarjeta": "Tarjetas de crédito BBVA"
+    },
+    "detail": {
+      "id": "87856",
+      "imagen": "https://assets.caasbbva.com/content/dam/caas/argentina/beneficios/comunicacion/cabify_usuariosnuevos_317x112.png",
+      "cabecera": "Nuevo Usuario Cabify 50%",
+      "beneficios": [
+        {
+          "cuota": 0,
+          "tope": "4000",
+          "tipoTope": "Transaccion",
+          "frecuenciaTope": " ",
+          "requisitos": [
+            "Nuevos usuarios: 50% de descuento en los próximos 5 viajes con el código 5MASTER.\nTope de reintegro $4.000 por viaje o envío. \nExclusivo Mastercard BBVA."
+          ]
+        }
+      ],
+      "canalesVenta": {
+        "sucursales": [],
+        "web": [
+          {
+            "name": "Nuevo Usuario Cabify",
+            "url": "https://app.adjust.com/3hek07"
+          }
+        ]
+      },
+      "basesCondiciones": "INGRESA EL CODIGO 5MASTER EN LA APP DE CABIFY, SELECCIONA TU TARJETA MASTERCARD BLACK BBVA Y REALIZA TU VIAJE. PROMOCIÓN VÁLIDA TODOS LOS DÍAS, PARA VIAJES O ENVÍOS REALIZADOS EN ARGENTINA DESDE EL 1 DE OCTUBRE DE 2026 A LAS 00:00HS HASTA EL 31 DE OCTUBRE DEL 2026 A LAS 23:59HS. LA PROMOCIÓN ES APLICABLE PARA NUEVOS USUARIOS QUE SE REGISTREN EN LA APP CABIFY DURANTE EL PLAZO DE VIGENCIA Y NO HAYAN REALIZADO NINGÚN VIAJE O ENVÍO, O USUARIOS QUE NO HAYAN REALIZADO VIAJES O ENVÍOS A TRAVÉS DE LA APP CABIFY EN LOS 90 (NOVENTA) DÍAS PREVIOS AL MOMENTO DE CARGAR EL CÓDIGO PROMOCIONAL. LA PROMOCIÓN CONSISTE EN UN 50% (CINCUENTA POR CIENTO) DE DESCUENTO EN LOS PRÓXIMOS 5 (CINCO) VIAJES QUE LOS USUARIOS BENEFICIADOS REALICEN CUYO MÉTODO DE PAGO SELECCIONADO SEA UNA TARJETA DE CRÉDITO MASTERCARD. PARA PODER ACCEDER AL BENEFICIO, LOS USUARIOS BENEFICIADOS DEBERÁN INGRESAR EL CÓDIGO PROMOCIONAL AL MOMENTO DEL PAGO EN LA APP CABIFY. EL BENEFICIO TENDRÁ UN MONTO MÁXIMO DE $4000 (CUATRO MIL PESOS ARGENTINOS) PARA CADA UNO DE LOS VIAJES. UNA VEZ CARGADO EL CÓDIGO EN LA APP CABIFY, SERÁ VÁLIDO PARA SU USO POR 30 (TREINTA) DÍAS, O HASTA LA TERMINACIÓN DEL PLAZO DE VIGENCIA, LO QUE OCURRA PRIMERO. EL BENEFICIO NO ES COMBINABLE NI ACUMULABLE CON OTRAS OFERTAS Y/O PROMOCIONES. EN CASO DE HABER CARGADO MÁS DE UN CÓDIGO, APLICARÁ ÚNICAMENTE EL QUE MAYOR AHORRO LE GENERE A LOS USUARIOS.",
+      "diasPromo": null,
+      "vigencia": "Del 01/10/2026 hasta 31/10/2026",
+      "grupoTarjeta": "Tarjetas de crédito BBVA",
+      "tiempoAcreditacion": null,
+      "esModo": false
+    }
+  },
+  {
+    "source": "bbva",
+    "source_id": "87886",
+    "scraped_at": "2026-10-19T13:50:13.733977+00:00",
+    "source_url": "https://go.bbva.com.ar/willgo/fgo/API/v3/communication/87886",
+    "catalog": {
+      "id": "87886",
+      "imagen": "https://assets.caasbbva.com/content/dam/caas/argentina/beneficios/comercio/subtemaster_317x112.png",
+      "cabecera": "Transporte | Mastercard 100%",
+      "subcabecera": ". .Promoción válida desde 01-10-2026 hasta 31-10-2026",
+      "idCampania": "",
+      "esCampania": false,
+      "esCampaniaMadre": false,
+      "fechaDesde": "2026-10-01",
+      "fechaHasta": "2026-10-31",
+      "diasPromo": "1,1,1,1,1,1,1",
+      "montoTope": "25000",
+      "grupoTarjeta": "Tarjetas de crédito BBVA"
+    },
+    "detail": {
+      "id": "87886",
+      "imagen": "https://assets.caasbbva.com/content/dam/caas/argentina/beneficios/comercio/subtemaster_317x112.png",
+      "cabecera": "Transporte | Mastercard 100%",
+      "beneficios": [
+        {
+          "cuota": 0,
+          "tope": "25000",
+          "tipoTope": "Usuario",
+          "frecuenciaTope": "Por Mes",
+          "requisitos": [
+            "Exclusivo Mastercard con NFC (ApplePay y GooglePay) en subtes. Recibí el reintegro en tu caja de ahorros.\nEn todas las líneas de subte."
+          ]
+        }
+      ],
+      "canalesVenta": {
+        "sucursales": [],
+        "web": [
+          {
+            "name": "Transporte | Mastercard",
+            "url": "https://www.mastercard.com/ar/es/personal/experience-mastercard/priceless.html?cmp&#61;2026.q3.uy.latam.cons.brand.ser.others.atm2pos.16092026.sep.txt.googles.es-uy&amp;gad_source&#61;1&amp;gad_campaignid&#61;24264389245&amp;gbraid&#61;0AAAABCzr5U7rIOjpvuf2yPH5QpDYUr_c5&amp;gclid&#61;Cj0KCQjwlNPVBhCMARIsAPZ5Rqin5UePB8GAwarsKwFWM_0Xme-fxc-hcCCJXdlsNwwskZnwVCPgG0saAtJJEALw_wcB"
+          }
+        ]
+      },
+      "basesCondiciones": "100% DE REINTEGRO PAGANDO EXCLUSIVAMENTE CON TU TARJETA MASTERCARD BBVA DESDE TU CELULAR CON NFC  A TRAVÉS APPLE PAY (DISPONIBLE SÓLO EN IOS), GOOGLE PAY, MODO CONTACLESS (DISPONIBLE SOLO EN ANDROID) SIN CONTACTO AL PAGAR EN LAS LÍNEAS DE SUBTE HABILITADAS. TOPE DE REINTEGRO: $25.000  POR CLIENTE POR MES. LA PROMOCIÓN ESTARÁ VIGENTE EN LA REPÚBLICA ARGENTINA DESDE LAS 00:01 DEL 1 DE OCTUBRE DE 2026 Y HASTA LAS 23:59 DEL 31 DE OCTUBRE 2026 INCLUSIVE O HASTA AGOTAR STOCK ASIGNADO A ESTA PROMOCIÓN, LO QUE OCURRA PRIMERO. PARA MÁS INFORMACIÓN CONSULTE TÉRMINOS, CONDICIONES Y LOCALES ADHERIDOS EN GO.BBVA.COM.AR. ES REQUISITO TENER UNA CAJA DE AHORRO EN PESOS ACTIVA EN BBVA PARA RECIBIR LA ACREDITACIÓN DEL REINTEGRO. NO APLICA PARA COMPRAS REALIZADAS CON TARJETAS DE CRÉDITO ADICIONALES. LA PRESENTE PROMOCIÓN ES VÁLIDA SÓLO PARA CONSUMOS DE TIPO FAMILIAR Y NO SE ACUMULA A OTRAS PROMOCIONES. EL REINTEGRO SE ACREDITARÁ DENTRO DE LOS 60 DÍAS POSTERIORES A LA COMPRA EN TU CAJA DE AHORROS ACTIVA EN BBVA. LOS ACCIONISTAS DE BANCO BBVA ARGENTINA S.A. LIMITAN SU RESPONSABILIDAD A LA INTEGRACIÓN DE LAS ACCIONES SUSCRIPTAS LEY 19.550 Y LEY 25.738 CUIT 30-50000319-3. AVDA.CÓRDOBA 111- PISO 31 CABA - CP C1054AAA",
+      "diasPromo": "1,1,1,1,1,1,1",
+      "vigencia": "Del 01/10/2026 hasta 31/10/2026",
+      "grupoTarjeta": "Tarjetas de crédito BBVA",
+      "tiempoAcreditacion": null,
+      "esModo": false
+    }
+  },
+  {
+    "source": "bbva",
+    "source_id": "87567",
+    "scraped_at": "2026-10-19T13:50:14.835888+00:00",
+    "source_url": "https://go.bbva.com.ar/willgo/fgo/API/v3/communication/87567",
+    "catalog": {
+      "id": "87567",
+      "imagen": "https://assets.caasbbva.com/content/dam/caas/argentina/beneficios/campania/bocamaster_317x112.png",
+      "cabecera": "Boca Juniors - Cuota Social Cuota Social",
+      "subcabecera": ". .Promoción válida desde 28-08-2026 hasta 31-12-2026",
+      "idCampania": "2534",
+      "esCampania": false,
+      "esCampaniaMadre": false,
+      "fechaDesde": "2026-08-28",
+      "fechaHasta": "2026-12-31",
+      "diasPromo": null,
+      "montoTope": "8000",
+      "grupoTarjeta": "Tarjetas de crédito y débito BBVA"
+    },
+    "detail": {
+      "id": "87567",
+      "imagen": "https://assets.caasbbva.com/content/dam/caas/argentina/beneficios/campania/bocamaster_317x112.png",
+      "cabecera": "Boca Juniors - Cuota Social Cuota Social",
+      "beneficios": [
+        {
+          "cuota": 0,
+          "tope": "8000",
+          "tipoTope": "Usuario",
+          "frecuenciaTope": "Por Mes",
+          "requisitos": [
+            "Exclusivo Mastercard adhiriendo el débito automático de tu cuota social."
+          ]
+        }
+      ],
+      "canalesVenta": {
+        "sucursales": [
+          {
+            "direccion": "Brandsen 805",
+            "localidad": "Capital Federal",
+            "latitude": "-34.63663101196289",
+            "longitude": "-58.364742279052734"
+          }
+        ],
+        "web": []
+      },
+      "basesCondiciones": "PROMOCIÓN VÁLIDA PARA COMPRAS CON TARJETAS EMITIDAS POR BBVA. PARA COMPRAS CON TARJETA DE CRÉDITO  MASTERCARD, LAS COMPRAS EN CUOTAS PUEDEN REALIZARSE ÚNICAMENTE CON TARJETA DE CRÉDITO.NO PARTICIPAN TARJETAS VISA PURCHASING, DISTRIBUTION Y CORPORATE. LA PRESENTE PROMOCIÓN ES VÁLIDA SÓLO PARA CONSUMOS DE TIPO FAMILIAR, Y NO SE ACUMULA A OTRAS PROMOCIONES. EN EL CASO DE DUDA SOBRE EL DESTINO DEL CONSUMO. VÁLIDO PARA PAGOS REALIZADOS CON TARJETAS DEL BBVA A TRAVÉS DE MODO. LA PROMOCIÓN NO APLICA A PAGOS REALIZADOS A TRAVÉS DE OTRAS BILLETERAS VIRTUALES Y/O PLATAFORMAS DE PAGO ONLINE (POR EJEMPLO, PAYPAL, TODO PAGO, MERCADO PAGO, UALÁ, ETC.). NO PARTICIPAN COMPRAS REALIZADAS CON UNA FINANCIACIÓN DE 3, 6 , 9, 12 Y 18 MESES BAJO EL PROGRAMA DE FOMENTO AL CONSUMO Y A LA PRODUCCIÓN DE BIENES Y SERVICIOS, DENOMINADO &#39;AHORA 12&#39;. \nLOS ACCIONISTAS DE BANCO BBVA ARGENTINA S.A. LIMITAN SU RESPONSABILIDAD A LA INTEGRACIÓN DE LAS ACCIONES SUSCRIPTAS LEY 19.550 Y LEY 25.738 CUIT 30-50000319-3. AVDA.CÓRDOBA 111- PISO 31 CABA - CP C1054AAA",
+      "diasPromo": null,
+      "vigencia": "Del 28/08/2026 hasta 31/12/2026",
+      "grupoTarjeta": "Tarjetas de crédito y débito BBVA",
+      "tiempoAcreditacion": null,
+      "esModo": false
+    }
+  },
+  {
+    "source": "bbva",
+    "source_id": "87255",
+    "scraped_at": "2026-10-19T13:50:21.540409+00:00",
+    "source_url": "https://go.bbva.com.ar/willgo/fgo/API/v3/communication/87255",
+    "catalog": {
+      "id": "87255",
+      "imagen": "https://go.bbva.com.ar/fgo/sites/default/files/imagen/comercio/33479_naldo_320x320.png",
+      "cabecera": "Naldo 12 cuotas",
+      "subcabecera": "con tus tarjetas de crédito de BBVA .Promoción válida desde 01-09-2026 hasta 31-10-2026",
+      "idCampania": "2515",
+      "esCampania": false,
+      "esCampaniaMadre": false,
+      "fechaDesde": "2026-09-01",
+      "fechaHasta": "2026-10-31",
+      "diasPromo": "1,1,1,1,1,1,1",
+      "montoTope": null,
+      "grupoTarjeta": "Tarjetas de crédito BBVA"
+    },
+    "detail": {
+      "id": "87255",
+      "imagen": "https://go.bbva.com.ar/fgo/sites/default/files/imagen/comercio/33479_naldo_320x320.png",
+      "cabecera": "Naldo 12 cuotas",
+      "beneficios": [
+        {
+          "cuota": 12,
+          "tope": null,
+          "tipoTope": " ",
+          "frecuenciaTope": " ",
+          "requisitos": [
+            "12 cuotas sin interés \nEn productos seleccionados"
+          ]
+        }
+      ],
+      "canalesVenta": {
+        "sucursales": [
+          {
+            "direccion": "Padre Vazquez 237",
+            "localidad": "Maipu",
+            "latitude": "-68.7885513305664",
+            "longitude": "-32.9834098815918"
+          },
+          {
+            "direccion": "CNEL SUAREZ 457",
+            "localidad": "Junin De Los Andes",
+            "latitude": "-71.06971740722656",
+            "longitude": "-39.95189666748047"
+          },
+          {
+            "direccion": "ALEM 761",
+            "localidad": "Pehuajo",
+            "latitude": "-61.89962387084961",
+            "longitude": "-35.81348419189453"
+          },
+          {
+            "direccion": "PELLEGRINI 13",
+            "localidad": "Parana",
+            "latitude": "-60.53140640258789",
+            "longitude": "-31.731950759887695"
+          },
+          {
+            "direccion": "Av. San Martín 650",
+            "localidad": "Bolivar",
+            "latitude": "-61.11351776123047",
+            "longitude": "-36.231319427490234"
+          },
+          {
+            "direccion": "Mitre 568",
+            "localidad": "Villa Regina",
+            "latitude": "-67.0877456665039",
+            "longitude": "-39.10203552246094"
+          },
+          {
+            "direccion": "GRAL PAZ 950",
+            "localidad": "Rio Cuarto",
+            "latitude": "-64.34822082519531",
+            "longitude": "-33.1262092590332"
+          },
+          {
+            "direccion": "Av. Moreno 3128",
+            "localidad": "Saladillo",
+            "latitude": "-59.77853012084961",
+            "longitude": "-35.638484954833984"
+          },
+          {
+            "direccion": "Buenos Aires 391",
+            "localidad": "Salto",
+            "latitude": "-60.254432678222656",
+            "longitude": "-34.29227066040039"
+          },
+          {
+            "direccion": "Calle 1134",
+            "localidad": "25 De Mayo",
+            "latitude": "-60.171634674072266",
+            "longitude": "-35.43242263793945"
+          },
+          {
+            "direccion": "Velez Sarfield 1147",
+            "localidad": "La Carlota",
+            "latitude": "-63.296852111816406",
+            "longitude": "-33.41796112060547"
+          },
+          {
+            "direccion": "Avellaneda 265",
+            "localidad": "Choele Choel",
+            "latitude": "-65.66668701171875",
+            "longitude": "-39.287498474121094"
+          },
+          {
+            "direccion": "URQUIZA 920",
+            "localidad": "Gualeguaychu",
+            "latitude": "-58.517303466796875",
+            "longitude": "-33.008792877197266"
+          },
+          {
+            "direccion": "SAN MARTIN 1252",
+            "localidad": "Mendoza",
+            "latitude": "-68.83918762207031",
+            "longitude": "-32.88896560668945"
+          },
+          {
+            "direccion": "12 DE OCTUBRE 3550",
+            "localidad": "Mar Del Plata",
+            "latitude": "-57.54901885986328",
+            "longitude": "-38.041229248046875"
+          },
+          {
+            "direccion": "25 DE MAYO 80",
+            "localidad": "Concepcion Del Uruguay",
+            "latitude": "-58.2321891784668",
+            "longitude": "-32.483436584472656"
+          },
+          {
+            "direccion": "Tucuman 283",
+            "localidad": "Santiago Del Estero",
+            "latitude": "-64.26210021972656",
+            "longitude": "-27.78377342224121"
+          },
+          {
+            "direccion": "PEATONAL 9 DE JULIO 76",
+            "localidad": "Cordoba",
+            "latitude": "-64.19017791748047",
+            "longitude": "-31.412933349609375"
+          },
+          {
+            "direccion": "Primera Junta 30",
+            "localidad": "Colon",
+            "latitude": "-32.225303649902344",
+            "longitude": "-58.144874572753906"
+          },
+          {
+            "direccion": "Mitre 1390",
+            "localidad": "San Pedro",
+            "latitude": "-59.6688232421875",
+            "longitude": "-33.68235397338867"
+          },
+          {
+            "direccion": "Calle 47 680",
+            "localidad": "La Plata",
+            "latitude": "-57.95341873168945",
+            "longitude": "-34.914676666259766"
+          },
+          {
+            "direccion": "Calle 64 2930",
+            "localidad": "Necochea",
+            "latitude": "-58.743019104003906",
+            "longitude": "-38.55233383178711"
+          },
+          {
+            "direccion": "Peatonal Alberdi 283",
+            "localidad": "Salta",
+            "latitude": "-65.4110107421875",
+            "longitude": "-24.793243408203125"
+          },
+          {
+            "direccion": "San Martín 1280",
+            "localidad": "Tunuyan",
+            "latitude": "-69.01658630371094",
+            "longitude": "-33.576690673828125"
+          },
+          {
+            "direccion": "CORRIENTES 1165",
+            "localidad": "Villa Maria",
+            "latitude": "-63.24211502075195",
+            "longitude": "-32.41154479980469"
+          },
+          {
+            "direccion": "Av. Villegas 495",
+            "localidad": "Trenque Lauquen",
+            "latitude": "-62.733680725097656",
+            "longitude": "-35.97304916381836"
+          },
+          {
+            "direccion": "Avellaneda 290",
+            "localidad": "Santa Rosa",
+            "latitude": "-64.29134368896484",
+            "longitude": "-36.61975860595703"
+          },
+          {
+            "direccion": "RIVADAVIA 3045",
+            "localidad": "Mar Del Plata",
+            "latitude": "-57.55185317993164",
+            "longitude": "-37.997745513916016"
+          },
+          {
+            "direccion": "Av. San Martín 549",
+            "localidad": "Las Flores",
+            "latitude": "-59.10021209716797",
+            "longitude": "-36.015098571777344"
+          },
+          {
+            "direccion": "Taboada 382",
+            "localidad": "Lujan De Cuyo",
+            "latitude": "-68.88086700439453",
+            "longitude": "-33.03742980957031"
+          },
+          {
+            "direccion": "GODOY 664",
+            "localidad": "Neuquen",
+            "latitude": "-68.23446655273438",
+            "longitude": "-38.935298919677734"
+          },
+          {
+            "direccion": "Avellaneda 122",
+            "localidad": "Santa Rosa",
+            "latitude": "-64.29138946533203",
+            "longitude": "-36.618003845214844"
+          },
+          {
+            "direccion": "Avenida Mitre 70",
+            "localidad": "San Rafael",
+            "latitude": "-68.32921600341797",
+            "longitude": "-34.616641998291016"
+          },
+          {
+            "direccion": "SAN MARTIN 498",
+            "localidad": "Comodoro Rivadavia",
+            "latitude": "-67.48158264160156",
+            "longitude": "-45.86111831665039"
+          },
+          {
+            "direccion": "Belgrano 602",
+            "localidad": "Venado Tuerto",
+            "latitude": "-61.965843200683594",
+            "longitude": "-33.74742889404297"
+          },
+          {
+            "direccion": "V. LOPEZ 2937",
+            "localidad": "Olavarria",
+            "latitude": "-60.32218551635742",
+            "longitude": "-36.89214324951172"
+          },
+          {
+            "direccion": "Pellegrini 98",
+            "localidad": "Chivilcoy",
+            "latitude": "-60.0185546875",
+            "longitude": "-34.89472198486328"
+          },
+          {
+            "direccion": "Rivadavia 505",
+            "localidad": "General Villegas",
+            "latitude": "-63.01878356933594",
+            "longitude": "-35.03105926513672"
+          },
+          {
+            "direccion": "Belgrano 135",
+            "localidad": "Alta Gracia",
+            "latitude": "-64.43234252929688",
+            "longitude": "-31.657569885253906"
+          },
+          {
+            "direccion": "Av. Julio A. Roca 1452",
+            "localidad": "General Roca",
+            "latitude": "-67.57593536376953",
+            "longitude": "-39.02950668334961"
+          },
+          {
+            "direccion": "SAN MARTIN 458",
+            "localidad": "Colonia Catriel",
+            "latitude": "-67.79804992675781",
+            "longitude": "-37.88268280029297"
+          },
+          {
+            "direccion": "Libertad 256",
+            "localidad": "Rio Tercero",
+            "latitude": "-64.11246490478516",
+            "longitude": "-32.171974182128906"
+          },
+          {
+            "direccion": "ALBERDI 71",
+            "localidad": "Rio Gallegos",
+            "latitude": "-69.21464538574219",
+            "longitude": "-51.62012481689453"
+          },
+          {
+            "direccion": "PRIMEROS POBLADORES 36",
+            "localidad": "Plottier",
+            "latitude": "-68.2259750366211",
+            "longitude": "-38.95393753051758"
+          },
+          {
+            "direccion": "JUJUY 464",
+            "localidad": "Santiago Del Estero",
+            "latitude": "-64.25989532470703",
+            "longitude": "-27.781904220581055"
+          },
+          {
+            "direccion": "Bartolomé Mitre 234",
+            "localidad": "Daireaux",
+            "latitude": "-61.748008728027344",
+            "longitude": "-36.60008239746094"
+          },
+          {
+            "direccion": "Belgrano 853",
+            "localidad": "San Salvador De Jujuy",
+            "latitude": "-65.30496978759766",
+            "longitude": "-24.185335159301758"
+          },
+          {
+            "direccion": "PEDERNERA 520",
+            "localidad": "Mercedes",
+            "latitude": "-65.4659423828125",
+            "longitude": "-33.683311462402344"
+          },
+          {
+            "direccion": "Peatonal Tucumán 124",
+            "localidad": "San Juan",
+            "latitude": "-68.52297973632812",
+            "longitude": "-31.53559684753418"
+          },
+          {
+            "direccion": "URQUIZA 815",
+            "localidad": "Concordia",
+            "latitude": "-58.01682662963867",
+            "longitude": "-31.393964767456055"
+          },
+          {
+            "direccion": "Guemez 45",
+            "localidad": "Lincoln",
+            "latitude": "-61.528743743896484",
+            "longitude": "-34.865882873535156"
+          },
+          {
+            "direccion": "PRESIDENTE JUAN DOMINGO PERON 146",
+            "localidad": "Resistencia",
+            "latitude": "-58.98939895629883",
+            "longitude": "-27.451425552368164"
+          },
+          {
+            "direccion": "SAN MARTIN 1192",
+            "localidad": "San Lorenzo",
+            "latitude": "-60.7340087890625",
+            "longitude": "-32.74974060058594"
+          },
+          {
+            "direccion": "AV. DE MAYO Y SAN NICOLAS 0",
+            "localidad": "Pergamino",
+            "latitude": "-60.570613861083984",
+            "longitude": "-33.8896598815918"
+          },
+          {
+            "direccion": "COLON 4222",
+            "localidad": "Cordoba",
+            "latitude": "-64.23439025878906",
+            "longitude": "-31.397686004638672"
+          },
+          {
+            "direccion": "Av. Mosconi 356",
+            "localidad": "Rincón de los Sauces",
+            "latitude": "-68.92517852783203",
+            "longitude": "-37.38948440551758"
+          },
+          {
+            "direccion": "Calle 13 956",
+            "localidad": "General Pico",
+            "latitude": "-63.7547492980957",
+            "longitude": "-35.659000396728516"
+          },
+          {
+            "direccion": "Salta 684",
+            "localidad": "Capital Federal",
+            "latitude": "-34.616275787353516",
+            "longitude": "-58.38291549682617"
+          },
+          {
+            "direccion": "Rivadavia 536",
+            "localidad": "La Rioja",
+            "latitude": "-66.85547637939453",
+            "longitude": "-29.414892196655273"
+          },
+          {
+            "direccion": "Bahía Blanca 301",
+            "localidad": "Bahia Blanca",
+            "latitude": "-34.63020706176758",
+            "longitude": "-58.48183822631836"
+          },
+          {
+            "direccion": "Av. 9 de Julio 25",
+            "localidad": "Carlos Casares",
+            "latitude": "-61.36367416381836",
+            "longitude": "-35.62605667114258"
+          },
+          {
+            "direccion": "San Martín 336",
+            "localidad": "Cipolletti",
+            "latitude": "-67.99549102783203",
+            "longitude": "-38.93877029418945"
+          },
+          {
+            "direccion": "SAN MARTIN 860",
+            "localidad": "Zapala",
+            "latitude": "-70.06068420410156",
+            "longitude": "-38.90822982788086"
+          },
+          {
+            "direccion": "DE LA NACION 234",
+            "localidad": "San Nicolas de los Arroyos",
+            "latitude": "-60.2181510925293",
+            "longitude": "-33.33200454711914"
+          },
+          {
+            "direccion": "Belgrano 684",
+            "localidad": "Tandil",
+            "latitude": "-59.134090423583984",
+            "longitude": "-37.328399658203125"
+          },
+          {
+            "direccion": "BELGRANO 987",
+            "localidad": "San Martin De Los Andes",
+            "latitude": "-71.34860229492188",
+            "longitude": "-40.15834426879883"
+          },
+          {
+            "direccion": "B. MITRE 626",
+            "localidad": "Gral Viamonte",
+            "latitude": "-61.03588104248047",
+            "longitude": "-35.00166702270508"
+          },
+          {
+            "direccion": "AV. B. SUR MER 200",
+            "localidad": "San Martin",
+            "latitude": "-68.47660064697266",
+            "longitude": "-33.082916259765625"
+          },
+          {
+            "direccion": "Libertad 71",
+            "localidad": "Benito Juarez",
+            "latitude": "-59.80489730834961",
+            "longitude": "-37.67431640625"
+          },
+          {
+            "direccion": "San Martín 725",
+            "localidad": "Cinco Saltos",
+            "latitude": "-68.06803131103516",
+            "longitude": "-38.826171875"
+          },
+          {
+            "direccion": "BUENOS AIRES 402",
+            "localidad": "Viedma",
+            "latitude": "-62.989479064941406",
+            "longitude": "-40.8106689453125"
+          },
+          {
+            "direccion": "ONELLI 724",
+            "localidad": "Choele Choel",
+            "latitude": "-39.28932189941406",
+            "longitude": "-65.66230773925781"
+          },
+          {
+            "direccion": "Ruta 7 Km 260",
+            "localidad": "Junin",
+            "latitude": "-60.967506408691406",
+            "longitude": "-34.6030158996582"
+          },
+          {
+            "direccion": "San Martín 577",
+            "localidad": "Azul",
+            "latitude": "-59.86154556274414",
+            "longitude": "-36.77994918823242"
+          },
+          {
+            "direccion": "Sarmiento 42",
+            "localidad": "Chacabuco",
+            "latitude": "-60.470706939697266",
+            "longitude": "-34.6440544128418"
+          },
+          {
+            "direccion": "Belgrano 1249",
+            "localidad": "Coronel Suarez",
+            "latitude": "-61.93414306640625",
+            "longitude": "-37.45945358276367"
+          },
+          {
+            "direccion": "RIVADAVIA 252",
+            "localidad": "Trelew",
+            "latitude": "-65.30916595458984",
+            "longitude": "-43.25188064575195"
+          },
+          {
+            "direccion": "RIVADAVIA 755",
+            "localidad": "Formosa",
+            "latitude": "-58.16670608520508",
+            "longitude": "-26.182064056396484"
+          },
+          {
+            "direccion": "Av. Del Libertador Norte 121",
+            "localidad": "General Alvear",
+            "latitude": "-67.68904876708984",
+            "longitude": "-34.976722717285156"
+          },
+          {
+            "direccion": "Pellegrini 1563",
+            "localidad": "Bragado",
+            "latitude": "-60.48386001586914",
+            "longitude": "-35.1179084777832"
+          },
+          {
+            "direccion": "BOULEVARD SARMIENTO 651",
+            "localidad": "San Juan",
+            "latitude": "-68.54376220703125",
+            "longitude": "-31.581958770751953"
+          },
+          {
+            "direccion": "Cale 17 956",
+            "localidad": "General Pico",
+            "latitude": "-63.757789611816406",
+            "longitude": "-35.659324645996094"
+          },
+          {
+            "direccion": "Av. Cárcano 220",
+            "localidad": "Carlos Paz",
+            "latitude": "-64.49496459960938",
+            "longitude": "-31.42620086669922"
+          },
+          {
+            "direccion": "H. RODRIGUEZ 38",
+            "localidad": "Cutral Co",
+            "latitude": "-69.22852325439453",
+            "longitude": "-38.93339920043945"
+          },
+          {
+            "direccion": "T. PLANAS 55",
+            "localidad": "Neuquen",
+            "latitude": "-68.06012725830078",
+            "longitude": "-38.95899963378906"
+          },
+          {
+            "direccion": "25 de Mayo 464",
+            "localidad": "Puerto Madryn",
+            "latitude": "-42.76862716674805",
+            "longitude": "-65.03317260742188"
+          },
+          {
+            "direccion": "Calle 21 650",
+            "localidad": "Balcarce",
+            "latitude": "-58.257789611816406",
+            "longitude": "-37.84967803955078"
+          },
+          {
+            "direccion": "Rivadavia 914",
+            "localidad": "Junin",
+            "latitude": "-60.954647064208984",
+            "longitude": "-34.58184814453125"
+          },
+          {
+            "direccion": "LA RIOJA 1248",
+            "localidad": "Nueve De Julio",
+            "latitude": "-60.88365936279297",
+            "longitude": "-35.44599151611328"
+          },
+          {
+            "direccion": "Calle 1810 64",
+            "localidad": "Tres Arroyos",
+            "latitude": "-60.273189544677734",
+            "longitude": "-38.377811431884766"
+          },
+          {
+            "direccion": "Colón 848",
+            "localidad": "San Luis",
+            "latitude": "-66.33775329589844",
+            "longitude": "-33.301727294921875"
+          },
+          {
+            "direccion": "R. SAENZ PEÑA 151",
+            "localidad": "Junin",
+            "latitude": "-60.946590423583984",
+            "longitude": "-34.59013748168945"
+          }
+        ],
+        "web": []
+      },
+      "basesCondiciones": "CARTERA DE CONSUMO. PROMOCIÓN VÁLIDA DEL 01/09/26 AL 31/10/26 PARA ARGENTINA, ÚNICAMENTE PARA COMPRAS REALIZADAS CON TARJETAS DE CRÉDITO VISA Y MASTERCARD EMITIDAS POR BBVA, PARA PRODUCTOS SELECCIONADOS, EN LOCALES ADHERIDOS. LA PROMOCIÓN NO ES COMBINABLE CON OTRAS PROMOCIONES. VÁLIDA SÓLO PARA CONSUMO DE TIPO FAMILIAR. NO APLICA A PAGOS REALIZADOS A TRAVÉS DE BILLETERAS VIRTUALES Y/O PLATAFORMAS DE PAGO ONLINE (POR EJEMPLO, PAYPAL, MERCADO PAGO, UALÁ, ETC.), EXCEPTO MODO. NO PARTICIPAN TARJETAS VISA PURCHASING, DISTRIBUTION Y CORPORATE. EJEMPLO: EN UNA COMPRA DE $ 180.000 REALIZADA EN 18 PAGOS CON TARJETA DE CRÉDITO BBVA, TENDRÁ DEL PRIMER AL DÉCIMO OCTAVO RESUMEN UN CONSUMO DE $10.000.\nCOSTO FINANCIERO TOTAL NOMINAL ANUAL: 0,00%.\n\nTASA NOMINAL ANUAL 0,00%.\n\nTASA EFECTIVA ANUAL 0,00%.\n\nCFTNA 0,00%\n\nLOS ACCIONISTAS DE BANCO BBVA ARGENTINA S.A. LIMITAN SU RESPONSABILIDAD A LA INTEGRACIÓN DE LAS ACCIONES SUSCRIPTAS A LA LEY 19.550 Y LEY 25.738. CUIT 30-50000319-3. AVENIDA CÓRDOBA 111 PISO 31 CABA - CP: 1054.",
+      "diasPromo": "1,1,1,1,1,1,1",
+      "vigencia": "Del 01/09/2026 hasta 31/10/2026",
+      "grupoTarjeta": "Tarjetas de crédito BBVA",
+      "tiempoAcreditacion": null,
+      "esModo": false
+    }
+  },
+  {
+    "source": "bbva",
+    "source_id": "88015",
+    "scraped_at": "2026-10-19T13:50:24.609492+00:00",
+    "source_url": "https://go.bbva.com.ar/willgo/fgo/API/v3/communication/88015",
+    "catalog": {
+      "id": "88015",
+      "imagen": "https://assets.caasbbva.com/content/dam/caas/argentina/beneficios/comunicacion/master_oncity.png",
+      "cabecera": "On City Regalo con tu compra",
+      "subcabecera": "te llevás un parlante JBL de regalo. .Promoción válida desde 28-09-2026 hasta 31-10-2026",
+      "idCampania": "",
+      "esCampania": false,
+      "esCampaniaMadre": false,
+      "fechaDesde": "2026-09-28",
+      "fechaHasta": "2026-10-31",
+      "diasPromo": null,
+      "montoTope": null,
+      "grupoTarjeta": "Tarjetas de crédito BBVA"
+    },
+    "detail": {
+      "id": "88015",
+      "imagen": "https://assets.caasbbva.com/content/dam/caas/argentina/beneficios/comunicacion/master_oncity.png",
+      "cabecera": "On City Regalo con tu compra",
+      "beneficios": [
+        {
+          "cuota": 12,
+          "tope": null,
+          "tipoTope": "ninguno",
+          "frecuenciaTope": " ",
+          "requisitos": [
+            "De Lunes a Viernes con tu compra mayor a $350.000 en oncity.com con tarjeta MasterCard, te llevás un parlante JBL de regalo.\nAprovechá y pagá en hasta 12 cuotas sin interés en productos seleccionados.\nExclusivo online."
+          ]
+        }
+      ],
+      "canalesVenta": {
+        "sucursales": [],
+        "web": [
+          {
+            "name": "On City",
+            "url": "https://www.oncity.com/"
+          }
+        ]
+      },
+      "basesCondiciones": "On City Online: Del 18/08/2026 al 31/10/2026, podés obtener hasta 12 cuotas sin interés en productos seleccionados en oncity.com. Además de lunes a viernes en tus compras mayores a $350.000 ( trescientos cincuenta mil)  te llevas de regalo un parlante JBL Válido exclusivamente para compras realizadas de lunes a viernes en el sitio web https://www.oncity.com en compras abonadas íntegramente con tarjetas de crédito Mastercard emitidas por BBVA. Máximo 1 regalo por cliente. No se podrá elegir el color del parlante y no es canjeable por dinero en efectivo u otros productos. El parlante será entregado junto con la compra adquirida a través de la web, utilizando la misma modalidad de entrega seleccionada al momento de la compra.",
+      "diasPromo": null,
+      "vigencia": "Del 28/09/2026 hasta 31/10/2026",
+      "grupoTarjeta": "Tarjetas de crédito BBVA",
+      "tiempoAcreditacion": null,
+      "esModo": false
+    }
+  },
+  {
+    "source": "bbva",
+    "source_id": "84603",
+    "scraped_at": "2026-10-19T13:50:24.764315+00:00",
+    "source_url": "https://go.bbva.com.ar/willgo/fgo/API/v3/communication/84603",
+    "catalog": {
+      "id": "84603",
+      "imagen": "https://go.bbva.com.ar/fgo/sites/default/files/imagen/comercio/35654_fito_interior_317x112.png",
+      "cabecera": "Fito Paez Gira Interior 6 cuotas",
+      "subcabecera": "con tus tarjetas de crédito Visa de BBVA .Promoción válida desde 29-04-2026 hasta 05-11-2026",
+      "idCampania": "2416",
+      "esCampania": false,
+      "esCampaniaMadre": false,
+      "fechaDesde": "2026-04-29",
+      "fechaHasta": "2026-11-05",
+      "diasPromo": "1,1,1,1,1,1,1",
+      "montoTope": null,
+      "grupoTarjeta": "Tarjetas de crédito BBVA"
+    },
+    "detail": {
+      "id": "84603",
+      "imagen": "https://go.bbva.com.ar/fgo/sites/default/files/imagen/comercio/35654_fito_interior_317x112.png",
+      "cabecera": "Fito Paez Gira Interior 6 cuotas",
+      "beneficios": [
+        {
+          "cuota": 6,
+          "tope": null,
+          "tipoTope": "ninguno",
+          "frecuenciaTope": " ",
+          "requisitos": [
+            "Todos los días 6 cuotas sin interés con tus tarjetas de crédito Visa de BBVA"
+          ]
+        }
+      ],
+      "canalesVenta": {
+        "sucursales": [],
+        "web": [
+          {
+            "name": "Fito Paez Gira Interior",
+            "url": "https://www.allaccess.com.ar/"
+          },
+          {
+            "name": "Fito Paez Gira Interior",
+            "url": "https://www.allaccess.com.ar/"
+          },
+          {
+            "name": "Fito Paez Gira Interior",
+            "url": "https://www.allaccess.com.ar/"
+          },
+          {
+            "name": "Fito Paez Gira Interior",
+            "url": "https://ticketbahia.com/site/front-home.php"
+          },
+          {
+            "name": "Fito Paez Gira Interior",
+            "url": "https://www.allaccess.com.ar/"
+          },
+          {
+            "name": "Fito Paez Gira Interior",
+            "url": "https://www.edenentradas.ar/"
+          },
+          {
+            "name": "Fito Paez Gira Interior",
+            "url": "https://www.allaccess.com.ar/"
+          },
+          {
+            "name": "Fito Paez Gira Interior",
+            "url": "https://universotickets.com/"
+          }
+        ]
+      },
+      "basesCondiciones": "CARTERA DE CONSUMO. PROMOCIÓN VÁLIDA PARA LA REPÚBLICA ARGENTINA DESDE EL 29/04 A LAS 12:00 HS. Y HASTA LA FECHA DE CADA SHOW. PARA COMPRAS REALIZADAS EXCLUSIVAMENTE A TRAVÉS DE LAS TICKETERAS OFICIALES: TUCUMÁN/POSADAS/CORRIENTES/SALTA: HTTPS://WWW.ALLACCESS.COM.AR/; CÓRDOBA: HTTPS://WWW.EDENENTRADAS.AR/; LA PLATA: HTTPS://UNIVERSOTICKETS.COM/; Y SÓLO ABONANDO CON TARJETAS DE CRÉDITO VISA EMITIDAS POR BBVA. MÁXIMO 6 ENTRADAS POR TRANSACCIÓN. VÁLIDA SÓLO PARA CONSUMO DE TIPO FAMILIAR. NO SE ACUMULA CON OTRAS PROMOCIONES. LA FINANCIACIÓN APLICA ÚNICAMENTE AL COSTO DE LAS ENTRADAS; NO APLICA A COSTOS DE EMISIÓN, RETIRO Y/O ENVÍO Y/O CARGO POR SERVICIO. NO PARTICIPAN TARJETAS VISA PURCHASING, DISTRIBUTION Y CORPORATE. NO APLICA A PAGOS REALIZADOS A TRAVÉS DE OTRAS BILLETERAS VIRTUALES Y/O PLATAFORMAS DE PAGO ONLINE (POR EJEMPLO, PAYPAL, MERCADO PAGO, UALÁ, ETC.). EJEMPLO: EN UNA COMPRA DE $60.000 REALIZADA CON TARJETA DE CRÉDITO VISA BBVA, FINANCIADA EN SEIS (6) CUOTAS, RECIBIRÁ DEL PRIMER AL SEXTO RESUMEN DE SU TARJETA UN CONSUMO DE $10.000. LOS ACCIONISTAS DE BANCO BBVA ARGENTINA S.A. LIMITAN SU RESPONSABILIDAD A LA INTEGRACIÓN DE LAS ACCIONES SUSCRIPTAS A LA LEY 19.550 Y LEY 25.738. CUIT 30-50000319-3. AV. CÓRDOBA 111, PISO 31, CABA (CP: C1054AAA). COSTO FINANCIERO TOTAL NOMINAL ANUAL: 0,00%. TASA NOMINAL ANUAL: 0,00%. TASA EFECTIVA ANUAL: 0,00%. CFTNA: 0,00%.",
+      "diasPromo": "1,1,1,1,1,1,1",
+      "vigencia": "Del 29/04/2026 hasta 05/11/2026",
+      "grupoTarjeta": "Tarjetas de crédito BBVA",
+      "tiempoAcreditacion": null,
+      "esModo": false
+    }
+  },
+  {
+    "source": "bbva",
+    "source_id": "87797",
+    "scraped_at": "2026-10-19T13:50:25.755867+00:00",
+    "source_url": "https://go.bbva.com.ar/willgo/fgo/API/v3/communication/87797",
+    "catalog": {
+      "id": "87797",
+      "imagen": "https://go.bbva.com.ar/fgo/sites/default/files/imagen/comercio/7360_river_311x208.png",
+      "cabecera": "Colegio River Plate 10%",
+      "subcabecera": "Con tarjetas de crédito de BBVA .Promoción válida desde 01-10-2026 hasta 30-11-2026",
+      "idCampania": "",
+      "esCampania": false,
+      "esCampaniaMadre": false,
+      "fechaDesde": "2026-10-01",
+      "fechaHasta": "2026-11-30",
+      "diasPromo": "1,1,1,1,1,1,1",
+      "montoTope": null,
+      "grupoTarjeta": "Tarjetas de crédito BBVA"
+    },
+    "detail": {
+      "id": "87797",
+      "imagen": "https://go.bbva.com.ar/fgo/sites/default/files/imagen/comercio/7360_river_311x208.png",
+      "cabecera": "Colegio River Plate 10%",
+      "beneficios": [
+        {
+          "cuota": 0,
+          "tope": null,
+          "tipoTope": "Usuario",
+          "frecuenciaTope": "Por Mes",
+          "requisitos": [
+            "Todos los días 10% de reintegro con tarjetas de crédito de BBVA"
+          ]
+        }
+      ],
+      "canalesVenta": {
+        "sucursales": [
+          {
+            "direccion": "Avenida Presidente Figueroa Alcorta 7597",
+            "localidad": "Capital Federal",
+            "latitude": "-34.54530715942383",
+            "longitude": "-58.44977569580078"
+          }
+        ],
+        "web": [
+          {
+            "name": "Colegio River Plate",
+            "url": "https://bbva.info/RiverInstituto"
+          }
+        ]
+      },
+      "basesCondiciones": "CARTERA DE CONSUMO.  PROMOCIÓN VÁLIDA DEL  01/10/2026 AL 30/11/2026   PARA LA REPÚBLICA ARGENTINA, SÓLO PARA CONSUMOS DE TIPO FAMILIAR. NO SE ACUMULA OTRAS PROMOCIONES. NO PARTICIPAN TARJETAS VISA PURCHASING, DISTRIBUTION Y CORPORATE. LA PROMOCIÓN NO APLICA A PAGOS REALIZADOS A TRAVÉS DE  BILLETERAS VIRTUALES Y/O PLATAFORMAS DE PAGO ONLINE (POR EJEMPLO,PAYPAL, TODO PAGO, MERCADO PAGO, UALÁ, ETC.)  25% DE DESCUENTO EN TUS COMPRAS Y 3 CUOTAS  EN TIENDA RIVER ÚNICAMENTE SI PAGÁS CON TUS TARJETAS DE CRÉDITO BBVA.  LA BONIFICACIÓN SE ACREDITARÁ DENTRO DE LOS 60 DÍAS DE CERRADA LA PRIMERA LIQUIDACIÓN DONDE FIGURE EL CONSUMO. EJEMPLO: PARA UNA COMPRA DE $ 9.000.- VERÁS UN CONSUMO DE $ 3000.- DEL PRIMER AL TERCER RESUMEN Y LA BONIFICACIÓN DE $2.250.- SE VERÁ REFLEJADA EN LA PRIMERA O SEGUNDA LIQUIDACIÓN POSTERIOR AL CONSUMO.  TASA NOMINAL ANUAL (TNA) 0.00%, TASA EFECTIVO ANUAL (TEA) 0.00%. COSTO FINANCIERO TOTAL NOMINAL ANUAL (CFTNA) 0.00%.",
+      "diasPromo": "1,1,1,1,1,1,1",
+      "vigencia": "Del 01/10/2026 hasta 30/11/2026",
+      "grupoTarjeta": "Tarjetas de crédito BBVA",
+      "tiempoAcreditacion": null,
+      "esModo": false
+    }
+  },
+  {
+    "source": "bbva",
+    "source_id": "76010",
+    "scraped_at": "2026-10-19T13:50:27.288058+00:00",
+    "source_url": "https://go.bbva.com.ar/willgo/fgo/API/v3/communication/76010",
+    "catalog": {
+      "id": "76010",
+      "imagen": "https://go.bbva.com.ar/fgo/sites/default/files/imagen/comercio/26561_cinemark_317x112.png",
+      "cabecera": "Cinemark Tienda QR Modo",
+      "subcabecera": "2x1 en entradas  y 20% en combos seleccionados .Promoción válida desde 01-07-2025 hasta 31-12-2026",
+      "idCampania": "2417",
+      "esCampania": false,
+      "esCampaniaMadre": false,
+      "fechaDesde": "2025-07-01",
+      "fechaHasta": "2026-12-31",
+      "diasPromo": null,
+      "montoTope": null,
+      "grupoTarjeta": "Tarjetas de crédito BBVA"
+    },
+    "detail": {
+      "id": "76010",
+      "imagen": "https://go.bbva.com.ar/fgo/sites/default/files/imagen/comercio/26561_cinemark_317x112.png",
+      "cabecera": "Cinemark Tienda QR Modo",
+      "beneficios": [
+        {
+          "cuota": 0,
+          "tope": null,
+          "tipoTope": "ninguno",
+          "frecuenciaTope": " ",
+          "requisitos": [
+            "El 2x1 se aplica online. Exclusivo QR Modo\nMáximo 2 beneficios por día."
+          ]
+        }
+      ],
+      "canalesVenta": {
+        "sucursales": [
+          {
+            "direccion": "Guemes 897",
+            "localidad": "Avellaneda",
+            "latitude": "-34.6924055",
+            "longitude": "-58.38732060000001"
+          },
+          {
+            "direccion": "Panamericana Ramal Pilar Km 36",
+            "localidad": "Tortuguitas",
+            "latitude": "-34.49596349999999",
+            "longitude": "-58.78826579999998"
+          },
+          {
+            "direccion": "Avenida Brigadier General Juan Manuel de Rosas 3990",
+            "localidad": "San Justo",
+            "latitude": "-34.68565368652344",
+            "longitude": "-58.558265686035156"
+          },
+          {
+            "direccion": "Bernardo de Irigoyen 2647",
+            "localidad": "Boulogne Sur Mer",
+            "latitude": "-34.4912149",
+            "longitude": "-58.58850129999996"
+          },
+          {
+            "direccion": "Avenida La Plata 96",
+            "localidad": "Capital Federal",
+            "latitude": "-34.61638259887695",
+            "longitude": "-58.42866516113281"
+          },
+          {
+            "direccion": "AV DR RAMON 355",
+            "localidad": "Neuquen",
+            "latitude": "-38.9420456",
+            "longitude": "-68.06477869999998"
+          },
+          {
+            "direccion": "Av. Illia 3770",
+            "localidad": "San Miguel",
+            "latitude": "-34.5329474",
+            "longitude": "-58.701363500000014"
+          },
+          {
+            "direccion": "Ruta Panamericana 2650",
+            "localidad": "Godoy Cruz",
+            "latitude": "-32.955647",
+            "longitude": "-68.85922800000003"
+          },
+          {
+            "direccion": "Avenida Monseñor Tavella 4400",
+            "localidad": "Salta",
+            "latitude": "-24.831279754638672",
+            "longitude": "-65.42926025390625"
+          },
+          {
+            "direccion": "Beruti 3399",
+            "localidad": "Capital Federal",
+            "latitude": "-34.58659362792969",
+            "longitude": "-58.410194396972656"
+          },
+          {
+            "direccion": "Dique I - Puerto Santa Fe S/N 0",
+            "localidad": "Santa Fe",
+            "latitude": "-31.651258",
+            "longitude": "-60.702115"
+          },
+          {
+            "direccion": "Beruti 3390",
+            "localidad": "Capital Federal",
+            "latitude": "-34.58687210083008",
+            "longitude": "-58.41065979003906"
+          },
+          {
+            "direccion": "Avenida Alicia Moreau de Justo 1920",
+            "localidad": "Capital Federal",
+            "latitude": "-34.62107849121094",
+            "longitude": "-58.36489486694336"
+          }
+        ],
+        "web": []
+      },
+      "basesCondiciones": "PROMOCIÓN VÁLIDA PARA COMPRAS CON TARJETAS EMITIDAS POR BBVA. CARTERA DE CONSUMO. PROMOCIÓN VÁLIDA DEL 01/07/2025 AL 31/12/2026 INCLUSIVE TODOS LOS DÍAS PARA COMPRAR ENTRADAS 2X1 EN LA WEB HTTPS://WWW.CINEMARK.COM.AR/ PAGANDO CON TUS TARJETAS DE BBVA A TRAVÉS DE MODO. ADEMÁS TENÉS UN 20% DE DESCUENTO EN EL MOMENTO DE LA COMPRA EN COMBOS SELECCIONADOS, Y EN TODOS LOS MENÚS GASTRONÓMICOS PARA FUNCIONES PREMIUM SIEMPRE QUE EXISTA STOCK. MÁXIMO DOS BENEFICIOS POR TARJETA POR DÍA Y POR CLIENTE. NO APLICA A AVANT-PREMIÉRES, FUNCIONES ESPECIALES, FESTIVALES, CONTENIDO ALTERNATIVO, SALAS 4D Y D-BOX Y PELÍCULAS SOBRE LAS QUE LOS DISTRIBUIDORES TENGAN RESTRICCIONES PROMOCIONALES,  SOBRE OTRAS PROMOCIONES, TARIFAS DE MENORES, JUBILADOS NI PRIMERAS FUNCIONES. SUJETO A DISPONIBILIDAD DE ENTRADAS MENUS Y COMBOS. LOS ACCIONISTAS DE BANCO BBVA ARGENTINA S.A. LIMITAN SU RESPONSABILIDAD A LA INTEGRACIÓN DE LAS ACCIONES SUSCRIPTAS. LEY 19.550 Y LEY 25.738. CUIT:30-500000319-3. AV. CÓRDOBA 111- CABA - CP C1054.",
+      "diasPromo": null,
+      "vigencia": "Del 01/07/2025 hasta 31/12/2026",
+      "grupoTarjeta": "Tarjetas de crédito BBVA",
+      "tiempoAcreditacion": null,
+      "esModo": false
+    }
+  },
+  {
+    "source": "bbva",
+    "source_id": "86498",
+    "scraped_at": "2026-10-19T13:50:28.229305+00:00",
+    "source_url": "https://go.bbva.com.ar/willgo/fgo/API/v3/communication/86498",
+    "catalog": {
+      "id": "86498",
+      "imagen": "https://go.bbva.com.ar/fgo/sites/default/files/tiomario.jpg",
+      "cabecera": "Cuenta Conmigo 30% y 6 cuotas",
+      "subcabecera": "30% y 6 cuotas sin interés .Promoción válida desde 15-07-2026 hasta 31-12-2026",
+      "idCampania": "",
+      "esCampania": false,
+      "esCampaniaMadre": false,
+      "fechaDesde": "2026-07-15",
+      "fechaHasta": "2026-12-31",
+      "diasPromo": "0,0,0,1,0,0,0",
+      "montoTope": "18000",
+      "grupoTarjeta": "Tarjetas de crédito BBVA"
+    },
+    "detail": {
+      "id": "86498",
+      "imagen": "https://go.bbva.com.ar/fgo/sites/default/files/tiomario.jpg",
+      "cabecera": "Cuenta Conmigo 30% y 6 cuotas",
+      "beneficios": [
+        {
+          "cuota": 6,
+          "tope": "18000",
+          "tipoTope": "Usuario",
+          "frecuenciaTope": "Por Mes",
+          "requisitos": [
+            "Abonando con tus tarjetas de crédito BBVA, disfrutá todos los jueves de 30% de reintegro (tope $18.000 por cuenta por mes) y hasta 6 cuotas sin interés. Recibí el reintegro en el resumen de tu tarjeta de crédito."
+          ]
+        }
+      ],
+      "canalesVenta": {
+        "sucursales": [
+          {
+            "direccion": "AVDA DR JUAN HECTOR JARA 301",
+            "localidad": "Mar Del Plata",
+            "latitude": "-37.97589111328125",
+            "longitude": "-57.56217956542969"
+          }
+        ],
+        "web": []
+      },
+      "basesCondiciones": "LA PROMOCIÓN CONSTA DE 30% DE REINTEGRO LOS DIAS JUEVES CON TOPE DE $18.000 POR CUENTA POR MES. VÁLIDA PARA CLIENTES QUE ABONEN SUS COMPRAS EN HASTA 6 CUOTAS CON TARJETAS DE CRÉDITO EMITIDAS POR BBVA. APLICA TAMBIÉN A PAGOS REALIZADOS A TRAVÉS DE APP BBVA ESCANEANDO UN QR MODO. LA PRESENTE PROMOCIÓN ES VÁLIDA SÓLO PARA CONSUMOS DE TIPO FAMILIAR. EL REINTEGRO SE ACREDITARÁ DENTRO DE LOS 60 DÍAS POSTERIORES AL CIERRE DE LIQUIDACIÓN EN EL RESUMEN DE TARJETA DE CRÉDITO. ACUMULA ÚNICAMENTE CON PROMOCIONES DE MODO. LA PROMOCIÓN NO APLICA A PAGOS REALIZADOS A TRAVÉS DE OTRAS BILLETERAS VIRTUALES Y/O PLATAFORMAS DE PAGO ONLINE (POR EJEMPLO MERCADOPAGO, UALÁ, ETC.). LOS ACCIONISTAS DE BANCO BBVA ARGENTINA S.A. LIMITAN SU RESPONSABILIDAD A LA INTEGRACIÓN DE LAS ACCIONES SUSCRIPTAS LEY 19.550 Y LEY 25.738. CUIT 30-50000319-3. AVDA.CÓRDOBA 111- PISO 31 CABA - CP 1054AAA",
+      "diasPromo": "0,0,0,1,0,0,0",
+      "vigencia": "Del 15/07/2026 hasta 31/12/2026",
+      "grupoTarjeta": "Tarjetas de crédito BBVA",
+      "tiempoAcreditacion": null,
+      "esModo": false
+    }
+  },
+  {
+    "source": "bbva",
+    "source_id": "87700",
+    "scraped_at": "2026-10-19T13:50:34.982985+00:00",
+    "source_url": "https://go.bbva.com.ar/willgo/fgo/API/v3/communication/87700",
+    "catalog": {
+      "id": "87700",
+      "imagen": "https://go.bbva.com.ar/fgo/sites/default/files/c2-subrubro-automotores-gomeria-940x620-5.jpg",
+      "cabecera": "Neumaticos Martinez 30% y 6 cuotas",
+      "subcabecera": "30% y 6 cuotas sin interés .Promoción válida desde 09-09-2026 hasta 31-12-2026",
+      "idCampania": "",
+      "esCampania": false,
+      "esCampaniaMadre": false,
+      "fechaDesde": "2026-09-09",
+      "fechaHasta": "2026-12-31",
+      "diasPromo": "0,0,0,1,0,0,0",
+      "montoTope": "18000",
+      "grupoTarjeta": "Tarjetas de crédito BBVA"
+    },
+    "detail": {
+      "id": "87700",
+      "imagen": "https://go.bbva.com.ar/fgo/sites/default/files/c2-subrubro-automotores-gomeria-940x620-5.jpg",
+      "cabecera": "Neumaticos Martinez 30% y 6 cuotas",
+      "beneficios": [
+        {
+          "cuota": 6,
+          "tope": "18000",
+          "tipoTope": "Usuario",
+          "frecuenciaTope": "Por Mes",
+          "requisitos": [
+            "Recibí el reintegro en el resumen de tu tarjeta de crédito."
+          ]
+        }
+      ],
+      "canalesVenta": {
+        "sucursales": [
+          {
+            "direccion": "AV.SANTA FE 702",
+            "localidad": "Acassuso",
+            "latitude": "-34.479469299316406",
+            "longitude": "-58.50736618041992"
+          },
+          {
+            "direccion": "AV.SANTA FE 1628",
+            "localidad": "Martinez",
+            "latitude": "-34.486732482910156",
+            "longitude": "-58.5018310546875"
+          }
+        ],
+        "web": []
+      },
+      "basesCondiciones": "LA PROMOCIÓN CONSTA DE 30% DE REINTEGRO LOS DIAS JUEVES CON TOPE DE $18.000 POR CUENTA POR MES. VÁLIDA PARA CLIENTES QUE ABONEN SUS COMPRAS EN HASTA 6 CUOTAS CON TARJETAS DE CRÉDITO EMITIDAS POR BBVA. APLICA TAMBIÉN A PAGOS REALIZADOS A TRAVÉS DE APP BBVA ESCANEANDO UN QR MODO. LA PRESENTE PROMOCIÓN ES VÁLIDA SÓLO PARA CONSUMOS DE TIPO FAMILIAR. NO PARTICIPAN TARJETAS VISA PURCHASING, DISTRIBUTION, BUSINESS Y CORPORATE .EL REINTEGRO SE ACREDITARÁ DENTRO DE LOS 60 DÍAS POSTERIORES AL CIERRE DE LIQUIDACIÓN EN EL RESUMEN DE TARJETA DE CRÉDITO. ACUMULA ÚNICAMENTE CON PROMOCIONES DE MODO. LA PROMOCIÓN NO APLICA A PAGOS REALIZADOS A TRAVÉS DE OTRAS BILLETERAS VIRTUALES Y/O PLATAFORMAS DE PAGO ONLINE (POR EJEMPLO MERCADOPAGO, UALÁ, ETC.). LOS ACCIONISTAS DE BANCO BBVA ARGENTINA S.A. LIMITAN SU RESPONSABILIDAD A LA INTEGRACIÓN DE LAS ACCIONES SUSCRIPTAS LEY 19.550 Y LEY 25.738. CUIT 30-50000319-3. AVDA.CÓRDOBA 111- PISO 31 CABA - CP 1054AAA",
+      "diasPromo": "0,0,0,1,0,0,0",
+      "vigencia": "Del 09/09/2026 hasta 31/12/2026",
+      "grupoTarjeta": "Tarjetas de crédito BBVA",
+      "tiempoAcreditacion": null,
+      "esModo": false
+    }
+  },
+  {
+    "source": "bbva",
+    "source_id": "86320",
+    "scraped_at": "2026-10-19T13:50:41.816182+00:00",
+    "source_url": "https://go.bbva.com.ar/willgo/fgo/API/v3/communication/86320",
+    "catalog": {
+      "id": "86320",
+      "imagen": "https://go.bbva.com.ar/fgo/sites/default/files/gastronomia_6.jpg",
+      "cabecera": "Cepas Y Bocados 15%",
+      "subcabecera": "15% de reintegro .Promoción válida desde 08-07-2026 hasta 31-12-2026",
+      "idCampania": "",
+      "esCampania": false,
+      "esCampaniaMadre": false,
+      "fechaDesde": "2026-07-08",
+      "fechaHasta": "2026-12-31",
+      "diasPromo": "1,1,1,1,1,1,1",
+      "montoTope": "10000",
+      "grupoTarjeta": "Tarjetas de crédito BBVA"
+    },
+    "detail": {
+      "id": "86320",
+      "imagen": "https://go.bbva.com.ar/fgo/sites/default/files/gastronomia_6.jpg",
+      "cabecera": "Cepas Y Bocados 15%",
+      "beneficios": [
+        {
+          "cuota": 0,
+          "tope": "10000",
+          "tipoTope": "Usuario",
+          "frecuenciaTope": "Por Mes",
+          "requisitos": [
+            "Promoción exclusiva para pagos con tarjetas de crédito BBVA a través de app BBVA escaneando un QR MODO. Recibí el reintegro en tu caja de ahorro BBVA vinculada a Modo. Disfruta todos los días de 15% de reintegro (tope de $10.000 por usuario por mes)."
+          ]
+        }
+      ],
+      "canalesVenta": {
+        "sucursales": [
+          {
+            "direccion": "San Martín 288",
+            "localidad": "Mercedes",
+            "latitude": "-33.68822479248047",
+            "longitude": "-65.46391296386719"
+          }
+        ],
+        "web": []
+      },
+      "basesCondiciones": "LA PROMOCIÓN CONSTA DE 15% DE REINTEGRO CON TOPE DE $10.000 POR USUARIO POR MES. EL TOPE ES DISTRIBUIDO Y COMPARTIDO ENTRE LOS COMERCIOS ADHERIDOS A ESTA PROMOCION. VÁLIDA PARA CLIENTES QUE ABONEN SUS COMPRAS EN UN PAGO CON TARJETAS DE CRÉDITO EMITIDAS POR BBVA. EXCLUSIVO PARA PAGOS REALIZADOS A TRAVÉS DE APP BBVA ESCANEANDO UN QR MODO. LA PRESENTE PROMOCIÓN ES VÁLIDA SÓLO PARA CONSUMOS DE TIPO FAMILIAR. EL REINTEGRO SE ACREDITARÁ DENTRO DE LOS 60 DÍAS POSTERIORES A LA COMPRA EN TU CAJA DE AHORROS ACTIVA EN BBVA Y VINCULADA A MODO. PARA PODER RECIBIR EL REINTEGRO, QUIEN REALIZA LA COMPRA DEBE SER TITULAR DE UNA CAJA DE AHORROS ACTIVA EN BBVA Y DICHA CUENTA DEBE ENCONTRARSE VINCULADA A MODO. SI QUIEN REALIZA LA COMPRA ES ADICIONAL DE TARJETA DE CREDITO Y NO POSEE UNA CAJA DE AHORROS EN BBVA, EL REINTEGRO SE ACREDITARÁ EN LA CAJA DE AHORROS ACTIVA EN BBVA DEL TITULAR DE LA TARJETA DE CREDITO. DICHA CAJA DE AHORROS DEBE ENCONTRARSE VINCULADA A MODO. ACUMULA ÚNICAMENTE CON PROMOCIONES DE MODO. LA PROMOCIÓN NO APLICA A PAGOS REALIZADOS A TRAVÉS DE OTRAS BILLETERAS VIRTUALES Y/O PLATAFORMAS DE PAGO ONLINE (POR EJEMPLO MERCADO PAGO, UALÁ, ETC.). LOS ACCIONISTAS DE BANCO BBVA ARGENTINA S.A. LIMITAN SU RESPONSABILIDAD A LA INTEGRACIÓN DE LAS ACCIONES SUSCRIPTAS LEY 19.550 Y LEY 25.738. CUIT 30-50000319-3. AVDA.CÓRDOBA 111- PISO 31 CABA - CP 1054AAA.",
+      "diasPromo": "1,1,1,1,1,1,1",
+      "vigencia": "Del 08/07/2026 hasta 31/12/2026",
+      "grupoTarjeta": "Tarjetas de crédito BBVA",
+      "tiempoAcreditacion": null,
+      "esModo": false
+    }
+  },
+  {
+    "source": "bbva",
+    "source_id": "87657",
+    "scraped_at": "2026-10-19T13:51:26.825420+00:00",
+    "source_url": "https://go.bbva.com.ar/willgo/fgo/API/v3/communication/87657",
+    "catalog": {
+      "id": "87657",
+      "imagen": "https://assets.caasbbva.com/content/dam/caas/argentina/beneficios/campania/beth_317x112.png",
+      "cabecera": "Beth Gibbons. 3 cuotas",
+      "subcabecera": ". .Promoción válida desde 10-09-2026 hasta 27-05-2027",
+      "idCampania": "2416",
+      "esCampania": false,
+      "esCampaniaMadre": false,
+      "fechaDesde": "2026-09-10",
+      "fechaHasta": "2027-05-27",
+      "diasPromo": "1,1,1,1,1,1,1",
+      "montoTope": null,
+      "grupoTarjeta": "Tarjetas de crédito BBVA"
+    },
+    "detail": {
+      "id": "87657",
+      "imagen": "https://assets.caasbbva.com/content/dam/caas/argentina/beneficios/campania/beth_317x112.png",
+      "cabecera": "Beth Gibbons. 3 cuotas",
+      "beneficios": [
+        {
+          "cuota": 3,
+          "tope": null,
+          "tipoTope": " ",
+          "frecuenciaTope": " ",
+          "requisitos": [
+            "Complejo Art Media\nAv. Corrientes 6271, C1427 Cdad."
+          ]
+        }
+      ],
+      "canalesVenta": {
+        "sucursales": [],
+        "web": [
+          {
+            "name": "Beth Gibbons.",
+            "url": "https://www.passline.com"
+          }
+        ]
+      },
+      "basesCondiciones": "Cartera de consumo. Promoción válida para la República Argentina. Preventa BBVA: desde el 10/09/2026 hasta agotar stock de 300 tickets. Venta general: desde agotada la preventa BBVA hasta el 27/05/2027 inclusive. Para compras realizadas exclusivamente a través de www.passline.com y solo abonando con tarjetas de crédito Mastercard emitidas por BBVA. Válida sólo para consumo de tipo familiar. Máximo 6 entradas por transacción. No se acumula con otras promociones. La financiación aplica únicamente al costo de las entradas, no aplica a los costos de emisión, retiro y/o envío de las mismas. No participan tarjetas Visa Purchasing, Distribution y Corporate. No aplica a pagos realizados a través de billeteras virtuales y/o plataformas de pago online (por ejemplo, PayPal, Mercado Pago, Ualá, etc.). Ejemplo: en una compra de $60.000 realizada con tarjeta de crédito Mastercard BBVA, financiada en tres cuotas, recibirá del primer al tercer resumen de su tarjeta un consumo de $20.000. Los accionistas de Banco BBVA Argentina S.A. limitan su responsabilidad a la integración de las acciones suscriptas según Ley 19.550 y Ley 25.738. CUIT: 30-50000319-3. Avda. Córdoba 111, piso 31, CABA (CP: C1054AAA). Costo Financiero Total Nominal Anual: 0,00%. Tasa Nominal Anual: 0,00%. Tasa Efectiva Anual: 0,00%. \nCFTNA: 0,00%.",
+      "diasPromo": "1,1,1,1,1,1,1",
+      "vigencia": "Del 10/09/2026 hasta 27/05/2027",
+      "grupoTarjeta": "Tarjetas de crédito BBVA",
+      "tiempoAcreditacion": null,
+      "esModo": false
+    }
+  }
+]
