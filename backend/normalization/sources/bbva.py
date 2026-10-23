@@ -1,5 +1,4 @@
 ﻿import hashlib
-import html
 import json
 import re
 from datetime import datetime
@@ -7,12 +6,16 @@ from decimal import Decimal, InvalidOperation
 
 from normalization.models import Benefit, NormalizedPromotion, PaymentMethod, PromotionLimit
 from normalization.structure import conditions, requires_merchant_check
+from normalization.sources.bbva_evidence import cap_tokens, clause_ranges, currency_at, parse_legal_evidence, project_html, token_word
 
 
 class BBVANormalizer:
     PROMOTIONS_URL = 'https://www.bbva.com.ar/beneficios/'
     DAYS = ['monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday', 'sunday']
     MONEY = r'([\d]+(?:[.,]\d+)*)'
+    RATE = r'(\d{1,3}(?:[.,]\d+)?)\s*%\s*(?:\([^)]*\)\s*)?de\s+(reintegro|descuento)'
+    CAP_UNITS = {'millas', 'usos', 'uso', 'unidades', 'unidad', 'viajes', 'viaje',
+                 'compras', 'compra', 'productos', 'producto', 'cupones', 'cupon', 'entradas', 'entrada', 'sets'}
 
     def normalize(self, raw: dict) -> NormalizedPromotion:
         variants = self.normalize_many(raw)
@@ -21,24 +24,45 @@ class BBVANormalizer:
         return variants[0]
 
     def normalize_many(self, raw: dict) -> list[NormalizedPromotion]:
+        variants = self._normalize_variants(raw)
+        coverage = self.cap_coverage(raw)
+        for mention in coverage['mentions']:
+            if mention['status'] != 'non_monetary':
+                continue
+            quantity = mention['quantity']
+            represented = any(limit.quantity == quantity and (mention['unit'] != 'millas' or 'millas' in (limit.description or '').lower())
+                              for promotion in variants for limit in promotion.limits)
+            if represented:
+                continue
+            if len(variants) != 1:
+                raise ValueError('BBVA unresolved non-monetary cap benefit assignment; review required')
+            kind = 'stock' if re.search(r'\bstock\b', mention['clause'], re.I) else 'usage_count' if mention['unit'] in {'usos', 'uso', 'compras', 'compra', 'viajes', 'viaje', 'entradas', 'entrada'} else 'other'
+            variants[0].limits.append(PromotionLimit(type=kind, quantity=quantity, period=mention['period'], description=mention['clause']))
+        complete_terms = self._clean_text(raw['detail'].get('basesCondiciones')) or None
+        for promotion in variants:
+            promotion.terms = complete_terms
+        return variants
+
+    def _normalize_variants(self, raw: dict) -> list[NormalizedPromotion]:
         catalog, detail = raw['catalog'], raw['detail']
         nodes = detail.get('beneficios')
         if not isinstance(nodes, list) or not nodes or any(not isinstance(n, dict) or not n for n in nodes):
             raise ValueError('BBVA missing or malformed benefits')
         title = self._clean_text(detail.get('cabecera') or catalog.get('cabecera'))
-        terms = self._clean_text(detail.get('basesCondiciones')) or None
+        terms = self._clean_text(self._cap_evidence_text(detail.get('basesCondiciones'))) or None
         if not title:
             raise ValueError('BBVA blank title')
         cap_issues = self._cap_amount_issues(raw)
         if cap_issues:
             raise ValueError('BBVA monetary cap review required: ' + '; '.join(cap_issues))
+        offer = self._cap_evidence_text(detail.get('basesCondiciones') or '')
         if re.search(r'\(IV\).*?GRATIS HASTA', terms or '', re.I) and re.search(r'\(V\)\s+UN PRODUCTO', terms or '', re.I):
             return self._assistance_variants(raw, terms)
         if re.search(r'no\s+aplica\s+para\s+compras\s+realizadas\s+con\s+tarjeta\s+de\s+cr[eé]dito', terms or '', re.I) and re.search(r'tope de descuento para vuelos.+?millas BBVA', terms or '', re.I):
             return self._mileage_redemption(raw, terms)
         if re.search(r'cuotas\s+en\s+vuelos\s+nacionales', ' '.join(self._normalize_requirements(nodes[0].get('requisitos'))), re.I) and re.search(r'paquetes\s+y\s+alojamientos', terms or '', re.I):
             return self._travel_financing(raw, terms)
-        self._reject_unresolved_benefit_dimensions(detail, terms or '')
+        self._reject_unresolved_benefit_dimensions(detail, offer)
         variants = []
         for node in nodes:
             req = self._normalize_requirements(node.get('requisitos'))
@@ -52,14 +76,14 @@ class BBVANormalizer:
             if percent is None:
                 percent = self._extract_discount('', '', req, None)
             if percent is None and len(nodes) == 1:
-                percent = self._extract_discount('', '', [], terms)
-            legal_percent = re.search(r'(\d{1,3}(?:[.,]\d+)?)\s*%\s*(?:\([^)]*\)\s*)?de\s+(reintegro|descuento)', terms or '', re.I)
+                percent = self._extract_discount('', '', [], offer)
+            legal_percent = re.search(self.RATE, offer, re.I)
             if legal_percent and percent is not None and Decimal(legal_percent.group(1).replace(',', '.')) != percent:
                 raise ValueError(f'BBVA conflicting benefit percentage: headline/requirements {percent}% versus legal {legal_percent.group(1)}%; review required')
             installments = self._normalize_installments(node.get('cuota'))
             benefits = []
             if percent is not None:
-                kind_text = ' '.join([benefit_text, subtitle, text, terms or ''])
+                kind_text = ' '.join([benefit_text, subtitle, text, offer])
                 kind = ('cashback' if legal_percent.group(2).lower() == 'reintegro' else 'discount') if legal_percent else ('cashback' if re.search(r'\breintegro\b|\bcashback\b|\bdevoluci[oó]n\b', kind_text, re.I) else 'discount')
                 benefits.append(Benefit(type=kind, percentage=percent))
             fixed = self._extract_fixed_coupon_discount(text)
@@ -187,8 +211,7 @@ class BBVANormalizer:
             raise ValueError('BBVA incomplete commercial representation: ' + '; '.join(issues))
         return output
 
-    def _reject_unresolved_benefit_dimensions(self, detail, terms):
-        offer = re.split(r'\bejemplo\b', terms, flags=re.I)[0]
+    def _reject_unresolved_benefit_dimensions(self, detail, offer):
         financing = any(self._normalize_installments(node.get('cuota')) for node in detail.get('beneficios', []))
         one_payment = re.search(r'v[aá]lida\s+(?:[uú]nicamente\s+)?para\s+clientes\s+que\s+abonen\s+sus\s+compras\s+en\s+(?:un|1)\s+pago\s+con\s+tarjetas?\s+de\s+cr[eé]dito', offer, re.I)
         if financing and one_payment:
@@ -234,90 +257,191 @@ class BBVANormalizer:
             dimensions['minimum'] = {str(minimum)}
         return dimensions
 
+    def _html_legal_projection(self, value):
+        return project_html(value)
+
     def _cap_evidence_text(self, terms):
-        text = html.unescape(terms or '')
-        text = re.sub(r'</?(?:p|div|li|br|section|article|h[1-6])\b[^>]*>', '\n', text, flags=re.I)
-        text = re.sub(r'<[^>]+>', ' ', text)
-        text = re.sub(r'[\r\u2028\u2029]', '\n', text.replace('\r\n', '\n'))
-        marker = r'\s*(?:(?:por|a\s+modo\s+de)\s+)?ejemplos?\b'
-        pairs = {'(': ')', '[': ']', '{': '}', '«': '»', '“': '”', '‘': '’'}
-        closing = {value: key for key, value in pairs.items()}
-        opened = {character: [] for character in pairs}
-        spans = []
-        for index, character in enumerate(text):
-            if character in pairs:
-                opened[character].append(index)
-            elif character in closing and opened[closing[character]]:
-                start = opened[closing[character]].pop()
-                if re.match(marker, text[start + 1:index], re.I):
-                    spans.append((start, index + 1))
-        for match in re.finditer(r'(["\'])' + marker, text, re.I):
-            if any(left <= match.start() < right for left, right in spans):
+        return parse_legal_evidence(terms).contractual_text()
+
+    def _validate_tabular_caps(self, evidence, offer):
+        for start, end, name in evidence.elements:
+            if name != 'table' or not re.search(r'\btopes?\b', offer[start:end], re.I):
                 continue
-            end = text.find(match.group(1), match.end())
-            while end >= 0 and text[end - 1] == '\\':
-                end = text.find(match.group(1), end + 1)
-            if end < 0:
-                if re.search(r'\btope\b', text[match.end():], re.I):
-                    raise ValueError('BBVA unresolved example boundary; monetary cap review required')
+            for left, right, row_name in evidence.elements:
+                if row_name == 'tr' and start <= left < right <= end:
+                    row = offer[left:right]
+                    if re.search(r'(?:ARS|USD|US\$|\$)\s*\d', row, re.I) and not re.search(r'\btope\b', row, re.I):
+                        raise ValueError('BBVA unresolved tabular monetary cap assignment; review required')
+
+    def _interpret_cap_value(self, body):
+        tokens = cap_tokens(body)
+        number_index = next((index for index, (value, _, _) in enumerate(tokens) if value[0].isdigit()), None)
+        if number_index is None:
+            return {'status': 'incomplete', 'reason': 'no interpretable amount or quantity'}
+        value, left, right = tokens[number_index]
+        try:
+            amount = self._checked_amount(value, 'legal cap')
+        except ValueError:
+            return {'status': 'incomplete', 'reason': 'unresolved numeric format'}
+        if amount is None:
+            return {'status': 'incomplete', 'reason': 'unresolved numeric amount'}
+        if number_index + 1 < len(tokens) and tokens[number_index + 1][0][0].isdigit():
+            return {'status': 'incomplete', 'reason': 'unresolved numeric grouping'}
+        unit = token_word(tokens[number_index + 1][0]) if number_index + 1 < len(tokens) else None
+        if unit in self.CAP_UNITS:
+            if any(currency_at(tokens, index)[0] for index in range(len(tokens))):
+                return {'status': 'incomplete', 'reason': 'mixed monetary and non-monetary evidence'}
+            if amount != amount.to_integral_value():
+                return {'status': 'incomplete', 'reason': 'fractional non-monetary quantity'}
+            remaining_numbers = [token for token in tokens[number_index + 2:] if token[0][0].isdigit()]
+            if remaining_numbers:
+                return {'status': 'incomplete', 'reason': 'multiple non-monetary quantities'}
+            return {'status': 'non_monetary', 'quantity': int(amount), 'unit': unit,
+                    'value_end': right, 'reason': 'explicit quantity and non-monetary unit'}
+        heads = {'de', 'del', 'reintegro', 'descuento', 'devolucion', 'maximo', 'maxima', 'total',
+                 'mensual', 'semanal', 'diario', 'anual', 'por', 'mes', 'vigencia', 'usuario',
+                 'cliente', 'persona', 'cuenta', 'tarjeta', 'compra', 'es', 'sera', 'hasta'}
+        index, currency = 0, None
+        while index < number_index:
+            code, consumed = currency_at(tokens, index)
+            if code:
+                if index + consumed != number_index:
+                    return {'status': 'incomplete', 'reason': 'unresolved currency placement'}
+                currency = code
+                index += consumed
+            elif token_word(tokens[index][0]) in heads or tokens[index][0] == ':':
+                index += 1
             else:
-                spans.append((match.start(), end + 1))
-        for starts in opened.values():
-            for start in starts:
-                if any(left <= start < right for left, right in spans):
-                    continue
-                if re.match(marker, text[start + 1:], re.I) and re.search(r'\btope\b', text[start + 1:], re.I):
-                    raise ValueError('BBVA unresolved example boundary; monetary cap review required')
-        projected = list(text)
-        for start, end in spans:
-            projected[start:end] = ['\n' if character == '\n' else ' ' for character in text[start:end]]
-        return ''.join(projected)
+                return {'status': 'incomplete', 'reason': 'unresolved cap syntax before amount'}
+        code, consumed = currency_at(tokens, number_index + 1)
+        if not code and unit in {'peso', 'pesos'}:
+            return {'status': 'incomplete', 'reason': 'unresolved currency qualifier'}
+        if code:
+            if currency and code != currency:
+                return {'status': 'incomplete', 'reason': 'contradictory currency annotations'}
+            currency = code
+            right = tokens[number_index + consumed][2]
+        remainder = tokens[number_index + 1 + consumed:]
+        if any(token[0][0].isdigit() or currency_at(remainder, index)[0] for index, token in enumerate(remainder)):
+            return {'status': 'incomplete', 'reason': 'unaccounted amounts or quantities after cap'}
+        if currency is None:
+            return {'status': 'incomplete', 'amount': amount, 'reason': 'monetary currency is not explicit'}
+        return {'status': 'interpreted', 'amount': amount, 'currency': currency,
+                'value_end': right, 'reason': 'complete monetary amount and explicit currency'}
+
+    def _published_cap_period(self, body):
+        names = {'mensual': 'monthly', 'mensuales': 'monthly', 'mensualmente': 'monthly',
+                 'semanal': 'weekly', 'semanales': 'weekly', 'semanalmente': 'weekly',
+                 'diario': 'daily', 'diaria': 'daily', 'diarios': 'daily', 'diarias': 'daily',
+                 'anual': 'annual', 'anuales': 'annual', 'anualmente': 'annual',
+                 'mes': 'monthly', 'vigencia': 'promotion', 'semana': 'weekly', 'dia': 'daily',
+                 'ano': 'annual', 'transaccion': 'transaction', 'promocion': 'promotion'}
+        standalone = {'mensual', 'mensuales', 'mensualmente', 'semanal', 'semanales', 'semanalmente',
+                      'diario', 'diaria', 'diarios', 'diarias', 'anual', 'anuales', 'anualmente'}
+        scope_words = {'usuario', 'cliente', 'persona', 'cuenta', 'tarjeta', 'compra',
+                       'viaje', 'envio', 'producto', 'evento', 'beneficio'}
+        words = [token_word(value) for value, _, _ in cap_tokens(body)]
+        periods = {names[word] for word in words if word in standalone}
+        for index, word in enumerate(words):
+            if word == 'cada':
+                return None, 'unresolved published cap periodicity'
+            if word != 'por':
+                continue
+            if index + 1 >= len(words):
+                return None, 'incomplete cap period or scope'
+            unit = words[index + 1]
+            if unit in names:
+                periods.add(names[unit])
+            elif unit not in scope_words:
+                return None, 'unresolved cap period or scope'
+        return (next(iter(periods)), None) if len(periods) == 1 else (None, 'multiple cap periods without separate amounts') if periods else (None, None)
+
+    def _cap_mention_evidence(self, terms):
+        evidence = parse_legal_evidence(terms)
+        try:
+            offer = evidence.contractual_text()
+            self._validate_tabular_caps(evidence, offer)
+            issues = []
+        except ValueError as exc:
+            offer, issues = evidence.text, [str(exc)]
+        mentions = evidence.cap_mentions()
+        rows = []
+        previous_value_end = 0
+        for index, mention in enumerate(mentions):
+            left, right = mention['fragment_start'], mention['fragment_end']
+            if index + 1 < len(mentions) and mentions[index + 1]['start'] < right:
+                right = mentions[index + 1]['start']
+                transition = re.search(r'\s+(?:y\s+|mientras\s+que\s+)(?=(?:clientes?|segmento|producto|pagos?|compras?|black|gold|platinum|signature|visa|mastercard)\b)',
+                                       offer[mention['label_end']:right], re.I)
+                if transition:
+                    right = mention['label_end'] + transition.start()
+            context_start = max(left, previous_value_end if previous_value_end < mention['start'] else left)
+            context = offer[context_start:right]
+            body = offer[mention['label_end']:right]
+            period, period_problem = self._published_cap_period(body)
+            row = dict(mention, original_fragment=evidence.text[context_start:right], clause=context.strip(),
+                       amount=None, currency=None, quantity=None, unit=None, period=period,
+                       dimensions=self._cap_dimensions(context), scopes=self._cap_scopes(body),
+                       comparisons=[], references=[])
+            if mention['classification'] == 'ambiguous':
+                row.update(status='ambiguous', reason='unresolved contractual or illustrative scope')
+            elif mention['classification'] == 'example':
+                original_body = evidence.text[mention['label_end']:right].rstrip(')]}»”\"\' ')
+                row.update(self._interpret_cap_value(original_body))
+                row.update(status='illustrative', reason='explicit illustrative clause or balanced example scope')
+            elif re.search(r'\bsin\s*$', offer[left:mention['start']], re.I):
+                words = [token_word(value) for value, _, _ in cap_tokens(body)]
+                if any(word[0].isdigit() for word in words):
+                    row.update(status='incomplete', reason='numeric claim in unlimited cap clause')
+                elif any(word in self.CAP_UNITS for word in words):
+                    row.update(status='non_monetary_unlimited', reason='explicit absence of a non-monetary quantity limit')
+                elif all(word in {'de', 'del', 'reintegro', 'descuento', 'devolucion'} for word in words):
+                    row.update(status='unlimited', reason='explicit absence of cap')
+                else:
+                    row.update(status='incomplete', reason='unresolved unlimited cap domain')
+            else:
+                row.update(self._interpret_cap_value(body))
+                tokens = cap_tokens(body)
+                relation = next((position for position, token in enumerate(tokens)
+                                 if re.fullmatch(r'compartid[oa]s?|distribuid[oa]s?|correspondiente|aplica', token_word(token[0]))), None)
+                reference_heads = {'de', 'del', 'reintegro', 'descuento', 'mensual', 'semanal', 'diario', 'anual', 'es', 'y'}
+                if (relation is not None and all(token_word(token[0]) in reference_heads for token in tokens[:relation])
+                        and not any(token[0][0].isdigit() or currency_at(tokens, position)[0] for position, token in enumerate(tokens))):
+                    row.update(status='reference_pending', reason='explicit cap reference requires an antecedent')
+                if period_problem:
+                    row.update(status='incomplete', reason=period_problem)
+            previous_value_end = mention['label_end'] + row.get('value_end', 0)
+            rows.append(row)
+        for index, row in enumerate(rows):
+            if row['status'] != 'reference_pending':
+                continue
+            targets = [(position, entry) for position, entry in enumerate(rows)
+                       if entry['status'] in {'interpreted', 'non_monetary'}
+                       and (row['period'] is None or entry['period'] == row['period'])
+                       and not any(name in entry['dimensions'] and not values.intersection(entry['dimensions'][name])
+                                   for name, values in row['dimensions'].items())]
+            signatures = {(entry['amount'], entry['currency'], entry['quantity'], entry['unit'], entry['period']) for _, entry in targets}
+            nonmonetary_group = targets and all(entry['status'] == 'non_monetary' for _, entry in targets)
+            if targets and (len(signatures) == 1 or (nonmonetary_group and re.search(r'correspondiente\s+seg[uú]n\s+el\s+destino', row['clause'], re.I))):
+                row.update(status='resolved_reference', references=[position for position, entry in targets],
+                           reason='explicit reference to compatible fully interpreted cap evidence')
+            else:
+                row.update(status='incomplete', reason='unresolved cap reference')
+        for row in rows:
+            if row['status'] in {'incomplete', 'ambiguous', 'reference_pending'}:
+                issues.append('unresolved contractual monetary cap coverage: ' + row['reason'] + ' (' + row['original_fragment'].strip() + ')')
+        return rows, issues
 
     def _legal_monetary_caps(self, terms):
-        offer = self._cap_evidence_text(terms)
-        offer = re.sub(r'\b(?:condiciones(?:\s+generales|\s+de\s+la\s+promoci[oó]n)?|bases(?:\s+y\s+condiciones)?)\s*:',
-                       r'; \g<0>', offer, flags=re.I)
-        pattern = (r'\btope(?:\s+(?:m[aá]ximo|total|de\s+(?:reintegro|descuento|devoluci[oó]n)|'
-                   r'mensual|semanal|diario|anual|por\s+(?:mes|vigencia|usuario|cliente|persona|cuenta|compra)))*'
-                   r'\s*(?:(?:es|ser[aá])\s+de\s+|de\s+|:\s*)?'
-                   r'(?P<currency>ARS|USD|US\$|\$)\s*(?P<amount>' + self.MONEY + r')'
-                   r'(?P<tail>\s*(?:por\s+(?:usuario|cliente|persona|cuenta|tarjeta|compra)\s+)?'
-                   r'(?:por\s+(?:mes|vigencia|semana|d[ií]a|a[ñn]o)|mensual|semanal|diario|anual))?')
-        matches = list(re.finditer(pattern, offer, re.I))
-        caps = []
-        for index, match in enumerate(matches):
-            start = max([0] + [boundary.end() for boundary in re.finditer(r';\s*|\.(?!\d)\s*|\n+', offer[:match.start()])])
-            boundary = re.search(r';\s*|\.(?!\d)\s*|\n+', offer[match.end():])
-            end = match.end() + boundary.start() if boundary else len(offer)
-            if re.search(r'^\s*(?:(?:[-*•–—]|\d+[.)])\s*)?(?:ejemplos?\b|(?:por|a\s+modo\s+de)\s+ejemplo\b)', offer[start:match.start()], re.I):
-                continue
-            if re.search(r'\bsin\s*$', offer[max(start, match.start() - 12):match.start()], re.I):
-                continue
-            if index + 1 < len(matches):
-                end = min(end, matches[index + 1].start())
-                transition = re.search(r'\s+(?:y\s+|mientras\s+que\s+)(?=(?:clientes?|segmento|producto|pagos?|compras?|black|gold|platinum|signature|visa|mastercard)\b)',
-                                       offer[match.end():end], re.I)
-                if transition:
-                    end = match.end() + transition.start()
-            prefix_start = max(start, matches[index - 1].end() if index else start)
-            context = offer[prefix_start:end]
-            suffix = offer[match.end():end]
-            period_text = match.group(0) + ' ' + suffix
-            period_match = re.search(r'\b(mensual|por\s+mes|semanal|por\s+semana|diario|por\s+d[ií]a|por\s+vigencia|anual|por\s+a[ñn]o)\b', period_text, re.I)
-            period = self._normalize_cap_period(period_match.group(1)) if period_match else None
-            currency = 'USD' if match.group('currency').upper() in ('USD', 'US$') else 'ARS'
-            dimensions = self._cap_dimensions(context)
-            cap_kind = re.search(r'\btope(?:\s+m[aá]ximo)?\s+de\s+(reintegro|descuento|devoluci[oó]n)', match.group(0), re.I)
-            if cap_kind:
-                dimensions['kind'] = {'discount' if cap_kind.group(1).lower() == 'descuento' else 'cashback'}
-            caps.append({'amount': self._checked_amount(match.group('amount'), 'legal cap'),
-                         'currency': currency, 'period': period, 'dimensions': dimensions,
-                         'scopes': self._cap_scopes((match.group('tail') or '') + ' ' + suffix),
-                         'clause': offer[start:end].strip()})
-        return caps
+        rows, issues = self._cap_mention_evidence(terms)
+        if issues:
+            raise ValueError('BBVA ' + '; '.join(issues) + '; review required')
+        return [row for row in rows if row['status'] == 'interpreted']
 
     def _text_cap_amount(self, terms, api_period, requirements=''):
         legal_caps = self._legal_monetary_caps(terms)
+        if not legal_caps:
+            legal_caps = self._legal_monetary_caps(requirements)
         if api_period and any(entry['period'] == api_period for entry in legal_caps):
             legal_caps = [entry for entry in legal_caps if entry['period'] in (None, api_period)]
         amounts = {entry['amount'] for entry in legal_caps}
@@ -325,53 +449,121 @@ class BBVANormalizer:
             raise ValueError('BBVA unresolved legal monetary caps; review required')
         if amounts:
             return next(iter(amounts))
-        match = re.search(r'\btope(?:\s+de\s+reintegro)?\s*:?\s*(?:de\s*)?(?:ARS\s*|\$\s*)' + self.MONEY, requirements, re.I)
-        return self._checked_amount(match.group(1), 'text cap') if match else None
+        return None
 
     def _cap_scopes(self, text):
         names = {'usuario': 'customer', 'cliente': 'customer', 'persona': 'customer',
-                 'cuenta': 'account', 'tarjeta': 'card', 'compra': 'purchase'}
-        return {names[value.lower()] for value in re.findall(r'\b(?:por\s+)?(usuario|cliente|persona|cuenta|tarjeta|compra)\b', text, re.I)}
+                 'cuenta': 'account', 'tarjeta': 'card', 'compra': 'purchase', 'viaje': 'trip',
+                 'envio': 'shipment', 'producto': 'product', 'evento': 'event', 'beneficio': 'benefit'}
+        return {names[value] for value in re.findall(r'\b(?:por\s+)?(' + '|'.join(names) + r')\b', token_word(text))}
+
+    def cap_coverage(self, raw):
+        detail, catalog = raw['detail'], raw['catalog']
+        rows, issues = self._cap_mention_evidence(detail.get('basesCondiciones') or '')
+        for row in rows:
+            row['origin'] = 'terms'
+        groups = [(list(rows), list(enumerate(detail.get('beneficios', []))))]
+        for index, node in enumerate(detail.get('beneficios', [])):
+            for requirement_index, requirement in enumerate(self._normalize_requirements(node.get('requisitos'))):
+                evidence, problems = self._cap_mention_evidence(requirement)
+                for row in evidence:
+                    row.update(origin='requirements', benefit_index=index, requirement_index=requirement_index)
+                rows.extend(evidence)
+                issues.extend(problems)
+                groups.append((evidence, [(index, node)]))
+        review_reasons = []
+        for entries, nodes in groups:
+            legal_caps = [entry for entry in entries if entry['status'] == 'interpreted']
+            for index, node in nodes:
+                value = node.get('tope') if node.get('tope') not in (None, '') else catalog.get('montoTope')
+                cap = self._checked_amount(value, 'cap')
+                context = ' '.join(self._normalize_requirements(node.get('requisitos')) + [
+                    self._clean_text(node.get(field)) for field in ('descripcion', 'beneficio')])
+                context += ' ' + self._clean_text(node.get('grupoTarjeta') or detail.get('grupoTarjeta') or catalog.get('grupoTarjeta'))
+                installments = self._normalize_installments(node.get('cuota'))
+                if installments:
+                    context += f' {installments} cuotas'
+                if len(detail.get('beneficios', [])) == 1:
+                    context += ' ' + self._clean_text(detail.get('cabecera')) + ' ' + self._clean_text(catalog.get('subcabecera'))
+                dimensions = self._cap_dimensions(context)
+                currency = self._currency(context)
+                candidates = []
+                for entry in legal_caps:
+                    different = [name for name, values in entry['dimensions'].items()
+                                 if name in dimensions and not values.intersection(dimensions[name])]
+                    if different:
+                        entry['comparisons'].append({'benefit_index': index, 'result': 'different_conditions', 'dimensions': different})
+                    elif entry['currency'] != currency:
+                        entry['comparisons'].append({'benefit_index': index, 'result': 'unresolved_currency', 'api_currency': currency})
+                        issues.append('unresolved monetary cap currency comparison; review required (' + entry['clause'] + ')')
+                    else:
+                        candidates.append(entry)
+                period = self._normalize_cap_period(node.get('frecuenciaTope'))
+                if period and any(entry['period'] == period for entry in candidates):
+                    for entry in candidates:
+                        if entry['period'] not in (None, period):
+                            entry['comparisons'].append({'benefit_index': index, 'result': 'different_period', 'api_period': period})
+                    candidates = [entry for entry in candidates if entry['period'] in (None, period)]
+                scopes = self._cap_scopes(self._clean_text(node.get('tipoTope')))
+                if scopes and len({entry['amount'] for entry in candidates}) > 1 and any(entry['scopes'].intersection(scopes) for entry in candidates):
+                    for entry in candidates:
+                        if entry['scopes'] and not entry['scopes'].intersection(scopes):
+                            entry['comparisons'].append({'benefit_index': index, 'result': 'different_scope', 'api_scopes': sorted(scopes)})
+                    candidates = [entry for entry in candidates if not entry['scopes'] or entry['scopes'].intersection(scopes)]
+                amounts = {entry['amount'] for entry in candidates}
+                unresolved = any(name not in dimensions for entry in candidates for name in entry['dimensions']
+                                 if name in {'segment', 'product', 'network', 'rail', 'channel', 'card', 'modality', 'minimum'})
+                period_mismatch = period and candidates and all(entry['period'] not in (None, period) for entry in candidates)
+                if period_mismatch:
+                    for entry in candidates:
+                        entry['comparisons'].append({'benefit_index': index, 'result': 'unresolved_period', 'api_period': period, 'api_amount': cap})
+                    review_reasons.append('unresolved monetary cap periodicity; review required')
+                    if cap is not None and amounts != {cap}:
+                        issues.append('unresolved monetary cap attribution across different periods; review required')
+                for entry in candidates:
+                    if not period_mismatch:
+                        result = 'unresolved_conditions' if unresolved else 'legal_only' if cap is None else 'matched' if entry['amount'] == cap else 'conflict'
+                        entry['comparisons'].append({'benefit_index': index, 'result': result, 'api_amount': cap, 'api_currency': currency, 'api_period': period})
+                for entry in entries:
+                    if entry['status'] == 'unlimited':
+                        different = [name for name, values in entry['dimensions'].items()
+                                     if name in dimensions and not values.intersection(dimensions[name])]
+                        if different:
+                            entry['comparisons'].append({'benefit_index': index, 'result': 'different_conditions', 'dimensions': different})
+                            continue
+                        if any(name not in dimensions for name in entry['dimensions']):
+                            entry['comparisons'].append({'benefit_index': index, 'result': 'unresolved_conditions'})
+                            issues.append('unresolved unlimited cap benefit assignment; review required')
+                            continue
+                        result = 'conflict' if cap is not None else 'matched_unlimited'
+                        entry['comparisons'].append({'benefit_index': index, 'result': result, 'api_amount': cap})
+                        if cap is not None:
+                            issues.append('conflicting monetary cap: API cap versus explicit unlimited legal cap; review required')
+                if not legal_caps:
+                    continue
+                if not candidates and dimensions.get('rate'):
+                    legal_rates = set().union(*(entry['dimensions'].get('rate', set()) for entry in legal_caps))
+                    if legal_rates and not legal_rates.intersection(dimensions['rate']):
+                        issues.append('conflicting benefit percentage: API ' + ', '.join(sorted(dimensions['rate']))
+                                      + '%; legal ' + ', '.join(sorted(legal_rates)) + '%; review required')
+                        continue
+                if unresolved or not candidates or (cap is not None and amounts != {cap} and not period_mismatch):
+                    evidence = ' | '.join(entry['clause'] for entry in candidates or legal_caps)
+                    label = 'conflicting monetary cap' if len(amounts) == 1 and not unresolved else 'unresolved conditional monetary caps'
+                    issues.append(f'{label}: benefit {index + 1} API {currency} {cap}; legal '
+                                  + ', '.join(str(amount) for amount in sorted(amounts)) + f'; review required ({evidence})')
+        for row in rows:
+            if not row['comparisons']:
+                row['comparisons'].append({'result': {'illustrative': 'excluded_illustrative', 'non_monetary': 'excluded_non_monetary',
+                                                     'non_monetary_unlimited': 'excluded_non_monetary',
+                                                     'resolved_reference': 'resolved_reference'}.get(row['status'], 'unresolved')})
+                if row['comparisons'][0]['result'] == 'unresolved':
+                    issues.append('unresolved cap mention without benefit comparison; review required')
+        return {'complete': not issues and not review_reasons, 'mentions': rows,
+                'issues': list(dict.fromkeys(issues)), 'review_reasons': list(dict.fromkeys(review_reasons))}
 
     def _cap_amount_issues(self, raw):
-        detail, catalog = raw['detail'], raw['catalog']
-        legal_caps = self._legal_monetary_caps(detail.get('basesCondiciones') or '')
-        if not legal_caps:
-            return []
-        issues = []
-        nodes = detail.get('beneficios', [])
-        for index, node in enumerate(nodes):
-            value = node.get('tope') if node.get('tope') not in (None, '') else catalog.get('montoTope')
-            cap = self._checked_amount(value, 'cap')
-            if cap is None:
-                continue
-            context = ' '.join(self._normalize_requirements(node.get('requisitos')) + [
-                self._clean_text(node.get(field)) for field in ('descripcion', 'beneficio')])
-            context += ' ' + self._clean_text(node.get('grupoTarjeta') or detail.get('grupoTarjeta') or catalog.get('grupoTarjeta'))
-            installments = self._normalize_installments(node.get('cuota'))
-            if installments:
-                context += f' {installments} cuotas'
-            if len(nodes) == 1:
-                context += ' ' + self._clean_text(detail.get('cabecera')) + ' ' + self._clean_text(catalog.get('subcabecera'))
-            dimensions = self._cap_dimensions(context)
-            currency = self._currency(context)
-            candidates = [entry for entry in legal_caps if entry['currency'] == currency and not any(
-                name in dimensions and not values.intersection(dimensions[name])
-                for name, values in entry['dimensions'].items())]
-            period = self._normalize_cap_period(node.get('frecuenciaTope'))
-            if period and any(entry['period'] == period for entry in candidates):
-                candidates = [entry for entry in candidates if entry['period'] in (None, period)]
-            scopes = self._cap_scopes(self._clean_text(node.get('tipoTope')))
-            if scopes and len({entry['amount'] for entry in candidates}) > 1 and any(entry['scopes'].intersection(scopes) for entry in candidates):
-                candidates = [entry for entry in candidates if not entry['scopes'] or entry['scopes'].intersection(scopes)]
-            amounts = {entry['amount'] for entry in candidates}
-            if amounts and amounts != {cap}:
-                evidence = ' | '.join(entry['clause'] for entry in candidates)
-                label = 'conflicting monetary cap' if len(amounts) == 1 else 'unresolved conditional monetary caps'
-                issues.append(f'{label}: benefit {index + 1} API {currency} {cap}; legal '
-                              + ', '.join(str(amount) for amount in sorted(amounts))
-                              + f'; review required ({evidence})')
-        return issues
+        return self.cap_coverage(raw)['issues']
 
     def _cap_period_evidence(self, api_period, cap, terms):
         legal_periods = {entry['period'] for entry in self._legal_monetary_caps(terms)
@@ -413,7 +605,7 @@ class BBVANormalizer:
             ('Renovación', renewal.group(0) + ' ' + variable_price.group(0)), ('Exclusión', exclusion.group(0)))
 
     def review_normalized(self, raw, variants):
-        terms = self._clean_text(raw['detail'].get('basesCondiciones'))
+        terms = self._clean_text(self._cap_evidence_text(raw['detail'].get('basesCondiciones')))
         req = ' '.join(' '.join(self._normalize_requirements(n.get('requisitos'))) for n in raw['detail'].get('beneficios', []))
         text = terms + ' ' + req
         issues = self._cap_amount_issues(raw)
@@ -431,7 +623,7 @@ class BBVANormalizer:
             issues.append('eligible credit issuer restriction omitted')
         if re.search(r'primeras\s+\d+\s+entregas', terms, re.I) and not all(re.search(r'primeras\s+\d+\s+entregas', p.specific_conditions or '', re.I) for p in variants):
             issues.append('subscription delivery eligibility omitted')
-        offer = re.split(r'\bEJEMPLO\b', terms, flags=re.I)[0]
+        offer = self._cap_evidence_text(raw['detail'].get('basesCondiciones') or '')
         legal_rates = {Decimal(value.replace(',', '.')) for value in re.findall(r'(\d{1,3}(?:[.,]\d+)?)\s*%\s*(?:\([^)]*\)\s*)?de\s+(?:descuento|reintegro)', offer, re.I)}
         represented_rates = {b.percentage for p in variants for b in p.benefits if b.type in ('discount', 'cashback')}
         if not legal_rates.issubset(represented_rates):
@@ -726,7 +918,7 @@ class BBVANormalizer:
         first = variants[0][1]
         key = lambda p: (p.specific_conditions, [m.model_dump() for m in p.payment_methods], [l.model_dump() for l in p.limits])
         kinds = [b.type for _, p in variants for b in p.benefits]
-        terms = self._clean_text(raw['detail'].get('basesCondiciones'))
+        terms = self._clean_text(self._cap_evidence_text(raw['detail'].get('basesCondiciones')))
         cumulative = bool(re.search(r'beneficios\s+(?:son\s+)?acumulables\s+entre\s+s[ií]|ambos\s+beneficios\s+(?:se\s+)?(?:acumulan|combinan)',terms,re.I))
         if cumulative and all(key(p) == key(first) for _, p in variants) and len(kinds) == len(set(kinds)):
             first.benefits = [b for _, p in variants for b in p.benefits]
@@ -746,7 +938,8 @@ class BBVANormalizer:
 
     def _clean_text(self, value):
         if value is None: return ''
-        return re.sub(r'\s+', ' ', re.sub(r'<[^>]+>', ' ', html.unescape(str(value)))).strip()
+        text, _ = self._html_legal_projection(value)
+        return re.sub(r'\s+', ' ', text).strip()
 
     def _parse_date(self, value):
         if value in (None, ''): return None
@@ -833,6 +1026,8 @@ class BBVANormalizer:
         if 'diario' in value or re.search(r'\bd[ií]a\b',value): return 'daily'
         if 'único' in value or 'unico' in value: return 'one_time'
         if 'vigencia' in value: return 'promotion'
+        if 'anual' in value or re.search(r'\ba[ñn]o\b', value): return 'annual'
+        if 'transacci' in value: return 'transaction'
         return value
 
     def _normalize_requirements(self,value):

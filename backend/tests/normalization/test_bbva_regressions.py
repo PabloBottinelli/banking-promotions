@@ -348,6 +348,9 @@ def test_official_mileage_redemption_is_not_credit_and_caps_are_not_money(offici
 def test_synthetic_mileage_limits_stock_and_date_are_parsed_not_defaults(official):
     r=deepcopy(official['88097']);n=BBVANormalizer();before=n.normalize_many(r)
     r['detail']['basesCondiciones']=r['detail']['basesCondiciones'].replace('3.100','4.200').replace('16.000','17.000').replace('1500 cupos','1800 cupos').replace('30/10/2026','29/10/2026')
+    with pytest.raises(ValueError, match='unresolved non-monetary cap benefit assignment'):
+        n.normalize_many(r)
+    r['detail']['beneficios'][0]['requisitos'] = [text.replace('3.100', '4.200').replace('16.000', '17.000') for text in r['detail']['beneficios'][0]['requisitos']]
     after=n.normalize_many(r)
     assert [p.source_id for p in before]==[p.source_id for p in after]
     assert {p.limits[0].quantity for p in after}=={4200,17000}

@@ -138,13 +138,15 @@ class BBVAScraper:
         normalizer = BBVANormalizer()
         reasons = []
         for raw in records:
+            previous_reason_count = len(reasons)
             detail = raw['detail']
-            terms = html.unescape(detail['basesCondiciones'])
-            headline = re.search(r'(\d{1,3}(?:[.,]\d+)?)\s*%', str(detail.get('cabecera', '')))
-            legal = re.search(r'(\d{1,3}(?:[.,]\d+)?)\s*%\s*(?:\([^)]*\)\s*)?de\s+(?:reintegro|descuento)', terms, re.I)
-            if headline and legal and Decimal(headline.group(1).replace(',', '.')) != Decimal(legal.group(1).replace(',', '.')):
-                reasons.append(f"{raw['source_id']}: headline benefit percentage {headline.group(1)}% conflicts with legal {legal.group(1)}%")
             try:
+                terms = normalizer._cap_evidence_text(detail['basesCondiciones'])
+                headline = re.search(r'(\d{1,3}(?:[.,]\d+)?)\s*%', normalizer._clean_text(detail.get('cabecera', '')))
+                legal = re.search(normalizer.RATE, terms, re.I)
+                if headline and legal and Decimal(headline.group(1).replace(',', '.')) != Decimal(legal.group(1).replace(',', '.')):
+                    reasons.append(f"{raw['source_id']}: headline benefit percentage {headline.group(1)}% conflicts with legal {legal.group(1)}%")
+                cap_coverage = normalizer.cap_coverage(raw)
                 variants = normalizer.normalize_many(raw)
                 semantic = normalizer.review_normalized(raw, variants)
             except (ValueError, TypeError, KeyError) as exc:
@@ -188,6 +190,9 @@ class BBVAScraper:
                     reasons.append(f"{raw['source_id']}: {warning}")
             if re.search(r'compartido.{0,90}adicional', terms, re.I) and re.search(r'no aplica para compras realizadas con tarjetas de cr[eé]dito adicionales', terms, re.I):
                 reasons.append(f"{raw['source_id']}: contradictory additional-card eligibility")
+            if not cap_coverage['complete'] and len(reasons) == previous_reason_count:
+                reasons.extend(f"{raw['source_id']}: monetary cap coverage review required: {reason}"
+                               for reason in cap_coverage['issues'] + cap_coverage['review_reasons'])
         return reasons
 
     def scrape(self, limit: int | None = None) -> ScrapeResult:
