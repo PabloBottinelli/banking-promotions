@@ -7,6 +7,7 @@ from pathlib import Path
 from normalization.models import NormalizedPromotion
 from persistence.supabase_repository import SupabasePromotionRepository
 from scraping.models import ScrapeResult
+from processing.hybrid import HybridPromotion, process_promotion
 
 
 BACKEND_DIR = Path(__file__).resolve().parents[1]
@@ -85,6 +86,29 @@ class SyncRunner:
                 raise RuntimeError(f"Error al normalizar {raw_id!r}: {exc}") from exc
 
         return normalized
+
+    def process_promotions(self, raw_promotions: list[dict]) -> list[HybridPromotion]:
+        self.validate_raw_promotions(raw_promotions)
+
+        normalizer = self.normalizer_class() if self.normalizer_class else None
+
+        processed = [
+            process_promotion(raw, self.source, normalizer, self.normalize_many)
+            for raw in raw_promotions
+        ]
+
+        seen_ids = set()
+
+        for promotion in processed:
+            for variant in promotion.normalized_data:
+                variant_id = variant["source_id"]
+
+                if variant_id in seen_ids:
+                    raise RuntimeError(f"ID normalizado duplicado: {variant_id}")
+
+                seen_ids.add(variant_id)
+
+        return processed
 
     def run(self, from_file: bool = False, validate_only: bool = False) -> None:
         scraper = None
