@@ -1,0 +1,140 @@
+import argparse
+import hashlib
+import json
+from pathlib import Path
+
+from normalization.sources.bbva import BBVANormalizer
+from synchronization.import_buepp_hybrid import prepare_import as prepare_buepp_import
+from synchronization.runner import SyncRunner
+
+
+def prepare_bbva_import(snapshot_path: Path, coverage_path: Path):
+    raw_bytes = snapshot_path.read_bytes()
+    raw = json.loads(raw_bytes)
+
+    if not isinstance(raw, list) or not raw:
+        raise ValueError("El snapshot debe contener promociones")
+
+    for record in raw:
+        if not isinstance(record, dict) or record.get("source") != "bbva":
+            raise ValueError("Registro BBVA inválido")
+
+        source_id = str(record.get("source_id"))
+
+        catalog = record.get("catalog")
+        detail = record.get("detail")
+
+        if not isinstance(catalog, dict) or not isinstance(detail, dict):
+            raise ValueError(f"Catálogo o detalle inválido: {source_id}")
+
+        if str(catalog.get("id")) != source_id or str(detail.get("id")) != source_id:
+            raise ValueError(f"IDs inconsistentes: {source_id}")
+
+    runner = SyncRunner("bbva", object, BBVANormalizer, storage_mode="hybrid")
+    promotions = runner.process_promotions(raw)
+
+    snapshot_hash = hashlib.sha256(raw_bytes).hexdigest()
+    verified = False
+
+    if coverage_path.exists():
+        coverage = json.loads(coverage_path.read_text(encoding="utf-8"))
+
+        if not isinstance(coverage, dict):
+            raise ValueError("Informe de cobertura inválido")
+
+        if coverage.get("source") != "bbva":
+            raise ValueError("Fuente incorrecta en informe de cobertura")
+
+        if coverage.get("snapshot_sha256") != snapshot_hash:
+            raise ValueError("El informe no corresponde al snapshot")
+
+        if coverage.get("catalog_complete") is not True:
+            raise ValueError("La captura BBVA no está marcada como completa")
+
+        if coverage.get("limited") is not False:
+            raise ValueError("No se verificó que la captura sea completa")
+
+        if coverage.get("failed_ids") != []:
+            raise ValueError("La captura contiene errores")
+
+        if coverage.get("catalog_count") != len(promotions):
+            raise ValueError("Conteo de catálogo inconsistente")
+
+        if coverage.get("detail_success") != len(promotions):
+            raise ValueError("Conteo de detalles inconsistente")
+
+        verified = True
+
+    return promotions, snapshot_hash, verified
+
+
+def prepare_import(source: str, snapshot_path: Path, coverage_path: Path):
+    if source == "buepp":
+        promotions, snapshot_hash = prepare_buepp_import(snapshot_path, coverage_path)
+        return promotions, snapshot_hash, True
+
+    if source == "bbva":
+        return prepare_bbva_import(snapshot_path, coverage_path)
+
+    raise ValueError(f"Fuente no soportada: {source}")
+
+
+def main():
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--source", required=True, choices=["buepp", "bbva"])
+    parser.add_argument("--file")
+    parser.add_argument("--coverage")
+    parser.add_argument("--write", action="store_true")
+    parser.add_argument("--expect-count", type=int)
+    parser.add_argument("--expect-sha256")
+    args = parser.parse_args()
+
+    if args.write and (args.expect_count is None or args.expect_sha256 is None):
+        parser.error("--write requiere --expect-count y --expect-sha256")
+
+    snapshot_path = Path(args.file or f"data/{args.source}_promotions.json")
+    coverage_path = Path(args.coverage or f"data/{args.source}_coverage.json")
+
+    promotions, snapshot_hash, verified = prepare_import(args.source, snapshot_path, coverage_path)
+
+    normalized = sum(p.normalization_status == "normalized" for p in promotions)
+    failed = sum(p.normalization_status == "failed" for p in promotions)
+    pending = sum(p.normalization_status == "not_attempted" for p in promotions)
+    variants = sum(len(p.normalized_data) for p in promotions)
+
+    print(f"Fuente: {args.source}")
+    print(f"Promociones originales: {len(promotions)}")
+    print(f"Normalizadas: {normalized}")
+    print(f"Fallidas: {failed}")
+    print(f"Sin normalizador: {pending}")
+    print(f"Variantes: {variants}")
+    print(f"SHA256: {snapshot_hash}")
+    print(f"Snapshot verificado: {'sí' if verified else 'no'}")
+
+    if not args.write:
+        print("Modo de revisión: no se escribió en Supabase")
+        return
+
+    if not verified:
+        raise ValueError("No se permite importar un snapshot sin cobertura verificada")
+
+    if args.expect_count != len(promotions):
+        raise ValueError("La cantidad de promociones cambió")
+
+    if args.expect_sha256.lower() != snapshot_hash:
+        raise ValueError("El archivo cambió desde la revisión")
+
+    from persistence.hybrid_repository import HybridPromotionRepository
+    from persistence.supabase_client import SUPABASE_URL, get_headers
+
+    repository = HybridPromotionRepository(SUPABASE_URL, get_headers())
+    total = repository.upsert_many(promotions, batch_size=50)
+
+    if total != len(promotions):
+        raise RuntimeError(f"Carga incompleta: {total}/{len(promotions)}")
+
+    print(f"Carga finalizada: {total} promociones enviadas")
+
+
+if __name__ == "__main__":
+    main()
