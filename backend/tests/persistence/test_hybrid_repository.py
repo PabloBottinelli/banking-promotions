@@ -66,3 +66,57 @@ def test_upsert_propagates_http_errors():
 
         with pytest.raises(httpx.HTTPStatusError):
             repository.upsert_many([promotion])
+
+def test_upsert_splits_batches_by_size():
+    from datetime import datetime, timezone
+    from persistence.hybrid_serializer import serialize_hybrid_promotion
+
+    requests = []
+    seen_at = datetime(2026, 11, 21, tzinfo=timezone.utc)
+
+    def handler(request):
+        requests.append(request)
+        return httpx.Response(201)
+
+    promotions = [
+        HybridPromotion(source="buepp", source_id=str(i), raw_data={"description": "A" * 200}, normalization_status="not_attempted")
+        for i in range(3)
+    ]
+
+    single_record = serialize_hybrid_promotion(promotions[0], seen_at)
+    limit = len(json.dumps([single_record], ensure_ascii=False, separators=(",", ":")).encode("utf-8")) + 10
+
+    with httpx.Client(transport=httpx.MockTransport(handler)) as client:
+        repository = HybridPromotionRepository("https://supabase.invalid", {"apikey": "test"}, client)
+        total = repository.upsert_many(promotions, batch_size=50, max_payload_bytes=limit, seen_at=seen_at)
+
+    assert total == 3
+    assert len(requests) == 3
+    assert all(len(request.content) <= limit for request in requests)
+    assert [json.loads(request.content)[0]["source_id"] for request in requests] == ["0", "1", "2"]
+
+def test_upsert_rejects_oversized_record_before_writing():
+    requests = []
+
+    def handler(request):
+        requests.append(request)
+        return httpx.Response(201)
+
+    promotions = [
+        HybridPromotion(source="buepp", source_id="normal", raw_data={"description": "Pequeña"}, normalization_status="not_attempted"),
+        HybridPromotion(source="buepp", source_id="grande", raw_data={"description": "A" * 5000}, normalization_status="not_attempted")
+    ]
+
+    with httpx.Client(transport=httpx.MockTransport(handler)) as client:
+        repository = HybridPromotionRepository("https://supabase.invalid", {"apikey": "test"}, client)
+
+        with pytest.raises(ValueError, match="demasiado grande"):
+            repository.upsert_many(promotions, max_payload_bytes=1000)
+
+    assert len(requests) == 0
+
+def test_upsert_rejects_invalid_payload_limit():
+    repository = HybridPromotionRepository("https://supabase.invalid", {"apikey": "test"})
+
+    with pytest.raises(ValueError, match="max_payload_bytes"):
+        repository.upsert_many([], max_payload_bytes=0)
