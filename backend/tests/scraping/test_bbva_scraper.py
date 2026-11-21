@@ -1,7 +1,7 @@
 import httpx
 
 from scraping.sources.bbva.scraper import BBVAScraper
-
+from scraping.models import ScrapeResult
 
 def test_fetch_promotion_detail():
     def handler(request: httpx.Request):
@@ -114,3 +114,40 @@ def test_scrape_continues_when_detail_fails():
     assert promotion["source_id"] == 2
     assert promotion["detail"]["id"] == 2
     assert "scraped_at" in promotion
+
+import pytest
+
+
+def test_rejects_invalid_catalog_response():
+    def handler(request):
+        return httpx.Response(200, json={"error": "Unexpected response"})
+
+    with httpx.Client(transport=httpx.MockTransport(handler)) as client:
+        scraper = BBVAScraper(client=client)
+
+        with pytest.raises(ValueError, match="catálogo inválida"):
+            scraper.fetch_catalog_page(0)
+
+
+def test_rejects_mismatched_detail():
+    def handler(request):
+        return httpx.Response(200, json={"data": {"id": 999}})
+
+    with httpx.Client(transport=httpx.MockTransport(handler)) as client:
+        scraper = BBVAScraper(client=client)
+
+        with pytest.raises(ValueError, match="ID incorrecto"):
+            scraper.fetch_promotion_detail(123)
+
+
+def test_incomplete_scrape_cannot_replace_snapshot(tmp_path):
+    scraper = BBVAScraper()
+    scraper.result = ScrapeResult(
+        promotions=[{"source": "bbva", "source_id": "123"}],
+        catalog_count=2,
+        failed_ids=["456"]
+    )
+    scraper._limited = False
+
+    with pytest.raises(ValueError, match="incompleta"):
+        scraper.save_raw_promotions(scraper.result.promotions)

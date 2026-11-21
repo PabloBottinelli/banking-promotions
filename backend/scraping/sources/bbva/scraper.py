@@ -6,6 +6,8 @@ import httpx
 
 from scraping.http_client import DEFAULT_TIMEOUT, get_with_retries
 from scraping.models import ScrapeResult
+import os
+import tempfile
 
 
 BACKEND_DIR = Path(__file__).resolve().parents[3]
@@ -34,12 +36,12 @@ class BBVAScraper:
             params={"pager": page},
         )
 
-        data = response.json().get("data", [])
+        payload = response.json()
 
-        if not isinstance(data, list):
-            return []
+        if not isinstance(payload, dict) or not isinstance(payload.get("data"), list):
+            raise ValueError(f"Respuesta de catálogo inválida en página {page}")
 
-        return data
+        return payload["data"]
 
     def fetch_catalog(self) -> list[dict]:
         promotions = []
@@ -64,14 +66,20 @@ class BBVAScraper:
             f"{self.DETAIL_URL}/{promotion_id}",
         )
 
-        detail = response.json().get("data", {})
+        payload = response.json()
+        detail = payload.get("data") if isinstance(payload, dict) else None
 
-        if not isinstance(detail, dict):
-            return {}
+        if not isinstance(detail, dict) or not detail:
+            raise ValueError(f"Detalle inválido para promoción {promotion_id}")
+
+        if str(detail.get("id")) != str(promotion_id):
+            raise ValueError(f"ID incorrecto en detalle de promoción {promotion_id}")
 
         return detail
 
     def scrape(self, limit: int | None = None) -> ScrapeResult:
+        self.result = None
+        self._limited = limit is not None
         catalog = self.fetch_catalog()
 
         if limit is not None:
@@ -92,7 +100,7 @@ class BBVAScraper:
 
             try:
                 detail = self.fetch_promotion_detail(promotion_id)
-            except httpx.HTTPError as error:
+            except (httpx.HTTPError, ValueError, TypeError) as error:
                 print(f"Error descargando {promotion_id}: {type(error).__name__}: {error}")
                 errors.append(str(promotion_id))
                 continue
@@ -115,18 +123,60 @@ class BBVAScraper:
         if errors:
             print(f"IDs con error: {errors}")
 
-        return ScrapeResult(
+        self.result = ScrapeResult(
             promotions=promotions,
             catalog_count=len(catalog),
             failed_ids=errors,
         )
 
+        return self.result
+
     def save_raw_promotions(self, promotions: list[dict]) -> None:
+        if self.result is None or not self.result.complete or self._limited:
+            raise ValueError("No se puede guardar una captura incompleta o limitada")
+
+        if promotions != self.result.promotions:
+            raise ValueError("Las promociones no coinciden con la captura validada")
+
+        new_ids = {str(p["source_id"]) for p in promotions}
+
+        if len(new_ids) != len(promotions):
+            raise ValueError("Existen identificadores duplicados")
+
         output_path = DATA_DIR / "bbva_promotions.json"
+
+        if output_path.exists():
+            previous = json.loads(output_path.read_text(encoding="utf-8"))
+
+            if not isinstance(previous, list):
+                raise ValueError("El snapshot anterior es inválido")
+
+            previous_ids = {str(p["source_id"]) for p in previous}
+
+            if len(previous_ids) != len(previous):
+                raise ValueError("El snapshot anterior contiene IDs duplicados")
+
+            missing_ids = previous_ids - new_ids
+
+            if missing_ids:
+                raise ValueError(f"Desaparecieron {len(missing_ids)} promociones anteriores. Requiere revisión.")
+
         output_path.parent.mkdir(parents=True, exist_ok=True)
 
-        with output_path.open("w", encoding="utf-8") as file:
-            json.dump(promotions, file, ensure_ascii=False, indent=2)
+        temporary = None
+
+        try:
+            with tempfile.NamedTemporaryFile("w", encoding="utf-8", dir=output_path.parent, delete=False) as file:
+                temporary = Path(file.name)
+                json.dump(promotions, file, ensure_ascii=False, indent=2)
+                file.flush()
+                os.fsync(file.fileno())
+
+            os.replace(temporary, output_path)
+
+        finally:
+            if temporary is not None:
+                temporary.unlink(missing_ok=True)
 
         print(f"Guardadas {len(promotions)} promociones en {output_path}")
 
