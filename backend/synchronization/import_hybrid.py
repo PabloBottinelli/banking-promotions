@@ -51,6 +51,9 @@ def prepare_bbva_import(snapshot_path: Path, coverage_path: Path):
         if coverage.get("catalog_complete") is not True:
             raise ValueError("La captura BBVA no está marcada como completa")
 
+        if coverage.get("terminal_verified") is not True:
+            raise ValueError("No se verificó el final de la paginación BBVA")
+
         if coverage.get("limited") is not False:
             raise ValueError("No se verificó que la captura sea completa")
 

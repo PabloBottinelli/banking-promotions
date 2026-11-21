@@ -1,5 +1,6 @@
 import httpx
-
+import hashlib
+import json
 from scraping.sources.bbva.scraper import BBVAScraper
 from scraping.models import ScrapeResult
 
@@ -151,3 +152,113 @@ def test_incomplete_scrape_cannot_replace_snapshot(tmp_path):
 
     with pytest.raises(ValueError, match="incompleta"):
         scraper.save_raw_promotions(scraper.result.promotions)
+
+def test_rejects_unstable_terminal_page():
+    terminal_calls = 0
+
+    def handler(request):
+        nonlocal terminal_calls
+        page = int(request.url.params["pager"])
+
+        if page == 0:
+            return httpx.Response(200, json={"data": [{"id": 1}]})
+
+        terminal_calls += 1
+
+        if terminal_calls == 1:
+            return httpx.Response(200, json={"data": []})
+
+        return httpx.Response(200, json={"data": [{"id": 2}]})
+
+    with httpx.Client(transport=httpx.MockTransport(handler)) as client:
+        scraper = BBVAScraper(client=client)
+
+        with pytest.raises(ValueError, match="inestable"):
+            scraper.fetch_catalog()
+
+def test_rejects_duplicate_catalog_ids():
+    def handler(request):
+        page = int(request.url.params["pager"])
+
+        if page in (0, 1):
+            return httpx.Response(200, json={"data": [{"id": 123}]})
+
+        return httpx.Response(200, json={"data": []})
+
+    with httpx.Client(transport=httpx.MockTransport(handler)) as client:
+        scraper = BBVAScraper(client=client)
+
+        with pytest.raises(ValueError, match="duplicado"):
+            scraper.fetch_catalog()
+
+def test_complete_scrape_generates_matching_coverage(tmp_path, monkeypatch):
+    from scraping.sources.bbva import scraper as scraper_module
+
+    monkeypatch.setattr(scraper_module, "DATA_DIR", tmp_path)
+
+    def handler(request):
+        if request.url.path.endswith("/communications"):
+            page = int(request.url.params["pager"])
+            data = [{"id": 123}] if page == 0 else []
+            return httpx.Response(200, json={"data": data})
+
+        if request.url.path.endswith("/communication/123"):
+            return httpx.Response(200, json={"data": {"id": 123, "cabecera": "Beneficio"}})
+
+        return httpx.Response(404)
+
+    with httpx.Client(transport=httpx.MockTransport(handler)) as client:
+        scraper = BBVAScraper(client=client)
+        result = scraper.scrape()
+
+        assert result.complete
+        scraper.save_raw_promotions(result.promotions)
+
+    snapshot = tmp_path / "bbva_promotions.json"
+    coverage_path = tmp_path / "bbva_coverage.json"
+
+    coverage = json.loads(coverage_path.read_text(encoding="utf-8"))
+    digest = hashlib.sha256(snapshot.read_bytes()).hexdigest()
+
+    assert coverage["snapshot_sha256"] == digest
+    assert coverage["catalog_complete"] is True
+    assert coverage["terminal_verified"] is True
+    assert coverage["catalog_count"] == 1
+    assert coverage["detail_success"] == 1
+
+def test_allows_only_approved_missing_ids(tmp_path, monkeypatch):
+    from scraping.sources.bbva import scraper as scraper_module
+
+    monkeypatch.setattr(scraper_module, "DATA_DIR", tmp_path)
+
+    old = [
+        {"source": "bbva", "source_id": "88970"},
+        {"source": "bbva", "source_id": "87657"}
+    ]
+
+    new = [
+        {"source": "bbva", "source_id": "87657"}
+    ]
+
+    snapshot = tmp_path / "bbva_promotions.json"
+    snapshot.write_text(json.dumps(old), encoding="utf-8")
+
+    scraper = BBVAScraper()
+    scraper.result = ScrapeResult(new, 1, [])
+    scraper._limited = False
+    scraper.coverage = {"catalog_complete": True}
+
+    canonical = json.dumps(new, sort_keys=True, ensure_ascii=False, separators=(",", ":"))
+    scraper._candidate_hash = hashlib.sha256(canonical.encode("utf-8")).hexdigest()
+
+    scraper.save_raw_promotions(new, approved_missing_ids={"88970"})
+
+    saved = json.loads(snapshot.read_text(encoding="utf-8"))
+
+    assert saved == new
+    assert scraper.coverage["approved_missing_ids"] == ["88970"]
+
+    backups = list(tmp_path.glob("bbva_promotions_previous_*.json"))
+
+    assert len(backups) == 1
+    assert json.loads(backups[0].read_text(encoding="utf-8")) == old

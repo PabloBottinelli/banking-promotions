@@ -76,7 +76,8 @@ def test_bbva_accepts_matching_coverage(tmp_path):
         "limited": False,
         "failed_ids": [],
         "catalog_count": 1,
-        "detail_success": 1
+        "detail_success": 1,
+        "terminal_verified": True,
     }), encoding="utf-8")
 
     promotions, result_hash, verified = prepare_import("bbva", snapshot, coverage)
