@@ -33,3 +33,18 @@ def test_raw_hash_changes_with_content():
     second = HybridPromotion(source="bbva", source_id="123", raw_data={"discount": 30}, normalization_status="not_attempted")
 
     assert serialize_hybrid_promotion(first)["raw_hash"] != serialize_hybrid_promotion(second)["raw_hash"]
+
+def test_hash_ignores_capture_timestamps():
+    first = HybridPromotion(source="buepp", source_id="123", raw_data={"scraped_at": "2026-11-20", "detail": {"captured_at": "2026-11-20", "discount": 30}}, normalization_status="not_attempted")
+
+    second = HybridPromotion(source="buepp", source_id="123", raw_data={"scraped_at": "2026-11-21", "detail": {"captured_at": "2026-11-21", "discount": 30}}, normalization_status="not_attempted")
+
+    assert serialize_hybrid_promotion(first)["raw_hash"] == serialize_hybrid_promotion(second)["raw_hash"]
+
+
+def test_hash_detects_commercial_changes():
+    first = HybridPromotion(source="buepp", source_id="123", raw_data={"detail": {"discount": 30}}, normalization_status="not_attempted")
+
+    second = HybridPromotion(source="buepp", source_id="123", raw_data={"detail": {"discount": 40}}, normalization_status="not_attempted")
+
+    assert serialize_hybrid_promotion(first)["raw_hash"] != serialize_hybrid_promotion(second)["raw_hash"]
