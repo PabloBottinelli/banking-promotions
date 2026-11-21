@@ -160,3 +160,61 @@ def test_validate_from_file_does_not_write_raw_or_supabase(monkeypatch):
     assert not scraper.saved
     assert repo.called == 0
     assert repo.deactivated == 0
+
+def test_hybrid_run_preserves_failed_normalization(monkeypatch):
+    raw = [{"source_id": "correcta"}, {"source_id": "fallida", "kind": "fail"}]
+    runner, scraper, legacy_repository = setup(monkeypatch, raw)
+    runner.storage_mode = "hybrid"
+
+    received = []
+
+    class FakeHybridRepository:
+        def __init__(self, base_url, headers):
+            pass
+
+        def upsert_many(self, promotions, batch_size, seen_at):
+            received.extend(promotions)
+            return len(promotions)
+
+    monkeypatch.setattr(runner_module, "HybridPromotionRepository", FakeHybridRepository)
+    monkeypatch.setattr(runner_module, "SUPABASE_URL", "https://supabase.invalid")
+    monkeypatch.setattr(runner_module, "get_headers", lambda: {"apikey": "test"})
+
+    runner.run()
+
+    assert scraper.saved
+    assert legacy_repository.called == 0
+    assert len(received) == 2
+    assert received[0].normalization_status == "normalized"
+    assert received[1].normalization_status == "failed"
+    assert received[1].raw_data == raw[1]
+
+
+def test_hybrid_incomplete_scrape_never_writes(monkeypatch):
+    runner, scraper, legacy_repository = setup(monkeypatch, [{"source_id": "123"}], complete=False)
+    runner.storage_mode = "hybrid"
+
+    def forbidden_repository(*args, **kwargs):
+        raise AssertionError("No debería acceder a Supabase")
+
+    monkeypatch.setattr(runner_module, "HybridPromotionRepository", forbidden_repository)
+
+    with pytest.raises(RuntimeError, match="incompleto"):
+        runner.run()
+
+    assert not scraper.saved
+    assert legacy_repository.called == 0
+
+def test_hybrid_validate_only_never_writes(monkeypatch):
+    runner, scraper, legacy_repository = setup(monkeypatch, [{"source_id": "123"}])
+    runner.storage_mode = "hybrid"
+
+    def forbidden_repository(*args, **kwargs):
+        raise AssertionError("No debería acceder a Supabase")
+
+    monkeypatch.setattr(runner_module, "HybridPromotionRepository", forbidden_repository)
+
+    runner.run(validate_only=True)
+
+    assert not scraper.saved
+    assert legacy_repository.called == 0

@@ -8,26 +8,23 @@ from normalization.models import NormalizedPromotion
 from persistence.supabase_repository import SupabasePromotionRepository
 from scraping.models import ScrapeResult
 from processing.hybrid import HybridPromotion, process_promotion
+from typing import Literal
+from persistence.hybrid_repository import HybridPromotionRepository
+from persistence.supabase_client import SUPABASE_URL, get_headers
 
 
 BACKEND_DIR = Path(__file__).resolve().parents[1]
 
 
 class SyncRunner:
-    def __init__(
-        self,
-        source: str,
-        scraper_class: type,
-        normalizer_class: type,
-        normalize_many: bool = False,
-        allow_deactivation: bool = False,
-    ) -> None:
+    def __init__(self, source: str, scraper_class: type, normalizer_class: type | None, normalize_many: bool = False, allow_deactivation: bool = False, storage_mode: Literal["legacy", "hybrid"] = "legacy") -> None:
         self.source = source
         self.scraper_class = scraper_class
         self.normalizer_class = normalizer_class
         self.normalize_many = normalize_many
         self.allow_deactivation = allow_deactivation
         self.raw_path = BACKEND_DIR / "data" / f"{source}_promotions.json"
+        self.storage_mode = storage_mode
 
     def load_raw_promotions(self) -> list[dict]:
         with self.raw_path.open("r", encoding="utf-8") as file:
@@ -97,16 +94,18 @@ class SyncRunner:
             for raw in raw_promotions
         ]
 
-        seen_ids = set()
+        variant_owners = {}
 
         for promotion in processed:
             for variant in promotion.normalized_data:
-                variant_id = variant["source_id"]
+                variant_owners.setdefault(variant["source_id"], []).append(promotion)
 
-                if variant_id in seen_ids:
-                    raise RuntimeError(f"ID normalizado duplicado: {variant_id}")
-
-                seen_ids.add(variant_id)
+        for variant_id, owners in variant_owners.items():
+            if len(owners) > 1:
+                for promotion in owners:
+                    promotion.normalization_status = "failed"
+                    promotion.normalization_error = f"ID normalizado duplicado: {variant_id}"
+                    promotion.normalized_data = []
 
         return processed
 
@@ -132,11 +131,27 @@ class SyncRunner:
         self.validate_raw_promotions(raw_promotions)
         print(f"\nPromociones crudas: {len(raw_promotions)}")
 
-        print("\nNormalizando y validando IDs...")
-        promotions = self.normalize_promotions(raw_promotions)
-        if not promotions:
-            raise RuntimeError("La normalización no produjo promociones")
-        print(f"Promociones normalizadas: {len(promotions)}")
+        if self.storage_mode == "hybrid":
+            print("\nProcesando promociones híbridas...")
+            promotions = self.process_promotions(raw_promotions)
+
+            normalized_count = sum(p.normalization_status == "normalized" for p in promotions)
+            failed_count = sum(p.normalization_status == "failed" for p in promotions)
+            pending_count = sum(p.normalization_status == "not_attempted" for p in promotions)
+
+            print(f"Promociones procesadas: {len(promotions)}")
+            print(f"Normalizadas: {normalized_count}")
+            print(f"Fallidas: {failed_count}")
+            print(f"Sin normalizador: {pending_count}")
+
+        else:
+            print("\nNormalizando y validando IDs...")
+            promotions = self.normalize_promotions(raw_promotions)
+
+            if not promotions:
+                raise RuntimeError("La normalización no produjo promociones")
+
+            print(f"Promociones normalizadas: {len(promotions)}")
 
         coverage = getattr(scraper, "coverage", {}) if scraper is not None else {}
         if not isinstance(coverage, dict):
@@ -155,9 +170,15 @@ class SyncRunner:
             scraper.save_raw_promotions(raw_promotions)
 
         print("\nSincronizando con Supabase...")
-        repository = SupabasePromotionRepository()
+
         sync_started_at = datetime.now(timezone.utc)
-        total = repository.upsert_many(promotions, batch_size=200, seen_at=sync_started_at)
+
+        if self.storage_mode == "hybrid":
+            repository = HybridPromotionRepository(SUPABASE_URL, get_headers())
+            total = repository.upsert_many(promotions, batch_size=50, seen_at=sync_started_at)
+        else:
+            repository = SupabasePromotionRepository()
+            total = repository.upsert_many(promotions, batch_size=200, seen_at=sync_started_at)
         if total != len(promotions):
             raise RuntimeError(
                 f"Upsert incompleto: {total} de {len(promotions)} registros. "
@@ -171,7 +192,10 @@ class SyncRunner:
             and self.allow_deactivation
             and coverage.get("safe_to_deactivate") is True
         )
-        if can_deactivate:
+        if self.storage_mode == "hybrid":
+            deactivated = 0
+            print("Desactivación deshabilitada en almacenamiento híbrido.")
+        elif can_deactivate:
             deactivated = repository.deactivate_not_seen(self.source, sync_started_at)
         else:
             deactivated = 0
