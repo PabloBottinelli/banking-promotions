@@ -106,17 +106,22 @@ def main():
         current_bytes = snapshot_path.read_bytes()
         current_hash = hashlib.sha256(current_bytes).hexdigest()
 
-        if current_hash != args.expect_sha256.lower():
-            raise ValueError("El archivo cambió desde la revisión")
+    if current_hash != args.expect_sha256.lower():
+        raise ValueError("El archivo cambió desde la revisión")
 
-        current_raw = json.loads(current_bytes)
+    current_raw = json.loads(current_bytes)
 
-        if not isinstance(current_raw, list) or len(current_raw) != args.expect_count:
-            raise ValueError("La cantidad de promociones cambió")
+    if not isinstance(current_raw, list) or len(current_raw) != args.expect_count:
+        raise ValueError("La cantidad de promociones cambió")
 
-        if not args.force_reprocess:
-            cache = repository.get_cached_normalizations(args.source)
-            print(f"Normalizaciones existentes recuperadas: {len(cache)}")
+    from persistence.hybrid_repository import HybridPromotionRepository
+    from persistence.supabase_client import SUPABASE_URL, get_headers
+
+    repository = HybridPromotionRepository(SUPABASE_URL, get_headers())
+
+    if not args.force_reprocess:
+        cache = repository.get_cached_normalizations(args.source)
+        print(f"Normalizaciones existentes recuperadas: {len(cache)}")
 
     promotions, snapshot_hash, verified = prepare_import(args.source, snapshot_path, coverage_path, cache=cache)
 
@@ -147,10 +152,6 @@ def main():
     if args.expect_sha256.lower() != snapshot_hash:
         raise ValueError("El archivo cambió desde la revisión")
 
-    from persistence.hybrid_repository import HybridPromotionRepository
-    from persistence.supabase_client import SUPABASE_URL, get_headers
-
-    repository = HybridPromotionRepository(SUPABASE_URL, get_headers())
     total = repository.upsert_many(promotions, batch_size=50)
 
     if total != len(promotions):

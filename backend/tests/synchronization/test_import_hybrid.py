@@ -4,7 +4,11 @@ import json
 import pytest
 
 from synchronization.import_hybrid import prepare_import
+import sys
 
+from processing.hybrid import HybridPromotion
+from synchronization import import_hybrid
+from persistence import hybrid_repository
 
 def make_bbva_snapshot(tmp_path):
     snapshot = tmp_path / "bbva_promotions.json"
@@ -85,3 +89,75 @@ def test_bbva_accepts_matching_coverage(tmp_path):
     assert verified is True
     assert result_hash == digest
     assert len(promotions) == 1
+
+@pytest.mark.parametrize("force_reprocess", [False, True])
+def test_import_uses_cache_only_when_enabled(tmp_path, monkeypatch, force_reprocess):
+    snapshot = tmp_path / "promotions.json"
+    snapshot.write_text('[{"source":"buepp","source_id":"123"}]', encoding="utf-8")
+
+    digest = hashlib.sha256(snapshot.read_bytes()).hexdigest()
+
+    calls = []
+    received_caches = []
+
+    cached = {
+        "123": {
+            "source_id": "123",
+            "raw_hash": "hash",
+            "normalization_status": "normalized",
+            "normalized_data": [{"source": "buepp", "source_id": "123"}]
+        }
+    }
+
+    class FakeRepository:
+        def __init__(self, base_url, headers):
+            calls.append("init")
+
+        def get_cached_normalizations(self, source):
+            calls.append("read")
+            assert source == "buepp"
+            return cached
+
+        def upsert_many(self, promotions, batch_size):
+            calls.append("write")
+            assert batch_size == 50
+            assert len(promotions) == 1
+            return len(promotions)
+
+    def fake_prepare(source, snapshot_path, coverage_path, cache=None):
+        received_caches.append(cache)
+
+        promotion = HybridPromotion(
+            source="buepp",
+            source_id="123",
+            raw_data={"source": "buepp", "source_id": "123"},
+            normalization_status="not_attempted",
+        )
+
+        return [promotion], digest, True
+
+    monkeypatch.setattr(hybrid_repository, "HybridPromotionRepository", FakeRepository)
+    monkeypatch.setattr(import_hybrid, "prepare_import", fake_prepare)
+
+    args = [
+        "import_hybrid",
+        "--source", "buepp",
+        "--file", str(snapshot),
+        "--write",
+        "--expect-count", "1",
+        "--expect-sha256", digest,
+    ]
+
+    if force_reprocess:
+        args.append("--force-reprocess")
+
+    monkeypatch.setattr(sys, "argv", args)
+
+    import_hybrid.main()
+
+    if force_reprocess:
+        assert calls == ["init", "write"]
+        assert received_caches == [None]
+    else:
+        assert calls == ["init", "read", "write"]
+        assert received_caches == [cached]
