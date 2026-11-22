@@ -2,9 +2,16 @@ name: Validate hybrid promotions
 
 on:
   workflow_dispatch:
+    inputs:
+      approve_initial_baseline:
+        description: "Autorizar la primera referencia histórica"
+        required: false
+        type: boolean
+        default: false
 
 permissions:
   contents: read
+  actions: read
 
 concurrency:
   group: promotions-sync
@@ -28,10 +35,9 @@ jobs:
         working-directory: backend
 
     env:
-      # Credenciales ficticias para satisfacer imports del backend.
-      # La validación no realiza consultas ni escrituras a Supabase.
       SUPABASE_URL: https://example.invalid
       SUPABASE_SECRET_KEY: validation-only
+      APPROVE_INITIAL_BASELINE: ${{ inputs.approve_initial_baseline }}
 
     steps:
       - name: Checkout repository
@@ -51,4 +57,80 @@ jobs:
         run: python -m pytest -q tests
 
       - name: Validate hybrid ${{ matrix.source }}
-        run: python -m synchronization.validate_hybrid --source "${{ matrix.source }}"
+        run: |
+          python -m synchronization.validate_hybrid \
+            --source "${{ matrix.source }}" \
+            --baseline-out "data/hybrid_current/${{ matrix.source }}.json"
+
+      - name: Find previous baseline
+        id: previous
+        env:
+          GH_TOKEN: ${{ github.token }}
+          SOURCE: ${{ matrix.source }}
+        run: |
+          ARTIFACT=$(gh api \
+            "repos/${GITHUB_REPOSITORY}/actions/artifacts?name=hybrid-baseline-${SOURCE}&per_page=100" \
+            --jq ".artifacts |
+              map(select(
+                .expired == false
+                and .workflow_run.id != ${GITHUB_RUN_ID}
+                and .workflow_run.head_branch == \"main\"
+              )) |
+              sort_by(.created_at) |
+              last // empty")
+
+          if [[ -n "$ARTIFACT" && "$ARTIFACT" != "null" ]]; then
+            echo "found=true" >> "$GITHUB_OUTPUT"
+            echo "artifact_id=$(jq -r .id <<< "$ARTIFACT")" >> "$GITHUB_OUTPUT"
+            echo "run_id=$(jq -r .workflow_run.id <<< "$ARTIFACT")" >> "$GITHUB_OUTPUT"
+          else
+            echo "found=false" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Download previous baseline
+        if: steps.previous.outputs.found == 'true'
+        uses: actions/download-artifact@v4
+        with:
+          artifact-ids: ${{ steps.previous.outputs.artifact_id }}
+          run-id: ${{ steps.previous.outputs.run_id }}
+          repository: ${{ github.repository }}
+          github-token: ${{ github.token }}
+          path: backend/data/hybrid_previous
+
+      - name: Compare historical baseline
+        env:
+          SOURCE: ${{ matrix.source }}
+          PREVIOUS_FOUND: ${{ steps.previous.outputs.found }}
+        run: |
+          ARGS=(
+            --source "$SOURCE"
+            --current "data/hybrid_current/${SOURCE}.json"
+          )
+
+          if [[ "$PREVIOUS_FOUND" == "true" ]]; then
+            ARGS+=(
+              --previous "data/hybrid_previous/${SOURCE}.json"
+            )
+          elif [[ "$APPROVE_INITIAL_BASELINE" == "true" ]]; then
+            ARGS+=(--allow-initial)
+          fi
+
+          python -m synchronization.hybrid_baseline "${ARGS[@]}"
+
+      - name: Upload candidate for review
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: hybrid-candidate-${{ matrix.source }}-${{ github.run_id }}-${{ github.run_attempt }}
+          path: backend/data/hybrid_current/${{ matrix.source }}.json
+          if-no-files-found: ignore
+          retention-days: 90
+
+      - name: Save approved baseline
+        uses: actions/upload-artifact@v4
+        with:
+          name: hybrid-baseline-${{ matrix.source }}
+          path: backend/data/hybrid_current/${{ matrix.source }}.json
+          if-no-files-found: error
+          retention-days: 90
+          overwrite: true

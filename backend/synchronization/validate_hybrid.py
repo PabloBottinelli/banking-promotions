@@ -7,7 +7,9 @@ from scraping.sources.bbva.scraper import BBVAScraper
 from scraping.sources.buepp.scraper import BueppScraper
 
 from synchronization.runner import SyncRunner
+from pathlib import Path
 
+from synchronization.hybrid_baseline import write_baseline
 
 def create_runner(source: str) -> SyncRunner:
     if source == "bbva":
@@ -43,12 +45,28 @@ def main(argv=None):
         required=True,
         choices=["bbva", "buepp"],
     )
+    
+    parser.add_argument(
+        "--baseline-out",
+        type=Path,
+        help="Guardar los IDs de la captura validada",
+    )
 
     args = parser.parse_args(argv)
 
     runner = create_runner(args.source)
 
-    runner.run(validate_only=True)
+    promotions = runner.run(validate_only=True)
+
+    if args.baseline_out is not None:
+        if promotions is None:
+            raise RuntimeError("No se obtuvieron promociones validadas")
+
+        write_baseline(
+            args.baseline_out,
+            args.source,
+            promotions,
+        )
 
 
 if __name__ == "__main__":

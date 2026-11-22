@@ -285,7 +285,8 @@ class SyncRunner:
                 "\n[VALIDATE ONLY] Validación completa; "
                 "no se guardó raw ni se accedió a Supabase."
             )
-            return
+
+            return promotions if self.storage_mode == "hybrid" else None
 
         # Guardar snapshot validado
         if scraper is not None:
