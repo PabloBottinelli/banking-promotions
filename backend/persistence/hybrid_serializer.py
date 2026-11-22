@@ -19,11 +19,13 @@ def remove_capture_metadata(value):
 def serialize_hybrid_promotion(promotion: HybridPromotion, seen_at: datetime | None = None) -> dict:
     data = promotion.model_dump(mode="json")
 
-    content = remove_capture_metadata(data["raw_data"])
-    canonical_raw = json.dumps(content, sort_keys=True, ensure_ascii=False, separators=(",", ":"))
-
-    data["raw_hash"] = hashlib.sha256(canonical_raw.encode("utf-8")).hexdigest()
+    data["raw_hash"] = hash_raw_data(data["raw_data"])
     data["last_seen_at"] = (seen_at or datetime.now(timezone.utc)).isoformat()
     data["active"] = True
 
     return data
+
+def hash_raw_data(raw_data: dict) -> str:
+    content = remove_capture_metadata(raw_data)
+    canonical = json.dumps(content, sort_keys=True, ensure_ascii=False, separators=(",", ":"))
+    return hashlib.sha256(canonical.encode("utf-8")).hexdigest()

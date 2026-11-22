@@ -11,6 +11,9 @@ from processing.hybrid import HybridPromotion, process_promotion
 from typing import Literal
 from persistence.hybrid_repository import HybridPromotionRepository
 from persistence.supabase_client import SUPABASE_URL, get_headers
+from copy import deepcopy
+
+from persistence.hybrid_serializer import hash_raw_data
 
 
 BACKEND_DIR = Path(__file__).resolve().parents[1]
@@ -84,15 +87,67 @@ class SyncRunner:
 
         return normalized
 
-    def process_promotions(self, raw_promotions: list[dict]) -> list[HybridPromotion]:
+    def process_promotions(self, raw_promotions: list[dict], cache: dict[str, dict] | None = None) -> list[HybridPromotion]:
         self.validate_raw_promotions(raw_promotions)
 
         normalizer = self.normalizer_class() if self.normalizer_class else None
 
-        processed = [
-            process_promotion(raw, self.source, normalizer, self.normalize_many)
-            for raw in raw_promotions
-        ]
+        processed = []
+        reused = 0
+
+        for raw in raw_promotions:
+            source_id = str(raw["source_id"])
+            previous = cache.get(source_id) if cache is not None else None
+
+            variants = previous.get("normalized_data") if isinstance(previous, dict) else None
+
+            can_reuse = (
+                isinstance(previous, dict)
+                and previous.get("normalization_status") == "normalized"
+                and previous.get("raw_hash") == hash_raw_data(raw)
+                and isinstance(variants, list)
+                and len(variants) > 0
+            )
+
+            if can_reuse:
+                variant_ids = []
+
+                for variant in variants:
+                    if (
+                        not isinstance(variant, dict)
+                        or variant.get("source") != self.source
+                        or not isinstance(variant.get("source_id"), str)
+                        or not variant["source_id"].strip()
+                    ):
+                        can_reuse = False
+                        break
+
+                    variant_ids.append(variant["source_id"])
+
+                if len(variant_ids) != len(set(variant_ids)):
+                    can_reuse = False
+
+            if can_reuse:
+                normalized_data = deepcopy(variants)
+
+                if "scraped_at" in raw:
+                    for variant in normalized_data:
+                        variant["scraped_at"] = raw["scraped_at"]
+
+                promotion = HybridPromotion(
+                    source=self.source,
+                    source_id=source_id,
+                    raw_data=raw,
+                    normalized_data=normalized_data,
+                    normalization_status="normalized",
+                )
+
+                reused += 1
+
+            else:
+                promotion = process_promotion(raw, self.source, normalizer, self.normalize_many)
+
+            processed.append(promotion)
 
         variant_owners = {}
 
@@ -106,6 +161,9 @@ class SyncRunner:
                     promotion.normalization_status = "failed"
                     promotion.normalization_error = f"ID normalizado duplicado: {variant_id}"
                     promotion.normalized_data = []
+
+        if cache is not None:
+            print(f"Normalizaciones reutilizadas: {reused}/{len(processed)}")
 
         return processed
 

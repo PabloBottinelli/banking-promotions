@@ -120,3 +120,31 @@ def test_upsert_rejects_invalid_payload_limit():
 
     with pytest.raises(ValueError, match="max_payload_bytes"):
         repository.upsert_many([], max_payload_bytes=0)
+
+def test_get_cached_normalizations_paginates():
+    rows = [
+        {"source_id": str(i), "raw_hash": "hash", "normalization_status": "normalized", "normalized_data": [{"source_id": str(i)}]}
+        for i in range(3)
+    ]
+
+    requests = []
+
+    def handler(request):
+        requests.append(request)
+
+        assert request.method == "GET"
+        assert request.url.params["source"] == "eq.bbva"
+        assert request.url.params["normalization_status"] == "eq.normalized"
+
+        offset = int(request.url.params["offset"])
+        limit = int(request.url.params["limit"])
+
+        return httpx.Response(200, json=rows[offset:offset + limit])
+
+    with httpx.Client(transport=httpx.MockTransport(handler)) as client:
+        repository = HybridPromotionRepository("https://supabase.invalid", {"apikey": "test"}, client)
+        cache = repository.get_cached_normalizations("bbva", page_size=2)
+
+    assert len(cache) == 3
+    assert set(cache) == {"0", "1", "2"}
+    assert len(requests) == 2

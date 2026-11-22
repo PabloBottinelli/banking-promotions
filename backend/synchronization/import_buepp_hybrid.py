@@ -7,7 +7,7 @@ from normalization.sources.buepp import BueppNormalizer
 from synchronization.runner import SyncRunner
 
 
-def prepare_import(snapshot_path: Path, coverage_path: Path):
+def prepare_import(snapshot_path: Path, coverage_path: Path, cache: dict[str, dict] | None = None):
     raw_bytes = snapshot_path.read_bytes()
     raw = json.loads(raw_bytes)
     coverage = json.loads(coverage_path.read_text(encoding="utf-8"))
@@ -37,7 +37,7 @@ def prepare_import(snapshot_path: Path, coverage_path: Path):
         raise ValueError("El informe de cobertura no corresponde al snapshot")
 
     runner = SyncRunner("buepp", object, BueppNormalizer, normalize_many=True, storage_mode="hybrid")
-    promotions = runner.process_promotions(raw)
+    promotions = runner.process_promotions(raw, cache=cache)
 
     return promotions, hashlib.sha256(raw_bytes).hexdigest()
 

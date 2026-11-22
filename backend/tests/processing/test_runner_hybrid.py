@@ -40,3 +40,77 @@ def test_duplicate_raw_ids():
 
     with pytest.raises(RuntimeError):
         runner.process_promotions(raw)
+
+from persistence.hybrid_serializer import hash_raw_data
+
+
+def test_reuses_normalization_when_raw_hash_matches():
+    class CountingNormalizer:
+        calls = 0
+
+        def normalize(self, raw):
+            self.calls += 1
+            raise ValueError("Se ejecutó el normalizador")
+
+    normalizer = CountingNormalizer()
+    runner = SyncRunner("bbva", object, lambda: normalizer, storage_mode="hybrid")
+
+    previous_raw = {
+        "source": "bbva",
+        "source_id": "123",
+        "scraped_at": "2026-11-20T10:00:00",
+        "detail": {"discount": 30}
+    }
+
+    current_raw = {
+        **previous_raw,
+        "scraped_at": "2026-11-22T10:00:00"
+    }
+
+    cache = {
+        "123": {
+            "raw_hash": hash_raw_data(previous_raw),
+            "normalization_status": "normalized",
+            "normalized_data": [{
+                "source": "bbva",
+                "source_id": "123",
+                "title": "Promoción anterior",
+                "scraped_at": previous_raw["scraped_at"]
+            }]
+        }
+    }
+
+    result = runner.process_promotions([current_raw], cache=cache)
+
+    assert normalizer.calls == 0
+    assert result[0].normalization_status == "normalized"
+    assert result[0].normalized_data[0]["title"] == "Promoción anterior"
+    assert result[0].normalized_data[0]["scraped_at"] == current_raw["scraped_at"]
+    assert result[0].raw_data == current_raw
+
+def test_reprocesses_when_commercial_content_changes():
+    class CountingNormalizer:
+        calls = 0
+
+        def normalize(self, raw):
+            self.calls += 1
+            raise ValueError("Normalización ejecutada")
+
+    normalizer = CountingNormalizer()
+    runner = SyncRunner("bbva", object, lambda: normalizer, storage_mode="hybrid")
+
+    previous_raw = {"source": "bbva", "source_id": "123", "detail": {"discount": 30}}
+    current_raw = {"source": "bbva", "source_id": "123", "detail": {"discount": 40}}
+
+    cache = {
+        "123": {
+            "raw_hash": hash_raw_data(previous_raw),
+            "normalization_status": "normalized",
+            "normalized_data": [{"source": "bbva", "source_id": "123"}]
+        }
+    }
+
+    result = runner.process_promotions([current_raw], cache=cache)
+
+    assert normalizer.calls == 1
+    assert result[0].normalization_status == "failed"

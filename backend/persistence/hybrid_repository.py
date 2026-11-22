@@ -68,3 +68,50 @@ class HybridPromotionRepository:
             print(f"Lote {index}/{len(batches)}: {count} promociones, {len(payload)} bytes")
 
         return total
+
+    def get_cached_normalizations(self, source: str, page_size: int = 200) -> dict[str, dict]:
+        if not 1 <= page_size <= 1000:
+            raise ValueError("page_size debe estar entre 1 y 1000")
+
+        get = self.client.get if self.client else httpx.get
+        cache = {}
+        offset = 0
+
+        while True:
+            response = get(
+                f"{self.base_url}/rest/v1/promotions_hybrid",
+                headers=self.headers,
+                params={
+                    "select": "source_id,raw_hash,normalization_status,normalized_data",
+                    "source": f"eq.{source}",
+                    "normalization_status": "eq.normalized",
+                    "order": "source_id.asc",
+                    "limit": page_size,
+                    "offset": offset,
+                },
+                timeout=60.0,
+            )
+
+            response.raise_for_status()
+            rows = response.json()
+
+            if not isinstance(rows, list) or len(rows) > page_size:
+                raise ValueError("Respuesta inválida de Supabase")
+
+            for row in rows:
+                if not isinstance(row, dict) or not isinstance(row.get("source_id"), str):
+                    raise ValueError("Registro de caché inválido")
+
+                source_id = row["source_id"]
+
+                if source_id in cache:
+                    raise ValueError(f"ID duplicado en caché: {source_id}")
+
+                cache[source_id] = row
+
+            if len(rows) < page_size:
+                break
+
+            offset += len(rows)
+
+        return cache

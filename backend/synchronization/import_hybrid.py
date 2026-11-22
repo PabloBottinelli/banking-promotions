@@ -8,7 +8,7 @@ from synchronization.import_buepp_hybrid import prepare_import as prepare_buepp_
 from synchronization.runner import SyncRunner
 
 
-def prepare_bbva_import(snapshot_path: Path, coverage_path: Path):
+def prepare_bbva_import(snapshot_path: Path, coverage_path: Path, cache: dict[str, dict] | None = None):
     raw_bytes = snapshot_path.read_bytes()
     raw = json.loads(raw_bytes)
 
@@ -31,7 +31,7 @@ def prepare_bbva_import(snapshot_path: Path, coverage_path: Path):
             raise ValueError(f"IDs inconsistentes: {source_id}")
 
     runner = SyncRunner("bbva", object, BBVANormalizer, storage_mode="hybrid")
-    promotions = runner.process_promotions(raw)
+    promotions = runner.process_promotions(raw, cache=cache)
 
     snapshot_hash = hashlib.sha256(raw_bytes).hexdigest()
     verified = False
@@ -71,13 +71,13 @@ def prepare_bbva_import(snapshot_path: Path, coverage_path: Path):
     return promotions, snapshot_hash, verified
 
 
-def prepare_import(source: str, snapshot_path: Path, coverage_path: Path):
+def prepare_import(source: str, snapshot_path: Path, coverage_path: Path, cache: dict[str, dict] | None = None):
     if source == "buepp":
-        promotions, snapshot_hash = prepare_buepp_import(snapshot_path, coverage_path)
+        promotions, snapshot_hash = prepare_buepp_import(snapshot_path, coverage_path, cache=cache)
         return promotions, snapshot_hash, True
 
     if source == "bbva":
-        return prepare_bbva_import(snapshot_path, coverage_path)
+        return prepare_bbva_import(snapshot_path, coverage_path, cache=cache)
 
     raise ValueError(f"Fuente no soportada: {source}")
 
@@ -90,6 +90,7 @@ def main():
     parser.add_argument("--write", action="store_true")
     parser.add_argument("--expect-count", type=int)
     parser.add_argument("--expect-sha256")
+    parser.add_argument("--force-reprocess", action="store_true")
     args = parser.parse_args()
 
     if args.write and (args.expect_count is None or args.expect_sha256 is None):
@@ -98,7 +99,26 @@ def main():
     snapshot_path = Path(args.file or f"data/{args.source}_promotions.json")
     coverage_path = Path(args.coverage or f"data/{args.source}_coverage.json")
 
-    promotions, snapshot_hash, verified = prepare_import(args.source, snapshot_path, coverage_path)
+    repository = None
+    cache = None
+
+    if args.write:
+        current_bytes = snapshot_path.read_bytes()
+        current_hash = hashlib.sha256(current_bytes).hexdigest()
+
+        if current_hash != args.expect_sha256.lower():
+            raise ValueError("El archivo cambió desde la revisión")
+
+        current_raw = json.loads(current_bytes)
+
+        if not isinstance(current_raw, list) or len(current_raw) != args.expect_count:
+            raise ValueError("La cantidad de promociones cambió")
+
+        if not args.force_reprocess:
+            cache = repository.get_cached_normalizations(args.source)
+            print(f"Normalizaciones existentes recuperadas: {len(cache)}")
+
+    promotions, snapshot_hash, verified = prepare_import(args.source, snapshot_path, coverage_path, cache=cache)
 
     normalized = sum(p.normalization_status == "normalized" for p in promotions)
     failed = sum(p.normalization_status == "failed" for p in promotions)
