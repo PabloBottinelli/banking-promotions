@@ -7,6 +7,7 @@ from normalization.sources.bbva import BBVANormalizer
 from synchronization.import_buepp_hybrid import prepare_import as prepare_buepp_import
 from synchronization.runner import SyncRunner
 from persistence.hybrid_serializer import hash_raw_data
+from datetime import datetime, timezone
 
 def prepare_bbva_import(snapshot_path: Path, coverage_path: Path, cache: dict[str, dict] | None = None):
     raw_bytes = snapshot_path.read_bytes()
@@ -238,12 +239,63 @@ def main():
     if args.expect_sha256.lower() != snapshot_hash:
         raise ValueError("El archivo cambió desde la revisión")
 
-    total = repository.upsert_many(promotions, batch_size=50)
+    sync_at = datetime.now(timezone.utc)
 
-    if total != len(promotions):
-        raise RuntimeError(f"Carga incompleta: {total}/{len(promotions)}")
+    if args.force_reprocess:
+        total = repository.upsert_many(promotions, batch_size=50, seen_at=sync_at)
 
-    print(f"Carga finalizada: {total} promociones enviadas")
+        if total != len(promotions):
+            raise RuntimeError(f"Carga incompleta: {total}/{len(promotions)}")
+
+        print(f"Reprocesamiento completo: {total} promociones enviadas")
+        return
+
+    if existing is None:
+        raise RuntimeError("No se recuperaron las promociones existentes")
+
+    plan = build_incremental_plan(promotions, existing)
+
+    upsert_ids = set()
+
+    for category in ("new", "modified", "retry", "reactivate"):
+        upsert_ids.update(plan[category])
+
+    unchanged_ids = set(plan["unchanged"])
+
+    to_upsert = [
+        promotion
+        for promotion in promotions
+        if promotion.source_id in upsert_ids
+    ]
+
+    to_touch = [
+        (promotion.source_id, hash_raw_data(promotion.raw_data))
+        for promotion in promotions
+        if promotion.source_id in unchanged_ids
+    ]
+
+    if len(to_upsert) + len(to_touch) != len(promotions):
+        raise RuntimeError("El plan incremental no cubre todas las promociones")
+
+    print("\nEjecutando sincronización incremental...")
+    print(f"Registros completos a enviar: {len(to_upsert)}")
+    print(f"Registros a actualizar parcialmente: {len(to_touch)}")
+
+    upserted = repository.upsert_many(to_upsert, batch_size=50, seen_at=sync_at)
+
+    if upserted != len(to_upsert):
+        raise RuntimeError(f"Upsert incompleto: {upserted}/{len(to_upsert)}")
+
+    touched = repository.touch_unchanged(args.source, to_touch, batch_size=200, seen_at=sync_at)
+
+    if touched != len(to_touch):
+        raise RuntimeError(f"Actualización incompleta: {touched}/{len(to_touch)}")
+
+    print("\nSincronización finalizada:")
+    print(f"  Insertadas o reemplazadas: {upserted}")
+    print(f"  Actualizadas parcialmente: {touched}")
+    print(f"  Ausentes, sin modificar: {len(plan['missing'])}")
+    print(f"  Total procesado: {upserted + touched}/{len(promotions)}")
 
 
 if __name__ == "__main__":

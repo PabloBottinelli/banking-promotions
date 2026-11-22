@@ -114,3 +114,52 @@ class HybridPromotionRepository:
             offset += len(rows)
 
         return cache
+
+    def touch_unchanged(self, source: str, items: list[tuple[str, str]], batch_size: int = 200, seen_at: datetime | None = None) -> int:
+        if batch_size < 1:
+            raise ValueError("batch_size debe ser positivo")
+
+        if not items:
+            return 0
+
+        source_ids = [source_id for source_id, _ in items]
+
+        if len(source_ids) != len(set(source_ids)):
+            raise ValueError("IDs duplicados en actualización")
+
+        seen_at = seen_at or datetime.now(timezone.utc)
+
+        post = self.client.post if self.client else httpx.post
+        total = 0
+
+        for start in range(0, len(items), batch_size):
+            batch = items[start:start + batch_size]
+
+            payload = {
+                "p_source": source,
+                "p_seen_at": seen_at.isoformat(),
+                "p_items": [
+                    {"source_id": source_id, "raw_hash": raw_hash}
+                    for source_id, raw_hash in batch
+                ],
+            }
+
+            response = post(
+                f"{self.base_url}/rest/v1/rpc/touch_hybrid_last_seen",
+                headers=self.headers,
+                json=payload,
+                timeout=60.0,
+            )
+
+            response.raise_for_status()
+
+            updated = response.json()
+
+            if type(updated) is not int or updated != len(batch):
+                raise RuntimeError(f"Actualización incompleta: {updated}/{len(batch)}")
+
+            total += updated
+
+            print(f"Actualizadas sin reenviar JSON: {total}/{len(items)}")
+
+        return total

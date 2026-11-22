@@ -121,11 +121,15 @@ def test_import_uses_cache_only_when_enabled(tmp_path, monkeypatch, force_reproc
             assert source == "buepp"
             return cached
 
-        def upsert_many(self, promotions, batch_size):
+        def upsert_many(self, promotions, batch_size, seen_at=None):
             calls.append("write")
             assert batch_size == 50
+            assert seen_at is not None
             assert len(promotions) == 1
             return len(promotions)
+
+        def touch_unchanged(self, source, items, batch_size=200, seen_at=None):
+            return len(items)
 
     def fake_prepare(source, snapshot_path, coverage_path, cache=None):
         received_caches.append(cache)
@@ -227,3 +231,69 @@ def test_incremental_plan_force_reprocess():
 
     assert plan["reprocess"] == ["123"]
     assert plan["unchanged"] == []
+
+def test_incremental_write_only_upserts_changed_promotions(tmp_path, monkeypatch):
+    snapshot = tmp_path / "promotions.json"
+    snapshot.write_text('[{"source":"bbva","source_id":"same"},{"source":"bbva","source_id":"changed"}]', encoding="utf-8")
+
+    digest = hashlib.sha256(snapshot.read_bytes()).hexdigest()
+
+    raw_same = {"source": "bbva", "source_id": "same", "discount": 20}
+    raw_changed = {"source": "bbva", "source_id": "changed", "discount": 40}
+
+    promotions = [
+        HybridPromotion(source="bbva", source_id="same", raw_data=raw_same, normalized_data=[{"source": "bbva", "source_id": "same"}], normalization_status="normalized"),
+        HybridPromotion(source="bbva", source_id="changed", raw_data=raw_changed, normalized_data=[{"source": "bbva", "source_id": "changed"}], normalization_status="normalized"),
+    ]
+
+    existing = {
+        "same": {
+            "raw_hash": hash_raw_data(raw_same),
+            "normalization_status": "normalized",
+            "normalized_data": [{"source": "bbva", "source_id": "same"}],
+            "active": True,
+        },
+        "changed": {
+            "raw_hash": hash_raw_data({"source": "bbva", "source_id": "changed", "discount": 30}),
+            "normalization_status": "normalized",
+            "normalized_data": [{"source": "bbva", "source_id": "changed"}],
+            "active": True,
+        },
+    }
+
+    calls = []
+
+    class FakeRepository:
+        def __init__(self, base_url, headers):
+            pass
+
+        def get_existing_promotions(self, source):
+            return existing
+
+        def upsert_many(self, records, batch_size, seen_at=None):
+            calls.append(("upsert", [p.source_id for p in records]))
+            return len(records)
+
+        def touch_unchanged(self, source, items, batch_size=200, seen_at=None):
+            calls.append(("touch", items))
+            return len(items)
+
+    def fake_prepare(source, snapshot_path, coverage_path, cache=None):
+        return promotions, digest, True
+
+    monkeypatch.setattr(hybrid_repository, "HybridPromotionRepository", FakeRepository)
+    monkeypatch.setattr(import_hybrid, "prepare_import", fake_prepare)
+
+    monkeypatch.setattr(sys, "argv", [
+        "import_hybrid",
+        "--source", "bbva",
+        "--file", str(snapshot),
+        "--write",
+        "--expect-count", "2",
+        "--expect-sha256", digest,
+    ])
+
+    import_hybrid.main()
+
+    assert calls[0] == ("upsert", ["changed"])
+    assert calls[1] == ("touch", [("same", hash_raw_data(raw_same))])

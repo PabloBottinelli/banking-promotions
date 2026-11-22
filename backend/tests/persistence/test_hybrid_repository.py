@@ -148,3 +148,49 @@ def test_get_existing_promotions_paginates():
     assert len(cache) == 3
     assert set(cache) == {"0", "1", "2"}
     assert len(requests) == 2
+
+def test_touch_unchanged_updates_in_batches():
+    requests = []
+
+    def handler(request):
+        requests.append(request)
+
+        assert request.method == "POST"
+        assert request.url.path.endswith("/rpc/touch_hybrid_last_seen")
+
+        payload = json.loads(request.content)
+
+        assert payload["p_source"] == "bbva"
+        assert payload["p_seen_at"]
+
+        return httpx.Response(200, json=len(payload["p_items"]))
+
+    items = [
+        ("123", "a" * 64),
+        ("456", "b" * 64),
+        ("789", "c" * 64),
+    ]
+
+    with httpx.Client(transport=httpx.MockTransport(handler)) as client:
+        repository = HybridPromotionRepository("https://supabase.invalid", {"apikey": "test"}, client)
+        total = repository.touch_unchanged("bbva", items, batch_size=2)
+
+    assert total == 3
+    assert len(requests) == 2
+
+    first = json.loads(requests[0].content)
+    second = json.loads(requests[1].content)
+
+    assert len(first["p_items"]) == 2
+    assert len(second["p_items"]) == 1
+    assert first["p_items"][0]["raw_hash"] == "a" * 64
+
+def test_touch_unchanged_rejects_incomplete_update():
+    def handler(request):
+        return httpx.Response(200, json=0)
+
+    with httpx.Client(transport=httpx.MockTransport(handler)) as client:
+        repository = HybridPromotionRepository("https://supabase.invalid", {"apikey": "test"}, client)
+
+        with pytest.raises(RuntimeError, match="incompleta"):
+            repository.touch_unchanged("bbva", [("123", "a" * 64)])
