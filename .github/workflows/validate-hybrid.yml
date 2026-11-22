@@ -1,0 +1,54 @@
+name: Validate hybrid promotions
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: promotions-sync
+  cancel-in-progress: false
+
+jobs:
+  validate:
+    name: Validate ${{ matrix.source }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+
+    strategy:
+      fail-fast: false
+      matrix:
+        source:
+          - bbva
+          - buepp
+
+    defaults:
+      run:
+        working-directory: backend
+
+    env:
+      # Credenciales ficticias para satisfacer imports del backend.
+      # La validación no realiza consultas ni escrituras a Supabase.
+      SUPABASE_URL: https://example.invalid
+      SUPABASE_SECRET_KEY: validation-only
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v7
+
+      - name: Set up Python
+        uses: actions/setup-python@v7
+        with:
+          python-version: "3.14"
+          cache: pip
+          cache-dependency-path: backend/requirements.txt
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Run tests
+        run: python -m pytest -q tests
+
+      - name: Validate hybrid ${{ matrix.source }}
+        run: python -m synchronization.validate_hybrid --source "${{ matrix.source }}"

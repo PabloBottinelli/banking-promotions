@@ -273,7 +273,18 @@ class SyncRunner:
             print(f"Promociones normalizadas: {len(promotions)}")
 
         if validate_only:
-            print("\n[VALIDATE ONLY] Validación completa; no se guardó raw ni se accedió a Supabase.")
+            if self.storage_mode == "hybrid":
+                if failed_count > 0 or pending_count > 0:
+                    raise RuntimeError(
+                        "Normalizaciones inválidas: "
+                        f"{failed_count} fallidas, "
+                        f"{pending_count} pendientes"
+                    )
+
+            print(
+                "\n[VALIDATE ONLY] Validación completa; "
+                "no se guardó raw ni se accedió a Supabase."
+            )
             return
 
         # Guardar snapshot validado

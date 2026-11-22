@@ -380,3 +380,40 @@ def test_hybrid_bbva_requires_verified_pagination(monkeypatch):
 
     assert not scraper.saved
     assert legacy_repo.called == 0
+
+def test_hybrid_validation_fails_on_normalization_errors(monkeypatch):
+    raw = [
+        {
+            "source": "buepp",
+            "source_id": "fallida",
+            "kind": "fail",
+        }
+    ]
+
+    runner, scraper, legacy_repo = setup(
+        monkeypatch,
+        raw,
+        coverage=verified_buepp_coverage(),
+    )
+
+    runner.storage_mode = "hybrid"
+
+    def forbidden_repository(*args, **kwargs):
+        raise AssertionError(
+            "La validación no debe acceder a Supabase"
+        )
+
+    monkeypatch.setattr(
+        runner_module,
+        "HybridPromotionRepository",
+        forbidden_repository,
+    )
+
+    with pytest.raises(
+        RuntimeError,
+        match="Normalizaciones inválidas",
+    ):
+        runner.run(validate_only=True)
+
+    assert not scraper.saved
+    assert legacy_repo.called == 0
