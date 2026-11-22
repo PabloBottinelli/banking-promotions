@@ -15,6 +15,14 @@ def make_promotion(source_id="x", source="buepp"):
         benefits=[Benefit(type="other", description="test")],
     )
 
+def verified_buepp_coverage():
+    return {
+        "catalog_complete": True,
+        "failed_ids": [],
+        "pagination": {
+            "terminal_page_empty": True,
+        },
+    }
 
 class Repository:
     def __init__(self, fail_count=False):
@@ -163,7 +171,7 @@ def test_validate_from_file_does_not_write_raw_or_supabase(monkeypatch):
 
 def test_hybrid_run_preserves_failed_normalization(monkeypatch):
     raw = [{"source_id": "correcta"}, {"source_id": "fallida", "kind": "fail"}]
-    runner, scraper, legacy_repository = setup(monkeypatch, raw)
+    runner, scraper, legacy_repository = setup(monkeypatch, raw, coverage=verified_buepp_coverage())
     runner.storage_mode = "hybrid"
 
     received = []
@@ -213,7 +221,7 @@ def test_hybrid_incomplete_scrape_never_writes(monkeypatch):
     assert legacy_repository.called == 0
 
 def test_hybrid_validate_only_never_writes(monkeypatch):
-    runner, scraper, legacy_repository = setup(monkeypatch, [{"source_id": "123"}])
+    runner, scraper, legacy_repository = setup(monkeypatch, [{"source_id": "123"}], coverage=verified_buepp_coverage())
     runner.storage_mode = "hybrid"
 
     def forbidden_repository(*args, **kwargs):
@@ -267,7 +275,7 @@ def test_hybrid_runner_uses_incremental_sync(monkeypatch):
             calls.append(("touch", [source_id for source_id, _ in items]))
             return len(items)
 
-    runner, scraper, legacy_repo = setup(monkeypatch, raw)
+    runner, scraper, legacy_repo = setup(monkeypatch, raw, coverage=verified_buepp_coverage())
 
     runner.storage_mode = "hybrid"
 
@@ -294,6 +302,81 @@ def test_hybrid_runner_rejects_unverified_file_import(monkeypatch):
 
     with pytest.raises(RuntimeError, match="import_hybrid"):
         runner.run(from_file=True)
+
+    assert not scraper.saved
+    assert legacy_repo.called == 0
+
+@pytest.mark.parametrize(
+    "coverage",
+    [
+        {},
+        {
+            "catalog_complete": False,
+            "failed_ids": [],
+            "pagination": {"terminal_page_empty": True},
+        },
+        {
+            "catalog_complete": True,
+            "failed_ids": ["123"],
+            "pagination": {"terminal_page_empty": True},
+        },
+        {
+            "catalog_complete": True,
+            "failed_ids": [],
+            "pagination": {"terminal_page_empty": False},
+        },
+    ],
+)
+def test_hybrid_rejects_invalid_coverage_before_supabase(monkeypatch, coverage):
+    runner, scraper, legacy_repo = setup(
+        monkeypatch,
+        [{"source_id": "123"}],
+        coverage=coverage,
+    )
+
+    runner.storage_mode = "hybrid"
+
+    def forbidden_repository(*args, **kwargs):
+        raise AssertionError("No debería acceder a Supabase")
+
+    monkeypatch.setattr(
+        runner_module,
+        "HybridPromotionRepository",
+        forbidden_repository,
+    )
+
+    with pytest.raises(RuntimeError, match="Captura"):
+        runner.run()
+
+    assert not scraper.saved
+    assert legacy_repo.called == 0
+
+def test_hybrid_bbva_requires_verified_pagination(monkeypatch):
+    runner, scraper, legacy_repo = setup(
+        monkeypatch,
+        [{"source_id": "123"}],
+        coverage={
+            "catalog_complete": True,
+            "failed_ids": [],
+            "terminal_verified": False,
+            "limited": False,
+        },
+    )
+
+    runner.source = "bbva"
+    runner.storage_mode = "hybrid"
+
+    def forbidden_repository(*args, **kwargs):
+        raise AssertionError("No debería acceder a Supabase")
+
+    monkeypatch.setattr(
+        runner_module,
+        "HybridPromotionRepository",
+        forbidden_repository,
+    )
+
+    with pytest.raises(RuntimeError, match="BBVA"):
+        runner.run()
 
     assert not scraper.saved
     assert legacy_repo.called == 0

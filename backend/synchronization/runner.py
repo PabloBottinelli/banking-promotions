@@ -205,6 +205,40 @@ class SyncRunner:
                 "se bloquea también la sincronización a Supabase"
             )
 
+        if self.storage_mode == "hybrid" and scraper is not None:
+            if (
+                coverage.get("catalog_complete") is not True
+                or coverage.get("failed_ids") != []
+            ):
+                raise RuntimeError(
+                    "Captura híbrida sin cobertura completa y libre de errores"
+                )
+
+            if self.source == "bbva":
+                if (
+                    coverage.get("terminal_verified") is not True
+                    or coverage.get("limited") is not False
+                ):
+                    raise RuntimeError(
+                        "Captura BBVA sin cierre de paginación verificado"
+                    )
+
+            elif self.source == "buepp":
+                pagination = coverage.get("pagination")
+
+                if (
+                    not isinstance(pagination, dict)
+                    or pagination.get("terminal_page_empty") is not True
+                ):
+                    raise RuntimeError(
+                        "Captura Buepp sin cierre de paginación verificado"
+                    )
+
+            else:
+                raise RuntimeError(
+                    f"Fuente híbrida no autorizada: {self.source}"
+                )
+
         # Procesamiento
         if self.storage_mode == "hybrid":
             print("\nProcesando promociones híbridas...")
