@@ -69,7 +69,7 @@ class HybridPromotionRepository:
 
         return total
 
-    def get_cached_normalizations(self, source: str, page_size: int = 200) -> dict[str, dict]:
+    def get_existing_promotions(self, source: str, page_size: int = 200) -> dict[str, dict]:
         if not 1 <= page_size <= 1000:
             raise ValueError("page_size debe estar entre 1 y 1000")
 
@@ -82,9 +82,8 @@ class HybridPromotionRepository:
                 f"{self.base_url}/rest/v1/promotions_hybrid",
                 headers=self.headers,
                 params={
-                    "select": "source_id,raw_hash,normalization_status,normalized_data",
+                    "select": "source_id,raw_hash,normalization_status,normalized_data,active",
                     "source": f"eq.{source}",
-                    "normalization_status": "eq.normalized",
                     "order": "source_id.asc",
                     "limit": page_size,
                     "offset": offset,

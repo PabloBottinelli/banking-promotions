@@ -9,6 +9,9 @@ import sys
 from processing.hybrid import HybridPromotion
 from synchronization import import_hybrid
 from persistence import hybrid_repository
+from persistence.hybrid_serializer import hash_raw_data
+from processing.hybrid import HybridPromotion
+from synchronization.import_hybrid import build_incremental_plan
 
 def make_bbva_snapshot(tmp_path):
     snapshot = tmp_path / "bbva_promotions.json"
@@ -113,7 +116,7 @@ def test_import_uses_cache_only_when_enabled(tmp_path, monkeypatch, force_reproc
         def __init__(self, base_url, headers):
             calls.append("init")
 
-        def get_cached_normalizations(self, source):
+        def get_existing_promotions(self, source):
             calls.append("read")
             assert source == "buepp"
             return cached
@@ -161,3 +164,66 @@ def test_import_uses_cache_only_when_enabled(tmp_path, monkeypatch, force_reproc
     else:
         assert calls == ["init", "read", "write"]
         assert received_caches == [cached]
+
+def test_incremental_plan_classifies_changes():
+    def promotion(source_id, discount):
+        return HybridPromotion(source="bbva", source_id=source_id, raw_data={"source_id": source_id, "discount": discount}, normalized_data=[{"source": "bbva", "source_id": source_id}], normalization_status="normalized")
+
+    promotions = [
+        promotion("new", 10),
+        promotion("same", 20),
+        promotion("changed", 40),
+        promotion("retry", 30),
+    ]
+
+    existing = {
+        "same": {
+            "raw_hash": hash_raw_data(promotions[1].raw_data),
+            "normalization_status": "normalized",
+            "normalized_data": [{"source": "bbva", "source_id": "same"}],
+            "active": True,
+        },
+        "changed": {
+            "raw_hash": hash_raw_data({"source_id": "changed", "discount": 20}),
+            "normalization_status": "normalized",
+            "normalized_data": [{"source": "bbva", "source_id": "changed"}],
+            "active": True,
+        },
+        "retry": {
+            "raw_hash": hash_raw_data(promotions[3].raw_data),
+            "normalization_status": "failed",
+            "normalized_data": [],
+            "active": True,
+        },
+        "missing": {
+            "raw_hash": "previous",
+            "normalization_status": "normalized",
+            "normalized_data": [],
+            "active": True,
+        },
+    }
+
+    plan = build_incremental_plan(promotions, existing)
+
+    assert plan["new"] == ["new"]
+    assert plan["unchanged"] == ["same"]
+    assert plan["modified"] == ["changed"]
+    assert plan["retry"] == ["retry"]
+    assert plan["missing"] == ["missing"]
+
+def test_incremental_plan_force_reprocess():
+    promotion = HybridPromotion(source="bbva", source_id="123", raw_data={"discount": 30}, normalization_status="normalized")
+
+    existing = {
+        "123": {
+            "raw_hash": hash_raw_data(promotion.raw_data),
+            "normalization_status": "normalized",
+            "normalized_data": [{"source": "bbva", "source_id": "123"}],
+            "active": True,
+        }
+    }
+
+    plan = build_incremental_plan([promotion], existing, force_reprocess=True)
+
+    assert plan["reprocess"] == ["123"]
+    assert plan["unchanged"] == []
