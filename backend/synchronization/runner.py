@@ -12,6 +12,7 @@ from typing import Literal
 from persistence.hybrid_repository import HybridPromotionRepository
 from persistence.supabase_client import SUPABASE_URL, get_headers
 from copy import deepcopy
+from synchronization.incremental import execute_incremental
 
 from persistence.hybrid_serializer import hash_raw_data
 
@@ -168,6 +169,9 @@ class SyncRunner:
         return processed
 
     def run(self, from_file: bool = False, validate_only: bool = False) -> None:
+        if self.storage_mode == "hybrid" and from_file and not validate_only:
+            raise RuntimeError("Para importar snapshots híbridos utilizá synchronization.import_hybrid")
+
         scraper = None
         result = None
 
@@ -189,9 +193,32 @@ class SyncRunner:
         self.validate_raw_promotions(raw_promotions)
         print(f"\nPromociones crudas: {len(raw_promotions)}")
 
+        # Verificar cobertura antes de consultar Supabase
+        coverage = getattr(scraper, "coverage", {}) if scraper is not None else {}
+
+        if not isinstance(coverage, dict):
+            coverage = {}
+
+        if coverage.get("snapshot_replace_allowed") is False or coverage.get("requires_review") is True:
+            raise RuntimeError(
+                "La fuente no autoriza reemplazar su snapshot; "
+                "se bloquea también la sincronización a Supabase"
+            )
+
+        # Procesamiento
         if self.storage_mode == "hybrid":
             print("\nProcesando promociones híbridas...")
-            promotions = self.process_promotions(raw_promotions)
+
+            hybrid_repository = None
+            existing = None
+
+            if not validate_only:
+                hybrid_repository = HybridPromotionRepository(SUPABASE_URL, get_headers())
+                existing = hybrid_repository.get_existing_promotions(self.source)
+
+                print(f"Promociones existentes: {len(existing)}")
+
+            promotions = self.process_promotions(raw_promotions, cache=existing)
 
             normalized_count = sum(p.normalization_status == "normalized" for p in promotions)
             failed_count = sum(p.normalization_status == "failed" for p in promotions)
@@ -211,19 +238,11 @@ class SyncRunner:
 
             print(f"Promociones normalizadas: {len(promotions)}")
 
-        coverage = getattr(scraper, "coverage", {}) if scraper is not None else {}
-        if not isinstance(coverage, dict):
-            coverage = {}
-        if coverage.get("snapshot_replace_allowed") is False or coverage.get("requires_review") is True:
-            raise RuntimeError(
-                "La fuente no autoriza reemplazar su snapshot; "
-                "se bloquea también la sincronización a Supabase"
-            )
-
         if validate_only:
             print("\n[VALIDATE ONLY] Validación completa; no se guardó raw ni se accedió a Supabase.")
             return
 
+        # Guardar snapshot validado
         if scraper is not None:
             scraper.save_raw_promotions(raw_promotions)
 
@@ -231,18 +250,27 @@ class SyncRunner:
 
         sync_started_at = datetime.now(timezone.utc)
 
+        # Persistencia
         if self.storage_mode == "hybrid":
-            repository = HybridPromotionRepository(SUPABASE_URL, get_headers())
-            total = repository.upsert_many(promotions, batch_size=50, seen_at=sync_started_at)
+            total, plan = execute_incremental(
+                hybrid_repository,
+                self.source,
+                promotions,
+                existing,
+                seen_at=sync_started_at,
+            )
+
         else:
             repository = SupabasePromotionRepository()
             total = repository.upsert_many(promotions, batch_size=200, seen_at=sync_started_at)
+
         if total != len(promotions):
             raise RuntimeError(
-                f"Upsert incompleto: {total} de {len(promotions)} registros. "
+                f"Sincronización incompleta: {total} de {len(promotions)} registros. "
                 "No se desactiva ninguno."
             )
 
+        # Desactivación
         can_deactivate = (
             not from_file
             and result is not None
@@ -250,18 +278,22 @@ class SyncRunner:
             and self.allow_deactivation
             and coverage.get("safe_to_deactivate") is True
         )
+
         if self.storage_mode == "hybrid":
             deactivated = 0
             print("Desactivación deshabilitada en almacenamiento híbrido.")
+
         elif can_deactivate:
             deactivated = repository.deactivate_not_seen(self.source, sync_started_at)
+
         else:
             deactivated = 0
             print(f"\nDesactivación omitida para {self.source}: no autorizada explícitamente.")
 
+        # Resumen
         print("\nSincronización finalizada:")
         print(f"  Promociones crudas: {len(raw_promotions)}")
-        print(f"  Promociones normalizadas: {len(promotions)}")
+        print(f"  Promociones procesadas: {len(promotions)}")
         print(f"  Activas encontradas: {total}")
         print(f"  Desactivadas: {deactivated}")
         print(f"  Scraping completo: {'sí' if result is not None and result.complete else 'no verificado (desde archivo)'}")

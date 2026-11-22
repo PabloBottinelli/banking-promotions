@@ -6,8 +6,8 @@ from pathlib import Path
 from normalization.sources.bbva import BBVANormalizer
 from synchronization.import_buepp_hybrid import prepare_import as prepare_buepp_import
 from synchronization.runner import SyncRunner
-from persistence.hybrid_serializer import hash_raw_data
 from datetime import datetime, timezone
+from synchronization.incremental import build_incremental_plan, execute_incremental
 
 def prepare_bbva_import(snapshot_path: Path, coverage_path: Path, cache: dict[str, dict] | None = None):
     raw_bytes = snapshot_path.read_bytes()
@@ -81,71 +81,6 @@ def prepare_import(source: str, snapshot_path: Path, coverage_path: Path, cache:
         return prepare_bbva_import(snapshot_path, coverage_path, cache=cache)
 
     raise ValueError(f"Fuente no soportada: {source}")
-
-def build_incremental_plan(promotions, existing: dict[str, dict], force_reprocess: bool = False) -> dict[str, list[str]]:
-    plan = {
-        "new": [],
-        "modified": [],
-        "retry": [],
-        "reactivate": [],
-        "unchanged": [],
-        "reprocess": [],
-        "missing": [],
-    }
-
-    current_ids = set()
-
-    for promotion in promotions:
-        source_id = promotion.source_id
-        current_ids.add(source_id)
-
-        previous = existing.get(source_id)
-
-        if previous is None:
-            plan["new"].append(source_id)
-            continue
-
-        if force_reprocess:
-            plan["reprocess"].append(source_id)
-            continue
-
-        if previous.get("raw_hash") != hash_raw_data(promotion.raw_data):
-            plan["modified"].append(source_id)
-            continue
-
-        if previous.get("active") is not True:
-            plan["reactivate"].append(source_id)
-            continue
-
-        variants = previous.get("normalized_data")
-        valid_variants = isinstance(variants, list) and bool(variants)
-
-        if valid_variants:
-            variant_ids = []
-
-            for variant in variants:
-                if not isinstance(variant, dict) or variant.get("source") != promotion.source or not isinstance(variant.get("source_id"), str) or not variant["source_id"].strip():
-                    valid_variants = False
-                    break
-
-                variant_ids.append(variant["source_id"])
-
-            if len(variant_ids) != len(set(variant_ids)):
-                valid_variants = False
-
-        if previous.get("normalization_status") != "normalized" or promotion.normalization_status != "normalized" or not valid_variants:
-            plan["retry"].append(source_id)
-            continue
-
-        plan["unchanged"].append(source_id)
-
-    plan["missing"] = sorted(
-        source_id
-        for source_id, previous in existing.items()
-        if source_id not in current_ids and previous.get("active") is True
-    )
-
-    return plan
 
 def main():
     parser = argparse.ArgumentParser()
@@ -253,49 +188,12 @@ def main():
     if existing is None:
         raise RuntimeError("No se recuperaron las promociones existentes")
 
-    plan = build_incremental_plan(promotions, existing)
+    total, plan = execute_incremental(repository, args.source, promotions, existing, seen_at=sync_at)
 
-    upsert_ids = set()
+    if total != len(promotions):
+        raise RuntimeError(f"Sincronización incompleta: {total}/{len(promotions)}")
 
-    for category in ("new", "modified", "retry", "reactivate"):
-        upsert_ids.update(plan[category])
-
-    unchanged_ids = set(plan["unchanged"])
-
-    to_upsert = [
-        promotion
-        for promotion in promotions
-        if promotion.source_id in upsert_ids
-    ]
-
-    to_touch = [
-        (promotion.source_id, hash_raw_data(promotion.raw_data))
-        for promotion in promotions
-        if promotion.source_id in unchanged_ids
-    ]
-
-    if len(to_upsert) + len(to_touch) != len(promotions):
-        raise RuntimeError("El plan incremental no cubre todas las promociones")
-
-    print("\nEjecutando sincronización incremental...")
-    print(f"Registros completos a enviar: {len(to_upsert)}")
-    print(f"Registros a actualizar parcialmente: {len(to_touch)}")
-
-    upserted = repository.upsert_many(to_upsert, batch_size=50, seen_at=sync_at)
-
-    if upserted != len(to_upsert):
-        raise RuntimeError(f"Upsert incompleto: {upserted}/{len(to_upsert)}")
-
-    touched = repository.touch_unchanged(args.source, to_touch, batch_size=200, seen_at=sync_at)
-
-    if touched != len(to_touch):
-        raise RuntimeError(f"Actualización incompleta: {touched}/{len(to_touch)}")
-
-    print("\nSincronización finalizada:")
-    print(f"  Insertadas o reemplazadas: {upserted}")
-    print(f"  Actualizadas parcialmente: {touched}")
-    print(f"  Ausentes, sin modificar: {len(plan['missing'])}")
-    print(f"  Total procesado: {upserted + touched}/{len(promotions)}")
+    print(f"Sincronización finalizada: {total}/{len(promotions)}")
 
 
 if __name__ == "__main__":

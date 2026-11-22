@@ -6,7 +6,7 @@ import pytest
 from normalization.models import Benefit, NormalizedPromotion
 from scraping.models import ScrapeResult
 from synchronization import runner as runner_module
-
+from persistence.hybrid_serializer import hash_raw_data
 
 def make_promotion(source_id="x", source="buepp"):
     return NormalizedPromotion(
@@ -128,7 +128,7 @@ def test_full_validation_then_save_then_upsert(monkeypatch):
 def test_upsert_partial_count_does_not_deactivate(monkeypatch):
     runner, scraper, repo = setup(monkeypatch, [{"source_id": "x"}], fail_count=True,
                                   coverage={"safe_to_deactivate": True}, allow_deactivation=True)
-    with pytest.raises(RuntimeError, match="Upsert incompleto"):
+    with pytest.raises(RuntimeError, match="Sincronización incompleta"):
         runner.run()
     assert scraper.saved
     assert repo.called == 1
@@ -176,6 +176,13 @@ def test_hybrid_run_preserves_failed_normalization(monkeypatch):
             received.extend(promotions)
             return len(promotions)
 
+        def get_existing_promotions(self, source):
+            return {}
+
+        def touch_unchanged(self, source, items, batch_size=200, seen_at=None):
+            assert items == []
+            return 0
+
     monkeypatch.setattr(runner_module, "HybridPromotionRepository", FakeHybridRepository)
     monkeypatch.setattr(runner_module, "SUPABASE_URL", "https://supabase.invalid")
     monkeypatch.setattr(runner_module, "get_headers", lambda: {"apikey": "test"})
@@ -218,3 +225,75 @@ def test_hybrid_validate_only_never_writes(monkeypatch):
 
     assert not scraper.saved
     assert legacy_repository.called == 0
+
+def test_hybrid_runner_uses_incremental_sync(monkeypatch):
+    raw = [
+        {"source": "buepp", "source_id": "same", "discount": 20},
+        {"source": "buepp", "source_id": "changed", "discount": 40},
+    ]
+
+    previous = make_promotion("same").model_dump(mode="json")
+
+    existing = {
+        "same": {
+            "raw_hash": hash_raw_data(raw[0]),
+            "normalization_status": "normalized",
+            "normalized_data": [previous],
+            "active": True,
+        },
+        "changed": {
+            "raw_hash": hash_raw_data({"source": "buepp", "source_id": "changed", "discount": 30}),
+            "normalization_status": "normalized",
+            "normalized_data": [make_promotion("changed").model_dump(mode="json")],
+            "active": True,
+        },
+    }
+
+    calls = []
+
+    class FakeHybridRepository:
+        def __init__(self, base_url, headers):
+            pass
+
+        def get_existing_promotions(self, source):
+            calls.append("read")
+            return existing
+
+        def upsert_many(self, promotions, batch_size, seen_at):
+            calls.append(("upsert", [p.source_id for p in promotions]))
+            return len(promotions)
+
+        def touch_unchanged(self, source, items, batch_size, seen_at):
+            calls.append(("touch", [source_id for source_id, _ in items]))
+            return len(items)
+
+    runner, scraper, legacy_repo = setup(monkeypatch, raw)
+
+    runner.storage_mode = "hybrid"
+
+    monkeypatch.setattr(runner_module, "HybridPromotionRepository", FakeHybridRepository)
+    monkeypatch.setattr(runner_module, "SUPABASE_URL", "https://supabase.invalid")
+    monkeypatch.setattr(runner_module, "get_headers", lambda: {"apikey": "test"})
+
+    runner.run()
+
+    assert scraper.saved
+    assert legacy_repo.called == 0
+
+    assert calls == [
+        "read",
+        ("upsert", ["changed"]),
+        ("touch", ["same"]),
+    ]
+
+def test_hybrid_runner_rejects_unverified_file_import(monkeypatch):
+    runner, scraper, legacy_repo = setup(monkeypatch, [{"source_id": "123"}])
+    runner.storage_mode = "hybrid"
+
+    monkeypatch.setattr(runner, "load_raw_promotions", lambda: scraper.data)
+
+    with pytest.raises(RuntimeError, match="import_hybrid"):
+        runner.run(from_file=True)
+
+    assert not scraper.saved
+    assert legacy_repo.called == 0
