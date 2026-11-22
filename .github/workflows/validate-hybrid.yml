@@ -56,11 +56,36 @@ jobs:
       - name: Run tests
         run: python -m pytest -q tests
 
-      - name: Validate hybrid ${{ matrix.source }}
+            - name: Validate hybrid ${{ matrix.source }}
+        shell: bash
         run: |
-          python -m synchronization.validate_hybrid \
-            --source "${{ matrix.source }}" \
-            --baseline-out "data/hybrid_current/${{ matrix.source }}.json"
+          SOURCE="${{ matrix.source }}"
+          OUTPUT="data/hybrid_current/${SOURCE}.json"
+
+          for attempt in 1 2 3; do
+            echo "Validación ${SOURCE}: intento ${attempt}/3"
+
+            # Evitar reutilizar manifiestos de intentos anteriores
+            rm -f "$OUTPUT"
+
+            if python -m synchronization.validate_hybrid \
+              --source "$SOURCE" \
+              --baseline-out "$OUTPUT"; then
+
+              echo "Validación completada correctamente"
+              exit 0
+            fi
+
+            if [ "$attempt" -eq 3 ]; then
+              echo "::error::La validación falló después de 3 intentos"
+              exit 1
+            fi
+
+            DELAY=$((attempt * 30))
+
+            echo "Reintentando captura completa en ${DELAY} segundos..."
+            sleep "$DELAY"
+          done
 
       - name: Find previous baseline
         id: previous
