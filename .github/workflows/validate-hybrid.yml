@@ -37,6 +37,7 @@ jobs:
     env:
       SUPABASE_URL: https://example.invalid
       SUPABASE_SECRET_KEY: validation-only
+
       APPROVE_INITIAL_BASELINE: ${{ inputs.approve_initial_baseline }}
 
     steps:
@@ -56,7 +57,7 @@ jobs:
       - name: Run tests
         run: python -m pytest -q tests
 
-            - name: Validate hybrid ${{ matrix.source }}
+      - name: Validate hybrid ${{ matrix.source }}
         shell: bash
         run: |
           SOURCE="${{ matrix.source }}"
@@ -92,6 +93,7 @@ jobs:
         env:
           GH_TOKEN: ${{ github.token }}
           SOURCE: ${{ matrix.source }}
+        shell: bash
         run: |
           ARTIFACT=$(gh api \
             "repos/${GITHUB_REPOSITORY}/actions/artifacts?name=hybrid-baseline-${SOURCE}&per_page=100" \
@@ -105,10 +107,13 @@ jobs:
               last // empty")
 
           if [[ -n "$ARTIFACT" && "$ARTIFACT" != "null" ]]; then
+            echo "Referencia histórica encontrada"
+
             echo "found=true" >> "$GITHUB_OUTPUT"
             echo "artifact_id=$(jq -r .id <<< "$ARTIFACT")" >> "$GITHUB_OUTPUT"
             echo "run_id=$(jq -r .workflow_run.id <<< "$ARTIFACT")" >> "$GITHUB_OUTPUT"
           else
+            echo "No existe una referencia histórica anterior"
             echo "found=false" >> "$GITHUB_OUTPUT"
           fi
 
@@ -123,6 +128,7 @@ jobs:
           path: backend/data/hybrid_previous
 
       - name: Compare historical baseline
+        shell: bash
         env:
           SOURCE: ${{ matrix.source }}
           PREVIOUS_FOUND: ${{ steps.previous.outputs.found }}
@@ -133,11 +139,19 @@ jobs:
           )
 
           if [[ "$PREVIOUS_FOUND" == "true" ]]; then
+            echo "Comparando contra referencia histórica..."
+
             ARGS+=(
               --previous "data/hybrid_previous/${SOURCE}.json"
             )
+
           elif [[ "$APPROVE_INITIAL_BASELINE" == "true" ]]; then
+            echo "Creando primera referencia histórica autorizada..."
+
             ARGS+=(--allow-initial)
+          else
+            echo "::error::No existe una referencia histórica aprobada"
+            exit 1
           fi
 
           python -m synchronization.hybrid_baseline "${ARGS[@]}"
