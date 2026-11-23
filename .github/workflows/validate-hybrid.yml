@@ -126,6 +126,7 @@ jobs:
           repository: ${{ github.repository }}
           github-token: ${{ github.token }}
           path: backend/data/hybrid_previous
+          merge-multiple: true
 
       - name: Compare historical baseline
         shell: bash
